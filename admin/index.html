@@ -40,6 +40,23 @@ h3.sub { font-size: .95rem; margin: 14px 0 6px; }
 .tbl table { min-width: 520px; }
 button.del { min-height: 36px; padding: 0 10px; font-size: 13px; background: transparent; color: #9b3d17; border-color: #9b3d17; }
 :focus-visible { outline: 3px solid #1f5f9e; outline-offset: 2px; }
+input[type=text], input[type=number], textarea { width: 100%; min-height: 46px; padding: 8px 10px; border: 2px solid #221d18; border-radius: 6px; background: #fff; }
+textarea { min-height: 96px; }
+label.f { display: grid; gap: 4px; font-size: 14px; font-weight: 700; color: #54473b; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.dc-card { border: 1px solid #d6c6a3; border-radius: 8px; padding: 10px; margin-top: 10px; background: #fff; display: grid; gap: 8px; }
+.dc-head { display: grid; grid-template-columns: 72px 1fr; gap: 10px; align-items: start; }
+.dc-head img, .dc-cand img { width: 72px; height: 72px; object-fit: cover; border-radius: 4px; background: #e9dfc8; }
+.dc-cands { display: grid; gap: 6px; }
+.dc-cand { display: grid; grid-template-columns: 56px 1fr auto; gap: 8px; align-items: center; border-top: 1px dashed #d6c6a3; padding-top: 6px; font-size: 13.5px; }
+.dc-cand img { width: 56px; height: 56px; }
+.dc-cand.chosen { background: #eef5f4; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 12.5px; font-weight: 700; background: #e9dfc8; }
+.pill.confident { background: #cfe6e3; } .pill.review { background: #f6dfb5; } .pill.no_match { background: #efc9b8; } .pill.approved { background: #2b6461; color: #fff; } .pill.skipped { background: #ccc; }
+button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
+.alert { border-left: 4px solid #c9932f; padding: 6px 10px; margin-top: 8px; background: #fff; font-size: 14px; }
+.alert.critical { border-color: #9b3d17; } .alert.action { border-color: #1f5f9e; } .alert.acked { opacity: .6; }
+.sig { font-size: 12.5px; color: #54473b; }
 </style>
 </head>
 <body>
@@ -90,6 +107,54 @@ button.del { min-height: 36px; padding: 0 10px; font-size: 13px; background: tra
     <div id="flags" class="sel"></div>
     <div class="row"><button id="load-review" class="alt">Show per-item list</button></div>
     <div id="review" class="sel"></div>
+  </section>
+
+  <section id="discogs">
+    <h2>Discogs</h2>
+    <p class="muted">List approved records on Discogs and catch Discogs sales. Nothing is listed until you approve a record's match AND turn on "List on Discogs". Matching never lists anything. Setup: <code>docs/DISCOGS-INTEGRATION.md</code>.</p>
+    <dl class="kv" id="dc-state"></dl>
+    <div class="row">
+      <button id="dc-load" class="alt">Refresh</button>
+      <button id="dc-match">Match records to Discogs</button>
+      <button id="dc-check" class="alt">Check Discogs sales now</button>
+      <button id="dc-plan" class="alt">Preview listing changes</button>
+      <button id="dc-sync">Sync listings now</button>
+    </div>
+    <div class="row"><label class="f" style="flex:1">Your name (stored with each approval)<input type="text" id="dc-by" placeholder="Edwin" autocomplete="name"></label></div>
+
+    <h3 class="sub">End on eBay (sold on Discogs)</h3>
+    <div id="dc-end" class="sel"></div>
+
+    <h3 class="sub">Alerts</h3>
+    <div class="row"><button id="dc-ack" class="alt sm">Mark all read</button></div>
+    <div id="dc-alerts" class="sel"></div>
+
+    <h3 class="sub">Listing settings</h3>
+    <div class="grid2">
+      <label class="f">Price<select id="dc-price-mode"><option value="same">Same as eBay</option><option value="percent">eBay price adjusted by a percent</option></select></label>
+      <label class="f">Percent (e.g. -10 = 10% below eBay)<input type="number" id="dc-pct" step="0.5"></label>
+      <label class="f">Rounding (percent mode)<select id="dc-round"><option value=".99">to .99</option><option value=".00">to .00</option><option value="none">to the cent</option></select></label>
+      <label class="f">New listings start as<select id="dc-lstatus"><option value="Draft">Draft (check them on Discogs first)</option><option value="For Sale">For Sale</option></select></label>
+      <label class="f">Allow offers<select id="dc-offers"><option value="false">No</option><option value="true">Yes</option></select></label>
+      <label class="f">After each eBay sync, push changes<select id="dc-auto"><option value="false">No, only when I press Sync</option><option value="true">Yes (approved records only)</option></select></label>
+    </div>
+    <label class="f" style="margin-top:10px">Comment template. Fields: {vinyl} {sleeve} {vinyl_grade} {sleeve_grade} {notes} {pressing_notes} {record_url} {ebay_url} {artist} {album} {label} {catalog_number}<textarea id="dc-tpl"></textarea></label>
+    <label class="f" style="margin-top:10px">Private storage location (Discogs "Location", only you see it)<input type="text" id="dc-loc"></label>
+    <div class="row"><button id="dc-save">Save settings</button></div>
+    <p id="dc-set-msg" class="muted" role="status"></p>
+
+    <h3 class="sub">Review matches</h3>
+    <div class="row">
+      <select id="dc-filter" aria-label="Show records">
+        <option value="review">Needs review</option><option value="confident">Confident (not yet approved)</option>
+        <option value="no_match">No match</option><option value="approved">Approved</option><option value="skipped">Skipped</option>
+        <option value="unmatched">Not matched yet</option><option value="">All</option>
+      </select>
+    </div>
+    <div class="row"><button id="dc-approve-all" class="alt">Approve all confident</button><button id="dc-list-all" class="alt">Turn on listing for all approved</button></div>
+    <p id="dc-count" class="muted" style="margin-top:8px"></p>
+    <div id="dc-rows"></div>
+    <div class="row"><button id="dc-more" class="alt hidden">Show more</button></div>
   </section>
 
   <section id="merch">
@@ -204,8 +269,153 @@ button.del { min-height: 36px; padding: 0 10px; font-size: 13px; background: tra
       d.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
     }).catch(function (e) { $('merch-sum').textContent = 'CSV export failed: ' + e.message; });
   });
+  // ------------------------------------------------------------------ Discogs
+  var dc = { ov: null, rows: [], shown: 0 };
+  $('dc-by').value = localStorage.getItem('mecApprover') || '';
+  $('dc-by').addEventListener('change', function () { localStorage.setItem('mecApprover', $('dc-by').value.trim()); });
+  function by() { return $('dc-by').value.trim() || 'admin'; }
+  function jpost(path, body) { return api(path, { method: 'POST', body: JSON.stringify(Object.assign({ by: by() }, body || {})), headers: { 'Content-Type': 'application/json' } }); }
+  function when(x) { return x ? esc((x.at || '').replace('T', ' ').replace('Z', '')) + ' ' + esc(x.result || '') + (x.reason ? ' (' + esc(x.reason) + ')' : '') : 'never'; }
+  function dcOverview() {
+    return api('/admin/api/discogs').then(function (j) {
+      if (j._status !== 200) { $('dc-state').innerHTML = '<dt>Error</dt><dd>' + esc(j.error) + '</dd>'; return; }
+      dc.ov = j;
+      var mc = j.match_counts || {}, lc = j.listing_counts || {};
+      var rows = [
+        ['Token', j.token_present ? '<span class="ok">DISCOGS_TOKEN set</span>' + (j.username ? ' (' + esc(j.username) + ')' : '') : '<span class="bad">no DISCOGS_TOKEN: everything is skipped</span>'],
+        ['Matches', Object.keys(mc).map(function (k) { return '<span class="pill ' + esc(k) + '">' + esc(k) + '</span> ' + mc[k]; }).join(' ') || 'none yet'],
+        ['List on Discogs', esc(j.list_on) + ' toggled on, ' + esc(j.approved_not_listed) + ' approved but off'],
+        ['Discogs listings', Object.keys(lc).map(function (k) { return esc(k) + ': ' + lc[k]; }).join(', ') || 'none'],
+        ['Last match', when(j.last_match)], ['Last listing sync', when(j.last_listing_sync)], ['Last sales check', when(j.last_poll)],
+        ['Unread alerts', esc(j.alerts_unacked)]
+      ];
+      $('dc-state').innerHTML = rows.map(function (r) { return '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>'; }).join('');
+      var e = j.end_on_ebay || [];
+      $('dc-end').innerHTML = (j.double_sales || []).map(function (x) { return '<div class="alert critical"><b>Sold twice:</b> ' + esc(x.title) + ' (' + esc(x.id) + ') sold on eBay and on Discogs. Refund one buyer.' + (x.order_url ? ' <a href="' + esc(x.order_url) + '" rel="noopener">Discogs order</a>' : '') + '</div>'; }).join('') +
+        (e.length ? '<div class="tbl"><table><tr><th>Record</th><th>Sold</th><th>End it</th><th></th></tr>' + e.map(function (x) {
+          return '<tr><td>' + esc(x.title) + '<br><span class="muted">eBay ' + esc(x.id) + (x.ebay_quantity != null ? ', eBay qty ' + esc(x.ebay_quantity) : '') + '</span></td><td>' + esc(x.sold_at) + (x.order_url ? '<br><a href="' + esc(x.order_url) + '" rel="noopener">Discogs order</a>' : '') +
+            '</td><td><a href="' + esc(x.seller_hub_url) + '" rel="noopener">Seller Hub: Active</a> (find ' + esc(x.id) + ', Actions, End listing)<br><a href="' + esc(x.ebay_url) + '" rel="noopener">eBay listing</a></td><td><button class="sm" data-ended="' + esc(x.id) + '">I ended it</button><br><button class="sm alt" data-relist="' + esc(x.id) + '" style="margin-top:4px">Still for sale?</button></td></tr>';
+        }).join('') + '</table></div>' : '<p class="muted">Nothing to end on eBay.</p>');
+      var s = j.settings || {};
+      $('dc-price-mode').value = s.price_mode; $('dc-pct').value = s.price_percent; $('dc-round').value = s.price_rounding;
+      $('dc-lstatus').value = s.listing_status; $('dc-offers').value = String(!!s.allow_offers); $('dc-auto').value = String(!!s.auto_sync_listings);
+      $('dc-tpl').value = s.comment_template || ''; $('dc-loc').value = s.location || '';
+      $('dc-approve-all').textContent = 'Approve all confident (' + (j.confident_unapproved || 0) + ')';
+      $('dc-list-all').textContent = 'Turn on listing for all approved (' + (j.approved_not_listed || 0) + ')';
+    });
+  }
+  function dcAlerts() {
+    return api('/admin/api/discogs/alerts').then(function (j) {
+      var a = (j.alerts || []).slice(0, 30);
+      $('dc-alerts').innerHTML = a.length ? a.map(function (x) {
+        var links = Object.keys(x.links || {}).filter(function (k) { return x.links[k]; }).map(function (k) { return '<a href="' + esc(x.links[k]) + '" rel="noopener">' + esc(k.replace(/_/g, ' ')) + '</a>'; }).join(' · ');
+        return '<div class="alert ' + esc(x.severity) + (x.acked_at ? ' acked' : '') + '"><b>' + esc((x.at || '').replace('T', ' ').replace('Z', '')) + '</b> ' + esc(x.message) + (links ? '<br>' + links : '') + '</div>';
+      }).join('') : '<p class="muted">No alerts.</p>';
+    });
+  }
+  function cand(r, c, chosen) {
+    var sg = c.signals || {};
+    var bits = ['catno ' + (sg.catno ? 'yes' : 'no'), 'label ' + sg.label, 'format ' + sg.format, 'year ' + sg.year, 'country ' + sg.country];
+    return '<div class="dc-cand' + (chosen ? ' chosen' : '') + '">' + (c.thumb ? '<img src="' + esc(c.thumb) + '" alt="" loading="lazy" referrerpolicy="no-referrer">' : '<span></span>') +
+      '<div><a href="' + esc(c.url) + '" rel="noopener" target="_blank">' + esc(c.title) + '</a><br>' + esc((c.label || []).join(', ')) + ' · ' + esc(c.catno) + ' · ' + esc((c.format || []).join(', ')) + ' · ' + esc(c.year || '?') + ' · ' + esc(c.country || '?') +
+      '<br><span class="sig">score ' + esc(c.score) + ': ' + esc(bits.join(', ')) + '</span></div>' +
+      '<button class="sm alt" data-pick="' + esc(r.id) + '" data-rid="' + esc(c.release_id) + '">Use this</button></div>';
+  }
+  function card(r) {
+    var m = r.match || {}, st = m.status || 'unmatched', L = r.listing || {};
+    var chosen = m.approved_release_id || m.chosen_release_id;
+    var head = '<div class="dc-head">' + (r.photo ? '<img src="' + esc(r.photo) + '" alt="" loading="lazy" referrerpolicy="no-referrer">' : '<span></span>') +
+      '<div><span class="pill ' + esc(st) + '">' + esc(st) + '</span> <a href="' + esc(r.ebay_url) + '" rel="noopener" target="_blank">' + esc(r.ebay_title) + '</a>' +
+      '<br><span class="muted">' + esc([r.label, r.catalog_number, r.format, r.year, r.country].filter(Boolean).join(' · ')) + '</span>' +
+      '<br><span class="muted">$' + esc(r.price) + ' on eBay → $' + esc(r.discogs_price || '?') + ' on Discogs · vinyl ' + esc(r.vinyl_grade || '?') + ' → ' + esc(r.discogs_condition || 'not mappable') + ' · sleeve ' + esc(r.sleeve_grade || '?') + ' → ' + esc(r.discogs_sleeve || 'not mappable') + '</span>' +
+      (m.reason ? '<br><span class="sig">' + esc(m.reason) + '</span>' : '') +
+      (m.approved_by ? '<br><span class="sig">approved release ' + esc(m.approved_release_id) + ' by ' + esc(m.approved_by) + ' at ' + esc(m.approved_at) + '</span>' : '') +
+      (m.record_changed_since_decision ? '<br><span class="bad">eBay details changed since this decision; re-check it</span>' : '') +
+      (r.grade_conflicts.length ? '<br><span class="bad">grade conflict: ' + esc(r.grade_conflicts.join('; ')) + '</span>' : '') +
+      (L.listing_id ? '<br>Discogs listing <a href="' + esc(L.url) + '" rel="noopener" target="_blank">' + esc(L.listing_id) + '</a> (' + esc(L.status) + ')' + (L.last_error ? ' <span class="bad">' + esc(L.last_error.error) + '</span>' : '') : '') +
+      (r.problems.length && st === 'approved' ? '<br><span class="bad">Can\'t list: ' + esc(r.problems.join('; ')) + '</span>' : '') +
+      (r.notes.length ? '<br><span class="sig">' + esc(r.notes.join('; ')) + '</span>' : '') + '</div></div>';
+    var cands = (m.candidates || []).map(function (c) { return cand(r, c, c.release_id === chosen); }).join('');
+    var acts = '<div class="row">' +
+      (m.chosen_release_id && st !== 'approved' ? '<button class="sm" data-approve="' + esc(r.id) + '">Approve ' + esc(m.chosen_release_id) + '</button>' : '') +
+      '<input type="text" inputmode="numeric" placeholder="Release ID or URL" data-manual-in="' + esc(r.id) + '" style="max-width:190px;min-height:40px">' +
+      '<button class="sm alt" data-manual="' + esc(r.id) + '">Use release ID</button>' +
+      (st !== 'skipped' ? '<button class="sm alt" data-skip="' + esc(r.id) + '">Skip</button>' : '') +
+      (st === 'approved' || st === 'skipped' ? '<button class="sm alt" data-reset="' + esc(r.id) + '">Undo</button>' : '') +
+      (st === 'approved' ? '<label class="f" style="display:flex;align-items:center;gap:6px"><input type="checkbox" data-toggle="' + esc(r.id) + '"' + (m.list_on_discogs ? ' checked' : '') + ' style="width:24px;height:24px"> List on Discogs</label>' : '') +
+      '<select data-sleeve="' + esc(r.id) + '" aria-label="Sleeve condition override" style="max-width:230px;min-height:40px"><option value="">Sleeve: from eBay grade</option>' +
+      ((dc.ov && dc.ov.sleeve_values) || []).map(function (v) { return '<option' + (m.sleeve_condition === v ? ' selected' : '') + '>' + esc(v) + '</option>'; }).join('') + '</select>' +
+      '</div>';
+    return '<div class="dc-card" data-card="' + esc(r.id) + '">' + head + (cands ? '<div class="dc-cands">' + cands + '</div>' : '') + (m.status || r.status === 'active' ? acts : '') + '</div>';
+  }
+  function dcRender(more) {
+    if (!more) dc.shown = 0;
+    var next = dc.rows.slice(dc.shown, dc.shown + 25);
+    var html = next.map(card).join('');
+    if (more) $('dc-rows').insertAdjacentHTML('beforeend', html); else $('dc-rows').innerHTML = html || '<p class="muted">Nothing here.</p>';
+    dc.shown += next.length;
+    $('dc-count').textContent = dc.rows.length + ' record' + (dc.rows.length === 1 ? '' : 's') + (dc.rows.length > dc.shown ? ', showing ' + dc.shown : '');
+    $('dc-more').classList.toggle('hidden', dc.shown >= dc.rows.length);
+  }
+  function dcRows() {
+    var f = $('dc-filter').value;
+    return api('/admin/api/discogs/records' + (f ? '?status=' + encodeURIComponent(f) : '')).then(function (j) { dc.rows = j.rows || []; dcRender(false); });
+  }
+  function dcAll() { return dcOverview().then(dcAlerts).then(dcRows); }
+  function dcAct(path, body) {
+    return jpost(path, body).then(function (j) { if (j._status >= 400) alert(j.error || ('HTTP ' + j._status)); else show(j); return dcAll(); });
+  }
+  $('dc-load').addEventListener('click', dcAll);
+  $('dc-filter').addEventListener('change', dcRows);
+  $('dc-more').addEventListener('click', function () { dcRender(true); });
+  $('dc-match').addEventListener('click', function () { dcAct('/admin/api/discogs/match', {}); });
+  $('dc-check').addEventListener('click', function () { $('out').textContent = 'Checking Discogs...'; dcAct('/admin/api/discogs/check-now', {}); });
+  $('dc-plan').addEventListener('click', function () { $('out').textContent = 'Planning...'; api('/admin/api/discogs/plan').then(show); });
+  $('dc-sync').addEventListener('click', function () { if (confirm('Push approved records with "List on Discogs" on to Discogs now? New listings start as ' + ($('dc-lstatus').value) + '.')) dcAct('/admin/api/discogs/sync-listings', {}); });
+  $('dc-ack').addEventListener('click', function () { dcAct('/admin/api/discogs/alerts/ack', {}); });
+  $('dc-approve-all').addEventListener('click', function () {
+    var n = (dc.ov && dc.ov.confident_unapproved) || 0;
+    if (!n) return alert('No confident matches waiting.');
+    if (confirm('Approve all ' + n + ' confident matches? (Each still needs "List on Discogs" turned on before anything is listed.)')) dcAct('/admin/api/discogs/approve-confident', { expected: n });
+  });
+  $('dc-list-all').addEventListener('click', function () {
+    var n = (dc.ov && dc.ov.approved_not_listed) || 0;
+    if (!n) return alert('No approved records with listing off.');
+    if (confirm('Turn on "List on Discogs" for ' + n + ' approved records? They are listed at the next listing sync.')) dcAct('/admin/api/discogs/list-all-approved', { expected: n });
+  });
+  $('dc-save').addEventListener('click', function () {
+    jpost('/admin/api/discogs/settings', { price_mode: $('dc-price-mode').value, price_percent: Number($('dc-pct').value || 0), price_rounding: $('dc-round').value,
+      listing_status: $('dc-lstatus').value, allow_offers: $('dc-offers').value === 'true', auto_sync_listings: $('dc-auto').value === 'true',
+      comment_template: $('dc-tpl').value, location: $('dc-loc').value }).then(function (j) {
+      delete j.settings; $('dc-set-msg').textContent = (j.errors && j.errors.length) ? 'Not saved: ' + j.errors.join('; ') : 'Saved.'; dcAll();
+    });
+  });
+  $('dc-end').addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('button'); if (!b) return;
+    if (b.dataset.ended && confirm('Mark eBay listing ' + b.dataset.ended + ' as ended on eBay?')) dcAct('/admin/api/discogs/ebay-ended', { id: b.dataset.ended });
+    if (b.dataset.relist && confirm('Undo the Discogs sale and put this record back on sale? Only do this if the Discogs order was cancelled. eBay must still show it active.')) dcAct('/admin/api/discogs/relist', { id: b.dataset.relist, confirm: true });
+  });
+  $('dc-rows').addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('button'); if (!b) return;
+    var d = b.dataset;
+    if (d.approve) dcAct('/admin/api/discogs/decide', { id: d.approve, action: 'approve' });
+    else if (d.pick) dcAct('/admin/api/discogs/decide', { id: d.pick, action: 'pick', release_id: Number(d.rid) });
+    else if (d.skip) dcAct('/admin/api/discogs/decide', { id: d.skip, action: 'skip' });
+    else if (d.reset) dcAct('/admin/api/discogs/decide', { id: d.reset, action: 'reset' });
+    else if (d.manual) {
+      var v = (d3q('[data-manual-in="' + d.manual + '"]') || {}).value || '', m = v.match(/(\d+)\s*$/) || v.match(/release\/(\d+)/);
+      if (!m) return alert('Paste a Discogs release ID or URL.');
+      dcAct('/admin/api/discogs/decide', { id: d.manual, action: 'manual', release_id: Number(m[1]) });
+    }
+  });
+  function d3q(sel) { return d.querySelector(sel); }
+  $('dc-rows').addEventListener('change', function (e) {
+    var t = e.target;
+    if (t.dataset.toggle) dcAct('/admin/api/discogs/toggle', { id: t.dataset.toggle, on: t.checked });
+    if (t.dataset.sleeve) dcAct('/admin/api/discogs/decide', { id: t.dataset.sleeve, action: 'set_sleeve', sleeve_condition: t.value || null });
+  });
   var _status = status;
-  status = function () { return _status().then(function () { if (!$('app').classList.contains('hidden')) merch(); }); };
+  status = function () { return _status().then(function () { if (!$('app').classList.contains('hidden')) { merch(); dcOverview().then(dcAlerts); } }); };
   if (token) status();
 })();
 </script>

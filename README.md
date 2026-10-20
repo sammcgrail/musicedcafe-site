@@ -38,6 +38,10 @@ scripts/mec enrich            # fetch public descriptions (and item pages if CAM
 scripts/mec scrape-store      # best-effort public store-page read (never ends or sells anything)
 scripts/mec build             # rebuild public/live
 scripts/mec status            # sync state + review flag counts
+scripts/mec discogs match     # match records to Discogs releases (dry run; needs DISCOGS_TOKEN)
+scripts/mec discogs plan      # preview Discogs listing changes (read-only)
+scripts/mec discogs sync-listings  # list approved records on Discogs (per-record approval required)
+scripts/mec discogs poll      # check Discogs sales (read-only on Discogs; also runs every 15 min)
 scripts/import-ebay.sh [csv]  # all of the above in order, then build
 python3 tests/test_import.py  # import and sync-safety tests
 docker compose up -d --build  # run web + admin
@@ -98,6 +102,7 @@ mapped columns are ever read.
 
 ## Secrets
 `.env` (not committed) holds `ADMIN_TOKEN`, `EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET`,
-`EBAY_DELETION_VERIFICATION_TOKEN` and `EBAY_DELETION_ENDPOINT_URL`. Raw CSV
+`EBAY_DELETION_VERIFICATION_TOKEN`, `EBAY_DELETION_ENDPOINT_URL` and `DISCOGS_TOKEN`
+(see `docs/DISCOGS-INTEGRATION.md`). Raw CSV
 exports are never committed (`*.csv` is gitignored, apart from the synthetic test
 fixtures).

@@ -14,11 +14,29 @@ Routes (all /admin/api/* need  Authorization: Bearer <ADMIN_TOKEN>):
   POST /admin/api/merch/delete?id=<reservation id>
   POST /merch/reserve          public merch reservation form (urlencoded; JSON reply when Accept: application/json,
                                otherwise a 303 redirect to GET /merch/reserve?r=<id>, the thank-you page)
+  Discogs (mec/discogs.py; every call is inert without DISCOGS_TOKEN):
+  GET  /admin/api/discogs                 counts, settings, End-on-eBay list, last match / sync / poll
+  GET  /admin/api/discogs/records?status= per-record rows: eBay title/photo next to the Discogs candidates
+  GET  /admin/api/discogs/alerts          the Alerts feed (Discogs sales, double sales, sync errors)
+  GET  /admin/api/discogs/plan            dry run of a listing sync (read-only client)
+  POST /admin/api/discogs/match           match records to releases (background; never lists anything)
+  POST /admin/api/discogs/decide          {id, action: approve|pick|manual|skip|reset|set_sleeve, release_id?, sleeve_condition?, by?}
+  POST /admin/api/discogs/approve-confident {expected, by?}   bulk approve, needs the count the human confirmed
+  POST /admin/api/discogs/toggle          {id, on, by?}   per-record "list on Discogs"
+  POST /admin/api/discogs/list-all-approved {expected, by?}
+  POST /admin/api/discogs/settings        price rule, allow_offers, comment template, new-listing status
+  POST /admin/api/discogs/sync-listings   push approved+toggled records (background) {force?}
+  POST /admin/api/discogs/check-now       poll Discogs orders + sold inventory now (read-only)
+  POST /admin/api/discogs/alerts/ack      {ids?}  (no ids = all)
+  POST /admin/api/discogs/ebay-ended      {id}  "I ended it on eBay"
+  POST /admin/api/discogs/relist          {id, confirm: true}  undo a Discogs sale (eBay must still show qty > 0)
   GET  /ebay/account-deletion  eBay Marketplace Account Deletion challenge (needed for a production keyset)
   POST /ebay/account-deletion  acknowledges notifications (this site stores no eBay buyer data)
 
 Also runs the daily scheduled sync (config sync.daily_at_utc). With no API keys
 the scheduled run records "skipped: no credentials" and changes nothing.
+And a Discogs sales poll every 15 minutes (DISCOGS_POLL_MINUTES): read-only on
+Discogs, records "skipped: no DISCOGS_TOKEN" without a token.
 Uploaded CSVs are processed in memory and never written to disk or logged.
 """
 from __future__ import annotations
@@ -53,6 +71,7 @@ MERCH_MAX_BODY = 8 * 1024
 MERCH_RL_SHORT = merch.RateLimiter(5, 600)      # per IP: 5 reservations / 10 minutes
 MERCH_RL_DAY = merch.RateLimiter(20, 86400)     # per IP: 20 / day
 MERCH_RL_ALL = merch.RateLimiter(500, 86400)    # whole site: 500 / day (stops a flood filling the disk)
+DISCOGS_POLL_SECONDS = max(5, int(os.environ.get("DISCOGS_POLL_MINUTES") or 15)) * 60
 MERCH_ORIGINS = {"https://musicedcafe.com", "https://www.musicedcafe.com", "https://musicedcafe.sebland.com"}
 
 
@@ -101,6 +120,12 @@ def do_refresh():
         except Exception as e:  # photos are a nicety; never block the rebuild
             res["photos"] = {"error": str(e)}
         res["build"] = do_build()
+        try:  # optional: push price/grade/ended changes to Discogs (approved records only)
+            from mec import discogs
+            if discogs.load_settings().get("auto_sync_listings") and discogs.get_token():
+                res["discogs"] = discogs.sync_listings(log=log)
+        except Exception as e:
+            res["discogs"] = {"result": "failed", "error": f"{type(e).__name__}: {str(e)[:200]}"}
     return res
 
 
@@ -134,6 +159,7 @@ def status_payload():
         "sync": st, "counts": counts, "total_items": len(items),
         "review_flag_counts": rep.get("flag_counts", {}),
         "api_credentials_present": bool(os.environ.get("EBAY_CLIENT_ID") and os.environ.get("EBAY_CLIENT_SECRET")),
+        "discogs_token_present": bool(os.environ.get("DISCOGS_TOKEN")),
         "last_build": datetime.fromtimestamp(live.stat().st_mtime, timezone.utc).isoformat(timespec="seconds") if live.exists() else None,
         "job": {k: v for k, v in JOB.items()},
         "schedule_utc": (json.loads((ROOT / "config/site.json").read_text()).get("sync") or {}).get("daily_at_utc"),
@@ -150,13 +176,46 @@ def scheduler():
             hh, mm = (int(x) for x in at.split(":"))
             now = datetime.now(timezone.utc)
             if (now.hour, now.minute) >= (hh, mm) and last_day != now.date():
-                last_day = now.date()
                 log("scheduled sync starting")
                 code, res = run_job("scheduled-sync", do_refresh)
+                if code != 409:   # busy (e.g. a long Discogs match): try again next minute
+                    last_day = now.date()
                 log(f"scheduled sync: {code} {res.get('result', res.get('error'))}")
         except Exception as e:
             log(f"scheduler error: {e}")
         time.sleep(60)
+
+
+def discogs_scheduler(interval: float | None = None, once: bool = False):
+    """Discogs sales poll. READ-ONLY on Discogs (orders + inventory); it never
+    creates, edits or deletes a listing. Inert without DISCOGS_TOKEN."""
+    from mec import discogs
+    interval = interval or DISCOGS_POLL_SECONDS
+    time.sleep(0 if once else 90)  # let startup (and any boot-time sync) settle first
+    while True:
+        wait = interval
+        try:
+            code, res = run_job("discogs-poll", lambda: discogs.poll(log=log))
+            if code == 409:
+                wait = 60   # another job holds the lock: try again in a minute
+            else:
+                r = res.get("result", res.get("error"))
+                if r != "skipped" or not getattr(discogs_scheduler, "_said_skip", False):
+                    log(f"discogs poll: {r} {res.get('reason') or ''}{' new_sales=' + str(res['new_sales']) if res.get('new_sales') else ''}")
+                discogs_scheduler._said_skip = r == "skipped"
+        except Exception as e:
+            log(f"discogs scheduler error: {e}")
+        if once:
+            return
+        time.sleep(wait)
+
+
+def _bg(name: str, fn):
+    """Start fn under the job lock in a thread; returns (status, payload) for the reply."""
+    if LOCK.locked():
+        return 409, {"error": f"busy: {JOB['running']} is running"}
+    threading.Thread(target=lambda: run_job(name, fn), daemon=True).start()
+    return 202, {"started": f"{name} (runs in the background; check status)"}
 
 
 class H(BaseHTTPRequestHandler):
@@ -200,8 +259,88 @@ class H(BaseHTTPRequestHandler):
             return None
         return self.rfile.read(n) if n else b""
 
+    def jbody(self) -> dict | None:
+        raw = self.body()
+        if raw is None:
+            return None
+        try:
+            v = json.loads(raw.decode("utf-8") or "{}")
+        except ValueError:
+            self.send(400, {"error": "body must be JSON"})
+            return None
+        if not isinstance(v, dict):
+            self.send(400, {"error": "body must be a JSON object"})
+            return None
+        return v
+
+    def discogs_get(self, u):
+        from mec import discogs
+        qs = parse_qs(u.query)
+        if u.path == "/admin/api/discogs":
+            return self.send(200, dict(discogs.overview(), job=dict(JOB)))
+        if u.path == "/admin/api/discogs/records":
+            return self.send(200, {"rows": discogs.review_rows(status=(qs.get("status") or [None])[0])})
+        if u.path == "/admin/api/discogs/alerts":
+            return self.send(200, {"alerts": discogs.load_alerts()})
+        if u.path == "/admin/api/discogs/plan":
+            code, res = run_job("discogs-plan", lambda: discogs.sync_listings(
+                client=discogs.make_client(read_only=True), dry_run=True, log=log))
+            return self.send(code, res)
+        return self.send(404, {"error": "not found"})
+
+    def discogs_post(self, u):
+        from mec import discogs
+        b = self.jbody()
+        if b is None:
+            return
+        by = str(b.get("by") or "admin")[:60]
+        try:
+            if u.path == "/admin/api/discogs/match":
+                return self.send(*_bg("discogs-match", lambda: discogs.match_records(
+                    ids=set(b["ids"]) if b.get("ids") else None, rematch=bool(b.get("rematch")), log=log)))
+            if u.path == "/admin/api/discogs/sync-listings":
+                return self.send(*_bg("discogs-sync-listings", lambda: discogs.sync_listings(
+                    force=bool(b.get("force")), log=log)))
+            if u.path == "/admin/api/discogs/check-now":
+                return self.send(*run_job("discogs-poll", lambda: discogs.poll(log=log)))
+            if u.path == "/admin/api/discogs/decide":
+                cl = discogs.make_client(read_only=True) if b.get("action") == "manual" else None
+                return self.send(200, {"match": discogs.decide(str(b.get("id") or ""), str(b.get("action") or ""),
+                                                               release_id=b.get("release_id"), by=by,
+                                                               sleeve_condition=b.get("sleeve_condition"), client=cl)})
+            if u.path == "/admin/api/discogs/approve-confident":
+                if b.get("expected") is None:
+                    return self.send(400, {"error": "expected (the confirmed count) is required"})
+                return self.send(200, discogs.approve_all_confident(int(b["expected"]), by=by))
+            if u.path == "/admin/api/discogs/toggle":
+                return self.send(200, {"match": discogs.set_listing_toggle(str(b.get("id") or ""), bool(b.get("on")), by=by)})
+            if u.path == "/admin/api/discogs/list-all-approved":
+                if b.get("expected") is None:
+                    return self.send(400, {"error": "expected (the confirmed count) is required"})
+                return self.send(200, discogs.list_all_approved(int(b["expected"]), by=by))
+            if u.path == "/admin/api/discogs/settings":
+                s, errs = discogs.save_settings({k: v for k, v in b.items() if k != "by"})
+                return self.send(400 if errs else 200, {"settings": s, "errors": errs})
+            if u.path == "/admin/api/discogs/alerts/ack":
+                return self.send(200, {"acked": discogs.ack_alerts(b.get("ids"))})
+            if u.path == "/admin/api/discogs/ebay-ended":
+                return self.send(200, {"discogs_sale": discogs.mark_ebay_ended(str(b.get("id") or ""), by=by)})
+            if u.path == "/admin/api/discogs/relist":
+                if b.get("confirm") is not True:
+                    return self.send(400, {"error": "confirm: true is required"})
+                res = discogs.confirm_relist(str(b.get("id") or ""), by=by)
+                code, built = run_job("rebuild", do_build)
+                return self.send(200, dict(res, build=built if code == 200 else {"error": built.get("error")}))
+        except (ValueError, KeyError, TypeError) as e:
+            return self.send(400, {"error": str(e)})
+        return self.send(404, {"error": "not found"})
+
     def do_GET(self):
         u = urlparse(self.path)
+        if u.path == "/admin/api/discogs" or u.path.startswith("/admin/api/discogs/"):
+            if self.authed():
+                self.discogs_get(u)
+            return
         if u.path in ("/admin", "/admin/"):
             return self.send(200, PAGE, "text/html; charset=utf-8")
         if u.path == "/ebay/account-deletion":
@@ -248,6 +387,8 @@ class H(BaseHTTPRequestHandler):
         if not self.authed():
             return
         qs = parse_qs(u.query)
+        if u.path.startswith("/admin/api/discogs/"):
+            return self.discogs_post(u)
         if u.path == "/admin/api/refresh":
             code, res = run_job("refresh", do_refresh)
             return self.send(code, res)
@@ -401,6 +542,7 @@ def render_merch_page(state: str, data: dict) -> bytes:
 def main():
     port = int(os.environ.get("PORT", "8081"))
     threading.Thread(target=scheduler, daemon=True).start()
+    threading.Thread(target=discogs_scheduler, daemon=True).start()
     log(f"mec-admin on :{port} (token {'set' if TOKEN else 'NOT SET: admin disabled'})")
     ThreadingHTTPServer(("0.0.0.0", port), H).serve_forever()
 

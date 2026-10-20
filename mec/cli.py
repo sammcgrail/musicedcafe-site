@@ -7,6 +7,12 @@
   ended-photos [--retry]            Browse lookup of sold/ended listings for Edwin's photos (cached)
   build                             regenerate public/live/
   status                            print sync state + review summary
+  discogs match [--ids ...] [--rematch] [--limit N]   match records to Discogs releases (dry run, lists nothing)
+  discogs status                    Discogs match / listing / poll summary (no API calls)
+  discogs plan                      what a listing sync would create / update / unlist / delete (reads only)
+  discogs sync-listings [--force]   push approved records to Discogs (needs per-record approval)
+  discogs poll [--no-build]         check Discogs orders + sold inventory, mark sales (reads only)
+  Every discogs command that calls the API logs "skipped: no DISCOGS_TOKEN" without a token.
 """
 from __future__ import annotations
 
@@ -64,6 +70,18 @@ def main(argv=None):
     sub.add_parser("build")
     sub.add_parser("instagram")
     sub.add_parser("status")
+    p = sub.add_parser("discogs")
+    dsub = p.add_subparsers(dest="dcmd", required=True)
+    q = dsub.add_parser("match")
+    q.add_argument("--ids", nargs="*")
+    q.add_argument("--rematch", action="store_true", help="re-run records already matched (never approved/skipped ones)")
+    q.add_argument("--limit", type=int)
+    dsub.add_parser("status")
+    dsub.add_parser("plan")
+    q = dsub.add_parser("sync-listings")
+    q.add_argument("--force", action="store_true", help="allow deleting more than 50%% of listings in one run")
+    q = dsub.add_parser("poll")
+    q.add_argument("--no-build", action="store_true")
     a = ap.parse_args(argv)
 
     from . import store
@@ -140,6 +158,8 @@ def main(argv=None):
         from .site import build
         print(json.dumps(build()))
         return 0
+    if a.cmd == "discogs":
+        return _discogs(a)
     if a.cmd == "status":
         from .util import REVIEW_REPORT, load_json
         st = store.read_state()
@@ -147,6 +167,26 @@ def main(argv=None):
         print(json.dumps({"sync_state": {k: v for k, v in st.items() if k != "history"},
                           "review_flag_counts": rep.get("flag_counts")}, indent=2))
         return 0
+
+
+def _discogs(a) -> int:
+    from . import discogs
+    if a.dcmd == "status":
+        ov = discogs.overview()
+        ov.pop("condition_values", None)
+        ov.pop("sleeve_values", None)
+        print(json.dumps(ov, indent=2))
+        return 0
+    if a.dcmd == "match":
+        res = discogs.match_records(ids=set(a.ids) if a.ids else None, rematch=a.rematch, limit=a.limit)
+    elif a.dcmd == "plan":
+        res = discogs.sync_listings(client=discogs.make_client(read_only=True), dry_run=True)
+    elif a.dcmd == "sync-listings":
+        res = discogs.sync_listings(force=a.force)
+    else:
+        res = discogs.poll(rebuild=not a.no_build)
+    print(json.dumps(res, indent=2, default=str))
+    return 0 if res.get("result") in ("ok", "skipped", "dry_run") else 1
 
 
 if __name__ == "__main__":

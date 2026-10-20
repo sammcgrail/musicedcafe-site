@@ -177,6 +177,50 @@ and the OG image, and credited in the footer and on How buying works.
 - **Feature a record:** `{"featured": true}` in its editorial file.
 - After any manual edit: `scripts/mec build` (or Rebuild on `/admin/`).
 
+## 5. Discogs (list there too, catch cross-sales)
+Built and tested against mocks (2026-10-20). The full detail and API citations
+are in `docs/DISCOGS-INTEGRATION.md`.
+
+**Setup for Edwin:**
+1. On discogs.com, fill in **Seller Settings**: payment, shipping policies,
+   ships from US, and terms. Discogs won't put a listing on sale without them.
+2. Settings → Developers → **Generate new token**. Put it in `.env` as
+   `DISCOGS_TOKEN=…`, then restart the admin container
+   (`docker restart musicedcafe-admin`; the code is bind-mounted). After 10:15
+   UTC a restart also runs that day's eBay sync.
+3. Run `scripts/mec discogs match`, or press "Match records to Discogs" on
+   `/admin/`. This is a dry run that only writes `data/discogs/matches.json`,
+   and takes about 6–15 min for 339 records at 1 request a second.
+4. Review on `/admin/` → Discogs: approve, pick another candidate, type a
+   release ID, set a sleeve value, or skip. "Approve all confident" asks for
+   confirmation.
+5. Choose the settings (price rule, offers, comment template, new listings as
+   **Draft**), turn on **List on Discogs** for the records you want, then press
+   **Sync listings now**. Check the drafts on Discogs and publish them there.
+
+**Automatic:**
+- Every 15 min the admin sidecar checks Discogs orders and sold inventory. This
+  is read-only on Discogs.
+- A Discogs sale marks the record sold here (`status_source: "discogs"`, which
+  the eBay sync never undoes), adds an Alert and an **End on eBay** entry, and
+  rebuilds the site so it moves to Sold.
+- If "After each eBay sync, push changes" is on (off by default), each daily
+  eBay sync pushes price and grade changes to Discogs and removes listings for
+  records that ended or sold on eBay. It only removes them after a complete eBay
+  snapshot, and it never touches records that weren't approved and toggled on.
+  With it off, press "Sync listings now".
+
+**Manual:**
+- **Ending the eBay listing after a Discogs sale.** Use the links in End on
+  eBay (Seller Hub → Active → find the item number → End listing). The next
+  complete eBay sync clears the entry. Automating it needs Edwin's eBay OAuth
+  consent for the Trading API `EndFixedPriceItem`; the doc lists the exact
+  steps.
+- Publishing drafts on Discogs.
+- Picking a sleeve value for records without a sleeve grade.
+- "Still for sale?" if a Discogs order is cancelled. It works only when eBay
+  still shows quantity > 0.
+
 ## Ops notes (sebland)
 - Containers: `musicedcafe-web` (nginx, 20085) and `musicedcafe-admin`
   (20086), both with `restart: unless-stopped`, from `docker compose up -d --build`.

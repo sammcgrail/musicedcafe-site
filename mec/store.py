@@ -153,6 +153,11 @@ def apply_sales(cs: ChangeSet, sales: list[dict], source: str) -> dict:
         rec["raw"][source] = s["raw"]
         if s.get("title"):
             rec["title"] = s["title"]
+        if rec.get("discogs_sale"):
+            # also sold on Discogs: keep the Discogs sale as the status source
+            rec["discogs_sale"].setdefault("ebay_sale_reported_at", cs.ts)
+            cs.touch(iid)
+            continue
         last_sale = rec["sales"][-1]
         rec["sold_at"] = last_sale.get("date")
         active_later = (rec.get("status") == "active" and rec.get("last_seen_active_at")
@@ -186,10 +191,20 @@ def apply_active_snapshot(cs: ChangeSet, items: list[dict], source: str, complet
         rec["raw"][source] = it["raw"]
         if it.get("title"):
             rec["title"] = it["title"]
+        qty = it.get("quantity")
+        ds = rec.get("discogs_sale")
+        if ds and not ds.get("relist_confirmed_at"):
+            # Sold on Discogs (mec/discogs.py). eBay still listing it means Edwin
+            # has not ended it there yet: note that, but never flip it back to
+            # active. Only his explicit relist confirmation can (discogs.confirm_relist).
+            ds["ebay_seen_active_at"], ds["ebay_quantity"] = cs.ts, qty
+            if it.get("listing"):
+                rec["listing"] = it["listing"]
+            cs.touch(iid)
+            continue
         if it.get("price") is not None:
             rec["price"] = {"value": it["price"], "currency": it.get("currency") or "USD",
                             "source": f"{source}: current price"}
-        qty = it.get("quantity")
         rec["quantity_available"] = qty
         if it.get("listing"):
             rec["listing"] = it["listing"]
@@ -201,6 +216,11 @@ def apply_active_snapshot(cs: ChangeSet, items: list[dict], source: str, complet
         cs.touch(iid)
     ended = []
     if complete:
+        for iid, rec in cs.items.items():
+            ds = rec.get("discogs_sale")
+            if ds and iid not in seen and not ds.get("ebay_listing_gone_at"):
+                ds["ebay_listing_gone_at"] = cs.ts   # Edwin ended it on eBay: clears "End on eBay"
+                cs.touch(iid)
         active_before = [i for i, r in cs.items.items()
                          if r.get("status") == "active" and i not in seen]
         n_active = sum(1 for r in cs.items.values() if r.get("status") == "active")

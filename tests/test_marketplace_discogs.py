@@ -922,5 +922,437 @@ class Admin(Base):
         self.assertIs(discogs.make_client, real)
 
 
+# ----------------------------------------------------------------------------- quick pick
+
+def entry(r, cands, status="review", **kw):
+    sc = sorted((discogs.score_candidate(r, c) for c in cands), key=lambda c: -c["score"])
+    e = {"status": status, "auto_status": status, "chosen_release_id": sc[0]["release_id"] if sc else None,
+         "candidates": sc, "fingerprint": discogs.fingerprint(r), "approved_release_id": None,
+         "approved_by": None, "approved_at": None}
+    e.update(kw)
+    return e
+
+
+def comm(have, **kw):
+    c = cand(**kw)
+    c["community"] = {"have": have, "want": 1}
+    return c
+
+
+class QuickPick(Base):
+    def pick(self, r, cands):
+        return discogs.quick_order(r, [discogs.score_candidate(r, c) for c in cands])
+
+    def test_country_filter_beats_haves(self):
+        q = self.pick(rec(), [comm(5, rid=1, country="US"), comm(900, rid=2, country="UK")])
+        self.assertEqual(q["chosen"], 1)
+        self.assertIn("country United States: 1 of 2", q["steps"][0])
+
+    def test_country_filter_skipped_when_nothing_from_that_country(self):
+        q = self.pick(rec(), [comm(5, rid=1, country="UK"), comm(9, rid=2, country="Canada")])
+        self.assertEqual(q["chosen"], 2)
+        self.assertIn("no pressing from the record's country", q["warnings"])
+
+    def test_exact_format_before_era(self):
+        # an older 12" (no LP descriptor) loses to the LP: format is step (b), era (c)
+        q = self.pick(rec(release_year=None), [comm(50, rid=1, fmt=("Vinyl", '12"', '33 ⅓ RPM'), year="1975"),
+                                               comm(1, rid=2, fmt=("Vinyl", "LP", "Album"), year="1980")])
+        self.assertEqual(q["chosen"], 2)
+        # a 7" record: the 45 RPM 7" wins over a 7" at 33 (speed contradiction)
+        r7 = rec(format_type="Single", record_size='7"', speed="45 RPM", release_year=None)
+        q = self.pick(r7, [comm(99, rid=3, fmt=("Vinyl", '7"', "33 ⅓ RPM")), comm(1, rid=4, fmt=("Vinyl", '7"', "45 RPM"))])
+        self.assertEqual(q["chosen"], 4)
+
+    def test_original_era(self):
+        cands = [comm(900, rid=1, year="1976"), comm(5, rid=2, year="1979"), comm(800, rid=3, year="1985"),
+                 comm(999, rid=4, year="")]
+        # release year 1978, no pressing dated 1978: the earliest at or after it
+        q = self.pick(rec(release_year="1978"), cands)
+        self.assertEqual(q["chosen"], 2)
+        self.assertTrue(any("earliest at or after 1978: 1979" in s for s in q["steps"]))
+        # release year known and dated exactly: the year filter (a) picks it
+        q = self.pick(rec(release_year="1985"), cands)
+        self.assertEqual(q["chosen"], 3)
+        # release year unknown: the earliest overall
+        q = self.pick(rec(release_year=None), cands)
+        self.assertEqual(q["chosen"], 1)
+        # every pressing is older than the release year: the earliest overall
+        q = self.pick(rec(release_year="1990"), cands)
+        self.assertEqual(q["chosen"], 1)
+
+    def test_have_tie_break(self):
+        q = self.pick(rec(), [comm(10, rid=1), comm(500, rid=2), comm(70, rid=3)])
+        self.assertEqual((q["chosen"], q["tie_break"], q["ranked"]), (2, "have", [2, 3, 1]))
+
+    def test_have_from_release_cache_and_fallback(self):
+        cands = [cand(5), cand(6)]
+        q = self.pick(rec(), cands)
+        self.assertEqual(q["chosen"], 5)                             # no haves: score, then lowest id
+        self.assertTrue(q["tie_break"].startswith("have missing"))
+        self.assertEqual(sorted(q["missing_have"]), [5, 6])
+        discogs.write_json(discogs.release_path(6), {"id": 6, "community": {"have": 40}})
+        discogs.write_json(discogs.release_path(5), {"id": 5, "community": {"have": 3}})
+        q = self.pick(rec(), cands)
+        self.assertEqual((q["chosen"], q["tie_break"]), (6, "have"))
+
+    def test_title_mismatch_preferred_away_and_flagged(self):
+        q = self.pick(rec(), [comm(900, rid=1, title="Carpenters - Something Else"), comm(1, rid=2)])
+        self.assertEqual(q["chosen"], 2)
+        q = self.pick(rec(album="Lou Rawls Live!", artist="Lou Rawls"), [comm(1, rid=3, title="Lou Rawls - Live!")])
+        self.assertEqual(q["warnings"], [])
+        q = self.pick(rec(), [comm(1, rid=4, title="Carpenters - Horizon")])
+        self.assertIn(discogs.TITLE_WARNING, q["warnings"])
+
+    def test_no_shared_catno_is_excluded(self):
+        self.assertIsNone(self.pick(rec(), [cand(1, catno="OTHER-1")]))
+
+    def test_apply_stores_quick_and_never_lists_by_itself(self):
+        self.ebay_ok()
+        r = rec("100000000001")
+        discogs.save_matches({
+            "100000000001": entry(r, [comm(10, rid=1), comm(50, rid=2)]),
+            "100000000002": entry(r, [], status="no_match"),
+            "100000000003": entry(r, [cand(7)], status="confident"),                      # US 1977: exact
+            "100000000004": entry(rec(release_year="1980"), [cand(8)], status="confident"),  # year differs
+        })
+        dry = discogs.quickpick()
+        self.assertEqual((dry["result"], dry["would_pick"]), ("dry_run", 1))
+        self.assertEqual(discogs.load_matches()["100000000001"]["status"], "review")   # dry run wrote nothing
+        with self.assertRaises(ValueError):
+            discogs.quickpick(apply=True, expected=5)
+        res = discogs.quickpick(apply=True, expected=1)
+        self.assertEqual(res["picked"], 1)
+        m = discogs.load_matches()
+        q = m["100000000001"]
+        self.assertEqual((q["status"], q["chosen_release_id"], q["approved_release_id"]), ("quick", 2, 2))
+        self.assertIs(q["pressing_verified"], False)
+        self.assertEqual(q["approved_by"], "edwin-quick-rule")
+        self.assertTrue(q["approved_at"] and q["quick_reason"])
+        self.assertEqual(m["100000000002"]["status"], "no_match")
+        self.assertNotIn("pressing_verified", m["100000000002"])
+        self.assertEqual(m["100000000003"]["status"], "confident")
+        self.assertIs(m["100000000003"]["pressing_verified"], True)
+        self.assertIs(m["100000000004"]["pressing_verified"], False)
+        # still nothing listed: the per-record toggle is required
+        discogs.sync_listings([r], client(self.fake))
+        self.assertEqual(self.fake.writes(), [])
+        discogs.set_listing_toggle("100000000001", True, by="Edwin")
+        discogs.sync_listings([r], client(self.fake))
+        body = [c for c in self.fake.calls if c[0] == "POST"][0][3]
+        self.assertEqual((body["release_id"], body["status"]), (2, "Draft"))
+        self.assertTrue(body["comments"].endswith(discogs.UNVERIFIED_NOTE))
+
+    def test_rematch_never_overwrites_quick(self):
+        r = rec()
+        discogs.save_matches({r["id"]: entry(r, [comm(1, rid=1), comm(2, rid=2)])})
+        discogs.quickpick(apply=True)
+        self.fake.search_fn = lambda q: [cand(77)]
+        discogs.match_records([r], client(self.fake, read_only=True), rematch=True)
+        self.assertEqual(discogs.load_matches()[r["id"]]["status"], "quick")
+
+    def test_enrich_fetches_only_tied_top3_once(self):
+        r = rec()
+        discogs.save_matches({"1": entry(r, [cand(i) for i in (1, 2, 3, 4)]),
+                              "2": entry(r, [cand(9)])})   # single pressing: nothing to fetch
+        for i in (1, 2, 3, 4, 9):
+            self.fake.releases[i] = {"id": i, "title": "Passage", "community": {"have": i * 10, "want": 1},
+                                     "identifiers": [{"type": "Matrix / Runout", "value": f"SP-4658-A{i}"}]}
+        c = client(self.fake, read_only=True)
+        res = discogs.enrich_releases(c, top=3)
+        self.assertEqual((res["fetched"], res["planned"]), (3, 3))
+        self.assertEqual(sorted(int(p.rsplit("/", 1)[1]) for m, p, *_ in self.fake.calls), [1, 2, 3])
+        self.assertEqual(discogs.enrich_releases(c, top=3)["planned"], 0)     # cached
+        self.assertEqual(self.fake.writes(), [])
+        self.assertEqual(discogs.quickpick()["tie_breaks"], {"have (known for 3 of 4 tied)": 1, "none needed": 1})
+
+
+class PressingComment(Base):
+    def test_unverified_and_verified_lines(self):
+        r, settings = rec(), discogs.load_settings()
+        cond = discogs.conditions_for(r)
+        text = discogs.render_comment(r, cond, settings, {"pressing_verified": False})
+        self.assertTrue(text.endswith("\nPressing variant not verified; see photos on the listing page."))
+        m = {"pressing_verified": True, "matrix": {"side_a": "M7-907RA1", "side_b": "M7-907RB1 MASTERED BY CAPITOL"}}
+        text = discogs.render_comment(r, cond, settings, m)
+        self.assertTrue(text.endswith("\nMatrix/Runout: A: M7-907RA1 / B: M7-907RB1 MASTERED BY CAPITOL"))
+        self.assertNotIn("not verified", text)
+        # verified by exact country+year+catno, no runout typed: no line at all
+        text = discogs.render_comment(r, cond, settings, {"pressing_verified": True})
+        self.assertNotIn("Matrix", text)
+        self.assertNotIn("not verified", text)
+
+    def test_pressing_line_survives_the_length_cap(self):
+        r = rec(condition_notes="x " * 2000)
+        s = dict(discogs.load_settings(), comment_template="{notes}{notes}{notes}")
+        text = discogs.render_comment(r, discogs.conditions_for(r), s, None)
+        self.assertLessEqual(len(text), discogs.COMMENT_MAX)
+        self.assertTrue(text.endswith(discogs.UNVERIFIED_NOTE))
+
+
+# ----------------------------------------------------------------------------- verify pressing
+
+def release(rid, *idents, country="US", year=1977):
+    return {"id": rid, "title": "Diana", "year": year, "country": country, "notes": "Pressed at Keel.",
+            "labels": [{"name": "Motown", "catno": "M8-936M1"}], "community": {"have": 100, "want": 5},
+            "identifiers": [{"type": t, "description": d, "value": v} for t, d, v in idents]}
+
+
+R1 = release(1, ("Matrix / Runout", "Side A", "M7-907RA1 MASTERED BY CAPITOL"),
+             ("Matrix / Runout", "Side B", "M7-907RB1 MASTERED BY CAPITOL"), ("Barcode", "", "M7-907RA2"))
+R2 = release(2, ("Matrix / Runout", "Side A", "M7 - 907 - RA2 STERLING"),
+             ("Matrix / Runout", "Side B", "M7 - 907 - RB2 STERLING"),
+             ("Lacquer Cut Code", "", "△ 17721"))
+R3 = release(3, ("Barcode", "", "0 7464-12345"))
+
+
+class VerifyMatching(Base):
+    def test_normalisation(self):
+        n = discogs.norm_matrix
+        self.assertEqual(n("M7-907RA1"), n("m7 907 ra1"))
+        self.assertEqual(n("M7-907RA1"), n("M7–907–RA1"))           # en dashes
+        self.assertEqual(n("△ 17721"), n("Δ-17721"))                 # △ and Δ
+        self.assertEqual(n("▽17721"), n("delta 17721"))
+        self.assertEqual(n("Mastered by Capitol"), "MASTEREDBYCAPITOL")
+
+    def test_similarity(self):
+        sim = discogs.runout_similarity
+        self.assertEqual(sim("m7-907-ra1", "M7-907RA1"), 1.0)
+        self.assertGreaterEqual(sim("STERLING", "M7 - 907 - RA2 STERLING"), 0.6)
+        self.assertGreater(sim("M7-907RA1", "M7-907RA1 MASTERED BY CAPITOL"), 0.85)
+        self.assertGreater(sim("MASTERED BY CAPITOL", "M7-907RA1 MASTERED BY CAPITOL"), 0.85)
+        self.assertEqual(sim("M7-907RA1", "M7-907RA2"), 0.75)                 # one character off
+        self.assertLess(sim("M7-907RA1", "M7-907RA2"), sim("M7-907RA1", "M7907RA1"))
+        self.assertEqual(sim("", "M7-907RA1"), 0.0)
+
+    def test_auto_match_picks_the_right_pressing(self):
+        for r in (R1, R2, R3):
+            discogs.write_json(discogs.release_path(r["id"]), discogs.trim_release(r))
+        res = discogs.auto_match({"side_a": "m7907ra1", "side_b": "M7-907-RB1 mastered by capitol"}, [1, 2, 3])
+        self.assertEqual((res["best"], res["clear"]), (1, True))
+        self.assertGreaterEqual(res["ranked"][0]["score"], 90)
+        self.assertLess(res["ranked"][1]["score"], 40)
+        self.assertEqual(res["ranked"][0]["hits"]["side_a"]["description"], "Side A")
+        res = discogs.auto_match({"side_a": "M7 907 RA2 sterling", "lacquer": "▽17721"}, [1, 2, 3])
+        self.assertEqual(res["best"], 2)
+        res = discogs.auto_match({"side_a": "STERLING"}, [1, 2, 3])
+        self.assertEqual(res["best"], 2)
+        # the barcode on R1 / R3 is never compared with a runout
+        self.assertEqual(discogs.score_runout({"side_a": "M7-907RA2"}, R3)["score"], 0)
+        self.assertIn("no runout", discogs.score_runout({"side_a": "x"}, R3)["note"])
+        # nothing close: no best
+        self.assertIsNone(discogs.auto_match({"side_a": "ZZZ-999"}, [1, 2])["best"])
+
+
+class VerifyConfirm(Base):
+    IID = "100000000001"
+
+    def listed_quick(self):
+        """A quick-picked record (release 1), listed on Discogs as a Draft (listing 9001)."""
+        self.ebay_ok()
+        r = rec(self.IID)
+        discogs.save_matches({self.IID: entry(r, [comm(10, rid=1), comm(5, rid=2)])})
+        discogs.quickpick(apply=True)
+        discogs.set_listing_toggle(self.IID, True, by="Edwin")
+        discogs.sync_listings([r], client(self.fake))
+        self.assertEqual(discogs.load_listings()[self.IID]["listing_id"], 9001)
+        return r
+
+    def test_confirm_edits_listing_release_and_comment(self):
+        r = self.listed_quick()
+        self.fake.listings[9001]["status"] = "For Sale"          # Edwin published it
+        res = discogs.confirm_pressing(self.IID, 2, {"side_a": "M7-907RA2", "side_b": "M7-907RB2"}, by="Edwin")
+        self.assertTrue(res["listing_live"])
+        m = discogs.load_matches()[self.IID]
+        self.assertEqual((m["status"], m["chosen_release_id"], m["pressing_verified"]), ("approved", 2, True))
+        self.assertEqual(m["matrix"]["side_a"], "M7-907RA2")
+        self.assertTrue(m["matrix"]["verified_at"])
+        out = discogs.sync_listings([r], client(self.fake), only_ids={self.IID})
+        self.assertEqual(out["done"], {"update": 1})
+        edit = [c for c in self.fake.calls if c[0] == "POST" and c[1] == "/marketplace/listings/9001"][-1][3]
+        self.assertEqual(edit["release_id"], 2)
+        self.assertEqual(edit["status"], "For Sale")              # his status is kept
+        self.assertTrue(edit["comments"].endswith("Matrix/Runout: A: M7-907RA2 / B: M7-907RB2"))
+        self.assertNotIn("DELETE", [w[0] for w in self.fake.writes()])
+
+    def test_recreate_when_release_edit_is_refused(self):
+        r = self.listed_quick()
+        discogs.confirm_pressing(self.IID, 2, {"side_a": "M7-907RA2"}, by="Edwin")
+        self.fake.fail[("POST", "/marketplace/listings/9001")] = [422]
+        out = discogs.sync_listings([r], client(self.fake))
+        self.assertEqual(out["done"], {"recreate": 1})
+        self.assertIn(("DELETE", "/marketplace/listings/9001"), self.fake.writes())
+        L = discogs.load_listings()[self.IID]
+        self.assertEqual((L["listing_id"], L["status"], L["recreated_from"]), (9002, "Draft", 9001))
+        self.assertEqual(self.fake.listings[9002]["release_id"], 2)
+        self.assertEqual(self.fake.listings[9002]["status"], "Draft")
+        n = len(self.fake.writes())
+        self.assertEqual(discogs.sync_listings([r], client(self.fake))["done"], {})   # idempotent
+        self.assertEqual(len(self.fake.writes()), n)
+
+    def test_recreate_crash_between_delete_and_create_finishes_next_run(self):
+        r = self.listed_quick()
+        discogs.confirm_pressing(self.IID, 2, {"side_a": "M7-907RA2"}, by="Edwin")
+        self.fake.fail[("POST", "/marketplace/listings/9001")] = [422]
+        self.fake.fail[("POST", "/marketplace/listings")] = [500]    # the create fails after the delete
+        out = discogs.sync_listings([r], client(self.fake))
+        self.assertEqual(out["result"], "partial")
+        self.assertEqual(discogs.load_listings()[self.IID]["status"], "recreate_pending")
+        self.assertNotIn(9001, self.fake.listings)
+        out = discogs.sync_listings([r], client(self.fake))
+        self.assertEqual(out["done"], {"create": 1})
+        creates = [w for w in self.fake.writes() if w == ("POST", "/marketplace/listings")]
+        self.assertEqual(len(creates), 3)                            # first listing, the failed one, the retry
+        self.assertEqual(len(self.fake.listings), 1)
+        L = discogs.load_listings()[self.IID]
+        self.assertEqual(L["status"], "Draft")
+        self.assertEqual(self.fake.listings[L["listing_id"]]["release_id"], 2)
+
+    def test_confirm_rules_and_skip(self):
+        self.listed_quick()
+        with self.assertRaises(ValueError):
+            discogs.confirm_pressing(self.IID, 999, {"side_a": "x"})             # not a candidate
+        with self.assertRaises(ValueError):
+            discogs.confirm_pressing(self.IID, 2, {})                            # nothing typed
+        m = discogs.skip_pressing(self.IID, by="Edwin")
+        self.assertTrue(m["verify_skipped_at"])
+        self.assertEqual(m["status"], "quick")
+        self.assertFalse(m["pressing_verified"])
+
+    def test_queue_order_progress_and_search(self):
+        recs = [rec("100000000001", price="10.00"), rec("100000000002", price="99.00"),
+                rec("100000000003", price="50.00", artist="Diana Ross", album="Diana"),
+                rec("100000000004", price="70.00")]
+        discogs.save_matches({x["id"]: entry(x, [cand(1), cand(2)]) for x in recs})
+        discogs.quickpick(apply=True)
+        discogs.confirm_pressing("100000000004", 1, {"side_a": "A1"})
+        discogs.skip_pressing("100000000002")
+        q = discogs.verify_queue(recs)
+        self.assertEqual((q["verified"], q["total"]), (1, 4))
+        self.assertEqual([x["id"] for x in q["rows"]], ["100000000003", "100000000001", "100000000002"])
+        self.assertEqual([x["id"] for x in discogs.verify_queue(recs, q="diana")["rows"]], ["100000000003"])
+        self.assertEqual([x["id"] for x in discogs.verify_queue(recs, q="00000004")["rows"]], ["100000000004"])
+        self.assertEqual(len(discogs.verify_queue(recs, show="all")["rows"]), 4)
+
+    def test_site_shows_matrix_only_when_verified(self):
+        from types import SimpleNamespace
+        from mec import site
+        ns = SimpleNamespace(pressings={"1": "A: M7-907RA1 / B: M7-907RB1"}, format_label=lambda r: "LP")
+        row = lambda iid: site.Site.detail_rows(ns, {"id": iid, "provenance": {}, "genres": [], "country": "US"})
+        self.assertIn("<dt>Matrix/Runout</dt><dd>A: M7-907RA1 / B: M7-907RB1", row("1"))
+        self.assertNotIn("Matrix", row("2"))
+        discogs.save_matches({"1": {"pressing_verified": True, "matrix": {"side_a": "X1"}},
+                              "2": {"pressing_verified": False, "matrix": {"side_a": "Y1"}},
+                              "3": {"pressing_verified": True}})
+        self.assertEqual(site.Site._load_pressings(None), {"1": "A: X1"})
+
+
+class BulkEnable(Base):
+    def test_enable_quick_and_confident_with_grades_only(self):
+        self.ebay_ok()
+        recs = [rec("100000000001"), rec("100000000002", sleeve_grade=None),
+                rec("100000000003"), rec("100000000004", media_grade=None)]
+        m = {x["id"]: entry(x, [comm(1, rid=1), comm(2, rid=2)]) for x in recs[:2]}
+        m["100000000003"] = entry(recs[2], [cand(5)], status="confident")
+        m["100000000004"] = entry(recs[3], [cand(6)], status="confident")
+        discogs.save_matches(m)
+        discogs.quickpick(apply=True)
+        pv = discogs.enable_preview(recs)
+        self.assertEqual(sorted(pv["eligible"]), ["100000000001", "100000000003"])
+        self.assertEqual(sorted(x["id"] for x in pv["needs_grade"]), ["100000000002", "100000000004"])
+        with self.assertRaises(ValueError):
+            discogs.enable_quick_confident(recs, expected=4)
+        self.assertEqual(discogs.enable_quick_confident(recs, expected=2, by="Edwin")["turned_on"], 2)
+        mm = discogs.load_matches()
+        self.assertEqual(mm["100000000003"]["status"], "approved")
+        self.assertTrue(mm["100000000003"]["list_on_discogs"] and mm["100000000001"]["list_on_discogs"])
+        self.assertFalse(mm["100000000002"].get("list_on_discogs"))
+        out = discogs.sync_listings(recs, client(self.fake))
+        self.assertEqual(out["done"], {"create": 2})
+        self.assertEqual({b["status"] for m_, p, q, b, h in self.fake.calls if m_ == "POST"}, {"Draft"})
+
+
+class VerifyAdmin(Base):
+    @classmethod
+    def setUpClass(cls):
+        cls.srv = load_server()
+        cls.httpd = ThreadingHTTPServer(("127.0.0.1", 0), cls.srv.H)
+        cls.base = f"http://127.0.0.1:{cls.httpd.server_address[1]}"
+        threading.Thread(target=cls.httpd.serve_forever, daemon=True).start()
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.httpd.shutdown()
+
+    call = Admin.call
+
+    def setUp(self):
+        super().setUp()
+        self.recs = [rec("100000000001", price="40.00", ebay_title="Secret Title Not In Page")]
+        p = mock.patch.object(self.srv, "records_cached", lambda ttl=20.0: self.recs)
+        p.start()
+        self.addCleanup(p.stop)
+        discogs.save_matches({"100000000001": entry(self.recs[0], [comm(1, rid=1), comm(2, rid=2)])})
+
+    def test_auth_required_on_verify_and_apis(self):
+        with urllib.request.urlopen(self.base + "/admin/verify", timeout=10) as r:
+            page = r.read().decode()
+        self.assertIn('id="token"', page)                              # static shell: the same sign-in as /admin/
+        self.assertNotIn("Secret Title", page)                         # holds no record data
+        self.assertNotIn("test-admin-token", page)
+        with mock.patch.object(self.srv.time, "sleep"):
+            for path, body in [("/admin/api/discogs/verify/queue", None),
+                               ("/admin/api/discogs/verify/record?id=100000000001", None),
+                               ("/admin/api/discogs/verify/release?item=100000000001&rid=1", None),
+                               ("/admin/api/discogs/enable-preview", None),
+                               ("/admin/api/discogs/verify/match", {"id": "100000000001", "side_a": "x"}),
+                               ("/admin/api/discogs/verify/confirm", {"id": "100000000001", "release_id": 1, "side_a": "x"}),
+                               ("/admin/api/discogs/verify/skip", {"id": "100000000001"}),
+                               ("/admin/api/discogs/quickpick", {"apply": True, "expected": 1}),
+                               ("/admin/api/discogs/enable-quick-confident", {"expected": 1})]:
+                for tok in ("wrong", ""):
+                    code, j = self.call(path, body, token=tok)
+                    self.assertEqual(code, 401, (path, tok))
+        self.assertEqual(discogs.load_matches()["100000000001"]["status"], "review")   # nothing changed
+
+    def test_verify_flow_over_http(self):
+        code, j = self.call("/admin/api/discogs/quickpick", {"apply": True})
+        self.assertEqual(code, 400)                                    # apply needs the confirmed count
+        code, j = self.call("/admin/api/discogs/quickpick", {})
+        self.assertEqual((code, j["would_pick"]), (200, 1))
+        code, j = self.call("/admin/api/discogs/quickpick", {"apply": True, "expected": 1})
+        self.assertEqual((code, j["picked"]), (200, 1))
+        code, j = self.call("/admin/api/discogs/verify/queue")
+        self.assertEqual((code, j["verified"], j["total"], j["rows"][0]["id"]), (200, 0, 1, "100000000001"))
+        code, j = self.call("/admin/api/discogs/verify/record?id=100000000001")
+        self.assertEqual(code, 200)
+        self.assertEqual([c["release_id"] for c in j["candidates"]][0], 2)   # the current pick first
+        self.assertFalse(any(c["fetched"] for c in j["candidates"]))
+        # lazy release fetch: refused for a release that isn't a candidate, cached after one GET
+        code, _ = self.call("/admin/api/discogs/verify/release?item=100000000001&rid=55")
+        self.assertEqual(code, 400)
+        code, j = self.call("/admin/api/discogs/verify/release?item=100000000001&rid=1")
+        self.assertEqual((code, j["fetched"]), (200, False))           # no token: cache only
+        self.fake.releases[1] = R1
+        with mock.patch.object(discogs, "make_client", lambda read_only=False: client(self.fake, read_only=True)):
+            code, j = self.call("/admin/api/discogs/verify/release?item=100000000001&rid=1")
+            self.assertEqual((code, j["fetched"], j["identifiers"][0]["value"]), (200, True, "M7-907RA1 MASTERED BY CAPITOL"))
+            self.assertEqual(len(j["identifiers"]), 2)                 # the barcode is left out
+            self.call("/admin/api/discogs/verify/release?item=100000000001&rid=1")
+        self.assertEqual([p for m, p, *_ in self.fake.calls], ["/releases/1"])   # second call came from the cache
+        self.assertTrue(discogs.release_path(1).exists())
+        code, j = self.call("/admin/api/discogs/verify/match", {"id": "100000000001", "side_a": "m7 907 ra1"})
+        self.assertEqual((code, j["best"]), (200, 1))
+        code, j = self.call("/admin/api/discogs/verify/confirm", {"id": "100000000001", "release_id": 1,
+                                                                 "side_a": "M7-907RA1", "score": 100, "by": "Edwin"})
+        self.assertEqual(code, 200)
+        self.assertFalse(j["listing_live"])
+        m = discogs.load_matches()["100000000001"]
+        self.assertEqual((m["chosen_release_id"], m["pressing_verified"], m["matrix"]["verified_by"]), (1, True, "Edwin"))
+        code, j = self.call("/admin/api/discogs/verify/queue")
+        self.assertEqual((j["verified"], j["total"], j["rows"]), (1, 1, []))
+        code, j = self.call("/admin/api/discogs/verify/skip", {"id": "nope"})
+        self.assertEqual(code, 400)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -198,6 +198,28 @@ are in `docs/DISCOGS-INTEGRATION.md`.
    **Draft**), turn on **List on Discogs** for the records you want, then press
    **Sync listings now**. Check the drafts on Discogs and publish them there.
 
+**Quick listing (Edwin's decision, 2026-10-20):** list every record on its most
+likely release now, and verify each pressing from the runout over time.
+1. Optional but better: `scripts/mec discogs match --rematch` (about 6–15 min).
+   This refreshes the candidates with every pressing that shares the catno and
+   the Discogs "have" counts. The first run kept only the top 5 and no haves.
+2. `scripts/mec discogs quickpick` (report, no API call), then
+   `scripts/mec discogs quickpick --apply`. Or use "Quick-pick likely releases"
+   on `/admin/`. Records become `quick`, with `pressing_verified: false`.
+3. If the report says ties lack "have" counts: `scripts/mec discogs enrich`
+   (GET /releases for the top 3 tied pressings), then `quickpick --apply` again.
+4. `scripts/mec discogs enable` (preview and needs-grade queue), then
+   `scripts/mec discogs enable --expected N --by Edwin`. Or use "Enable Discogs
+   for all quick + confident records that have a vinyl grade". Records with no
+   usable vinyl or sleeve grade stay out, listed under Needs grade.
+5. `scripts/mec discogs sync-listings`. Listings arrive as **Drafts** whose
+   comment ends "Pressing variant not verified; see photos on the listing page."
+6. Edwin works through **`/admin/verify`** on his phone, highest price first.
+   He types the side A/B runout, the best-matching Discogs pressing lights up,
+   and he taps Confirm (or "Can't read"). A confirm updates the Discogs listing's
+   release and comment ("Matrix/Runout: A: … / B: …"), and the record page shows
+   Matrix/Runout after the next rebuild.
+
 **Automatic:**
 - Every 15 min the admin sidecar checks Discogs orders and sold inventory. This
   is read-only on Discogs.
@@ -218,6 +240,7 @@ are in `docs/DISCOGS-INTEGRATION.md`.
   steps.
 - Publishing drafts on Discogs.
 - Picking a sleeve value for records without a sleeve grade.
+- Verifying pressings (`/admin/verify`). Until then, a listing says the variant isn't verified.
 - "Still for sale?" if a Discogs order is cancelled. It works only when eBay
   still shows quantity > 0.
 

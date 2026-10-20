@@ -68,9 +68,17 @@ LISTINGS = DIR / "listings.json"
 SETTINGS = DIR / "settings.json"
 STATE = DIR / "state.json"
 ALERTS = DIR / "alerts.json"
+RELEASES_DIR = DIR / "releases"   # cached GET /releases/{id} (identifiers, community counts)
+# statuses a human (or a rule a human approved) decided: a match re-run never overwrites them
+DECIDED = ("approved", "skipped", "quick")
+QUICK_RULE_BY = "edwin-quick-rule"
+TITLE_WARNING = "no pressing with this catalog number has the eBay title (check the catno or the title)"
+UNVERIFIED_NOTE = "Pressing variant not verified; see photos on the listing page."
 
 _urlopen = urllib.request.urlopen   # tests replace this; nothing else should
 _MLOCK = threading.RLock()          # serialises read-modify-write of matches.json across admin threads
+_PACE_LOCK = threading.Lock()       # one request budget for every make_client() client in this process
+_PACE = {"last": None}
 
 # ----------------------------------------------------------------------------- vocab
 # Verified against https://www.discogs.com/developers (Marketplace > New Listing),
@@ -122,7 +130,7 @@ def get_token() -> str | None:
 
 def make_client(read_only: bool = False) -> "Client | None":
     tok = get_token()
-    return Client(tok, read_only=read_only) if tok else None
+    return Client(tok, read_only=read_only, shared_pace=True) if tok else None
 
 
 class Client:
@@ -131,7 +139,8 @@ class Client:
     The token is only ever put in the Authorization header, never logged."""
 
     def __init__(self, token: str, *, read_only: bool = False, urlopen=None, sleep=time.sleep,
-                 clock=time.monotonic, min_interval: float = MIN_INTERVAL, retries: int = 5):
+                 clock=time.monotonic, min_interval: float = MIN_INTERVAL, retries: int = 5,
+                 shared_pace: bool = False):
         if not token:
             raise DiscogsError(SKIP_REASON)
         self._token = token
@@ -140,6 +149,7 @@ class Client:
         self.sleep, self.clock = sleep, clock
         self.min_interval, self.retries = min_interval, retries
         self._last = None
+        self.shared_pace = shared_pace   # True: share one 1 req/s budget with other clients (admin threads)
         self.remaining = None
         self.calls = 0
 
@@ -147,6 +157,14 @@ class Client:
         return f"<discogs.Client read_only={self.read_only}>"
 
     def _throttle(self):
+        if self.shared_pace:   # e.g. a verify-page release fetch while a match run is going
+            with _PACE_LOCK:
+                if _PACE["last"] is not None:
+                    wait = _PACE["last"] + self.min_interval - self.clock()
+                    if wait > 0:
+                        self.sleep(wait)
+                _PACE["last"] = self.clock()
+            return
         if self._last is not None:
             wait = self._last + self.min_interval - self.clock()
             if wait > 0:
@@ -269,15 +287,18 @@ def save_matches(m: dict):
     write_json(MATCHES, dict(sorted(m.items())))
 
 
+KEEP_ON_REMATCH = ("list_on_discogs", "sleeve_condition", "history", "verify_skipped_at", "verify_skipped_by")
+
+
 def _merge_match_results(changed: dict, flags: dict):
     """Write a match run's results without clobbering decisions made meanwhile."""
     with _MLOCK:
         cur = load_matches()
         for k, v in changed.items():
             c = cur.get(k) or {}
-            if c.get("status") in ("approved", "skipped"):
+            if c.get("status") in DECIDED:
                 continue          # a human decided while we were searching
-            for keep in ("list_on_discogs", "sleeve_condition", "history"):
+            for keep in KEEP_ON_REMATCH:
                 if keep in c:
                     v[keep] = c[keep]
             cur[k] = v
@@ -548,6 +569,8 @@ def score_candidate(rec: dict, c: dict) -> dict:
     return {"release_id": rid, "title": t, "label": c.get("label") or [], "catno": c.get("catno"),
             "format": c.get("format") or [], "year": cy, "country": c.get("country"),
             "thumb": c.get("thumb") or c.get("cover_image") or "",
+            "community": {k: (c.get("community") or {}).get(k) for k in ("have", "want")
+                          if (c.get("community") or {}).get(k) is not None},
             "url": (SITE + uri) if uri.startswith("/") else f"{SITE}/release/{rid}",
             "score": score, "signals": sig}
 
@@ -631,6 +654,22 @@ def find_candidates(rec: dict, client: Client) -> tuple[list[dict], bool, list[d
     return scored, truncated, queries
 
 
+STORE_TOP, STORE_GROUP = 5, 40
+
+
+def stored_candidates(cands: list[dict]) -> list[dict]:
+    """The top 5 by score, plus every pressing that shares the catalog number (up
+    to 40), so the quick rule and the verify page see all the pressings, not just
+    the 5 best-scoring ones."""
+    out, seen = [], set()
+    group = [c for c in cands if c["signals"]["catno"] and c["signals"]["format"] != "inconsistent"]
+    for c in cands[:STORE_TOP] + group[:STORE_GROUP]:
+        if c["release_id"] not in seen:
+            seen.add(c["release_id"])
+            out.append(c)
+    return sorted(out, key=lambda c: -c["score"])
+
+
 def match_records(records: list[dict] | None = None, client: Client | None = None, ids=None,
                   rematch: bool = False, limit: int | None = None, log=print) -> dict:
     """Dry run: fills data/discogs/matches.json. Never lists, edits or deletes.
@@ -652,7 +691,7 @@ def match_records(records: list[dict] | None = None, client: Client | None = Non
         iid = rec["id"]
         cur = matches.get(iid) or {}
         fp = fingerprint(rec)
-        if cur.get("status") in ("approved", "skipped"):
+        if cur.get("status") in DECIDED or cur.get("pressing_verified"):
             if cur.get("fingerprint") != fp and not cur.get("record_changed_since_decision"):
                 flags[iid] = now_iso()
             continue
@@ -669,9 +708,9 @@ def match_records(records: list[dict] | None = None, client: Client | None = Non
             continue
         status, chosen, reason = classify(rec, cands, truncated)
         matches[iid] = changed[iid] = {
-            **{k: v for k, v in cur.items() if k in ("list_on_discogs", "sleeve_condition", "history")},
+            **{k: v for k, v in cur.items() if k in KEEP_ON_REMATCH},
             "status": status, "auto_status": status, "reason": reason, "chosen_release_id": chosen,
-            "candidates": cands[:5], "candidate_count": len(cands), "truncated": truncated,
+            "candidates": stored_candidates(cands), "candidate_count": len(cands), "truncated": truncated,
             "queries": queries, "matched_at": now_iso(), "fingerprint": fp,
             "ebay_title": rec.get("ebay_title"),
             "approved_release_id": None, "approved_by": None, "approved_at": None,
@@ -745,6 +784,8 @@ def _decide(item_id: str, action: str, *, release_id=None, by: str = "admin", sl
             m["manual_release"] = info
         m.update(status="approved", chosen_release_id=rid, approved_release_id=rid, approved_by=by,
                  approved_at=ts, approved_via=action, record_changed_since_decision=None)
+        if m.get("pressing_verified") and rid != m.get("verified_release_id"):
+            m["pressing_verified"] = False   # the runout was matched to a different release
         _hist(m, action, by, release_id=rid)
     elif action == "skip":
         m.update(status="skipped", approved_release_id=None, approved_by=None, approved_at=None,
@@ -752,7 +793,7 @@ def _decide(item_id: str, action: str, *, release_id=None, by: str = "admin", sl
         _hist(m, "skip", by)
     elif action == "reset":
         m.update(status=m.get("auto_status") or "review", approved_release_id=None, approved_by=None,
-                 approved_at=None, list_on_discogs=False)
+                 approved_at=None, list_on_discogs=False, pressing_verified=False)
         _hist(m, "reset", by)
     elif action == "set_sleeve":
         if sleeve_condition not in (None, "", *SLEEVE_CONDITIONS):
@@ -787,8 +828,8 @@ def _set_listing_toggle(item_id: str, on: bool, by: str = "admin") -> dict:
     m = matches.get(item_id)
     if not m:
         raise ValueError("no match entry for this record")
-    if on and m.get("status") != "approved":
-        raise ValueError("approve the Discogs match before turning on listing")
+    if on and not is_approved(m):
+        raise ValueError("approve the Discogs match (or quick-pick it) before turning on listing")
     m["list_on_discogs"] = bool(on)
     _hist(m, "list_on" if on else "list_off", by)
     save_matches(matches)
@@ -814,7 +855,10 @@ def _list_all_approved(expected: int, by: str = "admin") -> dict:
 
 
 def is_approved(m: dict | None) -> bool:
-    return bool(m and m.get("status") == "approved" and m.get("approved_release_id")
+    """A stored decision: Edwin approved this release, or the quick rule he approved
+    picked it (status "quick", approved_by "edwin-quick-rule"). Either way the
+    per-record "list on Discogs" toggle is still needed before anything is listed."""
+    return bool(m and m.get("status") in ("approved", "quick") and m.get("approved_release_id")
                 and m.get("approved_by") and m.get("approved_at"))
 
 
@@ -907,7 +951,23 @@ def record_url(rec: dict) -> str:
     return (config().get("base_url") or "https://musicedcafe.com").rstrip("/") + (rec.get("path") or "/")
 
 
-def render_comment(rec: dict, cond: dict, settings: dict) -> str:
+def matrix_text(m: dict | None) -> str:
+    """'A: <x> / B: <y>' from a verified record's runout, '' when none was read."""
+    mx = (m or {}).get("matrix") or {}
+    parts = [f"{side}: {mx[k].strip()}" for side, k in (("A", "side_a"), ("B", "side_b"))
+             if str(mx.get(k) or "").strip()]
+    return " / ".join(parts)
+
+
+def pressing_line(m: dict | None) -> str:
+    """The line appended to every Discogs comment: the unverified note, or the runout."""
+    if not (m or {}).get("pressing_verified"):
+        return UNVERIFIED_NOTE
+    mt = matrix_text(m)
+    return f"Matrix/Runout: {mt}" if mt else ""
+
+
+def render_comment(rec: dict, cond: dict, settings: dict, m: dict | None = None) -> str:
     notes = rec.get("condition_notes") or " ".join(
         x for x in (rec.get("media_grade_note"), rec.get("sleeve_grade_note")) if x)
     notes = re.sub(r"\s+", " ", str(notes or "")).strip()
@@ -926,6 +986,9 @@ def render_comment(rec: dict, cond: dict, settings: dict) -> str:
     except (ValueError, IndexError, AttributeError):
         text = DEFAULT_TEMPLATE.format_map(vals)
     text = re.sub(r"[ \t]+\n", "\n", text).strip()
+    tail = pressing_line(m)
+    if tail:   # the template is trimmed first, so the pressing line always survives the cap
+        text = text[:COMMENT_MAX - len(tail) - 1].rstrip() + "\n" + tail
     return text[:COMMENT_MAX]
 
 
@@ -951,7 +1014,7 @@ def desired_listing(rec: dict, m: dict | None, settings: dict) -> tuple[dict | N
         return None, problems, cond["notes"]
     fields = {"release_id": int(m["approved_release_id"]), "condition": cond["condition"],
               "sleeve_condition": cond["sleeve_condition"], "price": float(price),
-              "comments": render_comment(rec, cond, settings),
+              "comments": render_comment(rec, cond, settings, m),
               "allow_offers": bool(settings.get("allow_offers")), "external_id": str(rec["id"]),
               "location": settings.get("location") or "", "weight": "auto", "format_quantity": "auto"}
     return fields, [], cond["notes"]
@@ -1021,7 +1084,12 @@ def plan_listings(records: list[dict], matches: dict, listings: dict, settings: 
                     x = adopt[0]
                     plan.append({"op": "adopt", "id": iid, "listing_id": x["id"], "fields": fields,
                                  "status": x.get("status") if x.get("status") != "Expired" else settings["listing_status"],
+                                 "old_release_id": (x.get("release") or {}).get("id"),
                                  "update": True, "reason": "found on Discogs by external_id", "notes": notes})
+                    continue
+                if L.get("status") == "recreate_pending":   # a release change half-done: finish it as a Draft
+                    plan.append({"op": "create", "id": iid, "fields": fields, "status": "Draft",
+                                 "reason": "re-creating for the verified release", "notes": notes})
                     continue
                 plan.append({"op": "create", "id": iid, "fields": fields, "status": settings["listing_status"],
                              "reason": "approved, list toggle on, active on eBay", "notes": notes})
@@ -1033,7 +1101,8 @@ def plan_listings(records: list[dict], matches: dict, listings: dict, settings: 
             elif _differs(L.get("pushed"), fields):
                 changed = [k for k in COMPARE if (L.get("pushed") or {}).get(k) != fields.get(k)]
                 plan.append({"op": "update", "id": iid, "listing_id": L["listing_id"], "fields": fields,
-                             "status": cur_status, "reason": "changed: " + ", ".join(changed), "notes": notes})
+                             "status": cur_status, "reason": "changed: " + ", ".join(changed), "notes": notes,
+                             "old_release_id": (L.get("pushed") or {}).get("release_id")})
             continue
         # not listable now
         if not live_L:
@@ -1074,8 +1143,38 @@ def _username(client: Client) -> str:
     return u
 
 
+# Edit Listing takes release_id (docs: "release_id number (required)"), so a
+# release change is sent as an edit. If Discogs refuses that edit with one of
+# these, the listing is deleted and re-created as a Draft instead.
+RECREATE_ON = (400, 409, 422)
+
+
+def _recreate(client: Client, a: dict, L: dict, listings: dict, iid: str, ts: str) -> dict:
+    """Delete + create as Draft, idempotently: the 'recreate_pending' mark is saved
+    first, so a crash between the two steps is finished (or adopted by
+    external_id) by the next sync instead of leaving the record unlisted."""
+    old = a["listing_id"]
+    L = dict(L, listing_id=old, status="recreate_pending", updated_at=ts,
+             recreate={"from_listing": old, "from_release": a.get("old_release_id"),
+                       "to_release": a["fields"]["release_id"], "at": ts})
+    listings[iid] = L
+    save_listings(listings)
+    try:
+        client.delete_listing(old)
+    except DiscogsError as e:
+        if e.status != 404:
+            raise
+    res = client.create_listing(dict(a["fields"], status="Draft"))
+    lid = res.get("listing_id")
+    if not lid:
+        raise DiscogsError("create returned no listing_id")
+    return {"listing_id": lid, "release_id": a["fields"]["release_id"], "status": "Draft",
+            "pushed": a["fields"], "created_at": ts, "updated_at": ts, "url": f"{SITE}/sell/item/{lid}",
+            "recreated_from": old, "previous": ((L.get("previous") or []) + [dict(L, status="deleted")])[-5:]}
+
+
 def sync_listings(records: list[dict] | None = None, client: Client | None = None, *, dry_run: bool = False,
-                  force: bool = False, log=print) -> dict:
+                  force: bool = False, only_ids=None, log=print) -> dict:
     client = client if client is not None else make_client(read_only=dry_run)
     if not client:
         log(SKIP_REASON)
@@ -1096,6 +1195,8 @@ def sync_listings(records: list[dict] | None = None, client: Client | None = Non
         _update_state(last_listing_sync={"at": now_iso(), "result": "failed", "errors": [str(e)]})
         return {"result": "failed", "errors": [str(e)], "note": "nothing changed"}
     plan = plan_listings(records, matches, listings, settings, inventory, may_delete)
+    if only_ids:   # e.g. push one verified record right after the verify page confirms it
+        plan = [a for a in plan if a["id"] in set(only_ids)]
     live = sum(1 for L in listings.values() if L.get("status") in LIVE)
     n_del = sum(1 for a in plan if a["op"] == "delete")
     if n_del > 3 and n_del > 0.5 * max(live, 1) and not force:
@@ -1126,7 +1227,19 @@ def sync_listings(records: list[dict] | None = None, client: Client | None = Non
                     if listings.get(iid, {}).get("listing_id"):
                         L["previous"] = (L["previous"] + [listings[iid]])[-5:]
                 elif op in ("adopt", "update"):
-                    client.edit_listing(a["listing_id"], dict(a["fields"], status=a["status"]))
+                    try:
+                        client.edit_listing(a["listing_id"], dict(a["fields"], status=a["status"]))
+                    except DiscogsError as e:
+                        old_rel, new_rel = a.get("old_release_id"), a["fields"]["release_id"]
+                        if e.status in RECREATE_ON and old_rel and int(old_rel) != int(new_rel):
+                            try:
+                                listings[iid] = _recreate(client, a, L, listings, iid, ts)
+                            except DiscogsError:
+                                L = listings[iid]   # keep the recreate_pending mark for the next run
+                                raise
+                            done["recreate"] = done.get("recreate", 0) + 1
+                            continue
+                        raise
                     if op == "adopt":
                         L = {"listing_id": a["listing_id"], "created_at": ts, "adopted": True,
                              "url": f"{SITE}/sell/item/{a['listing_id']}"}
@@ -1375,6 +1488,622 @@ def confirm_relist(item_id: str, by: str = "admin") -> dict:
     return {"status": "active", "item_id": item_id}
 
 
+# ----------------------------------------------------------------------------- release cache
+
+_REL_LOCK = threading.Lock()
+SKIP_IDENT_TYPES = {"barcode", "asin", "price code", "rights society", "label code", "isrc", "other"}
+
+
+def release_path(release_id):
+    return RELEASES_DIR / f"{int(release_id)}.json"
+
+
+def cached_release(release_id) -> dict | None:
+    try:
+        return load_json(release_path(release_id), None)
+    except (TypeError, ValueError):
+        return None
+
+
+def trim_release(rel: dict) -> dict:
+    """The parts of GET /releases/{id} we use. Identifiers are kept verbatim
+    (type, description, value): that is what Edwin compares the runout with."""
+    return {"id": rel.get("id"), "title": rel.get("title"),
+            "artists": [a.get("name") for a in rel.get("artists") or [] if a.get("name")],
+            "year": rel.get("year"), "released": rel.get("released"), "country": rel.get("country"),
+            "labels": [{"name": x.get("name"), "catno": x.get("catno")} for x in rel.get("labels") or []],
+            "formats": [{"name": f.get("name"), "qty": f.get("qty"), "descriptions": f.get("descriptions") or [],
+                         "text": f.get("text") or ""} for f in rel.get("formats") or []],
+            "identifiers": [{"type": i.get("type") or "", "description": i.get("description") or "",
+                             "value": i.get("value") or ""} for i in rel.get("identifiers") or []],
+            "notes": str(rel.get("notes") or "")[:3000],
+            "community": {k: (rel.get("community") or {}).get(k) for k in ("have", "want")},
+            "thumb": rel.get("thumb") or "", "uri": rel.get("uri") or f"{SITE}/release/{rel.get('id')}",
+            "fetched_at": now_iso()}
+
+
+def get_release(client: "Client | None", release_id, *, refresh: bool = False) -> dict | None:
+    """Cached in data/discogs/releases/<id>.json. Without a client only the cache is read."""
+    rid = int(release_id)
+    if not refresh:
+        c = cached_release(rid)
+        if c:
+            return c
+    if client is None:
+        return None
+    with _REL_LOCK:   # one fetch at a time; the client is paced as well
+        if not refresh:
+            c = cached_release(rid)
+            if c:
+                return c
+        rel = trim_release(client.release(rid))
+        write_json(release_path(rid), rel)
+        return rel
+
+
+def candidate_have(c: dict) -> int | None:
+    """community.have: from the search result if it was stored, else the release cache."""
+    v = (c.get("community") or {}).get("have")
+    if v is None:
+        v = ((cached_release(c["release_id"]) or {}).get("community") or {}).get("have")
+    try:
+        return None if v is None else int(v)
+    except (TypeError, ValueError):
+        return None
+
+
+# ----------------------------------------------------------------------------- quick pick
+# Edwin's rule (2026-10-20): list every record on its most likely release now,
+# say "pressing variant not verified" in the comment, and verify the runout later.
+
+def _year(v) -> int | None:
+    m = re.search(r"\b(19|20)\d\d\b", str(v or ""))
+    return int(m.group(0)) if m else None
+
+
+def _speed(s) -> str | None:
+    m = re.search(r"\b(33|45|78|16)\b", str(s or ""))
+    return m.group(1) if m else None
+
+
+def format_tier(rec: dict, c: dict) -> int:
+    """0 = exact (same LP / 7" / 10" / 12" class and no speed contradiction),
+    1 = consistent, 2 = unknown. Inconsistent candidates never get here."""
+    rf, cf = record_format(rec), candidate_format(c.get("format"))
+    if format_compat(rf, cf) == "unknown":
+        return 2
+    if rf and rf == cf:
+        rs = _speed(rec.get("speed"))
+        cs = next((_speed(x) for x in c.get("format") or [] if "rpm" in str(x).lower()), None)
+        return 0 if not (rs and cs and rs != cs) else 1
+    return 1
+
+
+def quick_group(cands: list[dict]) -> list[dict]:
+    """The pressings that share the catalog number (and could be this format),
+    narrowed to those whose label also matches when any do."""
+    g = [c for c in cands or [] if c["signals"]["catno"] and c["signals"]["format"] != "inconsistent"]
+    lab = [c for c in g if c["signals"]["label"] in ("exact", "partial")]
+    return lab or g
+
+
+def title_consistent(rec: dict, c: dict) -> bool:
+    """Is this the same album/single? Looser than the match score's title signal:
+    the artist's name inside the album field is ignored ('Lou Rawls Live!' vs
+    'Live!'), and a single matches when its title holds the A or B side."""
+    t = str(c.get("title") or "")
+    c_artist, _, c_title = t.partition(" - ")
+    ct = _toks(c_title or t)
+    album = str(rec.get("album") or "")
+    for part in [album] + (album.split("/") if "/" in album else []):   # "A side / B side"
+        at = _toks(part)
+        at = (at - _toks(rec.get("artist")) - _toks(c_artist)) or at
+        if not at or not ct:
+            return True   # nothing to compare: don't count it against the candidate
+        if len(at & ct) / len(at) >= 0.6 or len(at & ct) / len(at | ct) >= 0.5:
+            return True
+    return False
+
+
+def quick_order(rec: dict, cands: list[dict]) -> dict | None:
+    """Apply the rule to cached candidates. -> {ranked, chosen, steps, tie_break,
+    tied, warnings} or None when no candidate shares the catalog number.
+      a) the record's country, then its year (each only if it leaves something)
+      b) the closest format (exact LP / 7" / 12" class and speed first)
+      c) the original era: the earliest year at or after the record's release
+         year (earliest overall when that year is unknown or nothing is later)
+      d) the most Discogs "have"s; then the match score, then the lowest id
+    """
+    group = quick_group(cands)
+    if not group:
+        return None
+    steps, warnings = [], []
+    if rec.get("album"):
+        f = [c for c in group if title_consistent(rec, c)]
+        if f and len(f) < len(group):
+            steps.append(f"title matches: {len(f)} of {len(group)}")
+            group = f
+        elif not f:
+            steps.append("no pressing with this catno has the eBay title")
+            warnings.append(TITLE_WARNING)
+    rco = norm_country(rec.get("country"))
+    if rco:
+        f = [c for c in group if norm_country(c.get("country")) == rco]
+        if f:
+            steps.append(f"country {rec.get('country')}: {len(f)} of {len(group)}")
+            group = f
+        else:
+            steps.append(f"no pressing from {rec.get('country')}; country not used")
+            warnings.append("no pressing from the record's country")
+    ry = record_year(rec)
+    if ry:
+        f = [c for c in group if _year(c.get("year")) == int(ry)]
+        if f:
+            steps.append(f"year {ry}: {len(f)} of {len(group)}")
+            group = f
+        else:
+            steps.append(f"no pressing dated {ry}")
+    best = min(format_tier(rec, c) for c in group)
+    f = [c for c in group if format_tier(rec, c) == best]
+    steps.append(f"format {['exact', 'consistent', 'unknown'][best]}: {len(f)} of {len(group)}")
+    group = f
+    base = _year(rec.get("release_year")) or _year(rec.get("pressing_year"))
+    dated = [c for c in group if _year(c.get("year"))]
+    if dated:
+        later = [c for c in dated if base and _year(c["year"]) >= base]
+        pool = later or dated
+        ey = min(_year(c["year"]) for c in pool)
+        f = [c for c in pool if _year(c["year"]) == ey]
+        if base and later:
+            steps.append(f"earliest at or after {base}: {ey} ({len(f)})")
+        elif base:
+            steps.append(f"nothing dated {base} or later; earliest is {ey} ({len(f)})")
+        else:
+            steps.append(f"release year unknown; earliest is {ey} ({len(f)})")
+        group = f
+    else:
+        steps.append("no pressing has a year")
+    haves = {c["release_id"]: candidate_have(c) for c in group}
+    ranked = sorted(group, key=lambda c: (-(haves[c["release_id"]] if haves[c["release_id"]] is not None else -1),
+                                          -c["score"], c["release_id"]))
+    known = sum(1 for v in haves.values() if v is not None)
+    if len(ranked) == 1:
+        tie_break = "none needed"
+    elif known == len(ranked):
+        tie_break = "have"
+    elif known:
+        tie_break = f"have (known for {known} of {len(ranked)} tied)"
+    else:
+        tie_break = "have missing: match score, then lowest release id"
+    if len(ranked) > 1:
+        steps.append(f"{len(ranked)} tied; " + (f"most haves ({haves[ranked[0]['release_id']]})"
+                                                 if tie_break.startswith("have (") or tie_break == "have"
+                                                 else tie_break))
+    chosen = ranked[0]
+    return {"chosen": chosen["release_id"], "ranked": [c["release_id"] for c in ranked], "steps": steps,
+            "tie_break": tie_break, "tied": len(ranked),
+            "missing_have": [rid for rid, v in haves.items() if v is None] if len(ranked) > 1 else [],
+            "warnings": warnings}
+
+
+def _rec_for(m: dict, recs: dict | None, iid: str) -> dict:
+    """The record as matched (the stored fingerprint), or the live record when given."""
+    r = (recs or {}).get(iid)
+    return r if r is not None else dict(m.get("fingerprint") or {}, id=iid)
+
+
+def exact_confident(m: dict) -> bool:
+    """A confident match whose chosen release matched catno AND country AND year exactly."""
+    c = next((c for c in m.get("candidates") or [] if c.get("release_id") == m.get("chosen_release_id")), None)
+    s = (c or {}).get("signals") or {}
+    return bool(c and s.get("catno") and s.get("country") == "match" and s.get("year") == "exact")
+
+
+def quickpick_scope(m: dict) -> bool:
+    return m.get("status") == "review" or (m.get("status") == "quick" and not m.get("pressing_verified"))
+
+
+def _quickpick(records: list[dict] | None = None, *, apply: bool = False, expected: int | None = None,
+               exclude_title_mismatch: bool = False, log=print) -> dict:
+    """Pick the most likely release for every 'review' record (cached data only,
+    no API call). With apply: store status 'quick', pressing_verified false and
+    approved_by 'edwin-quick-rule'. Never lists anything: the per-record
+    'list on Discogs' toggle is still needed."""
+    recs = {r["id"]: r for r in records} if records else None
+    matches = load_matches()
+    picks, excluded, ties, warns = {}, {}, {}, {}
+    missing_have = set()
+    need_enrich = {}
+    for iid, m in sorted(matches.items()):
+        if not quickpick_scope(m):
+            continue
+        q = quick_order(_rec_for(m, recs, iid), m.get("candidates") or [])
+        if q is None:
+            excluded[iid] = "no candidate shares the catalog number"
+            continue
+        if exclude_title_mismatch and TITLE_WARNING in q["warnings"]:
+            excluded[iid] = "title mismatch (excluded on request)"
+            continue
+        picks[iid] = q
+        ties[q["tie_break"]] = ties.get(q["tie_break"], 0) + 1
+        for w in q["warnings"]:
+            warns[w] = warns.get(w, 0) + 1
+        if q["missing_have"]:
+            missing_have.update(q["missing_have"])
+            need_enrich[iid] = q["ranked"][:3]
+    confident_exact = [k for k, m in matches.items() if m.get("status") == "confident" and exact_confident(m)]
+    summary = {"result": "dry_run", "would_pick": len(picks), "excluded": len(excluded),
+               "excluded_reasons": _count(excluded.values()), "tie_breaks": ties, "warnings": warns,
+               "candidates_missing_community_have": len(missing_have),
+               "records_needing_enrichment": len(need_enrich),
+               "enrichment_calls_top3": len({r for v in need_enrich.values() for r in v
+                                             if not cached_release(r)}),
+               "confident": sum(1 for m in matches.values() if m.get("status") == "confident"),
+               "confident_exact_country_year_catno": len(confident_exact),
+               "status_counts": status_counts(matches)}
+    if not apply:
+        summary["sample"] = {k: picks[k] for k in list(picks)[:3]}
+        summary["title_mismatch_ids"] = [k for k, q in picks.items() if TITLE_WARNING in q["warnings"]]
+        return summary
+    if expected is not None and int(expected) != len(picks):
+        raise ValueError(f"the quick-pick count changed ({len(picks)} now, you confirmed {expected}); reload")
+    ts = now_iso()
+    for iid, q in picks.items():
+        m = matches[iid]
+        m.update(status="quick", chosen_release_id=q["chosen"], approved_release_id=q["chosen"],
+                 approved_by=QUICK_RULE_BY, approved_at=ts, approved_via="quick_rule", pressing_verified=False,
+                 quick_reason="; ".join(q["steps"]), quick_pick=q, record_changed_since_decision=None)
+        _hist(m, "quick_pick", QUICK_RULE_BY, release_id=q["chosen"])
+    for iid in confident_exact:
+        if not matches[iid].get("pressing_verified"):
+            matches[iid].update(pressing_verified=True, pressing_verified_via="exact country+year+catno",
+                                pressing_verified_at=ts)
+    for m in matches.values():
+        if m.get("status") == "confident" and "pressing_verified" not in m:
+            m["pressing_verified"] = False
+    save_matches(matches)
+    summary.update(result="ok", picked=len(picks), status_counts=status_counts(matches))
+    log(f"discogs quickpick: {len(picks)} records set to 'quick' ({ties})")
+    return summary
+
+
+def _count(vals) -> dict:
+    out = {}
+    for v in vals:
+        out[v] = out.get(v, 0) + 1
+    return out
+
+
+def enrich_releases(client: "Client | None" = None, *, top: int = 3, limit: int | None = None, log=print) -> dict:
+    """Optional: GET /releases/{id} for the top 3 tied pressings of each quick-pick
+    record whose tie can't be broken from cached data (community.have missing).
+    Read-only; results land in data/discogs/releases/. Re-run quickpick after."""
+    client = client or make_client(read_only=True)
+    if not client:
+        log(SKIP_REASON)
+        return {"result": "skipped", "reason": SKIP_REASON}
+    matches = load_matches()
+    todo = []
+    for iid, m in sorted(matches.items()):
+        if not quickpick_scope(m):
+            continue
+        q = quick_order(dict(m.get("fingerprint") or {}, id=iid), m.get("candidates") or [])
+        if q and q["tied"] > 1:
+            todo += [r for r in q["ranked"][:top] if r not in todo]
+    todo = [r for r in todo if not cached_release(r)]
+    if limit is not None:
+        todo = todo[:limit]
+    done, errors = 0, []
+    log(f"discogs enrich: {len(todo)} releases to fetch (about {len(todo)} s)")
+    for rid in todo:
+        try:
+            get_release(client, rid)
+            done += 1
+        except DiscogsError as e:
+            errors.append(f"{rid}: {e}")
+            if e.status in (401, 403):
+                break
+        if done and done % 50 == 0:
+            log(f"discogs enrich: {done} fetched")
+    return {"result": "ok" if not errors else "partial", "fetched": done, "planned": len(todo),
+            "errors": errors[:20]}
+
+
+# ----------------------------------------------------------------------------- bulk enable
+
+def enable_preview(records: list[dict]) -> dict:
+    """Records the bulk 'enable Discogs' action would turn on: quick or confident,
+    toggle off, active on eBay, and both grades map to Discogs values. The rest of
+    the quick + confident records are listed in the 'needs grade' queue."""
+    matches = load_matches()
+    recs = {r["id"]: r for r in records}
+    eligible, needs_grade, other = [], [], []
+    for iid, m in sorted(matches.items()):
+        if m.get("status") not in ("quick", "confident") or not m.get("chosen_release_id"):
+            continue
+        if m.get("list_on_discogs"):
+            continue
+        r = recs.get(iid)
+        if not r or r.get("status") != "active":
+            other.append({"id": iid, "why": f"not active on eBay ({(r or {}).get('status')})"})
+            continue
+        cond = conditions_for(r, m)
+        if cond["problems"]:
+            needs_grade.append({"id": iid, "title": r.get("ebay_title"), "ebay_url": r.get("ebay_url"),
+                                "vinyl_grade": r.get("media_grade"), "sleeve_grade": r.get("sleeve_grade"),
+                                "problems": cond["problems"]})
+            continue
+        eligible.append(iid)
+    return {"eligible": eligible, "count": len(eligible), "needs_grade": needs_grade, "other": other}
+
+
+def _enable_quick_confident(records: list[dict], expected: int, by: str = "admin") -> dict:
+    """Bulk: turn 'list on Discogs' on for every eligible quick + confident record.
+    A confident record is approved at the same time (the human confirm is this
+    action). Needs the count the human confirmed, so a stale page can't do more."""
+    prev = enable_preview(records)
+    if int(expected) != prev["count"]:
+        raise ValueError(f"the count changed ({prev['count']} now, you confirmed {expected}); reload")
+    matches, ts = load_matches(), now_iso()
+    for iid in prev["eligible"]:
+        m = matches[iid]
+        if m.get("status") == "confident":
+            m.update(status="approved", approved_release_id=m["chosen_release_id"], approved_at=ts,
+                     approved_by=f"{by} (enable quick + confident)", approved_via="enable_quick_confident")
+            m.setdefault("pressing_verified", exact_confident(m))
+            _hist(m, "approve (bulk enable)", by, release_id=m["chosen_release_id"])
+        m["list_on_discogs"] = True
+        _hist(m, "list_on (bulk enable quick + confident)", by)
+    save_matches(matches)
+    return {"turned_on": prev["count"], "needs_grade": len(prev["needs_grade"])}
+
+
+# ----------------------------------------------------------------------------- verify pressing
+
+TRIANGLES = "△▽▲▼Δδ∆⊿▵▿"   # △ ▽ ▲ ▼ Δ δ ∆ ⊿ ▵ ▿
+
+
+def matrix_tokens(s) -> list[str]:
+    """Runout text -> comparable tokens. Case, spaces, dashes, dots and slashes
+    don't matter; every triangle glyph (and the words 'delta' / 'triangle')
+    becomes TRI; other symbols are dropped."""
+    s = str(s or "")
+    for ch in TRIANGLES:
+        s = s.replace(ch, " TRI ")
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().upper()
+    s = re.sub(r"\b(DELTA|TRIANGLE)\b", " TRI ", s)
+    return re.findall(r"[A-Z0-9]+", s)
+
+
+def norm_matrix(s) -> str:
+    return "".join(matrix_tokens(s))
+
+
+def _lev1(a: str, b: str) -> bool:
+    """True when a and b differ by exactly one edit."""
+    if abs(len(a) - len(b)) > 1 or a == b:
+        return False
+    if len(a) == len(b):
+        return sum(x != y for x, y in zip(a, b)) == 1
+    if len(a) > len(b):
+        a, b = b, a
+    return any(b[:i] + b[i + 1:] == a for i in range(len(b)))
+
+
+def runout_similarity(typed, value) -> float:
+    """0..1. Exact after normalising = 1; the typed text inside the identifier =
+    0.85..1; the identifier inside the typed text = 0.6..1 (by length ratio); a
+    single typo on a long code = 0.75; else 0.8 x token overlap."""
+    ci, cv = norm_matrix(typed), norm_matrix(value)
+    if not ci or not cv:
+        return 0.0
+    if ci == cv:
+        return 1.0
+    best = 0.0
+    if len(ci) >= 3 and ci in cv:     # all of what he typed is in the identifier (which says more)
+        best = 0.85 + 0.15 * len(ci) / len(cv)
+    elif len(cv) >= 3 and cv in ci:   # he typed more than Discogs lists
+        best = 0.6 + 0.4 * len(cv) / len(ci)
+    if min(len(ci), len(cv)) >= 6 and _lev1(ci, cv):
+        best = max(best, 0.75)
+    ti, tv = set(matrix_tokens(typed)), set(matrix_tokens(value))
+    if ti and tv:
+        best = max(best, 0.8 * len(ti & tv) / len(ti | tv))
+    return round(best, 3)
+
+
+def runout_identifiers(rel: dict | None) -> list[dict]:
+    return [i for i in (rel or {}).get("identifiers") or []
+            if str(i.get("type") or "").strip().lower() not in SKIP_IDENT_TYPES and i.get("value")]
+
+
+VERIFY_FIELDS = ("side_a", "side_b", "lacquer", "stamper")
+
+
+def score_runout(inputs: dict, rel: dict | None) -> dict:
+    """Score one release against what Edwin typed. -> {score 0..100, hits}."""
+    idents = runout_identifiers(rel)
+    typed = {k: str(inputs.get(k) or "").strip() for k in VERIFY_FIELDS if str(inputs.get(k) or "").strip()}
+    if not typed:
+        return {"score": 0, "hits": {}, "note": "nothing typed"}
+    if not idents:
+        return {"score": 0, "hits": {}, "note": "Discogs lists no runout / matrix for this release"}
+    hits, total = {}, 0.0
+    for k, v in typed.items():
+        best, which = 0.0, None
+        for i in idents:
+            sim = runout_similarity(v, i["value"])
+            if sim > best:
+                best, which = sim, i
+        total += best
+        if which:
+            hits[k] = {"similarity": best, "type": which["type"], "description": which["description"],
+                       "value": which["value"]}
+    return {"score": round(100 * total / len(typed)), "hits": hits}
+
+
+def auto_match(inputs: dict, release_ids: list, client: "Client | None" = None) -> dict:
+    """Rank the candidate releases by how well their identifiers match the typed runout."""
+    rows = []
+    for rid in release_ids:
+        rel = get_release(client, rid) if client else cached_release(rid)
+        rows.append(dict(score_runout(inputs, rel), release_id=rid, fetched=bool(rel)))
+    rows.sort(key=lambda r: (-r["score"], str(r["release_id"])))
+    best = rows[0] if rows and rows[0]["score"] >= 40 else None
+    clear = bool(best and (len(rows) == 1 or rows[0]["score"] - rows[1]["score"] >= 10))
+    return {"ranked": rows, "best": best["release_id"] if best else None, "best_score": best["score"] if best else 0,
+            "clear": clear}
+
+
+def verify_universe(m: dict | None) -> bool:
+    return bool(m and m.get("status") in ("review", "quick", "confident", "approved") and m.get("candidates"))
+
+
+def _price(r) -> float:
+    try:
+        return float(_dec(r.get("price")) or 0)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def _photo(r: dict) -> str | None:
+    lp = r.get("local_photo")
+    return f"/img/photo/{lp['thumb']}" if lp and r.get("images") else ((r.get("images") or [None])[0])
+
+
+def verify_row(r: dict, m: dict, listing: dict | None) -> dict:
+    chosen = m.get("approved_release_id") or m.get("chosen_release_id")
+    c = next((c for c in m.get("candidates") or [] if c.get("release_id") == chosen), {}) or {}
+    return {"id": r["id"], "ebay_title": r.get("ebay_title"), "ebay_url": r.get("ebay_url"), "photo": _photo(r),
+            "artist": r.get("artist"), "album": r.get("album"), "price": r.get("price"),
+            "catalog_number": r.get("catalog_number"), "label": r.get("label"), "country": r.get("country"),
+            "year": record_year(r), "format": record_format(r), "status": m.get("status"),
+            "chosen_release_id": chosen, "chosen_title": c.get("title"), "chosen_year": c.get("year"),
+            "chosen_country": c.get("country"), "pressing_verified": bool(m.get("pressing_verified")),
+            "matrix": m.get("matrix"), "verify_skipped_at": m.get("verify_skipped_at"),
+            "listing": {k: (listing or {}).get(k) for k in ("listing_id", "status", "url")} if listing else None}
+
+
+def verify_queue(records: list[dict], q: str | None = None, show: str = "unverified", limit: int = 60) -> dict:
+    """Default: unverified records, highest price first, 'can't read' ones last."""
+    matches, listings = load_matches(), load_listings()
+    rows = []
+    for r in records:
+        m = matches.get(r["id"])
+        if r.get("status") != "active" or not verify_universe(m):
+            continue
+        rows.append(verify_row(r, m, listings.get(r["id"])))
+    total, verified = len(rows), sum(1 for x in rows if x["pressing_verified"])
+    q = (q or "").strip()
+    if q:
+        toks = re.findall(r"[a-z0-9]+", _fold(q))
+        digits = re.sub(r"\D", "", q)
+        def hit(x):
+            if digits and len(digits) >= 4 and digits in x["id"]:
+                return True
+            hay = _fold(" ".join(str(x.get(k) or "") for k in ("artist", "album", "ebay_title", "catalog_number")))
+            return bool(toks) and all(t in hay for t in toks)
+        rows = [x for x in rows if hit(x)]
+    elif show != "all":
+        rows = [x for x in rows if not x["pressing_verified"]]
+    rows.sort(key=lambda x: (bool(x["pressing_verified"]), bool(x["verify_skipped_at"]), -_price(x), x["id"]))
+    return {"rows": rows[:limit], "matching": len(rows), "verified": verified, "total": total}
+
+
+def verify_record(item_id: str, records: list[dict], client: "Client | None" = None) -> dict:
+    """One record with every candidate release's identifiers. Releases are fetched
+    lazily (cached, paced) when a client is given; otherwise only the cache is used."""
+    r = next((x for x in records if x["id"] == item_id), None)
+    m = load_matches().get(item_id)
+    if not r or not m:
+        raise ValueError("no such record, or it hasn't been matched yet")
+    row = verify_row(r, m, load_listings().get(item_id))
+    order = list(dict.fromkeys([row["chosen_release_id"]] + list((m.get("quick_pick") or {}).get("ranked") or [])
+                               + [c["release_id"] for c in quick_group(m.get("candidates") or [])]
+                               + [c["release_id"] for c in m.get("candidates") or []]))
+    by_id = {c["release_id"]: c for c in m.get("candidates") or []}
+    cands, errors = [], []
+    for rid in [x for x in order if x]:
+        c = by_id.get(rid, {"release_id": rid})
+        rel = None
+        try:
+            rel = get_release(client, rid) if client else cached_release(rid)
+        except DiscogsError as e:
+            errors.append(f"{rid}: {e}")
+            if e.status in (401, 403):
+                client = None   # stop calling with a bad token; show what is cached
+        cands.append({"release_id": rid, "title": c.get("title") or (rel or {}).get("title"),
+                      "label": c.get("label") or [x["name"] for x in (rel or {}).get("labels") or []],
+                      "catno": c.get("catno"), "format": c.get("format") or [], "thumb": c.get("thumb"),
+                      "url": c.get("url") or f"{SITE}/release/{rid}",
+                      "year": (rel or {}).get("year") or c.get("year"), "released": (rel or {}).get("released"),
+                      "country": (rel or {}).get("country") or c.get("country"),
+                      "identifiers": runout_identifiers(rel), "notes": (rel or {}).get("notes") or "",
+                      "have": ((rel or {}).get("community") or {}).get("have") or (c.get("community") or {}).get("have"),
+                      "fetched": bool(rel), "chosen": rid == row["chosen_release_id"]})
+    return {"record": row, "candidates": cands, "errors": errors,
+            "token_present": bool(get_token()), "quick_reason": m.get("quick_reason"),
+            "warnings": (m.get("quick_pick") or {}).get("warnings") or []}
+
+
+def _confirm_pressing(item_id: str, release_id, inputs: dict, by: str = "admin", score=None) -> dict:
+    matches = load_matches()
+    m = matches.get(item_id)
+    if not m:
+        raise ValueError("no match entry for this record")
+    try:
+        rid = int(release_id)
+    except (TypeError, ValueError):
+        raise ValueError("release_id must be a number") from None
+    if rid not in [c.get("release_id") for c in m.get("candidates") or []] + [m.get("chosen_release_id")]:
+        raise ValueError("that release is not one of this record's candidates")
+    vals = {k: str(inputs.get(k) or "").strip()[:200] for k in VERIFY_FIELDS}
+    if not (vals["side_a"] or vals["side_b"]):
+        raise ValueError("type at least one side's runout (or use \"can't read\")")
+    by, ts = (str(by or "admin").strip() or "admin")[:60], now_iso()
+    m["matrix"] = dict(vals, verified_at=ts, verified_by=by, match_score=score, release_id=rid)
+    m.update(chosen_release_id=rid, approved_release_id=rid, pressing_verified=True, verified_release_id=rid,
+             pressing_verified_via="runout", pressing_verified_at=ts, verify_skipped_at=None, verify_skipped_by=None,
+             status="approved", approved_by=by, approved_at=ts, approved_via="verify_pressing",
+             record_changed_since_decision=None)
+    _hist(m, "verify_pressing", by, release_id=rid)
+    matches[item_id] = m
+    save_matches(matches)
+    L = load_listings().get(item_id) or {}
+    return {"match": m, "listing_live": bool(L.get("listing_id") and L.get("status") in LIVE)}
+
+
+def _skip_pressing(item_id: str, by: str = "admin") -> dict:
+    matches = load_matches()
+    m = matches.get(item_id)
+    if not m:
+        raise ValueError("no match entry for this record")
+    m.update(verify_skipped_at=now_iso(), verify_skipped_by=(str(by or "admin").strip() or "admin")[:60])
+    _hist(m, "verify_cant_read", m["verify_skipped_by"])
+    save_matches(matches)
+    return m
+
+
+def quickpick(*a, **kw):
+    with _MLOCK:
+        return _quickpick(*a, **kw)
+
+
+def enable_quick_confident(*a, **kw):
+    with _MLOCK:
+        return _enable_quick_confident(*a, **kw)
+
+
+def confirm_pressing(*a, **kw):
+    with _MLOCK:
+        return _confirm_pressing(*a, **kw)
+
+
+def skip_pressing(*a, **kw):
+    with _MLOCK:
+        return _skip_pressing(*a, **kw)
+
+
 # ----------------------------------------------------------------------------- admin views
 
 def overview() -> dict:
@@ -1390,6 +2119,7 @@ def overview() -> dict:
             "confident_unapproved": sum(1 for x in m.values() if x.get("status") == "confident"),
             "approved_not_listed": sum(1 for x in m.values() if x.get("status") == "approved" and not x.get("list_on_discogs")),
             "list_on": sum(1 for x in m.values() if x.get("list_on_discogs")),
+            "pressing_verified": sum(1 for x in m.values() if x.get("pressing_verified")),
             "listing_counts": lc, "settings": load_settings(),
             "end_on_ebay": end_on_ebay_list(),
             "double_sales": [{"id": k, "title": r.get("title"), "order_url": r["discogs_sale"].get("order_url"),
@@ -1428,7 +2158,7 @@ def review_rows(records: list[dict] | None = None, status: str | None = None) ->
                      "discogs_sleeve": cond["sleeve_condition"], "match": m, "listing": listings.get(r["id"]),
                      "listable": bool(fields), "problems": problems, "notes": notes,
                      "grade_conflicts": [c for c in r.get("conflicts") or [] if "grade" in c]})
-    order = {"review": 0, "confident": 1, "no_match": 2, "approved": 3, "skipped": 4}
+    order = {"review": 0, "quick": 1, "confident": 1, "no_match": 2, "approved": 3, "skipped": 4}
     rows.sort(key=lambda x: (order.get((x["match"] or {}).get("status"), 5), x["id"]))
     return rows
 

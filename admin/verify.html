@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#221d18">
+<title>Verify pressing · Music Ed Cafe admin</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; touch-action: manipulation; }
+input, textarea, .sel, .sel * { -webkit-user-select: text; user-select: text; }
+input, select, textarea { font-size: 16px; font-family: inherit; touch-action: auto; }
+html, body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; overflow-x: hidden; overflow-x: clip; }
+html { background: #221d18; }
+body { background: #f4ecd8; color: #221d18; font: 16px/1.45 ui-sans-serif, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); min-height: 100vh; }
+header { background: #221d18; color: #f4ecd8; padding: 10px 14px; display: flex; align-items: center; gap: 10px; position: sticky; top: 0; z-index: 5; }
+header h1 { font-size: 1.05rem; }
+header a { color: #e0b357; margin-left: auto; min-height: 44px; display: inline-flex; align-items: center; padding: 0 4px; }
+main { max-width: 640px; margin: 0 auto; padding: 12px 12px 48px; display: grid; gap: 12px; }
+section { background: #fbf6ea; border: 1px solid #d6c6a3; border-radius: 10px; padding: 12px; min-width: 0; }
+h2 { font-size: 1.05rem; margin-bottom: 6px; }
+button { min-height: 52px; padding: 0 16px; border-radius: 8px; border: 2px solid #221d18; background: #221d18; color: #f4ecd8; font: 700 16px inherit; font-family: inherit; cursor: pointer; }
+button.alt { background: #fff; color: #221d18; }
+button.warn { background: #fff; color: #8a3413; border-color: #8a3413; }
+button.go { background: #2b6461; border-color: #2b6461; color: #fff; }
+button:disabled { opacity: .5; }
+input[type=password], input[type=text], input[type=search] { width: 100%; min-height: 52px; padding: 10px 12px; border: 2px solid #221d18; border-radius: 8px; background: #fff; color: #221d18; }
+label.f { display: grid; gap: 4px; font-size: 14px; font-weight: 700; color: #54473b; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.row > * { flex: 1 1 140px; }
+.muted { color: #54473b; font-size: 14px; }
+.bad { color: #8a3413; font-weight: 700; }
+.ok { color: #2b6461; font-weight: 700; }
+.hidden { display: none !important; }
+:focus-visible { outline: 3px solid #1f5f9e; outline-offset: 2px; }
+.progress { height: 10px; background: #e9dfc8; border-radius: 99px; overflow: hidden; margin-top: 8px; }
+.progress > i { display: block; height: 100%; background: #2b6461; width: 0; }
+.list { display: grid; gap: 8px; margin-top: 10px; }
+.item { display: grid; grid-template-columns: 64px 1fr; gap: 10px; align-items: center; width: 100%; text-align: left; min-height: 76px; padding: 6px; border: 1px solid #d6c6a3; border-radius: 8px; background: #fff; color: #221d18; font-weight: 400; font-size: 15px; }
+.item img, .item .ph { width: 64px; height: 64px; object-fit: cover; border-radius: 6px; background: #e9dfc8; }
+.item b { display: block; font-size: 15px; line-height: 1.3; overflow-wrap: anywhere; }
+.item small { display: block; color: #54473b; font-size: 13px; margin-top: 2px; overflow-wrap: anywhere; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 12.5px; font-weight: 700; background: #e9dfc8; color: #221d18; }
+.pill.v { background: #2b6461; color: #fff; } .pill.s { background: #f6dfb5; } .pill.q { background: #dfe7f2; }
+.rec-head { display: grid; gap: 10px; }
+.rec-head img { width: 100%; max-height: 340px; object-fit: contain; background: #e9dfc8; border-radius: 8px; }
+.rec-head h2 { font-size: 1.1rem; overflow-wrap: anywhere; }
+dl.kv { display: grid; grid-template-columns: 7.5em 1fr; gap: 3px 10px; font-size: 14.5px; }
+dl.kv dt { font-weight: 700; color: #54473b; }
+dl.kv dd { min-width: 0; overflow-wrap: anywhere; }
+.cand { border: 2px solid #d6c6a3; border-radius: 10px; padding: 10px; background: #fff; display: grid; gap: 8px; margin-top: 10px; }
+.cand.best { border-color: #2b6461; box-shadow: 0 0 0 3px #cfe6e3; }
+.cand.cur { background: #fbf6ea; }
+.cand-top { display: grid; grid-template-columns: 56px 1fr auto; gap: 8px; align-items: start; }
+.cand-top img, .cand-top .ph { width: 56px; height: 56px; object-fit: cover; border-radius: 6px; background: #e9dfc8; }
+.cand-top a { color: #1f5f9e; font-weight: 700; overflow-wrap: anywhere; }
+.score { font-weight: 800; font-size: 15px; padding: 4px 8px; border-radius: 8px; background: #e9dfc8; white-space: nowrap; }
+.cand.best .score { background: #2b6461; color: #fff; }
+ul.ids { list-style: none; display: grid; gap: 4px; font-size: 14px; }
+ul.ids li { padding: 6px 8px; background: #f4ecd8; border-radius: 6px; overflow-wrap: anywhere; }
+ul.ids li.hit { background: #cfe6e3; }
+ul.ids .t { font-weight: 700; color: #54473b; font-size: 12.5px; display: block; }
+ul.ids .val { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14.5px; }
+details { font-size: 14px; }
+details summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; color: #1f5f9e; font-weight: 700; }
+.notes { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13.5px; color: #3a3029; }
+.sticky-act { position: sticky; bottom: 0; background: #f4ecd8; padding: 8px 0 calc(8px + env(safe-area-inset-bottom)); z-index: 4; }
+.toast { position: fixed; left: 12px; right: 12px; bottom: calc(14px + env(safe-area-inset-bottom)); background: #221d18; color: #f4ecd8; padding: 12px 14px; border-radius: 8px; font-size: 15px; z-index: 9; }
+</style>
+</head>
+<body>
+<header><h1>Verify pressing</h1><a href="/admin/">Admin</a></header>
+<main>
+  <section id="login">
+    <h2>Sign in</h2>
+    <p class="muted">Paste the admin token (from the server's <code>.env</code>, ADMIN_TOKEN). It is kept only in this browser tab, same as the admin page.</p>
+    <div class="row"><input type="password" id="token" autocomplete="current-password" aria-label="Admin token"></div>
+    <div class="row"><button id="go">Unlock</button></div>
+    <p id="login-msg" class="bad" role="alert"></p>
+  </section>
+
+  <div id="app" class="hidden" style="display:grid;gap:12px">
+    <section id="queue-view">
+      <p id="progress-text" style="font-weight:700"></p>
+      <div class="progress" aria-hidden="true"><i id="progress-bar"></i></div>
+      <div class="row"><input type="search" id="q" placeholder="eBay item #, artist or title" aria-label="Search records" autocomplete="off"></div>
+      <div class="row">
+        <button id="show-unv" aria-pressed="true">Unverified</button>
+        <button id="show-all" class="alt" aria-pressed="false">All</button>
+      </div>
+      <p id="q-count" class="muted" style="margin-top:8px"></p>
+      <div id="list" class="list"></div>
+    </section>
+
+    <div id="rec-view" class="hidden" style="display:grid;gap:12px">
+      <div class="row" style="margin-top:0"><button id="back" class="alt">Back to list</button><button id="next" class="alt">Next record</button></div>
+      <section id="rec"></section>
+      <section>
+        <h2>Read the runout</h2>
+        <p class="muted">Type what is etched or stamped in the dead wax. Case, spaces, dashes and triangle symbols don't matter.</p>
+        <div style="display:grid;gap:10px;margin-top:8px">
+          <label class="f">Side A runout<input type="text" id="side_a" autocomplete="off" autocapitalize="characters" spellcheck="false"></label>
+          <label class="f">Side B runout<input type="text" id="side_b" autocomplete="off" autocapitalize="characters" spellcheck="false"></label>
+          <details><summary>Lacquer / stamper codes (optional)</summary>
+            <div style="display:grid;gap:10px;margin-top:6px">
+              <label class="f">Lacquer cut code<input type="text" id="lacquer" autocomplete="off" autocapitalize="characters" spellcheck="false"></label>
+              <label class="f">Stamper code<input type="text" id="stamper" autocomplete="off" autocapitalize="characters" spellcheck="false"></label>
+            </div>
+          </details>
+        </div>
+        <div class="row"><button id="match">Find match</button><button id="cant" class="warn">Can't read</button></div>
+        <p id="match-msg" class="muted" role="status" style="margin-top:8px"></p>
+      </section>
+      <div id="best-bar" class="sticky-act hidden"><button id="confirm-best" class="go" style="width:100%"></button></div>
+      <section>
+        <h2>Candidate pressings</h2>
+        <p id="cand-msg" class="muted"></p>
+        <div id="cands"></div>
+      </section>
+    </div>
+  </div>
+</main>
+<div id="toast" class="toast hidden" role="status"></div>
+<script>
+(function () {
+  var d = document, $ = function (id) { return d.getElementById(id); };
+  d.addEventListener('selectstart', function (e) { var t = e.target.nodeType === 3 ? e.target.parentElement : e.target; if (!(t && t.closest && t.closest('.sel, input, textarea, select'))) e.preventDefault(); });
+  d.addEventListener('contextmenu', function (e) { var t = e.target.nodeType === 3 ? e.target.parentElement : e.target; if (!(t && t.closest && t.closest('.sel, input, textarea, a'))) e.preventDefault(); });
+  var token = sessionStorage.getItem('mecToken') || '';
+  var S = { show: 'unverified', rows: [], cur: null, data: null, scores: {}, best: null, timer: null, seq: 0 };
+  function api(path, opts) {
+    opts = opts || {};
+    opts.headers = Object.assign({ 'Authorization': 'Bearer ' + token }, opts.headers || {});
+    return fetch(path, opts).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { j._status = r.status; return j; }); });
+  }
+  function jpost(path, body) { return api(path, { method: 'POST', body: JSON.stringify(Object.assign({ by: localStorage.getItem('mecApprover') || 'admin' }, body)), headers: { 'Content-Type': 'application/json' } }); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function toast(t) { var e = $('toast'); e.textContent = t; e.classList.remove('hidden'); clearTimeout(toast._t); toast._t = setTimeout(function () { e.classList.add('hidden'); }, 3200); }
+  function signedOut(j) {
+    if (j._status === 401 || j._status === 503) { $('login-msg').textContent = j.error || 'Wrong token'; $('login').classList.remove('hidden'); $('app').classList.add('hidden'); return true; }
+    return false;
+  }
+  function img(src, cls) { return src ? '<img src="' + esc(src) + '" alt="" loading="lazy" referrerpolicy="no-referrer"' + (cls ? ' class="' + cls + '"' : '') + '>' : '<span class="ph"></span>'; }
+  // ------------------------------------------------------------ queue
+  function loadQueue() {
+    var q = $('q').value.trim();
+    return api('/admin/api/discogs/verify/queue?show=' + S.show + (q ? '&q=' + encodeURIComponent(q) : '')).then(function (j) {
+      if (signedOut(j)) return;
+      $('login').classList.add('hidden'); $('app').classList.remove('hidden');
+      if (j._status !== 200) { $('list').innerHTML = '<p class="bad">' + esc(j.error || 'Could not load') + '</p>'; return; }
+      S.rows = j.rows || [];
+      $('progress-text').textContent = j.verified + ' of ' + j.total + ' verified';
+      $('progress-bar').style.width = (j.total ? Math.round(100 * j.verified / j.total) : 0) + '%';
+      $('q-count').textContent = j.matching + ' record' + (j.matching === 1 ? '' : 's') + (j.matching > S.rows.length ? ', showing ' + S.rows.length : '') + (q ? ' matching "' + q + '"' : (S.show === 'all' ? '' : ' to verify, highest price first'));
+      $('list').innerHTML = S.rows.map(function (r) {
+        var pill = r.pressing_verified ? '<span class="pill v">verified</span>' : (r.verify_skipped_at ? '<span class="pill s">can\'t read</span>' : '<span class="pill q">' + esc(r.status) + '</span>');
+        return '<button class="item" data-id="' + esc(r.id) + '">' + img(r.photo) + '<span><b>' + esc(r.ebay_title) + '</b><small>$' + esc(r.price) + ' · ' + esc(r.catalog_number || 'no catno') + ' · eBay ' + esc(r.id) + '</small><small>' + pill + '</small></span></button>';
+      }).join('') || '<p class="muted">Nothing here.</p>';
+    });
+  }
+  $('list').addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('button.item'); if (b) openRec(b.getAttribute('data-id')); });
+  var qTimer = null;
+  $('q').addEventListener('input', function () { clearTimeout(qTimer); qTimer = setTimeout(loadQueue, 350); });
+  function setShow(v) { S.show = v; $('show-unv').setAttribute('aria-pressed', String(v === 'unverified')); $('show-all').setAttribute('aria-pressed', String(v === 'all')); $('show-unv').className = v === 'unverified' ? '' : 'alt'; $('show-all').className = v === 'all' ? '' : 'alt'; loadQueue(); }
+  $('show-unv').addEventListener('click', function () { setShow('unverified'); });
+  $('show-all').addEventListener('click', function () { setShow('all'); });
+  // ------------------------------------------------------------ one record
+  function inputs() { return { side_a: $('side_a').value, side_b: $('side_b').value, lacquer: $('lacquer').value, stamper: $('stamper').value }; }
+  function openRec(id) {
+    S.cur = id; S.scores = {}; S.best = null; S.seq++;
+    ['side_a', 'side_b', 'lacquer', 'stamper'].forEach(function (k) { $(k).value = ''; });
+    $('match-msg').textContent = ''; $('best-bar').classList.add('hidden');
+    $('queue-view').classList.add('hidden'); $('rec-view').classList.remove('hidden');
+    $('rec').innerHTML = '<p class="muted">Loading...</p>'; $('cands').innerHTML = '';
+    window.scrollTo(0, 0);
+    if (location.hash !== '#' + id) history.replaceState(null, '', '#' + id);
+    return api('/admin/api/discogs/verify/record?id=' + encodeURIComponent(id)).then(function (j) {
+      if (signedOut(j)) return;
+      if (j._status !== 200) { $('rec').innerHTML = '<p class="bad">' + esc(j.error || 'Could not load') + '</p>'; return; }
+      S.data = j; var r = j.record, mx = r.matrix || {};
+      if (r.pressing_verified && mx) { $('side_a').value = mx.side_a || ''; $('side_b').value = mx.side_b || ''; $('lacquer').value = mx.lacquer || ''; $('stamper').value = mx.stamper || ''; }
+      $('rec').innerHTML = '<div class="rec-head">' + (r.photo ? '<img src="' + esc(r.photo) + '" alt="" referrerpolicy="no-referrer">' : '') +
+        '<h2><a href="' + esc(r.ebay_url) + '" target="_blank" rel="noopener">' + esc(r.ebay_title) + '</a></h2>' +
+        '<dl class="kv"><dt>eBay item</dt><dd>' + esc(r.id) + ' · $' + esc(r.price) + '</dd><dt>Catalog #</dt><dd>' + esc(r.catalog_number || '?') + '</dd><dt>Label</dt><dd>' + esc(r.label || '?') + '</dd>' +
+        '<dt>Country / year</dt><dd>' + esc(r.country || '?') + ' / ' + esc(r.year || '?') + '</dd>' +
+        '<dt>Listed as</dt><dd>' + (r.chosen_release_id ? '<a href="https://www.discogs.com/release/' + esc(r.chosen_release_id) + '" target="_blank" rel="noopener">' + esc(r.chosen_title || r.chosen_release_id) + '</a> (' + esc(r.chosen_country || '?') + ', ' + esc(r.chosen_year || '?') + ')' : 'no release chosen yet') + '</dd>' +
+        '<dt>Status</dt><dd>' + (r.pressing_verified ? '<span class="ok">verified</span>' + (mx.verified_at ? ' ' + esc(mx.verified_at) : '') : esc(r.status) + ', not verified') + (r.listing && r.listing.listing_id ? ' · Discogs listing ' + esc(r.listing.listing_id) + ' (' + esc(r.listing.status) + ')' : '') + '</dd></dl>' +
+        (j.quick_reason ? '<p class="muted">Quick rule: ' + esc(j.quick_reason) + '</p>' : '') +
+        (j.warnings && j.warnings.length ? '<p class="bad">' + esc(j.warnings.join('; ')) + '</p>' : '') + '</div>';
+      renderCands();
+      lazyFetch(S.seq);
+    });
+  }
+  function candHtml(c) {
+    var sc = S.scores[c.release_id], isBest = S.best === c.release_id, hits = (sc && sc.hits) || {};
+    var hitVals = Object.keys(hits).map(function (k) { return hits[k].similarity >= 0.6 ? hits[k].value : null; }).filter(Boolean);
+    var ids = (c.identifiers || []).map(function (i) {
+      return '<li' + (hitVals.indexOf(i.value) >= 0 ? ' class="hit"' : '') + '><span class="t">' + esc(i.type) + (i.description ? ' · ' + esc(i.description) : '') + '</span><span class="val sel">' + esc(i.value) + '</span></li>';
+    }).join('');
+    return '<div class="cand' + (isBest ? ' best' : '') + (c.chosen ? ' cur' : '') + '" data-rid="' + esc(c.release_id) + '">' +
+      '<div class="cand-top">' + img(c.thumb) + '<div><a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.title || ('Release ' + c.release_id)) + '</a>' +
+      '<div class="muted">' + esc(c.country || '?') + ' · ' + esc(c.released || c.year || '?') + ' · ' + esc((c.label || []).slice(0, 2).join(', ')) + (c.catno ? ' · ' + esc(c.catno) : '') + '</div>' +
+      '<div class="muted">' + esc((c.format || []).join(', ')) + (c.have != null ? ' · ' + esc(c.have) + ' have' : '') + (c.chosen ? ' · <b>listed as this now</b>' : '') + '</div></div>' +
+      (sc ? '<span class="score">' + esc(sc.score) + '</span>' : '<span></span>') + '</div>' +
+      (c.fetched ? (ids ? '<ul class="ids">' + ids + '</ul>' : '<p class="muted">Discogs lists no matrix / runout for this release.</p>') : '<p class="muted" data-loading="' + esc(c.release_id) + '">Loading identifiers...</p>') +
+      (c.notes ? '<details><summary>Release notes</summary><p class="notes sel">' + esc(c.notes) + '</p></details>' : '') +
+      '<button class="' + (isBest ? 'go' : 'alt') + '" data-confirm="' + esc(c.release_id) + '">This is my pressing</button></div>';
+  }
+  function renderCands() {
+    var cs = (S.data && S.data.candidates) || [];
+    var order = cs.slice();
+    if (Object.keys(S.scores).length) order.sort(function (a, b) { return ((S.scores[b.release_id] || {}).score || 0) - ((S.scores[a.release_id] || {}).score || 0); });
+    $('cands').innerHTML = order.map(candHtml).join('') || '<p class="muted">No candidate releases.</p>';
+    var waiting = cs.filter(function (c) { return !c.fetched; }).length;
+    $('cand-msg').textContent = cs.length + ' pressing' + (cs.length === 1 ? '' : 's') + (waiting ? ', loading identifiers for ' + waiting + ' (about 1 a second)' : '');
+  }
+  function lazyFetch(seq) {
+    var c = ((S.data && S.data.candidates) || []).filter(function (x) { return !x.fetched && !x.failed; })[0];
+    if (!c || seq !== S.seq) { if (seq === S.seq && hasInput()) runMatch(); return; }
+    api('/admin/api/discogs/verify/release?item=' + encodeURIComponent(S.cur) + '&rid=' + encodeURIComponent(c.release_id)).then(function (j) {
+      if (seq !== S.seq) return;
+      if (j._status === 200 && j.fetched) { Object.assign(c, { fetched: true, identifiers: j.identifiers, year: j.year || c.year, released: j.released, country: j.country || c.country, notes: j.notes, have: j.have != null ? j.have : c.have }); }
+      else { c.failed = true; c.fetched = false; var why = j.reason || j.error || 'not available'; c.notes = c.notes || ''; c.fetchError = why; }
+      renderCands();
+      if (c.failed) { var el = d.querySelector('[data-loading="' + c.release_id + '"]'); if (el) el.textContent = 'Identifiers not loaded: ' + c.fetchError; }
+      lazyFetch(seq);
+    });
+  }
+  function hasInput() { var i = inputs(); return !!(i.side_a.trim() || i.side_b.trim() || i.lacquer.trim() || i.stamper.trim()); }
+  function runMatch() {
+    if (!S.cur) return;
+    if (!hasInput()) { S.scores = {}; S.best = null; $('best-bar').classList.add('hidden'); $('match-msg').textContent = ''; renderCands(); return; }
+    var seq = S.seq;
+    jpost('/admin/api/discogs/verify/match', Object.assign({ id: S.cur }, inputs())).then(function (j) {
+      if (seq !== S.seq || j._status !== 200) return;
+      S.scores = {}; (j.ranked || []).forEach(function (r) { S.scores[r.release_id] = r; });
+      S.best = j.best;
+      if (j.best) {
+        var c = (S.data.candidates || []).filter(function (x) { return x.release_id === j.best; })[0] || {};
+        $('confirm-best').textContent = 'Confirm ' + (c.country || '') + ' ' + (c.released || c.year || '') + ' (score ' + j.best_score + ')';
+        $('best-bar').classList.remove('hidden');
+        $('match-msg').textContent = j.clear ? 'Best match highlighted. Check the codes, then confirm.' : 'Best match highlighted, but another pressing scores close. Compare them before confirming.';
+      } else { $('best-bar').classList.add('hidden'); $('match-msg').textContent = 'No pressing matches well yet. Keep typing, or pick one below.'; }
+      renderCands();
+    });
+  }
+  ['side_a', 'side_b', 'lacquer', 'stamper'].forEach(function (k) { $(k).addEventListener('input', function () { clearTimeout(S.timer); S.timer = setTimeout(runMatch, 450); }); });
+  $('match').addEventListener('click', runMatch);
+  function confirmRid(rid) {
+    var i = inputs();
+    if (!i.side_a.trim() && !i.side_b.trim()) return toast('Type at least one side\'s runout first (or tap "Can\'t read").');
+    var sc = S.scores[rid];
+    jpost('/admin/api/discogs/verify/confirm', Object.assign({ id: S.cur, release_id: rid, score: sc ? sc.score : null }, i)).then(function (j) {
+      if (j._status !== 200) return toast(j.error || ('Error ' + j._status));
+      toast('Saved: verified as release ' + rid + (j.push ? (j.push.started ? '. Updating the Discogs listing.' : '. ' + (j.push.note || '')) : '.'));
+      nextRec();
+    });
+  }
+  $('confirm-best').addEventListener('click', function () { if (S.best) confirmRid(S.best); });
+  $('cands').addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('button[data-confirm]'); if (b) confirmRid(Number(b.getAttribute('data-confirm'))); });
+  $('cant').addEventListener('click', function () {
+    jpost('/admin/api/discogs/verify/skip', { id: S.cur }).then(function (j) { if (j._status !== 200) return toast(j.error || 'Error'); toast('Marked "can\'t read". Next record.'); nextRec(); });
+  });
+  function nextRec() {
+    var cur = S.cur;
+    return loadQueue().then(function () {
+      var nx = S.rows.filter(function (r) { return r.id !== cur && !r.pressing_verified; })[0];
+      if (nx) openRec(nx.id); else backToList();
+    });
+  }
+  function backToList() { S.cur = null; S.seq++; history.replaceState(null, '', location.pathname); $('rec-view').classList.add('hidden'); $('queue-view').classList.remove('hidden'); loadQueue(); }
+  $('back').addEventListener('click', backToList);
+  $('next').addEventListener('click', nextRec);
+  $('go').addEventListener('click', function () { token = $('token').value.trim(); sessionStorage.setItem('mecToken', token); $('login-msg').textContent = ''; start(); });
+  $('token').addEventListener('keydown', function (e) { if (e.key === 'Enter') $('go').click(); });
+  function start() { loadQueue().then(function () { var h = location.hash.slice(1); if (h && /^\d+$/.test(h) && !$('app').classList.contains('hidden')) openRec(h); }); }
+  if (token) start();
+})();
+</script>
+</body>
+</html>

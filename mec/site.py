@@ -85,8 +85,19 @@ class Site:
         self.guides = self._load_guides()
         self.posts = self._load_posts()
         self.merch = self._load_merch()
+        self.pressings = self._load_pressings()
 
     # ------------------------------------------------------------------ utils
+    def _load_pressings(self) -> dict:
+        """eBay id -> 'A: <x> / B: <y>' for records whose runout Edwin verified
+        (data/discogs/matches.json). Unverified records show nothing."""
+        from .discogs import load_matches, matrix_text
+        try:
+            return {k: t for k, m in load_matches().items()
+                    if m.get("pressing_verified") and (t := matrix_text(m))}
+        except Exception:   # the Discogs data is optional; the site builds without it
+            return {}
+
     def _asset_version(self) -> str:
         h = hashlib.sha1()
         for p in sorted(STATIC.rglob("*")):
@@ -673,6 +684,7 @@ class Site:
             add("Year (as listed)", "listing_year", note="The listing title doesn't say whether this is the release or the pressing year.")
         add("Pressing year", "pressing_year")
         add("Country", "country")
+        add("Matrix/Runout", "matrix_runout", self.pressings.get(r["id"]))
         add("Vinyl grade", "media_grade", note=r.get("media_grade_note"))
         add("Sleeve grade", "sleeve_grade", note=r.get("sleeve_grade_note"))
         if r.get("title_grade") and not (r.get("media_grade") or r.get("sleeve_grade")):

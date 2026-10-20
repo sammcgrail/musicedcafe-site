@@ -52,7 +52,7 @@ label.f { display: grid; gap: 4px; font-size: 14px; font-weight: 700; color: #54
 .dc-cand img { width: 56px; height: 56px; }
 .dc-cand.chosen { background: #eef5f4; }
 .pill { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 12.5px; font-weight: 700; background: #e9dfc8; }
-.pill.confident { background: #cfe6e3; } .pill.review { background: #f6dfb5; } .pill.no_match { background: #efc9b8; } .pill.approved { background: #2b6461; color: #fff; } .pill.skipped { background: #ccc; }
+.pill.confident { background: #cfe6e3; } .pill.review { background: #f6dfb5; } .pill.no_match { background: #efc9b8; } .pill.approved { background: #2b6461; color: #fff; } .pill.skipped { background: #ccc; } .pill.quick { background: #dfe7f2; }
 button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
 .alert { border-left: 4px solid #c9932f; padding: 6px 10px; margin-top: 8px; background: #fff; font-size: 14px; }
 .alert.critical { border-color: #9b3d17; } .alert.action { border-color: #1f5f9e; } .alert.acked { opacity: .6; }
@@ -122,6 +122,15 @@ button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
     </div>
     <div class="row"><label class="f" style="flex:1">Your name (stored with each approval)<input type="text" id="dc-by" placeholder="Edwin" autocomplete="name"></label></div>
 
+    <h3 class="sub">Quick listing (Edwin's rule) and pressing checks</h3>
+    <p class="muted">Quick-pick lists every "review" record on its most likely release (the record's country and year, then the closest format, then the earliest year at or after the release year, then the most Discogs "haves"). Each comment says "Pressing variant not verified; see photos on the listing page." until the runout is checked on <a href="/admin/verify">Verify pressing</a>. Nothing is listed until "List on Discogs" is on.</p>
+    <div class="row">
+      <button id="dc-quick" class="alt">Quick-pick likely releases</button>
+      <button id="dc-enable" class="alt">Enable Discogs for all quick + confident records that have a vinyl grade</button>
+      <a class="btn" href="/admin/verify" style="display:inline-flex;align-items:center;text-decoration:none">Verify pressing (phone)</a>
+    </div>
+    <div id="dc-needs-grade" class="sel"></div>
+
     <h3 class="sub">End on eBay (sold on Discogs)</h3>
     <div id="dc-end" class="sel"></div>
 
@@ -146,7 +155,7 @@ button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
     <h3 class="sub">Review matches</h3>
     <div class="row">
       <select id="dc-filter" aria-label="Show records">
-        <option value="review">Needs review</option><option value="confident">Confident (not yet approved)</option>
+        <option value="review">Needs review</option><option value="quick">Quick-picked</option><option value="confident">Confident (not yet approved)</option>
         <option value="no_match">No match</option><option value="approved">Approved</option><option value="skipped">Skipped</option>
         <option value="unmatched">Not matched yet</option><option value="">All</option>
       </select>
@@ -329,20 +338,24 @@ button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
       '<br><span class="muted">' + esc([r.label, r.catalog_number, r.format, r.year, r.country].filter(Boolean).join(' · ')) + '</span>' +
       '<br><span class="muted">$' + esc(r.price) + ' on eBay → $' + esc(r.discogs_price || '?') + ' on Discogs · vinyl ' + esc(r.vinyl_grade || '?') + ' → ' + esc(r.discogs_condition || 'not mappable') + ' · sleeve ' + esc(r.sleeve_grade || '?') + ' → ' + esc(r.discogs_sleeve || 'not mappable') + '</span>' +
       (m.reason ? '<br><span class="sig">' + esc(m.reason) + '</span>' : '') +
+      (m.quick_reason ? '<br><span class="sig">quick rule: ' + esc(m.quick_reason) + '</span>' : '') +
+      ((m.quick_pick && m.quick_pick.warnings && m.quick_pick.warnings.length) ? '<br><span class="bad">' + esc(m.quick_pick.warnings.join('; ')) + '</span>' : '') +
+      (st === 'quick' || st === 'approved' || st === 'confident' ? '<br><span class="sig">pressing ' + (m.pressing_verified ? 'verified' + (m.matrix ? ' (A: ' + esc(m.matrix.side_a || '-') + ' / B: ' + esc(m.matrix.side_b || '-') + ')' : (m.pressing_verified_via ? ' (' + esc(m.pressing_verified_via) + ')' : '')) : 'not verified') + ' · <a href="/admin/verify#' + esc(r.id) + '">verify</a></span>' : '') +
       (m.approved_by ? '<br><span class="sig">approved release ' + esc(m.approved_release_id) + ' by ' + esc(m.approved_by) + ' at ' + esc(m.approved_at) + '</span>' : '') +
       (m.record_changed_since_decision ? '<br><span class="bad">eBay details changed since this decision; re-check it</span>' : '') +
       (r.grade_conflicts.length ? '<br><span class="bad">grade conflict: ' + esc(r.grade_conflicts.join('; ')) + '</span>' : '') +
       (L.listing_id ? '<br>Discogs listing <a href="' + esc(L.url) + '" rel="noopener" target="_blank">' + esc(L.listing_id) + '</a> (' + esc(L.status) + ')' + (L.last_error ? ' <span class="bad">' + esc(L.last_error.error) + '</span>' : '') : '') +
-      (r.problems.length && st === 'approved' ? '<br><span class="bad">Can\'t list: ' + esc(r.problems.join('; ')) + '</span>' : '') +
+      (r.problems.length && (st === 'approved' || st === 'quick') ? '<br><span class="bad">Can\'t list: ' + esc(r.problems.join('; ')) + '</span>' : '') +
       (r.notes.length ? '<br><span class="sig">' + esc(r.notes.join('; ')) + '</span>' : '') + '</div></div>';
-    var cands = (m.candidates || []).map(function (c) { return cand(r, c, c.release_id === chosen); }).join('');
+    var all = (m.candidates || []), cands = all.slice(0, 5).map(function (c) { return cand(r, c, c.release_id === chosen); }).join('') +
+      (all.length > 5 ? '<details><summary class="sig" style="min-height:40px;cursor:pointer">' + (all.length - 5) + ' more pressings with this catalog number</summary>' + all.slice(5).map(function (c) { return cand(r, c, c.release_id === chosen); }).join('') + '</details>' : '');
     var acts = '<div class="row">' +
       (m.chosen_release_id && st !== 'approved' ? '<button class="sm" data-approve="' + esc(r.id) + '">Approve ' + esc(m.chosen_release_id) + '</button>' : '') +
       '<input type="text" inputmode="numeric" placeholder="Release ID or URL" data-manual-in="' + esc(r.id) + '" style="max-width:190px;min-height:40px">' +
       '<button class="sm alt" data-manual="' + esc(r.id) + '">Use release ID</button>' +
       (st !== 'skipped' ? '<button class="sm alt" data-skip="' + esc(r.id) + '">Skip</button>' : '') +
-      (st === 'approved' || st === 'skipped' ? '<button class="sm alt" data-reset="' + esc(r.id) + '">Undo</button>' : '') +
-      (st === 'approved' ? '<label class="f" style="display:flex;align-items:center;gap:6px"><input type="checkbox" data-toggle="' + esc(r.id) + '"' + (m.list_on_discogs ? ' checked' : '') + ' style="width:24px;height:24px"> List on Discogs</label>' : '') +
+      (st === 'approved' || st === 'skipped' || st === 'quick' ? '<button class="sm alt" data-reset="' + esc(r.id) + '">Undo</button>' : '') +
+      (st === 'approved' || st === 'quick' ? '<label class="f" style="display:flex;align-items:center;gap:6px"><input type="checkbox" data-toggle="' + esc(r.id) + '"' + (m.list_on_discogs ? ' checked' : '') + ' style="width:24px;height:24px"> List on Discogs</label>' : '') +
       '<select data-sleeve="' + esc(r.id) + '" aria-label="Sleeve condition override" style="max-width:230px;min-height:40px"><option value="">Sleeve: from eBay grade</option>' +
       ((dc.ov && dc.ov.sleeve_values) || []).map(function (v) { return '<option' + (m.sleeve_condition === v ? ' selected' : '') + '>' + esc(v) + '</option>'; }).join('') + '</select>' +
       '</div>';
@@ -361,7 +374,7 @@ button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
     var f = $('dc-filter').value;
     return api('/admin/api/discogs/records' + (f ? '?status=' + encodeURIComponent(f) : '')).then(function (j) { dc.rows = j.rows || []; dcRender(false); });
   }
-  function dcAll() { return dcOverview().then(dcAlerts).then(dcRows); }
+  function dcAll() { return dcOverview().then(dcAlerts).then(dcEnablePreview).then(dcRows); }
   function dcAct(path, body) {
     return jpost(path, body).then(function (j) { if (j._status >= 400) alert(j.error || ('HTTP ' + j._status)); else show(j); return dcAll(); });
   }
@@ -377,6 +390,33 @@ button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
     var n = (dc.ov && dc.ov.confident_unapproved) || 0;
     if (!n) return alert('No confident matches waiting.');
     if (confirm('Approve all ' + n + ' confident matches? (Each still needs "List on Discogs" turned on before anything is listed.)')) dcAct('/admin/api/discogs/approve-confident', { expected: n });
+  });
+  function dcEnablePreview() {
+    return api('/admin/api/discogs/enable-preview').then(function (j) {
+      if (j._status !== 200) return;
+      dc.enable = j.count;
+      $('dc-enable').textContent = 'Enable Discogs for all quick + confident records that have a vinyl grade (' + j.count + ')';
+      var ng = j.needs_grade || [];
+      $('dc-needs-grade').innerHTML = ng.length ? '<h3 class="sub">Needs grade (' + ng.length + ', left out until graded)</h3><div class="tbl"><table><tr><th>Record</th><th>Vinyl / sleeve</th><th>Problem</th></tr>' + ng.map(function (x) {
+        return '<tr><td><a href="' + esc(x.ebay_url) + '" rel="noopener" target="_blank">' + esc(x.title || x.id) + '</a><br><span class="muted">eBay ' + esc(x.id) + '</span></td><td>' + esc(x.vinyl_grade || '-') + ' / ' + esc(x.sleeve_grade || '-') + '</td><td>' + esc((x.problems || []).join('; ')) + '</td></tr>';
+      }).join('') + '</table></div>' : '';
+    });
+  }
+  $('dc-quick').addEventListener('click', function () {
+    jpost('/admin/api/discogs/quickpick', {}).then(function (j) {
+      if (j._status !== 200) return alert(j.error || ('HTTP ' + j._status));
+      show(j);
+      if (!j.would_pick) return alert('No "review" records to quick-pick.');
+      var msg = 'Quick-pick ' + j.would_pick + ' records? Each is set to its most likely release, marked "pressing not verified", and stays unlisted until "List on Discogs" is on.' +
+        (j.records_needing_enrichment ? '\n\n' + j.records_needing_enrichment + ' records have tied pressings and no Discogs "have" counts cached yet, so the tie goes to the best match score (run "scripts/mec discogs enrich" first to use "haves").' : '') +
+        ((j.warnings || {})['no pressing with this catalog number has the eBay title (check the catno or the title)'] ? '\n\n' + j.warnings['no pressing with this catalog number has the eBay title (check the catno or the title)'] + ' records have no pressing with the eBay title; they are flagged on their cards.' : '');
+      if (confirm(msg)) dcAct('/admin/api/discogs/quickpick', { apply: true, expected: j.would_pick });
+    });
+  });
+  $('dc-enable').addEventListener('click', function () {
+    var n = dc.enable || 0;
+    if (!n) return alert('No quick or confident records with grades waiting.');
+    if (confirm('Turn on "List on Discogs" for ' + n + ' quick + confident records with a vinyl and sleeve grade? Confident ones are approved at the same time. They are created as ' + ($('dc-lstatus').value) + ' at the next listing sync.')) dcAct('/admin/api/discogs/enable-quick-confident', { expected: n });
   });
   $('dc-list-all').addEventListener('click', function () {
     var n = (dc.ov && dc.ov.approved_not_listed) || 0;
@@ -415,7 +455,7 @@ button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
     if (t.dataset.sleeve) dcAct('/admin/api/discogs/decide', { id: t.dataset.sleeve, action: 'set_sleeve', sleeve_condition: t.value || null });
   });
   var _status = status;
-  status = function () { return _status().then(function () { if (!$('app').classList.contains('hidden')) { merch(); dcOverview().then(dcAlerts); } }); };
+  status = function () { return _status().then(function () { if (!$('app').classList.contains('hidden')) { merch(); dcOverview().then(dcAlerts).then(dcEnablePreview); } }); };
   if (token) status();
 })();
 </script>

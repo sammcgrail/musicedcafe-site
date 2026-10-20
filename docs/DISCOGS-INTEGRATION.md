@@ -28,10 +28,10 @@ Check them on the first live run.
 | Rate limit | "Authenticated requests are limited to 60 per minute". It's a moving average over 60 s. Headers: `X-Discogs-Ratelimit`, `X-Discogs-Ratelimit-Used`, `X-Discogs-Ratelimit-Remaining`. "Your application should … throttle its requests locally." | 1 request per second at most; pauses 10 s when Remaining ≤ 3; 429 is retried with backoff (5, 10, 20, 40 s, or `Retry-After`) |
 | Pagination | `page`, `per_page` (max 100, default 50), plus a `pagination` object with `pages`/`items` | reads every page; refuses a read of more than 60 pages |
 | Identity | `GET /oauth/identity` → `{id, username, resource_url, consumer_name}` | gives the inventory username (cached in `data/discogs/state.json`) |
-| Search | `GET /database/search`, "Authentication (as any user) is required". Params include `type`, `title`, `release_title`, `artist`, `label`, `country`, `year`, `format`, `catno`, `barcode`. Results have `id`, `title` ("Artist - Title"), `label[]`, `catno`, `format[]`, `year`, `country`, `thumb`, `uri` | `type=release` with `catno`+`label`, then `artist`+`release_title`+`format=Vinyl`+`year` |
-| Release | `GET /releases/{release_id}` | checks a release ID Edwin types in by hand |
+| Search | `GET /database/search`, "Authentication (as any user) is required". Params include `type`, `title`, `release_title`, `artist`, `label`, `country`, `year`, `format`, `catno`, `barcode`. Results have `id`, `title` ("Artist - Title"), `label[]`, `catno`, `format[]`, `year`, `country`, `thumb`, `uri`, and `community {want, have}` | `type=release` with `catno`+`label`, then `artist`+`release_title`+`format=Vinyl`+`year`. `community.have/want` is stored on each candidate since 2026-10-20 (the first match run dropped it) |
+| Release | `GET /releases/{release_id}`. The example shows `identifiers[] {type, value}` (plus `description` on real releases *(inferred from the site; the docs example only has a Barcode)*), `community {have, want, …}`, `labels[] {name, catno}`, `formats[]`, `country`, `year`, `released`, `notes` | checks a release ID Edwin types in by hand; the verify page and `discogs enrich` cache it in `data/discogs/releases/<id>.json` |
 | New listing | `POST /marketplace/listings` with `release_id` (required), `condition` (required), `sleeve_condition`, `price` (required, seller's currency), `comments`, `allow_offers` (default false), `status` ("For Sale" or "Draft"), `external_id` ("Private Comments", seller only), `location` (private storage location), `weight` and `format_quantity` (either can be `auto`). Request `Content-Type: application/json`. Response 201 `{listing_id, resource_url}` | JSON body; `external_id` = eBay item id; `weight`/`format_quantity` = `auto` |
-| Edit listing | `POST /marketplace/listings/{listing_id}`, same fields. "If the listing's status is not For Sale, Draft, or Expired, it cannot be modified – only deleted. To re-list a Sold listing, a new listing must be created." Response 204 | updates resend all fields, keeping the listing's current status |
+| Edit listing | `POST /marketplace/listings/{listing_id}`, same fields; `release_id number (required)` "The ID of the release you are posting" is one of them. "If the listing's status is not For Sale, Draft, or Expired, it cannot be modified – only deleted. To re-list a Sold listing, a new listing must be created." Response 204 | updates resend all fields, keeping the listing's current status. A verified pressing changes `release_id` through this edit. *(inferred)* that Discogs accepts a *different* release id there: the docs list the field but don't say. If the edit is refused (400 / 409 / 422) the listing is deleted and re-created as a Draft, idempotently (below) |
 | Delete listing | `DELETE /marketplace/listings/{listing_id}`: "Permanently remove a listing". Response 204 | used when the record ended or sold on eBay |
 | Inventory | `GET /users/{username}/inventory{?status,sort,sort_order}`. As the inventory owner you "get additional weight, format_quantity, external_id, location, and quantity keys". Status filter, e.g. `for sale` | read in full before any write (idempotency); `status=Sold` in the poll |
 | Orders | `GET /marketplace/orders{?status,created_after,created_before,archived,sort,sort_order}`. Status keys: All, New Order, Buyer Contacted, Invoice Sent, Payment Pending, Payment Received, In Progress, Shipped, Merged, Order Changed, Refund Sent, Cancelled, Cancelled (Non-Paying Buyer), Cancelled (Item Unavailable), Cancelled (Per Buyer's Request), Cancelled (Refund Received). Each order has `id` ("1-1"), `status`, `created`, `items[]` `{id, release{id}, price{value,currency}}`, and also buyer and shipping address | `created_after`, `sort=created`. **Only** order id, status, date, item listing id, release id and price are kept. Buyer and address are never stored |
@@ -97,6 +97,114 @@ path alone is enough to catch a sale.
 - A re-run only matches new or changed records. It never touches an approved or
   skipped one. If eBay details change after a decision, the record is flagged
   "re-check".
+
+## Quick listing: Edwin's rule (2026-10-20)
+
+Most records are **review**: several pressings share the catalog number. Edwin
+chose "quick": list every record on its most likely release now, say so in the
+comment, and verify the pressing later from the runout.
+
+`scripts/mec discogs quickpick` (report only) / `--apply`, or **Quick-pick
+likely releases** on `/admin/` (shows the count, then asks for confirmation).
+It makes **no API call**: it only reads the cached candidates in matches.json.
+
+- **Scope**: every `review` record (and earlier quick picks that aren't
+  verified) with at least one candidate that shares the catalog number and
+  could be the same format. If any of them also match the label, only those
+  are used. `no_match` and records with no shared catno are left out.
+  `confident` records keep their status.
+- **Order** (each filter is only applied if it leaves something):
+  0. the eBay title (pressings whose title matches; the artist's name inside
+     the album field and A/B sides of singles are allowed for). If none match,
+     the record is still picked but flagged "no pressing with this catalog
+     number has the eBay title (check the catno or the title)". Use
+     `--exclude-title-mismatch` to leave those out.
+  1. (a) the record's country, then its year (pressing year, else release year);
+  2. (b) the closest format: the same LP / 7" / 10" / 12" class with no speed
+     contradiction, then consistent, then unknown;
+  3. (c) the original era: the earliest year at or after the record's release
+     year. If that year is unknown, or every pressing is older, the earliest
+     overall. Undated pressings come last;
+  4. (d) the most Discogs `community.have`; then the match score; then the
+     lowest release id.
+- **Stored**: `status: "quick"`, `chosen_release_id` = `approved_release_id`,
+  `pressing_verified: false`, `approved_by: "edwin-quick-rule"`,
+  `approved_at`, `approved_via: "quick_rule"`, `quick_reason` (the steps in
+  words) and `quick_pick` (`ranked`, `tie_break`, `warnings`).
+- **Confident** records get `pressing_verified: true` only when their match
+  was exact on catno AND country AND year (`pressing_verified_via: "exact
+  country+year+catno"`), otherwise `false`.
+- A match re-run never touches `quick` (or verified) records.
+- **Missing data**: the first match run did not store `community.have`, so a
+  tie at step (d) falls back to the match score. `scripts/mec discogs enrich`
+  fetches `GET /releases/{id}` for the top 3 tied pressings of each such record
+  (read-only, 1 request/second, cached in `data/discogs/releases/`). Re-run
+  quickpick afterwards. The first run also stored only the **top 5 candidates**
+  per record; new match runs store every pressing that shares the catno (up to
+  40). Re-running `scripts/mec discogs match --rematch` before the quick pick
+  refreshes both (it never touches quick, approved or skipped records).
+
+Quick-picked records are **not listed by themselves**. Listing still needs the
+per-record toggle, or the bulk action **Enable Discogs for all quick +
+confident records that have a vinyl grade** (`scripts/mec discogs enable`,
+preview first, then `--expected N`). It confirms the count, approves the
+confident ones at the same time, and leaves out records whose vinyl or sleeve
+grade doesn't map. Those are shown in the **Needs grade** queue. New listings
+start as **Draft** (the default setting). Edwin flips them to For Sale on
+Discogs.
+
+**Comment**: every listing's comment ends with one line:
+- `pressing_verified` false: "Pressing variant not verified; see photos on the listing page."
+- verified with a runout: "Matrix/Runout: A: <side A> / B: <side B>"
+- verified by exact country+year+catno, no runout typed: no extra line.
+
+The template is trimmed first, so the line always survives the 1,000-character cap.
+
+## Verify pressing (`/admin/verify`, phone page)
+
+The same token sign-in as `/admin/` (the page is a static shell holding no
+data; every `/admin/api/discogs/verify/*` call needs `Authorization: Bearer
+<ADMIN_TOKEN>`). It's built for 390 px, with 44 px+ tap targets.
+
+- **Queue**: unverified records (review, quick, confident, approved with
+  candidates; active on eBay), highest price first, "can't read" ones last,
+  with "N of M verified". Search by eBay item #, artist, title or catno.
+- **Record**: eBay photo and title, catno, label, country/year, the release
+  it's listed as now, the quick rule's reasons and warnings, and every
+  candidate. For each candidate: country, released date, labels, catno,
+  format, haves, release notes, and the `identifiers` from `GET
+  /releases/{id}` (Matrix / Runout, Lacquer Cut Code, Stamper, Mastering SID
+  and similar, with their descriptions. Barcode, ASIN, price/label/rights
+  codes are left out). Identifiers load lazily, one release at a time, when
+  the record opens: `GET /admin/api/discogs/verify/release?item=&rid=` (only
+  the record's own candidates; read-only client; one 1 req/s budget shared with
+  any other Discogs client in the admin process; cached in
+  `data/discogs/releases/<id>.json`).
+- **Inputs**: Side A runout, Side B runout, optional lacquer / stamper codes,
+  and **Can't read** (stores `verify_skipped_at` and moves to the next record).
+- **Auto-match** (`POST /admin/api/discogs/verify/match`): both sides are
+  normalised (case, spaces, dashes, dots and slashes ignored; △ ▽ ▲ ▼ Δ ∆ and
+  the words "delta" / "triangle" all become one token). Each typed value is
+  compared with every identifier: exact = 1; typed text found inside the
+  identifier = 0.85–1; the identifier inside the typed text = 0.6–1 (by length
+  ratio); one typo on a code of 6+ characters = 0.75; otherwise 0.8 × token
+  overlap. A release's score is the mean over the fields typed, × 100. The best
+  one (score ≥ 40) is highlighted with its score and a one-tap **Confirm**. A
+  "compare them" note appears when the runner-up is within 10 points. Any
+  candidate can be picked instead with "This is my pressing".
+- **Confirm** (`POST /admin/api/discogs/verify/confirm`): `chosen_release_id`
+  = `approved_release_id` = the release, `status: "approved"`,
+  `pressing_verified: true`, `matrix {side_a, side_b, lacquer, stamper,
+  verified_at, verified_by, match_score, release_id}`. If a Discogs listing
+  exists, a background listing sync for just that record is started. It edits
+  the listing (`POST /marketplace/listings/{id}`) with the new `release_id` and
+  the Matrix/Runout comment, keeping its status. If Discogs refuses the release
+  change (400 / 409 / 422), the listing is marked `recreate_pending` (saved
+  first), deleted, and re-created as a **Draft**. A crash between the two steps
+  is finished by the next sync: it adopts by `external_id`, or creates the
+  Draft.
+- **Site**: a verified record's page shows **Matrix/Runout** in its details
+  table after the next rebuild. Unverified records show nothing.
 
 ## Review and approval (admin page)
 
@@ -249,8 +357,9 @@ eBay sync then clears the entry.
 
 | file | what |
 |---|---|
-| `data/discogs/matches.json` | per eBay id: `status` (confident / review / no_match / approved / skipped), `auto_status`, `candidates` (top 5), `chosen_release_id`, `approved_release_id`, `approved_by`, `approved_at`, `list_on_discogs`, `sleeve_condition`, `history` |
-| `data/discogs/listings.json` | per eBay id: `listing_id`, `status` (For Sale / Draft / unlisted / deleted / sold / removed_on_discogs), `pushed` fields, timestamps, `last_error`, `previous` |
+| `data/discogs/matches.json` | per eBay id: `status` (confident / review / no_match / quick / approved / skipped), `auto_status`, `candidates` (top 5 + every catno-sharing pressing up to 40, with `community` on new runs), `chosen_release_id`, `approved_release_id`, `approved_by`, `approved_at`, `list_on_discogs`, `sleeve_condition`, `quick_reason`, `quick_pick`, `pressing_verified`, `pressing_verified_via`, `matrix`, `verify_skipped_at`, `history` |
+| `data/discogs/releases/<id>.json` | cached `GET /releases/{id}`: identifiers, community have/want, labels, formats, country, year, notes |
+| `data/discogs/listings.json` | per eBay id: `listing_id`, `status` (For Sale / Draft / unlisted / deleted / sold / removed_on_discogs / recreate_pending), `pushed` fields, timestamps, `last_error`, `recreated_from`, `previous` |
 | `data/discogs/settings.json` | listing settings. It's in `data/` because the admin container mounts the repo read-only, apart from `data/` and `public/` |
 | `data/discogs/state.json` | `username`, `orders_cursor`, `last_match`, `last_listing_sync`, `last_poll` |
 | `data/discogs/alerts.json` | Alerts feed (newest first, last 500) |

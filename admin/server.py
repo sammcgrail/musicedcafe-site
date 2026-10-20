@@ -30,6 +30,16 @@ Routes (all /admin/api/* need  Authorization: Bearer <ADMIN_TOKEN>):
   POST /admin/api/discogs/alerts/ack      {ids?}  (no ids = all)
   POST /admin/api/discogs/ebay-ended      {id}  "I ended it on eBay"
   POST /admin/api/discogs/relist          {id, confirm: true}  undo a Discogs sale (eBay must still show qty > 0)
+  POST /admin/api/discogs/quickpick       {apply?, expected?, exclude_title_mismatch?}  Edwin's quick rule (no API call)
+  GET  /admin/api/discogs/enable-preview  quick + confident records the bulk enable would turn on, and the needs-grade queue
+  POST /admin/api/discogs/enable-quick-confident {expected, by?}
+  GET  /admin/verify                      "Verify pressing" phone page (static shell, same token sign-in as /admin/)
+  GET  /admin/api/discogs/verify/queue?q=&show=unverified|all
+  GET  /admin/api/discogs/verify/record?id=      one record + its candidate releases (cached identifiers)
+  GET  /admin/api/discogs/verify/release?item=&rid=   lazily GET /releases/{rid} (paced, cached in data/discogs/releases/)
+  POST /admin/api/discogs/verify/match    {id, side_a, side_b, lacquer?, stamper?}  auto-match scores
+  POST /admin/api/discogs/verify/confirm  {id, release_id, side_a, side_b, lacquer?, stamper?, score?, by?}
+  POST /admin/api/discogs/verify/skip     {id, by?}   "can't read"
   GET  /ebay/account-deletion  eBay Marketplace Account Deletion challenge (needed for a production keyset)
   POST /ebay/account-deletion  acknowledges notifications (this site stores no eBay buyer data)
 
@@ -64,6 +74,8 @@ from mec.cli import _load_env  # noqa: E402
 _load_env()
 TOKEN = os.environ.get("ADMIN_TOKEN", "")
 PAGE = (Path(__file__).parent / "index.html").read_bytes()
+VERIFY_PAGE = (Path(__file__).parent / "verify.html").read_bytes()
+_REC_CACHE = {"at": 0.0, "records": None}
 LOCK = threading.Lock()
 JOB = {"running": None, "started": None, "last": None}
 MAX_BODY = 10 * 1024 * 1024
@@ -210,6 +222,16 @@ def discogs_scheduler(interval: float | None = None, once: bool = False):
         time.sleep(wait)
 
 
+def records_cached(ttl: float = 20.0) -> list:
+    """merge.build_records() for the verify page, reused for a few seconds so a
+    search-as-you-type doesn't rebuild every record on each keystroke."""
+    from mec import merge
+    now = time.time()
+    if _REC_CACHE["records"] is None or now - _REC_CACHE["at"] > ttl:
+        _REC_CACHE["records"], _REC_CACHE["at"] = merge.build_records()[0], now
+    return _REC_CACHE["records"]
+
+
 def _bg(name: str, fn):
     """Start fn under the job lock in a thread; returns (status, payload) for the reply."""
     if LOCK.locked():
@@ -282,6 +304,33 @@ class H(BaseHTTPRequestHandler):
             return self.send(200, {"rows": discogs.review_rows(status=(qs.get("status") or [None])[0])})
         if u.path == "/admin/api/discogs/alerts":
             return self.send(200, {"alerts": discogs.load_alerts()})
+        if u.path == "/admin/api/discogs/enable-preview":
+            return self.send(200, discogs.enable_preview(records_cached(0)))
+        if u.path == "/admin/api/discogs/verify/queue":
+            return self.send(200, discogs.verify_queue(records_cached(), q=(qs.get("q") or [""])[0],
+                                                       show=(qs.get("show") or ["unverified"])[0]))
+        if u.path == "/admin/api/discogs/verify/record":
+            try:
+                return self.send(200, discogs.verify_record((qs.get("id") or [""])[0], records_cached()))
+            except ValueError as e:
+                return self.send(404, {"error": str(e)})
+        if u.path == "/admin/api/discogs/verify/release":
+            iid, rid = (qs.get("item") or [""])[0], (qs.get("rid") or [""])[0]
+            m = discogs.load_matches().get(iid) or {}
+            ids = {str(c.get("release_id")) for c in m.get("candidates") or []} | {str(m.get("chosen_release_id"))}
+            if not rid.isdigit() or rid not in ids:
+                return self.send(400, {"error": "rid must be one of this record's candidate releases"})
+            try:
+                rel = discogs.get_release(discogs.make_client(read_only=True), int(rid))
+            except discogs.DiscogsError as e:
+                return self.send(502, {"error": str(e)[:300]})
+            if rel is None:
+                return self.send(200, {"release_id": int(rid), "fetched": False, "reason": discogs.SKIP_REASON})
+            return self.send(200, {"release_id": int(rid), "fetched": True,
+                                   "identifiers": discogs.runout_identifiers(rel), "year": rel.get("year"),
+                                   "released": rel.get("released"), "country": rel.get("country"),
+                                   "labels": rel.get("labels"), "notes": rel.get("notes"),
+                                   "have": (rel.get("community") or {}).get("have")})
         if u.path == "/admin/api/discogs/plan":
             code, res = run_job("discogs-plan", lambda: discogs.sync_listings(
                 client=discogs.make_client(read_only=True), dry_run=True, log=log))
@@ -318,6 +367,37 @@ class H(BaseHTTPRequestHandler):
                 if b.get("expected") is None:
                     return self.send(400, {"error": "expected (the confirmed count) is required"})
                 return self.send(200, discogs.list_all_approved(int(b["expected"]), by=by))
+            if u.path == "/admin/api/discogs/quickpick":
+                if b.get("apply") and b.get("expected") is None:
+                    return self.send(400, {"error": "expected (the confirmed count) is required to apply"})
+                return self.send(200, discogs.quickpick(apply=bool(b.get("apply")), expected=b.get("expected"),
+                                                        exclude_title_mismatch=bool(b.get("exclude_title_mismatch")),
+                                                        log=log))
+            if u.path == "/admin/api/discogs/enable-quick-confident":
+                if b.get("expected") is None:
+                    return self.send(400, {"error": "expected (the confirmed count) is required"})
+                return self.send(200, discogs.enable_quick_confident(records_cached(0), int(b["expected"]), by=by))
+            if u.path == "/admin/api/discogs/verify/match":
+                m = discogs.load_matches().get(str(b.get("id") or ""))
+                if not m:
+                    return self.send(404, {"error": "no match entry for this record"})
+                rids = list(dict.fromkeys([m.get("chosen_release_id")] + [c["release_id"] for c in m.get("candidates") or []]))
+                return self.send(200, discogs.auto_match(b, [r for r in rids if r]))
+            if u.path == "/admin/api/discogs/verify/confirm":
+                res = discogs.confirm_pressing(str(b.get("id") or ""), b.get("release_id"), b, by=by,
+                                               score=b.get("score"))
+                out = {"match": res["match"], "listing_live": res["listing_live"]}
+                if res["listing_live"]:   # push the new release + comment to the existing Discogs listing
+                    if discogs.get_token():
+                        iid = str(b.get("id"))
+                        code, j = _bg("discogs-verify-push", lambda: discogs.sync_listings(only_ids={iid}, log=log))
+                        out["push"] = j if code == 202 else {"queued": False, "note": "another job is running; "
+                                                             "the next listing sync pushes it"}
+                    else:
+                        out["push"] = {"queued": False, "note": discogs.SKIP_REASON}
+                return self.send(200, out)
+            if u.path == "/admin/api/discogs/verify/skip":
+                return self.send(200, {"match": discogs.skip_pressing(str(b.get("id") or ""), by=by)})
             if u.path == "/admin/api/discogs/settings":
                 s, errs = discogs.save_settings({k: v for k, v in b.items() if k != "by"})
                 return self.send(400 if errs else 200, {"settings": s, "errors": errs})
@@ -343,6 +423,8 @@ class H(BaseHTTPRequestHandler):
             return
         if u.path in ("/admin", "/admin/"):
             return self.send(200, PAGE, "text/html; charset=utf-8")
+        if u.path in ("/admin/verify", "/admin/verify/"):
+            return self.send(200, VERIFY_PAGE, "text/html; charset=utf-8")
         if u.path == "/ebay/account-deletion":
             return self.ebay_challenge(u)
         if u.path == "/admin/api/status":

@@ -12,6 +12,12 @@
   discogs plan                      what a listing sync would create / update / unlist / delete (reads only)
   discogs sync-listings [--force]   push approved records to Discogs (needs per-record approval)
   discogs poll [--no-build]         check Discogs orders + sold inventory, mark sales (reads only)
+  discogs quickpick [--apply] [--exclude-title-mismatch]
+                                    Edwin's quick rule: most likely release for every "review" record
+                                    (cached data only, no API call; without --apply it only reports)
+  discogs enrich [--top 3] [--limit N]   GET /releases/{id} for tied quick-pick pressings (reads only)
+  discogs enable [--expected N] [--by NAME]   turn "list on Discogs" on for quick + confident records
+                                    with mappable grades (without --expected: preview + needs-grade queue)
   Every discogs command that calls the API logs "skipped: no DISCOGS_TOKEN" without a token.
 """
 from __future__ import annotations
@@ -82,6 +88,16 @@ def main(argv=None):
     q.add_argument("--force", action="store_true", help="allow deleting more than 50%% of listings in one run")
     q = dsub.add_parser("poll")
     q.add_argument("--no-build", action="store_true")
+    q = dsub.add_parser("quickpick")
+    q.add_argument("--apply", action="store_true", help="store the picks (status quick); default only reports")
+    q.add_argument("--exclude-title-mismatch", action="store_true",
+                   help="leave out records where no pressing with the catno has the eBay title")
+    q = dsub.add_parser("enrich")
+    q.add_argument("--top", type=int, default=3)
+    q.add_argument("--limit", type=int)
+    q = dsub.add_parser("enable")
+    q.add_argument("--expected", type=int, help="the count you confirmed from the preview")
+    q.add_argument("--by", default="admin")
     a = ap.parse_args(argv)
 
     from . import store
@@ -183,6 +199,19 @@ def _discogs(a) -> int:
         res = discogs.sync_listings(client=discogs.make_client(read_only=True), dry_run=True)
     elif a.dcmd == "sync-listings":
         res = discogs.sync_listings(force=a.force)
+    elif a.dcmd == "quickpick":
+        res = discogs.quickpick(apply=a.apply, exclude_title_mismatch=a.exclude_title_mismatch)
+    elif a.dcmd == "enrich":
+        res = discogs.enrich_releases(top=a.top, limit=a.limit)
+    elif a.dcmd == "enable":
+        from . import merge
+        records = merge.build_records()[0]
+        if a.expected is None:
+            pv = discogs.enable_preview(records)
+            res = {"result": "dry_run", "would_turn_on": pv["count"], "needs_grade": pv["needs_grade"],
+                   "not_active": pv["other"], "next": f"discogs enable --expected {pv['count']} --by <name>"}
+        else:
+            res = dict(discogs.enable_quick_confident(records, a.expected, by=a.by), result="ok")
     else:
         res = discogs.poll(rebuild=not a.no_build)
     print(json.dumps(res, indent=2, default=str))

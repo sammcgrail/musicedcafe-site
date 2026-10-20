@@ -1,0 +1,37 @@
+{
+  "item_id": "127877268009",
+  "listing_url": "https://www.ebay.com/itm/127877268009",
+  "status": "sold",
+  "status_source": "csv:transaction_report",
+  "status_changed_at": "2026-10-18T12:15:08Z",
+  "first_seen_at": "2026-10-18T12:15:08Z",
+  "last_seen_active_at": null,
+  "sold_at": "2026-08-20",
+  "sales": [
+    {
+      "date": "2026-08-20",
+      "price": "10.00",
+      "currency": "USD",
+      "quantity": 1,
+      "source": "csv:transaction_report"
+    }
+  ],
+  "price": {
+    "value": "10.00",
+    "currency": "USD",
+    "source": "csv:transaction_report: item subtotal (sale price)"
+  },
+  "quantity_available": 0,
+  "raw": {
+    "csv:transaction_report": {
+      "date": "Aug 20, 2026",
+      "item_id": "127877268009",
+      "title": "Johnny Gill – Chemistry LP Vinyl Record 1985 Cotillion R&B Soul",
+      "quantity": "1",
+      "price": "10",
+      "currency": "USD"
+    }
+  },
+  "title": "Johnny Gill – Chemistry LP Vinyl Record 1985 Cotillion R&B Soul",
+  "status_reason": "sale on 2026-08-20 confirmed by csv:transaction_report"
+}

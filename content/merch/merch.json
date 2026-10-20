@@ -1,0 +1,200 @@
+{
+  "_doc": "Music Ed Cafe merch (preorder reservations, no payment). Edit and rebuild. price: null shows 'Price TBA' and leaves the Offer out of the JSON-LD; set a number (e.g. 28) once it is known. eta: null shows 'Pressing soon', or set a short text like 'Ships in December'. status: 'preorder' takes reservations; anything else shows the item without the form. options[].values are the only values the server accepts. image: base name of the files in assets/static/img/merch/ (<image>-480.webp, -960.webp, -800.jpg).",
+  "currency": "USD",
+  "collections": [
+    {
+      "slug": "keep-the-coffee-flowin",
+      "name": "Keep the Coffee Flowin & the Music Goin",
+      "tagline": "Keep the coffee flowin and the music goin",
+      "description": "The Music Ed Cafe badge (the mug logo with a record in the middle) with the line from the poster: keep the coffee flowin and the music goin."
+    },
+    {
+      "slug": "spin-it-feel-it-live-it",
+      "name": "Spin It. Feel It. Live It.",
+      "tagline": "Spin it. Feel it. Live it.",
+      "description": "A sunburst record and the Music Ed Cafe badge, with the three words every record deserves: spin it, feel it, live it."
+    }
+  ],
+  "items": [
+    {
+      "slug": "coffee-flowin-t-shirt",
+      "collection": "keep-the-coffee-flowin",
+      "type": "T-shirt",
+      "name": "Keep the Coffee Flowin T-Shirt",
+      "description": "Crew-neck cotton tee with the Music Ed Cafe badge on the chest and \"Keep the coffee flowin & the music goin\" underneath.",
+      "image": "a-tee",
+      "image_alt": "Mockup of a black t-shirt printed with the gold Music Ed Cafe record badge and the words Keep the Coffee Flowin and the Music Goin",
+      "price": 30,
+      "eta": null,
+      "status": "preorder",
+      "options": [
+        {
+          "name": "size",
+          "label": "Size",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL"
+          ]
+        },
+        {
+          "name": "color",
+          "label": "Color",
+          "values": [
+            "Black",
+            "Cream"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "coffee-flowin-mug",
+      "collection": "keep-the-coffee-flowin",
+      "type": "Mug",
+      "name": "Keep the Coffee Flowin Mug",
+      "description": "Ceramic coffee mug with the Music Ed Cafe badge and \"Keep the coffee flowin & the music goin\".",
+      "image": "a-mug",
+      "image_alt": "Mockup of a cream ceramic mug printed with the Music Ed Cafe record badge and the words Keep the Coffee Flowin and the Music Goin",
+      "price": 20,
+      "eta": null,
+      "status": "preorder",
+      "options": []
+    },
+    {
+      "slug": "coffee-flowin-dad-hat",
+      "collection": "keep-the-coffee-flowin",
+      "type": "Dad hat",
+      "name": "Keep the Coffee Flowin Dad Hat",
+      "description": "Unstructured cotton dad hat with the Music Ed Cafe badge embroidered on the front and \"Keep the coffee flowin\" below it.",
+      "image": "a-hat",
+      "image_alt": "Mockup of a black dad hat embroidered with the Music Ed Cafe record badge and the words Keep the Coffee Flowin",
+      "price": 30,
+      "eta": null,
+      "status": "preorder",
+      "options": [
+        {
+          "name": "size",
+          "label": "Size",
+          "values": [
+            "One size"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "coffee-flowin-tote-bag",
+      "collection": "keep-the-coffee-flowin",
+      "type": "Tote bag",
+      "name": "Keep the Coffee Flowin Tote Bag",
+      "description": "Reusable canvas tote, big enough for a stack of LPs, with the Music Ed Cafe badge and \"Keep the coffee flowin & the music goin\".",
+      "image": "a-tote",
+      "image_alt": "Mockup of a cream canvas tote bag printed with the Music Ed Cafe record badge and the words Keep the Coffee Flowin and the Music Goin",
+      "price": 22,
+      "eta": null,
+      "status": "preorder",
+      "options": [
+        {
+          "name": "color",
+          "label": "Color",
+          "values": [
+            "Black",
+            "Cream"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "spin-it-t-shirt",
+      "collection": "spin-it-feel-it-live-it",
+      "type": "T-shirt",
+      "name": "Spin It. Feel It. Live It. T-Shirt",
+      "description": "Crew-neck cotton tee with a sunburst record, the Music Ed Cafe badge and \"Spin it. Feel it. Live it.\"",
+      "image": "b-tee",
+      "image_alt": "Mockup of a cream t-shirt printed with a sunburst vinyl record, the Music Ed Cafe badge and the words Spin It. Feel It. Live It.",
+      "price": 30,
+      "eta": null,
+      "status": "preorder",
+      "options": [
+        {
+          "name": "size",
+          "label": "Size",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL"
+          ]
+        },
+        {
+          "name": "color",
+          "label": "Color",
+          "values": [
+            "Black",
+            "Cream"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "spin-it-mug",
+      "collection": "spin-it-feel-it-live-it",
+      "type": "Mug",
+      "name": "Spin It. Feel It. Live It. Mug",
+      "description": "Ceramic coffee mug with the Music Ed Cafe badge and \"Spin it. Feel it. Live it.\"",
+      "image": "b-mug",
+      "image_alt": "Mockup of a black ceramic mug printed with the gold Music Ed Cafe record badge and the words Spin It. Feel It. Live It.",
+      "price": 20,
+      "eta": null,
+      "status": "preorder",
+      "options": []
+    },
+    {
+      "slug": "spin-it-dad-hat",
+      "collection": "spin-it-feel-it-live-it",
+      "type": "Dad hat",
+      "name": "Spin It. Feel It. Live It. Dad Hat",
+      "description": "Unstructured cotton dad hat with the Music Ed Cafe badge embroidered on the front and \"Spin it. Feel it. Live it.\" below it.",
+      "image": "b-hat",
+      "image_alt": "Mockup of a cream dad hat embroidered with the Music Ed Cafe record badge and the words Spin It. Feel It. Live It.",
+      "price": 30,
+      "eta": null,
+      "status": "preorder",
+      "options": [
+        {
+          "name": "size",
+          "label": "Size",
+          "values": [
+            "One size"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "spin-it-tote-bag",
+      "collection": "spin-it-feel-it-live-it",
+      "type": "Tote bag",
+      "name": "Spin It. Feel It. Live It. Tote Bag",
+      "description": "Reusable canvas tote, big enough for a stack of LPs, with a sunburst Music Ed Cafe badge and \"Spin it. Feel it. Live it.\"",
+      "image": "b-tote",
+      "image_alt": "Mockup of a black canvas tote bag printed with a gold sunburst Music Ed Cafe badge and the words Spin It. Feel It. Live It.",
+      "price": 22,
+      "eta": null,
+      "status": "preorder",
+      "options": [
+        {
+          "name": "color",
+          "label": "Color",
+          "values": [
+            "Black",
+            "Cream"
+          ]
+        }
+      ]
+    }
+  ]
+}

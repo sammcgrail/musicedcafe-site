@@ -1,0 +1,1685 @@
+{
+  "item_id": "127963200740",
+  "listing_url": "https://www.ebay.com/itm/127963200740",
+  "status": "active",
+  "status_source": "browse_api",
+  "status_changed_at": "2026-10-19T00:26:11Z",
+  "first_seen_at": "2026-10-19T00:26:11Z",
+  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "sold_at": null,
+  "sales": [],
+  "price": {
+    "value": "10.99",
+    "currency": "USD",
+    "source": "browse_api: current price"
+  },
+  "quantity_available": 1,
+  "raw": {
+    "csv:seller_hub_active": {
+      "item_id": "127963200740",
+      "title": "Tavares – The Best of Tavares - LP 1977 Capitol ST-11701 Vinyl Record VG+/VG",
+      "quantity": "1",
+      "listing_format": "FIXED_PRICE",
+      "currency": "USD",
+      "price": "10.99",
+      "sold_quantity": "0",
+      "start_date": "Jul-07-26 20:27:57 PDT",
+      "end_date": "Nov-07-26 20:27:57 PST",
+      "category": "Vinyl Records",
+      "category_id": "176985",
+      "condition": "Used",
+      "start_price": "10.99",
+      "bids": "0",
+      "watchers": "0",
+      "listing_site": "US"
+    },
+    "browse_api": {
+      "itemId": "v1|127963200740|0",
+      "sellerItemRevision": "4",
+      "title": "Tavares – The Best of Tavares - LP 1977 Capitol ST-11701 Vinyl Record VG+/VG",
+      "shortDescription": "The Best of Tavares. A classic soul/disco greatest hits collection from Tavares featuring fan favorites including \"Heaven Must Be Missing an Angel,\" \"It Only Takes a Minute,\" \"Don't Take Away the Music,\" and more.",
+      "price": {
+        "value": "10.99",
+        "currency": "USD"
+      },
+      "categoryPath": "Music|Vinyl Records",
+      "categoryIdPath": "11233|176985",
+      "condition": "Used",
+      "conditionId": "3000",
+      "conditionDescription": "Vinyl: VG. Nice glossy playing surface. Light cosmetic sleeve marks from normal use. No deep scratches observed. Should provide an enjoyable listening experience. Jacket: G. Moderate shelf wear and edge wear. Ring wear and scuffing on front and back. Small hole punch/cutout in upper right corner. Tape residue and old tape along the top edge. Corner and edge wear as shown in photos. Please review all photos carefully as they are part of the description.",
+      "itemLocation": {
+        "city": "Lynn",
+        "stateOrProvince": "Massachusetts",
+        "postalCode": "019**",
+        "country": "US"
+      },
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/images/g/MkQAAeSwGspqTcJi/s-l1600.jpg",
+        "width": 1200,
+        "height": 1600
+      },
+      "additionalImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/images/g/06wAAeSwmbxqTcJi/s-l1600.jpg",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "imageUrl": "https://i.ebayimg.com/images/g/pvIAAeSwvaVqTcJi/s-l1600.jpg",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "imageUrl": "https://i.ebayimg.com/images/g/xDMAAeSwxndqTcJi/s-l1600.jpg",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "color": "Black",
+      "material": "Vinyl",
+      "itemCreationDate": "2026-07-08T03:27:57.000Z",
+      "seller": {
+        "username": "music_ed_cafe",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 130
+      },
+      "mpn": "ST11701",
+      "estimatedAvailabilities": [
+        {
+          "deliveryOptions": [
+            "SHIP_TO_HOME"
+          ],
+          "estimatedAvailabilityStatus": "IN_STOCK",
+          "estimatedAvailableQuantity": 1,
+          "estimatedSoldQuantity": 0,
+          "estimatedRemainingQuantity": 1
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingServiceCode": "USPS Media Mail",
+          "trademarkSymbol": "TM",
+          "shippingCarrierCode": "USPS",
+          "type": "Economy Shipping",
+          "shippingCost": {
+            "value": "4.39",
+            "currency": "USD"
+          },
+          "quantityUsedForEstimate": 1,
+          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "shippingCostType": "CALCULATED"
+        }
+      ],
+      "shipToLocations": {
+        "regionIncluded": [
+          {
+            "regionName": "United States",
+            "regionType": "COUNTRY",
+            "regionId": "US"
+          },
+          {
+            "regionName": "Denmark",
+            "regionType": "COUNTRY",
+            "regionId": "DK"
+          },
+          {
+            "regionName": "Guatemala",
+            "regionType": "COUNTRY",
+            "regionId": "GT"
+          },
+          {
+            "regionName": "New Zealand",
+            "regionType": "COUNTRY",
+            "regionId": "NZ"
+          },
+          {
+            "regionName": "Fiji",
+            "regionType": "COUNTRY",
+            "regionId": "FJ"
+          },
+          {
+            "regionName": "Papua New Guinea",
+            "regionType": "COUNTRY",
+            "regionId": "PG"
+          },
+          {
+            "regionName": "Solomon Islands",
+            "regionType": "COUNTRY",
+            "regionId": "SB"
+          },
+          {
+            "regionName": "Vatican City State",
+            "regionType": "COUNTRY",
+            "regionId": "VA"
+          },
+          {
+            "regionName": "Sierra Leone",
+            "regionType": "COUNTRY",
+            "regionId": "SL"
+          },
+          {
+            "regionName": "Nauru",
+            "regionType": "COUNTRY",
+            "regionId": "NR"
+          },
+          {
+            "regionName": "Wallis and Futuna",
+            "regionType": "COUNTRY",
+            "regionId": "WF"
+          },
+          {
+            "regionName": "Anguilla",
+            "regionType": "COUNTRY",
+            "regionId": "AI"
+          },
+          {
+            "regionName": "El Salvador",
+            "regionType": "COUNTRY",
+            "regionId": "SV"
+          },
+          {
+            "regionName": "Gambia",
+            "regionType": "COUNTRY",
+            "regionId": "GM"
+          },
+          {
+            "regionName": "Dominican Republic",
+            "regionType": "COUNTRY",
+            "regionId": "DO"
+          },
+          {
+            "regionName": "Malaysia",
+            "regionType": "COUNTRY",
+            "regionId": "MY"
+          },
+          {
+            "regionName": "Cameroon",
+            "regionType": "COUNTRY",
+            "regionId": "CM"
+          },
+          {
+            "regionName": "Guyana",
+            "regionType": "COUNTRY",
+            "regionId": "GY"
+          },
+          {
+            "regionName": "Poland",
+            "regionType": "COUNTRY",
+            "regionId": "PL"
+          },
+          {
+            "regionName": "Suriname",
+            "regionType": "COUNTRY",
+            "regionId": "SR"
+          },
+          {
+            "regionName": "Tonga",
+            "regionType": "COUNTRY",
+            "regionId": "TO"
+          },
+          {
+            "regionName": "Kenya",
+            "regionType": "COUNTRY",
+            "regionId": "KE"
+          },
+          {
+            "regionName": "Argentina",
+            "regionType": "COUNTRY",
+            "regionId": "AR"
+          },
+          {
+            "regionName": "San Marino",
+            "regionType": "COUNTRY",
+            "regionId": "SM"
+          },
+          {
+            "regionName": "Guinea-Bissau",
+            "regionType": "COUNTRY",
+            "regionId": "GW"
+          },
+          {
+            "regionName": "Senegal",
+            "regionType": "COUNTRY",
+            "regionId": "SN"
+          },
+          {
+            "regionName": "Togo",
+            "regionType": "COUNTRY",
+            "regionId": "TG"
+          },
+          {
+            "regionName": "Saint Kitts-Nevis",
+            "regionType": "COUNTRY",
+            "regionId": "KN"
+          },
+          {
+            "regionName": "Morocco",
+            "regionType": "COUNTRY",
+            "regionId": "MA"
+          },
+          {
+            "regionName": "Ireland",
+            "regionType": "COUNTRY",
+            "regionId": "IE"
+          },
+          {
+            "regionName": "Burundi",
+            "regionType": "COUNTRY",
+            "regionId": "BI"
+          },
+          {
+            "regionName": "Saint Vincent and the Grenadines",
+            "regionType": "COUNTRY",
+            "regionId": "VC"
+          },
+          {
+            "regionName": "Netherlands",
+            "regionType": "COUNTRY",
+            "regionId": "NL"
+          },
+          {
+            "regionName": "Slovakia",
+            "regionType": "COUNTRY",
+            "regionId": "SK"
+          },
+          {
+            "regionName": "Slovenia",
+            "regionType": "COUNTRY",
+            "regionId": "SI"
+          },
+          {
+            "regionName": "Equatorial Guinea",
+            "regionType": "COUNTRY",
+            "regionId": "GQ"
+          },
+          {
+            "regionName": "Thailand",
+            "regionType": "COUNTRY",
+            "regionId": "TH"
+          },
+          {
+            "regionName": "Mauritania",
+            "regionType": "COUNTRY",
+            "regionId": "MR"
+          },
+          {
+            "regionName": "Belize",
+            "regionType": "COUNTRY",
+            "regionId": "BZ"
+          },
+          {
+            "regionName": "Philippines",
+            "regionType": "COUNTRY",
+            "regionId": "PH"
+          },
+          {
+            "regionName": "Aruba",
+            "regionType": "COUNTRY",
+            "regionId": "AW"
+          },
+          {
+            "regionType": "COUNTRY",
+            "regionId": "UY"
+          },
+          {
+            "regionName": "Republic of the Congo",
+            "regionType": "COUNTRY",
+            "regionId": "CG"
+          },
+          {
+            "regionName": "Sweden",
+            "regionType": "COUNTRY",
+            "regionId": "SE"
+          },
+          {
+            "regionName": "Colombia",
+            "regionType": "COUNTRY",
+            "regionId": "CO"
+          },
+          {
+            "regionName": "Spain",
+            "regionType": "COUNTRY",
+            "regionId": "ES"
+          },
+          {
+            "regionName": "Iceland",
+            "regionType": "COUNTRY",
+            "regionId": "IS"
+          },
+          {
+            "regionName": "Estonia",
+            "regionType": "COUNTRY",
+            "regionId": "EE"
+          },
+          {
+            "regionName": "Macedonia",
+            "regionType": "COUNTRY",
+            "regionId": "MK"
+          },
+          {
+            "regionName": "Belgium",
+            "regionType": "COUNTRY",
+            "regionId": "BE"
+          },
+          {
+            "regionName": "Liechtenstein",
+            "regionType": "COUNTRY",
+            "regionId": "LI"
+          },
+          {
+            "regionName": "Benin",
+            "regionType": "COUNTRY",
+            "regionId": "BJ"
+          },
+          {
+            "regionName": "Algeria",
+            "regionType": "COUNTRY",
+            "regionId": "DZ"
+          },
+          {
+            "regionName": "Bermuda",
+            "regionType": "COUNTRY",
+            "regionId": "BM"
+          },
+          {
+            "regionName": "Montserrat",
+            "regionType": "COUNTRY",
+            "regionId": "MS"
+          },
+          {
+            "regionName": "Zambia",
+            "regionType": "COUNTRY",
+            "regionId": "ZM"
+          },
+          {
+            "regionName": "South Korea",
+            "regionType": "COUNTRY",
+            "regionId": "KR"
+          },
+          {
+            "regionName": "Antigua and Barbuda",
+            "regionType": "COUNTRY",
+            "regionId": "AG"
+          },
+          {
+            "regionName": "Vanuatu",
+            "regionType": "COUNTRY",
+            "regionId": "VU"
+          },
+          {
+            "regionName": "Ecuador",
+            "regionType": "COUNTRY",
+            "regionId": "EC"
+          },
+          {
+            "regionName": "Italy",
+            "regionType": "COUNTRY",
+            "regionId": "IT"
+          },
+          {
+            "regionName": "Albania",
+            "regionType": "COUNTRY",
+            "regionId": "AL"
+          },
+          {
+            "regionName": "Swaziland",
+            "regionType": "COUNTRY",
+            "regionId": "SZ"
+          },
+          {
+            "regionName": "Ethiopia",
+            "regionType": "COUNTRY",
+            "regionId": "ET"
+          },
+          {
+            "regionName": "Monaco",
+            "regionType": "COUNTRY",
+            "regionId": "MC"
+          },
+          {
+            "regionName": "Niger",
+            "regionType": "COUNTRY",
+            "regionId": "NE"
+          },
+          {
+            "regionName": "Tanzania",
+            "regionType": "COUNTRY",
+            "regionId": "TZ"
+          },
+          {
+            "regionName": "Pakistan",
+            "regionType": "COUNTRY",
+            "regionId": "PK"
+          },
+          {
+            "regionName": "Burkina Faso",
+            "regionType": "COUNTRY",
+            "regionId": "BF"
+          },
+          {
+            "regionName": "Panama",
+            "regionType": "COUNTRY",
+            "regionId": "PA"
+          },
+          {
+            "regionName": "Singapore",
+            "regionType": "COUNTRY",
+            "regionId": "SG"
+          },
+          {
+            "regionName": "Switzerland",
+            "regionType": "COUNTRY",
+            "regionId": "CH"
+          },
+          {
+            "regionName": "Ghana",
+            "regionType": "COUNTRY",
+            "regionId": "GH"
+          },
+          {
+            "regionName": "Djibouti",
+            "regionType": "COUNTRY",
+            "regionId": "DJ"
+          },
+          {
+            "regionName": "Puerto Rico",
+            "regionType": "COUNTRY",
+            "regionId": "PR"
+          },
+          {
+            "regionName": "Chile",
+            "regionType": "COUNTRY",
+            "regionId": "CL"
+          },
+          {
+            "regionName": "Cape Verde Islands",
+            "regionType": "COUNTRY",
+            "regionId": "CV"
+          },
+          {
+            "regionName": "Mali",
+            "regionType": "COUNTRY",
+            "regionId": "ML"
+          },
+          {
+            "regionName": "Republic of Croatia",
+            "regionType": "COUNTRY",
+            "regionId": "HR"
+          },
+          {
+            "regionName": "Botswana",
+            "regionType": "COUNTRY",
+            "regionId": "BW"
+          },
+          {
+            "regionName": "Madagascar",
+            "regionType": "COUNTRY",
+            "regionId": "MG"
+          },
+          {
+            "regionName": "Indonesia",
+            "regionType": "COUNTRY",
+            "regionId": "ID"
+          },
+          {
+            "regionName": "Portugal",
+            "regionType": "COUNTRY",
+            "regionId": "PT"
+          },
+          {
+            "regionName": "Malta",
+            "regionType": "COUNTRY",
+            "regionId": "MT"
+          },
+          {
+            "regionName": "Cayman Islands",
+            "regionType": "COUNTRY",
+            "regionId": "KY"
+          },
+          {
+            "regionName": "Paraguay",
+            "regionType": "COUNTRY",
+            "regionId": "PY"
+          },
+          {
+            "regionName": "Cyprus",
+            "regionType": "COUNTRY",
+            "regionId": "CY"
+          },
+          {
+            "regionName": "Seychelles",
+            "regionType": "COUNTRY",
+            "regionId": "SC"
+          },
+          {
+            "regionName": "Liberia",
+            "regionType": "COUNTRY",
+            "regionId": "LR"
+          },
+          {
+            "regionName": "Rwanda",
+            "regionType": "COUNTRY",
+            "regionId": "RW"
+          },
+          {
+            "regionName": "Bangladesh",
+            "regionType": "COUNTRY",
+            "regionId": "BD"
+          },
+          {
+            "regionName": "Bolivia",
+            "regionType": "COUNTRY",
+            "regionId": "BO"
+          },
+          {
+            "regionName": "Maldives",
+            "regionType": "COUNTRY",
+            "regionId": "MV"
+          },
+          {
+            "regionName": "Australia",
+            "regionType": "COUNTRY",
+            "regionId": "AU"
+          },
+          {
+            "regionName": "Austria",
+            "regionType": "COUNTRY",
+            "regionId": "AT"
+          },
+          {
+            "regionName": "Gibraltar",
+            "regionType": "COUNTRY",
+            "regionId": "GI"
+          },
+          {
+            "regionName": "Sri Lanka",
+            "regionType": "COUNTRY",
+            "regionId": "LK"
+          },
+          {
+            "regionName": "Gabon Republic",
+            "regionType": "COUNTRY",
+            "regionId": "GA"
+          },
+          {
+            "regionName": "Lesotho",
+            "regionType": "COUNTRY",
+            "regionId": "LS"
+          },
+          {
+            "regionName": "Nigeria",
+            "regionType": "COUNTRY",
+            "regionId": "NG"
+          },
+          {
+            "regionName": "Mauritius",
+            "regionType": "COUNTRY",
+            "regionId": "MU"
+          },
+          {
+            "regionName": "Saint Lucia",
+            "regionType": "COUNTRY",
+            "regionId": "LC"
+          },
+          {
+            "regionName": "Bulgaria",
+            "regionType": "COUNTRY",
+            "regionId": "BG"
+          },
+          {
+            "regionName": "Guinea",
+            "regionType": "COUNTRY",
+            "regionId": "GN"
+          },
+          {
+            "regionName": "Czech Republic",
+            "regionType": "COUNTRY",
+            "regionId": "CZ"
+          },
+          {
+            "regionName": "Norway",
+            "regionType": "COUNTRY",
+            "regionId": "NO"
+          },
+          {
+            "regionName": "Canada",
+            "regionType": "COUNTRY",
+            "regionId": "CA"
+          },
+          {
+            "regionName": "Côte d'Ivoire (Ivory Coast)",
+            "regionType": "COUNTRY",
+            "regionId": "CI"
+          },
+          {
+            "regionName": "Turks and Caicos Islands",
+            "regionType": "COUNTRY",
+            "regionId": "TC"
+          },
+          {
+            "regionName": "Kiribati",
+            "regionType": "COUNTRY",
+            "regionId": "KI"
+          },
+          {
+            "regionName": "Andorra",
+            "regionType": "COUNTRY",
+            "regionId": "AD"
+          },
+          {
+            "regionName": "Grenada",
+            "regionType": "COUNTRY",
+            "regionId": "GD"
+          },
+          {
+            "regionName": "Romania",
+            "regionType": "COUNTRY",
+            "regionId": "RO"
+          },
+          {
+            "regionName": "Greece",
+            "regionType": "COUNTRY",
+            "regionId": "GR"
+          },
+          {
+            "regionName": "Costa Rica",
+            "regionType": "COUNTRY",
+            "regionId": "CR"
+          },
+          {
+            "regionName": "India",
+            "regionType": "COUNTRY",
+            "regionId": "IN"
+          },
+          {
+            "regionName": "Greenland",
+            "regionType": "COUNTRY",
+            "regionId": "GL"
+          },
+          {
+            "regionName": "Mexico",
+            "regionType": "COUNTRY",
+            "regionId": "MX"
+          },
+          {
+            "regionName": "Serbia",
+            "regionType": "COUNTRY",
+            "regionId": "RS"
+          },
+          {
+            "regionName": "Montenegro",
+            "regionType": "COUNTRY",
+            "regionId": "ME"
+          },
+          {
+            "regionName": "Japan",
+            "regionType": "COUNTRY",
+            "regionId": "JP"
+          },
+          {
+            "regionName": "Nepal",
+            "regionType": "COUNTRY",
+            "regionId": "NP"
+          },
+          {
+            "regionName": "Lithuania",
+            "regionType": "COUNTRY",
+            "regionId": "LT"
+          },
+          {
+            "regionName": "Bahamas",
+            "regionType": "COUNTRY",
+            "regionId": "BS"
+          },
+          {
+            "regionName": "Trinidad and Tobago",
+            "regionType": "COUNTRY",
+            "regionId": "TT"
+          },
+          {
+            "regionName": "United Kingdom",
+            "regionType": "COUNTRY",
+            "regionId": "GB"
+          },
+          {
+            "regionName": "Malawi",
+            "regionType": "COUNTRY",
+            "regionId": "MW"
+          },
+          {
+            "regionName": "Hungary",
+            "regionType": "COUNTRY",
+            "regionId": "HU"
+          },
+          {
+            "regionName": "Bosnia and Herzegovina",
+            "regionType": "COUNTRY",
+            "regionId": "BA"
+          },
+          {
+            "regionName": "Angola",
+            "regionType": "COUNTRY",
+            "regionId": "AO"
+          },
+          {
+            "regionName": "Finland",
+            "regionType": "COUNTRY",
+            "regionId": "FI"
+          },
+          {
+            "regionName": "Tunisia",
+            "regionType": "COUNTRY",
+            "regionId": "TN"
+          },
+          {
+            "regionName": "Luxembourg",
+            "regionType": "COUNTRY",
+            "regionId": "LU"
+          },
+          {
+            "regionName": "Uganda",
+            "regionType": "COUNTRY",
+            "regionId": "UG"
+          },
+          {
+            "regionName": "Brazil",
+            "regionType": "COUNTRY",
+            "regionId": "BR"
+          },
+          {
+            "regionName": "Turkey",
+            "regionType": "COUNTRY",
+            "regionId": "TR"
+          },
+          {
+            "regionName": "Western Samoa",
+            "regionType": "COUNTRY",
+            "regionId": "WS"
+          },
+          {
+            "regionName": "France",
+            "regionType": "COUNTRY",
+            "regionId": "FR"
+          },
+          {
+            "regionName": "Latvia",
+            "regionType": "COUNTRY",
+            "regionId": "LV"
+          },
+          {
+            "regionName": "Jamaica",
+            "regionType": "COUNTRY",
+            "regionId": "JM"
+          },
+          {
+            "regionName": "Mozambique",
+            "regionType": "COUNTRY",
+            "regionId": "MZ"
+          },
+          {
+            "regionName": "Namibia",
+            "regionType": "COUNTRY",
+            "regionId": "NA"
+          },
+          {
+            "regionName": "Peru",
+            "regionType": "COUNTRY",
+            "regionId": "PE"
+          },
+          {
+            "regionName": "Honduras",
+            "regionType": "COUNTRY",
+            "regionId": "HN"
+          }
+        ],
+        "regionExcluded": [
+          {
+            "regionName": "French Polynesia",
+            "regionType": "COUNTRY",
+            "regionId": "PF"
+          },
+          {
+            "regionName": "Libya",
+            "regionType": "COUNTRY",
+            "regionId": "LY"
+          },
+          {
+            "regionName": "New Caledonia",
+            "regionType": "COUNTRY",
+            "regionId": "NC"
+          },
+          {
+            "regionName": "Guadeloupe",
+            "regionType": "COUNTRY",
+            "regionId": "GP"
+          },
+          {
+            "regionName": "Venezuela",
+            "regionType": "COUNTRY",
+            "regionId": "VE"
+          },
+          {
+            "regionName": "Reunion",
+            "regionType": "COUNTRY",
+            "regionId": "RE"
+          },
+          {
+            "regionName": "Barbados",
+            "regionType": "COUNTRY",
+            "regionId": "BB"
+          },
+          {
+            "regionName": "Martinique",
+            "regionType": "COUNTRY",
+            "regionId": "MQ"
+          },
+          {
+            "regionName": "French Guiana",
+            "regionType": "COUNTRY",
+            "regionId": "GF"
+          },
+          {
+            "regionName": "Ukraine",
+            "regionType": "COUNTRY",
+            "regionId": "UA"
+          },
+          {
+            "regionName": "Russian Federation",
+            "regionType": "COUNTRY",
+            "regionId": "RU"
+          }
+        ]
+      },
+      "returnTerms": {
+        "returnsAccepted": false
+      },
+      "taxes": [
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Alabama",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "AL"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Alaska",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "AK"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Arizona",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "AZ"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Arkansas",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "AR"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "California",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "CA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Colorado",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "CO"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Connecticut",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "CT"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "District of Columbia",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "DC"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Florida",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "FL"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Georgia",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "GA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Hawaii",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "HI"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Idaho",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "ID"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Illinois",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "IL"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Indiana",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "IN"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Iowa",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "IA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Kansas",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "KS"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Kentucky",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "KY"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Louisiana",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "LA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Maine",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "ME"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Maryland",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "MD"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Massachusetts",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "MA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Michigan",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "MI"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Minnesota",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "MN"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Mississippi",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "MS"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Nebraska",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NE"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Nevada",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NV"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "New Jersey",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NJ"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "New Mexico",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NM"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "New York",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NY"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "North Carolina",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NC"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "North Dakota",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "ND"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Ohio",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "OH"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Oklahoma",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "OK"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Pennsylvania",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "PA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Puerto Rico",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "PR"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Rhode Island",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "RI"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "South Carolina",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "SC"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "South Dakota",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "SD"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Tennessee",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "TN"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Texas",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "TX"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Utah",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "UT"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Vermont",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "VT"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Virginia",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "VA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Washington",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "WA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "West Virginia",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "WV"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Wisconsin",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "WI"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Wyoming",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "WY"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        }
+      ],
+      "localizedAspects": [
+        {
+          "type": "STRING",
+          "name": "Artist",
+          "value": "Tavares"
+        },
+        {
+          "type": "STRING",
+          "name": "Speed",
+          "value": "33 RPM"
+        },
+        {
+          "type": "STRING",
+          "name": "Record Label",
+          "value": "Capitol Records"
+        },
+        {
+          "type": "STRING",
+          "name": "Release Title",
+          "value": "The Best of Tavares"
+        },
+        {
+          "type": "STRING",
+          "name": "Case Type",
+          "value": "Cardboard Sleeve"
+        },
+        {
+          "type": "STRING",
+          "name": "Color",
+          "value": "Black"
+        },
+        {
+          "type": "STRING",
+          "name": "Material",
+          "value": "Vinyl"
+        },
+        {
+          "type": "STRING",
+          "name": "MPN",
+          "value": "ST11701"
+        },
+        {
+          "type": "STRING",
+          "name": "Inlay Condition",
+          "value": "Good (G)"
+        },
+        {
+          "type": "STRING",
+          "name": "Edition",
+          "value": "Best Of"
+        },
+        {
+          "type": "STRING",
+          "name": "Type",
+          "value": "LP"
+        },
+        {
+          "type": "STRING",
+          "name": "Format",
+          "value": "Record"
+        },
+        {
+          "type": "STRING",
+          "name": "Record Grading",
+          "value": "Very Good (VG)"
+        },
+        {
+          "type": "STRING",
+          "name": "Release Year",
+          "value": "1977"
+        },
+        {
+          "type": "STRING",
+          "name": "Language",
+          "value": "English"
+        },
+        {
+          "type": "STRING",
+          "name": "Sleeve Grading",
+          "value": "Good (G)"
+        },
+        {
+          "type": "STRING",
+          "name": "Era",
+          "value": "1970s"
+        },
+        {
+          "type": "STRING",
+          "name": "Record Size",
+          "value": "12\""
+        },
+        {
+          "type": "STRING",
+          "name": "Features",
+          "value": "Original Cover"
+        },
+        {
+          "type": "STRING",
+          "name": "Genre",
+          "value": "Funk, R&B & Soul"
+        },
+        {
+          "type": "STRING",
+          "name": "Country of Origin",
+          "value": "United States"
+        },
+        {
+          "type": "STRING",
+          "name": "Number of Audio Channels",
+          "value": "Stereo"
+        }
+      ],
+      "topRatedBuyingExperience": false,
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/127963200740?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9yQHPvlZt1jStbXRzoszhlWlT%2BYHF2IDnIgMjJIIx2Xe%2BbxPAgTL9amv%2BJNz%2B2WvzBWYRIwSJsTPjoeDgpTDvoy%2FzCPjryaHEh8QBs2VYNRxx3CRbsHUtm1Ylxl%2Fu1c52GMwzaJMh22kWInRMuhAwoTE1kjaRuK%2Bkyw9UG%2BTnWNxvb91afhR2%2B%2BR8CqKk9dVY%3D",
+      "description": "<p data-start=\"330\" data-end=\"387\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"330\" data-end=\"353\">The Best of Tavares</strong><br data-start=\"353\" data-end=\"356\">\nCapitol Records ST-11701 (1977)<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"389\" data-end=\"581\">A classic soul/disco greatest hits collection from Tavares featuring fan favorites including \"Heaven Must Be Missing an Angel,\" \"It Only Takes a Minute,\" \"Don't Take Away the Music,\" and more.</p>\n<h3 data-section-id=\"1uef3h1\" data-start=\"583\" data-end=\"596\">Condition</h3>\n<p data-start=\"598\" data-end=\"614\" class=\"\"><strong data-start=\"598\" data-end=\"608\">Vinyl:</strong> VG</p>\n<ul data-start=\"615\" data-end=\"774\">\n<li data-section-id=\"mc7bhn\" data-start=\"615\" data-end=\"645\">\nNice glossy playing surface.\n</li>\n<li data-section-id=\"i44kyl\" data-start=\"646\" data-end=\"692\">\nLight cosmetic sleeve marks from normal use.\n</li>\n<li data-section-id=\"e1qjd3\" data-start=\"693\" data-end=\"722\">\nNo deep scratches observed.\n</li>\n<li data-section-id=\"zf4p95\" data-start=\"723\" data-end=\"774\">\nShould provide an enjoyable listening experience.\n</li>\n</ul>\n<p data-start=\"776\" data-end=\"794\"><strong data-start=\"776\" data-end=\"787\">Jacket:</strong>&nbsp;G</p>\n<ul data-start=\"795\" data-end=\"1015\">\n<li data-section-id=\"euq5p7\" data-start=\"795\" data-end=\"831\">\nModerate shelf wear and edge wear.\n</li>\n<li data-section-id=\"hjpjzv\" data-start=\"832\" data-end=\"875\">\nRing wear and scuffing on front and back.\n</li>\n<li data-section-id=\"1dq13zq\" data-start=\"876\" data-end=\"924\">\nSmall hole punch/cutout in upper right corner.\n</li>\n<li data-section-id=\"i2fhpl\" data-start=\"925\" data-end=\"972\">\nTape residue and old tape along the top edge.\n</li>\n<li data-section-id=\"11xkytr\" data-start=\"973\" data-end=\"1015\">\nCorner and edge wear as shown in photos.\n</li>\n</ul>\n<p data-start=\"1017\" data-end=\"1088\">Please review all photos carefully as they are part of the description.</p>\n<h3 data-section-id=\"u9g00a\" data-start=\"1090\" data-end=\"1110\">Track Highlights</h3>\n<ul data-start=\"1111\" data-end=\"1302\">\n<li data-section-id=\"1aufijv\" data-start=\"1111\" data-end=\"1144\">\nHeaven Must Be Missing an Angel\n</li>\n<li data-section-id=\"1qlpexy\" data-start=\"1145\" data-end=\"1169\">\nIt Only Takes a Minute\n</li>\n<li data-section-id=\"1kkkhu6\" data-start=\"1170\" data-end=\"1186\">\nBein' With You\n</li>\n<li data-section-id=\"16zpjir\" data-start=\"1187\" data-end=\"1214\">\nDon't Take Away the Music\n</li>\n<li data-section-id=\"1gys2f1\" data-start=\"1215\" data-end=\"1229\">\nCheck It Out\n</li>\n<li data-section-id=\"x4nsay\" data-start=\"1230\" data-end=\"1266\">\nRemember What I Told You to Forget\n</li>\n<li data-section-id=\"1xuakpt\" data-start=\"1267\" data-end=\"1279\">\nShe's Gone\n</li>\n<li data-section-id=\"1h3ehqn\" data-start=\"1280\" data-end=\"1302\">\nThe Love I Never Had\n</li>\n</ul>\n<h3 data-section-id=\"108643f\" data-start=\"1304\" data-end=\"1322\">Record Grading</h3>\n<ul data-start=\"1323\" data-end=\"1361\">\n<li data-section-id=\"7zxc91\" data-start=\"1323\" data-end=\"1340\">\n<strong data-start=\"1325\" data-end=\"1336\">Record:</strong> VG+\n</li>\n<li data-section-id=\"1xmjb7l\" data-start=\"1341\" data-end=\"1361\">\n<strong data-start=\"1343\" data-end=\"1354\">Sleeve:</strong> G+/VG-</li></ul>",
+      "paymentMethods": [
+        {
+          "paymentMethodType": "OTHER"
+        },
+        {
+          "paymentMethodType": "WALLET",
+          "paymentMethodBrands": [
+            {
+              "paymentMethodBrandType": "PAYPAL"
+            },
+            {
+              "paymentMethodBrandType": "APPLE_PAY"
+            },
+            {
+              "paymentMethodBrandType": "GOOGLE_PAY"
+            }
+          ]
+        },
+        {
+          "paymentMethodType": "CREDIT_CARD",
+          "paymentMethodBrands": [
+            {
+              "paymentMethodBrandType": "VISA"
+            },
+            {
+              "paymentMethodBrandType": "MASTERCARD"
+            },
+            {
+              "paymentMethodBrandType": "DISCOVER"
+            },
+            {
+              "paymentMethodBrandType": "DINERS_CLUB"
+            }
+          ]
+        }
+      ],
+      "immediatePay": true,
+      "enabledForGuestCheckout": true,
+      "eligibleForInlineCheckout": true,
+      "lotSize": 1,
+      "legacyItemId": "127963200740",
+      "priorityListing": true,
+      "adultOnly": false,
+      "categoryId": "176985",
+      "listingMarketplaceId": "EBAY_US"
+    }
+  },
+  "title": "Tavares – The Best of Tavares - LP 1977 Capitol ST-11701 Vinyl Record VG+/VG",
+  "listing": {
+    "type": "FIXED_PRICE",
+    "start_date": "2026-07-08",
+    "end_date": null,
+    "bids": 0,
+    "buy_it_now": null
+  },
+  "status_reason": "listed as active by browse_api"
+}

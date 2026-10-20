@@ -1,0 +1,14 @@
+.env
+public/
+__pycache__/
+*.pyc
+data/sync-log.jsonl
+.stage-*
+.tmp-*
+*.csv
+!tests/fixtures/*.csv
+data/assets/photos/
+data/enrichment/photos.json
+data/sync-coverage.json
+data/merch/
+data/instagram/

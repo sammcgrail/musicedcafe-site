@@ -1,0 +1,37 @@
+{
+  "item_id": "127896510403",
+  "listing_url": "https://www.ebay.com/itm/127896510403",
+  "status": "sold",
+  "status_source": "csv:transaction_report",
+  "status_changed_at": "2026-10-18T12:15:08Z",
+  "first_seen_at": "2026-10-18T12:15:08Z",
+  "last_seen_active_at": null,
+  "sold_at": "2026-06-04",
+  "sales": [
+    {
+      "date": "2026-06-04",
+      "price": "50.00",
+      "currency": "USD",
+      "quantity": 1,
+      "source": "csv:transaction_report"
+    }
+  ],
+  "price": {
+    "value": "50.00",
+    "currency": "USD",
+    "source": "csv:transaction_report: item subtotal (sale price)"
+  },
+  "quantity_available": 0,
+  "raw": {
+    "csv:transaction_report": {
+      "date": "Jun 4, 2026",
+      "item_id": "127896510403",
+      "title": "Pink Floyd Dark Side Of The Moon LP SMAS-11163 Original Poster VG+ Vinyl",
+      "quantity": "1",
+      "price": "50",
+      "currency": "USD"
+    }
+  },
+  "title": "Pink Floyd Dark Side Of The Moon LP SMAS-11163 Original Poster VG+ Vinyl",
+  "status_reason": "sale on 2026-06-04 confirmed by csv:transaction_report"
+}

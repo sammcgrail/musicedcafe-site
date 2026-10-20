@@ -1,0 +1,37 @@
+{
+  "item_id": "127877391120",
+  "listing_url": "https://www.ebay.com/itm/127877391120",
+  "status": "sold",
+  "status_source": "csv:transaction_report",
+  "status_changed_at": "2026-10-18T12:15:08Z",
+  "first_seen_at": "2026-10-18T12:15:08Z",
+  "last_seen_active_at": null,
+  "sold_at": "2026-07-24",
+  "sales": [
+    {
+      "date": "2026-07-24",
+      "price": "75.00",
+      "currency": "USD",
+      "quantity": 1,
+      "source": "csv:transaction_report"
+    }
+  ],
+  "price": {
+    "value": "75.00",
+    "currency": "USD",
+    "source": "csv:transaction_report: item subtotal (sale price)"
+  },
+  "quantity_available": 0,
+  "raw": {
+    "csv:transaction_report": {
+      "date": "Jul 24, 2026",
+      "item_id": "127877391120",
+      "title": "Gemini MXR-01 BT Bluetooth DJ Mixer – Excellent Condition w/ Original Box",
+      "quantity": "1",
+      "price": "75",
+      "currency": "USD"
+    }
+  },
+  "title": "Gemini MXR-01 BT Bluetooth DJ Mixer – Excellent Condition w/ Original Box",
+  "status_reason": "sale on 2026-07-24 confirmed by csv:transaction_report"
+}

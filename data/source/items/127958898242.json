@@ -1,0 +1,37 @@
+{
+  "item_id": "127958898242",
+  "listing_url": "https://www.ebay.com/itm/127958898242",
+  "status": "sold",
+  "status_source": "csv:transaction_report",
+  "status_changed_at": "2026-10-18T12:15:08Z",
+  "first_seen_at": "2026-10-18T12:15:08Z",
+  "last_seen_active_at": null,
+  "sold_at": "2026-07-19",
+  "sales": [
+    {
+      "date": "2026-07-19",
+      "price": "24.99",
+      "currency": "USD",
+      "quantity": 1,
+      "source": "csv:transaction_report"
+    }
+  ],
+  "price": {
+    "value": "24.99",
+    "currency": "USD",
+    "source": "csv:transaction_report: item subtotal (sale price)"
+  },
+  "quantity_available": 0,
+  "raw": {
+    "csv:transaction_report": {
+      "date": "Jul 19, 2026",
+      "item_id": "127958898242",
+      "title": "Dave Brubeck Quartet Countdown Time In Outer Space LP 1962 Columbia CL 1775 VG+",
+      "quantity": "1",
+      "price": "24.99",
+      "currency": "USD"
+    }
+  },
+  "title": "Dave Brubeck Quartet Countdown Time In Outer Space LP 1962 Columbia CL 1775 VG+",
+  "status_reason": "sale on 2026-07-19 confirmed by csv:transaction_report"
+}

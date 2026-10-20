@@ -1,0 +1,4 @@
+{
+  "_doc": "Blog ('From the Crates'). Each post features one Instagram post. Fields: slug (url-safe), date (YYYY-MM-DD), title, instagram_url (https://www.instagram.com/p/<code>/ or /reel/<code>/), note (optional text, Edwin's words), records (optional list of eBay item ids shown as 'In this post'). Newest first is automatic.",
+  "posts": []
+}

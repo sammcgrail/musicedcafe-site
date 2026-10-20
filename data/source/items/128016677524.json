@@ -1,0 +1,37 @@
+{
+  "item_id": "128016677524",
+  "listing_url": "https://www.ebay.com/itm/128016677524",
+  "status": "sold",
+  "status_source": "csv:transaction_report",
+  "status_changed_at": "2026-10-18T12:15:08Z",
+  "first_seen_at": "2026-10-18T12:15:08Z",
+  "last_seen_active_at": null,
+  "sold_at": "2026-09-06",
+  "sales": [
+    {
+      "date": "2026-09-06",
+      "price": "13.99",
+      "currency": "USD",
+      "quantity": 1,
+      "source": "csv:transaction_report"
+    }
+  ],
+  "price": {
+    "value": "13.99",
+    "currency": "USD",
+    "source": "csv:transaction_report: item subtotal (sale price)"
+  },
+  "quantity_available": 0,
+  "raw": {
+    "csv:transaction_report": {
+      "date": "Sep 6, 2026",
+      "item_id": "128016677524",
+      "title": "Steppenwolf - The Second LP 1968 Dunhill DS-50037 Stereo Magic Carpet Ride Vinyl",
+      "quantity": "1",
+      "price": "13.99",
+      "currency": "USD"
+    }
+  },
+  "title": "Steppenwolf - The Second LP 1968 Dunhill DS-50037 Stereo Magic Carpet Ride Vinyl",
+  "status_reason": "sale on 2026-09-06 confirmed by csv:transaction_report"
+}

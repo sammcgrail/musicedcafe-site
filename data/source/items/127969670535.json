@@ -1,0 +1,938 @@
+{
+  "item_id": "127969670535",
+  "listing_url": "https://www.ebay.com/itm/127969670535",
+  "status": "active",
+  "status_source": "browse_api",
+  "status_changed_at": "2026-10-19T00:26:11Z",
+  "first_seen_at": "2026-10-19T00:26:11Z",
+  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "sold_at": null,
+  "sales": [],
+  "price": {
+    "value": "7.99",
+    "currency": "USD",
+    "source": "browse_api: current price"
+  },
+  "quantity_available": 1,
+  "raw": {
+    "csv:seller_hub_active": {
+      "item_id": "127969670535",
+      "title": "Barbra Streisand Donna Summer - No More Tears / Enough Is Enough 45 RPM Columbia",
+      "quantity": "1",
+      "listing_format": "FIXED_PRICE",
+      "currency": "USD",
+      "price": "7.99",
+      "sold_quantity": "0",
+      "start_date": "Jul-11-26 10:45:41 PDT",
+      "end_date": "Nov-11-26 10:45:41 PST",
+      "category": "Vinyl Records",
+      "category_id": "176985",
+      "condition": "Used",
+      "start_price": "7.99",
+      "listing_site": "US"
+    },
+    "browse_api": {
+      "itemId": "v1|127969670535|0",
+      "sellerItemRevision": "2",
+      "title": "Barbra Streisand Donna Summer - No More Tears / Enough Is Enough 45 RPM Columbia",
+      "shortDescription": "Barbra Streisand – No More Tears (Enough Is Enough) / Wet. Artist: Barbra Streisand. Label: Columbia Records. Speed: 45 RPM. Title: No More Tears (Enough Is Enough). No More Tears (Enough Is Enough) – 4:39.",
+      "price": {
+        "value": "7.99",
+        "currency": "USD"
+      },
+      "categoryPath": "Music|Vinyl Records",
+      "categoryIdPath": "11233|176985",
+      "condition": "Used",
+      "conditionId": "3000",
+      "conditionDescription": "Vinyl: VGNice overall gloss with several light surface marks and hairlines visible.No obvious cracks or major damage.Labels are clean and readable.Should play well with possible light background noise consistent with a VG record.Sleeve:Generic white paper sleeve included (no picture sleeve).",
+      "itemLocation": {
+        "city": "Lynn",
+        "stateOrProvince": "Massachusetts",
+        "postalCode": "019**",
+        "country": "US"
+      },
+      "image": {
+        "imageUrl": "https://i.ebayimg.com/images/g/QGgAAeSwYlpqUoCy/s-l1600.jpg",
+        "width": 1200,
+        "height": 1600
+      },
+      "additionalImages": [
+        {
+          "imageUrl": "https://i.ebayimg.com/images/g/N7gAAeSwNwVqUoCy/s-l1600.jpg",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "color": "Black",
+      "material": "Vinyl",
+      "itemCreationDate": "2026-07-11T17:45:41.000Z",
+      "seller": {
+        "username": "music_ed_cafe",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 130
+      },
+      "estimatedAvailabilities": [
+        {
+          "deliveryOptions": [
+            "SHIP_TO_HOME"
+          ],
+          "estimatedAvailabilityStatus": "IN_STOCK",
+          "estimatedAvailableQuantity": 1,
+          "estimatedSoldQuantity": 0,
+          "estimatedRemainingQuantity": 1
+        }
+      ],
+      "shippingOptions": [
+        {
+          "shippingServiceCode": "USPS Media Mail",
+          "trademarkSymbol": "TM",
+          "shippingCarrierCode": "USPS",
+          "type": "Economy Shipping",
+          "shippingCost": {
+            "value": "4.39",
+            "currency": "USD"
+          },
+          "quantityUsedForEstimate": 1,
+          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "shippingCostType": "CALCULATED"
+        }
+      ],
+      "shipToLocations": {
+        "regionIncluded": [
+          {
+            "regionName": "Worldwide",
+            "regionType": "WORLDWIDE",
+            "regionId": "WORLDWIDE"
+          }
+        ],
+        "regionExcluded": [
+          {
+            "regionName": "French Polynesia",
+            "regionType": "COUNTRY",
+            "regionId": "PF"
+          },
+          {
+            "regionName": "Libya",
+            "regionType": "COUNTRY",
+            "regionId": "LY"
+          },
+          {
+            "regionName": "New Caledonia",
+            "regionType": "COUNTRY",
+            "regionId": "NC"
+          },
+          {
+            "regionName": "Guadeloupe",
+            "regionType": "COUNTRY",
+            "regionId": "GP"
+          },
+          {
+            "regionName": "Venezuela",
+            "regionType": "COUNTRY",
+            "regionId": "VE"
+          },
+          {
+            "regionName": "Reunion",
+            "regionType": "COUNTRY",
+            "regionId": "RE"
+          },
+          {
+            "regionName": "Barbados",
+            "regionType": "COUNTRY",
+            "regionId": "BB"
+          },
+          {
+            "regionName": "Martinique",
+            "regionType": "COUNTRY",
+            "regionId": "MQ"
+          },
+          {
+            "regionName": "French Guiana",
+            "regionType": "COUNTRY",
+            "regionId": "GF"
+          },
+          {
+            "regionName": "Ukraine",
+            "regionType": "COUNTRY",
+            "regionId": "UA"
+          },
+          {
+            "regionName": "Russian Federation",
+            "regionType": "COUNTRY",
+            "regionId": "RU"
+          }
+        ]
+      },
+      "returnTerms": {
+        "returnsAccepted": false
+      },
+      "taxes": [
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Alabama",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "AL"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Alaska",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "AK"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Arizona",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "AZ"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Arkansas",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "AR"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "California",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "CA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Colorado",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "CO"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Connecticut",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "CT"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "District of Columbia",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "DC"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Florida",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "FL"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Georgia",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "GA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Hawaii",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "HI"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Idaho",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "ID"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Illinois",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "IL"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Indiana",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "IN"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Iowa",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "IA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Kansas",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "KS"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Kentucky",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "KY"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Louisiana",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "LA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Maine",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "ME"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Maryland",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "MD"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Massachusetts",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "MA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Michigan",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "MI"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Minnesota",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "MN"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Mississippi",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "MS"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Nebraska",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NE"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Nevada",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NV"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "New Jersey",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NJ"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "New Mexico",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NM"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "New York",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NY"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "North Carolina",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "NC"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "North Dakota",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "ND"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Ohio",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "OH"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Oklahoma",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "OK"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Pennsylvania",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "PA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Puerto Rico",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "PR"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Rhode Island",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "RI"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "South Carolina",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "SC"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "South Dakota",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "SD"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Tennessee",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "TN"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Texas",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "TX"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Utah",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "UT"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Vermont",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "VT"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Virginia",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "VA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Washington",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "WA"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "West Virginia",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "WV"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Wisconsin",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "WI"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        },
+        {
+          "taxJurisdiction": {
+            "region": {
+              "regionName": "Wyoming",
+              "regionType": "STATE_OR_PROVINCE"
+            },
+            "taxJurisdictionId": "WY"
+          },
+          "taxType": "STATE_SALES_TAX",
+          "shippingAndHandlingTaxed": true,
+          "includedInPrice": false,
+          "ebayCollectAndRemitTax": true
+        }
+      ],
+      "localizedAspects": [
+        {
+          "type": "STRING",
+          "name": "Artist",
+          "value": "Barbra Streisand, Donna Summer"
+        },
+        {
+          "type": "STRING",
+          "name": "Speed",
+          "value": "45 RPM"
+        },
+        {
+          "type": "STRING",
+          "name": "Record Label",
+          "value": "Columbia"
+        },
+        {
+          "type": "STRING",
+          "name": "Release Title",
+          "value": "No More Tears / Enough Is Enough"
+        },
+        {
+          "type": "STRING",
+          "name": "Case Type",
+          "value": "Paper Sleeve"
+        },
+        {
+          "type": "STRING",
+          "name": "Color",
+          "value": "Black"
+        },
+        {
+          "type": "STRING",
+          "name": "Material",
+          "value": "Vinyl"
+        },
+        {
+          "type": "STRING",
+          "name": "Type",
+          "value": "Single"
+        },
+        {
+          "type": "STRING",
+          "name": "Format",
+          "value": "Record"
+        },
+        {
+          "type": "STRING",
+          "name": "Language",
+          "value": "English"
+        },
+        {
+          "type": "STRING",
+          "name": "Release Year",
+          "value": "1979"
+        },
+        {
+          "type": "STRING",
+          "name": "Era",
+          "value": "1970s"
+        },
+        {
+          "type": "STRING",
+          "name": "Record Size",
+          "value": "7\""
+        },
+        {
+          "type": "STRING",
+          "name": "Style",
+          "value": "1970s"
+        },
+        {
+          "type": "STRING",
+          "name": "Features",
+          "value": "Original Cover"
+        },
+        {
+          "type": "STRING",
+          "name": "Genre",
+          "value": "Pop"
+        },
+        {
+          "type": "STRING",
+          "name": "Country of Origin",
+          "value": "United States"
+        },
+        {
+          "type": "STRING",
+          "name": "Number of Audio Channels",
+          "value": "Stereo"
+        }
+      ],
+      "topRatedBuyingExperience": false,
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "itemWebUrl": "https://www.ebay.com/itm/127969670535?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Fe5dSSitj4OLuhlL%2BQLd3JY7yS09PQalS1H1Tt4ROChIfN3ab%2BFBs52NkUPfx5AAHHXwmeQoS4MNBAl2mnAcPoO5ryeDldIsD2FADygVfUq6pDiwMpS8xCEfeb%2FBnjDJFVJFuw7jscpxopEqjQFqPP7wDaXbIBZg1wkn%2FlEKghIrvRSKnWYSLqxwAdtQa5JI8%3D",
+      "description": "<p data-start=\"751\" data-end=\"812\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"751\" data-end=\"812\">Barbra Streisand – No More Tears (Enough Is Enough) / Wet</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"814\" data-end=\"974\">Original 1979 Columbia Records 7\" 45 RPM single featuring the classic duet with <strong data-start=\"894\" data-end=\"910\">Donna Summer</strong>, one of the biggest disco/pop crossover hits of the late 1970s.</p>\n<p data-start=\"976\" data-end=\"1072\">A great addition for collectors of Barbra Streisand, Donna Summer, disco, and classic pop vinyl.</p>\n<hr data-start=\"1074\" data-end=\"1077\">\n<h3 data-section-id=\"1dr5t50\" data-start=\"1079\" data-end=\"1090\">Details</h3>\n<ul data-start=\"1092\" data-end=\"1323\">\n<li data-section-id=\"y9r8be\" data-start=\"1092\" data-end=\"1118\">\nArtist: Barbra Streisand\n</li>\n<li data-section-id=\"1lt7dl4\" data-start=\"1119\" data-end=\"1159\">\nFeatured Artist: Donna Summer (Side B)\n</li>\n<li data-section-id=\"1mjwwks\" data-start=\"1160\" data-end=\"1201\">\nTitle: No More Tears (Enough Is Enough)\n</li>\n<li data-section-id=\"iyywps\" data-start=\"1202\" data-end=\"1215\">\nB-Side: Wet\n</li>\n<li data-section-id=\"pgevyw\" data-start=\"1216\" data-end=\"1241\">\nLabel: Columbia Records\n</li>\n<li data-section-id=\"kvudxk\" data-start=\"1242\" data-end=\"1267\">\nCatalog Number: 1-11125\n</li>\n<li data-section-id=\"mn8imy\" data-start=\"1268\" data-end=\"1293\">\nFormat: 7\" Vinyl Single\n</li>\n<li data-section-id=\"r3wzuj\" data-start=\"1294\" data-end=\"1309\">\nSpeed: 45 RPM\n</li>\n<li data-section-id=\"1ur8mpx\" data-start=\"1310\" data-end=\"1323\">\nMade in USA\n</li>\n</ul>\n<hr data-start=\"1325\" data-end=\"1328\">\n<h3 data-section-id=\"17si63v\" data-start=\"1330\" data-end=\"1347\">Track Listing</h3>\n<p data-start=\"1349\" data-end=\"1359\"><strong data-start=\"1349\" data-end=\"1359\">Side A</strong></p>\n<ul data-start=\"1360\" data-end=\"1372\">\n<li data-section-id=\"1hb5x3s\" data-start=\"1360\" data-end=\"1372\">\nWet – 3:48\n</li>\n</ul>\n<p data-start=\"1374\" data-end=\"1384\"><strong data-start=\"1374\" data-end=\"1384\">Side B</strong></p>\n<ul data-start=\"1385\" data-end=\"1426\">\n<li data-section-id=\"19y0e2p\" data-start=\"1385\" data-end=\"1426\">\nNo More Tears (Enough Is Enough) – 4:39\n</li>\n</ul>\n<hr data-start=\"1428\" data-end=\"1431\">\n<h2 data-section-id=\"hrykuu\" data-start=\"1433\" data-end=\"1445\">Condition</h2>\n<p data-start=\"1447\" data-end=\"1461\"><strong data-start=\"1447\" data-end=\"1458\">Record:</strong> VG</p>\n<ul data-start=\"1462\" data-end=\"1609\">\n<li data-section-id=\"5152ur\" data-start=\"1462\" data-end=\"1516\">\nGood gloss with light cosmetic wear from normal use.\n</li>\n<li data-section-id=\"yvl3pl\" data-start=\"1517\" data-end=\"1561\">\nLight surface scratches/hairlines visible.\n</li>\n<li data-section-id=\"7aeyv8\" data-start=\"1562\" data-end=\"1609\">\nLabels are clean with no writing or stickers.\n</li>\n</ul>\n<p data-start=\"1611\" data-end=\"1622\"><strong data-start=\"1611\" data-end=\"1622\">Sleeve:</strong></p>\n<ul data-start=\"1623\" data-end=\"1695\">\n<li data-section-id=\"1613scd\" data-start=\"1623\" data-end=\"1695\">\nShips in a new white paper sleeve with a protective poly outer sleeve.</li></ul>",
+      "paymentMethods": [
+        {
+          "paymentMethodType": "OTHER"
+        },
+        {
+          "paymentMethodType": "WALLET",
+          "paymentMethodBrands": [
+            {
+              "paymentMethodBrandType": "PAYPAL"
+            },
+            {
+              "paymentMethodBrandType": "APPLE_PAY"
+            },
+            {
+              "paymentMethodBrandType": "GOOGLE_PAY"
+            }
+          ]
+        },
+        {
+          "paymentMethodType": "CREDIT_CARD",
+          "paymentMethodBrands": [
+            {
+              "paymentMethodBrandType": "VISA"
+            },
+            {
+              "paymentMethodBrandType": "MASTERCARD"
+            },
+            {
+              "paymentMethodBrandType": "DISCOVER"
+            },
+            {
+              "paymentMethodBrandType": "DINERS_CLUB"
+            }
+          ]
+        }
+      ],
+      "immediatePay": true,
+      "enabledForGuestCheckout": true,
+      "eligibleForInlineCheckout": true,
+      "lotSize": 1,
+      "legacyItemId": "127969670535",
+      "priorityListing": true,
+      "adultOnly": false,
+      "categoryId": "176985",
+      "listingMarketplaceId": "EBAY_US"
+    }
+  },
+  "title": "Barbra Streisand Donna Summer - No More Tears / Enough Is Enough 45 RPM Columbia",
+  "listing": {
+    "type": "FIXED_PRICE",
+    "start_date": "2026-07-11",
+    "end_date": null,
+    "bids": 0,
+    "buy_it_now": null
+  },
+  "status_reason": "listed as active by browse_api"
+}

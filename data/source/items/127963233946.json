@@ -1,0 +1,37 @@
+{
+  "item_id": "127963233946",
+  "listing_url": "https://www.ebay.com/itm/127963233946",
+  "status": "sold",
+  "status_source": "csv:transaction_report",
+  "status_changed_at": "2026-10-18T12:15:08Z",
+  "first_seen_at": "2026-10-18T12:15:08Z",
+  "last_seen_active_at": null,
+  "sold_at": "2026-09-27",
+  "sales": [
+    {
+      "date": "2026-09-27",
+      "price": "59.49",
+      "currency": "USD",
+      "quantity": 1,
+      "source": "csv:transaction_report"
+    }
+  ],
+  "price": {
+    "value": "59.49",
+    "currency": "USD",
+    "source": "csv:transaction_report: item subtotal (sale price)"
+  },
+  "quantity_available": 0,
+  "raw": {
+    "csv:transaction_report": {
+      "date": "Sep 27, 2026",
+      "item_id": "127963233946",
+      "title": "Red Hot Chili Peppers Greatest Hits - 2LP Vinyl - 2003 - Warner Bros Germany VG+",
+      "quantity": "1",
+      "price": "59.49",
+      "currency": "USD"
+    }
+  },
+  "title": "Red Hot Chili Peppers Greatest Hits - 2LP Vinyl - 2003 - Warner Bros Germany VG+",
+  "status_reason": "sale on 2026-09-27 confirmed by csv:transaction_report"
+}

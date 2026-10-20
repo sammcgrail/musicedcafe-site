@@ -1,0 +1,236 @@
+{
+  "last_success": "2026-10-20T03:03:16Z",
+  "last_success_source": "browse_api",
+  "last_attempt": "2026-10-20T03:03:16Z",
+  "last_attempt_source": "browse_api",
+  "last_result": "ok",
+  "errors": [],
+  "history": [
+    {
+      "at": "2026-10-20T03:03:16Z",
+      "source": "browse_api",
+      "result": "ok",
+      "summary": {
+        "active_listed": 339,
+        "items_created": 0,
+        "ended": 0,
+        "complete_snapshot": true,
+        "coverage": {
+          "api_active": 339,
+          "store_active": 339,
+          "api_only": 0,
+          "store_only_active": 0,
+          "api_ids_previously_sold": 0,
+          "auctions_in_api": 0,
+          "totals_by_category": {
+            "176985": 339
+          },
+          "direct_lookups": {}
+        },
+        "ending_enabled": true,
+        "files_written": 339
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-10-20T02:52:34Z",
+      "source": "browse_api",
+      "result": "ok",
+      "summary": {
+        "active_listed": 339,
+        "items_created": 0,
+        "ended": 0,
+        "complete_snapshot": true,
+        "coverage": {
+          "api_active": 339,
+          "store_active": 339,
+          "api_only": 0,
+          "store_only_active": 0,
+          "api_ids_previously_sold": 0,
+          "auctions_in_api": 0,
+          "totals_by_category": {
+            "176985": 339
+          },
+          "direct_lookups": {}
+        },
+        "ending_enabled": true,
+        "files_written": 339
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-10-19T10:15:21Z",
+      "source": "browse_api",
+      "result": "skipped",
+      "summary": {
+        "note": "no credentials, skipped"
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-10-19T00:26:11Z",
+      "source": "csv:transaction_report",
+      "result": "ok",
+      "summary": {
+        "format": "transaction_report",
+        "format_label": "Seller Hub > Payments > Reports > Transaction report",
+        "kind": "sold",
+        "rows_read": 88,
+        "rows_valid": 88,
+        "rows_invalid": 0,
+        "rows_filtered_out": 0,
+        "unique_items": 88,
+        "duplicate_item_ids": 0,
+        "skipped_non_vinyl": [],
+        "columns_present": [
+          "currency",
+          "date",
+          "item_id",
+          "price",
+          "quantity",
+          "sku",
+          "title"
+        ],
+        "columns_missing": [],
+        "dropped_columns": 1,
+        "sales": 88,
+        "items_created": 0,
+        "items_updated": 88,
+        "kept_active_multi_qty": 0,
+        "dry_run": false,
+        "files_written": 88
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-10-19T00:26:11Z",
+      "source": "csv:seller_hub_active",
+      "result": "ok",
+      "summary": {
+        "format": "seller_hub_active",
+        "format_label": "Seller Hub > Reports > Downloads > Listings > All active listings",
+        "kind": "active_snapshot",
+        "rows_read": 340,
+        "rows_valid": 339,
+        "rows_invalid": 0,
+        "rows_filtered_out": 0,
+        "unique_items": 339,
+        "duplicate_item_ids": 0,
+        "skipped_non_vinyl": [
+          {
+            "item_id": "128066182784",
+            "title": "Can It Happen Again? Chronicles of the Holocaust Chartock Spencer Hardcover 1995",
+            "category": "Books",
+            "reason": "category Books (261186) is not a vinyl category"
+          }
+        ],
+        "columns_present": [
+          "bids",
+          "buy_it_now",
+          "category",
+          "category_id",
+          "condition",
+          "currency",
+          "ean",
+          "end_date",
+          "epid",
+          "isbn",
+          "item_id",
+          "listing_format",
+          "listing_site",
+          "price",
+          "quantity",
+          "sku",
+          "sold_quantity",
+          "start_date",
+          "start_price",
+          "title",
+          "upc",
+          "variation",
+          "watchers"
+        ],
+        "columns_missing": [],
+        "dropped_columns": 7,
+        "active_listed": 339,
+        "items_created": 339,
+        "ended": 0,
+        "complete_snapshot": true,
+        "dry_run": false,
+        "files_written": 339
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-10-18T12:30:17Z",
+      "source": "browse_api",
+      "result": "skipped",
+      "summary": {
+        "note": "no credentials, skipped"
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-10-18T12:17:15Z",
+      "source": "browse_api",
+      "result": "skipped",
+      "summary": {
+        "note": "no credentials, skipped"
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-10-18T12:15:08Z",
+      "source": "csv:transaction_report",
+      "result": "ok",
+      "summary": {
+        "format": "transaction_report",
+        "format_label": "Seller Hub > Payments > Reports > Transaction report",
+        "kind": "sold",
+        "rows_read": 88,
+        "rows_valid": 88,
+        "rows_invalid": 0,
+        "rows_filtered_out": 0,
+        "unique_items": 88,
+        "duplicate_item_ids": 0,
+        "columns_present": [
+          "currency",
+          "date",
+          "item_id",
+          "price",
+          "quantity",
+          "sku",
+          "title"
+        ],
+        "columns_missing": [],
+        "dropped_columns": 1,
+        "sales": 88,
+        "items_created": 88,
+        "items_updated": 0,
+        "kept_active_multi_qty": 0,
+        "dry_run": false,
+        "files_written": 88
+      },
+      "errors": []
+    }
+  ],
+  "last_success_summary": {
+    "active_listed": 339,
+    "items_created": 0,
+    "ended": 0,
+    "complete_snapshot": true,
+    "coverage": {
+      "api_active": 339,
+      "store_active": 339,
+      "api_only": 0,
+      "store_only_active": 0,
+      "api_ids_previously_sold": 0,
+      "auctions_in_api": 0,
+      "totals_by_category": {
+        "176985": 339
+      },
+      "direct_lookups": {}
+    },
+    "ending_enabled": true,
+    "files_written": 339
+  }
+}

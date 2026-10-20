@@ -1,0 +1,42 @@
+{
+  "site_name": "Music Ed Cafe",
+  "tagline": "Good Coffee, Good Music, Good People",
+  "base_url": "https://musicedcafe.com",
+  "ebay_store_url": "https://www.ebay.com/str/musicedcafe",
+  "ebay_store_short_url": "https://ebay.io/m/RLyqeo",
+  "ebay_seller_username": "music_ed_cafe",
+  "ebay_feedback_url": "https://www.ebay.com/fdbk/feedback_profile/music_ed_cafe",
+  "marketplace": "EBAY_US",
+  "location": {
+    "city": "Lynn",
+    "region": "MA",
+    "country": "US"
+  },
+  "contact": {
+    "_doc": "PLACEHOLDERS for Edwin. Leave null to hide a link; the site never shows an invented address.",
+    "email": null,
+    "instagram": "https://www.instagram.com/musicedcafe/",
+    "facebook": null,
+    "tiktok": null,
+    "youtube": null
+  },
+  "epn_campaign_id": null,
+  "browse": {
+    "category_ids": [
+      "176985"
+    ],
+    "trusted_complete": true,
+    "_doc": "trusted_complete: a successful, reconciled API snapshot may end listings it no longer returns. Set true on 2026-10-20 after the first sync returned exactly the same 339 active ids as Edwin's Seller Hub export."
+  },
+  "sync": {
+    "max_end_fraction": 0.5,
+    "daily_at_utc": "10:15"
+  },
+  "archive": {
+    "noindex_sold_pages": false
+  },
+  "featured": {
+    "min_price": 35,
+    "_doc": "Featured = active records priced strictly above min_price (Edwin, 2026-10-20). An editorial featured true/false overrides."
+  }
+}

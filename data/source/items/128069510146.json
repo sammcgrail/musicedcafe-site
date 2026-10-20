@@ -1,0 +1,37 @@
+{
+  "item_id": "128069510146",
+  "listing_url": "https://www.ebay.com/itm/128069510146",
+  "status": "sold",
+  "status_source": "csv:transaction_report",
+  "status_changed_at": "2026-10-18T12:15:08Z",
+  "first_seen_at": "2026-10-18T12:15:08Z",
+  "last_seen_active_at": null,
+  "sold_at": "2026-09-24",
+  "sales": [
+    {
+      "date": "2026-09-24",
+      "price": "12.59",
+      "currency": "USD",
+      "quantity": 1,
+      "source": "csv:transaction_report"
+    }
+  ],
+  "price": {
+    "value": "12.59",
+    "currency": "USD",
+    "source": "csv:transaction_report: item subtotal (sale price)"
+  },
+  "quantity_available": 0,
+  "raw": {
+    "csv:transaction_report": {
+      "date": "Sep 24, 2026",
+      "item_id": "128069510146",
+      "title": "Saturday Night Fever Soundtrack - 2LP - Bee Gees -1977 RSO RS-2-4001 Disco Vinyl",
+      "quantity": "1",
+      "price": "12.59",
+      "currency": "USD"
+    }
+  },
+  "title": "Saturday Night Fever Soundtrack - 2LP - Bee Gees -1977 RSO RS-2-4001 Disco Vinyl",
+  "status_reason": "sale on 2026-09-24 confirmed by csv:transaction_report"
+}

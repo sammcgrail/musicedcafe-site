@@ -1,0 +1,37 @@
+{
+  "item_id": "127870985897",
+  "listing_url": "https://www.ebay.com/itm/127870985897",
+  "status": "sold",
+  "status_source": "csv:transaction_report",
+  "status_changed_at": "2026-10-18T12:15:08Z",
+  "first_seen_at": "2026-10-18T12:15:08Z",
+  "last_seen_active_at": null,
+  "sold_at": "2026-06-18",
+  "sales": [
+    {
+      "date": "2026-06-18",
+      "price": "27.00",
+      "currency": "USD",
+      "quantity": 1,
+      "source": "csv:transaction_report"
+    }
+  ],
+  "price": {
+    "value": "27.00",
+    "currency": "USD",
+    "source": "csv:transaction_report: item subtotal (sale price)"
+  },
+  "quantity_available": 0,
+  "raw": {
+    "csv:transaction_report": {
+      "date": "Jun 18, 2026",
+      "item_id": "127870985897",
+      "title": "Talking Heads – This Must Be The Place (Naive Melody) 12\" Vinyl Single – UK Sire",
+      "quantity": "1",
+      "price": "27",
+      "currency": "USD"
+    }
+  },
+  "title": "Talking Heads – This Must Be The Place (Naive Melody) 12\" Vinyl Single – UK Sire",
+  "status_reason": "sale on 2026-06-18 confirmed by csv:transaction_report"
+}

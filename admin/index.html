@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#221d18">
+<title>Music Ed Cafe admin</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; touch-action: manipulation; }
+input, textarea, .sel, .sel * { -webkit-user-select: text; user-select: text; }
+input, select, textarea { font-size: 16px; touch-action: auto; font-family: inherit; }
+html, body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; overflow-x: hidden; overflow-x: clip; }
+html { background: #221d18; }
+body { background: #f4ecd8; color: #221d18; font: 16px/1.5 ui-sans-serif, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); min-height: 100vh; }
+header { background: #221d18; color: #f4ecd8; padding: 14px 18px; display: flex; align-items: center; gap: 10px; }
+header a { color: #c9932f; margin-left: auto; min-height: 44px; display: inline-flex; align-items: center; }
+h1 { font-size: 1.15rem; }
+h2 { font-size: 1.05rem; margin-bottom: 8px; }
+main { max-width: 900px; margin: 0 auto; padding: 16px 18px 40px; display: grid; gap: 14px; }
+section { background: #fbf6ea; border: 1px solid #d6c6a3; border-radius: 8px; padding: 14px; min-width: 0; }
+button, .btn { min-height: 46px; padding: 0 16px; border-radius: 6px; border: 2px solid #221d18; background: #221d18; color: #f4ecd8; font: 700 15px inherit; font-family: inherit; cursor: pointer; }
+button.alt { background: transparent; color: #221d18; }
+button:disabled { opacity: .5; cursor: wait; }
+input[type=password], input[type=file], select { width: 100%; min-height: 46px; padding: 8px 10px; border: 2px solid #221d18; border-radius: 6px; background: #fff; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.kv { display: grid; grid-template-columns: 11em 1fr; gap: 4px 10px; font-size: 14px; }
+.kv dt { font-weight: 700; color: #54473b; }
+.kv dd { min-width: 0; overflow-wrap: anywhere; }
+.ok { color: #2b6461; font-weight: 700; } .bad { color: #9b3d17; font-weight: 700; } .muted { color: #54473b; font-size: 14px; }
+pre { background: #221d18; color: #f4ecd8; padding: 10px; border-radius: 6px; font-size: 12.5px; overflow: auto; max-height: 340px; white-space: pre-wrap; overflow-wrap: anywhere; }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+td, th { text-align: left; padding: 6px 4px; border-bottom: 1px solid #d6c6a3; vertical-align: top; }
+#app { display: grid; gap: 14px; }
+.hidden { display: none !important; }
+h3.sub { font-size: .95rem; margin: 14px 0 6px; }
+.tbl { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.tbl table { min-width: 520px; }
+button.del { min-height: 36px; padding: 0 10px; font-size: 13px; background: transparent; color: #9b3d17; border-color: #9b3d17; }
+:focus-visible { outline: 3px solid #1f5f9e; outline-offset: 2px; }
+</style>
+</head>
+<body>
+<header><h1>Music Ed Cafe admin</h1><a href="/">View site</a></header>
+<main>
+  <section id="login">
+    <h2>Sign in</h2>
+    <p class="muted">Paste the admin token (from the server's <code>.env</code>, ADMIN_TOKEN). It is kept only in this browser tab.</p>
+    <div class="row"><input type="password" id="token" autocomplete="current-password" aria-label="Admin token"><button id="go">Unlock</button></div>
+    <p id="login-msg" class="bad" role="alert"></p>
+  </section>
+
+  <div id="app" class="hidden">
+  <section>
+    <h2>Inventory sync</h2>
+    <dl class="kv" id="state"></dl>
+    <div class="row">
+      <button id="refresh">Refresh from eBay</button>
+      <button id="rebuild" class="alt">Rebuild site</button>
+      <button id="enrich" class="alt">Fetch missing photos &amp; descriptions</button>
+    </div>
+    <p class="muted" id="api-note"></p>
+  </section>
+
+  <section>
+    <h2>Import an eBay CSV</h2>
+    <p class="muted">Supported: Transaction report (sold), Orders report (sold), Seller Hub "All active listings", File Exchange active listings. Buyer, address, payout and fee columns are dropped on read and never stored. Preview first; nothing changes until you press Apply.</p>
+    <div class="row"><input type="file" id="csv" accept=".csv,text/csv" aria-label="CSV file"></div>
+    <div class="row">
+      <select id="mode" aria-label="Snapshot mode">
+        <option value="auto">Active listings: treat as complete if every row is valid (ends missing listings)</option>
+        <option value="partial">Active listings: partial (never ends anything)</option>
+        <option value="complete">Active listings: complete (refuse if any row is invalid)</option>
+      </select>
+    </div>
+    <div class="row"><button id="preview">Preview</button><button id="apply" class="alt" disabled>Apply import</button></div>
+    <pre id="csv-out" class="hidden sel"></pre>
+  </section>
+
+  <section>
+    <h2>Last result</h2>
+    <pre id="out" class="sel">(nothing yet)</pre>
+  </section>
+
+  <section>
+    <h2>Needs review</h2>
+    <p class="muted">Fields that couldn't be read from eBay are left blank on the site. Add them on eBay (item specifics) or in <code>data/editorial/&lt;item id&gt;.json</code>.</p>
+    <div id="flags" class="sel"></div>
+    <div class="row"><button id="load-review" class="alt">Show per-item list</button></div>
+    <div id="review" class="sel"></div>
+  </section>
+
+  <section id="merch">
+    <h2>Merch reservations</h2>
+    <p class="muted">Preorder reservations from the merch pages (no payment taken). Names and emails stay on this server in <code>data/merch/reservations.jsonl</code> and are never committed to git.</p>
+    <div class="row"><button id="merch-load" class="alt">Refresh</button><button id="merch-csv">Export CSV</button></div>
+    <p id="merch-sum" class="muted" style="margin-top:10px"></p>
+    <h3 class="sub">Totals per item and option</h3>
+    <div id="merch-totals" class="sel tbl"></div>
+    <h3 class="sub">All reservations (newest first)</h3>
+    <div id="merch-rows" class="sel tbl"></div>
+  </section>
+  </div>
+</main>
+<script>
+(function () {
+  var d = document, $ = function (id) { return d.getElementById(id); };
+  d.addEventListener('selectstart', function (e) { var t = e.target.nodeType === 3 ? e.target.parentElement : e.target; if (!(t && t.closest && t.closest('.sel, input, textarea, select'))) e.preventDefault(); });
+  d.addEventListener('contextmenu', function (e) { var t = e.target.nodeType === 3 ? e.target.parentElement : e.target; if (!(t && t.closest && t.closest('.sel, input, textarea, a'))) e.preventDefault(); });
+  var token = sessionStorage.getItem('mecToken') || '';
+  function api(path, opts) {
+    opts = opts || {};
+    opts.headers = Object.assign({ 'Authorization': 'Bearer ' + token }, opts.headers || {});
+    return fetch(path, opts).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { j._status = r.status; return j; }); });
+  }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function show(j) { $('out').textContent = JSON.stringify(j, null, 1); }
+  function busy(on) { ['refresh', 'rebuild', 'enrich', 'preview'].forEach(function (id) { $(id).disabled = on; }); }
+  function status() {
+    return api('/admin/api/status').then(function (j) {
+      if (j._status === 401 || j._status === 503) { $('login-msg').textContent = j.error || 'Wrong token'; $('login').classList.remove('hidden'); $('app').classList.add('hidden'); return; }
+      $('login').classList.add('hidden'); $('app').classList.remove('hidden');
+      var s = j.sync || {};
+      var rows = [
+        ['Last successful sync', (s.last_success || 'never') + (s.last_success_source ? ' (' + s.last_success_source + ')' : '')],
+        ['Last attempt', (s.last_attempt || 'never') + (s.last_attempt_source ? ' (' + s.last_attempt_source + ')' : '')],
+        ['Last result', '<span class="' + (s.last_result === 'failed' ? 'bad' : 'ok') + '">' + esc(s.last_result || '-') + '</span>'],
+        ['Errors', (s.errors && s.errors.length) ? '<span class="bad">' + s.errors.map(esc).join('<br>') + '</span>' : 'none'],
+        ['Items', Object.keys(j.counts || {}).map(function (k) { return esc(k) + ': ' + j.counts[k]; }).join(', ') || '0'],
+        ['Site last built', j.last_build || 'never'],
+        ['Daily sync (UTC)', j.schedule_utc || '-'],
+        ['Running now', j.job && j.job.running ? esc(j.job.running) : 'nothing']
+      ];
+      $('state').innerHTML = rows.map(function (r) { return '<dt>' + r[0] + '</dt><dd>' + (r[0] === 'Last result' || r[0] === 'Errors' ? r[1] : esc(r[1])) + '</dd>'; }).join('');
+      $('api-note').textContent = j.api_credentials_present ? 'eBay API keys found: Refresh pulls active listings from the Browse API.' : 'No eBay API keys yet: Refresh records a skip and changes nothing. Use a CSV import until keys are added (see docs/EBAY-INTEGRATION.md).';
+      var fc = j.review_flag_counts || {};
+      $('flags').innerHTML = '<table><tr><th>Issue</th><th>Items</th></tr>' + Object.keys(fc).map(function (k) { return '<tr><td>' + esc(k) + '</td><td>' + fc[k] + '</td></tr>'; }).join('') + '</table>';
+    });
+  }
+  $('go').addEventListener('click', function () { token = $('token').value.trim(); sessionStorage.setItem('mecToken', token); $('login-msg').textContent = ''; status(); });
+  $('token').addEventListener('keydown', function (e) { if (e.key === 'Enter') $('go').click(); });
+  function post(path, label) {
+    busy(true); $('out').textContent = label + '...';
+    api(path, { method: 'POST' }).then(function (j) { show(j); busy(false); status(); });
+  }
+  $('refresh').addEventListener('click', function () { post('/admin/api/refresh', 'Syncing from eBay'); });
+  $('rebuild').addEventListener('click', function () { post('/admin/api/rebuild', 'Rebuilding'); });
+  $('enrich').addEventListener('click', function () { post('/admin/api/enrich', 'Starting'); });
+  var csvText = null;
+  $('csv').addEventListener('change', function () {
+    var f = $('csv').files[0]; csvText = null; $('apply').disabled = true;
+    if (!f) return;
+    var r = new FileReader(); r.onload = function () { csvText = r.result; }; r.readAsText(f);
+  });
+  function sendCsv(dry) {
+    if (!csvText) { $('csv-out').classList.remove('hidden'); $('csv-out').textContent = 'Choose a CSV file first.'; return; }
+    busy(true); $('apply').disabled = true;
+    api('/admin/api/csv?dry=' + (dry ? 1 : 0) + '&mode=' + $('mode').value, { method: 'POST', body: csvText, headers: { 'Content-Type': 'text/csv' } }).then(function (j) {
+      $('csv-out').classList.remove('hidden'); $('csv-out').textContent = JSON.stringify(j, null, 1);
+      busy(false); if (dry && j.result === 'ok') $('apply').disabled = false; if (!dry) { csvText = null; status(); }
+    });
+  }
+  $('preview').addEventListener('click', function () { sendCsv(true); });
+  $('apply').addEventListener('click', function () { sendCsv(false); });
+  $('load-review').addEventListener('click', function () {
+    api('/admin/api/review').then(function (j) {
+      var items = j.items || {};
+      $('review').innerHTML = '<table><tr><th>Item</th><th>Flags</th></tr>' + Object.keys(items).map(function (id) {
+        var it = items[id];
+        return '<tr><td><a href="https://www.ebay.com/itm/' + esc(id) + '" rel="noopener">' + esc(id) + '</a><br>' + esc(it.title) + ' <em>(' + esc(it.status) + ')</em></td><td>' + it.flags.map(esc).join('<br>') + '</td></tr>';
+      }).join('') + '</table>';
+    });
+  });
+  function merch() {
+    return api('/admin/api/merch').then(function (j) {
+      if (j._status !== 200) { $('merch-sum').textContent = j.error || 'Could not load reservations.'; return; }
+      $('merch-sum').textContent = j.count + ' reservation' + (j.count === 1 ? '' : 's') + ', ' + j.qty + ' item' + (j.qty === 1 ? '' : 's') + ' in total.';
+      $('merch-totals').innerHTML = j.totals.length ? '<table><tr><th>Item</th><th>Options</th><th>Qty</th><th>Reservations</th></tr>' + j.totals.map(function (t) {
+        return '<tr><td>' + esc(t.item_name) + '</td><td>' + esc(t.options || '-') + '</td><td>' + t.qty + '</td><td>' + t.reservations + '</td></tr>';
+      }).join('') + '</table>' : '<p class="muted">None yet.</p>';
+      var rows = j.reservations.slice().reverse();
+      $('merch-rows').innerHTML = rows.length ? '<table><tr><th>When (UTC)</th><th>Item</th><th>Qty</th><th>Name / email</th><th>Note</th><th></th></tr>' + rows.map(function (r) {
+        var o = r.options || {}, opts = Object.keys(o).map(function (k) { return o[k]; }).join(', ');
+        return '<tr><td>' + esc((r.ts || '').replace('T', ' ').replace('Z', '')) + '</td><td>' + esc(r.item_name) + (opts ? '<br><span class="muted">' + esc(opts) + '</span>' : '') + '</td><td>' + esc(r.qty) +
+          '</td><td>' + esc(r.name) + '<br><a href="mailto:' + esc(r.email) + '">' + esc(r.email) + '</a></td><td>' + esc(r.note) + '</td><td><button class="del" data-id="' + esc(r.id) + '">Delete</button></td></tr>';
+      }).join('') + '</table>' : '';
+    });
+  }
+  $('merch-load').addEventListener('click', merch);
+  $('merch-rows').addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('button.del');
+    if (!b || !confirm('Delete this reservation? This cannot be undone.')) return;
+    api('/admin/api/merch/delete?id=' + encodeURIComponent(b.getAttribute('data-id')), { method: 'POST' }).then(merch);
+  });
+  $('merch-csv').addEventListener('click', function () {
+    fetch('/admin/api/merch.csv', { headers: { 'Authorization': 'Bearer ' + token } }).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.blob();
+    }).then(function (b) {
+      var a = d.createElement('a'); a.href = URL.createObjectURL(b);
+      a.download = 'merch-reservations-' + new Date().toISOString().slice(0, 10) + '.csv';
+      d.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    }).catch(function (e) { $('merch-sum').textContent = 'CSV export failed: ' + e.message; });
+  });
+  var _status = status;
+  status = function () { return _status().then(function () { if (!$('app').classList.contains('hidden')) merch(); }); };
+  if (token) status();
+})();
+</script>
+</body>
+</html>

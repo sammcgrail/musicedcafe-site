@@ -1,0 +1,37 @@
+{
+  "item_id": "127962063351",
+  "listing_url": "https://www.ebay.com/itm/127962063351",
+  "status": "sold",
+  "status_source": "csv:transaction_report",
+  "status_changed_at": "2026-10-18T12:15:08Z",
+  "first_seen_at": "2026-10-18T12:15:08Z",
+  "last_seen_active_at": null,
+  "sold_at": "2026-08-08",
+  "sales": [
+    {
+      "date": "2026-08-08",
+      "price": "16.99",
+      "currency": "USD",
+      "quantity": 1,
+      "source": "csv:transaction_report"
+    }
+  ],
+  "price": {
+    "value": "16.99",
+    "currency": "USD",
+    "source": "csv:transaction_report: item subtotal (sale price)"
+  },
+  "quantity_available": 0,
+  "raw": {
+    "csv:transaction_report": {
+      "date": "Aug 8, 2026",
+      "item_id": "127962063351",
+      "title": "GQ - Disco Nights LP 1979 Arista AB 4225 VG+ Vinyl Funk Soul Disco Boogie Oogie",
+      "quantity": "1",
+      "price": "16.99",
+      "currency": "USD"
+    }
+  },
+  "title": "GQ - Disco Nights LP 1979 Arista AB 4225 VG+ Vinyl Funk Soul Disco Boogie Oogie",
+  "status_reason": "sale on 2026-08-08 confirmed by csv:transaction_report"
+}

@@ -1,0 +1,37 @@
+{
+  "item_id": "127963285136",
+  "listing_url": "https://www.ebay.com/itm/127963285136",
+  "status": "sold",
+  "status_source": "csv:transaction_report",
+  "status_changed_at": "2026-10-18T12:15:08Z",
+  "first_seen_at": "2026-10-18T12:15:08Z",
+  "last_seen_active_at": null,
+  "sold_at": "2026-07-13",
+  "sales": [
+    {
+      "date": "2026-07-13",
+      "price": "19.99",
+      "currency": "USD",
+      "quantity": 1,
+      "source": "csv:transaction_report"
+    }
+  ],
+  "price": {
+    "value": "19.99",
+    "currency": "USD",
+    "source": "csv:transaction_report: item subtotal (sale price)"
+  },
+  "quantity_available": 0,
+  "raw": {
+    "csv:transaction_report": {
+      "date": "Jul 13, 2026",
+      "item_id": "127963285136",
+      "title": "Led Zeppelin II LP SD 8236 Atlantic Vintage Rock Vinyl Record Gold Award VG",
+      "quantity": "1",
+      "price": "19.99",
+      "currency": "USD"
+    }
+  },
+  "title": "Led Zeppelin II LP SD 8236 Atlantic Vintage Rock Vinyl Record Gold Award VG",
+  "status_reason": "sale on 2026-07-13 confirmed by csv:transaction_report"
+}

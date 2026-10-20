@@ -1,0 +1,37 @@
+{
+  "item_id": "127886372274",
+  "listing_url": "https://www.ebay.com/itm/127886372274",
+  "status": "sold",
+  "status_source": "csv:transaction_report",
+  "status_changed_at": "2026-10-18T12:15:08Z",
+  "first_seen_at": "2026-10-18T12:15:08Z",
+  "last_seen_active_at": null,
+  "sold_at": "2026-07-27",
+  "sales": [
+    {
+      "date": "2026-07-27",
+      "price": "17.50",
+      "currency": "USD",
+      "quantity": 1,
+      "source": "csv:transaction_report"
+    }
+  ],
+  "price": {
+    "value": "17.50",
+    "currency": "USD",
+    "source": "csv:transaction_report: item subtotal (sale price)"
+  },
+  "quantity_available": 0,
+  "raw": {
+    "csv:transaction_report": {
+      "date": "Jul 27, 2026",
+      "item_id": "127886372274",
+      "title": "Billy Joel – The Stranger Vinyl Record LP",
+      "quantity": "1",
+      "price": "17.5",
+      "currency": "USD"
+    }
+  },
+  "title": "Billy Joel – The Stranger Vinyl Record LP",
+  "status_reason": "sale on 2026-07-27 confirmed by csv:transaction_report"
+}

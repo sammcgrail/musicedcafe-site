@@ -1,0 +1,235 @@
+{
+  "_doc": "Column mappings for eBay CSV exports. Only the columns mapped here are ever read; every other column (buyer names, usernames, ship-to address, payout, fees, tax) is dropped on read and never stored. Header matching is case-insensitive and ignores surrounding spaces. 'detect' lists headers that must ALL be present for a file to be recognised as that format. 'kind' is 'sold' (each row is an eBay-confirmed sale) or 'active_snapshot' (each row is a currently active listing).",
+  "default_currency": "USD",
+  "formats": {
+    "transaction_report": {
+      "label": "Seller Hub > Payments > Reports > Transaction report",
+      "kind": "sold",
+      "detect": [
+        "Transaction creation date",
+        "Type",
+        "Item ID",
+        "Item subtotal"
+      ],
+      "row_filter": {
+        "Type": [
+          "Order"
+        ]
+      },
+      "columns": {
+        "date": [
+          "Transaction creation date"
+        ],
+        "item_id": [
+          "Item ID"
+        ],
+        "title": [
+          "Item title"
+        ],
+        "sku": [
+          "Custom label"
+        ],
+        "quantity": [
+          "Quantity"
+        ],
+        "price": [
+          "Item subtotal"
+        ],
+        "currency": [
+          "Transaction currency"
+        ]
+      }
+    },
+    "orders_report": {
+      "label": "Seller Hub > Orders > Download report (orders / sold)",
+      "kind": "sold",
+      "detect": [
+        "Order number",
+        "Item number",
+        "Sold for"
+      ],
+      "columns": {
+        "date": [
+          "Sale date",
+          "Paid on date"
+        ],
+        "item_id": [
+          "Item number"
+        ],
+        "title": [
+          "Item title"
+        ],
+        "sku": [
+          "Custom label"
+        ],
+        "quantity": [
+          "Quantity"
+        ],
+        "price": [
+          "Sold for"
+        ],
+        "currency": [
+          "Currency"
+        ]
+      }
+    },
+    "seller_hub_active": {
+      "label": "Seller Hub > Reports > Downloads > Listings > All active listings",
+      "kind": "active_snapshot",
+      "detect": [
+        "Item number",
+        "Title",
+        "Available quantity"
+      ],
+      "columns": {
+        "item_id": [
+          "Item number"
+        ],
+        "title": [
+          "Title"
+        ],
+        "variation": [
+          "Variation details",
+          "Variation"
+        ],
+        "sku": [
+          "Custom label",
+          "Custom label (SKU)"
+        ],
+        "quantity": [
+          "Available quantity"
+        ],
+        "listing_format": [
+          "Format"
+        ],
+        "currency": [
+          "Currency"
+        ],
+        "price": [
+          "Current price",
+          "Buy It Now price",
+          "Start price"
+        ],
+        "sold_quantity": [
+          "Sold quantity"
+        ],
+        "start_date": [
+          "Start date"
+        ],
+        "end_date": [
+          "End date"
+        ],
+        "category": [
+          "eBay category 1 name"
+        ],
+        "category_id": [
+          "eBay category 1 number"
+        ],
+        "condition": [
+          "Condition"
+        ],
+        "epid": [
+          "eBay Product ID(ePID)",
+          "eBay Product ID (ePID)",
+          "P:EPID"
+        ],
+        "start_price": [
+          "Start price"
+        ],
+        "buy_it_now": [
+          "Auction Buy It Now price",
+          "Buy It Now price"
+        ],
+        "bids": [
+          "Bids"
+        ],
+        "watchers": [
+          "Watchers"
+        ],
+        "upc": [
+          "P:UPC"
+        ],
+        "ean": [
+          "P:EAN"
+        ],
+        "isbn": [
+          "P:ISBN"
+        ],
+        "listing_site": [
+          "Listing site"
+        ]
+      },
+      "_ignored_columns": "CD:* / CDA:* trading-card grader columns, Reserve price (seller-private), category 2"
+    },
+    "file_exchange_active": {
+      "label": "File Exchange / legacy 'Active listings' download",
+      "kind": "active_snapshot",
+      "detect": [
+        "Item ID",
+        "Title",
+        "Quantity Available"
+      ],
+      "columns": {
+        "item_id": [
+          "Item ID",
+          "ItemID"
+        ],
+        "title": [
+          "Title",
+          "Item Title"
+        ],
+        "sku": [
+          "Custom Label",
+          "CustomLabel"
+        ],
+        "quantity": [
+          "Quantity Available",
+          "Quantity"
+        ],
+        "listing_format": [
+          "Format"
+        ],
+        "currency": [
+          "Currency"
+        ],
+        "price": [
+          "Price",
+          "Current Price",
+          "StartPrice"
+        ],
+        "start_date": [
+          "Start Date"
+        ],
+        "end_date": [
+          "End Date"
+        ],
+        "category": [
+          "Category Leaf Name",
+          "Category Name"
+        ],
+        "category_id": [
+          "Category Number",
+          "Category"
+        ],
+        "condition": [
+          "Condition",
+          "ConditionID"
+        ],
+        "images": [
+          "PicURL",
+          "Picture URL"
+        ],
+        "description_html": [
+          "Description"
+        ]
+      },
+      "aspect_prefix": "C:"
+    }
+  },
+  "category_allow": {
+    "_doc": "Active-listing rows whose eBay category 1 number is not listed here are skipped (reported, never imported). 176985 = Vinyl Records. Add IDs for audio gear etc. to include them.",
+    "ids": [
+      "176985"
+    ]
+  }
+}

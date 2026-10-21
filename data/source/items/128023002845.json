@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "AS19653",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1582,7 +1582,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023002845?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F3fTY28p2lXbsEKt21S1VHXbgfDvDQa4m7bjQKjvf4ejqmrN2POau16NiIJzvUuK4M14z8XREan5C3BtNeIHrKwHwpGgSUe0KLuNs724D2D%2BA926VU%2Fh%2FmQZvAzczGpMPDHEMeWypBR6uwScJmb%2FxOcL4snnwFw39M6x%2FVjn1D0Mvank4CoRRJdm3y4RtH6wo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023002845?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F3fTY28p2lXbsEKt21S1VHXbgfDvDQa4m7bjQKjvf4etGczAUvgvzjRgxLht56rCXI81cRz5IoDQgCiFUDV5zqBKXEpqsl3TE%2FYyZRlPwyR3Yw5REfE6Dl%2BgJmn%2Fweou45%2Ff5ALRxiuHSEKgcybz4jNcqfXP%2FPN%2FzsapAUjypwaIFsfvXLcFui5C4XmI99Z8w%3D",
       "description": "<p>Carly Simon – All I Want Is You / Two Hot Girls (On a Hot Summer Night)</p><br /><p>Original U.S. Arista Records 7-inch 45 RPM single, catalog AS1-9653, released in 1987. </p><br /><p>A-side features “All I Want Is You,” from Carly Simon’s Coming Around Again album, backed with “Two Hot Girls (On a Hot Summer Night).” </p><br /><p>Record appears approximately VG+ visually, showing light surface wear consistent with normal handling. No obvious major scratches are visible in the photos. Labels remain clean and attractive.</p><br /><p>Includes the generic yellow paper sleeve pictured, which shows age-related staining and wear.</p><br /><p>Please review all photos carefully for exact cosmetic condition. Sold as pictured.</p>",
       "paymentMethods": [
         {
@@ -1639,5 +1639,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:21Z"
 }

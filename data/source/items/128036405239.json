@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "4669",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1582,7 +1582,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036405239?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BmjxoDlXkodfNuT0JjMgp8Bt%2BRBkHGKWE1KnFYkRZfTGmwwilj2F%2Fl3dP%2FMVuhLlvf6y7%2BCnmBH65%2BDAWto5asXe8BQPxO1GLfOLPLXsuJVbBeJPjRR%2FQ%2ByIlrk40%2Ba0CZXGl3w8b1c4fHPTsATnJxcgEFtJwG6%2FVE6w0aJQFyqxlsW6BDiIBj0%2BoLZPz1i9Q%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036405239?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BmjxoDlXkodfNuT0JjMgp8Bt%2BRBkHGKWE1KnFYkRZfTBqYvhDu23GIbTnmNSKWGcZYNFSz72NWk9B2B9ZlsuZcV20kvIVZ7izGKsQQjeKYtng8NVgpUFaC5QDMxw2LIEk%2Fzln4iETvr1ZQTpK1UtRzZQxsc8a%2FX0%2FofGg1XWqTgjlS1%2FfLdyn2zPCjpw0uF%2Fg%3D",
       "description": "<p>Vintage 1975 7-inch 45 RPM single by The Stylistics, featuring their rendition of “Can’t Help Falling in Love” backed with “Jenny.”</p><br /><p>Released on H&amp;L Records, catalog number HL-4669. Produced by legendary production team Hugo &amp; Luigi, with arrangements by Van McCoy.</p><br /><p>Record is in approximately VG visual condition, showing surface wear, light scratches and handling marks associated with normal vintage use. Both labels have handwritten markings/date or inventory notations as clearly shown in the photos. Label edges also show minor wear.</p><br /><p>No original picture sleeve is included.</p>",
       "paymentMethods": [
         {
@@ -1639,5 +1639,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:00Z"
 }

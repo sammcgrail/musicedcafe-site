@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1601,7 +1601,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014891761?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8wA4LhBHElaUVuzlA2vChlVjRPPXH%2FFPS6v0wm5fCfQcMJ1avuuyboi1Aun0MyswIbnMayVt9E9xzzYE4pbhoQkig9nQdQnUiz6DqLyDSyxLi%2BVm2073wCnWF%2F2l1c%2BxITcetz6b5pbYMvn1jalf5D1s6s9W%2Bmc3l03E63fvzyjlCIo4YJUKQTtCFtX%2BpLvcM%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014891761?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8wA4LhBHElaUVuzlA2vChlVjRPPXH%2FFPS6v0wm5fCfQS49%2Bjm%2BLcoU0Ho1eMsevryYu%2Bf3QOdWeJurMQaOLNb2a4DYk%2F42LR9IiOid1%2B%2BvRl4yBcr0NGqaFmYfFiBmNqXlANWquirACJj1bs%2FRAnK9nhiyVo8l9wVtJIntBfT81spNBpo%2FZoX0pETFdwo0g%2BM%3D",
       "description": "<p>Original vintage RCA Victor 45 RPM pressing of Floyd Cramer’s classic instrumental hit “Last Date,” backed with “Sweetie Baby.”</p><br /><p>RCA Victor 47-7775, produced by legendary Nashville producer Chet Atkins.</p><br /><p>“Last Date” became Floyd Cramer’s signature recording and is a classic example of the piano-driven Nashville Sound of the early 1960s.</p>",
       "paymentMethods": [
         {
@@ -1658,5 +1658,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:48Z"
 }

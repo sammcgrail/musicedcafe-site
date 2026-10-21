@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1576,7 +1576,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014920950?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BqZiviuSXL%2BIgRRgzBy%2F2SfOkrgCbRpY0HqvV5w0HioAtePOPY5xgXxKIMDQxeGcCt5ut5vY2mCFwdBpkUePYCqYQbEyt4BBkGt3SJNv1vUQy7pqujK%2Bl2V4SmuogaNf7H%2BQyw%2B0Z1Xo%2FaSE9QLi2kHtm12N798Nwh2cDCBWOiWuEnGRqoHnjqTbCjhUPq9%2Fw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014920950?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BqZiviuSXL%2BIgRRgzBy%2F2SfOkrgCbRpY0HqvV5w0HioEYBIFpV8ojT3CmC8kT1d9lwOCKUzVhduvJFfTMW2%2Fzprlhz9wp0L%2BP7nUjI5ZNGdkbZhyPfiQgDVimkfO0TnQWXvgRuJdbJPJp60bMKo55OGSn%2FSM1ND6RoJ0rWLwJbdDBtCs4L%2FGdV7p%2B6YattLek%3D",
       "description": "<p>Original 1963 U.S. Atlantic Records 45 by The Drifters, featuring “I’ll Take You Home” backed with “I Feel Good All Over.”</p><br /><p>Classic early-‘60s Atlantic R&amp;B/soul from one of the era’s most important vocal groups. “I’ll Take You Home” was arranged and conducted by Garry Sherman, while “I Feel Good All Over” was arranged and conducted by Bert Keyes. </p><br /><p>Record shows visible surface marks and signs of previous play while retaining good overall gloss. Label shows normal age-related wear and writing on one side. Visually graded VG; please review photos for exact condition. Generic sleeve/no original picture sleeve.</p>",
       "paymentMethods": [
         {
@@ -1633,5 +1633,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:42Z"
 }

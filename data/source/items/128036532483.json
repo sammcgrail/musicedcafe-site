@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -335,24 +335,24 @@
             "regionId": "CO"
           },
           {
-            "regionName": "Spain",
-            "regionType": "COUNTRY",
-            "regionId": "ES"
-          },
-          {
             "regionName": "Iceland",
             "regionType": "COUNTRY",
             "regionId": "IS"
           },
           {
-            "regionName": "Estonia",
+            "regionName": "Spain",
             "regionType": "COUNTRY",
-            "regionId": "EE"
+            "regionId": "ES"
           },
           {
             "regionName": "Macedonia",
             "regionType": "COUNTRY",
             "regionId": "MK"
+          },
+          {
+            "regionName": "Estonia",
+            "regionType": "COUNTRY",
+            "regionId": "EE"
           },
           {
             "regionName": "Belgium",
@@ -410,11 +410,6 @@
             "regionId": "EC"
           },
           {
-            "regionName": "Italy",
-            "regionType": "COUNTRY",
-            "regionId": "IT"
-          },
-          {
             "regionName": "Albania",
             "regionType": "COUNTRY",
             "regionId": "AL"
@@ -423,6 +418,11 @@
             "regionName": "Swaziland",
             "regionType": "COUNTRY",
             "regionId": "SZ"
+          },
+          {
+            "regionName": "Italy",
+            "regionType": "COUNTRY",
+            "regionId": "IT"
           },
           {
             "regionName": "Ethiopia",
@@ -500,14 +500,14 @@
             "regionId": "ML"
           },
           {
-            "regionName": "Republic of Croatia",
-            "regionType": "COUNTRY",
-            "regionId": "HR"
-          },
-          {
             "regionName": "Botswana",
             "regionType": "COUNTRY",
             "regionId": "BW"
+          },
+          {
+            "regionName": "Republic of Croatia",
+            "regionType": "COUNTRY",
+            "regionId": "HR"
           },
           {
             "regionName": "Madagascar",
@@ -670,14 +670,14 @@
             "regionId": "GD"
           },
           {
-            "regionName": "Romania",
-            "regionType": "COUNTRY",
-            "regionId": "RO"
-          },
-          {
             "regionName": "Greece",
             "regionType": "COUNTRY",
             "regionId": "GR"
+          },
+          {
+            "regionName": "Romania",
+            "regionType": "COUNTRY",
+            "regionId": "RO"
           },
           {
             "regionName": "Costa Rica",
@@ -720,14 +720,14 @@
             "regionId": "NP"
           },
           {
-            "regionName": "Lithuania",
-            "regionType": "COUNTRY",
-            "regionId": "LT"
-          },
-          {
             "regionName": "Bahamas",
             "regionType": "COUNTRY",
             "regionId": "BS"
+          },
+          {
+            "regionName": "Lithuania",
+            "regionType": "COUNTRY",
+            "regionId": "LT"
           },
           {
             "regionName": "Trinidad and Tobago",
@@ -745,14 +745,14 @@
             "regionId": "MW"
           },
           {
-            "regionName": "Hungary",
-            "regionType": "COUNTRY",
-            "regionId": "HU"
-          },
-          {
             "regionName": "Bosnia and Herzegovina",
             "regionType": "COUNTRY",
             "regionId": "BA"
+          },
+          {
+            "regionName": "Hungary",
+            "regionType": "COUNTRY",
+            "regionId": "HU"
           },
           {
             "regionName": "Angola",
@@ -770,14 +770,14 @@
             "regionId": "TN"
           },
           {
-            "regionName": "Luxembourg",
-            "regionType": "COUNTRY",
-            "regionId": "LU"
-          },
-          {
             "regionName": "Uganda",
             "regionType": "COUNTRY",
             "regionId": "UG"
+          },
+          {
+            "regionName": "Luxembourg",
+            "regionType": "COUNTRY",
+            "regionId": "LU"
           },
           {
             "regionName": "Brazil",
@@ -1631,7 +1631,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036532483?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde97m3Uu34dwj8%2FYoHOAsBFYabsEMd%2Bw8n7%2BEQLaIDV%2B5dnJg24QEjmTlZlzor7drdMhtmHMdcAxCceXwiKyiKaznRc7hHCZ6ZcSPXUZcaFt5SkU2dylrIRcid2KgzWlP72NQ2A%2B1HJEKXFjJJiLfJq6YE2LkKX%2Bj9W0hViklzKicjqC4txgDNbXbgkAGY2xxQg%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036532483?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde97m3Uu34dwj8%2FYoHOAsBFYabsEMd%2Bw8n7%2BEQLaIDV%2B5TDTY99%2B289lRMYR%2Ffwruho%2F7ChMCSgirAFIZhacedM1yhu5lLk3t6tTYrl%2BmC%2BjBPez%2BTGVDnstAcIprnqevJQIOYf2fgnZ7yCzQ8UbXTN%2FzwUxySrMAZuATKMeY8Y4ofIvfgMUnuzpjJbWQZxRD%2BA%3D",
       "description": "<p>Bon Jovi – “You Give Love a Bad Name” / “Raise Your Hands”</p><br /><p>Original 1986 Mercury Records U.S. 7-inch 45 RPM single, catalog number 884 953-7, complete with the original picture sleeve.</p><br /><p>Features Bon Jovi’s classic #1 rock anthem “You Give Love a Bad Name” from the massively successful Slippery When Wet album, backed with “Raise Your Hands.”</p><br /><p>Track Listing:</p><br /><p>Side A – You Give Love a Bad Name – 3:53</p><p>Side B – Raise Your Hands – 4:17</p><br /><p>Condition:</p><br /><p>Vinyl retains good overall gloss with visible light surface marks and hairlines consistent with normal age and use.</p><br /><p>Original picture sleeve is included and shows edge wear, corner wear, light creasing, surface rubbing, and some waviness along the top opening. Artwork remains bold and attractive.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great original 1980s Bon Jovi collectible and an excellent addition for fans of classic rock, hard rock, glam metal, Slippery When Wet, and vintage picture-sleeve 45 RPM singles.</p><br /><p>Record will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1688,5 +1688,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:47Z"
 }

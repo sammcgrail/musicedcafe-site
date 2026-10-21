@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "ST11517",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1617,7 +1617,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128066348307?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BVKzVfjTJJeJ6VICr33jYX97Tr006566dsX5IFlZwJHa8kTnTv8XFQikuXzC%2F63i41CL4TTWX5yRBZBxBIYFWFhBBg19PJirlH2AVtzEA%2FKTkaDK58wB7e67fQsgpDFzFgVqSZR2duGBcO4DlT7%2BtKig4n8Buayu%2FvqWJaz%2FchFeHqpNUNpCzBHCd8nNs0RQ0%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128066348307?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BVKzVfjTJJeJ6VICr33jYX97Tr006566dsX5IFlZwJHRrvCdcv%2BeQrFuCerE6gzVJKb28S%2B1Fp4EzNUaCvpattoGlEWFdNiUi5%2BxE5HF1n41QPkVnJ0liUN%2FhkZWC%2BQ%2FJNQUIy69UeYTK%2Bzh5ggxJOxN%2Fr1SXL8bO%2Bwgmb2jYGOyfA1%2FKzhtcQtS5Qq%2Fdfm4E%3D",
       "description": "<p data-start=\"2297\" data-end=\"2372\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2297\" data-end=\"2323\">Natalie Cole – Natalie</strong><br data-start=\"2323\" data-end=\"2326\">\nCapitol Records ST-11517<br data-start=\"2350\" data-end=\"2353\">\n1976 U.S. Stereo LP<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2374\" data-end=\"2472\">Classic mid-1970s Natalie Cole album featuring a mix of soul, R&amp;B, funk and smooth pop production.</p>\n<p data-start=\"2474\" data-end=\"2486\"><strong data-start=\"2474\" data-end=\"2486\">Side One</strong></p>\n<ul data-start=\"2487\" data-end=\"2620\">\n<li data-section-id=\"1e2nsa7\" data-start=\"2487\" data-end=\"2499\">\nMr. Melody\n</li>\n<li data-section-id=\"fyuqyq\" data-start=\"2500\" data-end=\"2520\">\nHeaven Is With You\n</li>\n<li data-section-id=\"1hbsc31\" data-start=\"2521\" data-end=\"2566\">\nSophisticated Lady (She’s a Different Lady)\n</li>\n<li data-section-id=\"q2hisu\" data-start=\"2567\" data-end=\"2592\">\nNo Plans for the Future\n</li>\n<li data-section-id=\"re6k5u\" data-start=\"2593\" data-end=\"2620\">\nCan We Get Together Again\n</li>\n</ul>\n<p data-start=\"2622\" data-end=\"2634\"><strong data-start=\"2622\" data-end=\"2634\">Side Two</strong></p>\n<ul data-start=\"2635\" data-end=\"2721\">\n<li data-section-id=\"1ev8420\" data-start=\"2635\" data-end=\"2649\">\nKeep Smiling\n</li>\n<li data-section-id=\"1br61io\" data-start=\"2650\" data-end=\"2674\">\nGood Morning Heartache\n</li>\n<li data-section-id=\"1ndxxx5\" data-start=\"2675\" data-end=\"2690\">\nNot Like Mine\n</li>\n<li data-section-id=\"iev15x\" data-start=\"2691\" data-end=\"2701\">\nTouch Me\n</li>\n<li data-section-id=\"1jbsfg1\" data-start=\"2702\" data-end=\"2721\">\nHard to Get Along\n</li>\n</ul>\n<p data-start=\"2723\" data-end=\"2770\">Produced by <strong data-start=\"2735\" data-end=\"2769\">Chuck Jackson and Marvin Yancy</strong>.</p>\n<p data-start=\"2772\" data-end=\"3006\"><strong data-start=\"2772\" data-end=\"2786\">Condition:</strong> Vinyl visually graded VG with light surface marks/hairlines from normal use. Jacket graded VG with age-related edge/corner wear, light surface wear and a visible crease on the front cover. Labels are clean and readable.</p>",
       "paymentMethods": [
         {
@@ -1674,5 +1674,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:37Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1606,7 +1606,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036507668?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BNTyufhXwG2s%2F7mQwfA5nfh9ZZJT0rDDEC6U%2Bd6fD2MRyhL6DuBrP1iFbQQ6hGbLoB8FbSmp7CJhJTSXZCO6%2FC9y4UsnhyXZvTJoZucLcp1tGiw%2BskhahZUUhc182QjPYmWpL7lVT%2B2LvlMCeNf7Bax2rP7x1l2bUxQOKKuQCWPk08E2n6%2B%2FGtXpysd%2F%2B7uHo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036507668?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BNTyufhXwG2s%2F7mQwfA5nfh9ZZJT0rDDEC6U%2Bd6fD2MSwcj6idjbmTgu9V9bnwrmZcuGmy6nCPB7Ktp7BJUr0AUjnYp1VSoJnxr79TI4Z9FgB7D1Pg1j2agXY6eXIGLKaAWN69ZM7tqpMQSy%2BaVx86KjGPuCqjsiw%2BOgsfFH8OQneyJp00VlVQqjzC%2Fci7H1g%3D",
       "description": "Philip Bailey -Easy Lover w Phil Collins Woman 45 RPM 7” Vinyl Columbia 38-04679. Condition is Used. Shipped with USPS Media Mail. ",
       "paymentMethods": [
         {
@@ -1663,5 +1663,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:51Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "KL1318",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1602,7 +1602,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128069602857?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8%2FiK8kyC8O%2FzYy46YEDhv2E3BTMRtSZY6HIwZJVQZtZp8suHqzMH6yhRANXJS5yjDb2Vm7EtbbQ1lnuNoDOoD%2BVhRhN06VdDbrbMDA4jzBN3OedUNnvsTzKtATl1llwyPdO9tCS1fBjKbOfDTzLl62g2NxnwloKzZgmsjpNOLaFOmpVsPsDCO9Qo24i7RoWno%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128069602857?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8%2FiK8kyC8O%2FzYy46YEDhv2E3BTMRtSZY6HIwZJVQZtZpI4W6AKWN2WIBEDjJkeF3QFdCpkazWBKB0UT8j%2B5cAHfAwq%2BZbQB1VPbnGFA3iade2HuqpwZi04olUglWLVyuZVnFN4O%2BUILw1x5xxUol8myVUAqK3ab4VsD%2BaYKJmSRoTbEDsgvVPWWFI53cjyN7w%3D",
       "description": "<p data-start=\"1903\" data-end=\"1963\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"1903\" data-end=\"1963\">Joe Harnell – Fly Me to the Moon and the Bossa Nova Pops</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1965\" data-end=\"2038\">Vintage original U.S. mono pressing on Kapp Records, catalog <strong data-start=\"2026\" data-end=\"2037\">KL-1318</strong>.</p>\n<p data-start=\"2040\" data-end=\"2198\">A classic early-1960s instrumental bossa nova album featuring pianist and arranger Joe Harnell, highlighted by his interpretation of <strong data-start=\"2173\" data-end=\"2198\">“Fly Me to the Moon.”</strong></p>\n<p data-start=\"2200\" data-end=\"2440\"><strong data-start=\"2200\" data-end=\"2223\">Vinyl Condition: VG</strong> — retains good overall gloss with visible light scratches, hairlines and handling marks consistent with age. No major deep gouges apparent in photos. Playback has not been independently graded unless otherwise noted.</p>\n<p data-start=\"2442\" data-end=\"2560\"><strong data-start=\"2442\" data-end=\"2452\">Label:</strong> Kapp Records<br data-start=\"2465\" data-end=\"2468\">\n<strong data-start=\"2468\" data-end=\"2482\">Catalog #:</strong> KL-1318<br data-start=\"2490\" data-end=\"2493\">\n<strong data-start=\"2493\" data-end=\"2502\">Year:</strong> 1963<br data-start=\"2507\" data-end=\"2510\">\n<strong data-start=\"2510\" data-end=\"2521\">Format:</strong> 12\" LP<br data-start=\"2528\" data-end=\"2531\">\n<strong data-start=\"2531\" data-end=\"2541\">Speed:</strong> 33⅓ RPM<br data-start=\"2549\" data-end=\"2552\">\n<strong data-start=\"2552\" data-end=\"2560\">Mono</strong></p>",
       "paymentMethods": [
         {
@@ -1659,5 +1659,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:20Z"
 }

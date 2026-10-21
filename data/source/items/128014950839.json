@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -105,8 +105,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -337,24 +337,24 @@
             "regionId": "CO"
           },
           {
-            "regionName": "Spain",
-            "regionType": "COUNTRY",
-            "regionId": "ES"
-          },
-          {
             "regionName": "Iceland",
             "regionType": "COUNTRY",
             "regionId": "IS"
           },
           {
-            "regionName": "Estonia",
+            "regionName": "Spain",
             "regionType": "COUNTRY",
-            "regionId": "EE"
+            "regionId": "ES"
           },
           {
             "regionName": "Macedonia",
             "regionType": "COUNTRY",
             "regionId": "MK"
+          },
+          {
+            "regionName": "Estonia",
+            "regionType": "COUNTRY",
+            "regionId": "EE"
           },
           {
             "regionName": "Belgium",
@@ -412,11 +412,6 @@
             "regionId": "EC"
           },
           {
-            "regionName": "Italy",
-            "regionType": "COUNTRY",
-            "regionId": "IT"
-          },
-          {
             "regionName": "Albania",
             "regionType": "COUNTRY",
             "regionId": "AL"
@@ -425,6 +420,11 @@
             "regionName": "Swaziland",
             "regionType": "COUNTRY",
             "regionId": "SZ"
+          },
+          {
+            "regionName": "Italy",
+            "regionType": "COUNTRY",
+            "regionId": "IT"
           },
           {
             "regionName": "Ethiopia",
@@ -502,14 +502,14 @@
             "regionId": "ML"
           },
           {
-            "regionName": "Republic of Croatia",
-            "regionType": "COUNTRY",
-            "regionId": "HR"
-          },
-          {
             "regionName": "Botswana",
             "regionType": "COUNTRY",
             "regionId": "BW"
+          },
+          {
+            "regionName": "Republic of Croatia",
+            "regionType": "COUNTRY",
+            "regionId": "HR"
           },
           {
             "regionName": "Madagascar",
@@ -672,14 +672,14 @@
             "regionId": "GD"
           },
           {
-            "regionName": "Romania",
-            "regionType": "COUNTRY",
-            "regionId": "RO"
-          },
-          {
             "regionName": "Greece",
             "regionType": "COUNTRY",
             "regionId": "GR"
+          },
+          {
+            "regionName": "Romania",
+            "regionType": "COUNTRY",
+            "regionId": "RO"
           },
           {
             "regionName": "Costa Rica",
@@ -722,14 +722,14 @@
             "regionId": "NP"
           },
           {
-            "regionName": "Lithuania",
-            "regionType": "COUNTRY",
-            "regionId": "LT"
-          },
-          {
             "regionName": "Bahamas",
             "regionType": "COUNTRY",
             "regionId": "BS"
+          },
+          {
+            "regionName": "Lithuania",
+            "regionType": "COUNTRY",
+            "regionId": "LT"
           },
           {
             "regionName": "Trinidad and Tobago",
@@ -747,14 +747,14 @@
             "regionId": "MW"
           },
           {
-            "regionName": "Hungary",
-            "regionType": "COUNTRY",
-            "regionId": "HU"
-          },
-          {
             "regionName": "Bosnia and Herzegovina",
             "regionType": "COUNTRY",
             "regionId": "BA"
+          },
+          {
+            "regionName": "Hungary",
+            "regionType": "COUNTRY",
+            "regionId": "HU"
           },
           {
             "regionName": "Angola",
@@ -772,14 +772,14 @@
             "regionId": "TN"
           },
           {
-            "regionName": "Luxembourg",
-            "regionType": "COUNTRY",
-            "regionId": "LU"
-          },
-          {
             "regionName": "Uganda",
             "regionType": "COUNTRY",
             "regionId": "UG"
+          },
+          {
+            "regionName": "Luxembourg",
+            "regionType": "COUNTRY",
+            "regionId": "LU"
           },
           {
             "regionName": "Brazil",
@@ -1618,7 +1618,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014950839?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde915zEnf0j%2FNRxeWiKeM8D%2FaYsfbIW1I3vtPtgE0dliHdrgYh5LFEg9K0u62XGgzuPuaARheMVEbxj3f%2FM4PeS7IxnDmS2ymAV8XY2rS3fg6hJl%2F70o0hrnVGX5Xu77Wn0h3mm6Wo%2Fu2XXeqR5XbAar4B5t%2FHxoOInUEVVpNnPfgKYJjbMO9E1G8KImN61Z9y4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014950839?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde915zEnf0j%2FNRxeWiKeM8D%2FaYsfbIW1I3vtPtgE0dliHbOcG5YuYcdr7i%2FbCKYGJ1V4MA22m6IFA37EkGucIOmULIp8jcqJGohDZTfKDq%2FG3Qjzofva9kX0222cuk%2FQSPtPv7YouldT8EXoI1aktJavIHjIpniEz8Fwx38mKdNrAj5bIgOP%2Fv2IqsbmpjPD8AQ%3D",
       "description": "<p>Original 1982 Italian Harvest Records 7” single from Pink Floyd featuring “When the Tigers Broke Free” backed with “Bring the Boys Back Home.”</p><br><p>Includes the original Pink Floyd – The Wall: Music From The Film picture sleeve.</p><br><p>Catalog: 3C 006-61875</p><p>Label: Harvest</p><p>Country: Italy</p><p>Year: 1982</p><p>Format: 7” / 45 RPM / Stereo</p><br><p>Side A – When the Tigers Broke Free</p><p>Side B – Bring the Boys Back Home</p>Condition:&nbsp;<div>Vinyl: VG+<div>Paper Sleeve: Original VG+</div><p>Original vintage copy, not a modern reproduction. Vinyl shows surface marks/light scratches from previous play and handling. Original picture sleeve shows edge and corner wear, creasing and other signs of age. Please examine the photographs carefully, as they are part of the condition description.</p></div>",
       "paymentMethods": [
         {
@@ -1675,5 +1675,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:35Z"
 }

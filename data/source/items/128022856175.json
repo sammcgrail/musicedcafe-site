@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "RS1059",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128022856175?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9bZXGxGQ6d1Ob41h4P5XP6tRfrKLEQq6W7gWDTDlHHPPeiIz3OlRtDTr1ty3l8uoDJlSYPAszEpgfd--d800tZqmSLSx0nbk76rgPoRGcg2RRCyxUWBiSZXrrO0fBmi5Juwc1utWOUj%2BCnt6i2RuK6rU8A3AZhAtl2oab0Tni%2Fozz6vDnA618BSRK3K5so%2FJk%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128022856175?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9bZXGxGQ6d1Ob41h4P5XP6tRfrKLEQq6W7gWDTDlHHPEijz28hF8dguaMR9BMM%2FLfYHQl8T%2FRKE49AizIo%2BjNSB1G52%2FseKq1jOnlFTq0dk%2FwGAqHXqXN0zJdxGB%2B4nvVHDvpwJC2Ej%2Fi7AWcu1MTVLe6fyueF9pKq1nAYZmwamHpwQ6aCvC6bzG8l771uKIs%3D",
       "description": "<p>Vintage 1980 Andy Gibb 7-inch 45 RPM single featuring “Time Is Time” backed with “I Go For You.”</p><br /><p>Artist: Andy Gibb</p><p>Label: RSO Records</p><p>Catalog Number: RS 1059</p><p>Format: 7” Vinyl, 45 RPM, Stereo</p><p>Year: 1980</p><p>Country: USA</p><br /><p>Tracks:</p><p>A – Time Is Time</p><p>B – I Go For You</p><br /><p>Record shows normal surface wear consistent with age and use. Small vintage price/inventory sticker is present on one label. Includes the plain paper sleeve shown in the photos, which has handwritten markings.</p><br /><p>Please review all photos carefully for exact cosmetic condition. Sold as pictured.</p>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:25Z"
 }

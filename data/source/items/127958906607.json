@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PAS71012",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127958906607?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2ByEvxEdQP0BJaS2aVFwGWRRougK2WbdyPyw4RzYmwd7ePZ1IO3vtQq%2BMIEV92IKPl2ZMLvnduoISZbBxmFDCEPt3CkCluh6i2bbOJrCbp%2Bfr5wRL983mOLt7NElndk7zcTSAYerdIWlcSjS%2Fc3LainQxXkUpIOHATm%2BN0XdPEUXypX2MkHxPGPBM%2Bzjk9BpZE%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127958906607?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2ByEvxEdQP0BJaS2aVFwGWRRougK2WbdyPyw4RzYmwd7Ye6xqz886pLyQ%2Bxdcrh49kjJkCHll7DznSZDBulZFocsP5%2Fmim5SBhbZdC%2FlUZi7AX6MLD9LmMNrOaNZwQpdUC7eSmX7%2BLCGq9XTT%2FUk9msvBSHnuAoPTk%2B1xqYo6kefCSmj9vdUlVy1%2Byo3xfA0gU%3D",
       "description": "<h2 data-section-id=\"15cf30v\" data-start=\"1099\" data-end=\"1136\" class=\"PDq2pG_selectionAnchorContainer\">Engelbert Humperdinck – Release Me<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></h2>\n<p data-start=\"1138\" data-end=\"1190\">Original Parrot Records stereo pressing (PAS 71012).</p>\n<p data-start=\"1192\" data-end=\"1318\">Classic late-1960s vocal pop album featuring Engelbert's breakthrough hit <strong data-start=\"1266\" data-end=\"1306\">\"Release Me (And Let Me Love Again)\"</strong> along with:</p>\n<ul data-start=\"1320\" data-end=\"1549\">\n<li data-section-id=\"w7q2fd\" data-start=\"1320\" data-end=\"1332\">\nRelease Me\n</li>\n<li data-section-id=\"17b2e6z\" data-start=\"1333\" data-end=\"1347\">\nQuiet Nights\n</li>\n<li data-section-id=\"1l7pz0h\" data-start=\"1348\" data-end=\"1370\">\nYours Until Tomorrow\n</li>\n<li data-section-id=\"1b0bfis\" data-start=\"1371\" data-end=\"1395\">\nThere's A Kind Of Hush\n</li>\n<li data-section-id=\"ir3nth\" data-start=\"1396\" data-end=\"1413\">\nThis Is My Song\n</li>\n<li data-section-id=\"1csfot4\" data-start=\"1414\" data-end=\"1427\">\nTen Guitars\n</li>\n<li data-section-id=\"1kbvckt\" data-start=\"1428\" data-end=\"1454\">\nThere Goes My Everything\n</li>\n<li data-section-id=\"lb88j1\" data-start=\"1455\" data-end=\"1470\">\nTake My Heart\n</li>\n<li data-section-id=\"1b33cq2\" data-start=\"1471\" data-end=\"1481\">\nIl Mondo\n</li>\n<li data-section-id=\"jq73oq\" data-start=\"1482\" data-end=\"1496\">\nTalking Love\n</li>\n<li data-section-id=\"bczai4\" data-start=\"1497\" data-end=\"1530\">\nWalk Through This World With Me\n</li>\n<li data-section-id=\"1qan03u\" data-start=\"1531\" data-end=\"1549\">\nHow Near Is Love\n</li>\n</ul>\n<hr data-start=\"1551\" data-end=\"1554\">\n<h3 data-section-id=\"1uef3h1\" data-start=\"1556\" data-end=\"1569\">Condition</h3>\n<p data-start=\"1571\" data-end=\"1584\"><strong data-start=\"1571\" data-end=\"1584\">Vinyl: VG</strong></p>\n<p data-start=\"1586\" data-end=\"1763\">Record retains good shine with light scratches, sleeve scuffs, and hairlines consistent with normal use. No deep gouges observed. Expected to play with some light surface noise.</p>\n<p data-start=\"1765\" data-end=\"1778\"><strong data-start=\"1765\" data-end=\"1778\">Cover: G+</strong></p>\n<p data-start=\"1780\" data-end=\"1952\">Original jacket shows heavy shelf wear, staining, ring wear, writing on the front cover, edge wear, and age discoloration. Please review all photos carefully for condition.</p>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:53Z"
 }

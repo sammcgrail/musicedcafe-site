@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1586,7 +1586,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127968525351?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8sF%2Fu12ySIIYY7icRK4KxaHiF2hjoT%2BNaTianM0fjoB86vm6rNwdy75oC2rwvFy24W2bE%2B70WnRMbNlfnO8NRdl%2BWGHraLbyux2Ze%2Fxd0x%2Blped%2FSp%2B5YN3cwtfDnB%2BxdDPerekesfLyTg3Vq4%2B7TIZBvNer%2Bajuc4vtXnUpSEKzzOppEVkjunRgacYZ8VL7c%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127968525351?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8sF%2Fu12ySIIYY7icRK4KxaHiF2hjoT%2BNaTianM0fjoB1pz4kgGcnZ%2BuUKxKf249hJuW0Hn6--HiIjeDWVRHZWVKZE4yiUHrobwnp1uKGs2UDwAOLUn%2FhdngvLWt3dMd2RbTGbJrbBDvlxpPdn2%2BicZtWA6dmippvSyTiFKD068nlirljsWs9JjPSVZ4JWCpZ4%3D",
       "description": "<p data-start=\"410\" data-end=\"512\" class=\"PDq2pG_selectionAnchorContainer\">Up for sale is a <strong data-start=\"427\" data-end=\"453\">7\" 45 RPM vinyl single</strong> by <strong data-start=\"457\" data-end=\"488\">Glen Campbell &amp; Anne Murray</strong> on <strong data-start=\"492\" data-end=\"511\">Capitol Records</strong>.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"514\" data-end=\"533\"><strong data-start=\"514\" data-end=\"533\">Record Details:</strong></p>\n<ul data-start=\"534\" data-end=\"670\">\n<li data-section-id=\"12jpjoh\" data-start=\"534\" data-end=\"575\">\n<strong data-start=\"536\" data-end=\"547\">Artist:</strong> Glen Campbell &amp; Anne Murray\n</li>\n<li data-section-id=\"g7ypeu\" data-start=\"576\" data-end=\"604\">\n<strong data-start=\"578\" data-end=\"588\">Label:</strong> Capitol Records\n</li>\n<li data-section-id=\"hq4hvn\" data-start=\"605\" data-end=\"631\">\n<strong data-start=\"607\" data-end=\"626\">Catalog Number:</strong> 3200\n</li>\n<li data-section-id=\"1g17gd0\" data-start=\"632\" data-end=\"670\">\n<strong data-start=\"634\" data-end=\"645\">Format:</strong> 7\" Vinyl, 45 RPM, Stereo\n</li>\n</ul>\n<p data-start=\"672\" data-end=\"683\"><strong data-start=\"672\" data-end=\"683\">Side A:</strong></p>\n<ul data-start=\"684\" data-end=\"720\">\n<li data-section-id=\"8yunfb\" data-start=\"684\" data-end=\"707\">\nAll Through the Night\n</li>\n<li data-section-id=\"f2wj4e\" data-start=\"708\" data-end=\"720\">\nTime: 2:10\n</li>\n</ul>\n<p data-start=\"722\" data-end=\"733\"><strong data-start=\"722\" data-end=\"733\">Side B:</strong></p>\n<ul data-start=\"734\" data-end=\"815\">\n<li data-section-id=\"2vg2fm\" data-start=\"734\" data-end=\"802\">\nMedley:\n<ul data-start=\"746\" data-end=\"802\">\n<li data-section-id=\"6ud4tm\" data-start=\"746\" data-end=\"769\">\nI Say a Little Prayer\n</li>\n<li data-section-id=\"up768m\" data-start=\"772\" data-end=\"802\">\nBy the Time I Get to Phoenix\n</li>\n</ul>\n</li>\n<li data-section-id=\"f2u9pm\" data-start=\"803\" data-end=\"815\">\nTime: 3:15\n</li>\n</ul>\n<h3 data-section-id=\"1uef3h1\" data-start=\"817\" data-end=\"830\">Condition</h3>\n<ul data-start=\"831\" data-end=\"1066\">\n<li data-section-id=\"1gqdzvp\" data-start=\"831\" data-end=\"872\">\nVisually graded only (not play tested).\n</li>\n<li data-section-id=\"18torwd\" data-start=\"873\" data-end=\"941\">\nVinyl shows light to moderate surface wear/scuffs from normal use.\n</li>\n<li data-section-id=\"4ykuk1\" data-start=\"942\" data-end=\"1021\">\nLabels remain bright and legible with no major writing or significant damage.\n</li>\n<li data-section-id=\"1i37klw\" data-start=\"1022\" data-end=\"1066\">\nNo sleeve included unless shown in photos.\n</li>\n</ul>\n<p data-start=\"1068\" data-end=\"1144\">Please review all photos carefully as they are part of the item description.</p>\n<p data-start=\"1146\" data-end=\"1208\">Record will be securely packaged to help ensure safe delivery.</p>",
       "paymentMethods": [
         {
@@ -1643,5 +1643,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:20Z"
 }

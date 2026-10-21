@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "5E513",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1637,7 +1637,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127877777505?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9uUpMmGtI94ppT0RF41Qr%2FKRKVrxDgBanqdAlS5oj4y5x931B3wbHu5mT19C39EtJPKCh19cjcCuR1xmPcKYvK5TQqkaJinGOSYa7Lwm7sgG3MYWuGla322k3SdxswLbOFn8xJnwNCHAclhzgpw0043USsyVuEbs%2FhJ1HzKgQAlrs9Y1CSqwjqw3hLHUaQqoA%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127877777505?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9uUpMmGtI94ppT0RF41Qr%2FKRKVrxDgBanqdAlS5oj4yzg2wmlLJET19txSwEokuAyI%2BIcHFP3d5BGiZcTTeBZs%2BCG7iDW4hUbsbysT%2FQi7zi0j%2B1dVGAgcUPakkl7KtAiM7lTHW473AhSpqvdlygP9kP4C4f2ROOAhAP7V0i84XOFzx5QR1fJZXOxUKjO0U3A%3D",
       "description": "<h2 data-section-id=\"bap78r\" data-start=\"387\" data-end=\"406\">Queen – The Game</h2>\n<p data-start=\"407\" data-end=\"456\">Elektra Records – 5E-513<br data-start=\"431\" data-end=\"434\">\nOriginal 1980 pressing</p>\n<p data-start=\"458\" data-end=\"571\">Classic Queen album featuring some of the band’s biggest hits and a strong mix of rock, pop, and funk influences.</p>\n<h3 data-section-id=\"u9g00a\" data-start=\"573\" data-end=\"593\">Track Highlights</h3>\n<ul data-start=\"594\" data-end=\"697\">\n<li data-section-id=\"1ovendt\" data-start=\"594\" data-end=\"622\">\nAnother One Bites The Dust\n</li>\n<li data-section-id=\"3okp3s\" data-start=\"623\" data-end=\"655\">\nCrazy Little Thing Called Love\n</li>\n<li data-section-id=\"bys6m3\" data-start=\"656\" data-end=\"671\">\nPlay The Game\n</li>\n<li data-section-id=\"1sllvc1\" data-start=\"672\" data-end=\"681\">\nSave Me\n</li>\n<li data-section-id=\"1wovskx\" data-start=\"682\" data-end=\"697\">\nDragon Attack</li></ul>",
       "paymentMethods": [
         {
@@ -1694,5 +1694,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:35Z"
 }

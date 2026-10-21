@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1621,7 +1621,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128066318307?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8ararLj0Ud3r%2FzmxtKkXtGMSp4I0nfLNCtWcnnHaGSUHHlbRskg4Bj5BGK6wEL431eQD0X7CGfuZji%2F40W96am73P0hjFx5yg8KDppAQ5uUUSD9A4tG5wpaRZf3Wei%2FGlYT9oZy%2FfdSDIcgE3SbttWlpVL29KHjgUELn%2FElNKdtr8p%2Fjzsug3iasZIMwJVpFw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128066318307?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8ararLj0Ud3r%2FzmxtKkXtGMSp4I0nfLNCtWcnnHaGSUNanZbuCwVGeX2nTv%2Fqmws%2FKiXFL6%2FJJLdilP%2Bb%2Bo4hfwu%2BSsbmmBs9mNOVtXQ6AjUAWungRQRJlFEx9%2BpglVOhXV%2FGaBaMuDf8pHqyfwoYYyVuGdv7L85ZLD7IPtkuM5GXtGtZA2oP4%2FoIrGvO5zxw%3D",
       "description": "<p data-start=\"2806\" data-end=\"2908\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2806\" data-end=\"2859\">Herb Alpert’s Tijuana Brass – South of the Border</strong><br data-start=\"2859\" data-end=\"2862\">\nA&amp;M Records – LP 108<br data-start=\"2882\" data-end=\"2885\">\n1964 U.S. Mono Vinyl LP<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2910\" data-end=\"3056\">Classic early Herb Alpert &amp; the Tijuana Brass album featuring the group’s signature blend of Latin-influenced brass, jazz, pop and easy listening.</p>\n<p data-start=\"3058\" data-end=\"3313\"><strong data-start=\"3058\" data-end=\"3077\">Tracks include:</strong><br data-start=\"3077\" data-end=\"3080\">\nSouth of the Border<br data-start=\"3099\" data-end=\"3102\">\nThe Girl from Ipanema<br data-start=\"3123\" data-end=\"3126\">\nHello, Dolly!<br data-start=\"3139\" data-end=\"3142\">\nI’ve Grown Accustomed to Her Face<br data-start=\"3175\" data-end=\"3178\">\nUp Cherry Street<br data-start=\"3194\" data-end=\"3197\">\nMexican Shuffle<br data-start=\"3212\" data-end=\"3215\">\nEl Presidente<br data-start=\"3228\" data-end=\"3231\">\nAll My Loving<br data-start=\"3244\" data-end=\"3247\">\nAngelito<br data-start=\"3255\" data-end=\"3258\">\nSalud, Amor Y Dinero<br data-start=\"3278\" data-end=\"3281\">\nNumero Cinco<br data-start=\"3293\" data-end=\"3296\">\nAdios, Mi Corazon</p>\n<p data-start=\"3315\" data-end=\"3560\"><strong data-start=\"3315\" data-end=\"3329\">Condition:</strong><br data-start=\"3329\" data-end=\"3332\">\nVinyl visually graded VG with light surface marks and hairlines consistent with age and normal use. Record retains good gloss. Jacket is VG with moderate shelf wear, rubbing, edge/corner wear and light age-related discoloration.</p>\n<p data-start=\"3562\" data-end=\"3638\">Please examine all photos closely. Photos show the exact copy being offered.</p>",
       "paymentMethods": [
         {
@@ -1678,5 +1678,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:40Z"
 }

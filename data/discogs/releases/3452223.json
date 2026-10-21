@@ -1,0 +1,63 @@
+{
+  "id": 3452223,
+  "title": "For The Birds",
+  "artists": [
+    "The Frames"
+  ],
+  "year": 2011,
+  "released": "2011-01-19",
+  "country": "US",
+  "labels": [
+    {
+      "name": "Overcoat Recordings",
+      "catno": "OC11"
+    }
+  ],
+  "formats": [
+    {
+      "name": "Vinyl",
+      "qty": "2",
+      "descriptions": [
+        "LP",
+        "Album",
+        "Reissue"
+      ],
+      "text": "Gatefold"
+    }
+  ],
+  "identifiers": [
+    {
+      "type": "Barcode",
+      "description": "",
+      "value": "036172611119"
+    },
+    {
+      "type": "Matrix / Runout",
+      "description": "",
+      "value": "Side A: OC11-A JW101013 19526.1(3)"
+    },
+    {
+      "type": "Matrix / Runout",
+      "description": "",
+      "value": "Side B: OC11-B JW101013 19526.2(3)"
+    },
+    {
+      "type": "Matrix / Runout",
+      "description": "",
+      "value": "Side C: OC11-C JW101013 19526.3(3)"
+    },
+    {
+      "type": "Matrix / Runout",
+      "description": "",
+      "value": "Side D: OC11-D JW101013 19526.4(3)"
+    }
+  ],
+  "notes": "",
+  "community": {
+    "have": 253,
+    "want": 220
+  },
+  "thumb": "https://i.discogs.com/BtpLNIQ3JPRfFClxEiecFAv64Z28A3UDmN7MhNnaOKM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NTIy/MjMtMTMzMDkwOTk5/Ny5qcGVn.jpeg",
+  "uri": "https://www.discogs.com/release/3452223-The-Frames-For-The-Birds",
+  "fetched_at": "2026-10-20T14:46:57Z"
+}

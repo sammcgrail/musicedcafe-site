@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "AS19598",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -336,24 +336,24 @@
             "regionId": "CO"
           },
           {
-            "regionName": "Spain",
-            "regionType": "COUNTRY",
-            "regionId": "ES"
-          },
-          {
             "regionName": "Iceland",
             "regionType": "COUNTRY",
             "regionId": "IS"
           },
           {
-            "regionName": "Estonia",
+            "regionName": "Spain",
             "regionType": "COUNTRY",
-            "regionId": "EE"
+            "regionId": "ES"
           },
           {
             "regionName": "Macedonia",
             "regionType": "COUNTRY",
             "regionId": "MK"
+          },
+          {
+            "regionName": "Estonia",
+            "regionType": "COUNTRY",
+            "regionId": "EE"
           },
           {
             "regionName": "Belgium",
@@ -411,11 +411,6 @@
             "regionId": "EC"
           },
           {
-            "regionName": "Italy",
-            "regionType": "COUNTRY",
-            "regionId": "IT"
-          },
-          {
             "regionName": "Albania",
             "regionType": "COUNTRY",
             "regionId": "AL"
@@ -424,6 +419,11 @@
             "regionName": "Swaziland",
             "regionType": "COUNTRY",
             "regionId": "SZ"
+          },
+          {
+            "regionName": "Italy",
+            "regionType": "COUNTRY",
+            "regionId": "IT"
           },
           {
             "regionName": "Ethiopia",
@@ -501,14 +501,14 @@
             "regionId": "ML"
           },
           {
-            "regionName": "Republic of Croatia",
-            "regionType": "COUNTRY",
-            "regionId": "HR"
-          },
-          {
             "regionName": "Botswana",
             "regionType": "COUNTRY",
             "regionId": "BW"
+          },
+          {
+            "regionName": "Republic of Croatia",
+            "regionType": "COUNTRY",
+            "regionId": "HR"
           },
           {
             "regionName": "Madagascar",
@@ -671,14 +671,14 @@
             "regionId": "GD"
           },
           {
-            "regionName": "Romania",
-            "regionType": "COUNTRY",
-            "regionId": "RO"
-          },
-          {
             "regionName": "Greece",
             "regionType": "COUNTRY",
             "regionId": "GR"
+          },
+          {
+            "regionName": "Romania",
+            "regionType": "COUNTRY",
+            "regionId": "RO"
           },
           {
             "regionName": "Costa Rica",
@@ -721,14 +721,14 @@
             "regionId": "NP"
           },
           {
-            "regionName": "Lithuania",
-            "regionType": "COUNTRY",
-            "regionId": "LT"
-          },
-          {
             "regionName": "Bahamas",
             "regionType": "COUNTRY",
             "regionId": "BS"
+          },
+          {
+            "regionName": "Lithuania",
+            "regionType": "COUNTRY",
+            "regionId": "LT"
           },
           {
             "regionName": "Trinidad and Tobago",
@@ -746,14 +746,14 @@
             "regionId": "MW"
           },
           {
-            "regionName": "Hungary",
-            "regionType": "COUNTRY",
-            "regionId": "HU"
-          },
-          {
             "regionName": "Bosnia and Herzegovina",
             "regionType": "COUNTRY",
             "regionId": "BA"
+          },
+          {
+            "regionName": "Hungary",
+            "regionType": "COUNTRY",
+            "regionId": "HU"
           },
           {
             "regionName": "Angola",
@@ -771,14 +771,14 @@
             "regionId": "TN"
           },
           {
-            "regionName": "Luxembourg",
-            "regionType": "COUNTRY",
-            "regionId": "LU"
-          },
-          {
             "regionName": "Uganda",
             "regionType": "COUNTRY",
             "regionId": "UG"
+          },
+          {
+            "regionName": "Luxembourg",
+            "regionType": "COUNTRY",
+            "regionId": "LU"
           },
           {
             "regionName": "Brazil",
@@ -1642,7 +1642,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036529719?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BM%2BmjYi5cjZhIFiOBUiFLfXmwsPqq0KxcBa32ZVZAz7qNhF6P2e8Xvh1UZD%2BFfG6xKq4mEXACfI%2Fu1qtx2uY85FIxyH2x5oP%2BKfbCNHW64PGYsOjqeE9BvJcm2XTgwi0LDc2dV8%2BzMLnwP9JkJDNG4w6deKADFPSvtnkJ0iFCxcehdKgVTPDQpYqH%2FTuMcMNk%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036529719?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BM%2BmjYi5cjZhIFiOBUiFLfXmwsPqq0KxcBa32ZVZAz7lPg%2FzV%2FrWts6CihMFLzf2zG1DdJVCVw5mHI6lKtuQFYsknsAdDeRLrlOeVQARh1roMdUSD2uwj4%2FU4Os7qQNlQw4P220OKih5fhzc8cp5lJdiKW0EJzZEzoa2LCAKsRo3RPshM4VQFnCHiNu8hBMtM%3D",
       "description": "<p>Whitney Houston – “I Wanna Dance With Somebody (Who Loves Me)” / “Moment of Truth”</p><br /><p>Original 1987 Arista Records U.S. 7-inch 45 RPM single, catalog number AS1-9598, complete with the original Whitney Houston picture sleeve.</p><br /><p>Features one of Whitney Houston’s most iconic hits, “I Wanna Dance With Somebody (Who Loves Me),” backed with “Moment of Truth,” which was promoted on the original sleeve as a bonus cut not available on the Whitney album.</p><br /><p>Track Listing:</p><br /><p>Side A – I Wanna Dance With Somebody (Who Loves Me) – 4:36</p><p>Side B – Moment of Truth – 4:38</p><br /><p>Condition:</p><br /><p>Vinyl shows visible light surface marks and scuffing consistent with normal age and use while retaining good overall gloss. Labels remain clean and attractive.</p><br /><p>Original picture sleeve is included and shows light edge, corner, and storage wear with some minor creasing/waviness along the top edge. Colors and artwork remain bright and attractive.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p><br /><p>A highly recognizable Whitney Houston collectible and a great addition for fans of 1980s pop, R&amp;B, dance music, vintage picture sleeves, and classic 45 RPM singles.</p><br /><p>Record will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1699,5 +1699,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:48Z"
 }

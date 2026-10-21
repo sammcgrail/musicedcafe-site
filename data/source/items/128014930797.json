@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "6116",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1582,7 +1582,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014930797?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9Vv1eLc4c%2BWKtgOisYQJhL5TySFVAnAjo%2BdJ4vsau51GLql1i4imxnREoeBUFNvqYoAaTpw%2FWofXza1AkqTRE5T%2Bj8uIEyLkfJYxIvuHAg60Nb%2BNzA81hVYsPJxPF5ZKOnRyWcBLlMbqpUu1%2F683Dh1K90j1tSIwjXcFxf7aa1yGI9OiPDLGp8Siz%2BxbrnjoU%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014930797?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9Vv1eLc4c%2BWKtgOisYQJhL5TySFVAnAjo%2BdJ4vsau51H8llU6KSVYIfvw7xbovDa2fGDSDCOvw%2FcwtXFigVYska3rjClJe8U2A2bzAHJWSoyYA5cm4QhIvrG6fKpeI5oQk%2FYOLAlVIt8tmn7iZtkYYaQGqhs113OqLDPQebCVWd91vqck4skejgVaXPyqtY3w%3D",
       "description": "<p>Vintage 1958 The Coasters 45 RPM single on ATCO Records.</p><br /><p>Side A: “Yakety Yak” – 1:50</p><p>Side B: “Zing! Went the Strings of My Heart” – 2:46</p><br /><p>Catalog # ATCO 45-6116</p><br /><p>Classic early rock &amp; roll/R&amp;B single written by the legendary songwriting team Jerry Leiber and Mike Stoller. “Yakety Yak” became one of The Coasters’ signature recordings and a major hit of the rock &amp; roll era.</p><br /><p>This copy shows considerable signs of age and previous play, including visible surface scratches, scuffs and groove wear. Labels show discoloration, staining and general age-related wear but remain clearly readable.</p><br /><p>Visually graded G+/VG-</p>",
       "paymentMethods": [
         {
@@ -1639,5 +1639,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:40Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "KC31996",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1632,7 +1632,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127889426632?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FRRcfc60tX4N%2FCFCgGIupiy1L%2Fu7VmH1xYpkAB1twaH%2B8qYxjEK%2BeUY24y3XGQYDc%2FPfyXtWtVDVL6%2BXLpuy5FoC%2BwdsRB8OE3dydiwDqmkQNXnrzI3AHA%2Bu3sDuGpLQgtffWjkUJKaVOYC805VWG7ka8GkXtALfaBhw9uJ7xlaqU3LOtJx0ApLYf6DoWB1t4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127889426632?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FRRcfc60tX4N%2FCFCgGIupiy1L%2Fu7VmH1xYpkAB1twaHw3RDoFWWUcsWhCvLr0pQ0BfgJ9QjOgVOVgjeMcpC4RMWtpeO57NZoyGiQFqulD7FjKW5J0hfwBmxV8uXKAgMqOvq99t%2BK8iio8%2FCFcpSlK8gDRq81ZSAR%2BTnrI9QcbdUDeskAP1QJ2%2FVIhEM9ziQE0%3D",
       "description": "<p data-start=\"1185\" data-end=\"1322\"><span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Birds of Fire</span> classic 1973 jazz fusion LP featuring John McLaughlin, Billy Cobham, Jan Hammer, and Jerry Goodman.</p>\n<p data-start=\"1324\" data-end=\"1380\">A landmark fusion record with standout tracks including:</p>\n<ul data-start=\"1381\" data-end=\"1428\">\n<li data-section-id=\"yk2aqe\" data-start=\"1381\" data-end=\"1398\">\n“Birds of Fire”\n</li>\n<li data-section-id=\"1cfncks\" data-start=\"1399\" data-end=\"1415\">\n“Miles Beyond”\n</li>\n<li data-section-id=\"cggb7n\" data-start=\"1416\" data-end=\"1428\">\n“One Word”\n</li>\n</ul>\n<p data-start=\"1430\" data-end=\"1484\"><strong data-start=\"1430\" data-end=\"1440\">Vinyl:</strong> VG<br data-start=\"1444\" data-end=\"1447\">\nGlossy with light wear. Plays strong.</p>\n<p data-start=\"1486\" data-end=\"1576\"><strong data-start=\"1486\" data-end=\"1497\">Jacket:</strong>&nbsp;Worn (W)<br data-start=\"1504\" data-end=\"1507\">\nVisible ring wear, staining, edge wear, and sticker residue as shown.</p>\n<p data-start=\"1578\" data-end=\"1630\">Great player copy of an essential jazz fusion album.</p>",
       "paymentMethods": [
         {
@@ -1689,5 +1689,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:22Z"
 }

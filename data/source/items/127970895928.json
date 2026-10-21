@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "32708",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1582,7 +1582,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970895928?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9WINeBiXZOzj7%2FF%2BzXZomLtbNVlTCkHpgjKXXdJu3Waha1HX9MSqLi5zLG%2BndpO8D6tgOveNuRizhSUVsyUaH%2FiFqsEvBUEPviOrY4Ml0XZIp9AXvNX7htyrGlMTRKjNZBolf4I%2F8%2B4EqM41CKxceE17gaer7yJFW10YTteawgIgCrxZcyyACQfk9pU4tn7sc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970895928?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9WINeBiXZOzj7%2FF%2BzXZomLtbNVlTCkHpgjKXXdJu3WasJDDvrRGQmelQG2xMIUH%2FFEe89wiMS6JSmJbSLYCrAsaqjfm4PObw3buPI41VkHSFmg2JpdqYQ8ZKg%2BQt8p%2FjyOF1uGon0BYbZQ0JCPj3aHYG8giJtn2laLpgjrpBbr5SpyltgZcw7RqRIHSAv5XYE%3D",
       "description": "<p data-start=\"1082\" data-end=\"1315\" class=\"PDq2pG_selectionAnchorContainer\">Original 1970 Decca Records 45 RPM single featuring <strong data-start=\"1134\" data-end=\"1191\">The Who's explosive live favorite \"Summertime Blues,\"</strong> their classic cover of the Eddie Cochran hit. The B-side features <strong data-start=\"1258\" data-end=\"1280\">\"Heaven and Hell,\"</strong> written by bassist John Entwistle.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1317\" data-end=\"1411\">A great addition for collectors of The Who, British rock, classic rock, and vintage Decca 45s.</p>\n<p data-start=\"1413\" data-end=\"1539\">The record will be shipped in a new paper sleeve inside a protective poly sleeve and securely packed in a rigid 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1639,5 +1639,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:38Z"
 }

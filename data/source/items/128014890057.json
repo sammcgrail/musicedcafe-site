@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "P2789",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1576,7 +1576,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014890057?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B4apSmai5vWT%2BEP54jldIFjgPhptetVhC07aC4tEQIUvBQnlGIwq1%2FgqaaF5sI7DIxqj3B1Cf%2Bc1G%2FmfRtJnnNLtfUEk%2F6wHWAFpkPr5Cn1w%2F9pCSZyJ5VDRMJAfF5%2BuBU5TgTO9ZmhlFY2%2Fk3c5yfBuaArEwDrILKgCiVrUJBcpmTi1rnmDbcuEuT6qRwAqo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014890057?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B4apSmai5vWT%2BEP54jldIFjgPhptetVhC07aC4tEQIUkZmcaYde0ODkDbWB2wvEUl06jsP6VhqBAidfVBEB9S3o1YkclC9%2FVf3biV3xO9YZ91bbe%2Fx1WPlhPIOr6kUVmrQstvgLBRvn1un2vyNydb7njiW0tvc81s90NIWWExUKPqnh5jBc1yBscov3vt9OVk%3D",
       "description": "<p>Vintage Oak Ridge Boys 7-inch 45 RPM single featuring two classic country tracks:</p><br /><p>“Y’all Come Back Saloon”</p><p>backed with</p><p>“You’re the One”</p><br /><p>Goldies 45 / ABC Records, catalog P-2789.</p><br /><p>This is a back-to-back reissue pairing two Oak Ridge Boys favorites originally associated with the Y’all Come Back Saloon LP.</p>",
       "paymentMethods": [
         {
@@ -1633,5 +1633,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:48Z"
 }

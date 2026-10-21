@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -78,7 +78,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "JP0707",
       "estimatedAvailabilities": [
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1571,7 +1571,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127959437933?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8Z7f0UO%2BqzaYjLyM8PH3s6pYlwGiAi7u3BcwX%2FJZWAjuUCDX%2BL5y2wgIlFjLUtyXdtmVBvaQxj5eob8ITshqc5t6pBm%2Bj6veJprYgrEu6gCG4vQLGAnBBqwWUUfI3TEeOkcdAzvKBLtbu69KURjAlJK72iMH0LCJOz%2BA7Adr57N58hkXZ4i4dOgnL5g8vbHEI%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127959437933?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8Z7f0UO%2BqzaYjLyM8PH3s6pYlwGiAi7u3BcwX%2FJZWAjuUXuHfopeDYVsWQCbBVjSn7pNDwiczaQOlZ7tF6YJQuXAtE8dZg9cDGFzZ%2Bb02UNAM1Owb1mG4mtl9W5lbTZ9KRW3%2BuBq4UdLCZr%2B1TfGVc8Uv6qG%2FV%2FAhLP9vSSkd%2BgSm%2FNFBwplre9%2FSVo2SsZsA%3D",
       "description": "<h3 data-section-id=\"1laks4o\" data-start=\"755\" data-end=\"769\" class=\"PDq2pG_selectionAnchorContainer\">Vinyl: EX-<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></h3>\n<p data-start=\"771\" data-end=\"788\">From your photos:</p>\n<ul data-start=\"790\" data-end=\"855\">\n<li data-section-id=\"ya9pbq\" data-start=\"790\" data-end=\"808\">\nExtremely glossy\n</li>\n<li data-section-id=\"1bhpnzg\" data-start=\"809\" data-end=\"833\">\nVery few visible marks\n</li>\n<li data-section-id=\"7jvuu0\" data-start=\"834\" data-end=\"855\">\nLooks barely played\n</li>\n</ul>\n<p data-start=\"857\" data-end=\"870\">I'd grade it:</p>\n<p data-start=\"872\" data-end=\"893\"><strong data-start=\"872\" data-end=\"893\">Vinyl: VG++ / EX-</strong></p>\n<hr data-start=\"895\" data-end=\"898\">\n<h3 data-section-id=\"5so790\" data-start=\"900\" data-end=\"915\">Jacket: VG+</h3>\n<ul data-start=\"917\" data-end=\"982\">\n<li data-section-id=\"yft5th\" data-start=\"917\" data-end=\"929\">\nVery clean\n</li>\n<li data-section-id=\"mr4zfh\" data-start=\"930\" data-end=\"947\">\nMinor edge wear\n</li>\n<li data-section-id=\"1hgmhsa\" data-start=\"948\" data-end=\"969\">\nCorners still sharp\n</li>\n<li data-section-id=\"1b8bo7h\" data-start=\"970\" data-end=\"982\">\nNice gloss\n</li>\n</ul>",
       "paymentMethods": [
         {
@@ -1628,5 +1628,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:50Z"
 }

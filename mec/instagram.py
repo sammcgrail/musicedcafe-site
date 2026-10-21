@@ -20,11 +20,12 @@ import urllib.request
 from .util import DATA, atomic_write, load_json, now_iso
 
 IG_DIR = DATA / "instagram"
+IMG_DIR = DATA / "assets" / "instagram"  # self-hosted copies (IG CDN urls expire); gitignored
 POSTS = IG_DIR / "posts.json"
 TOKEN = IG_DIR / "token.json"
 STATE = IG_DIR / "state.json"
 API = "https://graph.instagram.com"
-FIELDS = "id,caption,media_type,permalink,timestamp"
+FIELDS = "id,caption,media_type,media_url,thumbnail_url,permalink,timestamp"
 REFRESH_EVERY = 7 * 86400
 
 
@@ -57,6 +58,38 @@ def _save_token(tok: str) -> None:
     os.chmod(TOKEN, 0o600)
 
 
+def _save_image(p: dict, log=print) -> str | None:
+    """Download the post's image (video -> its thumbnail) and save WebP 480/1080.
+    Returns the base file name, or None. Never raises."""
+    pid = "".join(c for c in str(p.get("id", "")) if c.isalnum())
+    if not pid:
+        return None
+    if (IMG_DIR / f"{pid}-480.webp").exists() and (IMG_DIR / f"{pid}-1080.webp").exists():
+        return pid
+    url = p.get("thumbnail_url") if p.get("media_type") == "VIDEO" else p.get("media_url")
+    url = url or p.get("thumbnail_url")
+    if not url:
+        return None
+    try:
+        import io
+        from PIL import Image
+        req = urllib.request.Request(url, headers={"User-Agent": "MusicEdCafe/1.0"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            if not (r.headers.get("Content-Type") or "").startswith("image/"):
+                return None
+            data = r.read(15_000_000)
+        im = Image.open(io.BytesIO(data)).convert("RGB")
+        IMG_DIR.mkdir(parents=True, exist_ok=True)
+        for w in (480, 1080):
+            c = im.copy()
+            c.thumbnail((w, w * 2))
+            c.save(IMG_DIR / f"{pid}-{w}.webp", "WEBP", quality=74, method=5)
+        return pid
+    except Exception as e:
+        log(f"instagram image {pid} failed: {str(e)[:120]}")
+        return None
+
+
 def sync(log=print) -> dict:
     tok, refreshed_at = _token()
     if not tok:
@@ -76,7 +109,8 @@ def sync(log=print) -> dict:
         r = _get("/me/media", params)
         posts += r.get("data", [])
         out = [{"id": p["id"], "permalink": p.get("permalink"), "caption": p.get("caption") or "",
-                "media_type": p.get("media_type"), "timestamp": p.get("timestamp")}
+                "media_type": p.get("media_type"), "timestamp": p.get("timestamp"),
+                "image": _save_image(p, log)}
                for p in posts if p.get("permalink")]
         IG_DIR.mkdir(parents=True, exist_ok=True)
         atomic_write(POSTS, json.dumps({"fetched_at": now_iso(), "posts": out}, indent=1))

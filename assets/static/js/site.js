@@ -259,3 +259,187 @@
       });
   });
 })();
+
+/* Sell Your Records form (v2, multipart with photos). Without JS the form
+   posts normally with its 5 server-rendered rows and the server redirects to a
+   thank-you page. With JS: "Add another record" (up to data-max-rows), photos
+   are shrunk to <= 2000 px JPEG in the browser when that makes them smaller,
+   and the upload runs over XHR so we can show progress. */
+(function () {
+  'use strict';
+  var d = document, form = d.querySelector('[data-sell-form]');
+  if (!form || !window.FormData || !window.XMLHttpRequest || !window.JSON) return;
+  form.noValidate = true;
+  var done = d.getElementById('sell-done'), summary = form.querySelector('.rf-summary');
+  var submit = form.querySelector('.rf-submit'), label = submit.textContent;
+  var rowsBox = form.querySelector('[data-rows]'), addWrap = form.querySelector('.sf-add-wrap');
+  var addBtn = form.querySelector('[data-add-row]'), countNote = form.querySelector('.sf-count');
+  var prog = form.querySelector('[data-progress]'), bar = form.querySelector('[data-bar]'), progText = form.querySelector('[data-progress-text]');
+  var MAX_ROWS = parseInt(form.getAttribute('data-max-rows'), 10) || 40;
+  var MAX_OV = parseInt(form.getAttribute('data-max-overview'), 10) || 10;
+  var MAX_FILE = 8 * 1024 * 1024, MAX_TOTAL = 118 * 1024 * 1024;
+  var SLOT = { front: 'the jacket front', label: 'the vinyl label', back: 'the jacket back' };
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function rows() { return Array.prototype.slice.call(rowsBox.querySelectorAll('.sf-rec')); }
+  function noteCount() { var n = rows().length; countNote.textContent = n >= MAX_ROWS ? 'That\'s the most for one form (' + MAX_ROWS + '). Use overview photos for the rest.' : n + ' of ' + MAX_ROWS + ' rows'; addBtn.disabled = n >= MAX_ROWS; }
+  addWrap.hidden = false; noteCount();
+  addBtn.addEventListener('click', function () {
+    var all = rows(), n = all.length + 1;
+    if (n > MAX_ROWS) return;
+    var row = all[all.length - 1].cloneNode(true), old = all.length;
+    row.setAttribute('data-row', n);
+    row.querySelector('.sf-n').textContent = n;
+    row.querySelectorAll('[id],[for],[name]').forEach(function (el) {
+      ['id', 'for', 'name'].forEach(function (a) {
+        var v = el.getAttribute(a);
+        if (v) el.setAttribute(a, v.replace('r' + old + '-', 'r' + n + '-').replace('r' + old + '_', 'r' + n + '_').replace('err-r' + old, 'err-r' + n));
+      });
+      if (el.tagName === 'INPUT') { el.value = ''; el.removeAttribute('aria-invalid'); }
+    });
+    var err = row.querySelector('.rf-err'); err.hidden = true; err.textContent = '';
+    rowsBox.appendChild(row); noteCount();
+    row.querySelector('input').focus();
+  });
+  function clear() {
+    form.querySelectorAll('.rf-err').forEach(function (p) { p.hidden = true; p.textContent = ''; });
+    form.querySelectorAll('[aria-invalid]').forEach(function (x) { x.removeAttribute('aria-invalid'); });
+    summary.hidden = true; summary.textContent = '';
+  }
+  function target(k) {
+    var row = /^r(\d+)$/.exec(k);
+    if (row) { var r = rowsBox.querySelector('[data-row="' + row[1] + '"]'); return r && r.querySelector('input'); }
+    if (k === 'records') return rowsBox.querySelector('input');
+    return form.querySelector('[name="' + k + '"]');
+  }
+  function showErrors(errs) {
+    var first = null, keys = Object.keys(errs);
+    keys.forEach(function (k) {
+      var p = d.getElementById('err-' + k);
+      if (p) { p.textContent = errs[k]; p.hidden = false; }
+      var f = target(k);
+      if (f) { f.setAttribute('aria-invalid', 'true'); if (p) f.setAttribute('aria-describedby', p.id); if (!first) first = f; }
+    });
+    summary.innerHTML = '<p><strong>Please check ' + (keys.length === 1 ? 'one thing' : keys.length + ' things') + ':</strong></p><ul>' +
+      keys.map(function (k) { return '<li>' + esc(errs[k]) + '</li>'; }).join('') + '</ul>';
+    summary.hidden = false;
+    (first || summary).focus();
+  }
+  function file(input) { return input && input.files && input.files[0]; }
+  function isImage(f) { return /^image\//i.test(f.type || '') || /\.(jpe?g|png|webp|hei[cf])$/i.test(f.name || ''); }
+  function local() {
+    var e = {}, el = form.elements, used = 0;
+    if (!el.namedItem('name').value.trim()) e.name = 'Please tell us your name.';
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.namedItem('email').value.trim())) e.email = 'Please enter a valid email address, like you@example.com.';
+    if (!el.namedItem('location').value.trim()) e.location = 'Please tell us your city or ZIP code.';
+    var count = el.namedItem('count');
+    if (!count.value) e.count = 'Please choose roughly how many records you have.';
+    if (!form.querySelector('[name="formats"]:checked')) e.formats = 'Please tick at least one format.';
+    if (!el.namedItem('condition').value) e.condition = 'Please choose the overall condition.';
+    if (!form.querySelector('[name="handoff"]:checked')) e.handoff = 'Please tell us how the records would get to us.';
+    rows().forEach(function (r) {
+      var n = r.getAttribute('data-row'), q = function (k) { return r.querySelector('[name="r' + n + '_' + k + '"]'); };
+      var a = q('artist').value.trim(), t = q('title').value.trim(), c = q('catno').value.trim();
+      var fs = { front: file(q('front')), label: file(q('label')), back: file(q('back')) };
+      if (!(a || t || c || fs.front || fs.label || fs.back)) return;
+      var p = [];
+      if (!a) p.push('add the artist');
+      if (!t) p.push('add the album or song title');
+      ['front', 'label', 'back'].forEach(function (k) {
+        if (!fs[k]) { if (k !== 'back') p.push('add a photo of ' + SLOT[k]); }
+        else if (!isImage(fs[k])) p.push('the photo of ' + SLOT[k] + ' isn\'t a photo we can use (JPEG, PNG, WebP or HEIC)');
+      });
+      if (p.length) e['r' + n] = 'Record ' + n + ': please ' + p.join('; ') + '.'; else used++;
+    });
+    var ov = el.namedItem('overview').files || [];
+    if (ov.length > MAX_OV) e.overview = 'Please send at most ' + MAX_OV + ' overview photos.';
+    var big = count.value && count.selectedIndex > 1;
+    var rowErr = Object.keys(e).some(function (k) { return /^r\d+$/.test(k); });
+    if (!used && !rowErr) {
+      if (!big) e.records = 'Please add at least one record with a photo of the jacket and of the vinyl.';
+      else if (!ov.length) e.records = 'Please add at least one record with its photos, or a few overview photos of the crates or spines.';
+    }
+    if (!el.namedItem('consent').checked) e.consent = 'Please tick the box so we can contact you about your records.';
+    return e;
+  }
+  // Shrink a photo to <= 2000 px JPEG when the browser can decode it and the result is smaller.
+  function shrink(f) {
+    return new Promise(function (resolve) {
+      if (!f.type && /\.hei[cf]$/i.test(f.name || '')) f = new Blob([f], { type: 'image/heic' });
+      if (f.size < 1200000 || !window.createImageBitmap || !/^image\/(jpeg|png|webp|heic|heif)$/i.test(f.type)) return resolve(f);
+      createImageBitmap(f, { imageOrientation: 'from-image' }).then(function (bmp) {
+        var s = Math.min(1, 2000 / Math.max(bmp.width, bmp.height)), c = d.createElement('canvas');
+        c.width = Math.max(1, Math.round(bmp.width * s)); c.height = Math.max(1, Math.round(bmp.height * s));
+        var g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height);
+        g.drawImage(bmp, 0, 0, c.width, c.height);
+        if (bmp.close) bmp.close();
+        c.toBlob(function (b) { resolve(b && b.size < f.size ? b : f); }, 'image/jpeg', 0.85);
+      }).catch(function () { resolve(f); });
+    });
+  }
+  function setProgress(pct, text) { prog.hidden = false; bar.style.width = Math.max(2, Math.min(100, pct)) + '%'; progText.textContent = text; }
+  function mb(n) { return (n / 1048576).toFixed(n < 10485760 ? 1 : 0); }
+  function reset() { submit.disabled = false; submit.textContent = label; prog.hidden = true; }
+  function fail(msg) { reset(); summary.innerHTML = '<p>' + esc(msg) + '</p>'; summary.hidden = false; summary.focus(); }
+  function build() {
+    var fd = new FormData(), jobs = [], big = [];
+    Array.prototype.forEach.call(form.elements, function (el) {
+      if (!el.name || el.disabled) return;
+      if (el.type === 'file') { Array.prototype.forEach.call(el.files || [], function (f) { jobs.push([el.name, f]); }); return; }
+      if ((el.type === 'checkbox' || el.type === 'radio') && !el.checked) return;
+      if (el.tagName === 'BUTTON') return;
+      fd.append(el.name, el.value);
+    });
+    var i = 0, total = 0;
+    function next() {
+      if (i >= jobs.length) return Promise.resolve();
+      var j = jobs[i++];
+      setProgress(3, 'Preparing photo ' + i + ' of ' + jobs.length + '...');
+      return shrink(j[1]).then(function (b) {
+        total += b.size;
+        if (b.size > MAX_FILE) big.push(j[0]);
+        fd.append(j[0], b, /jpeg/.test(b.type) && b !== j[1] ? 'photo.jpg' : (j[1].name || 'photo'));
+        return next();
+      });
+    }
+    return next().then(function () { return { fd: fd, total: total, big: big }; });
+  }
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    clear();
+    var e = local();
+    if (Object.keys(e).length) { showErrors(e); return; }
+    submit.disabled = true; submit.textContent = 'Sending...';
+    build().then(function (b) {
+      if (b.big.length) {
+        var errs = {};
+        b.big.forEach(function (n) { var m = /^r(\d+)_(\w+)$/.exec(n); if (m) errs['r' + m[1]] = 'Record ' + m[1] + ': the photo of ' + SLOT[m[2]] + ' is over 8 MB. Please choose a smaller photo.'; else errs.overview = 'One of the overview photos is over 8 MB.'; });
+        reset(); showErrors(errs); return;
+      }
+      if (b.total > MAX_TOTAL) return fail('Those photos add up to more than 120 MB. Please send fewer, or use a few overview photos for a big lot.');
+      var x = new XMLHttpRequest();
+      x.open('POST', form.action);
+      x.setRequestHeader('Accept', 'application/json');
+      x.upload.onprogress = function (p) {
+        if (p.lengthComputable) setProgress(5 + 85 * p.loaded / p.total, 'Uploading photos... ' + Math.round(100 * p.loaded / p.total) + '% (' + mb(p.loaded) + ' of ' + mb(p.total) + ' MB)');
+      };
+      x.upload.onload = function () { setProgress(92, 'Upload done. Checking your photos...'); };
+      x.onerror = function () { fail('We couldn\'t reach the server. Check your connection and try again.'); };
+      x.onload = function () {
+        var j;
+        try { j = JSON.parse(x.responseText); } catch (err) { j = { ok: false, message: x.status === 413 ? 'That upload is too large. Please send fewer or smaller photos.' : 'Something went wrong on our side. Please try again in a minute.' }; }
+        if (j.ok) {
+          setProgress(100, 'Sent.');
+          var n = ((j.submission || {}).name || '').split(' ')[0];
+          done.innerHTML = '<p class="rd-kicker">Received</p><h2>Thanks' + (n ? ', ' + esc(n) : '') + '! We got your records and photos.</h2>' +
+            '<p>We review every record and will email you with an offer or a few follow-up questions. The offer is final once we\'ve seen the records.</p>' +
+            '<p class="empty-actions"><a class="btn btn-buy" href="/shop/">Shop records</a> <a class="btn btn-ghost" href="/">Back to home</a></p>';
+          form.hidden = true; done.hidden = false; done.focus();
+          done.scrollIntoView({ block: 'start' });
+        } else if (j.errors) { reset(); showErrors(j.errors); }
+        else fail(j.message || 'Something went wrong. Please try again.');
+      };
+      setProgress(5, 'Uploading photos... 0%');
+      x.send(b.fd);
+    }).catch(function () { fail('Something went wrong preparing your photos. Please try again.'); });
+  });
+})();

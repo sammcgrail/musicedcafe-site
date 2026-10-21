@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "T54159",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1612,7 +1612,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127966414369?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9BehDaqapcSQlGqLhptq6w98Vm1ZNbjvpUYNmhV25DSMDSTSH1FefR2hs5w6B5T6UhNSIm5Byv%2Brb%2Bmwt6SlWOinBh1SChfKxqidFYochIsxfeMpHdIVtdgsMpKkAVxXYpnMBiPOcACbCIxbIdx3YHpT16bsptnxhnmx3B2zjN05tI%2FVSsLMUs%2BWxKTJkVTW0%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127966414369?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9BehDaqapcSQlGqLhptq6w98Vm1ZNbjvpUYNmhV25DSGgL1FG%2Fik9BRHlqvNvA47wNV%2FpDX2p5%2BRGJ%2Fu9P%2FphZ5OcEVdiCw%2FL9AzZzM%2BUgdWM2DBj0EpSwl%2BmkDROt7wAmIYta4T7i7S%2FJt7Id9%2FZZMc2yKg8LKESBXJTmItUoh%2BGAPH13WVmjsVaSdFKO7uc%3D",
       "description": "<h3 data-section-id=\"1y1wv0v\" data-start=\"1086\" data-end=\"1174\" class=\"PDq2pG_selectionAnchorContainer\"><span role=\"text\">Smokey Robinson &amp; The Miracles – <em data-start=\"1123\" data-end=\"1146\">I Second That Emotion</em> / <em data-start=\"1149\" data-end=\"1167\">You Must Be Love</em> (1967)</span><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></h3>\n<p data-start=\"1176\" data-end=\"1372\">Original 1967 Tamla/Motown 7-inch 45 RPM single featuring the classic hit <strong data-start=\"1250\" data-end=\"1278\">\"I Second That Emotion,\"</strong> one of Smokey Robinson &amp; The Miracles' signature songs and a cornerstone of the Motown Sound.</p>\n<h3 data-section-id=\"17si63v\" data-start=\"1374\" data-end=\"1391\">Track Listing</h3>\n<p data-start=\"1393\" data-end=\"1403\"><strong data-start=\"1393\" data-end=\"1403\">Side A</strong></p>\n<ul data-start=\"1404\" data-end=\"1427\">\n<li data-section-id=\"l8a15v\" data-start=\"1404\" data-end=\"1427\">\nI Second That Emotion\n</li>\n</ul>\n<p data-start=\"1429\" data-end=\"1439\"><strong data-start=\"1429\" data-end=\"1439\">Side B</strong></p>\n<ul data-start=\"1440\" data-end=\"1458\">\n<li data-section-id=\"1rm46wz\" data-start=\"1440\" data-end=\"1458\">\nYou Must Be Love\n</li>\n</ul>\n<p data-start=\"1460\" data-end=\"1527\">A must-have for Motown, Northern Soul, and classic soul collectors.</p>\n<hr data-start=\"1529\" data-end=\"1532\">\n<h2 data-section-id=\"hrykuu\" data-start=\"1534\" data-end=\"1546\">Condition</h2>\n<h3 data-section-id=\"75rooy\" data-start=\"1548\" data-end=\"1557\">Vinyl</h3>\n<p data-start=\"1558\" data-end=\"1579\"><strong data-start=\"1558\" data-end=\"1579\">VG (Visual Grade)</strong></p>\n<ul data-start=\"1581\" data-end=\"1725\">\n<li data-section-id=\"13ywv10\" data-start=\"1581\" data-end=\"1602\">\nNice original gloss\n</li>\n<li data-section-id=\"192fjk2\" data-start=\"1603\" data-end=\"1660\">\nLight surface marks and sleeve wear consistent with age\n</li>\n<li data-section-id=\"dsjpk0\" data-start=\"1661\" data-end=\"1690\">\nNo cracks or chips observed\n</li>\n<li data-section-id=\"1fcos53\" data-start=\"1691\" data-end=\"1725\">\nLabels remain clean and readable\n</li>\n</ul>\n<h3 data-section-id=\"p47w8a\" data-start=\"1727\" data-end=\"1737\">Sleeve</h3>\n<p data-start=\"1739\" data-end=\"1769\">Generic paper sleeve included.</p>\n<p data-start=\"1771\" data-end=\"1842\">Please review all photos carefully as they are part of the description.</p>\n<p data-start=\"1844\" data-end=\"1899\">Record has been visually graded unless otherwise noted.</p>",
       "paymentMethods": [
         {
@@ -1669,5 +1669,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:22Z"
 }

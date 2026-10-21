@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "RS913",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1602,7 +1602,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970934247?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8o4FmR9RD8bIJUJfGQ3s0N5laP6zpuZtTJ7vBaM006KQreYFUbwpgaS%2FZRjoJrsGkMMrUlqSUMRZ5GNVu3OdttG0IYqXXEfi%2FIrCVxtW8tbyuzl85D0p12z%2BcubTk%2BlOMLIOO466dziVyLY8LXPYInr%2FodmRS5eVU7AjxsLKtkInbYjpgn0kKlRuXZ8b4znD0%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970934247?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8o4FmR9RD8bIJUJfGQ3s0N5laP6zpuZtTJ7vBaM006KcVPRj%2BsrIcmYC8%2F%2BQo5rKyVCPxe1cW3KYgMFvGG%2BanMnldd5bThDlA7qv1oF%2B1dwtyBDhG3zHCzN8PKSGQzEf96IDMl6phHBYxzxl99lLvH14WAcC%2Fc5Nt4d7H25UhOp5z5IGfE10e45--0sny2RfQ%3D",
       "description": "<p data-start=\"1019\" data-end=\"1248\" class=\"PDq2pG_selectionAnchorContainer\">Original RSO Records 45 RPM single featuring the Bee Gees' international hit <strong data-start=\"1096\" data-end=\"1118\">\"Too Much Heaven,\"</strong> released in 1978 and famously donated to UNICEF, becoming one of the trio's signature ballads during the height of the disco era.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1250\" data-end=\"1370\">The B-side features <strong data-start=\"1270\" data-end=\"1297\">\"Rest Your Love on Me,\"</strong> a fan-favorite country-influenced ballad later covered by Conway Twitty.</p>\n<p data-start=\"1372\" data-end=\"1460\">A great addition for Bee Gees collectors, disco fans, and classic pop vinyl enthusiasts.</p>\n<p data-start=\"1462\" data-end=\"1586\">Record will be shipped in a new paper sleeve inside a protective poly sleeve and packaged securely in a rigid 45 RPM mailer.</p><p data-start=\"642\" data-end=\"678\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"642\" data-end=\"653\">Record:</strong> <strong data-start=\"654\" data-end=\"678\">VG+ (Very Good Plus)</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p><p data-start=\"680\" data-end=\"876\">Vinyl has a glossy finish with light surface scuffs and faint hairlines from normal use. Labels are clean with only light age wear. A very nice vintage copy that should provide enjoyable playback.</p><p data-start=\"878\" data-end=\"917\"><strong data-start=\"878\" data-end=\"889\">Sleeve:</strong> Generic white paper sleeve.</p><p data-start=\"1462\" data-end=\"1586\">\n\n\n</p><p data-start=\"919\" data-end=\"996\">Please review all photos carefully, as they are part of the item description.</p>",
       "paymentMethods": [
         {
@@ -1659,5 +1659,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:34Z"
 }

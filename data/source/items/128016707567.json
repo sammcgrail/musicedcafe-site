@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -61,7 +61,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "UAS9902",
       "estimatedAvailabilities": [
@@ -86,8 +86,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1579,7 +1579,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128016707567?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9PbODqf97opow%2FSNIkIxmxpNaKP%2BsGJtVJ0i%2FB54LKLUt0HWIaawpsa9Rr5Vrcr%2BYVobYuvrkwHZ8KtabSjpQeuxPyNH6y%2FfyeZsQY3%2FdzVE4GZnQxjDBXMRF65EuFjkZbbLc0CAZucrWfRnZOhJ1HpSWw21vj9d6xocPyN1MAsf02l1CPc%2BEWAe1QJY%2FMonc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128016707567?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9PbODqf97opow%2FSNIkIxmxpNaKP%2BsGJtVJ0i%2FB54LKLbhFCvCKM8qUl%2B0w4IZew43Sb60sQbtLU8Hxo9pQLvDhaXworbYQR%2BbjB6P3%2BHun9%2BoWADnL4eF31I2YeVGA2qHpTsGHasSLPS5ouy%2Br15zpqum%2B%2BNrJey0utcmwwW%2BgQdd57OHMSc3I39LZldeHWU0%3D",
       "description": "<p>Promises, Promises – Original Broadway Cast Album – Vintage Stereo Vinyl LP</p><br /><p>Original Broadway cast recording of the classic 1968 musical Promises, Promises, featuring music by legendary composer Burt Bacharach, lyrics by Hal David, and a book by Neil Simon.</p><br /><p>Starring Jerry Orbach, Jill O’Hara and Edward Winter and based on Billy Wilder and I.A.L. Diamond’s screenplay The Apartment.</p><br /><p>Includes memorable Bacharach-David songs such as “Promises, Promises” and “I’ll Never Fall in Love Again.”</p><br /><p>United Artists Records UAS 9902 stereo LP.</p><br /><p>The original jacket shows vintage shelf, edge and corner wear, along with age-related discoloration and surface wear. Artwork remains clear and attractive. Please review photos carefully for exact cosmetic condition</p>",
       "paymentMethods": [
         {
@@ -1636,5 +1636,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:29Z"
 }

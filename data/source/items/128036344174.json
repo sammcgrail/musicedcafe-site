@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "3805730",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1607,7 +1607,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036344174?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BpmpOfCL6twuaczlJwDYap6hUOmtEfx6EQeGsfjEMhofHY0a%2FiA2kdRW3dBzX53T7EBxiwU1eINeX2WNg0PQ0478Hjqs9v5W9Np4a4X09ouz%2B8od7Lmx0yz81fObWIBgPih1knwwtwEaaaKtZtWkOpBKtl2jGq1c0PC2auciXXI9USwDqWyzVBGPrvq0vOFMo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036344174?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BpmpOfCL6twuaczlJwDYap6hUOmtEfx6EQeGsfjEMhoaQQ%2B1yabUrWfltAqLQYR4FKiOU5YkJMynhD3dUL2hLCnP5mflWB3rHA0mcvrvYxJUMbQYCyYOdYY2%2BKP5YB7JeTROo3KOJQBVpYuEXjldL83CtFg1OLtLVS2WOX4zIfcAP0SNLX1mSr3%2B7fBqf8iPk%3D",
       "description": "<p>The Hooters Day By Day 7” 45 Columbia 38-05730 1985 Vinyl Single</p><br /><p>Artist: The Hooters</p><p>A-Side: Day by Day</p><p>B-Side: South Ferry Road</p><p>Label: Columbia</p><p>Catalog Number: 38-05730</p><p>Format: 7” Vinyl Single / 45 RPM / Stereo</p><p>Year: 1985</p><p>Country: USA</p><br /><p>Original 1985 Columbia 45 from The Hooters, featuring their classic track “Day by Day” backed with “South Ferry Road.”</p><br /><p>Both tracks were taken from the band’s successful Nervous Night era, making this a great addition for collectors of 1980s rock, pop rock and new wave vinyl.</p><br /><p>Condition:</p><p>Vinyl is approximately VG to VG+ visually, showing light surface marks and signs of previous play while retaining good overall gloss. Labels remain clean, bright and fully readable.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p><br /><p>Ships securely in protective packaging designed for 7-inch records.</p>",
       "paymentMethods": [
         {
@@ -1664,5 +1664,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:03Z"
 }

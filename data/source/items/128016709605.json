@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -61,7 +61,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -85,8 +85,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1558,7 +1558,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128016709605?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9V30tVak5oIksIJBD8yKBd2R%2FwAjMpvgsA7xCx1%2BwLyDeCKCFMfwPlLmE2gy%2BDY4GFx10ars57zwoE6Fu3q%2FMT7oOVkVnb5h4GiH0ENSp83XdbGlUGWrfA7UB4IMhKewC01QCZcPC%2FM4Bc3D9oOmpu0YWpPW03EZr11HJixArEze8yQAyt1dao1d03tAyP%2F38%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128016709605?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9V30tVak5oIksIJBD8yKBd2R%2FwAjMpvgsA7xCx1%2BwLyDV%2BODkw7GLzK3iSEJHm0Fr8tLGBDQqLt%2Bkr8q4BwoJDaS%2FP9DVZvG5pHwNBUVTVE1oF5yem1R%2BEEHFZGGgwqx9XI%2Fe0IeWR4q0hHgUZYqvH00t7TUhdtIxYuYD42TGoz2kbIRFfusSPu7ozjB6pzQU%3D",
       "description": "<p>A Visit to Switzerland – Vintage Capitol Records Sounds of the World Vinyl LP</p><br /><p>Vintage Capitol Records travel and world-music LP featuring traditional Swiss Ländlermusik recorded in the Alps.</p><br /><p>Features a fantastic vintage Matterhorn cover and is part of Capitol Records’ Sounds of the World series.</p><br /><p>A fun piece for collectors of Swiss folk music, European traditional music, vintage travel records, Capitol Records and Switzerland memorabilia.</p>",
       "paymentMethods": [
         {
@@ -1615,5 +1615,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:28Z"
 }

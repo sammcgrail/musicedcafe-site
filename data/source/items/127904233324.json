@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "NBLP7056",
       "estimatedAvailabilities": [
@@ -106,8 +106,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1639,7 +1639,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127904233324?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9IOnJ%2BTSaM11BD9upGM9GsuV0ezeDEDpxgXxeRxjVVoLVAdEf%2BLZs9R5U28woyvjhBR9fcI3L%2FFvEtmk%2BKBRaEMNAKaZeddwuHRCeZE%2Bxq%2B1vtv1jEiMz6v1JEVsqNu6D0PIMxylBc%2BCeTH2jhZ8YzZSfgxfgVjTeR3QEyJwLO8erP9ES07Q8OMv0oBPgPiaI%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127904233324?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9IOnJ%2BTSaM11BD9upGM9GsuV0ezeDEDpxgXxeRxjVVoNEbXAS4I3Fr7uzn771ZY5jdUAopaPDHhdySCGwEi93mTXMfeZ0QYVUwU5aIf0sV4EwSuzw%2B2IqP32KBa3dDmswMb7PxjP%2Bo3S2KPXGxvHsxf92aljZbYHZvwbgO1NyhB998EQKiLW4Zu7l4kiW6FSQ%3D",
       "description": "<p data-start=\"1234\" data-end=\"1273\"><strong data-start=\"1234\" data-end=\"1273\">Donna Summer – I Remember Yesterday</strong></p>\n<p data-start=\"1275\" data-end=\"1369\">Label: Casablanca Records<br data-start=\"1300\" data-end=\"1303\">\nCatalog Number: NBLP 7056<br data-start=\"1328\" data-end=\"1331\">\nYear: 1977<br data-start=\"1341\" data-end=\"1344\">\nFormat: LP, Album, Stereo</p>\n<p data-start=\"1371\" data-end=\"1523\">Classic Donna Summer disco album produced by Giorgio Moroder and Pete Bellotte, featuring the groundbreaking electronic dance classic <strong data-start=\"1505\" data-end=\"1523\">\"I Feel Love.\"</strong></p>\n<h3 data-section-id=\"u9g00a\" data-start=\"1525\" data-end=\"1545\">Track Highlights</h3>\n<ul data-start=\"1546\" data-end=\"1642\">\n<li data-section-id=\"10x66om\" data-start=\"1546\" data-end=\"1568\">\nI Remember Yesterday\n</li>\n<li data-section-id=\"17qzy9r\" data-start=\"1569\" data-end=\"1584\">\nLove's Unkind\n</li>\n<li data-section-id=\"1b5imdw\" data-start=\"1585\" data-end=\"1605\">\nBack In Love Again\n</li>\n<li data-section-id=\"18u9a4f\" data-start=\"1606\" data-end=\"1618\">\nBlack Lady\n</li>\n<li data-section-id=\"1ch7y9n\" data-start=\"1619\" data-end=\"1628\">\nTake Me\n</li>\n<li data-section-id=\"1vjf0bf\" data-start=\"1629\" data-end=\"1642\">\nI Feel Love\n</li>\n</ul>\n<h3 data-section-id=\"1uef3h1\" data-start=\"1644\" data-end=\"1657\">Condition</h3>\n<p data-start=\"1659\" data-end=\"1673\"><strong data-start=\"1659\" data-end=\"1673\">Vinyl: VG+</strong></p>\n<ul data-start=\"1674\" data-end=\"1769\">\n<li data-section-id=\"1tfr9bq\" data-start=\"1674\" data-end=\"1697\">\nClean glossy surfaces\n</li>\n<li data-section-id=\"kjr3z\" data-start=\"1698\" data-end=\"1739\">\nLight cosmetic wear consistent with age\n</li>\n<li data-section-id=\"xkkpl2\" data-start=\"1740\" data-end=\"1769\">\nNo major scratches observed\n</li>\n</ul>\n<p data-start=\"1771\" data-end=\"1784\"><strong data-start=\"1771\" data-end=\"1784\">Cover: VG</strong></p>\n<ul data-start=\"1785\" data-end=\"1883\">\n<li data-section-id=\"ompova\" data-start=\"1785\" data-end=\"1807\">\nEdge and corner wear\n</li>\n<li data-section-id=\"9onvsm\" data-start=\"1808\" data-end=\"1849\">\nSmall tear/chipping on front cover edge\n</li>\n<li data-section-id=\"6far50\" data-start=\"1850\" data-end=\"1883\">\nGeneral shelf wear from storage\n</li>\n</ul>\n<h3 data-section-id=\"6zzv5x\" data-start=\"1885\" data-end=\"1894\">Notes</h3>\n<p data-start=\"1895\" data-end=\"1992\">A classic disco-era Donna Summer release and an essential record for fans of dance music history.</p>",
       "paymentMethods": [
         {
@@ -1696,5 +1696,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:11Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -89,7 +89,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "FC37158",
       "estimatedAvailabilities": [
@@ -114,8 +114,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1657,7 +1657,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128084325102?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8hjUADEHLqWlAbnqEH%2Bjv3qYSA12SaCC6MO3P0mt5Q8Eppd7wYrFvalN0BsQx98Up3MwYqFE4X66QTusz%2BlI%2ByQfEtt34JA7SIAwENsdLWSx7AvsLlbVXSZqKdWIa50t3jnEXXcqLuOHBJhxxf89OKEBLiX7Z1TIMNp%2FueiLs%2B31X5RWH7yokxWIKGll9HDVY%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128084325102?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8hjUADEHLqWlAbnqEH%2Bjv3qYSA12SaCC6MO3P0mt5Q8Ol9y%2F8rDEay7ZcfjSZOnnPg%2B%2BAjGGrgtqv3Wu%2F2OJ1Wl86QCBL%2B9hqf5iwi0MZOTY8ZzFf29K99DN4KqSf%2BtU3Q7z0a9PDU2VGmXctRTjDJCD1oyad86ipxWxhPrWKzwaKI0hD539XhsRPIHNv6j9Q%3D",
       "description": "<p dir=\"auto\" data-start=\"1767\" data-end=\"1829\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"1767\" data-end=\"1829\">Santana – Zebop! – 1981 Columbia Records FC 37158 Vinyl LP</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p dir=\"auto\" data-start=\"1831\" data-end=\"1988\">Original U.S. Columbia pressing of Santana’s 1981 album <em data-start=\"1887\" data-end=\"1895\">Zebop!</em>, featuring “Winning,” “Searchin’,” “Changes,” “E Papa Ré,” “Tales of Kilimanjaro,” and more.</p>\n<p dir=\"auto\" data-start=\"1990\" data-end=\"2201\"><strong data-start=\"1990\" data-end=\"2002\">Details:</strong><br data-start=\"2002\" data-end=\"2005\">\nArtist: Santana<br data-start=\"2020\" data-end=\"2023\">\nTitle: <em data-start=\"2030\" data-end=\"2038\">Zebop!</em><br data-start=\"2038\" data-end=\"2041\">\nLabel: Columbia<br data-start=\"2056\" data-end=\"2059\">\nCatalog Number: FC 37158<br data-start=\"2083\" data-end=\"2086\">\nUPC: 074643715812<br data-start=\"2103\" data-end=\"2106\">\nFormat: 12\" Vinyl LP, 33 RPM<br data-start=\"2134\" data-end=\"2137\">\nCountry: USA<br data-start=\"2149\" data-end=\"2152\">\nYear: 1981<br data-start=\"2162\" data-end=\"2165\">\nGenre: Latin Rock / Rock / Jazz Rock</p>\n<p dir=\"auto\" data-start=\"2203\" data-end=\"2267\">Includes the <strong data-start=\"2216\" data-end=\"2266\">original printed lyric and credit inner sleeve</strong>.</p>\n<p dir=\"auto\" data-start=\"2269\" data-end=\"2521\" class=\"\"><strong data-start=\"2269\" data-end=\"2283\">Condition:</strong> Vinyl appears VG+ visually with strong gloss and light superficial handling marks. No obvious deep scratches visible in the photos. Cover is VG with visible edge/corner wear, light creasing and shelf wear. Original inner sleeve included.</p>",
       "paymentMethods": [
         {
@@ -1714,5 +1714,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:12Z"
 }

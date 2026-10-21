@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -80,7 +80,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "LPM2449, CS9189",
       "estimatedAvailabilities": [
@@ -105,8 +105,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1648,7 +1648,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127886398519?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FqaETabBhxoG9GGOk%2FTa95KzFQeXMG%2FXjD452Qur%2FzwQba1Oed66SApJOQFozjDS7wyD8cYpAiUl2DJK3SqovdRQVwGChpSKW%2BePoZHAU36wJC41jfGczbfZh2uAQPCgyH99IzAyXOGobjfaSqydpHQOgywfsEJUwYSMnhIB0fZIgMVTty%2BYpbgDJePu8VVA8%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127886398519?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FqaETabBhxoG9GGOk%2FTa95KzFQeXMG%2FXjD452Qur%2FzwbfwlFnJJCwCuHkRpuX3ySQ52CDr1ux0fTzmh1Wn7UvlMLMgeCvQb7Uu9dtCqYXlX2Z5FGouLFmOCHIWFiJ5CrJiG8MUk%2FL9DX1f2LKEn8ib%2FyQPnIhL2QCES8zR85xJ3UqNAnZsphQ62atezo0ok7U%3D",
       "description": "<h2 data-section-id=\"lefkm6\" data-start=\"1933\" data-end=\"1977\">Bob Dylan – Highway 61 Revisited Vinyl LP</h2>\n<p data-start=\"1979\" data-end=\"2016\"><span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Highway 61 Revisited</span></p>\n<p data-start=\"2018\" data-end=\"2109\">Vintage Columbia “360 Sound” stereo pressing of Bob Dylan’s legendary 1965 album featuring:</p>\n<ul data-start=\"2110\" data-end=\"2213\">\n<li data-section-id=\"n45m64\" data-start=\"2110\" data-end=\"2132\">\nLike A Rolling Stone\n</li>\n<li data-section-id=\"1uw7e8v\" data-start=\"2133\" data-end=\"2155\">\nBallad of a Thin Man\n</li>\n<li data-section-id=\"7x4ziq\" data-start=\"2156\" data-end=\"2173\">\nTombstone Blues\n</li>\n<li data-section-id=\"1j3156x\" data-start=\"2174\" data-end=\"2196\">\nHighway 61 Revisited\n</li>\n<li data-section-id=\"talbym\" data-start=\"2197\" data-end=\"2213\">\nDesolation Row</li></ul>",
       "paymentMethods": [
         {
@@ -1705,5 +1705,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:32Z"
 }

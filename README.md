@@ -24,7 +24,7 @@ eBay (source of truth)                 data/source/items/<id>.json   raw eBay da
   nginx (`musicedcafe-web`, port 20085).
 - A tiny **admin sidecar** (`musicedcafe-admin`, port 20086; Python stdlib only)
   serves `/admin/`. It has a "Refresh from eBay" button, CSV upload, sync status
-  and the review report. It also runs the daily scheduled sync and answers eBay's
+  and the review report. It also runs the hourly scheduled sync and answers eBay's
   account-deletion challenge at `/ebay/account-deletion`.
 - Builds are atomic. They are written to `public/.build-*` and swapped into
   `public/live`, so a failed build never leaves a half-built site.
@@ -93,7 +93,7 @@ Your overrides. See `data/editorial/README.md`.
 
 ### `config/site.json`
 Site URL, store URL, seller username, contact placeholders, EPN campaign ID,
-Browse categories, sync schedule (`sync.daily_at_utc`) and the end-guard
+Browse categories, sync schedule (`sync.interval_minutes`, or `sync.daily_at_utc` when that is null) and the end-guard
 (`sync.max_end_fraction`).
 
 ### `config/csv-mappings.json`

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "JC34912",
       "estimatedAvailabilities": [
@@ -106,8 +106,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1644,7 +1644,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127958933649?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FPV6djYUOYcKtm%2Bnu2eS%2BzEpwxlBZ6DKN7CYE%2B7IZ4u%2BMh0SyAB2kUcSAh7QDmfUtE7jK2SMdBT3aOP7%2BD2ubgu1fKqU1v0veemb32ne%2Ft%2Fz8L5kpOEdmFHF4Gi9C%2FAjlylHmvpiLCieVBB2Ip5ULonGuOKTA0MOsLHokUKVUfBdWNl8pl75vCDwRNhwj7zUU%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127958933649?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FPV6djYUOYcKtm%2Bnu2eS%2BzEpwxlBZ6DKN7CYE%2B7IZ4u4qopWg26YBsTD53E%2BfYnQIJ%2BtVUsTL%2BNFNkS7QtFRNE6t4Qf%2F1ZXpD%2F%2BimUllq%2BuOw9C5QYrAkaTpB%2FJ3WDT7mnzZeF8YejQ%2Fgtm0IPwG%2FNvooAkO5SzLs0tNpnVhd8QMkuC%2Fo2FplddACe%2BPEbQW0%3D",
       "description": "<p data-start=\"1286\" data-end=\"1308\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"1286\" data-end=\"1308\">Journey – Infinity</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1310\" data-end=\"1335\">Columbia Records JC 34912</p>\n<p data-start=\"1337\" data-end=\"1401\">Classic 1978 release featuring Steve Perry's debut with Journey.</p>\n<p data-start=\"1403\" data-end=\"1412\">Includes:</p>\n<ul data-start=\"1414\" data-end=\"1482\">\n<li data-section-id=\"1pwq884\" data-start=\"1414\" data-end=\"1432\">\nWheel in the Sky\n</li>\n<li data-section-id=\"1pfi1gl\" data-start=\"1433\" data-end=\"1441\">\nLights\n</li>\n<li data-section-id=\"122fbc4\" data-start=\"1442\" data-end=\"1460\">\nFeeling That Way\n</li>\n<li data-section-id=\"1cbntqj\" data-start=\"1461\" data-end=\"1470\">\nAnytime\n</li>\n<li data-section-id=\"96tr5a\" data-start=\"1471\" data-end=\"1482\">\nPatiently\n</li>\n</ul>\n<hr data-start=\"1484\" data-end=\"1487\">\n<h3 data-section-id=\"1uef3h1\" data-start=\"1489\" data-end=\"1502\">Condition</h3>\n<p data-start=\"1504\" data-end=\"1518\"><strong data-start=\"1504\" data-end=\"1518\">Vinyl: VG+</strong></p>\n<p data-start=\"1520\" data-end=\"1611\">Very clean with excellent gloss and only light signs of handling. No major scratches noted.</p>\n<p data-start=\"1613\" data-end=\"1627\"><strong data-start=\"1613\" data-end=\"1627\">Jacket: VG</strong></p>\n<p data-start=\"1629\" data-end=\"1754\">Original cover has moderate shelf wear, corner wear, light creasing, and a price sticker. Please review all photos carefully.</p>",
       "paymentMethods": [
         {
@@ -1701,5 +1701,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:51Z"
 }

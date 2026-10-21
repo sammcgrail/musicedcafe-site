@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "KA201",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1577,7 +1577,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970812597?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9UmJrkEzKXL7EV2TMmJbinJFQ53VFy9HgMDO5A5wiRFo7QhugjyEKpLoTOTbwN2GLTIOdfycPeVMOGWu3dXZ9YuJRqxrkThhYFTVtjvXOgDfuCNV7tJmZLr1mxyP6LtgcvG7Iz2MfRPdjgcff0Vd%2B4wrNinoqntUS8sjL8Q9jeFQL5uulO882bObLkyGhcDrI%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970812597?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9UmJrkEzKXL7EV2TMmJbinJFQ53VFy9HgMDO5A5wiRFjfCyOLwFz3Or9m5S3SrQUowMK%2FKKvRgTevIyyR5d4IUlMq7W03o9cuNXBNPNg5zZfK2uYNwaryYCNQev0hvUGw1tnRpR%2B1QJ8LHiPVACD0Be494kkJkVrNxbXC169T0UpQdKgs64Ffu0XDeFL%2Bxr5Y%3D",
       "description": "<p data-start=\"1231\" data-end=\"1387\" class=\"PDq2pG_selectionAnchorContainer\">Original 1965 45 RPM single from <strong data-start=\"1264\" data-end=\"1287\">The Lovin' Spoonful</strong> featuring the classic hit <strong data-start=\"1314\" data-end=\"1343\">\"Do You Believe In Magic\"</strong> with <strong data-start=\"1349\" data-end=\"1372\">\"On The Road Again\"</strong> on the B-side.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1389\" data-end=\"1548\">An iconic folk-rock single from one of the defining bands of the 1960s. Great for collectors of classic rock, AM radio hits, jukebox records, or vintage vinyl.</p>\n<p data-start=\"1550\" data-end=\"1650\">Ships securely in a new paper sleeve inside a protective poly sleeve and rigid 45 RPM record mailer.</p>",
       "paymentMethods": [
         {
@@ -1634,5 +1634,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:49Z"
 }

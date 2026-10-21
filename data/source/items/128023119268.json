@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "MCA53367",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1596,7 +1596,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023119268?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BtDtbTHtvTWQxRMHI8721PMyKkf7i4hLWW7vOUA%2F81zXOjnMSQBRHfdb6hYR7w5aPZDvMIr%2FxSHOcRL6mn7X06E%2BfqS3u7mC6K1UyoV8HGeyyC6c%2BDgcXGhgGcrZ1guA%2Fc1iM8jcXQBsZJ9V%2FuNMf%2FTt0DZskijFgBrZuA%2B3o9LhaF%2FMZukLP3mVeQ%2BtjmvY4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023119268?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BtDtbTHtvTWQxRMHI8721PMyKkf7i4hLWW7vOUA%2F81zYjl3PgKBez8dGx%2F3c657UWHyDJCB1sbgyMGL25N8KRqIqKqdWbikXonHj8YixSUlB5qqLHV%2B19XHPQFGfb4rxsSr%2B%2FT4yRAnvG8TWcsOrFzLm22541JdQPwAYsXCcc%2BLSjLxFeZm6IaSuUSa%2Br9mE8%3D",
       "description": "<p>Brenda K. Starr – What You See Is What You Get / Giving You All My Love – MCA-53367 – 1988 7” 45 RPM</p><br /><p>Original U.S. MCA Records 7-inch single from 1988.</p><br /><p>Side A: What You See Is What You Get – 3:23</p><p>Side B: Giving You All My Love – 5:31</p><br /><p>Vinyl appears VG+ visually, retaining good gloss with light surface and handling marks consistent with age and previous play.</p><br /><p>Labels are clean and readable.</p><br /><p>Includes the generic yellow paper sleeve shown in the photos. Sleeve has age-related discoloration, staining and handling wear.</p><br /><p>Visually graded unless otherwise noted. Please review all photos carefully for exact condition.</p>",
       "paymentMethods": [
         {
@@ -1653,5 +1653,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:12Z"
 }

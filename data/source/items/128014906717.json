@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -92,8 +92,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1550,7 +1550,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014906717?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8s0R%2F5ruvEpuwyV6uWP7f6WvyOtx3LVBpoFVmdgFB0dwSGMmyUv%2B9NnZQqeW%2FTOOlro%2FRWvTu7Tp9D10YdPuIa2FxQV7l%2FmCSkBv%2B5sB0CpSvydlsegM6Wi2HhwdeEnlR1FO2B%2Fratxu2o60w7L8zWvng1KxAi%2FmE7BsbDBXnxc5ZKOZ0Fn775ldPOD5Y6LCs%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014906717?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8s0R%2F5ruvEpuwyV6uWP7f6WvyOtx3LVBpoFVmdgFB0d7cw6K%2F8%2FJkbFKVMWqv5IKdysfgGm1kkgCcfTyrsAjajKDJrfrBMNsQhnVB%2F45iuUKbaT7FO55xNklgvnpLA8X%2BZ6hXbjJa1BMUwTIi%2Fm0a4BTAh17EJV94IQv%2Fyk7QX87XEVgoNIpXcWu0ayqqoUhg%3D",
       "description": "<p>Vintage 1977 Merle Haggard 7-inch 45 RPM single on MCA Records.</p><br /><p>Features:</p><br /><p>From Graceland to the Promised Land</p><p>b/w</p><p>Are You Lonesome Tonight</p><br /><p>MCA Records MCA-40804.</p><br /><p>A great Merle Haggard collectible with an interesting Elvis Presley connection. “From Graceland to the Promised Land” was written by Haggard, while the flip features his rendition of “Are You Lonesome Tonight.” Both sides feature vocal accompaniment by The Jordanaires.</p><br /><p>Vinyl retains good gloss with visible light scratches, scuffs and signs of previous play. Labels show minor age/use wear but remain clean and readable.</p><br /><p>Visually graded approximately VG. Please review all photographs carefully for exact condition. Record only; no original picture sleeve included.</p>",
       "paymentMethods": [
         {
@@ -1607,5 +1607,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:45Z"
 }

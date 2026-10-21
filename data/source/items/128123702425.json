@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -78,7 +78,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "BFL10999",
       "estimatedAvailabilities": [
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1631,7 +1631,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128123702425?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9LeE8N23sMBnuPNghxaerUIcT5MmNIsLx9eJbK%2FpgNmfG2GSOtGR83yAbHlQIzr%2Bm4dMi0j7dr4%2FHoYgNdaU3FqejOTEAK%2Bw6AYaNS65y%2BRUBtHU3vMq4R64%2FZt4L5gPTb2kAVvHbnjlISRIZj9w%2BZqN4gQTxIno7tMAaqxVg%2FFNzX6QDnLLORJ5%2FAyHIrBPI%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128123702425?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9LeE8N23sMBnuPNghxaerUIcT5MmNIsLx9eJbK%2FpgNmcYAWLnQxzTe5zV6BXk0mD2%2FRM9RUGwSlGkcr39XHCV%2B2EdyrTaCXbjGxcAw353XPKpwL1PT5wTNqXQwcwrCcBeAnzKiTvbVhD%2BT04tHn6EJjxg6iZrIZTtzKR4SPK%2BAxxDzk%2FiB%2BV%2Fix0tZD7kwOUM%3D",
       "description": "<p><strong>Jefferson Starship – Red Octopus</strong></p><p>Grunt Records – BFL1-0999<br>1975 U.S. Stereo LP<br>Classic Rock / Psychedelic Rock</p><p>Classic 1975 Jefferson Starship album featuring Grace Slick, Marty Balin, Paul Kantner and the hit <strong>“Miracles.”</strong></p><p><strong>Tracklist:</strong><br>Side A: Fast Buck Freddie, Miracles, Git Fiddler, Ai Garimasu (There Is Love), Sweeter Than Honey<br>Side B: Play on Love, Tumblin’, I Want to See Another World, Sandalphon, There Will Be Love. <a >Rectangle Triangle</a></p><p><strong>Condition:</strong><br><strong>Vinyl: VG+</strong> – retains good gloss with light surface marks visible under direct lighting. No obvious severe scratches visible in the photos.</p><p><strong>Cover: G+/VG</strong> – significant shelf wear, creasing and surface wear throughout, including multiple prominent creases across the front. No major missing sections. Please review all photos carefully for exact cosmetic condition.</p><p><strong>Artist:</strong> Jefferson Starship<br><strong>Album:</strong> Red Octopus<br><strong>Label:</strong> Grunt Records<br><strong>Catalog Number:</strong> BFL1-0999<br><strong>Year:</strong> 1975<br><strong>Format:</strong> 12\" LP, 33⅓ RPM, Stereo<br><strong>Country:</strong> USA<br><strong>Genre:</strong> Rock<br><strong>Style:</strong> Classic Rock / Psychedelic Rock</p>",
       "paymentMethods": [
         {
@@ -1688,5 +1688,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:24:59Z"
 }

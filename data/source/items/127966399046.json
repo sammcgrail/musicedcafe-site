@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -71,7 +71,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "WBS49150",
       "estimatedAvailabilities": [
@@ -96,8 +96,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1604,7 +1604,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127966399046?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9FRSi1t0dQSreTBYJSJzds02sn2thOvC9PDoL0AEi%2FN1nxwi4ahAe56Brc7DkJYOFpCBc1H8WO1MpopSeR%2BoBErmAhj0%2FPprmVDMUiXAKygxzHSSszDYSLL0Uncp9puiHDUdzZs38b1rIns4pFd7%2Ffm48jNtAVQ9De%2FyxhrGpa6zfzy0Osm1CCxxXJSaGtG1c%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127966399046?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9FRSi1t0dQSreTBYJSJzds02sn2thOvC9PDoL0AEi%2FNyrO35saF7LsvKJSz2zD7nw%2BWU9%2BOwyvkZytyWiHVeDVuCrXwy1bdhx2GmRNQVTBOh3dC8URU%2B9%2B%2FP4LyG40sqsxQVTLcvo5f7%2By7%2BVAD4wKntOUUfZ53apFrovodhGHKynZq2K4k4K00SCf5Wx2%2BOc%3D",
       "description": "<h3 data-section-id=\"2w70em\" data-start=\"969\" data-end=\"1027\" class=\"PDq2pG_selectionAnchorContainer\"><span role=\"text\">Fleetwood Mac – <em data-start=\"989\" data-end=\"995\">Sara</em> / <em data-start=\"998\" data-end=\"1020\">That's Enough for Me</em> (1979)</span><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></h3>\n<p data-start=\"1029\" data-end=\"1188\">Original 1979 Warner Bros. 7-inch 45 RPM single featuring <strong data-start=\"1087\" data-end=\"1098\">\"Sara,\"</strong> written by Stevie Nicks and released from Fleetwood Mac's landmark double album <strong data-start=\"1179\" data-end=\"1187\">Tusk</strong>.</p>\n<p data-start=\"1190\" data-end=\"1200\"><strong data-start=\"1190\" data-end=\"1200\">Tracks</strong></p>\n<p data-start=\"1202\" data-end=\"1212\"><strong data-start=\"1202\" data-end=\"1212\">Side A</strong></p>\n<ul data-start=\"1213\" data-end=\"1219\">\n<li data-section-id=\"1j4dje1\" data-start=\"1213\" data-end=\"1219\">\nSara\n</li>\n</ul>\n<p data-start=\"1221\" data-end=\"1231\"><strong data-start=\"1221\" data-end=\"1231\">Side B</strong></p>\n<ul data-start=\"1232\" data-end=\"1254\">\n<li data-section-id=\"7f7crc\" data-start=\"1232\" data-end=\"1254\">\nThat's Enough for Me\n</li>\n</ul>\n<p data-start=\"1256\" data-end=\"1316\">A great collectible for Fleetwood Mac and Stevie Nicks fans.</p>\n<hr data-start=\"1318\" data-end=\"1321\">\n<h2 data-section-id=\"hrykuu\" data-start=\"1323\" data-end=\"1335\">Condition</h2>\n<h3 data-section-id=\"75rooy\" data-start=\"1337\" data-end=\"1346\">Vinyl</h3>\n<p data-start=\"1347\" data-end=\"1369\"><strong data-start=\"1347\" data-end=\"1369\">VG+ (Visual Grade)</strong></p>\n<ul data-start=\"1371\" data-end=\"1503\">\n<li data-section-id=\"13ywv10\" data-start=\"1371\" data-end=\"1392\">\nNice original gloss\n</li>\n<li data-section-id=\"6ps0av\" data-start=\"1393\" data-end=\"1441\">\nLight surface/sleeve marks consistent with age\n</li>\n<li data-section-id=\"xq7cce\" data-start=\"1442\" data-end=\"1488\">\nNo cracks, chips, or deep scratches observed\n</li>\n<li data-section-id=\"1u310go\" data-start=\"1489\" data-end=\"1503\">\nClean labels\n</li>\n</ul>\n<h3 data-section-id=\"p47w8a\" data-start=\"1505\" data-end=\"1515\">Sleeve</h3>\n<p data-start=\"1516\" data-end=\"1614\">No picture sleeve is included. Ships in a protective generic 45 RPM sleeve unless otherwise noted.</p>\n<p data-start=\"1616\" data-end=\"1687\">Please review all photos carefully as they are part of the description.</p>",
       "paymentMethods": [
         {
@@ -1661,5 +1661,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:24Z"
 }

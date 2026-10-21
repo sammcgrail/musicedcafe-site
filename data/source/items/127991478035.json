@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SD19181, KSD19181",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -336,24 +336,24 @@
             "regionId": "CO"
           },
           {
-            "regionName": "Spain",
-            "regionType": "COUNTRY",
-            "regionId": "ES"
-          },
-          {
             "regionName": "Iceland",
             "regionType": "COUNTRY",
             "regionId": "IS"
           },
           {
-            "regionName": "Estonia",
+            "regionName": "Spain",
             "regionType": "COUNTRY",
-            "regionId": "EE"
+            "regionId": "ES"
           },
           {
             "regionName": "Macedonia",
             "regionType": "COUNTRY",
             "regionId": "MK"
+          },
+          {
+            "regionName": "Estonia",
+            "regionType": "COUNTRY",
+            "regionId": "EE"
           },
           {
             "regionName": "Belgium",
@@ -411,11 +411,6 @@
             "regionId": "EC"
           },
           {
-            "regionName": "Italy",
-            "regionType": "COUNTRY",
-            "regionId": "IT"
-          },
-          {
             "regionName": "Albania",
             "regionType": "COUNTRY",
             "regionId": "AL"
@@ -424,6 +419,11 @@
             "regionName": "Swaziland",
             "regionType": "COUNTRY",
             "regionId": "SZ"
+          },
+          {
+            "regionName": "Italy",
+            "regionType": "COUNTRY",
+            "regionId": "IT"
           },
           {
             "regionName": "Ethiopia",
@@ -501,14 +501,14 @@
             "regionId": "ML"
           },
           {
-            "regionName": "Republic of Croatia",
-            "regionType": "COUNTRY",
-            "regionId": "HR"
-          },
-          {
             "regionName": "Botswana",
             "regionType": "COUNTRY",
             "regionId": "BW"
+          },
+          {
+            "regionName": "Republic of Croatia",
+            "regionType": "COUNTRY",
+            "regionId": "HR"
           },
           {
             "regionName": "Madagascar",
@@ -671,14 +671,14 @@
             "regionId": "GD"
           },
           {
-            "regionName": "Romania",
-            "regionType": "COUNTRY",
-            "regionId": "RO"
-          },
-          {
             "regionName": "Greece",
             "regionType": "COUNTRY",
             "regionId": "GR"
+          },
+          {
+            "regionName": "Romania",
+            "regionType": "COUNTRY",
+            "regionId": "RO"
           },
           {
             "regionName": "Costa Rica",
@@ -721,14 +721,14 @@
             "regionId": "NP"
           },
           {
-            "regionName": "Lithuania",
-            "regionType": "COUNTRY",
-            "regionId": "LT"
-          },
-          {
             "regionName": "Bahamas",
             "regionType": "COUNTRY",
             "regionId": "BS"
+          },
+          {
+            "regionName": "Lithuania",
+            "regionType": "COUNTRY",
+            "regionId": "LT"
           },
           {
             "regionName": "Trinidad and Tobago",
@@ -746,14 +746,14 @@
             "regionId": "MW"
           },
           {
-            "regionName": "Hungary",
-            "regionType": "COUNTRY",
-            "regionId": "HU"
-          },
-          {
             "regionName": "Bosnia and Herzegovina",
             "regionType": "COUNTRY",
             "regionId": "BA"
+          },
+          {
+            "regionName": "Hungary",
+            "regionType": "COUNTRY",
+            "regionId": "HU"
           },
           {
             "regionName": "Angola",
@@ -771,14 +771,14 @@
             "regionId": "TN"
           },
           {
-            "regionName": "Luxembourg",
-            "regionType": "COUNTRY",
-            "regionId": "LU"
-          },
-          {
             "regionName": "Uganda",
             "regionType": "COUNTRY",
             "regionId": "UG"
+          },
+          {
+            "regionName": "Luxembourg",
+            "regionType": "COUNTRY",
+            "regionId": "LU"
           },
           {
             "regionName": "Brazil",
@@ -1627,7 +1627,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127991478035?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde98gG7rHD%2BSjbevexM8QmBt8FcqnedopVJSYOrD0B%2Bisb2HnL3aJehA1jJBMJkJEEnMeKUJIT16wnSObLrZBFmbjHGZl93fxiy%2FnAfTYwTs2TfceEwa3WDy95Jx4PvU0WpmN%2Fz%2FyptinPgPuBTR9Tbn073eCsr1abNa%2FpRUG5rGpT0zGaHA%2BoVvGs5vJ2AnUJ4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127991478035?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde98gG7rHD%2BSjbevexM8QmBt8FcqnedopVJSYOrD0B%2BisQJ77GMGrLjYczmg7%2FKWbIrV%2BlFV%2BqYHVwAFbpA21fO7H1i3N6lADDaXwA3bZqFBbslfAuayW%2Fva%2BM7UdCocOU8J7ldCurJcBfJXSw9Z9VqHtBGwFgrW9XcMY5ZMM2FZ4noO0LHMvTzo3KdbDElhGuU%3D",
       "description": "<h2 data-section-id=\"mw8iff\" data-start=\"1062\" data-end=\"1108\" class=\"PDq2pG_selectionAnchorContainer\"><span role=\"text\">Peter Gabriel – <em data-start=\"1081\" data-end=\"1096\">Peter Gabriel</em> (\"Scratch\")</span><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></h2>\n<p data-start=\"1110\" data-end=\"1359\">Original 1978 Atlantic Records pressing of Peter Gabriel's acclaimed second solo album, commonly known by fans as <strong data-start=\"1224\" data-end=\"1238\">\"Scratch.\"</strong> Produced by Robert Fripp, this release showcases Gabriel's evolving art-rock sound following his departure from Genesis.</p>\n<h3 data-section-id=\"px97i\" data-start=\"1361\" data-end=\"1389\">Features Songs Including</h3>\n<ul data-start=\"1390\" data-end=\"1521\">\n<li data-section-id=\"3v30a2\" data-start=\"1390\" data-end=\"1402\">\nOn the Air\n</li>\n<li data-section-id=\"1vijas2\" data-start=\"1403\" data-end=\"1411\">\nD.I.Y.\n</li>\n<li data-section-id=\"krdsm1\" data-start=\"1412\" data-end=\"1432\">\nMother of Violence\n</li>\n<li data-section-id=\"11wla21\" data-start=\"1433\" data-end=\"1447\">\nWhite Shadow\n</li>\n<li data-section-id=\"1rbaxsa\" data-start=\"1448\" data-end=\"1456\">\nIndigo\n</li>\n<li data-section-id=\"1i8igzz\" data-start=\"1457\" data-end=\"1471\">\nAnimal Magic\n</li>\n<li data-section-id=\"1gsicb\" data-start=\"1472\" data-end=\"1482\">\nExposure\n</li>\n<li data-section-id=\"1excbk9\" data-start=\"1483\" data-end=\"1503\">\nFlotsam and Jetsam\n</li>\n<li data-section-id=\"102xcd4\" data-start=\"1504\" data-end=\"1521\">\nHome Sweet Home\n</li>\n</ul>\n<p data-start=\"1523\" data-end=\"1619\">A must-have album for fans of Peter Gabriel, Genesis, progressive rock, and late-1970s art rock.</p>\n<hr data-start=\"1621\" data-end=\"1624\">\n<h2 data-section-id=\"hrykuu\" data-start=\"1626\" data-end=\"1638\">Condition</h2>\n<p data-start=\"1640\" data-end=\"1673\"><strong data-start=\"1640\" data-end=\"1651\">Record:</strong> VG+</p>\n<ul data-start=\"1674\" data-end=\"1819\">\n<li data-section-id=\"1xr1mmo\" data-start=\"1674\" data-end=\"1693\">\nNice glossy vinyl\n</li>\n<li data-section-id=\"18aqeq\" data-start=\"1694\" data-end=\"1749\">\nLight sleeve marks and surface scuffs from normal use\n</li>\n<li data-section-id=\"uk5sp5\" data-start=\"1750\" data-end=\"1778\">\nNo deep scratches observed\n</li>\n<li data-section-id=\"au6kbo\" data-start=\"1779\" data-end=\"1819\">\nNot play tested unless otherwise noted\n</li>\n</ul>\n<p data-start=\"1821\" data-end=\"1834\"><strong data-start=\"1821\" data-end=\"1831\">Cover:</strong> VG</p>\n<ul data-start=\"1835\" data-end=\"2012\">\n<li data-section-id=\"1fnrrrb\" data-start=\"1835\" data-end=\"1866\">\nModerate edge and corner wear\n</li>\n<li data-section-id=\"tyg3v2\" data-start=\"1867\" data-end=\"1898\">\nLight creasing and shelf wear\n</li>\n<li data-section-id=\"ucjn4k\" data-start=\"1899\" data-end=\"1938\">\nSmall surface tear on the front cover\n</li>\n<li data-section-id=\"1572fxl\" data-start=\"1939\" data-end=\"1961\">\nNo major seam splits\n</li>\n<li data-section-id=\"1xzsod4\" data-start=\"1962\" data-end=\"2012\">\nPlease review all photos for the exact condition</li></ul>",
       "paymentMethods": [
         {
@@ -1684,5 +1684,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:19Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "FB12211",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1581,7 +1581,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128022907773?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B4psDOYN3o5garsoNe%2FCrBm%2BbSq53jLF1tVhXMNg%2B3HgE0%2BqPRD77lfHB6teSNf%2B8YPDQGIKCtYtVvzrckwq0IbScrkGMGY2Foy%2Bd7a7A9xn%2FV3icPd3Jqi99qxeE9go0%2BK90CXd51rHzJF1c6wz2Lp1Yg30abNRryo3M%2Fmw1hPJeqikVIO3Nem91meMPU9UE%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128022907773?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B4psDOYN3o5garsoNe%2FCrBm%2BbSq53jLF1tVhXMNg%2B3HloaZoCqsDWwi3M6f64NVIwweSItIAdHJudAmllcO%2FzJ4cw85ic16h%2BbAnQF5LrQVy4HUA8sVVJIRi51%2F2HcpsYiiZlOk%2Bob%2BURw9WrahrHGCW4Seuq1OxsCrJEg6CRZlQYXhwv3hgg8tGAGx4Ta1eY%3D",
       "description": "<p>Jefferson Starship – “Find Your Way Back” / “Modern Times”</p><br /><p>Original 1981 U.S. 7-inch 45 RPM single on Grunt Records.</p><br /><p>Artist: Jefferson Starship</p><p>Label: Grunt Records</p><p>Catalog #: FB-12211</p><p>Format: 7” Vinyl / 45 RPM / Stereo</p><p>Year: 1981</p><p>Country: USA</p><p>Genre: Classic Rock / Rock</p><br /><p>Track List:</p><p>A – Find Your Way Back – 3:49</p><p>B – Modern Times – 2:36</p><br /><p>Vinyl is in approximately VG visual condition with light surface marks/scuffs consistent with normal age and use. Small vintage handwritten inventory sticker/tape is present on the “Find Your Way Back” label.</p><br /><p>Includes the plain paper sleeve shown in the photos.</p><br /><p>Please review photos carefully for exact cosmetic condition. Sold as pictured.</p>",
       "paymentMethods": [
         {
@@ -1638,5 +1638,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:23Z"
 }

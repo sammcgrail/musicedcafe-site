@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -88,7 +88,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PS589",
       "estimatedAvailabilities": [
@@ -113,8 +113,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1616,7 +1616,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127919539405?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F6xT1WPn4YLOMNW8jbgeADHIMQr2FORmn7jHqFKPdOinpqRlRi9c5Jf1HLezUbilPFOMLQJKJKs%2BohY62Jl0ablgkITd3RY9szFe66dVKCLYpxWwUbfygBsLmzXi62R8qlYfmh%2BlZyRTBX42MiROn0mNyuR9QXVCobWgxRLCcUdqhJtLYBODS5je1lDfI0fEY%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127919539405?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F6xT1WPn4YLOMNW8jbgeADHIMQr2FORmn7jHqFKPdOimKCboIe9rR0kSLYcdPGOVxZtvbDxkqwufK444ubSbudQ0kjLHICwV6hfzTa2L3jxmIquWc6Il664Bw33x%2Fn%2Fyg%2Bbtf8iir0VL%2FvyPtf40prKo%2FuXw%2FcoVp7deCri9ed%2BR8s0ioDKjxEm1PX2yGoQsg%3D",
       "description": "<p data-start=\"1114\" data-end=\"1146\"><strong data-start=\"1114\" data-end=\"1146\">John Mayall – Live In Europe</strong></p>\n<p data-start=\"1148\" data-end=\"1214\">Label: London Records<br data-start=\"1169\" data-end=\"1172\">\nCatalog: PS 589<br data-start=\"1187\" data-end=\"1190\">\nFormat: Vinyl LP, Stereo</p>\n<p data-start=\"1216\" data-end=\"1304\">Classic live blues recording from John Mayall featuring extended performances including:</p>\n<ul data-start=\"1306\" data-end=\"1382\">\n<li data-section-id=\"1khship\" data-start=\"1306\" data-end=\"1317\">\nThe Train\n</li>\n<li data-section-id=\"osdjyq\" data-start=\"1318\" data-end=\"1332\">\nCrying Shame\n</li>\n<li data-section-id=\"ldym4x\" data-start=\"1333\" data-end=\"1342\">\nHelp Me\n</li>\n<li data-section-id=\"1w8d0xu\" data-start=\"1343\" data-end=\"1356\">\nBlues In Bb\n</li>\n<li data-section-id=\"x9kt8m\" data-start=\"1357\" data-end=\"1382\">\nSoul Of A Short Fat Man\n</li>\n</ul>\n<p data-start=\"1384\" data-end=\"1397\"><strong data-start=\"1384\" data-end=\"1397\">Condition</strong></p>\n<p data-start=\"1399\" data-end=\"1415\"><strong data-start=\"1399\" data-end=\"1409\">Vinyl:</strong> VG+</p>\n<ul data-start=\"1416\" data-end=\"1524\">\n<li data-section-id=\"oak18m\" data-start=\"1416\" data-end=\"1439\">\nStrong original gloss\n</li>\n<li data-section-id=\"1q05ds0\" data-start=\"1440\" data-end=\"1494\">\nLight surface marks consistent with age and handling\n</li>\n<li data-section-id=\"xkkpl2\" data-start=\"1495\" data-end=\"1524\">\nNo major scratches observed\n</li>\n</ul>\n<p data-start=\"1526\" data-end=\"1541\"><strong data-start=\"1526\" data-end=\"1536\">Cover:</strong> VG</p>\n<ul data-start=\"1542\" data-end=\"1676\">\n<li data-section-id=\"1h6vt4b\" data-start=\"1542\" data-end=\"1562\">\nGeneral shelf wear\n</li>\n<li data-section-id=\"q7t4vd\" data-start=\"1563\" data-end=\"1606\">\nRing wear and discoloration on back cover\n</li>\n<li data-section-id=\"1vjyi06\" data-start=\"1607\" data-end=\"1629\">\nCorner and edge wear\n</li>\n<li data-section-id=\"46df4c\" data-start=\"1630\" data-end=\"1676\">\nSmall area of sticker residue on front cover\n</li>\n</ul>\n<p data-start=\"1678\" data-end=\"1735\">Please review all photos carefully for condition details.</p>\n<p data-start=\"1737\" data-end=\"1907\">A solid copy of a late-1960s British blues classic and a great addition for collectors of John Mayall, British Blues, Bluesbreakers, and vintage London Records pressings.</p>",
       "paymentMethods": [
         {
@@ -1673,5 +1673,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:59Z"
 }

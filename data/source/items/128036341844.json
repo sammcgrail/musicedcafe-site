@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "8872777",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1587,7 +1587,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036341844?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9BlvfVcTNcJkBb6Bs6ttv%2FFYNj--dPMEtJksBXfLj5mXwkNpobrqNtOlyYelarec2ZEOQ9BLXW5hanEyxAX%2B5FeJLP4HRRLB8OL1FpGVOt6Hnt4yTaKhvrZ--ZVsBuhhvOvgxDcneimOfinaRyYflYVraD90KP1BIzQuCJIEzY2uCUlUYMewdvCgWk1g27Fgk%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036341844?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9BlvfVcTNcJkBb6Bs6ttv%2FFYNj--dPMEtJksBXfLj5mV56W2ume8%2BfYI7MYFTXYKm7irJGPxjAFzhR277UgIW5uIq0v4QHm9F93784aTt1G9PzXwtefYL19RF%2Bb%2B9j%2Bqtf9cs3x5n%2F8%2BbyVwqaXt9dxDkG3j5rZj8IGUTPLFYDXPM19U9Ofc%2FkDSCOFKPhgvM%3D",
       "description": "<p>Pepsi &amp; Shirlie All Right Now 7” 45 Polydor 887 277-7 1987 Vinyl Single</p><br /><p>Artist: Pepsi &amp; Shirlie</p><p>A-Side: All Right Now</p><p>B-Side: Feels Like the First Time</p><p>Label: Polydor</p><p>Catalog Number: 887 277-7</p><p>Format: 7” Vinyl Single / 45 RPM / Stereo</p><p>Year: 1987</p><p>Country: USA</p><br /><p>Original 1987 U.S. Polydor 45 from British pop duo Pepsi &amp; Shirlie, featuring “All Right Now” backed with “Feels Like the First Time.”</p><br /><p>A great addition for collectors of 1980s pop, dance, R&amp;B and British pop singles.</p><br /><p>Condition:</p><p>Vinyl is in approximately VG visual condition, showing surface marks and light scratches consistent with previous play. Labels remain fully readable with some visible age and discoloration.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p><br /><p>Ships securely in protective packaging designed for 7-inch records.</p>",
       "paymentMethods": [
         {
@@ -1644,5 +1644,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:04Z"
 }

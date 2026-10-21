@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "M1171",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1607,7 +1607,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970953405?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BW8oNm1zFTdnyyKat1Vd%2BlTu8m6SIgsx7pRL1h6nWzMhq0ZdBKwur%2FXBoXmDKdLjVC%2BF814FghqeG7ZJQXkglowYJ5hp62A%2FdNh46C7IBtDjJEAblHionn7Hqyqyaj3y2VyUj3B6efelMalVGOD5KVbpOeXCk%2FUaCYyuJr%2BvUxv%2Be0GIq6v4FifPsOO37q%2Bkg%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970953405?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BW8oNm1zFTdnyyKat1Vd%2BlTu8m6SIgsx7pRL1h6nWzMsJXzyVshOwUIEnCni2xHcDldWiucyCgoyVFsSnqGeKPJd%2Ba4HfGLGqOQxlSsrcAt0O4ciJMBE3xn%2F50ZFis%2BO1pRQFYGDntmu3qC6aOwGSOVfjIq9u9OqBdx9PETOGAuCX5OaRPpsQaplkMmtQemD4%3D",
       "description": "<p data-start=\"1290\" data-end=\"1300\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"1290\" data-end=\"1300\"></strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<ul data-start=\"1301\" data-end=\"1316\">\n<li data-section-id=\"er94i7\" data-start=\"1301\" data-end=\"1316\"><p data-start=\"1218\" data-end=\"1288\" class=\"PDq2pG_selectionAnchorContainer\">Original Motown Records 45 featuring two classic Jackson 5 recordings.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1290\" data-end=\"1300\" class=\"\"><strong data-start=\"1290\" data-end=\"1300\">Side A</strong></p>\n<ul data-start=\"1301\" data-end=\"1316\">\n<li data-section-id=\"er94i7\" data-start=\"1301\" data-end=\"1316\">\nI'll Be There\n</li>\n</ul>\n<p data-start=\"1318\" data-end=\"1328\"><strong data-start=\"1318\" data-end=\"1328\">Side B</strong></p>\n<ul data-start=\"1329\" data-end=\"1346\">\n<li data-section-id=\"9ehcgr\" data-start=\"1329\" data-end=\"1346\">\nOne More Chance\n</li>\n</ul>\n<p data-start=\"1348\" data-end=\"1551\">\"I'll Be There\" became one of Motown's biggest-selling singles and remains one of the Jackson 5's signature songs. A great addition for collectors of Michael Jackson, Motown, classic soul, and 1970s pop.</p>\n<p data-start=\"1553\" data-end=\"1658\">Ships in a new paper sleeve with a protective poly sleeve and securely packaged in a rigid 45 RPM mailer.</p></li></ul>",
       "paymentMethods": [
         {
@@ -1664,5 +1664,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:32Z"
 }

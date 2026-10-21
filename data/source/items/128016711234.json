@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -62,7 +62,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "LSOD2004",
       "estimatedAvailabilities": [
@@ -87,8 +87,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1595,7 +1595,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128016711234?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9XEx4X0RI8jzLn7bse7hXj0UXp4DaJaxNkWM66qAtw4M2LQaktajFKoiFmBbprLF4Cwe8iwRv8utTG06LC0nvGqE2aexyK3DgLuGFDx1GBRMl5dGIxzO2Oa5FBw4SdqKtde65SmRUFfcQ6L7Bcr1Mzgoo0svGtIbUCPqPh5gHDUDQxrh5WU2IpbkFYCFY2hFM%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128016711234?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9XEx4X0RI8jzLn7bse7hXj0UXp4DaJaxNkWM66qAtw4JgMO0D4vpM4z5fi35MLxz%2Fnh%2Bg2w8PXHSSudU5%2FiPShSM0wRQY%2BCuCeH3ygbSEBzFS8CGztzxtzWfySqW5WLKtB6MdNmvBrsvIXoNLJaDyLhE0EioBVNjXIbPby0seu6o7xglPWZCXwf3DE0F51sHY%3D",
       "description": "<p>Lionel Bart’s Oliver! – Original Broadway Cast Recording – RCA Victor Living Stereo LP</p><br /><p>Vintage original Broadway cast recording of Lionel Bart’s classic musical Oliver!, starring Clive Revill and Georgia Brown.</p><br /><p>Released by RCA Victor as part of its celebrated Living Stereo series, catalog number LSOD-2004.</p><br /><p>Features music, book and lyrics by Lionel Bart and songs from one of Broadway’s most enduring musicals, including “Consider Yourself,” “Food, Glorious Food,” “Where Is Love?,” “I’d Do Anything” and “As Long as He Needs Me.”</p>",
       "paymentMethods": [
         {
@@ -1652,5 +1652,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:28Z"
 }

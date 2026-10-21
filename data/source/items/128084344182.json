@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PC34655",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1637,7 +1637,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128084344182?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8C%2FZKoMg1eIvGLwRaYhAegKZDLHuersfFp58a4VmTszSmQiKhmsiKBhvdiCljkOfeztn7UAHrxVQ5wg%2FI2Z0N3WwRT2Xz7TwTojIMAi5Pt2viS0TPkKF130LWzPdESF0FcfOFmi1lTWcE%2BfS6FghZyK3aFV9u%2FVyzjy%2FamDT7pu3i62qRPKWt0bi180uLOjW4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128084344182?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8C%2FZKoMg1eIvGLwRaYhAegKZDLHuersfFp58a4VmTszVvuRxYpqaQdYegHz2TBNHMq%2BzYvzCV49GEDLrJi%2BlDpUpc3XdjfE4WSZFIR%2FTp0cNyDQyNILNyxeGWGdqEAqrRRLRMdPQE8dschRm2VUotcHn%2FCoKvM3AVmT1C6LUsZg9LvcZiOGfUgjzIKg2%2FNR3k%3D",
       "description": "<p dir=\"auto\" data-start=\"1081\" data-end=\"1174\" class=\"PDq2pG_selectionAnchorContainer\">Kenny Loggins – <em data-start=\"1097\" data-end=\"1116\">Celebrate Me Home</em><br data-start=\"1116\" data-end=\"1119\">\nColumbia Records – PC 34655<br data-start=\"1146\" data-end=\"1149\">\n1977 U.S. Stereo Vinyl LP<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p dir=\"auto\" data-start=\"1176\" data-end=\"1486\">Kenny Loggins’ debut solo album following his work with Loggins &amp; Messina. Produced by <strong data-start=\"1263\" data-end=\"1292\">Phil Ramone and Bob James</strong>, the album includes the enduring title track <strong data-start=\"1338\" data-end=\"1362\">“Celebrate Me Home,”</strong> along with “Lady Luck,” “I Believe in Love,” “Why Do People Lie,” “Set It Free,” “Enter My Dream,” and “You Don’t Know Me.”</p>\n<p dir=\"auto\" data-start=\"1488\" data-end=\"1659\" class=\"\">Vinyl has good gloss with visible light surface marks and signs of normal handling/play. No obvious severe gouges are visible in the photos. <strong data-start=\"1629\" data-end=\"1659\">Visually graded VG to VG+.</strong></p>\n<p dir=\"auto\" data-start=\"1661\" data-end=\"1855\">Original jacket shows substantial shelf and age wear, including rubbing, scuffing, edge/corner wear, and general surface wear, particularly on the back. <strong data-start=\"1814\" data-end=\"1855\">Cover graded approximately G+ to VG-.</strong></p>\n<p dir=\"auto\" data-start=\"1857\" data-end=\"1939\">Please review all photos carefully, as they are part of the condition description.</p>\n<p dir=\"auto\" data-start=\"1941\" data-end=\"2097\"><strong data-start=\"1941\" data-end=\"1952\">Format:</strong> 12\" LP • 33⅓ RPM • Stereo<br data-start=\"1978\" data-end=\"1981\">\n<strong data-start=\"1981\" data-end=\"1991\">Genre:</strong> Soft Rock / Pop Rock / Singer-Songwriter<br data-start=\"2032\" data-end=\"2035\">\n<strong data-start=\"2035\" data-end=\"2044\">Year:</strong> 1977<br data-start=\"2049\" data-end=\"2052\">\n<strong data-start=\"2052\" data-end=\"2062\">Label:</strong> Columbia<br data-start=\"2071\" data-end=\"2074\">\n<strong data-start=\"2074\" data-end=\"2088\">Catalog #:</strong> PC 34655</p>\n<p dir=\"auto\" data-start=\"2099\" data-end=\"2313\" data-is-last-node=\"\" data-is-only-node=\"\"></p>",
       "paymentMethods": [
         {
@@ -1694,5 +1694,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:10Z"
 }

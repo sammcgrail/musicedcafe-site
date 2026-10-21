@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -91,7 +91,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "6049",
       "estimatedAvailabilities": [
@@ -116,8 +116,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1634,7 +1634,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127919531551?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B%2FRBX67Fm17s8iML5c0TbwLGdy2IzKBvSQ%2BvNJlvaS7mdwrkWhEZfkmX6wAbZ0tVKx2oYU4oyX23LS%2Bau9H1mEJoqOyBc1aD7Kp%2FNBCmTXermkwDStE%2BbalVMVU43ntPt3FfDvyLz6ua3wtoHH8O4bwVUAbnNvlEPoJLAWhIc6ohYFeoaHVPxQBTWoO6mLsvw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127919531551?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B%2FRBX67Fm17s8iML5c0TbwLGdy2IzKBvSQ%2BvNJlvaS7uF1XcMXDgbqywhcljIpi4xxZDaegc7%2Fg1qYZbNU9IyE9y5Qc08YVFEuS%2BctTye8ACIx1dugflw6uyPczG9rZJax7nHNvwJhnTkM0MCt9W6Xw%2FD9Rlkh5tEq5rOyxLYglBtUGhbp1UxKlEnc9AbvxEU%3D",
       "description": "<p data-start=\"1546\" data-end=\"1627\"><strong data-start=\"1546\" data-end=\"1627\">Herbie Hancock / Freddie Hubbard / Stanley Turrentine – In Concert Volume Two</strong></p>\n<p data-start=\"1629\" data-end=\"1649\">CTI Records CTI 6049</p>\n<p data-start=\"1651\" data-end=\"1819\">Classic live jazz fusion release featuring an all-star lineup including Herbie Hancock, Freddie Hubbard, Stanley Turrentine, Ron Carter, Jack DeJohnette, and Eric Gale.</p>\n<p data-start=\"1821\" data-end=\"1836\">Tracks include:</p>\n<ul data-start=\"1837\" data-end=\"1858\">\n<li data-section-id=\"plvglt\" data-start=\"1837\" data-end=\"1846\">\nHornets\n</li>\n<li data-section-id=\"q0cqd8\" data-start=\"1847\" data-end=\"1858\">\nGibraltar\n</li>\n</ul>\n<p data-start=\"1860\" data-end=\"1873\"><strong data-start=\"1860\" data-end=\"1873\">Condition</strong></p>\n<ul data-start=\"1874\" data-end=\"2080\">\n<li data-section-id=\"1amxjlg\" data-start=\"1874\" data-end=\"1957\">\nVinyl: G (retains good gloss with light surface wear visible under strong light)\n</li>\n<li data-section-id=\"1hnpcrs\" data-start=\"1958\" data-end=\"2028\">\nJacket: VG (moderate shelf wear and corner wear consistent with age)\n</li>\n<li data-section-id=\"txrtk8\" data-start=\"2029\" data-end=\"2052\">\nOriginal CTI pressing\n</li>\n<li data-section-id=\"47hqr7\" data-start=\"2053\" data-end=\"2080\">\nRecord visually inspected\n</li>\n</ul>\n<p data-start=\"2082\" data-end=\"2139\">Please review all photos carefully for condition details.</p>",
       "paymentMethods": [
         {
@@ -1691,5 +1691,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:00Z"
 }

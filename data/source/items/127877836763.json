@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "4228229431",
       "estimatedAvailabilities": [
@@ -106,8 +106,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1660,7 +1660,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127877836763?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8sD5xu7cSSdLcvvcfw0rex0i9jlzAeRmHD5E9gzahwtRp23drJ6fqdMqWPt63f9OZE5NvkABT1nRg3%2B4js0EC3rlLfNn2nBjQIWtU8yM6lKBr1AtU3BsjpxgeaO4M0P%2Fe3RmrVxuxvLbSK%2FCCHpnDZy%2FeENU01PKLo3kWmaV4i1kmNTRd9XnPoAoAxsUpuLFk%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127877836763?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8sD5xu7cSSdLcvvcfw0rex0i9jlzAeRmHD5E9gzahwtWoaOATMPwF9LrRq%2FV2gsvjLkGlLv7r6htXnuHeeW5Uel1R7rgYYIm7pX%2FxeavAhIDh1cOHmG2H0unM9eQZKyRp3MCScaBtY59pfHj90o2q407zbRixXFhASmjoSEIpFFmEl2nooPA5ik6Ce5kPgDDQ%3D",
       "description": "<h2 data-section-id=\"pwc8zs\" data-start=\"237\" data-end=\"267\">Kool &amp; The Gang – Emergency</h2>\n<p data-start=\"268\" data-end=\"346\">De-Lite Records / PolyGram<br data-start=\"294\" data-end=\"297\">\nCatalog #: 422-822 943-1<br data-start=\"321\" data-end=\"324\">\n1984 Original Pressing</p>\n<p data-start=\"348\" data-end=\"470\">Classic 1980s funk, soul, and dance album from Kool &amp; The Gang featuring the hit singles “Cherish,” “Fresh,” and “Misled.”</p>\n<p data-start=\"472\" data-end=\"529\">A must-have for funk, R&amp;B, disco, and 80s pop collectors.</p>\n<h3 data-section-id=\"17si63v\" data-start=\"531\" data-end=\"548\">Track Listing</h3>\n<h4 data-start=\"549\" data-end=\"562\">Side One</h4>\n<ul data-start=\"563\" data-end=\"601\">\n<li data-section-id=\"t9v4zl\" data-start=\"563\" data-end=\"574\">\nEmergency\n</li>\n<li data-section-id=\"1715jwi\" data-start=\"575\" data-end=\"582\">\nFresh\n</li>\n<li data-section-id=\"1tqk0mq\" data-start=\"583\" data-end=\"591\">\nMisled\n</li>\n<li data-section-id=\"6iz5s6\" data-start=\"592\" data-end=\"601\">\nCherish\n</li>\n</ul>\n<h4 data-start=\"603\" data-end=\"616\">Side Two</h4>\n<ul data-start=\"617\" data-end=\"658\">\n<li data-section-id=\"1aeefna\" data-start=\"617\" data-end=\"628\">\nSurrender\n</li>\n<li data-section-id=\"mwc1md\" data-start=\"629\" data-end=\"640\">\nBad Woman\n</li>\n<li data-section-id=\"n1xxcw\" data-start=\"641\" data-end=\"658\">\nYou Are The One</li></ul>",
       "paymentMethods": [
         {
@@ -1717,5 +1717,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:34Z"
 }

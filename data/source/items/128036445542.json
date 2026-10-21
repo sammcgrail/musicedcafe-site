@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -71,7 +71,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "RS8010",
       "estimatedAvailabilities": [
@@ -96,8 +96,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -328,24 +328,24 @@
             "regionId": "CO"
           },
           {
-            "regionName": "Spain",
-            "regionType": "COUNTRY",
-            "regionId": "ES"
-          },
-          {
             "regionName": "Iceland",
             "regionType": "COUNTRY",
             "regionId": "IS"
           },
           {
-            "regionName": "Estonia",
+            "regionName": "Spain",
             "regionType": "COUNTRY",
-            "regionId": "EE"
+            "regionId": "ES"
           },
           {
             "regionName": "Macedonia",
             "regionType": "COUNTRY",
             "regionId": "MK"
+          },
+          {
+            "regionName": "Estonia",
+            "regionType": "COUNTRY",
+            "regionId": "EE"
           },
           {
             "regionName": "Belgium",
@@ -403,11 +403,6 @@
             "regionId": "EC"
           },
           {
-            "regionName": "Italy",
-            "regionType": "COUNTRY",
-            "regionId": "IT"
-          },
-          {
             "regionName": "Albania",
             "regionType": "COUNTRY",
             "regionId": "AL"
@@ -416,6 +411,11 @@
             "regionName": "Swaziland",
             "regionType": "COUNTRY",
             "regionId": "SZ"
+          },
+          {
+            "regionName": "Italy",
+            "regionType": "COUNTRY",
+            "regionId": "IT"
           },
           {
             "regionName": "Ethiopia",
@@ -493,14 +493,14 @@
             "regionId": "ML"
           },
           {
-            "regionName": "Republic of Croatia",
-            "regionType": "COUNTRY",
-            "regionId": "HR"
-          },
-          {
             "regionName": "Botswana",
             "regionType": "COUNTRY",
             "regionId": "BW"
+          },
+          {
+            "regionName": "Republic of Croatia",
+            "regionType": "COUNTRY",
+            "regionId": "HR"
           },
           {
             "regionName": "Madagascar",
@@ -663,14 +663,14 @@
             "regionId": "GD"
           },
           {
-            "regionName": "Romania",
-            "regionType": "COUNTRY",
-            "regionId": "RO"
-          },
-          {
             "regionName": "Greece",
             "regionType": "COUNTRY",
             "regionId": "GR"
+          },
+          {
+            "regionName": "Romania",
+            "regionType": "COUNTRY",
+            "regionId": "RO"
           },
           {
             "regionName": "Costa Rica",
@@ -713,14 +713,14 @@
             "regionId": "NP"
           },
           {
-            "regionName": "Lithuania",
-            "regionType": "COUNTRY",
-            "regionId": "LT"
-          },
-          {
             "regionName": "Bahamas",
             "regionType": "COUNTRY",
             "regionId": "BS"
+          },
+          {
+            "regionName": "Lithuania",
+            "regionType": "COUNTRY",
+            "regionId": "LT"
           },
           {
             "regionName": "Trinidad and Tobago",
@@ -738,14 +738,14 @@
             "regionId": "MW"
           },
           {
-            "regionName": "Hungary",
-            "regionType": "COUNTRY",
-            "regionId": "HU"
-          },
-          {
             "regionName": "Bosnia and Herzegovina",
             "regionType": "COUNTRY",
             "regionId": "BA"
+          },
+          {
+            "regionName": "Hungary",
+            "regionType": "COUNTRY",
+            "regionId": "HU"
           },
           {
             "regionName": "Angola",
@@ -763,14 +763,14 @@
             "regionId": "TN"
           },
           {
-            "regionName": "Luxembourg",
-            "regionType": "COUNTRY",
-            "regionId": "LU"
-          },
-          {
             "regionName": "Uganda",
             "regionType": "COUNTRY",
             "regionId": "UG"
+          },
+          {
+            "regionName": "Luxembourg",
+            "regionType": "COUNTRY",
+            "regionId": "LU"
           },
           {
             "regionName": "Brazil",
@@ -1604,7 +1604,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036445542?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FSsxdviG%2BWLCmJoOl83%2FW2Lw%2BpBfio7EsqKbg%2Btg5o34U2k9Umi8KDQAo%2B7NS5uIYwI3NTEjANSIAyBknyPEnyfEcsdkAbEvYuegfDl1tuIcrR90P8xrSvL5hCiNtJJw7Odx6g9%2BpxrbsOPSiAPL3%2Bal7sP3mbuUP0tA%2FchV9JFq%2BeMjqFWiubWpORctBXvbo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036445542?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FSsxdviG%2BWLCmJoOl83%2FW2Lw%2BpBfio7EsqKbg%2Btg5o3xREGtVjj9wqULTpG9bT7norO3b7ITCJMsp5VQ7IVLnmJXACjjm2e5nyP75LRkojiDX150ETnTsXiqse1zhhXqg7hlZhKik9s47uf%2B59dR0WFESPTlrhFAhWhUs5gDO%2B0R8AVXtbzRo8SvjBlBnjil4%3D",
       "description": "<p>Bee Gees “How Can You Mend a Broken Heart” / “To Love Somebody” 7-inch 45 RPM vinyl single on RSO Records, catalog RS 8010.</p><br /><p>Two classic Bee Gees recordings on one single.</p><br /><p>Side A: How Can You Mend a Broken Heart</p><p>Side B: To Love Somebody</p><br /><p>Vinyl appears approximately VG+ visually, retaining good gloss with light surface marks consistent with normal handling and play. Labels are clean and fully readable.</p><br /><p>Generic sleeve included. No original picture sleeve.</p>",
       "paymentMethods": [
         {
@@ -1661,5 +1661,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:56Z"
 }

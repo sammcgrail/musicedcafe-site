@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "11103",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1577,7 +1577,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970979260?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BORJkN3MONAtZQ0n7pbrooyMbRFkzE7ZO4ywc2Q0lNxKrfrPQiNfNAMqV8r6mGxxpfzdAyl1pN6GtRHeXjOLYA%2FquWKZyNcV6BmW3r%2FpgoC1lfxHbFkOG8ouwZfd6Q%2FNYEEu91%2BQF6rjbiZBrpa3IUgZ9t29wDrHEdSEEiYvcfDuS%2B536DsN3igePoNlCwlEc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970979260?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BORJkN3MONAtZQ0n7pbrooyMbRFkzE7ZO4ywc2Q0lNxORgDeRP21n1%2FvxOPkAo7keegRq9%2Bv%2BV1slVAM4J0xAojpGSTKSgaU8wsM6vX1pknSS7dzNaetXCgS55ZLzcz%2BlV89aqGeTGgf1LCJajfZRU7X%2B7Qd2Ny2o64DroMG4E7r9mbEapKnTivqgIk43x16k%3D",
       "description": "<p data-start=\"1292\" data-end=\"1398\" class=\"PDq2pG_selectionAnchorContainer\">Original <strong data-start=\"1301\" data-end=\"1316\">ABC Records</strong> 45 RPM single by <strong data-start=\"1334\" data-end=\"1353\">The Impressions</strong>, featuring Curtis Mayfield-era Chicago soul.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1400\" data-end=\"1410\"><strong data-start=\"1400\" data-end=\"1410\">Side A</strong></p>\n<ul data-start=\"1411\" data-end=\"1431\">\n<li data-section-id=\"6ccp1v\" data-start=\"1411\" data-end=\"1431\">\nI Loved And I Lost\n</li>\n</ul>\n<p data-start=\"1433\" data-end=\"1443\"><strong data-start=\"1433\" data-end=\"1443\">Side B</strong></p>\n<ul data-start=\"1444\" data-end=\"1460\">\n<li data-section-id=\"159nfl9\" data-start=\"1444\" data-end=\"1460\">\nUp Up And Away\n</li>\n</ul>\n<p data-start=\"1462\" data-end=\"1556\">A great collectible for fans of classic soul, R&amp;B, Curtis Mayfield, and vintage Chicago music.</p>\n<p data-start=\"1558\" data-end=\"1657\">The record will be shipped in a new paper sleeve, protective poly sleeve, and sturdy 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1634,5 +1634,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:27Z"
 }

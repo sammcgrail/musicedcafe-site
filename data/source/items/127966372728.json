@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "VS442762",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1617,7 +1617,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127966372728?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9bFbgphPHl2Scx3Ro2iaVM8Nh8r6%2Bx2kvC4%2BhwgLy0lzHENUm27sVXUQri5JZBzorOadqzP4iBYiSzsO1TtW11qKTqXBlxIJvpmdXOqk1CgOoWJtswxhQ3vvPctfhnGw6y3nY079P0p0%2Fj%2Fn9udXQ6Mpq%2BWjDmZiYyuHWJa%2F1KDjsA%2BlZYQ3oaQvH5YfDP5FY%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127966372728?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9bFbgphPHl2Scx3Ro2iaVM8Nh8r6%2Bx2kvC4%2BhwgLy0l%2F2uAayc6n0Qj7uIRiO32nPo6d6qi78DApOLv%2FTyq2af%2Fqq6n7VkFEOlxH1c6YSQK5bXeczRWQ1adNxCSA1NXSJWIh4iPrIyLKnWlAxwOQn%2BqmEIUs%2FfZPmVOUR1xNbhNJv1aq8LD79JGIvv3xI7geI%3D",
       "description": "<p data-start=\"680\" data-end=\"720\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"680\" data-end=\"720\">Billy Idol – Rebel Yell / Crank Call</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"722\" data-end=\"899\">Original 1983 Chrysalis Records 45 RPM single featuring Billy Idol's classic hit <strong data-start=\"803\" data-end=\"820\">\"Rebel Yell,\"</strong> backed with <strong data-start=\"833\" data-end=\"850\">\"Crank Call.\"</strong> A must-have for fans of 1980s rock and new wave.</p>\n<h3 data-section-id=\"qfm5q2\" data-start=\"901\" data-end=\"911\">Tracks</h3>\n<p data-start=\"913\" data-end=\"923\"><strong data-start=\"913\" data-end=\"923\">Side A</strong></p>\n<ul data-start=\"924\" data-end=\"943\">\n<li data-section-id=\"vsxngn\" data-start=\"924\" data-end=\"943\">\nRebel Yell (3:43)\n</li>\n</ul>\n<p data-start=\"945\" data-end=\"955\"><strong data-start=\"945\" data-end=\"955\">Side B</strong></p>\n<ul data-start=\"956\" data-end=\"975\">\n<li data-section-id=\"1hg2sdw\" data-start=\"956\" data-end=\"975\">\nCrank Call (3:56)\n</li>\n</ul>\n<p data-start=\"977\" data-end=\"1005\"><strong data-start=\"977\" data-end=\"987\">Label:</strong> Chrysalis Records</p>\n<p data-start=\"1007\" data-end=\"1031\"><strong data-start=\"1007\" data-end=\"1021\">Catalog #:</strong> VS4-42762</p>\n<hr data-start=\"1033\" data-end=\"1036\">\n<h2 data-section-id=\"hrykuu\" data-start=\"1038\" data-end=\"1050\">Condition</h2>\n<p data-start=\"1052\" data-end=\"1084\"><strong data-start=\"1052\" data-end=\"1062\">Vinyl:</strong> VG+ (Visually Graded)</p>\n<ul data-start=\"1086\" data-end=\"1218\">\n<li data-section-id=\"13ywv10\" data-start=\"1086\" data-end=\"1107\">\nNice original gloss\n</li>\n<li data-section-id=\"c3v4hg\" data-start=\"1108\" data-end=\"1170\">\nLight surface marks consistent with normal handling and play\n</li>\n<li data-section-id=\"1yn40y9\" data-start=\"1171\" data-end=\"1218\">\nNo cracks, chips, or major scratches observed\n</li>\n</ul>\n<p data-start=\"1220\" data-end=\"1231\"><strong data-start=\"1220\" data-end=\"1231\">Labels:</strong></p>\n<ul data-start=\"1232\" data-end=\"1281\">\n<li data-section-id=\"1rm3zdo\" data-start=\"1232\" data-end=\"1256\">\nClean Chrysalis labels\n</li>\n<li data-section-id=\"1eazen\" data-start=\"1257\" data-end=\"1281\">\nMinor age-related wear\n</li>\n</ul>\n<p data-start=\"1283\" data-end=\"1294\"><strong data-start=\"1283\" data-end=\"1294\">Sleeve:</strong></p>\n<ul data-start=\"1295\" data-end=\"1348\">\n<li data-section-id=\"1f3m112\" data-start=\"1295\" data-end=\"1348\">\nGeneric white paper sleeve (unless otherwise shown)\n</li>\n</ul>\n<p data-start=\"1350\" data-end=\"1463\">Record has been visually inspected. Please review all photos carefully, as they are part of the item description.</p>",
       "paymentMethods": [
         {
@@ -1674,5 +1674,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:26Z"
 }

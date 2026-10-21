@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "ABC11357",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1582,7 +1582,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023074196?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F480jN6pu1vhl9GFkPreb92ZWtTbKh0hqWupSN2Gbpl2CKTtfUAeUgou7k0OhU0OuIro6zDBcjRFIMvsAlH01sxeqrp4mUpqWjBJ%2Fms7M54Eqmyay0jamAHMCe%2Fs8UVN8MPDm8Jja9u6BNHOGYCuqO2uQHN5SEJn4OH5XHdvBqTKNeSo3YAOPWnu58uFMTLrU%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023074196?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F480jN6pu1vhl9GFkPreb92ZWtTbKh0hqWupSN2Gbpl5mMqgLXiN%2FUZ%2Br%2BHjbxZ6Um1hztSOYlBDHgnhrw9J%2BJKxPhzfUFifLsR6aMr4QRKfoe5xUw8V3pIEb4il6UH6RJ%2Bvs6ermmhimHqTmiWAyHE54W%2FlIIDVh39sp2N0fSvatxqoZbfFa5G%2FxZVf%2BAgYo%3D",
       "description": "Johnny Carver - Yellow Ribbon / Since My Baby Left Me 45 RPM ABC-11357 1973. Condition is Used. Shipped with USPS Media Mail. ",
       "paymentMethods": [
         {
@@ -1639,5 +1639,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:16Z"
 }

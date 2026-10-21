@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "TKX1035, TK1035",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1587,7 +1587,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970717288?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Fe4Uv4ZjxOKEizy52pnepYYv1s1W730oRSdk7VJUy4XOlUV2bgr0VqffCSe4GlyAXYEj6iz6nVEJML9xzcVmqfbHJ0ZV8XLz7DfI5eSCYSJq6flH8M%2FMyZZ1NCBVMHRQq1PftxCiUjibfE7UcchUaYJwZz%2FQ98I2XUxdtOH5WDAwAv%2Fm3jhUKd6nkut99Y8fo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970717288?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Fe4Uv4ZjxOKEizy52pnepYYv1s1W730oRSdk7VJUy4XOCFnaYpfjGugUbbWHb5it6bYxnrHRABbmr1y5UN9IQYg4P7TNGFJwLgAqn2eQoJT8KxSz0Gi9EiN67yx9fZ42M1BrxZOlO%2BgssVkwYyYMb27BSVjSaXUG1VKEFOE%2FASw0nlVwk3IVSXoxVvElOyxkY%3D",
       "description": "<p data-start=\"426\" data-end=\"497\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"426\" data-end=\"497\">K.C. and the Sunshine Band – Please Don't Go / I Betcha Didn't Know</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"499\" data-end=\"647\">Original 1979 TK Records 45 RPM single featuring the No. 1 hit <strong data-start=\"562\" data-end=\"584\">\"Please Don't Go,\"</strong> one of K.C. and the Sunshine Band's biggest crossover ballads.</p>\n<p data-start=\"649\" data-end=\"687\"><strong data-start=\"649\" data-end=\"660\">Artist:</strong> K.C. and the Sunshine Band</p>\n<p data-start=\"689\" data-end=\"710\"><strong data-start=\"689\" data-end=\"699\">Label:</strong> TK Records</p>\n<p data-start=\"712\" data-end=\"740\"><strong data-start=\"712\" data-end=\"731\">Catalog Number:</strong> TKX-1035</p>\n<p data-start=\"742\" data-end=\"769\"><strong data-start=\"742\" data-end=\"753\">Format:</strong> 7\" Vinyl Single</p>\n<p data-start=\"771\" data-end=\"788\"><strong data-start=\"771\" data-end=\"781\">Speed:</strong> 45 RPM</p>\n<p data-start=\"790\" data-end=\"800\"><strong data-start=\"790\" data-end=\"800\">Stereo</strong></p>\n<h3 data-section-id=\"qfm5q2\" data-start=\"802\" data-end=\"812\">Tracks</h3>\n<p data-start=\"814\" data-end=\"824\"><strong data-start=\"814\" data-end=\"824\">Side A</strong></p>\n<ul data-start=\"825\" data-end=\"842\">\n<li data-section-id=\"1q06od4\" data-start=\"825\" data-end=\"842\">\nPlease Don't Go\n</li>\n</ul>\n<p data-start=\"844\" data-end=\"854\"><strong data-start=\"844\" data-end=\"854\">Side B</strong></p>\n<ul data-start=\"855\" data-end=\"877\">\n<li data-section-id=\"eylcq9\" data-start=\"855\" data-end=\"877\">\nI Betcha Didn't Know\n</li>\n</ul>\n<h3 data-section-id=\"1uef3h1\" data-start=\"879\" data-end=\"892\">Condition</h3>\n<p data-start=\"894\" data-end=\"925\"><strong data-start=\"894\" data-end=\"904\">Vinyl:</strong> Very Good Plus (VG+)</p>\n<ul data-start=\"926\" data-end=\"1097\">\n<li data-section-id=\"14g3ge2\" data-start=\"926\" data-end=\"948\">\nNice original gloss.\n</li>\n<li data-section-id=\"4b9t47\" data-start=\"949\" data-end=\"998\">\nLight surface wear consistent with careful use.\n</li>\n<li data-section-id=\"7aeyv8\" data-start=\"999\" data-end=\"1046\">\nLabels are clean with no writing or stickers.\n</li>\n<li data-section-id=\"1lrtmi5\" data-start=\"1047\" data-end=\"1097\">\nPlease review all photos for cosmetic condition.\n</li>\n</ul>\n<p data-start=\"1099\" data-end=\"1109\"><strong data-start=\"1099\" data-end=\"1109\">Sleeve</strong></p>\n<ul data-start=\"1110\" data-end=\"1139\">\n<li data-section-id=\"18q9mh6\" data-start=\"1110\" data-end=\"1139\">\nGeneric white paper sleeve.</li></ul>",
       "paymentMethods": [
         {
@@ -1644,5 +1644,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:58Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -78,7 +78,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SCS92002",
       "estimatedAvailabilities": [
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1626,7 +1626,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128123711268?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9IjNze%2B44KvJKIyxBDkj9yQhdwvKmFj5BIn%2BPBTiqkKHwV3UN9SJLdLuUG5LjkdxLm931yU7ucBjVRpI%2Fdaad81jeesvhb60OEOMyh5QZOKhMYTaL6LCXBQMiquUaIrKO4TEzawme0Marg2UYVp3ZoW1zkj6qc0NbQrVQ7iaTPAm5GjJCkOGfYLhhD2Zj%2FRHU%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128123711268?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9IjNze%2B44KvJKIyxBDkj9yQhdwvKmFj5BIn%2BPBTiqkKKfNBjr458nDbd5gh72OCwkvJCEi%2FaqmEV9vf0hoSC6pQtObKg6BCJ%2BWKyeCTE6M%2B80GQbHmJiq4Mg1cCEp4lnsMiOG1668j%2FA1E02U6gCIaiSn4VPiptf75T40gblLJf37U%2Bw6E6MELLW%2B7q%2FAVi3o%3D",
       "description": "<p><strong>The 5th Dimension – Stoned Soul Picnic</strong></p><p>Original-era Canadian stereo vinyl pressing on Soul City Records.</p><p><strong>Label:</strong> Soul City<br><strong>Catalog:</strong> SCS-92002<br><strong>Format:</strong> 12\" Vinyl LP, Stereo<br><strong>Country:</strong> Canada<br><strong>Year:</strong> 1968<br><strong>Genre:</strong> Soul / Pop / R&amp;B / Psychedelic Pop<br><strong>Producer:</strong> Bones Howe</p><p>Features several of The 5th Dimension’s best-known recordings, including “Stoned Soul Picnic,” “Sweet Blindness,” and “California Soul.”</p><p><strong>Tracklist</strong></p><p>Side 1<br>Sweet Blindness<br>It’ll Never Be the Same Again<br>The Sailboat Song<br>It’s a Great Life<br>Stoned Soul Picnic</p><p>Side 2<br>California Soul<br>Lovin’ Stew<br>Broken Wing Bird<br>Good News<br>Bobbie’s Blues (Who Do You Think Of?)<br>The Eleventh Song (What a Groovy Day!)</p><p><strong>Condition:</strong><br>Vinyl: VG+ visually – glossy with light surface marks from normal handling/storage.<br>Jacket: VG – visible shelf wear, rubbing and edge/corner wear. Please review all photos for exact cosmetic condition.</p>",
       "paymentMethods": [
         {
@@ -1683,5 +1683,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:24:56Z"
 }

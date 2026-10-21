@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "MCA53264",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1606,7 +1606,7 @@
       "buyingOptions": [
         "FIXED_PRICE"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036402563?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8fGbSxBn8ZndZmHw3bcprqd%2BIAJRa5vu3DZX1j0io0TP%2FHN77DYEp2QxMS86HTB1owvcSrS8CR0baIahGbyPsZeEfsYJucsj6XEpHbTMx5Xvy8fTzcUuwemVBQD4SR7aX9elIvjWHEM%2FjaQl0L%2Brc8rLF9sB1KfuGyxZ1wL4v52vHhNY%2FGWBTFjcMdzqY2nGM%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036402563?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8fGbSxBn8ZndZmHw3bcprqd%2BIAJRa5vu3DZX1j0io0TLHz6nFKYQMJ6cOuOoM4l6X0SQLi%2BB7Mr%2FBrmwaw6aFhrrS9n12Vjelq%2FIhQ6c856O4yqTEmcP1W%2FvBhdvdmiyuO8I9IAWu5TGuwGfSuS3M3%2BdJlt0YXlFv0XD16mVre9A3hLmyAKxJJNhHhhA0sk9o%3D",
       "description": "<p>Original 1988 New Edition 7-inch 45 RPM single featuring “If It Isn’t Love” backed with the instrumental version.</p><br /><p>Released on MCA Records, catalog number MCA-53264, and produced by legendary production duo Jimmy Jam &amp; Terry Lewis. A classic New Jack Swing/R&amp;B single from New Edition’s Heart Break era.</p><br /><p>Vinyl is in VG+ visual condition with good gloss and light surface/handling marks consistent with normal use. Labels remain clean and readable. A-side label has a small handwritten inventory sticker as shown in the photos.</p><br /><p>Includes a generic 7-inch sleeve.</p><br /><p>Please review all photos carefully for exact cosmetic condition. Record grading is visual unless otherwise stated.</p>",
       "paymentMethods": [
         {
@@ -1663,5 +1663,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:00Z"
 }

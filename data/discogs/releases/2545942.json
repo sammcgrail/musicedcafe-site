@@ -1,0 +1,67 @@
+{
+  "id": 2545942,
+  "title": "South Shore Bermuda",
+  "artists": [
+    "The Bermuda Strollers"
+  ],
+  "year": 0,
+  "released": null,
+  "country": "Canada",
+  "labels": [
+    {
+      "name": "Edmar Records",
+      "catno": "ELPS 1156"
+    },
+    {
+      "name": "Edmar",
+      "catno": "ELPS - 1156"
+    }
+  ],
+  "formats": [
+    {
+      "name": "Vinyl",
+      "qty": "1",
+      "descriptions": [
+        "LP",
+        "Album",
+        "Stereo"
+      ],
+      "text": ""
+    }
+  ],
+  "identifiers": [
+    {
+      "type": "Matrix / Runout",
+      "description": "Side A runout etched",
+      "value": "ELPS-1156-A (2)"
+    },
+    {
+      "type": "Matrix / Runout",
+      "description": "Side B runout etched",
+      "value": "ELPS-1156-B"
+    },
+    {
+      "type": "Rights Society",
+      "description": "A1 to A3",
+      "value": "CAPAC"
+    },
+    {
+      "type": "Rights Society",
+      "description": "A4, B1, B3",
+      "value": "ASCAP"
+    },
+    {
+      "type": "Rights Society",
+      "description": "B4",
+      "value": "BMI"
+    }
+  ],
+  "notes": "Bermuda release that was also made as well as distributed in Canada.",
+  "community": {
+    "have": 102,
+    "want": 27
+  },
+  "thumb": "https://i.discogs.com/fqXopnRDj71jSRfHxVPnii3lDsmya2GWmP_FX6zLPio/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NDU5/NDItMTM4Mzk3MzYx/Mi04MDE1LmpwZWc.jpeg",
+  "uri": "https://www.discogs.com/release/2545942-Bermuda-Strollers-South-Shore-Bermuda",
+  "fetched_at": "2026-10-20T21:03:53Z"
+}

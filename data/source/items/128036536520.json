@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "3804424",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1637,7 +1637,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036536520?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9gjqi3NFJ5Z%2Bh7JB%2FT8n9ANWWTJKMq65jLNun7PHA6SYaqlcPTukCumRgRjwyY5%2FXyX6mADZiwt7Zfw3obYkg4EM2BPb2owgUxs%2FOYyErHrVAqoGqvZN0HGpxyovl7kOpVU9JUME5fqE1v7HFLYwXM4kHAt32n8r4FzWIS%2FV%2BGV6uSh57YUAfxEGozZarx9Oo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036536520?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9gjqi3NFJ5Z%2Bh7JB%2FT8n9ANWWTJKMq65jLNun7PHA6SeE3BKlk26J6SYvOgn4SinItoqVAdzyCaWR48Iy2P%2BqJj9Uu9MFcKKr0aZs0hgVDlFshZUkmQMVZmgWAkT0t4Fa4k19%2FOGr%2FXhwyyjoeoT367vivipqgAX61C5PP9vGsrz1B4ukoQup6RIV%2Fl9Tvz1E%3D",
       "description": "<p>Scandal featuring Patty Smyth – “The Warrior” / “Less Than Half”</p><br /><p>Original 1984 Columbia Records U.S. 7-inch 45 RPM single, catalog number 38-04424, complete with the original picture sleeve.</p><br /><p>Features Scandal and Patty Smyth’s classic 1980s hit “The Warrior,” backed with “Less Than Half.” Both tracks are from the Columbia album Warrior.</p><br /><p>Track Listing:</p><br /><p>Side A – The Warrior – 3:35</p><p>Side B – Less Than Half – 4:18</p><br /><p>Condition:</p><br /><p>Vinyl is in pre-owned condition with visible light scratches, surface marks, and scuffing consistent with normal age and use.</p><br /><p>Original picture sleeve is included and shows edge and corner wear, light creasing, surface rubbing, and general storage wear. Artwork remains colorful and attractive.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great addition for collectors of Scandal, Patty Smyth, 1980s rock, new wave, pop rock, and vintage picture-sleeve 45 RPM singles.</p><br /><p>Record will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1694,5 +1694,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:46Z"
 }

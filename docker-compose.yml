@@ -24,5 +24,7 @@ services:
       - ./:/app:ro
       - ./data:/app/data
       - ./public:/app/public
-    mem_limit: 128m
+    # 320m (was 128m): idle RSS ~110 MB (peak ~140 MB during syncs), and Sell Your Records photos are decoded
+    # here one at a time (bodies stream to disk; one photo peaks at ~105 MB, see mec/sell_upload.py MAX_PIXELS)
+    mem_limit: 320m
     cpus: 0.5

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "2106",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014687643?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FmUNBZsEb3RHbJo%2FU7p4shDjOxeOjX2T%2FahoBVPqol2cIndA0z0f0hUQrkPLRYIpSC%2FBDXOn8QwkUx3LuXwKBFtka%2FSNWXaz1HU0J9y8tJOvbh7OYUgvny3o6db9f8UKHPp5E4m3Fr6LZmdRZ56pVI%2Fd3KaziJ5jdPNNJvR7bT05PDj2xYTZcnzWEmxsredew%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014687643?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FmUNBZsEb3RHbJo%2FU7p4shDjOxeOjX2T%2FahoBVPqol2TSlgOY3MMYsVir1A9ed2cYChSULCGhn%2BzHp%2B5Sv0aGcLTDt7uAMEPzTFb8CLVjna%2FO34Iy%2BTe%2FOuwuJj7xHZUcbBSXUwzhb0FfYVpou0r61BGdR3lP4NxYn385GaSfxdhBcdeqRyiaoWfHQdWAcqD8%3D",
       "description": "<p>Vintage Charlie Louvin 45 RPM single on the classic orange/yellow Capitol Records label.</p><br /><p>Features “Tears, Wine, and Flowers,” written by Charlie Louvin, backed with “Will You Visit Me on Sundays?” written by Dallas Frazier.</p><br /><p>Charlie Louvin is an important figure in traditional country music, best known both for his solo recordings and his work as part of the legendary Louvin Brothers.</p><br /><p>Condition: Visually the vinyl shows noticeable surface wear, scuffs and scratches from previous play. I would conservatively grade this around G+ to VG visually. Labels remain quite presentable with some normal age/storage wear. Please review the photos carefully for exact condition.</p>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:58Z"
 }

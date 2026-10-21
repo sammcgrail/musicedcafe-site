@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "AM1351",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970972440?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F0%2BtdpUV01Z4PUhnNFDcFXBpQzbuUF77IuUYJQUVfjZj8fy5oV4mBGu4CKwLkN6ZmCNYWOclL7aa4CGrnaszoY30KhQG5qCBu3Ir665sD348keYVYWOFW8gJnFBcXAOtVn9VGxg8nMuBO4Ti0wGUY%2BmiCtsVk%2BEPKFwsFEpNsjyF7H7YSAEPs0XdsXJyfs%2BmY%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970972440?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F0%2BtdpUV01Z4PUhnNFDcFXBpQzbuUF77IuUYJQUVfjZthLCaRZAcM4YOmH1vZh9WDTwW%2FR5Dktbq8o0PmJ%2B%2BMXTKWW%2FzSvZh4nf94zEBvmX%2FUM0DeEebHej3wtgttIb%2F1QgIJJqgFwtS2BWdQe0be59AMyk4PqDIcf3EbFkk05F8j%2FEdb79HAZf%2Brmh7EU91s%3D",
       "description": "<p data-start=\"1182\" data-end=\"1244\" class=\"PDq2pG_selectionAnchorContainer\">Original 1972 A&amp;M Records 45 RPM single by <strong data-start=\"1225\" data-end=\"1243\">The Carpenters</strong>.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1246\" data-end=\"1256\"><strong data-start=\"1246\" data-end=\"1256\">Side A</strong></p>\n<ul data-start=\"1257\" data-end=\"1271\">\n<li data-section-id=\"vqn5d4\" data-start=\"1257\" data-end=\"1271\">\nFlat Baroque\n</li>\n</ul>\n<p data-start=\"1273\" data-end=\"1283\"><strong data-start=\"1273\" data-end=\"1283\">Side B</strong></p>\n<ul data-start=\"1284\" data-end=\"1314\">\n<li data-section-id=\"xoy5ew\" data-start=\"1284\" data-end=\"1314\">\nIt's Going To Take Some Time\n</li>\n</ul>\n<p data-start=\"1316\" data-end=\"1452\">A nice vintage single from Karen and Richard Carpenter, perfect for Carpenters collectors, jukebox owners, or fans of classic soft rock.</p>\n<p data-start=\"1454\" data-end=\"1578\">Record will be shipped in a new paper sleeve, inside a protective poly sleeve, and packed securely in a rigid 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:29Z"
 }

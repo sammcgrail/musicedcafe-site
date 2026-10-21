@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "4671",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1582,7 +1582,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014910543?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8xpxUa7yj5fREFooqQhYQ%2FjyLKXFsOTYs4FmY7cq3pVzODAdfyFrgFOg7S%2BF2GKeW7yKiK3SmCAc75q25wMB58ybH76eLPET1plJHeR%2F2dfawpkfsT1NqMk4nwF5lnRUuhhknQlcMnkTiOySnKDK1yMrXcibMjlN%2F7YseXVuEyKWpAI41qQc0m3eZV880ZXYw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014910543?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8xpxUa7yj5fREFooqQhYQ%2FjyLKXFsOTYs4FmY7cq3pVyPk4pA%2FANTK6yeBW81uX%2BrT%2F1ac23uXSOz2GOYBd213%2BJIju07qesLtkoR%2BAXcAZFdaJDKffLQL4xsiLLAjys0NBP%2BTYleEEHjgy1xApc7p0dw%2FxIoR%2F6d3PLVaF7AjmR9Y0D1JEt2npkao%2F8BTbq0%3D",
       "description": "<p>Vintage Kingston Trio 7-inch 45 RPM single on Capitol Records, catalog number 4671.</p><br /><p>Features the classic Pete Seeger composition:</p><br /><p>Where Have All the Flowers Gone</p><p>b/w</p><p>O Ken Karanga</p><br /><p>A great piece of early-1960s American folk music history from one of the groups most closely associated with the folk revival era.</p><br /><p>Record shows visible light scratches, scuffs and normal signs of previous play while retaining good overall gloss. Purple Capitol labels remain attractive and readable with light age/use wear.</p><br /><p>Visually graded approximately VG.</p>",
       "paymentMethods": [
         {
@@ -1639,5 +1639,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:44Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "3405754",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1571,7 +1571,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036134890?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9rz1NJzZhoHvwdNNLIXI4CbWS2Z74q2r%2BZbbya0wiJFZVaYvaghnhfrabWKUkjWteVFN4otbnE8bC5ExkGBtOf68OUp7GncU1tdl1zs5nyies2ivK4r6ZH22CYgAJmDPub6KLrKMZNGpww9BQL4ReWHjmz8Q0r3uQsWdeDNUiTzAXkAQI%2FdQP2AUUVRgBgJWw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036134890?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9rz1NJzZhoHvwdNNLIXI4CbWS2Z74q2r%2BZbbya0wiJFdEfAvEmwuzgP9jqJxIqUB0GCFLp22M19DrEmLSNeBy3YWmbsUmyS%2FEtWMfg8CJ85axJBeGQ9bLInr0dDSW9ssBPSlo%2Bjl4e73fiz1GPm1XiJR6njmtIz1Qx3iQwO%2FEV1jNuTbLqSzgSGO1YzLz9gRc%3D",
       "description": "<p>Jennifer Rush – “The Power of Love (Remix)” / “I See a Shadow (Not a Fantasy)”</p><br /><p>Original Epic 7-inch 45 RPM single, catalog number 34-05754.</p><br /><p>Features Jennifer Rush’s classic power ballad “The Power of Love,” backed with “I See a Shadow (Not a Fantasy).”</p><br /><p>Track Listing:</p><br /><p>Side A – The Power of Love (Remix) – 4:20</p><p>Side B – I See a Shadow (Not a Fantasy) – 4:20</p><br /><p>Condition:</p><p>Vinyl is in pre-owned condition with visible surface marks and scuffing consistent with age and use. Labels show noticeable wear and have barcode stickers present. Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great affordable addition for collectors of 1980s pop, female vocalists, power ballads, and vintage 45 RPM singles.</p><br /><p>Record will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1628,5 +1628,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:09Z"
 }

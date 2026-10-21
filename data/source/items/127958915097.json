@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "ST511068",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1612,7 +1612,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127958915097?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F8cfafHN1maRocty5L9u4kDbbOrkaoX9MVhPCbBihxhWDh3MrXJdsOKa%2B0Gub8ryuzjrXBzQZ2vRAyFXqeWEfkpR0003V55UgHF2ICxKE%2BY2bCE0g6BBo44ZnjycWuECmeJ0GEzhwhFqzoKRW1SISZ9Pz41Lp9KQ7NBEGsVCy40EWqFnaI%2BtbLqMp6lK3T9zc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127958915097?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F8cfafHN1maRocty5L9u4kDbbOrkaoX9MVhPCbBihxhaRzMLQCgRbV894EQQCF0Ou1osfSiX63SF%2BHbl8wfYiW9IQLUnZx52a4RqgUWMek7ULl0HynXsI04Mlx5KA5Zl0RrhhQ3COrVjiqR6f6jyItE1XaR962GDbEZreOdDIpbf6sme7P%2FgeNABruq5lWcfM%3D",
       "description": "<h2 data-section-id=\"1s8n52l\" data-start=\"1120\" data-end=\"1147\" class=\"PDq2pG_selectionAnchorContainer\">Helen Reddy – I Am Woman<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></h2>\n<p data-start=\"1149\" data-end=\"1188\">Original 1972 Capitol Records pressing.</p>\n<p data-start=\"1190\" data-end=\"1213\">Includes the hit songs:</p>\n<ul data-start=\"1215\" data-end=\"1317\">\n<li data-section-id=\"1yunn6f\" data-start=\"1215\" data-end=\"1227\">\nI Am Woman\n</li>\n<li data-section-id=\"3x0jvp\" data-start=\"1228\" data-end=\"1238\">\nPeaceful\n</li>\n<li data-section-id=\"ic15x5\" data-start=\"1239\" data-end=\"1259\">\nWhere Is My Friend\n</li>\n<li data-section-id=\"1v64qma\" data-start=\"1260\" data-end=\"1277\">\nThis Masquerade\n</li>\n<li data-section-id=\"1d3nqn3\" data-start=\"1278\" data-end=\"1297\">\nHit the Road Jack\n</li>\n<li data-section-id=\"1fqxw79\" data-start=\"1298\" data-end=\"1317\">\nAnd I Love You So\n</li>\n</ul>\n<p data-start=\"1319\" data-end=\"1412\">A clean vintage copy of Helen Reddy's breakthrough album featuring her Grammy-winning anthem.</p>\n<hr data-start=\"1414\" data-end=\"1417\">\n<h3 data-section-id=\"1uef3h1\" data-start=\"1419\" data-end=\"1432\">Condition</h3>\n<p data-start=\"1434\" data-end=\"1453\" class=\"\"><strong data-start=\"1434\" data-end=\"1453\">Vinyl: VG+ / EX</strong></p>\n<p data-start=\"1455\" data-end=\"1550\">Record retains excellent gloss with only minimal signs of handling. No deep scratches observed.</p>\n<p data-start=\"1552\" data-end=\"1566\"><strong data-start=\"1552\" data-end=\"1566\">Cover: VG+</strong></p>\n<p data-start=\"1568\" data-end=\"1704\">Original jacket shows light shelf wear, minor corner and edge wear, and light age discoloration on the rear cover. No major seam splits.</p>\n<p data-start=\"1706\" data-end=\"1754\">Please review all photos for cosmetic condition.</p>",
       "paymentMethods": [
         {
@@ -1669,5 +1669,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:52Z"
 }

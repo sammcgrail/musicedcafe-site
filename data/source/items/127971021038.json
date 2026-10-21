@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -92,8 +92,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1580,7 +1580,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127971021038?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9crEk1mTYbI1gCAmB9CVHRBFtz4TuelPrO9PHSjDDX0n53nPsbDRR8OuOu6JYJYN1FI279Fd1kIyz3ytJl5B%2FbofYMXwkkDyg9pnPqp4lUeVRHCQRszlYttXCg9usXSlNUkp%2BYx7p6ghIl%2F8FP%2BRzrWz%2FwCwdkkfuJXJfv3IMcKl5frDbU3cMxxwDfeI%2Btukw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127971021038?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9crEk1mTYbI1gCAmB9CVHRBFtz4TuelPrO9PHSjDDX0kKLAerTrdWZG7i4UsdaJheynpVFbN%2BCHK6sD8GC9zukSrIpgOJWykRpoiQfUNG2ESwTMZ4VdQBS7%2FHyXPvolRWFrJPpU6nPjSbHMKgpd97DTr56ToXUmZtprrv9FEh1jTuqL%2B525%2FXui0mSptuYw%2Bk%3D",
       "description": "<p data-start=\"873\" data-end=\"941\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"873\" data-end=\"902\">Madonna – Open Your Heart</strong><br data-start=\"902\" data-end=\"905\">\nSire Records 7-28341 • 45 RPM • 1986<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"943\" data-end=\"952\">Includes:</p>\n<ul data-start=\"953\" data-end=\"1007\">\n<li data-section-id=\"2gws6f\" data-start=\"953\" data-end=\"982\">\n<strong data-start=\"955\" data-end=\"966\">Side A:</strong> Open Your Heart\n</li>\n<li data-section-id=\"1jakp5g\" data-start=\"983\" data-end=\"1007\">\n<strong data-start=\"985\" data-end=\"996\">Side B:</strong> White Heat\n</li>\n</ul>\n<p data-start=\"1009\" data-end=\"1059\">Original U.S. pressing from the <em data-start=\"1041\" data-end=\"1052\">True Blue</em> album.</p>\n<p data-start=\"1061\" data-end=\"1074\"><strong data-start=\"1061\" data-end=\"1074\">Condition</strong></p>\n<ul data-start=\"1075\" data-end=\"1237\">\n<li data-section-id=\"1aod8dv\" data-start=\"1075\" data-end=\"1166\">\nVinyl: VG+ (light surface marks consistent with normal handling; retains excellent gloss)\n</li>\n<li data-section-id=\"oqfzhe\" data-start=\"1167\" data-end=\"1200\">\nLabels: Clean with minimal wear\n</li>\n<li data-section-id=\"12727iq\" data-start=\"1201\" data-end=\"1237\">\nSleeve: Generic white paper sleeve\n</li>\n</ul>\n<p data-start=\"1239\" data-end=\"1338\">Record will ship in a new paper sleeve, inside a poly sleeve, packaged securely in a 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1637,5 +1637,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:22Z"
 }

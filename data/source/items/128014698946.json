@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -70,7 +70,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "EAP11061",
       "estimatedAvailabilities": [
@@ -95,8 +95,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1593,7 +1593,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014698946?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8SNqH%2Fmxz84vXEGmW4nGWh05APmhKsMwunbM9UVMVrSlL1crL1jqlBNLGK1gZuDlvm46NYCjUVjN3sigzFqd57Q342PUW7i40W81Yv2oPUMPoPXJyyoCvaJuPw%2Fqlb%2B5QzT1mQajT6XP9w2EvSG8xb0HzBqMeL4Jk8nx0uFc9JAz%2Ff%2FPdCb3nEtm12KNibQSg%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014698946?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8SNqH%2Fmxz84vXEGmW4nGWh05APmhKsMwunbM9UVMVrSnOKuxETsUeh7hAQQc6S6miVy1QKPF%2FFJIY1Tf2taf4w1C8xTrMyTadzlsV6KPbTKo%2BYfKbcvVEssCCK4EFBvGKxp7aocrsAe8ag33mbZ0k0yfwpdQTvkW1Q8aHS8reTxlhHFm3iBaIsD%2FlyGq7IUmA%3D",
       "description": "<p>Vintage The Louvin Brothers – The Family Who Prays 4-song 7” EP on Capitol Records, catalog EAP 1-1061.</p><br /><p>Features four classic country-gospel performances by Ira and Charlie Louvin, including the title track “The Family Who Prays” and “Swing Low, Sweet Chariot.”</p><br /><p>The Louvin Brothers are among the most influential harmony duos in country and bluegrass music, making their original Capitol releases desirable to collectors of vintage country, gospel and roots music.</p><br /><p>Condition: Visually graded approximately VG. Vinyl retains a nice appearance but shows visible light scratches, scuffs and signs of previous play. Capitol turquoise labels remain quite attractive with relatively modest wear. Please examine the supplied photographs carefully for exact cosmetic condition.</p><br /><p>Important: This listing is for the vinyl record only. No original EP picture sleeve is included.</p>",
       "paymentMethods": [
         {
@@ -1650,5 +1650,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:55Z"
 }

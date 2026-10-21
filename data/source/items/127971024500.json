@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "71101X45",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1587,7 +1587,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127971024500?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BjPnyevFELCj7H1FSDyZZqagmYnWfcrtUAE9OCFDl9nnfKS%2BzJg9Zn7obZYLoI2FGzM3p2iMhSKdP05j%2BVxr8gnBCNH3Esg2ZeTD4TAt7SxW%2Ffhs02VCN4lSCU%2B46HGj45Wmaj0WUwIhIVltOlFj%2FQYO0MRVnzMoF3ue6b%2BZaM9GmcULAjo5dvf%2Fvkle6VCBc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127971024500?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BjPnyevFELCj7H1FSDyZZqagmYnWfcrtUAE9OCFDl9nkTU5rodJHElgUlxU0o1cssjeDx9ToG%2BSRDMFzGbxDGjp6mbws8unH%2FTsT%2B8s6D%2BIOMR2zdg8n0jSuf0Jounhu83PNptgbmvOvQ4%2BOn8k9Jy%2BeCHmCtFFe%2BQM99um3ZTDqUZd1whbd72U6ltWvlSs5M%3D",
       "description": "<p data-start=\"1050\" data-end=\"1150\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"1050\" data-end=\"1091\">Patti Page – Old Cape Cod / Wondering</strong><br data-start=\"1091\" data-end=\"1094\">\nMercury Records • 71101X45 • Original U.S. 45 RPM • 1957<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1152\" data-end=\"1159\">Tracks:</p>\n<ul data-start=\"1160\" data-end=\"1200\">\n<li data-section-id=\"695drq\" data-start=\"1160\" data-end=\"1178\">\n<strong data-start=\"1162\" data-end=\"1168\">A:</strong> Wondering\n</li>\n<li data-section-id=\"s1phwo\" data-start=\"1179\" data-end=\"1200\">\n<strong data-start=\"1181\" data-end=\"1187\">B:</strong> Old Cape Cod\n</li>\n</ul>\n<p data-start=\"1202\" data-end=\"1282\">Classic vocal pop from Patti Page featuring the enduring hit <strong data-start=\"1263\" data-end=\"1282\">\"Old Cape Cod.\"</strong></p>\n<h3 data-section-id=\"1uef3h1\" data-start=\"1284\" data-end=\"1297\">Condition</h3>\n<ul data-start=\"1298\" data-end=\"1454\">\n<li data-section-id=\"18fcbrb\" data-start=\"1298\" data-end=\"1371\">\n<strong data-start=\"1300\" data-end=\"1310\">Vinyl:</strong> VG (light surface marks from normal use; retains good gloss)\n</li>\n<li data-section-id=\"n433mi\" data-start=\"1372\" data-end=\"1419\">\n<strong data-start=\"1374\" data-end=\"1385\">Labels:</strong> Moderate age wear, fully readable\n</li>\n<li data-section-id=\"chb94l\" data-start=\"1420\" data-end=\"1454\">\n<strong data-start=\"1422\" data-end=\"1433\">Sleeve:</strong> Generic paper sleeve\n</li>\n</ul>\n<p data-start=\"1456\" data-end=\"1555\">Ships in a new paper sleeve inside a protective poly sleeve and securely packed in a 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1644,5 +1644,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:21Z"
 }

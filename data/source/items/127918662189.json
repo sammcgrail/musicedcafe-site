@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SP4588",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1607,7 +1607,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127918662189?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FvGyZL0GU%2Bl%2BiC%2BXo9w12IQ4HtCsC1KemxTB6ZUjnjhCAVBqIy4O4efOSvuzUD5Wp%2Begqf5nmyNj2g8LBACmF2scMTsy%2F%2BCqlnmqOODI2F%2BWF9PUJlBtT4zIA%2FihUxoZiPXkfSgaIFuQyzbJaqm0uwzu9BVwc8CgZiagUHeQMqS%2B%2B9XmQn1tZDnO6Y66T6MO4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127918662189?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FvGyZL0GU%2Bl%2BiC%2BXo9w12IQ4HtCsC1KemxTB6ZUjnjhNKcd8hOpKIeQ2FXPlAwxdlUzbR%2FUfGmNjD6r1cu0nntOfhOurkecF20BOXHsoSJ9kZgVUBFhu0KKwGvsa0%2FxccZfp1rqMLjz52m9nQzEPeY8K7PIYbwRvDMVJSCqEcii8X80vSqrS%2FDrjgrNeLtsBY%3D",
       "description": "<p data-start=\"1259\" data-end=\"1322\"><strong data-start=\"1259\" data-end=\"1300\">Joan Armatrading – Self-Titled (1976)</strong><br data-start=\"1300\" data-end=\"1303\">\nA&amp;M Records SP-4588</p>\n<p data-start=\"1324\" data-end=\"1462\">Classic singer-songwriter album featuring the hit <strong data-start=\"1374\" data-end=\"1398\">\"Love and Affection\"</strong> along with <strong data-start=\"1410\" data-end=\"1428\">\"Down to Zero\"</strong> and <strong data-start=\"1433\" data-end=\"1462\">\"Somebody Who Loves You.\"</strong></p>\n<p data-start=\"1464\" data-end=\"1477\"><strong data-start=\"1464\" data-end=\"1477\">Condition</strong></p>\n<ul data-start=\"1478\" data-end=\"1648\">\n<li data-section-id=\"74ihrl\" data-start=\"1478\" data-end=\"1545\">\nVinyl: VG+ (clean with light cosmetic wear, retains strong gloss)\n</li>\n<li data-section-id=\"1lsali3\" data-start=\"1546\" data-end=\"1624\">\nCover: VG (light shelf wear, corner wear, and ring wear consistent with age)\n</li>\n<li data-section-id=\"1blkhb0\" data-start=\"1625\" data-end=\"1648\">\nOriginal A&amp;M pressing\n</li>\n</ul>\n<p data-start=\"1650\" data-end=\"1670\"><strong data-start=\"1650\" data-end=\"1670\">Track Highlights</strong></p>\n<ul data-start=\"1671\" data-end=\"1768\">\n<li data-section-id=\"1u0dmi0\" data-start=\"1671\" data-end=\"1691\">\nLove and Affection\n</li>\n<li data-section-id=\"1wcylb7\" data-start=\"1692\" data-end=\"1706\">\nDown to Zero\n</li>\n<li data-section-id=\"16357g\" data-start=\"1707\" data-end=\"1731\">\nSomebody Who Loves You\n</li>\n<li data-section-id=\"sw25x0\" data-start=\"1732\" data-end=\"1747\">\nJoin the Boys\n</li>\n<li data-section-id=\"1x7i67s\" data-start=\"1748\" data-end=\"1768\">\nTall in the Saddle</li></ul>",
       "paymentMethods": [
         {
@@ -1664,5 +1664,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:01Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "4226",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1577,7 +1577,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036517717?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8Qpo0QsYMi73WQoMCgcnYLNnFxK2meu0N%2FzZUz4clrcjRdua8Ckmp2J%2F%2BEcCxHw%2BDAeW27IiV9Io%2Bb8KyicT%2FY7e1d1kjLpjBhReLkt56W3YEYmx66R2sRtfPch%2FmT6KGCxM8WzvhGJruQ1w6jH%2BGlX7woWPMoziSNLtJdKzaw%2BrQ95Js6xwNozuQwRhfe958%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036517717?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8Qpo0QsYMi73WQoMCgcnYLNnFxK2meu0N%2FzZUz4clrcgED7leT0XlYAS1z1eKsp7%2BykzqUFU2yyToV65gic2GY1Ww2J%2Brt%2BKuwUQlmIeU3nuHCDBXvTvpIrKdCCvtfY%2FzwhaRReOQLeA68A%2BSbUsXFEGge5o7sPUXJZD4AbWZ00xQ98W9Tz%2F2zxGlQJby4zbE%3D",
       "description": "Teresa Brewer Patti Page - Music Music Music Allegheny Moon 45 RPM COL 4226. Condition is Used. Shipped with USPS Media Mail. ",
       "paymentMethods": [
         {
@@ -1634,5 +1634,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:48Z"
 }

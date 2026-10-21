@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "3746321687",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1582,7 +1582,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036503287?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BTIys5IIkfdRF5YmaDc9P6LQoOGaUUuTiRRQXpZaQQ5IueS9%2BMnBxr%2F8jMY705RBMZHg1c1fzZ0wNJOWw7nCo55tYZdRrEg4j%2BO1GPPueCQjQ3GTCDR1lrMy89mO0B%2FO2qPJ9Z7uHSaTwiKc1NYYoXxdWmlmCDqqR%2FsJhubBxHDUVwp2K%2FSoxMxLYVwaRG4bw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036503287?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BTIys5IIkfdRF5YmaDc9P6LQoOGaUUuTiRRQXpZaQQ5KuLZGY7KxdBVd5FMBprnHcGm0ap4T0%2Be7rYmWtRdXm2F6PLXw09KPgYt9Ydd9Aci0ZmY7dkL7Z4TxjbWnoILYci9sYYqUr8M%2Bk5PtrSNx%2BU%2BtNeAJRPHkNGgjqPyf%2B%2BlJdlVUOHKZTKuKgx4TWPYXQ%3D",
       "description": "Boyz II Men - Sympin Remix It’s So Hard To Say Goodbye 45 RPM Motown 374632168-7. Condition is Used. Shipped with USPS Media Mail. ",
       "paymentMethods": [
         {
@@ -1639,5 +1639,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:52Z"
 }

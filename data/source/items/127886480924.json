@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "LL3429",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1632,7 +1632,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127886480924?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8UwtwtX6AJiXDfij0929AB4cO9AhvXyTE5lYalrZJ%2Faw5FnFMi1abbGp0lVfFkJMkc3gyx%2BGtmbgV4lo3EdsXupNqtlukvq40J8gG5jsm%2BoDUb3uboo2KPCOE8Gsz7bP4Dgz7dP5ZxFdoHGJQI04azaBBYYsPI4vayEU2wLxfId%2FCP6ItgGoMPNS0Xau6LmU4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127886480924?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8UwtwtX6AJiXDfij0929AB4cO9AhvXyTE5lYalrZJ%2FaxIkNLmrB6dvgkAvX9%2BbpopA1M9N%2FIlvnTwS7tIpwtQIK3mqzKpz4oGoiCFBATstap%2B9CC2IU8NN3U9RwylWslNmE5S1UUp8qz8yEgFfPSYRWMwk%2BdgekGD%2Fx9aq8mxuiDZnY%2F0zdzYNBTqcmUr%2Bq4A%3D",
       "description": "<h2 data-section-id=\"1tsykok\" data-start=\"1145\" data-end=\"1192\"><strong data-start=\"2419\" data-end=\"2460\">The Rolling Stones – Out of Our Heads</strong><br>Original vintage 1965 mono LP on London Records.<br><strong data-start=\"2512\" data-end=\"2531\">Catalog Number:</strong> LL 3429<br><strong data-start=\"2542\" data-end=\"2553\">Format:</strong> 12\" Vinyl LP<br><strong data-start=\"2569\" data-end=\"2579\">Speed:</strong> 33⅓ RPM<br><strong data-start=\"2590\" data-end=\"2600\">Audio:</strong> Mono<br><strong data-start=\"2608\" data-end=\"2618\">Label:</strong> London Records FFRR<br><strong data-start=\"2641\" data-end=\"2658\">Release Year:</strong> 1965<br>Early red London FFRR label variation with <strong data-start=\"2708\" data-end=\"2758\">“Made in England by the Decca Record Co. Ltd.”</strong> printed along the top of the labels.<br>Includes classic tracks such as:<br><ul data-start=\"2831\" data-end=\"2966\">\n\n\n\n\n<li>(I Can't Get No) Satisfaction</li><li>The Last Time</li><li>Play With Fire</li><li>The Spider and the Fly</li><li>Mercy, Mercy</li><li>That's How Strong My Love Is</li><ul data-start=\"2831\" data-end=\"2966\">\n</ul>\n\n</ul><strong data-start=\"2968\" data-end=\"2988\">Vinyl Condition:</strong> Approximately VG visually. Record retains good gloss but shows surface marks, hairlines and sleeve scuffing consistent with age and use. Please review the close-up photos carefully.<br><strong data-start=\"3172\" data-end=\"3192\">Cover Condition:</strong> Approximately VG-/VG. Original mono jacket shows considerable vintage surface wear, rubbing, edge/corner wear and age-related discoloration as pictured.<br>A collectible early mono Rolling Stones pressing from the height of the British Invasion era.<br>(I Can't Get No) Satisfaction<br>The Last Time<br>Play With Fire<br>The Spider and the Fly<br>Mercy, Mercy<br>That's How Strong My Love Is<br><strong data-start=\"2968\" data-end=\"2988\">Vinyl Condition:</strong> Approximately VG visually. Record retains good gloss but shows surface marks, hairlines and sleeve scuffing consistent with age and use. Please review the close-up photos carefully.<br><strong data-start=\"3172\" data-end=\"3192\">Cover Condition:</strong> Fair (F). Original mono jacket shows considerable vintage surface wear, rubbing, edge/corner wear and age-related discoloration as pictured.<br>A collectible early mono Rolling Stones pressing from the height of the British Invasion era.\n\n\n</h2>",
       "paymentMethods": [
         {
@@ -1689,5 +1689,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:29Z"
 }

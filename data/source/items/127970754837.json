@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "NB978",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1602,7 +1602,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970754837?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B3OwOnF4pxIinPLW8p%2FeSTRKl5cKW7H6u4ASMmChXOfqXv8%2FHI3BrNp9Opi%2FJS0RF8Wk1flKiBV4yx422bPtFtyPfBptndQsLPJ7YG0YGXLqCAMornD1Ax2s1hQT%2BOjNW%2FXCcQsAm4rfBdxkGyCjOXtw6qPlHNWmMTWVogqV2VjxUdQynekP0DkZygNQj4i9c%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970754837?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B3OwOnF4pxIinPLW8p%2FeSTRKl5cKW7H6u4ASMmChXOfmrfTvBnFdZbzWE0ter8BgKmxxPxpRZh%2FRiM1A98eCyVCRnrE58RXNcFOkdkRZiE16dWvLQs1O6FvEiZpn7626m6dYq%2FePjQHRnemOLkvSWOzrlONdIdO4lQDBQyDCMhCPN3lsZ%2B%2BPp4gyv1ASmL2xY%3D",
       "description": "<p data-start=\"658\" data-end=\"724\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"658\" data-end=\"724\">Donna Summer – Hot Stuff / Journey To The Centre Of Your Heart</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"726\" data-end=\"1057\">Original 1979 Casablanca Records 45 RPM single featuring Donna Summer's Grammy Award-winning disco anthem <strong data-start=\"832\" data-end=\"848\">\"Hot Stuff,\"</strong> backed with <strong data-start=\"861\" data-end=\"903\">\"Journey To The Centre Of Your Heart.\"</strong> Produced by legendary disco pioneer <strong data-start=\"940\" data-end=\"959\">Giorgio Moroder</strong> and Pete Bellotte, this is an essential addition to any disco, dance, or classic rock collection.</p>\n<h3 data-section-id=\"1j02m21\" data-start=\"1059\" data-end=\"1077\">Record Details</h3>\n<ul data-start=\"1079\" data-end=\"1360\">\n<li data-section-id=\"1cv179c\" data-start=\"1079\" data-end=\"1105\">\n<strong data-start=\"1081\" data-end=\"1092\">Artist:</strong> Donna Summer\n</li>\n<li data-section-id=\"82baqb\" data-start=\"1106\" data-end=\"1128\">\n<strong data-start=\"1108\" data-end=\"1118\">Title:</strong> Hot Stuff\n</li>\n<li data-section-id=\"pcnkct\" data-start=\"1129\" data-end=\"1178\">\n<strong data-start=\"1131\" data-end=\"1142\">B-Side:</strong> Journey To The Centre Of Your Heart\n</li>\n<li data-section-id=\"1qtctib\" data-start=\"1179\" data-end=\"1222\">\n<strong data-start=\"1181\" data-end=\"1191\">Label:</strong> Casablanca Records &amp; FilmWorks\n</li>\n<li data-section-id=\"15g4ftk\" data-start=\"1223\" data-end=\"1251\">\n<strong data-start=\"1225\" data-end=\"1244\">Catalog Number:</strong> NB 978\n</li>\n<li data-section-id=\"135ls2i\" data-start=\"1252\" data-end=\"1281\">\n<strong data-start=\"1254\" data-end=\"1265\">Format:</strong> 7\" Vinyl Single\n</li>\n<li data-section-id=\"18ivji3\" data-start=\"1282\" data-end=\"1301\">\n<strong data-start=\"1284\" data-end=\"1294\">Speed:</strong> 45 RPM\n</li>\n<li data-section-id=\"11sljua\" data-start=\"1302\" data-end=\"1314\">\n<strong data-start=\"1304\" data-end=\"1314\">Stereo</strong>\n</li>\n<li data-section-id=\"wjjjci\" data-start=\"1315\" data-end=\"1339\">\n<strong data-start=\"1317\" data-end=\"1334\">Release Year:</strong> 1979\n</li>\n<li data-section-id=\"1gen8ff\" data-start=\"1340\" data-end=\"1360\">\n<strong data-start=\"1342\" data-end=\"1360\">Made in U.S.A.</strong>\n</li>\n</ul>\n<h3 data-section-id=\"17si63v\" data-start=\"1362\" data-end=\"1379\">Track Listing</h3>\n<p data-start=\"1381\" data-end=\"1391\"><strong data-start=\"1381\" data-end=\"1391\">Side A</strong></p>\n<ul data-start=\"1392\" data-end=\"1403\">\n<li data-section-id=\"101gvc9\" data-start=\"1392\" data-end=\"1403\">\nHot Stuff\n</li>\n</ul>\n<p data-start=\"1405\" data-end=\"1415\"><strong data-start=\"1405\" data-end=\"1415\">Side B</strong></p>\n<ul data-start=\"1416\" data-end=\"1453\">\n<li data-section-id=\"10s92cj\" data-start=\"1416\" data-end=\"1453\">\nJourney To The Centre Of Your Heart\n</li>\n</ul>\n<h3 data-section-id=\"1uef3h1\" data-start=\"1455\" data-end=\"1468\">Condition</h3>\n<p data-start=\"1470\" data-end=\"1501\"><strong data-start=\"1470\" data-end=\"1480\">Vinyl:</strong> Very Good Plus (VG+)</p>\n<ul data-start=\"1502\" data-end=\"1718\">\n<li data-section-id=\"xiosp\" data-start=\"1502\" data-end=\"1540\">\nVinyl retains a nice original gloss.\n</li>\n<li data-section-id=\"1acwoup\" data-start=\"1541\" data-end=\"1620\">\nLight cosmetic sleeve and handling marks that do not detract from appearance.\n</li>\n<li data-section-id=\"7aeyv8\" data-start=\"1621\" data-end=\"1668\">\nLabels are clean with no writing or stickers.\n</li>\n<li data-section-id=\"1i3j417\" data-start=\"1669\" data-end=\"1718\">\nPlease review all photos for overall condition.\n</li>\n</ul>\n<p data-start=\"1720\" data-end=\"1730\"><strong data-start=\"1720\" data-end=\"1730\">Sleeve</strong></p>\n<ul data-start=\"1731\" data-end=\"1760\">\n<li data-section-id=\"18q9mh6\" data-start=\"1731\" data-end=\"1760\">\nGeneric white paper sleeve.</li></ul>",
       "paymentMethods": [
         {
@@ -1659,5 +1659,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:54Z"
 }

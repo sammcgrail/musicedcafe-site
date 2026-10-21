@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "1082",
       "estimatedAvailabilities": [
@@ -106,8 +106,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1624,7 +1624,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127904256217?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9ardyxhItlzfCjNExngzCJ5ohPpCC6m%2Fd96J--ZkG2b%2BsOLFtaYfaXbvJ5JFuAU8fXjA%2FMRq6NjJq1Ae67irTG3JN32S7CYIqPPo94EZOCfQw0F3wr%2BsuMhnubEJlWtI%2Bqm4PeJN01fzN5qsDBkvJwBVdm8EOu66sIBf8STHLXFRL%2BZqF2rmlnM2mUHfwKGrM%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127904256217?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9ardyxhItlzfCjNExngzCJ5ohPpCC6m%2Fd96J--ZkG2byOZa%2FXiEfT3ZJH0Mb5H9dxpaYpXRIwqOYTlbwGp4NWIxodddjVQIK%2Fg9%2BtBeV95TJdPl%2Fdim7Ky6grCeg%2B3KgGI%2FYjxsX1xRy7whdkOoUpsypZYlQR0KZefLktkJ3LbejMZetPoQIYbVbiF8JoGuaw%3D",
       "description": "<p data-start=\"1535\" data-end=\"1569\"><strong data-start=\"1535\" data-end=\"1569\">Le Jazz Primitif From Trinidad</strong></p>\n<p data-start=\"1571\" data-end=\"1693\">Rare Caribbean jazz LP featuring Rupert Clemendore and John Buddy Williams on the highly regarded Cook Laboratories label.</p>\n<p data-start=\"1695\" data-end=\"1735\">An excellent addition for collectors of:</p>\n<ul data-start=\"1736\" data-end=\"1834\">\n<li data-section-id=\"9ndn3k\" data-start=\"1736\" data-end=\"1752\">\nCaribbean Jazz\n</li>\n<li data-section-id=\"1cwckmj\" data-start=\"1753\" data-end=\"1766\">\nWorld Music\n</li>\n<li data-section-id=\"1luy9zq\" data-start=\"1767\" data-end=\"1792\">\nTrinidad &amp; Tobago Music\n</li>\n<li data-section-id=\"1j2cnpu\" data-start=\"1793\" data-end=\"1815\">\nAudiophile Pressings\n</li>\n<li data-section-id=\"1rju17u\" data-start=\"1816\" data-end=\"1834\">\nVintage Jazz LPs\n</li>\n</ul>\n<p data-start=\"1836\" data-end=\"1920\"><strong data-start=\"1836\" data-end=\"1846\">Label:</strong> Cook Laboratories<br data-start=\"1864\" data-end=\"1867\">\n<strong data-start=\"1867\" data-end=\"1886\">Catalog Number:</strong> 1082<br data-start=\"1891\" data-end=\"1894\">\n<strong data-start=\"1894\" data-end=\"1905\">Format:</strong> 12\" LP, 33 RPM</p>\n<h3 data-section-id=\"1uef3h1\" data-start=\"1922\" data-end=\"1935\">Condition</h3>\n<p data-start=\"1936\" data-end=\"1965\"><strong data-start=\"1936\" data-end=\"1946\">Vinyl:</strong> VG</p>\n<ul data-start=\"1966\" data-end=\"2036\">\n<li data-section-id=\"1j49r33\" data-start=\"1966\" data-end=\"1980\">\nStrong gloss\n</li>\n<li data-section-id=\"qj8vxs\" data-start=\"1981\" data-end=\"2006\">\nLight signs of handling\n</li>\n<li data-section-id=\"xkkpl2\" data-start=\"2007\" data-end=\"2036\">\nNo major scratches observed\n</li>\n</ul>\n<p data-start=\"2038\" data-end=\"2052\"><strong data-start=\"2038\" data-end=\"2049\">Jacket:</strong> VG</p>\n<ul data-start=\"2053\" data-end=\"2128\">\n<li data-section-id=\"1hxe19n\" data-start=\"2053\" data-end=\"2072\">\nModerate age wear\n</li>\n<li data-section-id=\"9qcvez\" data-start=\"2073\" data-end=\"2107\">\nSome discoloration and edge wear\n</li>\n<li data-section-id=\"1y6hdst\" data-start=\"2108\" data-end=\"2128\">\nStructurally solid</li></ul>",
       "paymentMethods": [
         {
@@ -1681,5 +1681,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:09Z"
 }

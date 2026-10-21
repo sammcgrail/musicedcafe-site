@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "727772",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023127090?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Fb4j%2F8MGWO5kjd%2BBN5u44tcRkNBD%2FPmaeGtoma3LXSEfzvTQlStD%2BXCQdyPDecg73H89L5UzChtkviwBgksyis%2FSkdCgJFQT3oHCc8juWHXyUyCv6WD2QMrgYwCktTiPQqQ4%2B6SaoFAt5eFV%2FOzZHjcK%2Bof0UY0jw6%2BfhvKFZWJIR97%2Fn0dt8d5JPRWA1RU2k%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023127090?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Fb4j%2F8MGWO5kjd%2BBN5u44tcRkNBD%2FPmaeGtoma3LXSEW6NIx2yze9HtsEgKpe4n1hLSXbYL2ACJvaWTkC7KAoz7HgM0IOI7jB0oPqBifR94syJkLzRfsDhVb%2FOoct8BEbMuP8uRj7esbxEK6QBcfNIwsFlCM0BKFoS1P%2Bw0%2FPLupSXvg93ql%2Fexos8a2u%2BdXE%3D",
       "description": "<p>1988 Warner Bros. 7-inch single by Al B. Sure!, featuring his version of “Killing Me Softly” backed with the instrumental version.</p><br /><p>Produced by Kyle West and co-produced by Al B. Sure!, with executive producers Benny Medina and Andre Harrell. Great late-1980s R&amp;B/New Jack Swing collectible.</p><br /><p>Record appears well cared for with light signs of previous use. Please review all photos carefully for exact cosmetic condition.</p><br /><p>Recommended eBay price: $9.99–$12.99 + shipping</p>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:11Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "MCA40161",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970877133?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Fwtq1AxBv5NNmfAm%2Ff7QGHt3z8rz7BsjEMuA5bVySvZgW5di%2BHZRXKmg%2B4XlgAlH0r7slMZxTKsk9LjD4plpPTsrJA72EHg8Fp9VfrmFWdTETaGBBOXIs%2F8rGnirN4mngTLEK0DN42Qj3RmU7FVVdBo0tgB%2FvsZFpxgXlEybJCkO4Cz5C4EZSekpIhidD1KX4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970877133?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Fwtq1AxBv5NNmfAm%2Ff7QGHt3z8rz7BsjEMuA5bVySvZgpdbXyJWELuHogOh3K3zzmRWm2sw1YA8eoOxZvrctAn4jvPx8kQjZVNRXKukFrBStGXmTVfwdyNzv7fb017U8XSb%2BHpnrRwI%2FChHfqFGcyQgxkivwGCm2ZJxWa2r8PK4Lbd9V87%2Bns0iTP7WY1bdsk%3D",
       "description": "<p data-start=\"1026\" data-end=\"1168\" class=\"PDq2pG_selectionAnchorContainer\">Original 1973 Cher 45 RPM single featuring the Billboard No. 1 hit <strong data-start=\"1093\" data-end=\"1109\">\"Dark Lady.\"</strong> The B-side includes <strong data-start=\"1130\" data-end=\"1168\">\"Two People Clinging to a Thread.\"</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1170\" data-end=\"1368\">One of Cher's signature recordings of the 1970s, \"Dark Lady\" topped the U.S. charts and remains one of her best-known classic hits. A nice collectible for fans of Cher, vintage pop, and 1970s vinyl.</p>\n<p data-start=\"1370\" data-end=\"1492\">Record will be shipped in a new paper sleeve inside a protective poly sleeve and securely packed in a rigid 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:40Z"
 }

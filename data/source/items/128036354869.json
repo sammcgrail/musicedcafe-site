@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "3805904",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1581,7 +1581,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036354869?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B%2BMmXdDFdr0Y%2BMmR8p9ypeoJ9vwwp7rBaxtlRHQdO58YcvpaZzIEhZhtRFEB0z9VBChyx1cyDLPyjv0i4mkwlQFo8sNpHKNTYEFURuGffTQk92fI%2BTs%2B4rfBu1nyLrveR4BJTy%2FP0x1ZKoA0tm6gOpebv12s7gPuSVGXjQ10z69Nd9RR%2BuFp7O%2Ff3Ur9lfb%2FA%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036354869?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B%2BMmXdDFdr0Y%2BMmR8p9ypeoJ9vwwp7rBaxtlRHQdO58VrBPsJCweWXmwj9KHh%2B%2Feb%2F8jyvOyg67iLyH5sXWlgL5TosaJwJXqZXgjYI2eq%2FCJYRUaeIwoCaLK0exJytY8bSo6OvwlOBSXOT8qcGgl7NMaBKcrlJ5%2BF%2Faev6UrIvNPSqLAuppKhdPgarPEMMdiE%3D",
       "description": "<p>Jean Beauvoir Feel The Heat 7” 45 Columbia 38-05904 1986 Vinyl Single</p><br /><p>Artist: Jean Beauvoir</p><p>A-Side: Feel the Heat</p><p>B-Side: Standing in the Line of Fire</p><p>Label: Columbia</p><p>Catalog Number: 38-05904</p><p>Format: 7” Vinyl Single / 45 RPM / Stereo</p><p>Year: 1986</p><p>Country: USA</p><br /><p>Original 1986 U.S. Columbia 45 from Jean Beauvoir, featuring “Feel the Heat” backed with “Standing in the Line of Fire.”</p><br /><p>Both tracks come from Beauvoir’s Drums Along the Mohawk era and showcase his blend of rock, pop and new wave.</p><br /><p>Condition:</p><p>Vinyl is approximately VG to VG+ visually, retaining good gloss with light surface marks and normal signs of previous play. Labels remain readable, with some visible age/handling wear and a marking on one label near the barcode.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p><br /><p>Ships securely in protective packaging designed for 7-inch records.</p>",
       "paymentMethods": [
         {
@@ -1638,5 +1638,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:01Z"
 }

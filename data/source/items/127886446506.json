@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -105,8 +105,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1618,7 +1618,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127886446506?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9piFbJ%2BUYuj3hvVGhxV%2BHVmKk3pXSUWWEa%2BY9ykKRQd0cG4k7K13RscNmW%2B6gMLCQV6PaGK7k1rkWG246WxnI0wTIU8MBEUorUOnNv5HRjghAKt67chGhM9NolDIDWHuJgmpBsrV0s2OYFRqAMGKT1kE%2BzgbnsLKahk9L02SYypULbdi5JEXi8X579DAtkXoc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127886446506?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9piFbJ%2BUYuj3hvVGhxV%2BHVmKk3pXSUWWEa%2BY9ykKRQd4ymL7iT%2BIImpX%2BJ8ZvYog8Ag5s3w9mGRFgNLF9q5GKp5yVzYfEuXIbD3pMecJeOqkAH6u0XKXgBG%2BVYrNdht8JMbzJM98bJ7xEmGu1jqUMGDarJrBnJ72lYSheesbPbB4Xx%2FaRoc29vK1FZMigd5nQ%3D",
       "description": "<h2 data-section-id=\"1egpwdc\" data-start=\"1473\" data-end=\"1541\">Led Zeppelin IV (Zoso / Four Symbols) – Vintage Atlantic Pressing</h2>\n<p data-start=\"1543\" data-end=\"1580\"><span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Led Zeppelin IV</span></p>\n<p data-start=\"1582\" data-end=\"1649\">Classic album from <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Led Zeppelin</span> featuring:</p>\n<ul data-start=\"1650\" data-end=\"1744\">\n<li data-section-id=\"3ierk3\" data-start=\"1650\" data-end=\"1661\">\nBlack Dog\n</li>\n<li data-section-id=\"ltl50r\" data-start=\"1662\" data-end=\"1677\">\nRock and Roll\n</li>\n<li data-section-id=\"3ortrk\" data-start=\"1678\" data-end=\"1698\">\nStairway to Heaven\n</li>\n<li data-section-id=\"2f6hj5\" data-start=\"1699\" data-end=\"1720\">\nGoing to California\n</li>\n<li data-section-id=\"br2mba\" data-start=\"1721\" data-end=\"1744\">\nWhen the Levee Breaks\n</li>\n</ul>\n<p data-start=\"1746\" data-end=\"1829\">Vintage Atlantic Records pressing with original gatefold jacket and iconic artwork.</p><p data-start=\"1746\" data-end=\"1829\">Preview album here:&nbsp;https://youtu.be/iQY3redxluk</p>",
       "paymentMethods": [
         {
@@ -1675,5 +1675,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:31Z"
 }

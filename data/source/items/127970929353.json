@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PB12133",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1622,7 +1622,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970929353?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B%2Fs0PYp86GAMltdSn32yrHqzl7VTAA%2Fn5jaHBHe3Gy2A60r53NeV66fC5yyJF%2F6v3OJgExpg9Zlf4HRyOlO1mYfRMRp9OGbRypuGQFiQMSKHZiFKyyFKa7aOVprDBCLevfO6CoxmLNL9tqq3cId95I8hca%2BzLhQWNSn9xL2oBZfjV%2BSHbaDKqwpmbsNHMmiA8%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970929353?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B%2Fs0PYp86GAMltdSn32yrHqzl7VTAA%2Fn5jaHBHe3Gy2Av%2BGyYqoVYVj0aFS%2FKssnHOoF4rMz%2BCf%2FgALPzgB583uanJUVBDZYUliDLlv1mlD8wp%2BuY4Wa%2BzWPSAdkNsNJ9mSG9uFq46hb4IgKTfY%2B7hy6odOqR9YJLeoZddUkBMUVeWvB8s7XeGjcCMJVWNVKc%3D",
       "description": "<p data-start=\"1055\" data-end=\"1258\" class=\"PDq2pG_selectionAnchorContainer\">Original RCA Records 45 RPM single featuring <strong data-start=\"1100\" data-end=\"1153\">Dolly Parton's Grammy Award-winning hit \"9 to 5,\"</strong> the iconic theme from the 1980 film of the same name starring Dolly Parton, Jane Fonda, and Lily Tomlin.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1260\" data-end=\"1352\">The B-side features <strong data-start=\"1280\" data-end=\"1310\">\"Sing for the Common Man,\"</strong> from Dolly's <em data-start=\"1324\" data-end=\"1345\">9 to 5 and Odd Jobs</em> album.</p>\n<p data-start=\"1354\" data-end=\"1442\">A must-have for country music fans, soundtrack collectors, and Dolly Parton enthusiasts.</p>\n<p data-start=\"1444\" data-end=\"1568\">Record will be shipped in a new paper sleeve inside a protective poly sleeve and packaged securely in a rigid 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1679,5 +1679,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:35Z"
 }

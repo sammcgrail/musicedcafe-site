@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -62,7 +62,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PRO7098",
       "estimatedAvailabilities": [
@@ -87,8 +87,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1565,7 +1565,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128016715157?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9dwHQ3MBCRr6sMxVdqeSRTBOxg4x9u7vFkQAiy9ZICS9lmb0bWpkfg%2FNr86YOCgQvEYFqubfhwrsF5JXEUxdt52go9wqRzW0t5R48Y%2BqLqclJtL3S0YBAXxY0thRBw3tIXtHYCmcEcHU42JvJsAoif3T3ounQ%2ButhXV2yyt0rk9TH8cWY2DXJ3NmfKbCORyOI%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128016715157?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9dwHQ3MBCRr6sMxVdqeSRTBOxg4x9u7vFkQAiy9ZICS5vNOdWJOw0aO4KrOfAXpLVESw9%2FB3SAj6sQHcr8e3YVqkar52Q8Pukwsg340EZyvlT3jI7BtMN%2FUDJQqKn4O%2BGubJWaXb16ePyDArdf810i3Ue62t2heO28Gxyu2kfdI8oH6yI5LtqvpPo%2BZvgWpGc%3D",
       "description": "<p>Paul Hardcastle – Sound Chaser – Vintage Profile Records 12” Vinyl Single</p><br /><p>Early electronic/electro release from British musician and producer Paul Hardcastle, best known for his later international hit “19.”</p><br /><p>Released on Profile Records, catalog number PRO-7098, in the original red Profile Records Giant Single company sleeve.</p><br /><p>A cool piece of early-’80s electro and electronic dance music, especially for collectors of Paul Hardcastle, Profile Records, electro, synth-pop and vintage DJ 12-inch singles.</p>",
       "paymentMethods": [
         {
@@ -1622,5 +1622,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:26Z"
 }

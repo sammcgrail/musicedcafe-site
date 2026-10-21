@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "LPM2449",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1632,7 +1632,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127876839692?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B2huatcRneUub175HxHpAkCG%2BcrEGILh5toCBVLmaZ02mt0iKPThJorXU9lWuerUfRwcTwu4k9qP8QplJJvZiLjypPdOBpXgA2wvxcdBOdiMdkuZi6zKHBoTORxn0tBu4Nhv2KI6Sd0PlsaWmGmpYjvSXHvqXpaRfvOPnCui6WElYFgpfSOkGBhDjkYdhzguc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127876839692?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B2huatcRneUub175HxHpAkCG%2BcrEGILh5toCBVLmaZ0%2FzWx53YIulAV8tgbn2sVur0%2F2qYlc61ffR7ZCXFr8ceqaPBJUHd06HaohVf8IvEhAwSC%2BvQvW1LjvS1cVUkC5UioHE1hyL1WXr9m6VqEAkU7mo124mnx9mMofe8ahf8WhEG3ctjZ6ZOJzPlnPBoODU%3D",
       "description": "<p data-start=\"538\" data-end=\"635\">Vintage original pressing of <strong data-start=\"567\" data-end=\"609\">Harry Belafonte – The Midnight Special</strong> on RCA Victor (LPM-2449).</p>\n<p data-start=\"637\" data-end=\"780\">A powerful early-1960s Belafonte release blending folk, blues, gospel, and traditional American music with rich orchestration and storytelling.</p>\n<h3 data-section-id=\"1bu1phi\" data-start=\"782\" data-end=\"800\">Tracks Include</h3>\n<ul data-start=\"801\" data-end=\"965\">\n<li data-section-id=\"19emqlx\" data-start=\"801\" data-end=\"819\">\nMidnight Special\n</li>\n<li data-section-id=\"1dry90b\" data-start=\"820\" data-end=\"834\">\nCrawdad Song\n</li>\n<li data-section-id=\"yrgb7f\" data-start=\"835\" data-end=\"854\">\nMemphis Tennessee\n</li>\n<li data-section-id=\"vxe3e2\" data-start=\"855\" data-end=\"877\">\nOn Top of Old Smokey\n</li>\n<li data-section-id=\"3udtly\" data-start=\"878\" data-end=\"907\">\nMichael Row the Boat Ashore\n</li>\n<li data-section-id=\"bx6ksf\" data-start=\"908\" data-end=\"921\">\nMuleskinner\n</li>\n<li data-section-id=\"corh04\" data-start=\"922\" data-end=\"965\">\nMakes a Long Time Man Feel Bad<br>\n…and more.</li></ul>",
       "paymentMethods": [
         {
@@ -1689,5 +1689,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:41Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -78,7 +78,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -102,8 +102,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1600,7 +1600,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128123666488?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8HRO7uhp5tGM63Zdbbz5TBEmAuCq7CtYchN5OPDY5W6yBU%2FtIph%2Bj39GLKr2bmtltB2MEaISNBndDB2hrVdCYPvWZHEHwFXsefX5D0DH8AaRZbeDL%2BhzB8C4sgYhEHSwl%2BdAvrR7o4FeEpqnNEmrb%2BnAWDFHsbsNDNuqvVbc42SiMc2k6M6FZ%2B1d6Nr6Kyq1w%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128123666488?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8HRO7uhp5tGM63Zdbbz5TBEmAuCq7CtYchN5OPDY5W61%2FMOgpe3FUfizjlCWPszjyN7kc65TNK9o4Fi2Dq7ZwlWgwPXWM4icrTxNOn0fRX0iQV03YGjpYSkXyeI41C4J7DdXrxVHa%2BU6aoh1aEeHFwLJ4v%2BzAvzdVQL4wSrJzsKe22%2BDfHm5vGsT7mbkBZ39s%3D",
       "description": "<p><strong>Los Bungalitos – Nueva Inglaterra</strong><br>Constant Disappointment Records – 2018<br>Transparent Red Vinyl 12\" LP</p><p>Excellent independently released New England hardcore/thrash record from Lowell, Massachusetts. <em>Nueva Inglaterra</em> combines hardcore, thrash, punk and bilingual English/Spanish vocals, with themes tied to Puerto Rico, New England, colonialism and resistance.</p><p>This is the <strong>transparent red vinyl pressing</strong> released through Constant Disappointment Records.</p><p><strong>Condition:</strong><br>Vinyl: VG+ visually. Record shows light signs of previous handling/play but appears clean overall.<br>Cover: VG+ to NM-. Strong overall condition with only minor handling/storage wear.</p><p>Please review all photos for exact cosmetic condition. Record will be packaged securely for shipment.</p><p><strong>Release details:</strong><br>Artist: Los Bungalitos<br>Title: Nueva Inglaterra<br>Year: 2018<br>Label: Constant Disappointment Records<br>Catalog: Release No. 03<br>Format: 12\" LP<br>Color: Transparent Red Vinyl<br>Speed: 45 RPM<br>Country: United States<br>Genre: Punk / Hardcore / Thrash<br>Style: Hardcore Punk / Crossover Thrash / D-Beat<br>Location: Lowell, Massachusetts</p><p>The album includes <strong>“1610,” “When Amelioration Is Futile,” “Deception,” “Consentimiento Sin Consentimiento,” “Inconsequential Words,” “Futuro Incierto,” “Antiquated Modernity,” “Justice Is Lawlessness,” “El Ultimo Sendero,” “City of the Blind,”</strong> and <strong>“El Circo y El Pan.”</strong> The album was recorded in 2017, mixed by Jay Maas and mastered by Brad Boatright.&nbsp;</p>",
       "paymentMethods": [
         {
@@ -1657,5 +1657,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:03Z"
 }

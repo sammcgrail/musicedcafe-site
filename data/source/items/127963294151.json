@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -88,7 +88,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "TDS3003",
       "estimatedAvailabilities": [
@@ -113,8 +113,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1581,7 +1581,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127963294151?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B%2FIxHNT9xSH8zfNrG1wWz5YEDsFAow8vrFLgEM3NsGjsSf%2BxikAmXKNsiBJULT1DhjkRwzNvV2%2Brr0iF5hHVf5RKqxHvnBpC5Ar75%2FFDdWPLvlNGqXAiW6L2VAuVKJM7fDb6wNWVwC9HDVpRpQoxsqHL4O8p4lJJ9pbmKKrvuzGEGz7xV0brlrrlloWQ9guNs%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127963294151?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B%2FIxHNT9xSH8zfNrG1wWz5YEDsFAow8vrFLgEM3NsGjsrN0NxT4S2qJmf84rDmz1e%2Fc%2BIXA6b8MbTAhjJuuQ4bpfEKPklxjfN33HWfIa2Da%2BJR%2BRCZFLMBBJsTR7CO0cTxKjL8qgGYsBw7%2F7%2FQjXygOzwbPQSlhYa5JIRYsYdKp%2FZ2%2BUJNreRWG9DG58e4n10%3D",
       "description": "<p data-start=\"1169\" data-end=\"1316\" class=\"PDq2pG_selectionAnchorContainer\">Vintage <strong data-start=\"1177\" data-end=\"1193\">\"Italy Ciao\"</strong> 2-record special edition featuring <strong data-start=\"1229\" data-end=\"1264\">Hugo Montenegro &amp; His Orchestra</strong> with accordion performances by <strong data-start=\"1296\" data-end=\"1315\">Dominic Cortese</strong>.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1318\" data-end=\"1406\">A wonderful collection of classic Italian standards and traditional favorites including:</p>\n<ul data-start=\"1408\" data-end=\"1587\">\n<li data-section-id=\"ltuxkz\" data-start=\"1408\" data-end=\"1426\">\nTorna A Sorrento\n</li>\n<li data-section-id=\"3611gg\" data-start=\"1427\" data-end=\"1446\">\nFuniculi Funicula\n</li>\n<li data-section-id=\"gdsxg7\" data-start=\"1447\" data-end=\"1458\">\nMattinata\n</li>\n<li data-section-id=\"1n6ovnm\" data-start=\"1459\" data-end=\"1475\">\nO Marenariello\n</li>\n<li data-section-id=\"2qql5f\" data-start=\"1476\" data-end=\"1486\">\nAh Marie\n</li>\n<li data-section-id=\"gd714g\" data-start=\"1487\" data-end=\"1499\">\nTarantella\n</li>\n<li data-section-id=\"1ffq9q7\" data-start=\"1500\" data-end=\"1520\">\nCarnival of Venice\n</li>\n<li data-section-id=\"wxfgng\" data-start=\"1521\" data-end=\"1534\">\nCiribiribin\n</li>\n<li data-section-id=\"n4r0p6\" data-start=\"1535\" data-end=\"1548\">\nLa Serenade\n</li>\n<li data-section-id=\"dtkx39\" data-start=\"1549\" data-end=\"1571\">\nNon Ti Scordar Di Me\n</li>\n<li data-section-id=\"14319v1\" data-start=\"1572\" data-end=\"1587\">\nand many more</li></ul>",
       "paymentMethods": [
         {
@@ -1638,5 +1638,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:28Z"
 }

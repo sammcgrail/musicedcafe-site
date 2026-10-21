@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -89,7 +89,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "CS1029",
       "estimatedAvailabilities": [
@@ -114,8 +114,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1617,7 +1617,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127963117629?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8bFd91Ka%2BVQbaP20YLzdwWq7W7SJ1HfnZ4sgoIRtNv5bX%2FM2fpxNOpI%2BZTkyo3elCohDFERo41tI8Lz9Eq%2Ffk6Hb7vxGW5vQz5keYRbqbKtsmPNRkjYWaWeba2EMUxZlNcJZs7xOCAvQtEr5Rk1tghfk1zYizBMDM9CHwJo9zylrmq9BmtOYKm8HXSU2zc6Vg%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127963117629?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8bFd91Ka%2BVQbaP20YLzdwWq7W7SJ1HfnZ4sgoIRtNv5S8xyBivoWMzCw8PRe2%2BceDzcFV9RsnWXkh6YongQfTyxqd7YV7pcA1NBc%2B2RMLnk57zYJoJBFL3BCxt3Ati%2BbX93ANlZu7M1nl4zfO3HClMwevR9HlVrJrhMgrbAm0CytPsJofm7JqkN5WzbFRk3fU%3D",
       "description": "<p data-start=\"200\" data-end=\"242\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"200\" data-end=\"242\">Johnny Cash – The World of Johnny Cash</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"244\" data-end=\"502\">A classic <strong data-start=\"254\" data-end=\"274\">2-LP compilation</strong> featuring 20 of Johnny Cash's greatest recordings, released by Columbia Records. This deluxe double album includes many of Cash's signature songs and is an excellent addition for country, folk, and classic Americana collectors.</p>\n<h3 data-section-id=\"1afhekz\" data-start=\"504\" data-end=\"521\">Album Details</h3>\n<ul data-start=\"522\" data-end=\"721\">\n<li data-section-id=\"hm832u\" data-start=\"522\" data-end=\"547\">\n<strong data-start=\"524\" data-end=\"535\">Artist:</strong> Johnny Cash\n</li>\n<li data-section-id=\"1ioy5nx\" data-start=\"548\" data-end=\"585\">\n<strong data-start=\"550\" data-end=\"560\">Title:</strong> The World of Johnny Cash\n</li>\n<li data-section-id=\"1xawajc\" data-start=\"586\" data-end=\"615\">\n<strong data-start=\"588\" data-end=\"598\">Label:</strong> Columbia Records\n</li>\n<li data-section-id=\"j2ecig\" data-start=\"616\" data-end=\"645\">\n<strong data-start=\"618\" data-end=\"637\">Catalog Number:</strong> CS 1029\n</li>\n<li data-section-id=\"101mrgp\" data-start=\"646\" data-end=\"670\">\n<strong data-start=\"648\" data-end=\"659\">Format:</strong> 2 × 12\" LP\n</li>\n<li data-section-id=\"12ze695\" data-start=\"671\" data-end=\"691\">\n<strong data-start=\"673\" data-end=\"683\">Speed:</strong> 33⅓ RPM\n</li>\n<li data-section-id=\"11sljua\" data-start=\"692\" data-end=\"704\">\n<strong data-start=\"694\" data-end=\"704\">Stereo</strong>\n</li>\n<li data-section-id=\"100rm5n\" data-start=\"705\" data-end=\"721\">\nMade in U.S.A.\n</li>\n</ul>\n<h3 data-section-id=\"cjulyo\" data-start=\"723\" data-end=\"741\">Featured Songs</h3>\n<ul data-start=\"742\" data-end=\"1024\">\n<li data-section-id=\"u38yaj\" data-start=\"742\" data-end=\"764\">\nI Still Miss Someone\n</li>\n<li data-section-id=\"cccass\" data-start=\"765\" data-end=\"779\">\nPickin' Time\n</li>\n<li data-section-id=\"1r188s1\" data-start=\"780\" data-end=\"799\">\nI Want to Go Home\n</li>\n<li data-section-id=\"gr1sd0\" data-start=\"800\" data-end=\"824\">\nI Feel Better All Over\n</li>\n<li data-section-id=\"awqguy\" data-start=\"825\" data-end=\"848\">\nFrankie's Man, Johnny\n</li>\n<li data-section-id=\"3nlyw3\" data-start=\"849\" data-end=\"864\">\nOne More Ride\n</li>\n<li data-section-id=\"1979v5n\" data-start=\"865\" data-end=\"894\">\nI'm So Lonesome I Could Cry\n</li>\n<li data-section-id=\"8uug0q\" data-start=\"895\" data-end=\"909\">\nDelia's Gone\n</li>\n<li data-section-id=\"awontk\" data-start=\"910\" data-end=\"923\">\nCasey Jones\n</li>\n<li data-section-id=\"1j52n20\" data-start=\"924\" data-end=\"959\">\nThe Legend of John Henry's Hammer\n</li>\n<li data-section-id=\"13mp7uh\" data-start=\"960\" data-end=\"981\">\nWaiting for a Train\n</li>\n<li data-section-id=\"1w1qlnd\" data-start=\"982\" data-end=\"990\">\nBusted\n</li>\n<li data-section-id=\"on69br\" data-start=\"991\" data-end=\"1012\">\nSing It Pretty, Sue\n</li>\n<li data-section-id=\"a056uw\" data-start=\"1013\" data-end=\"1024\">\nAnd more.\n</li>\n</ul>\n<hr data-start=\"1026\" data-end=\"1029\">\n<h2 data-section-id=\"hrykuu\" data-start=\"1031\" data-end=\"1043\">Condition</h2>\n<h3 data-section-id=\"75rooy\" data-start=\"1045\" data-end=\"1054\" class=\"\">Vinyl</h3>\n<ul data-start=\"1055\" data-end=\"1191\">\n<li data-section-id=\"mtfn5y\" data-start=\"1055\" data-end=\"1118\">\n<strong data-start=\"1057\" data-end=\"1070\">Record 1:</strong> VG+ (light surface marks, retains a nice gloss)\n</li>\n<li data-section-id=\"110ojra\" data-start=\"1119\" data-end=\"1191\">\n<strong data-start=\"1121\" data-end=\"1134\">Record 2:</strong> VG+ (light cosmetic wear with no obvious deep scratches)\n</li>\n</ul>\n<h3 data-section-id=\"lnw4kz\" data-start=\"1193\" data-end=\"1203\">Labels</h3>\n<ul data-start=\"1204\" data-end=\"1365\">\n<li data-section-id=\"1uojzks\" data-start=\"1204\" data-end=\"1246\">\nThree labels are clean and present well.\n</li>\n<li data-section-id=\"kw71k0\" data-start=\"1247\" data-end=\"1365\">\nOne label has significant paper damage/peeling (see photos). This is cosmetic only and does <strong data-start=\"1341\" data-end=\"1348\">not</strong> affect playback.\n</li>\n</ul>\n<h3 data-section-id=\"kg4q7o\" data-start=\"1367\" data-end=\"1377\">Jacket</h3>\n<ul data-start=\"1378\" data-end=\"1522\">\n<li data-section-id=\"epurd\" data-start=\"1378\" data-end=\"1386\">\n<strong data-start=\"1380\" data-end=\"1386\">VG</strong>\n</li>\n<li data-section-id=\"ehl014\" data-start=\"1387\" data-end=\"1424\">\nGeneral shelf wear and corner wear.\n</li>\n<li data-section-id=\"kx93j9\" data-start=\"1425\" data-end=\"1463\">\nRing wear visible on the back cover.\n</li>\n<li data-section-id=\"1hpn6p5\" data-start=\"1464\" data-end=\"1522\">\nFront cover displays well with typical age-related wear.\n</li>\n</ul>\n<p data-start=\"1524\" data-end=\"1596\">Please review all photos carefully, as they are part of the description.</p>",
       "paymentMethods": [
         {
@@ -1674,5 +1674,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:35Z"
 }

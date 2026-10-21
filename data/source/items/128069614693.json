@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -78,7 +78,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SD16010",
       "estimatedAvailabilities": [
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1626,7 +1626,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128069614693?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BDr2TU%2FRZqYTaZbn2N%2BwHbXY6n5DYm47%2BPwk3OsBX8%2BdZeVeiZPPw%2F01V2FobX8QaWuwlsA7RuHGIqM8Ui7nDPfXo8LyZDunOazH9eXW4Ae3X3S4rz7ou0RBp6OsqaO3A4fuT8iaGlA274%2BdKeKll1L6cixw9ENX8kN9lUPR7dZR7gKAaenPKymuIfgAUqOlI%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128069614693?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BDr2TU%2FRZqYTaZbn2N%2BwHbXY6n5DYm47%2BPwk3OsBX8%2BUbqnKY3hjPrpiJzyPqJyvAb7LTiOnb8p3lPbpFEBD5Co0cAeEWuJAdevDaG3pnhylQRJ8%2F9pkGhZdM5QCcwLzqw0Xn%2FSkxXenJa0UdQUtw2NHeyjt6Z8GM9X2KGHL7h8KLDcymxRyA4YFm1%2B9QNavo%3D",
       "description": "<p data-start=\"2472\" data-end=\"2570\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2472\" data-end=\"2570\">Bette Midler – The Rose: The Original Soundtrack Recording – Atlantic SD 16010 – 1979 Vinyl LP</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2572\" data-end=\"2688\">Original soundtrack recording from the 1979 film <em data-start=\"2621\" data-end=\"2631\">The Rose</em>, starring Bette Midler, Alan Bates and Frederic Forrest.</p>\n<p data-start=\"2690\" data-end=\"2736\">Featuring Bette Midler performances including:</p>\n<ul data-start=\"2738\" data-end=\"2923\">\n<li data-section-id=\"1nbx61t\" data-start=\"2738\" data-end=\"2761\">\nWhose Side Are You On\n</li>\n<li data-section-id=\"ajxgfo\" data-start=\"2762\" data-end=\"2783\">\nMidnight in Memphis\n</li>\n<li data-section-id=\"8bgb0n\" data-start=\"2784\" data-end=\"2810\">\nWhen a Man Loves a Woman\n</li>\n<li data-section-id=\"9eso13\" data-start=\"2811\" data-end=\"2828\">\nKeep On Rockin'\n</li>\n<li data-section-id=\"17qbtqx\" data-start=\"2829\" data-end=\"2853\">\nLove Me With a Feeling\n</li>\n<li data-section-id=\"ks17u2\" data-start=\"2854\" data-end=\"2864\">\nCamellia\n</li>\n<li data-section-id=\"1mm7h9\" data-start=\"2865\" data-end=\"2879\">\nStay With Me\n</li>\n<li data-section-id=\"1syn0km\" data-start=\"2880\" data-end=\"2908\">\nLet Me Call You Sweetheart\n</li>\n<li data-section-id=\"1kygjwa\" data-start=\"2909\" data-end=\"2923\">\n<strong data-start=\"2911\" data-end=\"2923\">The Rose</strong>\n</li>\n</ul>\n<p data-start=\"2925\" data-end=\"3099\"><strong data-start=\"2925\" data-end=\"2935\">Label:</strong> Atlantic Records<br data-start=\"2952\" data-end=\"2955\">\n<strong data-start=\"2955\" data-end=\"2967\">Catalog:</strong> SD 16010<br data-start=\"2976\" data-end=\"2979\">\n<strong data-start=\"2979\" data-end=\"2988\">Year:</strong> 1979<br data-start=\"2993\" data-end=\"2996\">\n<strong data-start=\"2996\" data-end=\"3007\">Format:</strong> 12\" Vinyl LP<br data-start=\"3020\" data-end=\"3023\">\n<strong data-start=\"3023\" data-end=\"3033\">Speed:</strong> 33⅓ RPM<br data-start=\"3041\" data-end=\"3044\">\n<strong data-start=\"3044\" data-end=\"3054\">Stereo</strong><br data-start=\"3054\" data-end=\"3057\">\n<strong data-start=\"3057\" data-end=\"3067\">Genre:</strong> Soundtrack / Rock / Pop / Vocal</p>",
       "paymentMethods": [
         {
@@ -1683,5 +1683,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:18Z"
 }

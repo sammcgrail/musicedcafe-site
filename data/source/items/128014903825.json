@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "31977",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1577,7 +1577,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014903825?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BIYzJhjfsj6Y51wCComgtPuzkDdNOouUk23gHWP2IAG%2FhgECLMVdqZYF97LiB%2BwIdmeizV0yleyn%2BJmnLYj60Nk3hA6q8iNHSdQEilQ101JFk26FS6BrDNj3lfHS5YXTnB2xs7xjN99H0UzW87oyExnYo5hY3EGEc6RbqORcpjo6KnDDLbCwnMGTppPedZR%2BE%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014903825?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BIYzJhjfsj6Y51wCComgtPuzkDdNOouUk23gHWP2IAG8UsdGr1SrAfytEsgG8JOFd4Mgv6KSFRYGwTSdQJs2tcJtT8G51WL1EflMLHFD8BF8RSzwXBSJjdDec5mVAKH254PQwMATgJvSy0cIxurfT6Sa7e238ivUPx0QFPcknkcy0HorYzS1Ayzon%2FhP%2FU0Eo%3D",
       "description": "<p>Vintage Decca Records 45 RPM single by bluegrass legends The Osborne Brothers, featuring:</p><br /><p>“Hard Times”</p><p>backed with</p><p>“World of Unwanted”</p><br /><p>Decca Records catalog 31977.</p><br /><p>A nice vintage bluegrass/country single from one of the genre’s most influential brother acts.</p><br /><p>Vinyl shows visible surface marks, light scratches and scuffing consistent with age and previous use while retaining decent overall gloss. Labels show some age/play wear but remain bright and fully readable.</p>",
       "paymentMethods": [
         {
@@ -1634,5 +1634,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:46Z"
 }

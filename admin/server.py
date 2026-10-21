@@ -12,6 +12,22 @@ Routes (all /admin/api/* need  Authorization: Bearer <ADMIN_TOKEN>):
   GET  /admin/api/merch        merch preorder reservations + totals per item/option
   GET  /admin/api/merch.csv    the same reservations as CSV
   POST /admin/api/merch/delete?id=<reservation id>
+  GET  /admin/api/sell         "Sell Your Records" submissions (names, emails, phones: never logged) + review status
+  GET  /admin/api/sell.csv     the same submissions as CSV
+  POST /admin/api/sell/delete?id=<submission id>   (also deletes its photos and review)
+  Sell offer calculator (mec/sell_offer.py; PRIVATE, admin token only):
+  GET  /admin/api/sell/detail?id=          submission + photos list + per-record valuation and offers
+  GET  /admin/api/sell/photo?id=&p=r1-front|ov1&size=thumb|full|original   a stored photo (never served by nginx)
+  GET  /admin/api/sell/valuation.csv?id=   the valuation as CSV
+  GET  /admin/api/sell/rules               offer rules (data/sell/offer_rules.json, defaults until saved)
+  POST /admin/api/sell/rules               save offer rules
+  POST /admin/api/sell/review              {id, status?, ship_method?, final_offer?, note?, records?: {key: {...}},
+                                            add_extra?, remove_extra?}
+  POST /admin/api/sell/search              {id, key, catno?, artist?, title?}  Discogs candidates (read-only client)
+  POST /admin/api/sell/pick                {id, key, release_id, refresh?}   choose a release + fetch value data
+  POST /sell/submit            public sell-your-records form: multipart/form-data with photos (mec/sell_upload.py:
+                               streamed to disk, 8 MB per photo, 120 MB per request) or urlencoded. JSON reply when
+                               Accept: application/json, otherwise a 303 redirect to GET /sell/submit?r=<id>
   POST /merch/reserve          public merch reservation form (urlencoded; JSON reply when Accept: application/json,
                                otherwise a 303 redirect to GET /merch/reserve?r=<id>, the thank-you page)
   Discogs (mec/discogs.py; every call is inert without DISCOGS_TOKEN):
@@ -43,8 +59,11 @@ Routes (all /admin/api/* need  Authorization: Bearer <ADMIN_TOKEN>):
   GET  /ebay/account-deletion  eBay Marketplace Account Deletion challenge (needed for a production keyset)
   POST /ebay/account-deletion  acknowledges notifications (this site stores no eBay buyer data)
 
-Also runs the daily scheduled sync (config sync.daily_at_utc). With no API keys
-the scheduled run records "skipped: no credentials" and changes nothing.
+Also runs the scheduled eBay sync: every sync.interval_minutes (60), or once a
+day at sync.daily_at_utc when the interval is null. Each run: Browse sync, then
+(on success) sold confirmation, photos, rebuild, optional Discogs push. The
+Instagram import inside it runs once per UTC day. With no API keys the
+scheduled run records "skipped: no credentials" and changes nothing.
 And a Discogs sales poll every 15 minutes (DISCOGS_POLL_MINUTES): read-only on
 Discogs, records "skipped: no DISCOGS_TOKEN" without a token.
 Uploaded CSVs are processed in memory and never written to disk or logged.
@@ -68,7 +87,7 @@ ROOT = Path(os.environ.get("MEC_ROOT", Path(__file__).resolve().parent.parent))
 sys.path.insert(0, str(ROOT))
 os.environ.setdefault("MEC_ROOT", str(ROOT))
 
-from mec import merch, store  # noqa: E402
+from mec import merch, sell, sell_offer, sell_upload, store  # noqa: E402
 from mec.cli import _load_env  # noqa: E402
 
 _load_env()
@@ -83,6 +102,13 @@ MERCH_MAX_BODY = 8 * 1024
 MERCH_RL_SHORT = merch.RateLimiter(5, 600)      # per IP: 5 reservations / 10 minutes
 MERCH_RL_DAY = merch.RateLimiter(20, 86400)     # per IP: 20 / day
 MERCH_RL_ALL = merch.RateLimiter(500, 86400)    # whole site: 500 / day (stops a flood filling the disk)
+SELL_MAX_BODY = 16 * 1024                      # urlencoded (no photos)
+SELL_MAX_UPLOAD = sell_upload.MAX_REQUEST      # multipart with photos; Caddy's cap sits just above this
+SELL_UPLOADS = threading.BoundedSemaphore(3)   # concurrent photo uploads (each streams to disk)
+SELL_MIN_FREE_DISK = 2 * 1024 ** 3
+SELL_RL_SHORT = sell.RateLimiter(5, 600)       # per IP: 5 submissions / 10 minutes
+SELL_RL_DAY = sell.RateLimiter(20, 86400)      # per IP: 20 / day
+SELL_RL_ALL = sell.RateLimiter(300, 86400)     # whole site: 300 / day
 DISCOGS_POLL_SECONDS = max(5, int(os.environ.get("DISCOGS_POLL_MINUTES") or 15)) * 60
 MERCH_ORIGINS = {"https://musicedcafe.com", "https://www.musicedcafe.com", "https://musicedcafe.sebland.com"}
 
@@ -116,17 +142,36 @@ def do_build():
     return build()
 
 
+def instagram_due(now: datetime | None = None) -> bool:
+    """The Instagram import runs once per UTC day (keyed off its own state file),
+    even though the eBay sync is hourly: it saves Graph API calls."""
+    from mec import instagram
+    from mec.util import load_json
+    now = now or datetime.now(timezone.utc)
+    last = (load_json(instagram.STATE, {}) or {}).get("last_attempt") or ""
+    return last[:10] != now.date().isoformat()
+
+
 def do_refresh():
     from mec.browse import sync
     res = sync()
     res.pop("state", None)
-    try:  # Instagram blog posts: independent of eBay, never blocks the sync
+    try:  # Instagram blog posts: independent of eBay, never blocks the sync; daily only
         from mec import instagram
-        res["instagram"] = instagram.sync(log=log)
+        res["instagram"] = instagram.sync(log=log) if instagram_due() else {"result": "skipped",
+                                                                            "reason": "already ran today (UTC)"}
     except Exception as e:
         res["instagram"] = {"result": "failed", "error": str(e)[:200]}
     if res.get("result") == "ok":
         from mec import merge, photos
+        try:  # sold confirmation for unavailable / ended records (mec/confirm_sold.py)
+            from mec import confirm_sold
+            from mec.util import config
+            cfg = config()
+            res["sold_confirm"] = confirm_sold.run(cfg["ebay_seller_username"],
+                                                   marketplace=cfg.get("marketplace", "EBAY_US"), log=log)
+        except Exception as e:  # never blocks the rebuild; retried at the next sync
+            res["sold_confirm"] = {"result": "failed", "error": f"{type(e).__name__}: {str(e)[:200]}"}
         try:
             res["photos"] = photos.run(merge.build_records()[0], log=log)
         except Exception as e:  # photos are a nicety; never block the rebuild
@@ -174,28 +219,59 @@ def status_payload():
         "discogs_token_present": bool(os.environ.get("DISCOGS_TOKEN")),
         "last_build": datetime.fromtimestamp(live.stat().st_mtime, timezone.utc).isoformat(timespec="seconds") if live.exists() else None,
         "job": {k: v for k, v in JOB.items()},
-        "schedule_utc": (json.loads((ROOT / "config/site.json").read_text()).get("sync") or {}).get("daily_at_utc"),
+        "schedule_utc": _schedule_label(),
     }
 
 
-def scheduler():
-    """Daily sync. Inert (records a skip) without API credentials."""
+def sync_due(now: datetime, sync_cfg: dict, last_start: datetime | None, last_day) -> bool:
+    """config sync.interval_minutes (e.g. 60) runs the sync every N minutes; when
+    it is null/absent, sync.daily_at_utc ("10:15") runs it once a day."""
+    interval = sync_cfg.get("interval_minutes")
+    if interval:
+        return last_start is None or (now - last_start).total_seconds() >= float(interval) * 60
+    hh, mm = (int(x) for x in (sync_cfg.get("daily_at_utc") or "10:15").split(":"))
+    return (now.hour, now.minute) >= (hh, mm) and last_day != now.date()
+
+
+def _last_sync_start() -> datetime | None:
+    """The last eBay sync attempt from sync-state.json, so a restart does not
+    trigger an extra sync when one ran less than an interval ago."""
+    st = store.read_state()
+    if not str(st.get("last_attempt_source") or "").startswith("browse"):
+        return None
+    try:
+        return datetime.fromisoformat(st["last_attempt"].replace("Z", "+00:00"))
+    except (KeyError, TypeError, ValueError, AttributeError):
+        return None
+
+
+def _schedule_label() -> str | None:
+    sc = json.loads((ROOT / "config/site.json").read_text()).get("sync") or {}
+    if sc.get("interval_minutes"):
+        return f"every {sc['interval_minutes']} min"
+    return sc.get("daily_at_utc")
+
+
+def scheduler(clock=None, sleep=time.sleep, max_loops: int | None = None):
+    """Scheduled eBay sync (hourly by default, see sync_due). Inert (records a
+    skip) without API credentials. A busy job lock retries a minute later."""
     from mec.util import config
-    last_day = None
-    while True:
+    clock = clock or (lambda: datetime.now(timezone.utc))
+    last_day, last_start = None, _last_sync_start()
+    loops = 0
+    while max_loops is None or loops < max_loops:
+        loops += 1
         try:
-            at = (config().get("sync") or {}).get("daily_at_utc", "10:15")
-            hh, mm = (int(x) for x in at.split(":"))
-            now = datetime.now(timezone.utc)
-            if (now.hour, now.minute) >= (hh, mm) and last_day != now.date():
+            now = clock()
+            if sync_due(now, config().get("sync") or {}, last_start, last_day):
                 log("scheduled sync starting")
                 code, res = run_job("scheduled-sync", do_refresh)
                 if code != 409:   # busy (e.g. a long Discogs match): try again next minute
-                    last_day = now.date()
+                    last_day, last_start = now.date(), now
                 log(f"scheduled sync: {code} {res.get('result', res.get('error'))}")
         except Exception as e:
             log(f"scheduler error: {e}")
-        time.sleep(60)
+        sleep(60)
 
 
 def discogs_scheduler(interval: float | None = None, once: bool = False):
@@ -448,8 +524,30 @@ class H(BaseHTTPRequestHandler):
                 self.send(200, body, "text/csv; charset=utf-8",
                           extra={"Content-Disposition": 'attachment; filename="merch-reservations.csv"'})
             return
+        if u.path == "/admin/api/sell":
+            if self.authed():
+                rows = sell.read_all()
+                for r in rows:
+                    try:
+                        r["review"] = sell_offer.summary(r)
+                    except Exception as e:   # one bad review file never hides the list
+                        r["review"] = {"status": "?", "error": type(e).__name__}
+                self.send(200, {"submissions": rows, "count": len(rows)})
+            return
+        if u.path.startswith("/admin/api/sell/"):
+            if self.authed():
+                self.sell_admin_get(u)
+            return
+        if u.path == "/admin/api/sell.csv":
+            if self.authed():
+                body = sell.to_csv(sell.read_all()).encode("utf-8-sig")
+                self.send(200, body, "text/csv; charset=utf-8",
+                          extra={"Content-Disposition": 'attachment; filename="sell-submissions.csv"'})
+            return
         if u.path == "/merch/reserve":
             return self.merch_result_page(parse_qs(u.query))
+        if u.path == "/sell/submit":
+            return self.sell_result_page(parse_qs(u.query))
         if u.path == "/healthz":
             return self.send(200, {"ok": True})
         self.send(404, {"error": "not found"})
@@ -464,6 +562,8 @@ class H(BaseHTTPRequestHandler):
             return
         if u.path == "/merch/reserve":
             return self.merch_reserve()
+        if u.path == "/sell/submit":
+            return self.sell_submit()
         if not u.path.startswith("/admin/api/"):
             return self.send(404, {"error": "not found"})
         if not self.authed():
@@ -489,6 +589,11 @@ class H(BaseHTTPRequestHandler):
         if u.path == "/admin/api/merch/delete":
             rid = (qs.get("id") or [""])[0]
             return self.send(200 if merch.delete(rid) else 404, {"deleted": rid} if rid else {"error": "id required"})
+        if u.path == "/admin/api/sell/delete":
+            rid = (qs.get("id") or [""])[0]
+            return self.send(200 if sell.delete(rid) else 404, {"deleted": rid} if rid else {"error": "id required"})
+        if u.path.startswith("/admin/api/sell/"):
+            return self.sell_admin_post(u)
         if u.path == "/admin/api/enrich":
             def bg():
                 def work():
@@ -569,6 +674,184 @@ class H(BaseHTTPRequestHandler):
         self.send_header("Content-Length", "0")
         self.end_headers()
 
+    # ------------------------------------------------------------ sell your records
+    def sell_reply(self, code: int, payload: dict, html_state: str, html_data=None):
+        if self.wants_json():
+            return self.send(code, payload)
+        if code == 200 and payload.get("ok"):
+            rid = (payload.get("submission") or {}).get("id", "")
+            self.send_response(303)
+            self.send_header("Location", "/sell/submit" + (f"?r={rid}" if rid else "?r=ok"))
+            self.send_header("Content-Length", "0")
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers()
+            return
+        return self.send(code, render_sell_page(html_state, html_data or payload), "text/html; charset=utf-8")
+
+    def sell_submit(self):
+        ctype = self.headers.get("Content-Type") or ""
+        multipart = ctype.lower().startswith("multipart/form-data")
+        try:
+            n = int(self.headers.get("Content-Length") or -1)
+        except ValueError:
+            n = -1
+        if n < 0:
+            return self.sell_reply(411, {"ok": False, "message": "Please use the form on the sell page."}, "error")
+        if n > (SELL_MAX_UPLOAD if multipart else SELL_MAX_BODY):
+            self.close_connection = True
+            return self.sell_reply(413, {"ok": False, "message": (
+                "That upload is over 120 MB. Please send fewer or smaller photos (or a few overview photos) "
+                "and try again." if multipart else "That form was too large. Please shorten the note and try again.")},
+                "error")
+        origin = self.headers.get("Origin")
+        if origin and origin not in MERCH_ORIGINS and origin != "null":
+            return self.sell_reply(403, {"ok": False, "message": "Please send your details from the musicedcafe.com sell page."}, "error")
+        if not multipart and "application/x-www-form-urlencoded" not in ctype:
+            return self.sell_reply(415, {"ok": False, "message": "Please use the form on the sell page."}, "error")
+        now, ip = time.time(), self.client_ip()
+        if not (SELL_RL_SHORT.allow(ip, now) and SELL_RL_DAY.allow(ip, now) and SELL_RL_ALL.allow("*", now)):
+            return self.sell_reply(429, {"ok": False, "message": "That's a lot of submissions in a short time. Please wait a few minutes and try again."}, "error")
+        try:
+            cfg = sell.load_config()
+        except (OSError, ValueError) as e:
+            log(f"sell submit: config unreadable: {type(e).__name__}")
+            return self.sell_reply(503, {"ok": False, "message": "The form is paused for a moment. Please try again soon."}, "error")
+        if not multipart:
+            raw = self.rfile.read(n) if n else b""
+            form = parse_qs(raw.decode("utf-8", "replace"), keep_blank_values=True, max_num_fields=300)
+            return self.sell_reply(*self.sell_finish(form, [], cfg))
+        if not SELL_UPLOADS.acquire(blocking=False):
+            return self.sell_reply(503, {"ok": False, "message": "We're receiving a lot of photos right now. Please try again in a minute."}, "error")
+        spool, result = None, None
+        try:
+            import shutil
+            sell.uploads_dir().mkdir(parents=True, exist_ok=True, mode=0o700)
+            if shutil.disk_usage(sell.uploads_dir()).free < SELL_MIN_FREE_DISK + n:
+                log("sell submit: refused, low disk space")
+                result = (503, {"ok": False, "message": "The form is paused for a moment. Please try again later."}, "error")
+            else:
+                spool = sell_upload.new_spool(sell.uploads_dir())
+                try:
+                    form, files = sell_upload.read_multipart(self.rfile, n, sell_upload.boundary_of(ctype), spool,
+                                                             file_field=sell.is_file_field)
+                    result = self.sell_finish(form, files, cfg)
+                except sell_upload.UploadError as e:
+                    self.close_connection = True
+                    result = (e.status, {"ok": False, "message": e.message}, "error")
+        finally:
+            sell_upload.remove_tree(spool)   # raw uploads (with their EXIF) never outlive the request
+            SELL_UPLOADS.release()
+        return self.sell_reply(*result)
+
+    def sell_finish(self, form: dict, files: list, cfg: dict) -> tuple:
+        """Validate, process the photos and store. Returns sell_reply(...) arguments."""
+        if sell.is_spam(form):
+            log("sell submit: honeypot hit, dropped")
+            return 200, {"ok": True, "submission": {}}, "thanks"
+        clean, errors = sell.validate(form, cfg, files)
+        if errors:
+            return 400, {"ok": False, "errors": errors}, "invalid", {"errors": errors}
+        sid = sell.new_id()
+        dest = sell.photo_dir(sid)
+        rows = {f"r{r['n']}": r.get("row", r["n"]) for r in clean["records"]}
+        try:
+            for stem, fp in clean["_files"].items():
+                try:
+                    sell_upload.process_image(fp.path, fp.kind(), dest, stem)
+                except sell_upload.ImageRejected as e:
+                    if stem.startswith("ov"):
+                        errors["overview"] = f"Overview photo {stem[2:]}: {e}"
+                    else:
+                        rk, slot = stem.split("-")
+                        row = rows.get(rk, rk[1:])
+                        errors.setdefault(f"r{row}", f"Record {row}, photo of {sell.SLOT_LABEL[slot]}: {e}")
+                finally:
+                    fp.path.unlink(missing_ok=True)
+            if errors:
+                sell_upload.remove_tree(dest)
+                return 400, {"ok": False, "errors": errors}, "invalid", {"errors": errors}
+            rec = sell.append(clean, rid=sid)
+        except BaseException:
+            sell_upload.remove_tree(dest)
+            raise
+        log(f"sell submit: stored 1 submission ({len(clean['records'])} records, {len(clean['_files'])} photos)")
+        return 200, {"ok": True, "submission": {"id": rec["id"], "name": rec["name"]}}, "thanks"
+
+    # ------------------------------------------------------------ sell offer calculator (admin)
+    def _sub(self, sid: str) -> dict | None:
+        sub = sell.get(sid)
+        if sub is None:
+            self.send(404, {"error": "no such submission"})
+        return sub
+
+    def sell_admin_get(self, u):
+        qs = parse_qs(u.query)
+        sid = (qs.get("id") or [""])[0]
+        if u.path == "/admin/api/sell/rules":
+            return self.send(200, {"rules": sell_offer.load_rules(), "defaults": sell_offer.DEFAULT_RULES,
+                                   "sleeve_grades": sell_offer.SLEEVE_GRADES})
+        if u.path == "/admin/api/sell/detail":
+            sub = self._sub(sid)
+            return sub and self.send(200, sell_offer.detail(sub))
+        if u.path == "/admin/api/sell/valuation.csv":
+            sub = self._sub(sid)
+            if sub:
+                self.send(200, sell_offer.to_csv(sub).encode("utf-8-sig"), "text/csv; charset=utf-8",
+                          extra={"Content-Disposition": f'attachment; filename="sell-valuation-{sid}.csv"'})
+            return
+        if u.path == "/admin/api/sell/photo":
+            p, size = (qs.get("p") or [""])[0], (qs.get("size") or ["thumb"])[0]
+            if not sell.PHOTO_STEM_RE.match(p) or size not in ("thumb", "full", "original") or sell.get(sid) is None:
+                return self.send(404, {"error": "not found"})
+            d = sell.photo_dir(sid)
+            name, ctype = {"thumb": (f"{p}.thumb.webp", "image/webp"), "full": (f"{p}.webp", "image/webp"),
+                           "original": (f"{p}.heic", "image/heic")}[size]
+            f = d / name
+            if f.parent != d or not f.is_file():
+                return self.send(404, {"error": "not found"})
+            return self.send(200, f.read_bytes(), ctype, extra={"Content-Disposition": f'inline; filename="{name}"'})
+        return self.send(404, {"error": "not found"})
+
+    def sell_admin_post(self, u):
+        from mec import discogs
+        b = self.jbody()
+        if b is None:
+            return
+        try:
+            if u.path == "/admin/api/sell/rules":
+                rules, errs = sell_offer.save_rules(b.get("rules") or {})
+                return self.send(400 if errs else 200, {"rules": rules, "errors": errs})
+            sub = self._sub(str(b.get("id") or ""))
+            if sub is None:
+                return
+            sid = sub["id"]
+            if u.path == "/admin/api/sell/review":
+                sell_offer.update_review(sid, sub, b)
+                return self.send(200, sell_offer.detail(sub))
+            if u.path == "/admin/api/sell/search":
+                q = {k: b.get(k) for k in ("catno", "artist", "title") if b.get(k)}
+                res = sell_offer.search(sid, sub, str(b.get("key") or ""), q or None)
+                return self.send(200, dict(res, detail=sell_offer.detail(sub)))
+            if u.path == "/admin/api/sell/pick":
+                res = sell_offer.pick(sid, sub, str(b.get("key") or ""), b.get("release_id"),
+                                      refresh=bool(b.get("refresh")))
+                return self.send(200, dict(res, detail=sell_offer.detail(sub)))
+        except discogs.DiscogsError as e:
+            return self.send(502, {"error": str(e)[:300]})
+        except (ValueError, KeyError, TypeError) as e:
+            return self.send(400, {"error": str(e)[:300]})
+        return self.send(404, {"error": "not found"})
+
+    def sell_result_page(self, qs):
+        rid = (qs.get("r") or [""])[0]
+        rec = sell.find(rid) if rid and rid != "ok" else None
+        if rid:
+            return self.send(200, render_sell_page("thanks", {"submission": rec}), "text/html; charset=utf-8")
+        self.send_response(303)
+        self.send_header("Location", "/sell/")
+        self.send_header("Content-Length", "0")
+        self.end_headers()
+
     def ebay_challenge(self, u):
         code = (parse_qs(u.query).get("challenge_code") or [""])[0]
         vt = os.environ.get("EBAY_DELETION_VERIFICATION_TOKEN", "")
@@ -616,6 +899,34 @@ def render_merch_page(state: str, data: dict) -> bytes:
                  "<p>Tip: your browser's back button keeps what you already typed.</p></div>")
     else:
         inner = ('<div class="reserve-done is-error"><p class="rd-kicker">Not reserved</p><h1>Sorry, that didn\'t go through</h1>'
+                 f"<p>{_e(data.get('message') or 'Please try again in a minute.')}</p></div>")
+    out = re.sub(r"<!--MEC:RESULT-->.*?<!--/MEC:RESULT-->", lambda m: inner, tpl, count=1, flags=re.S)
+    return out.encode("utf-8")
+
+
+def render_sell_page(state: str, data: dict) -> bytes:
+    """Fill the built /sell/thanks/ template (site header/footer) with the result."""
+    import re
+    tpl_path = ROOT / "public" / "live" / "sell" / "thanks" / "index.html"
+    try:
+        tpl = tpl_path.read_text(encoding="utf-8")
+    except OSError:
+        tpl = "<!doctype html><meta charset=utf-8><title>Music Ed Cafe</title><!--MEC:RESULT--><!--/MEC:RESULT-->"
+    if state == "thanks":
+        first = ((data.get("submission") or {}).get("name") or "").split(" ")[0]
+        inner = ('<div class="reserve-done"><p class="rd-kicker">Received</p>'
+                 f'<h1>Thanks{", " + _e(first) if first else ""}! We got your details.</h1>'
+                 "<p>Every record gets looked at individually, so we'll review what you sent and email you with an offer "
+                 "or a few follow-up questions. Offers are not final until we've seen photos or the records.</p></div>")
+    elif state == "invalid":
+        errs = data.get("errors") or {}
+        inner = ('<div class="reserve-done is-error"><p class="rd-kicker">Not sent yet</p>'
+                 "<h1>Almost there</h1><p>A couple of details need fixing before we can save your submission:</p><ul>"
+                 + "".join(f"<li>{_e(m)}</li>" for m in errs.values())
+                 + '</ul><p><a class="btn btn-buy" href="/sell/#sell-form">Go back and fix it</a></p>'
+                 "<p>Tip: your browser's back button keeps what you already typed.</p></div>")
+    else:
+        inner = ('<div class="reserve-done is-error"><p class="rd-kicker">Not sent</p><h1>Sorry, that didn\'t go through</h1>'
                  f"<p>{_e(data.get('message') or 'Please try again in a minute.')}</p></div>")
     out = re.sub(r"<!--MEC:RESULT-->.*?<!--/MEC:RESULT-->", lambda m: inner, tpl, count=1, flags=re.S)
     return out.encode("utf-8")

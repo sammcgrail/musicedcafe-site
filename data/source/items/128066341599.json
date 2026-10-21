@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -88,7 +88,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -112,8 +112,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1615,7 +1615,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128066341599?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8m43tABgQNpX1ca3mqxLP3bOuRwBr2fNrWWGz%2Bd0xJVrJyVvW6HSxAx7c9CNSp9nnfE%2BiDEp0vjyH94DGKqY%2BjDrvKJq%2BUbyzyWJh3jEAeuxJUsGNt%2BqcOM20jyGARVc4eyekqauTTIMOJF%2BMF1nzSQ6o%2FKAE6JFW40O6uigfn5WkZJKlqx0X0B2sPw6ZAu%2Bs%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128066341599?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8m43tABgQNpX1ca3mqxLP3bOuRwBr2fNrWWGz%2Bd0xJVst5mUVRikh0pCJmiZbB2DGGowdodwDN9fYRk7r8n2Ec9V%2F7N5EYrthTolC%2BxcHLqsq7rx6qcmMQMdRbh72vDQ4AzjHqZm7s8Iujlk%2F2YuyCvywCaxXfmJX2SWkA3gC%2BkNCfAnEefWxtQfO59r7%2BXBs%3D",
       "description": "<p data-start=\"2940\" data-end=\"3016\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2940\" data-end=\"2971\">Frank Sinatra – Sinatra ’65</strong><br data-start=\"2971\" data-end=\"2974\">\nReprise Records R 6167<br data-start=\"2996\" data-end=\"2999\">\n1965 U.S. Mono LP<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"3018\" data-end=\"3150\">Classic mid-1960s Frank Sinatra collection on Reprise Records featuring a strong mix of standards, show tunes and Sinatra favorites.</p>\n<p data-start=\"3152\" data-end=\"3167\">Tracks include:</p>\n<p data-start=\"3169\" data-end=\"3181\"><strong data-start=\"3169\" data-end=\"3181\">Side One</strong></p>\n<ul data-start=\"3182\" data-end=\"3353\">\n<li data-section-id=\"1sjateg\" data-start=\"3182\" data-end=\"3216\">\nTell Her (You Love Her Each Day)\n</li>\n<li data-section-id=\"9d1vj3\" data-start=\"3217\" data-end=\"3233\">\nAnytime at All\n</li>\n<li data-section-id=\"1g4vig2\" data-start=\"3234\" data-end=\"3266\">\nMain Theme From “The Cardinal”\n</li>\n<li data-section-id=\"1oioawd\" data-start=\"3267\" data-end=\"3296\">\nI Like to Lead When I Dance\n</li>\n<li data-section-id=\"1b8xrt1\" data-start=\"3297\" data-end=\"3335\">\nYou Brought a New Kind of Love to Me\n</li>\n<li data-section-id=\"1qx3odb\" data-start=\"3336\" data-end=\"3353\">\nMy Kind of Town\n</li>\n</ul>\n<p data-start=\"3355\" data-end=\"3367\"><strong data-start=\"3355\" data-end=\"3367\">Side Two</strong></p>\n<ul data-start=\"3368\" data-end=\"3505\">\n<li data-section-id=\"1cxzh14\" data-start=\"3368\" data-end=\"3393\">\nWhen Somebody Loves You\n</li>\n<li data-section-id=\"10eqril\" data-start=\"3394\" data-end=\"3419\">\nSomewhere in Your Heart\n</li>\n<li data-section-id=\"53b69v\" data-start=\"3420\" data-end=\"3452\">\nI’ve Never Been in Love Before\n</li>\n<li data-section-id=\"1bvok8s\" data-start=\"3453\" data-end=\"3488\">\nWhen I’m Not Near the Girl I Love\n</li>\n<li data-section-id=\"j2fgxb\" data-start=\"3489\" data-end=\"3505\">\nLuck Be a Lady\n</li>\n</ul>\n<p data-start=\"3507\" data-end=\"3745\"><strong data-start=\"3507\" data-end=\"3521\">Condition:</strong> Vinyl visually graded VG with visible light surface marks and normal signs of use. Jacket graded VG with edge/corner wear, light creasing and age-related surface wear. Original Reprise mono labels remain clean and readable.</p>",
       "paymentMethods": [
         {
@@ -1672,5 +1672,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:38Z"
 }

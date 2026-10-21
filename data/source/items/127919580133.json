@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SOO12151",
       "estimatedAvailabilities": [
@@ -106,8 +106,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1634,7 +1634,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127919580133?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9x%2B5j9uE076a3jnNTtnQtEKFGFbP%2FhrmC2PNJiDp7P5dWYww54cSseu7d2S%2BgJRPdBBqXvIXE7Lh1sQccSUcDNG61vFUNui6Ow7xIxowL6VEJxrqZytKvUYsmJ2J4jjdsr%2F2UEg%2FSbDfmxLhlY7LlzIM7Rz3gihL9CLryF7laxxzRpl8NrGS4Ffhr%2BhqssAZA%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127919580133?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9x%2B5j9uE076a3jnNTtnQtEKFGFbP%2FhrmC2PNJiDp7P5XrQH48jfalL9sM8KvCM1JPEDBOTaSHVs%2BNr%2BpEvhKdEPGjU1iJ0GZAxqO0r2NQRG3WDGlYXgalaXVrx4mhYqMQq0TV4SPmZotKPhL9MKBneupCP%2FtneRynlA%2BZZszghBhrneO8%2BmG9Z1QwyefbnrlI%3D",
       "description": "<p data-start=\"1068\" data-end=\"1115\">The Tubes – <em data-start=\"1080\" data-end=\"1115\">The Completion Backward Principle</em></p>\n<p data-start=\"1117\" data-end=\"1234\">Original 1981 Capitol Records pressing featuring the hit singles \"Talk To Ya Later\" and \"Don't Want To Wait Anymore.\"</p>\n<p data-start=\"1236\" data-end=\"1301\">A great copy for fans of new wave, rock, and early MTV-era music.</p>\n<h3 data-section-id=\"1dr5t50\" data-start=\"1303\" data-end=\"1314\">Details</h3>\n<ul data-start=\"1315\" data-end=\"1492\">\n<li data-section-id=\"ki5puf\" data-start=\"1315\" data-end=\"1334\">\nArtist: The Tubes\n</li>\n<li data-section-id=\"yt6iwi\" data-start=\"1335\" data-end=\"1377\">\nTitle: The Completion Backward Principle\n</li>\n<li data-section-id=\"1jsep0m\" data-start=\"1378\" data-end=\"1402\">\nLabel: Capitol Records\n</li>\n<li data-section-id=\"1sgoay\" data-start=\"1403\" data-end=\"1430\">\nCatalog Number: SOO-12151\n</li>\n<li data-section-id=\"139eusu\" data-start=\"1431\" data-end=\"1451\">\nFormat: LP, 33 RPM\n</li>\n<li data-section-id=\"198yh32\" data-start=\"1452\" data-end=\"1468\">\nReleased: 1981\n</li>\n<li data-section-id=\"j6ezex\" data-start=\"1469\" data-end=\"1492\">\nGenre: Rock, New Wave\n</li>\n</ul>\n<h3 data-section-id=\"u9g00a\" data-start=\"1494\" data-end=\"1514\">Track Highlights</h3>\n<ul data-start=\"1515\" data-end=\"1652\">\n<li data-section-id=\"12rhw3b\" data-start=\"1515\" data-end=\"1533\">\nTalk To Ya Later\n</li>\n<li data-section-id=\"1wpgmlo\" data-start=\"1534\" data-end=\"1546\">\nSushi Girl\n</li>\n<li data-section-id=\"19d1pzw\" data-start=\"1547\" data-end=\"1579\">\nAttack Of The Fifty Foot Woman\n</li>\n<li data-section-id=\"olo34x\" data-start=\"1580\" data-end=\"1608\">\nDon't Want To Wait Anymore\n</li>\n<li data-section-id=\"f82h5d\" data-start=\"1609\" data-end=\"1628\">\nA Matter Of Pride\n</li>\n<li data-section-id=\"1xyhpe1\" data-start=\"1629\" data-end=\"1652\">\nLet's Make Some Noise\n</li>\n</ul>\n<h3 data-section-id=\"1uef3h1\" data-start=\"1654\" data-end=\"1667\">Condition</h3>\n<p data-start=\"1669\" data-end=\"1684\"><strong data-start=\"1669\" data-end=\"1684\">Record: VG+</strong></p>\n<ul data-start=\"1685\" data-end=\"1799\">\n<li data-section-id=\"1e8o00i\" data-start=\"1685\" data-end=\"1717\">\nClean vinyl with strong gloss.\n</li>\n<li data-section-id=\"1bar6u2\" data-start=\"1718\" data-end=\"1768\">\nLight cosmetic sleeve marks consistent with age.\n</li>\n<li data-section-id=\"16eamp4\" data-start=\"1769\" data-end=\"1799\">\nNo major scratches observed.</li></ul><div>Does not come with original cover</div>",
       "paymentMethods": [
         {
@@ -1691,5 +1691,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:54Z"
 }

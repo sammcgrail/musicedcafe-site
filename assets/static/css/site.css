@@ -88,11 +88,11 @@ main { display: block; outline: none; padding-bottom: 40px; }
 .js .site-nav { display: none; }
 .js .site-nav.open { display: block; }
 @media (max-width: 380px) { .menu-label { display: none; } .brand span { font-size: 1.05rem; } }
-@media (min-width: 1040px) {
+@media (min-width: 1180px) {
   .menu-btn { display: none; }
-  .js .site-nav, .site-nav { display: block; position: absolute; top: env(safe-area-inset-top); left: 50%; transform: translateX(-50%); }
+  .js .site-nav, .site-nav { display: block; position: absolute; top: env(safe-area-inset-top); left: calc(50% + 40px); transform: translateX(-50%); }
   .site-nav ul { flex-direction: row; gap: 4px; padding: 0; height: var(--header-h); align-items: center; }
-  .site-nav a { border: 0; padding: 0 12px; min-height: 44px; border-radius: var(--radius); }
+  .site-nav a { white-space: nowrap; border: 0; padding: 0 9px; min-height: 44px; border-radius: var(--radius); }
   .site-nav a:hover { background: rgba(244,236,216,.08); }
 }
 
@@ -307,7 +307,7 @@ body.sheet-open::after { content: ""; position: fixed; inset: 0; background: rgb
 @media (min-width: 760px) { .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; } }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
-@media (min-width: 1040px) { .nav-ebay { display: none; } }
+@media (min-width: 1180px) { .nav-ebay { display: none; } }
 
 /* mobile: keep the purchase button under the thumb on record pages */
 .buy-bar { display: none; }
@@ -411,7 +411,7 @@ html:has(.finder-bar) { scroll-padding-top: calc(var(--header-h) + 120px); }
 .rf-label { font-weight: 800; font-size: .95rem; padding: 0; }
 .rf-opt { font-weight: 500; color: var(--ink-2); }
 .rf-static { font-weight: 600; }
-.rf-field input[type=text], .rf-field input[type=email], .rf-field select, .rf-field textarea { width: 100%; min-height: 48px; padding: 10px 12px; border: 2px solid var(--ink); border-radius: var(--radius); background: #fffdf7; color: var(--ink); font: 400 16px/1.4 var(--sans); }
+.rf-field input[type=text], .rf-field input[type=email], .rf-field input[type=tel], .rf-field select, .rf-field textarea { width: 100%; min-height: 48px; padding: 10px 12px; border: 2px solid var(--ink); border-radius: var(--radius); background: #fffdf7; color: var(--ink); font: 400 16px/1.4 var(--sans); }
 .rf-field textarea { min-height: 88px; resize: vertical; }
 .rf-field select { max-width: 9em; }
 .rf-field [aria-invalid="true"] { border-color: var(--rust); box-shadow: 0 0 0 2px rgba(155,61,23,.25); }
@@ -438,4 +438,48 @@ html:has(.finder-bar) { scroll-padding-top: calc(var(--header-h) + 120px); }
 .rd-kicker { font-size: .8rem; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; color: var(--teal); margin-top: 0 !important; }
 .reserve-done.is-error .rd-kicker { color: var(--rust); }
 .rd-specs { margin-top: 12px; }
-@media (min-width: 1040px) and (max-width: 1239px) { .site-nav a { padding: 0 8px; } .site-nav ul { gap: 0; } }
+@media (min-width: 1180px) and (max-width: 1239px) { .site-nav a { padding: 0 8px; } .site-nav ul { gap: 0; } }
+
+/* Blog photos (self-hosted Instagram images) */
+.blog-card{overflow:hidden}
+.blog-thumb{display:block;width:calc(100% + 32px);max-width:none;height:auto;aspect-ratio:1/1;object-fit:cover;margin:-16px -16px 10px;border-bottom:1px solid rgba(0,0,0,.08)}
+.ig-photo{max-width:540px;margin:1.25rem auto;position:relative}
+.ig-photo img{display:block;width:100%;height:auto;border-radius:10px}
+.ig-badge{position:absolute;left:.6rem;bottom:.6rem;background:rgba(20,16,14,.85);color:#f4ecd8;font-size:.8rem;padding:.25rem .55rem;border-radius:999px}
+
+/* ---------------- sell your records */
+.sell-sec { margin-top: 28px; }
+.sell-sec h2 { margin-bottom: 10px; }
+.sell-sec h3 { margin: 16px 0 6px; }
+.sell-sec p, .sell-sec ul { margin-top: 10px; }
+.sell-sec ul { padding-left: 1.2em; }
+.sell-steps { margin-top: 10px; }
+.sell-form { margin-top: 32px; margin-bottom: 40px; }
+.sell-form .rf-field select { max-width: none; }
+.sf-radios { display: grid; gap: 4px; }
+.sf-radio { padding-top: 6px; font-weight: 600; }
+.sf-records { display: grid; gap: 10px; border-top: 2px solid var(--line); padding-top: 14px; }
+.sf-records h3 { font-size: 1.15rem; }
+.sf-rows { display: grid; gap: 12px; }
+.sf-rec { border: 2px solid var(--line); border-radius: 8px; padding: 12px; background: #fffdf7; display: grid; gap: 10px; min-width: 0; }
+.sf-rec legend { padding: 0 6px; }
+.sf-rec:has(.rf-err:not([hidden])) { border-color: var(--rust); }
+.sf-grid, .sf-photos { display: grid; gap: 10px; }
+.sf-file input[type=file] { width: 100%; min-height: 48px; padding: 8px; border: 2px dashed var(--ink-2); border-radius: var(--radius); background: var(--paper); color: var(--ink); font: 400 15px/1.3 var(--sans); }
+.sf-file input[type=file]::file-selector-button { min-height: 36px; margin-right: 10px; padding: 0 12px; border: 2px solid var(--ink); border-radius: var(--radius); background: var(--ink); color: var(--cream); font: 700 14px var(--sans); cursor: pointer; }
+.sf-file input[aria-invalid="true"], .sf-rec input[aria-invalid="true"] { border-color: var(--rust); }
+.sf-add-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.sf-add { min-height: 48px; }
+#sf-overview { width: 100%; min-height: 48px; padding: 8px; border: 2px dashed var(--ink-2); border-radius: var(--radius); background: #fffdf7; font: 400 15px/1.3 var(--sans); }
+.sf-progress { display: grid; gap: 6px; }
+.sf-progress[hidden], .sf-add-wrap[hidden] { display: none; }
+.sf-bar { height: 14px; border: 2px solid var(--ink); border-radius: 99px; background: #fffdf7; overflow: hidden; }
+.sf-bar span { display: block; height: 100%; width: 2%; background: var(--teal); transition: width .2s; }
+@media (min-width: 720px) {
+  .sf-grid { grid-template-columns: 1fr 1fr; }
+  .sf-grid .rf-field:last-child { grid-column: 1 / -1; }
+  .sf-photos { grid-template-columns: repeat(3, 1fr); }
+}
+.sell-teaser { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; padding: 18px 16px; background: var(--paper); border: 2px solid var(--ink); border-radius: 8px; }
+.sell-teaser > div { flex: 1 1 260px; }
+.sell-teaser p { margin-top: 6px; }

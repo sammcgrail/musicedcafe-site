@@ -42,6 +42,62 @@ created through the Inventory API, so Edwin's Seller Hub listings won't appear
 - `getItem` returned images, item specifics (`localizedAspects`), description
   and `conditionDescription` for all 339 items.
 
+## Sold confirmation (2026-10-21)
+Browse search drops a listing as soon as it sells. The sync's direct lookup of a
+known-active id then sees it "listed with 0 available" and marks it
+**unavailable**, and a listing that disappears entirely becomes **ended**.
+Neither says it *sold*, so the site showed real sales as "Ended" at the bottom
+of Recently Sold (first seen with Johnny Mathis – Christmas Eve, 127889422585,
+and Chuck Mangione – Feels So Good, 128123687010).
+
+`mec/confirm_sold.py` (run after every successful sync, or `scripts/mec
+confirm-sold`) asks `get_item_by_legacy_id` about every unavailable/ended record
+with no confirmed sale. Verified live on 2026-10-21: a sold listing answers 200
+with `estimatedAvailabilities[0].estimatedSoldQuantity` 1,
+`estimatedAvailabilityStatus` OUT_OF_STOCK and `itemEndDate`.
+- **sold quantity ≥ 1 and 0 available** → status `sold`, `status_source:
+  "ebay_api"`, price = the item's price, `sold_at` = itemEndDate's date (else the
+  date the sync first saw quantity 0, else today), plus a `sales` entry shaped
+  like the CSV one. It goes through `store.apply_sales` / `set_status`, so the
+  Discogs listing sync deletes that record's Discogs listing like any eBay sale.
+- **sold quantity 0** (Edwin ended it) → stays ended; an ended listing with a
+  past end date is not asked again.
+- **404 or error** → nothing changes, retried next sync; at most 5 tries per
+  status change (`sold_check` in the item's source file).
+- Photos from the lookup go into `data/enrichment/ended_listings.json` (only if
+  that id has no "found" entry), so sold records keep Edwin's photos.
+- It writes `last_sold_confirm` to `data/sync-state.json` and never touches the
+  sync's `last_result`, which gates Discogs deletes.
+
+## Sync schedule and the Browse call budget
+The admin sidecar syncs every `sync.interval_minutes` (60). With
+`interval_minutes: null` it falls back to once a day at `sync.daily_at_utc`.
+The Instagram import inside the sync runs once per UTC day. Photos only
+download new or changed lead images. The site rebuilds after each successful
+sync.
+
+Browse defaults to **5,000 calls/day** and the token endpoint to 1,000/day
+[api-call-limits]. One full sync of 339 listings is 1 token + 2 search pages
+(200 per page) + **339 getItem** calls + a direct lookup for each known-active id
+missing from search, about **342 calls**. That's not ~25: getItem is one call per
+listing. Hourly full syncs would be about 8,200 calls a day, well over the limit.
+So the sync now reuses a listing's stored getItem payload while it's younger
+than `browse.item_refresh_hours` (24) and the search summary still shows the
+same price, title and bid count. A sold listing leaves search and is always
+looked up directly, so reuse never hides a sale.
+- Budget per day: one full pass (~342), plus 23 light syncs × (token + 2
+  search pages + changed/new items + direct lookups, typically 3–6), plus
+  confirm lookups (≤ 5 per unconfirmed record, 1 for a sale). That's about
+  **420–500 calls/day** (under 10% of the limit) and ≤ 48 token calls.
+- Each sync's summary records `coverage.api_calls`: `search_calls`,
+  `getitem_calls`, `getitem_reused`, `direct_calls`. After the second hourly
+  run, `getitem_reused` should be close to the active count. If it's 0, the
+  summary and getItem disagree on a compared field: set `interval_minutes` to 120
+  (12 × 342 ≈ 4,100/day) until that's fixed.
+- Trade-off: a multi-quantity listing's remaining quantity (not shown in
+  search) refreshes at the daily full pass. Single-quantity sales are caught
+  hourly, because they leave search.
+
 ## The options
 
 ### Browse API (recommended for automatic sync)
@@ -71,8 +127,9 @@ created through the Inventory API, so Edwin's Seller Hub listings won't appear
 - **Limits:** the quantity is an *estimate*. The docs say an exact quantity is
   "impossible to return". **Active listings only:** search never returns sold or
   ended items, and getItem on ended items is undocumented. Browse defaults to
-  5,000 calls/day, and the token endpoint to 1,000/day [api-call-limits]. That's
-  plenty for a daily sync of a few hundred listings.
+  5,000 calls/day, and the token endpoint to 1,000/day [api-call-limits]. A
+  full sync costs about one call per listing (getItem). See "Sync schedule and
+  the Browse call budget" for how the hourly sync stays at ~500/day.
 - **Header:** `X-EBAY-C-MARKETPLACE-ID: EBAY_US`.
 - **Licence:** the call-limits page notes that Buy APIs "require an additional
   license" for some uses. Read the current terms when you create the keyset.
@@ -184,8 +241,12 @@ fills all of this in for active listings.
   them. A sync that would end more than 50% of active stock at once is refused as
   a probable feed failure (override with `--force`).
 - A listing is marked **sold** only when eBay says so explicitly: a sale in a
-  transaction or orders report. If a later active snapshot still lists the item
-  (multi-quantity), it stays active.
+  transaction or orders report, or Browse getItem reporting a sold quantity ≥ 1
+  with 0 available (see Sold confirmation). If a later active snapshot still
+  lists the item (multi-quantity), it stays active.
+- Recently Sold is ordered by `sold_at` (newest first), then `status_changed_at`.
+  Ended and unavailable records with no confirmed sale carry the "Ended" stamp
+  and sort by the date their status changed, so a fresh one is near the top.
 - Ended and sold pages stay up for SEO, with a banner and available
   alternatives (same artist, then genre, then format). They are excluded from
   Shop, search and featured.

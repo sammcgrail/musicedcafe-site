@@ -210,6 +210,7 @@ def build_records() -> tuple[list[dict], dict]:
             "status": status,
             "status_reason": src.get("status_reason"),
             "sold_at": src.get("sold_at"),
+            "status_changed_at": src.get("status_changed_at"),
             "first_seen_at": src.get("first_seen_at"),
             "price": price.get("value"),
             "currency": price.get("currency") or "USD",

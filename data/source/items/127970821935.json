@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -71,7 +71,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "RS918",
       "estimatedAvailabilities": [
@@ -96,8 +96,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1614,7 +1614,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970821935?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9iupBoz75UigOrvoosnz9GVk8WRiC1%2BXs09Q8lOp8v2EcpgcRHdizr7ZL448JGodxwRNPEpbhk%2BTOlKvn3JaBDC41hVGsZ8Luxc5C1RMrLLzcx2HXulzW23ZXknjZlNuOLWkXRAclxmNpBBTm6G6NfRMptQaCCAqGyQ3yvjg2u0TUARl0Y%2B8bFoaI3Qpdg--M%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970821935?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9iupBoz75UigOrvoosnz9GVk8WRiC1%2BXs09Q8lOp8v2FZzDGJ7BfmCpdqnBzQUwRhn%2FKkt%2B1JuSpk6tB7C35YuCpVUKD1xo9Ta3pmTBnGrKcDh7cKGP4JZlu7%2BEz21IDuK9Rpt3vVIqhXoA1BogR%2FQ6UNQ54nr%2BGWBRun6FzvgFR%2BAmdjCAqvA%2F04EbHObFhw%3D",
       "description": "<p data-start=\"1069\" data-end=\"1261\" class=\"PDq2pG_selectionAnchorContainer\">Original Bee Gees 45 RPM single featuring the disco-era classic <strong data-start=\"1133\" data-end=\"1147\">\"Tragedy,\"</strong> one of the group's biggest worldwide hits from the <em data-start=\"1199\" data-end=\"1221\">Spirits Having Flown</em> album. The B-side includes <strong data-start=\"1249\" data-end=\"1261\">\"Until.\"</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1263\" data-end=\"1363\">A great addition for Bee Gees fans, disco collectors, jukebox owners, and vintage vinyl enthusiasts.</p>\n<p data-start=\"1365\" data-end=\"1491\">The record will be shipped in a new paper sleeve inside a protective poly sleeve and packed securely in a rigid 45 RPM mailer.</p><p data-start=\"693\" data-end=\"719\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"693\" data-end=\"704\">Record:</strong> Very Good (VG)<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p><p data-start=\"721\" data-end=\"926\">Original 1979 RSO Records pressing. Vinyl retains a nice gloss with light surface scuffs and hairlines consistent with normal use. Labels are clean and easy to read. No original picture sleeve is included.</p><p data-start=\"1365\" data-end=\"1491\">\n\n</p><p data-start=\"928\" data-end=\"967\"><strong data-start=\"928\" data-end=\"939\">Sleeve:</strong> Generic white paper sleeve.</p>",
       "paymentMethods": [
         {
@@ -1671,5 +1671,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:47Z"
 }

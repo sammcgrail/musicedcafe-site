@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "8068",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1581,7 +1581,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128022882018?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BxBM08q%2FXeNeWbXYHSEn3dX5gDk1SlV%2B%2F2y8z0EK4BWS8sm9s3t0SSN8T1RJF2ma3YhHpsIcjhzWPtUdnoVDbyjBu6JljMT1LaDWPBOWi9XwubsFXocwJHMPlVBs09vF3nqvxtgScEjj9SFoAtlnkB0QY1e3fReCLqEDD%2Be39WjO9yLK3Ep5I3JWEALyeWgV4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128022882018?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BxBM08q%2FXeNeWbXYHSEn3dX5gDk1SlV%2B%2F2y8z0EK4BWVWtrCEr1CxorGgUDD2feOtXZOW0zmimoWRrPoNmzeejgTlJldbQ8rHiI7eRZDfK9N0MoePAybQIIm7UHPW64cc%2FTne5rxdZ1hriz8w--BGfKWHy6AAXm8OfalsrgDNU6LopkirffkPkyISp%2BCrUfbQ%3D",
       "description": "Cliff Richard A Little In Love / Everyman 45 RPM 7” Vinyl EMI America 8068 1980. Condition is Used. Shipped with USPS Media Mail. ",
       "paymentMethods": [
         {
@@ -1638,5 +1638,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:24Z"
 }

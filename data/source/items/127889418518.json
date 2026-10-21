@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PE33849",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1642,7 +1642,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127889418518?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9A%2FmqHVtzJbzJSd6xXkVG65bcgU%2FDCuVXBmJyrDVTr4%2FuNFPiJfROhrTFeF2gBAmqjXCLJrvb8BC8e49T0I3COoa%2F7CRRUp9IlQ0nIXphs8Br5vED9XUtltrwZpmEqkr76kIqv2ZnkRq8%2FZQ12xZ4rZG5fLovrveVxZ9p9YHfoeU1Mm4%2BxfzbOcOy9Hl%2F%2BL84%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127889418518?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9A%2FmqHVtzJbzJSd6xXkVG65bcgU%2FDCuVXBmJyrDVTr48aPZjOMDPrifYXz4nA%2BNmmm1TI1r%2FA0nj0HikZjVg5jloG7%2FV6vcG6rJJtkhra%2B5FILrEHbQWSGGeJ3oa%2FQzh4j8NB6PT3n7MysfQftEbT93gSNc%2FAQ49EJV4gNoFtQPEKN27EE%2Fh%2F53OfTSP0ZwEM%3D",
       "description": "<p data-start=\"1241\" data-end=\"1352\">Original Epic pressing of <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Wired</span> featuring Jan Hammer and Narada Michael Walden.</p>\n<p data-start=\"1354\" data-end=\"1414\"><strong data-start=\"1354\" data-end=\"1364\">Vinyl:</strong> VG+<br data-start=\"1368\" data-end=\"1371\">\nClean glossy copy with light cosmetic wear.</p>\n<p data-start=\"1416\" data-end=\"1490\"><strong data-start=\"1416\" data-end=\"1426\">Cover:&nbsp;</strong>G+<br data-start=\"1435\" data-end=\"1438\">\nVisible creasing and edge wear from age and storage.</p>\n<p data-start=\"1492\" data-end=\"1610\" data-is-last-node=\"\" data-is-only-node=\"\">Classic 1970s jazz fusion essential featuring “Led Boots,” “Blue Wind,” and “Goodbye Pork Pie Hat.” Great player copy.</p>",
       "paymentMethods": [
         {
@@ -1699,5 +1699,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:24Z"
 }

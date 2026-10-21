@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -84,7 +84,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "CS9269",
       "estimatedAvailabilities": [
@@ -109,8 +109,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1632,7 +1632,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127887850725?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8QXLJeWvC%2FeGWGJIKWmOHsjo1UdTaUF2zlL99q1Wjw1a3HGSH1c45ke33%2BwnSvqpEnmY7PSdYoQH5hZ5TNZID72KoWOE5m2n3j%2BYacL%2BY3%2BZAtRvjX9OMD4MtUzhRU2MizNCdbj15k4QVHGzr2p2L0P3bH6nI%2F4ZO5YNdwG0cXfUIP%2BRrVZXbejwoSISV%2FBA4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127887850725?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8QXLJeWvC%2FeGWGJIKWmOHsjo1UdTaUF2zlL99q1Wjw1SA9AN55iIWMG1c%2FVlFEOyEuwUw6Q6JE8wBM0rSn1xfxWZuQ54uIGBZsvXxjc2mf7HvqGcYIUcYck7kWkcc7OigEu%2FvnxnsF6POyUIKSMWbNvlNIrXbVh0a8rnLSAfsRe%2FhUgs7bNT8qxmcLW9VWfuU%3D",
       "description": "<p data-start=\"0\" data-end=\"101\"><strong data-start=\"0\" data-end=\"101\">Simon &amp; Garfunkel – Sounds of Silence LP | Early Columbia 360 Sound Stereo Pressing | CS 9269 VG+</strong></p><p data-start=\"145\" data-end=\"287\">Up for sale is a beautiful vintage copy of <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Sounds of Silence</span> by <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Simon &amp; Garfunkel</span> on Columbia Records.</p><p data-start=\"289\" data-end=\"420\">This is an early U.S. stereo pressing featuring the classic red Columbia “360 Sound” labels and original-era Columbia inner sleeve.</p><h2 data-section-id=\"bp518w\" data-start=\"422\" data-end=\"438\">Album Details</h2><ul data-start=\"439\" data-end=\"613\"><li data-section-id=\"18i9da8\" data-start=\"439\" data-end=\"466\">Artist: Simon &amp; Garfunkel</li><li data-section-id=\"y4jmpc\" data-start=\"467\" data-end=\"493\">Title: Sounds of Silence</li><li data-section-id=\"pgevyw\" data-start=\"494\" data-end=\"519\">Label: Columbia Records</li><li data-section-id=\"1cd92s6\" data-start=\"520\" data-end=\"545\">Catalog Number: CS 9269</li><li data-section-id=\"72ozrz\" data-start=\"546\" data-end=\"572\">Format: Vinyl LP, Stereo</li><li data-section-id=\"9pvrdo\" data-start=\"573\" data-end=\"588\">Country: U.S.</li><li data-section-id=\"1tezkzd\" data-start=\"589\" data-end=\"613\">Red “360 Sound” labels</li></ul><h2 data-section-id=\"hrykuu\" data-start=\"615\" data-end=\"627\">Condition</h2><h3 data-section-id=\"rhkh3d\" data-start=\"628\" data-end=\"654\">Vinyl: VG+ / Excellent</h3><p data-start=\"655\" data-end=\"791\">Very clean glossy vinyl with minimal visible wear. No major scratches, deep marks, or heavy scuffing visible. A very strong visual copy.</p><h3 data-section-id=\"znrpwr\" data-start=\"793\" data-end=\"807\">Cover: VG+</h3><p data-start=\"808\" data-end=\"903\">Cover presents nicely with light shelf and edge wear consistent with age. No major seam splits.</p><h3 data-section-id=\"597tbo\" data-start=\"905\" data-end=\"921\">Inner Sleeve</h3><p data-start=\"922\" data-end=\"974\">Includes original Columbia advertising inner sleeve.</p><h2 data-section-id=\"127ve95\" data-start=\"976\" data-end=\"995\">Track Highlights</h2><ul data-start=\"996\" data-end=\"1085\"><li data-section-id=\"11l6iwj\" data-start=\"996\" data-end=\"1019\">The Sounds of Silence</li><li data-section-id=\"5wav2x\" data-start=\"1020\" data-end=\"1033\">I Am a Rock</li><li data-section-id=\"25i9jc\" data-start=\"1034\" data-end=\"1048\">Richard Cory</li><li data-section-id=\"1fq7ot4\" data-start=\"1049\" data-end=\"1063\">Kathy’s Song</li><li data-section-id=\"rcm9je\" data-start=\"1064\" data-end=\"1085\">April Come She Will</li></ul><p data-start=\"1087\" data-end=\"1170\">A fantastic collector copy of one of the most iconic folk rock albums of the 1960s.</p><p data-start=\"1172\" data-end=\"1237\">Ships carefully packed outside the jacket to prevent seam splits.</p>",
       "paymentMethods": [
         {
@@ -1689,5 +1689,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:28Z"
 }

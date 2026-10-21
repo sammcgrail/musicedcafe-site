@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "AVE4572",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1587,7 +1587,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127969847499?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9c08iF%2Bo26UteMyPJVXEiabdOyRNDWjR1%2FNNJBIMAIG6COlODHm4FFufUe6SC3RtA6aBRM8%2FK%2FNRzXrbczC4TX5Efky5EQQmjTf8PkCLEkfSUIPp8jh9RcBdYZ2U9reWwwhMWq0eiTBBEjUdydqxKeyC9DcX73LxPFQ5c1Zf4DOh92QrMrM%2B34LVYAQ%2FROt34%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127969847499?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9c08iF%2Bo26UteMyPJVXEiabdOyRNDWjR1%2FNNJBIMAIG8VG29INnVHt2vZbB8s7k%2Fsl8cU7Kd8j%2BBrUJDnUcDjCyYLhI75GjHtK%2B9OxYIQ752jpVETUXZUbrMBqhiF5R%2FWx%2BfZOtcpjkjZfVNbSi%2FtwRtJTnWHs6YHl4%2Bb0F%2Bf3k9Y2d0qz3AmOcdDCWyZ1uG8%3D",
       "description": "<p data-start=\"585\" data-end=\"656\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"585\" data-end=\"656\">The Stylistics – Stop, Look, Listen (To Your Heart) / If I Love You</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"658\" data-end=\"896\">Original Avco Embassy 45 RPM single from legendary Philadelphia soul group <strong data-start=\"733\" data-end=\"751\">The Stylistics</strong>, produced and arranged by <strong data-start=\"778\" data-end=\"791\">Thom Bell</strong>. Features the classic soul hit <strong data-start=\"823\" data-end=\"863\">\"Stop, Look, Listen (To Your Heart)\"</strong> backed with <strong data-start=\"876\" data-end=\"896\">\"If I Love You.\"</strong></p>\n<p data-start=\"898\" data-end=\"990\">A great addition for collectors of Philadelphia soul, 1970s R&amp;B, and vintage 45 RPM records.</p>\n<hr data-start=\"992\" data-end=\"995\">\n<h3 data-section-id=\"1j02m21\" data-start=\"997\" data-end=\"1015\">Record Details</h3>\n<ul data-start=\"1017\" data-end=\"1299\">\n<li data-section-id=\"1k7pkmf\" data-start=\"1017\" data-end=\"1045\">\n<strong data-start=\"1019\" data-end=\"1030\">Artist:</strong> The Stylistics\n</li>\n<li data-section-id=\"vmzap1\" data-start=\"1046\" data-end=\"1093\">\n<strong data-start=\"1048\" data-end=\"1058\">Title:</strong> Stop, Look, Listen (To Your Heart)\n</li>\n<li data-section-id=\"1bpqnub\" data-start=\"1094\" data-end=\"1121\">\n<strong data-start=\"1096\" data-end=\"1107\">B-Side:</strong> If I Love You\n</li>\n<li data-section-id=\"170hhwj\" data-start=\"1122\" data-end=\"1155\">\n<strong data-start=\"1124\" data-end=\"1134\">Label:</strong> Avco Embassy Records\n</li>\n<li data-section-id=\"1in3lrt\" data-start=\"1156\" data-end=\"1186\">\n<strong data-start=\"1158\" data-end=\"1177\">Catalog Number:</strong> AVE-4572\n</li>\n<li data-section-id=\"135ls2i\" data-start=\"1187\" data-end=\"1216\">\n<strong data-start=\"1189\" data-end=\"1200\">Format:</strong> 7\" Vinyl Single\n</li>\n<li data-section-id=\"18ivji3\" data-start=\"1217\" data-end=\"1236\">\n<strong data-start=\"1219\" data-end=\"1229\">Speed:</strong> 45 RPM\n</li>\n<li data-section-id=\"j4odfh\" data-start=\"1237\" data-end=\"1255\">\n<strong data-start=\"1239\" data-end=\"1251\">Country:</strong> USA\n</li>\n<li data-section-id=\"jylese\" data-start=\"1256\" data-end=\"1299\">\n<strong data-start=\"1258\" data-end=\"1268\">Genre:</strong> Soul / R&amp;B / Philadelphia Soul\n</li>\n</ul>\n<hr data-start=\"1301\" data-end=\"1304\">\n<h3 data-section-id=\"17si63v\" data-start=\"1306\" data-end=\"1323\">Track Listing</h3>\n<p data-start=\"1325\" data-end=\"1335\"><strong data-start=\"1325\" data-end=\"1335\">Side A</strong></p>\n<ul data-start=\"1336\" data-end=\"1372\">\n<li data-section-id=\"1x1dusf\" data-start=\"1336\" data-end=\"1372\">\nStop, Look, Listen (To Your Heart)\n</li>\n</ul>\n<p data-start=\"1374\" data-end=\"1384\"><strong data-start=\"1374\" data-end=\"1384\">Side B</strong></p>\n<ul data-start=\"1385\" data-end=\"1400\">\n<li data-section-id=\"bjrecd\" data-start=\"1385\" data-end=\"1400\">\nIf I Love You\n</li>\n</ul>\n<hr data-start=\"1402\" data-end=\"1405\">\n<h2 data-section-id=\"s1o1x1\" data-start=\"1407\" data-end=\"1425\">Condition Notes</h2>\n<ul data-start=\"1427\" data-end=\"1885\">\n<li data-section-id=\"p0h4n2\" data-start=\"1427\" data-end=\"1455\">\nOriginal vintage pressing.\n</li>\n<li data-section-id=\"12ctvtk\" data-start=\"1456\" data-end=\"1518\">\nVinyl shows light to moderate cosmetic wear from normal use.\n</li>\n<li data-section-id=\"1g4ztls\" data-start=\"1519\" data-end=\"1560\">\nLabels remain bright and fully legible.\n</li>\n<li data-section-id=\"10ret16\" data-start=\"1561\" data-end=\"1601\">\nNo cracks, chips, or warping observed.\n</li>\n<li data-section-id=\"1k540xj\" data-start=\"1602\" data-end=\"1688\">\nMatrix numbers and light writing in the dead wax are present as shown in the photos.\n</li>\n<li data-section-id=\"1x1t1c5\" data-start=\"1689\" data-end=\"1767\">\nRecord has been visually graded and has not been professionally play-tested.\n</li>\n<li data-section-id=\"77rg3f\" data-start=\"1768\" data-end=\"1885\">\nPlease review all photos carefully, as they are part of the description and show the exact record you will receive.</li></ul>",
       "paymentMethods": [
         {
@@ -1644,5 +1644,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:04Z"
 }

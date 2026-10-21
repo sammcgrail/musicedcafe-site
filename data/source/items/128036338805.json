@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1586,7 +1586,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036338805?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F9dravDgBegzjQ6xAckCDdYZZtl9hchlrC%2BFruBzqt1x6PpApHJS%2BTep3I7JJvW69SurScvaNgbKDspI5nVIcI8JNRCjqQZgjG3551GV73IcZCA3mW05tEf5%2BIwhfBH60Dh6NQhJIXLByjWZkEs3ANdFpcD2LBENcwBjIXkh8%2FGttgA6ftseFevzzD6Q7eWjQ%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036338805?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F9dravDgBegzjQ6xAckCDdYZZtl9hchlrC%2BFruBzqt1zjZ49x1Y6lJMDpWFHAdZH47X1torto2M%2BqclCK4D0vsqHzmlHJYdQzfvYl74qNFrhQPyAMWI4YYoY5I76FXEQ0ft6CNKS833qD4lCVso4F8LlQf%2FycyuIO2Rv7DRLJtpo6AS2RmS6zuu2J9SMvo0O4%3D",
       "description": "<p>Simply Red Holding Back The Years 7” 45 Elektra 7-69564 1985 I Won’t Feel Bad</p><br /><p>Artist: Simply Red</p><p>Title: Holding Back the Years</p><p>B-Side: I Won’t Feel Bad</p><p>Label: Elektra</p><p>Catalog Number: 7-69564</p><p>Format: 7” Vinyl Single / 45 RPM / Stereo</p><p>Country: USA</p><p>Year: 1985</p><br /><p>Original U.S. Elektra 45 featuring Simply Red’s classic hit “Holding Back the Years”, backed with “I Won’t Feel Bad.”</p><br /><p>“Holding Back the Years” became one of Simply Red’s signature recordings and reached #1 on the U.S. Billboard Hot 100.</p><br /><p>Condition:</p><p>Vinyl is in VG condition, showing visible light scratches, surface marks and normal signs of previous play. Labels show some age and handling wear but remain fully readable.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great inexpensive original 1980s single for Simply Red fans and collectors of classic pop, soul and adult contemporary vinyl.</p><br /><p>Ships securely in protective packaging designed for 7-inch records.</p><br /><p>Music Ed Cafe — Keep the coffee flowin’ and the music goin’.</p>",
       "paymentMethods": [
         {
@@ -1643,5 +1643,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:05Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "727919",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1592,7 +1592,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036348923?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FFwb3w%2BbtZnUl3W2aQ%2BFfmBoi0mxfxjHnIgmVy%2BXkwiAdD3EqoOuaZSlrueVITATleLRvFCLXYEPUwsNmgmOAndWpivIlbucQIolrrC8FyklEqFYo5QLuXurfbxDUHf56Cu08YwvFnoaoSZuvBzQjwmpOeiXD%2BBpiQzZVa6gM%2BktMt5lkcUoGI5yJgdfHHHKE%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036348923?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FFwb3w%2BbtZnUl3W2aQ%2BFfmBoi0mxfxjHnIgmVy%2BXkwiL16xg5OXELtvt3ukNqiHK3cH7cQlVU%2Ffh1GiDkpK3pPEBUVsGY066TsNRcsRJH9%2FVTVmrGnk8qXMsvkU6MX7XlycXobsq%2BxuKzxmE8kF2chJyncIfarpk61gj0G9wvebsyt6exM%2FL9XeUi%2FF4G%2B294%3D",
       "description": "<p>k.d. lang I’m Down To My Last Cigarette 7” 45 Sire 7-27919 1988 Vinyl</p><br /><p>Artist: k.d. lang</p><p>A-Side: I’m Down to My Last Cigarette</p><p>B-Side: Western Stars</p><p>Label: Sire</p><p>Catalog Number: 7-27919</p><p>Format: 7” Vinyl Single / 45 RPM</p><p>Year: 1988</p><p>Country: USA</p><br /><p>Original 1988 U.S. Sire 45 from k.d. lang, featuring “I’m Down to My Last Cigarette” backed with “Western Stars.”</p><br /><p>Both tracks come from k.d. lang’s acclaimed Shadowland era, produced by legendary Nashville producer Owen Bradley.</p><br /><p>A great addition for collectors of k.d. lang, classic country, country-pop and late-1980s vinyl singles.</p><br /><p>Condition:</p><p>Vinyl is approximately VG to VG+ visually, retaining good gloss with light surface marks and signs of previous play. Labels are intact and fully readable with some light age and handling wear.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p><br /><p>Ships securely in protective packaging designed for 7-inch records.</p>",
       "paymentMethods": [
         {
@@ -1649,5 +1649,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:02Z"
 }

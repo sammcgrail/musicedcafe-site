@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SWAV12120",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1632,7 +1632,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128069624442?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8oIlzjPh084ROicFqY%2BCjXhGGIHJe4XDE6UL181jkiYHjEO2JcDAjxQPKgAa4660J4eTVyveWMIzIgPnTS%2F%2BS95QZclR2KY%2FarSy50SaYY17jrBtV2lHA7ENkvCNnaYOb21lDiHhVk%2Fs3zVv3YCo8oZDlAP3NMo8QEit6kd97ORG1lqM8FxNuLHA4fFFCcXAc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128069624442?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8oIlzjPh084ROicFqY%2BCjXhGGIHJe4XDE6UL181jkiYL3ARHyObisgC9pcP%2BJ9MIMHGPewqifBYUYLEvhC8Qx7QRmpU3IJ0hJ2JMiPrP0D3lCju6Eh65Iseqgr19dJHdqO2iZcbpDfBd0GImhUCdznx862sJIMSO1J41pnJGAiCBcEzkqP1WAaK47bhL5y1f4%3D",
       "description": "<p data-start=\"2332\" data-end=\"2440\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2332\" data-end=\"2440\">Neil Diamond – The Jazz Singer – Original Motion Picture Soundtrack – Capitol SWAV-12120 – 1980 Vinyl LP</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2442\" data-end=\"2562\">Original U.S. Capitol Records pressing of Neil Diamond's soundtrack album for the 1980 motion picture <em data-start=\"2544\" data-end=\"2561\">The Jazz Singer</em>.</p>\n<p data-start=\"2564\" data-end=\"2627\">Features several of Diamond's best-known recordings, including:</p>\n<ul data-start=\"2629\" data-end=\"2737\">\n<li data-section-id=\"18ptf94\" data-start=\"2629\" data-end=\"2638\">\nAmerica\n</li>\n<li data-section-id=\"1es6hy\" data-start=\"2639\" data-end=\"2658\">\nLove on the Rocks\n</li>\n<li data-section-id=\"1jms8q2\" data-start=\"2659\" data-end=\"2672\">\nHello Again\n</li>\n<li data-section-id=\"1edt62p\" data-start=\"2673\" data-end=\"2688\">\nSongs of Life\n</li>\n<li data-section-id=\"1ehd0yx\" data-start=\"2689\" data-end=\"2701\">\nSummerlove\n</li>\n<li data-section-id=\"1a4dmxh\" data-start=\"2702\" data-end=\"2714\">\nHey Louise\n</li>\n<li data-section-id=\"1achoqe\" data-start=\"2715\" data-end=\"2726\">\nJerusalem\n</li>\n<li data-section-id=\"14b40vn\" data-start=\"2727\" data-end=\"2737\">\nYou Baby\n</li>\n</ul>\n<p data-start=\"2739\" data-end=\"2888\"><strong data-start=\"2739\" data-end=\"2749\">Label:</strong> Capitol Records<br data-start=\"2765\" data-end=\"2768\">\n<strong data-start=\"2768\" data-end=\"2780\">Catalog:</strong> SWAV-12120<br data-start=\"2791\" data-end=\"2794\">\n<strong data-start=\"2794\" data-end=\"2803\">Year:</strong> 1980<br data-start=\"2808\" data-end=\"2811\">\n<strong data-start=\"2811\" data-end=\"2823\">Country:</strong> USA<br data-start=\"2827\" data-end=\"2830\">\n<strong data-start=\"2830\" data-end=\"2841\">Format:</strong> 12\" Vinyl LP<br data-start=\"2854\" data-end=\"2857\">\n<strong data-start=\"2857\" data-end=\"2867\">Speed:</strong> 33⅓ RPM<br data-start=\"2875\" data-end=\"2878\">\n<strong data-start=\"2878\" data-end=\"2888\">Stereo</strong></p>",
       "paymentMethods": [
         {
@@ -1689,5 +1689,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:16Z"
 }

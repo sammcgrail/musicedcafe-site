@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "KE30325, PE30325",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1642,7 +1642,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127918640072?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BWxIymzrCwbypsf6cNi%2FDqQnfk96GeiAolP96GVy6%2FaY3b86VHTCN2%2BbElNpwlKdANep%2Bk3e6Tz%2BDojqi1uYuaQzXO%2BBXMWhZV1iAyCcG8mMgtFoYZUxinfewj4wSJ1m0Ctc7qO86FPA7CJG9ovgBaZp1ZHemd3BO6TOTvYH92acTRmkhYfldwJI2iQ3%2Ftud4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127918640072?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BWxIymzrCwbypsf6cNi%2FDqQnfk96GeiAolP96GVy6%2FaXOy4wVW%2FXTAjdfRgNRwXV4JRB%2BLBpS1gC0SukclQVcx498bqb4LbnTCYYwzJvXT4yvCA9xc6dqt2T9IhqA9hm7LNHK7iWOCunqqASGc7HzaCT8oqJlIl1Ewgun0knPwiQ1%2FHca3pgpUCFaR%2BHumEYA%3D",
       "description": "<p data-start=\"977\" data-end=\"1026\"><strong data-start=\"977\" data-end=\"1026\">Sly &amp; The Family Stone – Greatest Hits (1970)</strong></p>\n<p data-start=\"1028\" data-end=\"1049\">Epic Records PE 30325</p>\n<p data-start=\"1051\" data-end=\"1097\">A classic funk and soul compilation featuring:</p>\n<ul data-start=\"1099\" data-end=\"1294\">\n<li data-section-id=\"cyachj\" data-start=\"1099\" data-end=\"1126\">\nI Want To Take You Higher\n</li>\n<li data-section-id=\"1rxr9ai\" data-start=\"1127\" data-end=\"1148\">\nEverybody Is A Star\n</li>\n<li data-section-id=\"660osl\" data-start=\"1149\" data-end=\"1157\">\nStand!\n</li>\n<li data-section-id=\"1j3unv2\" data-start=\"1158\" data-end=\"1164\">\nLife\n</li>\n<li data-section-id=\"el2e6e\" data-start=\"1165\" data-end=\"1185\">\nDance To The Music\n</li>\n<li data-section-id=\"ytqrd6\" data-start=\"1186\" data-end=\"1203\">\nEveryday People\n</li>\n<li data-section-id=\"kfdvz0\" data-start=\"1204\" data-end=\"1231\">\nHot Fun In The Summertime\n</li>\n<li data-section-id=\"1mi4qxk\" data-start=\"1232\" data-end=\"1273\">\nThank You (Falettinme Be Mice Elf Agin)\n</li>\n<li data-section-id=\"srudcx\" data-start=\"1274\" data-end=\"1294\">\nSing A Simple Song\n</li>\n</ul>\n<p data-start=\"1296\" data-end=\"1309\"><strong data-start=\"1296\" data-end=\"1309\">Condition</strong></p>\n<p data-start=\"1311\" data-end=\"1327\"><strong data-start=\"1311\" data-end=\"1321\">Vinyl:</strong> VG+</p>\n<ul data-start=\"1328\" data-end=\"1442\">\n<li data-section-id=\"1dqf9j1\" data-start=\"1328\" data-end=\"1350\">\nGood gloss and shine\n</li>\n<li data-section-id=\"xe4a7r\" data-start=\"1351\" data-end=\"1399\">\nLight surface marks consistent with normal use\n</li>\n<li data-section-id=\"xkkpl2\" data-start=\"1400\" data-end=\"1429\">\nNo major scratches observed\n</li>\n<li data-section-id=\"ea60tp\" data-start=\"1430\" data-end=\"1442\">\nPlays well\n</li>\n</ul>\n<p data-start=\"1444\" data-end=\"1487\"><strong data-start=\"1444\" data-end=\"1454\">Cover:</strong> Generic white replacement sleeve</p>\n<ul data-start=\"1488\" data-end=\"1565\">\n<li data-section-id=\"rywa0p\" data-start=\"1488\" data-end=\"1524\">\nOriginal album jacket not included\n</li>\n<li data-section-id=\"1fkoa5f\" data-start=\"1525\" data-end=\"1565\">\nArtist and title handwritten on sleeve</li></ul>",
       "paymentMethods": [
         {
@@ -1699,5 +1699,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:02Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1596,7 +1596,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970853704?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde97N0JP4buWW4Bei9iBwCms9o7D1YWbtncpjuTwUW5RcppNsndqI7Jaxs%2FBL7lgVpmTFXNNHEaie%2BEeypkrK3Bw%2BYf5k7Knf%2BLCqMoGh0M7O7NcgyASmekzxg%2FO3X6t1HjxU0A57pJTW3DUxO5PUDU7wpVVZ1RLuqOS4p%2Bee7HkdoivnuoN4ieZ9c0om%2B0RpyA%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970853704?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde97N0JP4buWW4Bei9iBwCms9o7D1YWbtncpjuTwUW5Rcv4KuA4fBwCsB9gFTYOswQKr%2FOOpVs%2Fbm6%2Fzhj5FIHx5anj15DMSDS3wxVuwFOPwWhMsMtPNH8RdZuFS7swe1fSHHnQwOBO6PGBThfPjyU177WcGSq8awlUMOQCp%2FR8XT9eVdz30UPjGWf%2FYczfQqa8%3D",
       "description": "<p data-start=\"1267\" data-end=\"1399\" class=\"PDq2pG_selectionAnchorContainer\">Original 1957 RCA Victor 45 RPM single featuring Elvis Presley's legendary hit <strong data-start=\"1346\" data-end=\"1366\">\"Jailhouse Rock\"</strong> backed with <strong data-start=\"1379\" data-end=\"1399\">\"Treat Me Nice.\"</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1401\" data-end=\"1636\">Released alongside the classic film <em data-start=\"1437\" data-end=\"1453\">Jailhouse Rock</em>, this is one of Elvis' most recognizable and collectible singles. An essential addition for Elvis Presley collectors, rock &amp; roll enthusiasts, jukebox owners, and vintage vinyl fans.</p>\n<p data-start=\"1638\" data-end=\"1762\">Record will be shipped in a new paper sleeve inside a protective poly sleeve and securely packaged in a rigid 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1653,5 +1653,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:43Z"
 }

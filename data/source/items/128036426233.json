@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "RS1067",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -862,7 +862,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036426233?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8sPoxrE4P%2FsmTGoPfSWP0YBxUZrgdRM8%2BxCvfBs5vIV8CGaDZEiPYGjOciwWtqgs59481tbcrOkdVW8%2FZhKDQqbrFW41LPteuqFWZqLER0FL2rRU7SnCoYhG1OwCUHvpZkvGRpo4KFlAipNJ1BJ3fJJQLxnIks%2Blmnms1N4%2BAhstRmZF8n0v06T4vdFJowQiY%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036426233?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8sPoxrE4P%2FsmTGoPfSWP0YBxUZrgdRM8%2BxCvfBs5vIV2YBaHAtlAXvwJokCCBEyBNGJPPVYOIhXhQn2dAeFQIQ3YWmrjUMYHTpHsqy8HOM56r9hpJZ2VZfOnZmzd5zE5sI%2BDh2s8mzLMAN15s7ZUEj8QQN9B1Gr%2FI0vJxkBoKsCMI3%2B515o14IMnHAbGKPOiQ%3D",
       "description": "<p>Original 1981 Bee Gees 7-inch 45 RPM single featuring “Living Eyes” backed with “I Still Love You.”</p><br /><p>Released on RSO Records, catalog number RS 1067.</p><br /><p>Vinyl appears to be in approximately VG visual condition, showing light surface wear and scuffing consistent with normal handling and playback. Both RSO labels remain clean and highly readable with light cosmetic wear.</p>",
       "paymentMethods": [
         {
@@ -919,5 +919,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:57Z"
 }

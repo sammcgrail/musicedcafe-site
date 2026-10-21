@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1626,7 +1626,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128041063886?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B8GD6EV%2B2c%2FmOQ%2BCkr19%2BY%2Fh7XKObtQpRdPFMJ5HXBSPZEYoGqXGKhiKFC1HivJCb5Yrr5oGCiV8O7bJKAE%2BqntceKCF4Hu52ePgoG7XcIRtScQifUYcsz%2BjlsRzqRx8Lf6mr9Rm4Jh0Q9fTeVHgZtErJxJ911a20t33CqT6wxPeFIRJbERLyKerCMo%2BUsiQM%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128041063886?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B8GD6EV%2B2c%2FmOQ%2BCkr19%2BY%2Fh7XKObtQpRdPFMJ5HXBSI8TFzwUBcDettQBaZVNdjf7AEJ%2BZHAAuY7bGXiuUno1RbGZ2FxlKc0ZE3dQrn1hz0jch2O0pKPXfPEXcHKDSRKYQLCDbkFgL924p22mugG2dxHG0eu6bfF%2FwuNuT%2FP%2BacEcQSW1DbAriZFYLItbX7c%3D",
       "description": "<p>Marvel Studios Guardians of the Galaxy – Awesome Mix Vol. 1</p><br /><p>Collectible picture-disc vinyl edition of the hit Guardians of the Galaxy soundtrack, featuring the classic songs heard throughout the Marvel Studios film.</p><br /><p>Track Listing:</p><br /><p>Side A</p><p>Blue Swede – Hooked on a Feeling</p><p>Raspberries – Go All the Way</p><p>Norman Greenbaum – Spirit in the Sky</p><p>David Bowie – Moonage Daydream</p><p>Elvin Bishop – Fooled Around and Fell in Love</p><p>Jackson 5 – I Want You Back</p><br /><p>Side B</p><p>10cc – I’m Not in Love</p><p>Redbone – Come and Get Your Love</p><p>The Runaways – Cherry Bomb</p><p>Rupert Holmes – Escape (The Piña Colada Song)</p><p>Five Stairsteps – O-o-h Child</p><p>Marvin Gaye &amp; Tammi Terrell – Ain’t No Mountain High Enough</p><br /><p>Format: 12-inch Picture Disc LP</p><p>Label: Hollywood Records / Marvel Music</p><p>UPC: 050087374495</p><br /><p>Condition:</p><p>Pre-owned collectible vinyl release. Outer sleeve presents very well with strong color and artwork and only light edge, corner, and storage wear visible.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great collectible for Marvel, Guardians of the Galaxy, movie soundtrack, classic rock, and picture-disc vinyl collectors.</p><br /><p>Record will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1683,5 +1683,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:44Z"
 }

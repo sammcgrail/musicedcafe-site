@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "3874751",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1596,7 +1596,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036510382?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FN0vojeQNZrK5UGD9KzNbtcg7Cz%2Fu2n%2BEpaJaACst%2FRrfMC6AtCdgVQh4iuaRArty9NTxhNb5bAx%2Fm6lFcZUetcoECT%2BSYKq4r%2FrgdRgWsm44PNbRMXfr2wanyzEwszRqblI4IQ5l69ArrG7syJwvYiMM2%2BarpvIV%2BnUAaA%2FAkyCvyJHaFR8L5ThO5Ub%2Bevv8%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036510382?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FN0vojeQNZrK5UGD9KzNbtcg7Cz%2Fu2n%2BEpaJaACst%2FRkCTm5tm4mc4VQvdhHSE98RonzkDB9VJQR64mcnT81E%2BqX2HPNd6UJ7TDskvvgxsnhoPJbdabstPdoE7WADQ2qE7%2F9Q0dYkbClISFnsM0M86ZK%2BhefFSTB3UOieBfx4zjoMlkCxNqfwajcs5MfyQcwQ%3D",
       "description": "<p>Peabo Bryson &amp; Regina Belle – “A Whole New World (Aladdin’s Theme)” / “After the Kiss (Instrumental)”</p><br /><p>Original 1992 Columbia Records 7-inch 45 RPM single, catalog number 38-74751.</p><br /><p>Features Peabo Bryson and Regina Belle performing the classic Disney duet “A Whole New World (Aladdin’s Theme)” from the original motion picture soundtrack to Aladdin.</p><br /><p>Track Listing:</p><br /><p>Side A – A Whole New World (Aladdin’s Theme) – 4:03</p><p>Side B – After the Kiss (Instrumental) – 1:50</p><br /><p>Condition:</p><p>Vinyl is in pre-owned condition with visible light scratches, surface marks, and scuffing consistent with normal age and use. Labels remain bright and readable. The “A Whole New World” side has a small handwritten inventory/price sticker attached to the label. Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great addition for collectors of Disney music, Aladdin, Peabo Bryson, Regina Belle, 1990s R&amp;B, movie soundtracks, and vintage 45 RPM singles.</p><br /><p>Record will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1653,5 +1653,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:50Z"
 }

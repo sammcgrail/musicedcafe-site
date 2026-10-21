@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -78,7 +78,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -102,8 +102,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1590,7 +1590,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128123724506?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde85nqgopxhBObs8dF%2BiF%2B4OOFx7iejPg70zPba8p4ITg1F8qGwxqNV4jWeL6dbKyuITQ4WhOc6NBF75yz0UyVtZDWwbS866nA%2FWbk7KfGM9q5W58i2w7FfKoYHPlD22iybuz28FPEoSGZuba5V1waQDUOkUBHXsqREO3CBqY8zYPXwNAMhs44%2B85r86SMfOyf8%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128123724506?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde85nqgopxhBObs8dF%2BiF%2B4OOFx7iejPg70zPba8p4ITg1vY0SLrWBe5RjlAKB9ECemP0xFB0Saw6yXWMl9xS%2FOTkNKJQbXYI9hCrWcH3sYbE6%2FEd94d4VuDj%2FujsVmPlePgvvEW7Ujk12%2B%2FBy8%2FcFh2pe3PDYmyoEmYfMoCBxHx0nsgDuw%2FlGhsBAoPhRv%2ByPQ%3D",
       "description": "<p><strong>Tommy Dorsey &amp; His Orchestra – Vocals Frank Sinatra: Sings the Standards</strong><br>RCA International – INTS 5098<br>12\" Vinyl LP • Stereo • Compilation</p><p>A collection of classic early Frank Sinatra vocal performances recorded with Tommy Dorsey &amp; His Orchestra.</p><p>Includes:</p><p>“I’ll Be Seeing You”<br>“Stardust”<br>“Without a Song”<br>“East of the Sun”<br>“I’ll Never Smile Again”<br>“Fools Rush In”<br>“Polka Dots and Moonbeams”<br>“Imagination”<br>“How About You?”<br>“This Love of Mine”<br>…and more.</p><p><strong>Condition:</strong><br>Vinyl: <strong>VG+ visually</strong> – nice gloss with light signs of handling and minor superficial marks.<br>Cover: <strong>VG</strong> – visible shelf/edge wear, corner wear and rubbing consistent with age. Original $2.99 retail price sticker remains on front cover. Please review photos closely for exact condition.</p><p><strong>Label:</strong> RCA International<br><strong>Catalog #:</strong> INTS 5098<br><strong>Genre:</strong> Vocal Jazz / Traditional Pop / Big Band<br><strong>Artists:</strong> Frank Sinatra, Tommy Dorsey &amp; His Orchestra</p>",
       "paymentMethods": [
         {
@@ -1647,5 +1647,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:24:55Z"
 }

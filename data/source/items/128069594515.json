@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "OL5410",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1617,7 +1617,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128069594515?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8r%2BLZ8InBpMEiA2WNN1jFV%2BFqS5C2xZxgEijnvgP2QLrexXA6PgTG2ZpdYtOgtEq3ADTmyCpbLv5bG%2BPl4mnqilcNrGh8cyE%2FNXSuP8xHggcWWlTgntFeU1g0RU4YRLiH2KdIhYsfWxpaQypvCuWC7FkANnPb%2F7Sv%2BzTriCc1jwq45c95vaelN6nggDP1xATk%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128069594515?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8r%2BLZ8InBpMEiA2WNN1jFV%2BFqS5C2xZxgEijnvgP2QLjhPmydXfRC40qf%2FLFJLawW4RzowsHFpws%2BBzlT5yMH3Vpu8%2FPK4JNXTLSH4tYb1I%2Frbde%2BBFOdZ6Jegit0wLH67MfkWI%2B5exBeiLYtpJGo%2FawOMW12V%2FVP6vpXyV9YGlsrGhi9qIT8UC1EONegf53U%3D",
       "description": "<p data-start=\"2006\" data-end=\"2061\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2006\" data-end=\"2061\">Porgy and Bess – Original Motion Picture Soundtrack</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2063\" data-end=\"2140\">Vintage 1959 U.S. mono pressing on Columbia Masterworks, catalog <strong data-start=\"2128\" data-end=\"2139\">OL 5410</strong>.</p>\n<p data-start=\"2142\" data-end=\"2307\">Features the music of George Gershwin with lyrics by DuBose Heyward and Ira Gershwin, including some of the most enduring songs from the American musical repertoire.</p>\n<p data-start=\"2309\" data-end=\"2328\">Highlights include:</p>\n<ul data-start=\"2330\" data-end=\"2543\">\n<li data-section-id=\"1eh6gng\" data-start=\"2330\" data-end=\"2342\">\nSummertime\n</li>\n<li data-section-id=\"x9iff9\" data-start=\"2343\" data-end=\"2372\">\nA Woman Is a Sometime Thing\n</li>\n<li data-section-id=\"kwgn5r\" data-start=\"2373\" data-end=\"2392\">\nMy Man's Gone Now\n</li>\n<li data-section-id=\"kurw6s\" data-start=\"2393\" data-end=\"2418\">\nI Got Plenty O' Nuttin'\n</li>\n<li data-section-id=\"liz8ua\" data-start=\"2419\" data-end=\"2446\">\nBess, You Is My Woman Now\n</li>\n<li data-section-id=\"16sxypq\" data-start=\"2447\" data-end=\"2472\">\nIt Ain't Necessarily So\n</li>\n<li data-section-id=\"1y99fjy\" data-start=\"2473\" data-end=\"2493\">\nI Loves You, Porgy\n</li>\n<li data-section-id=\"1uh7f25\" data-start=\"2494\" data-end=\"2543\">\nThere's a Boat That's Leavin' Soon for New York\n</li>\n</ul>\n<p data-start=\"2545\" data-end=\"2817\"><strong data-start=\"2545\" data-end=\"2568\">Vinyl Condition: VG</strong> — record retains decent gloss but shows numerous visible light scratches, hairlines and surface marks from age and handling. No obvious major deep gouges visible in photos. Playback condition should be considered unconfirmed unless otherwise noted.</p>\n<p data-start=\"2819\" data-end=\"2924\"><strong data-start=\"2819\" data-end=\"2829\">Label:</strong> Columbia Masterworks<br data-start=\"2850\" data-end=\"2853\">\n<strong data-start=\"2853\" data-end=\"2867\">Catalog #:</strong> OL 5410<br data-start=\"2875\" data-end=\"2878\">\n<strong data-start=\"2878\" data-end=\"2887\">Year:</strong> 1959<br data-start=\"2892\" data-end=\"2895\">\n<strong data-start=\"2895\" data-end=\"2906\">Format:</strong> 12\" LP<br data-start=\"2913\" data-end=\"2916\">\n<strong data-start=\"2916\" data-end=\"2924\">Mono</strong></p>",
       "paymentMethods": [
         {
@@ -1674,5 +1674,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:21Z"
 }

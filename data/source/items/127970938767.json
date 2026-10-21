@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1591,7 +1591,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970938767?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8JzpdPRhz1%2FTuRV8Hoo81TlxVVTZQqgjfXezv5dkjT6mw3iwSF7666avp%2BTdNp1DLohkjFpqU1jANyA2wkTnqQ%2FPreuQkMh%2FJWBBwOq9xq71tgDJRMlOudj%2FXe%2B9dhV30lRQjlG20EQ60EO8ReByQjLT%2FwDKdFDNBKSJ8%2F%2BqPKt1%2B%2BhiLJI3tw0MdLWH2%2F28o%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970938767?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8JzpdPRhz1%2FTuRV8Hoo81TlxVVTZQqgjfXezv5dkjT6rI1%2B%2BAGavD%2BDK0tgrAghlZ1V%2B1D2xnN3Ub4QO3pSYL0x5%2F9C1SgeWG9vnPjA%2BkIb7ehfw5aoACszBqrlQL%2BU6lgLDoGb0sICUFGRwYI8nbDSyIuUG3d%2FQkRl%2BivFfq1yqkwsZAXRe7xLBZxQn9KLVk%3D",
       "description": "<p data-start=\"1182\" data-end=\"1266\" class=\"PDq2pG_selectionAnchorContainer\">Original Atlantic Records pressing featuring two classic Aretha Franklin recordings.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<ul data-start=\"1268\" data-end=\"1356\">\n<li data-section-id=\"tixk6o\" data-start=\"1268\" data-end=\"1300\">\n<strong data-start=\"1270\" data-end=\"1281\">Side A:</strong> <em data-start=\"1282\" data-end=\"1300\">Baby, Baby, Baby</em>\n</li>\n<li data-section-id=\"1rsto7c\" data-start=\"1301\" data-end=\"1356\">\n<strong data-start=\"1303\" data-end=\"1314\">Side B:</strong> <em data-start=\"1315\" data-end=\"1356\">A Natural Woman (You Make Me Feel Like)</em>\n</li>\n</ul>\n<p data-start=\"1358\" data-end=\"1487\">Produced during Aretha's legendary Atlantic years, this is a must-have for collectors of classic soul, R&amp;B, and Motown-era music.</p>\n<p data-start=\"1489\" data-end=\"1600\">Ships in a new paper sleeve with a protective outer poly sleeve and packaged securely in a rigid 45 RPM mailer.</p><p data-start=\"833\" data-end=\"851\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"833\" data-end=\"844\">Record:</strong>&nbsp;Fair</p><p data-start=\"833\" data-end=\"851\" class=\"PDq2pG_selectionAnchorContainer\">vintage vinyl with a nice shine. Shows light to moderate surface scuffs and hairlines consistent with normal use and age. Labels exhibit light wear but remain clean and fully legible.</p><p data-start=\"1047\" data-end=\"1086\"><strong data-start=\"1047\" data-end=\"1058\">Sleeve:</strong> Generic white paper sleeve.</p><p data-start=\"1489\" data-end=\"1600\">\n\n\n</p><p data-start=\"1088\" data-end=\"1159\">Please review all photos carefully as they are part of the description.</p>",
       "paymentMethods": [
         {
@@ -1648,5 +1648,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:34Z"
 }

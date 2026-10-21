@@ -253,6 +253,14 @@ class Client:
     def release(self, release_id) -> dict:
         return self.request("GET", f"/releases/{int(release_id)}")
 
+    def price_suggestions(self, release_id) -> dict:
+        """Suggested price per condition ({} when Discogs has none); needs seller settings filled in."""
+        return self.request("GET", f"/marketplace/price_suggestions/{int(release_id)}")
+
+    def marketplace_stats(self, release_id, curr: str | None = "USD") -> dict:
+        """lowest_price {currency, value} | null, num_for_sale, blocked_from_sale."""
+        return self.request("GET", f"/marketplace/stats/{int(release_id)}", {"curr_abbr": curr})
+
     def create_listing(self, fields: dict) -> dict:
         return self.request("POST", "/marketplace/listings", body=fields)
 

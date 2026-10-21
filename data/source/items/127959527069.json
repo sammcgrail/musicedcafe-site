@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "MCA5150",
       "estimatedAvailabilities": [
@@ -106,8 +106,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1644,7 +1644,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127959527069?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde80v2%2BZrPKbgYtZYlTBBsTjB76O3umyXawW2ojK%2BkWCBO%2FT1zs%2By4pRAj3LFD%2FzBVzY5wSt1TGbpp8MeoYrEWuYQwoKPHqRX--fgE4D%2BWE%2BBeZRKnMvtG3owGfIVLfWAmLKEp37puzI2PiFOSeuG%2BkHGM2eoNq9A7C%2B%2Fth4zK0tuX%2F6kawvMp8%2Bbx6Ui0YUaC0%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127959527069?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde80v2%2BZrPKbgYtZYlTBBsTjB76O3umyXawW2ojK%2BkWCBHhvKDhziJkDe5vC5p5YZVbMOj9Yfqn6F3tqIERt%2FPmoygP22F%2FmS34OJF2uXz60yKYc2gczXHDVapMRssPdEIdgPK8U98vgEC6PYMQ4d3XtY5Q6HrbBW2xWgrNDJGqx1tV2%2BXBZbtmzxwR0Qn9KYxI%3D",
       "description": "<h2 data-section-id=\"q4fmep\" data-start=\"1142\" data-end=\"1179\" class=\"PDq2pG_selectionAnchorContainer\">The Oak Ridge Boys – Greatest Hits<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></h2>\n<p data-start=\"1181\" data-end=\"1350\"><strong data-start=\"1181\" data-end=\"1192\">Artist:</strong> The Oak Ridge Boys<br data-start=\"1211\" data-end=\"1214\">\n<strong data-start=\"1214\" data-end=\"1224\">Title:</strong> Greatest Hits<br data-start=\"1238\" data-end=\"1241\">\n<strong data-start=\"1241\" data-end=\"1251\">Label:</strong> MCA Records<br data-start=\"1263\" data-end=\"1266\">\n<strong data-start=\"1266\" data-end=\"1285\">Catalog Number:</strong> MCA-5150<br data-start=\"1294\" data-end=\"1297\">\n<strong data-start=\"1297\" data-end=\"1310\">Released:</strong> 1980<br data-start=\"1315\" data-end=\"1318\">\n<strong data-start=\"1318\" data-end=\"1329\">Format:</strong> 12\" Vinyl LP, Stereo</p>\n<p data-start=\"1352\" data-end=\"1440\">A clean original pressing featuring many of the Oak Ridge Boys' biggest hits, including:</p>\n<ul data-start=\"1442\" data-end=\"1628\">\n<li data-section-id=\"1lf8kh2\" data-start=\"1442\" data-end=\"1458\">\nYou're the One\n</li>\n<li data-section-id=\"1vkc10v\" data-start=\"1459\" data-end=\"1480\">\nI'll Be True to You\n</li>\n<li data-section-id=\"1qzsz0u\" data-start=\"1481\" data-end=\"1507\">\nTrying to Love Two Women\n</li>\n<li data-section-id=\"139zleo\" data-start=\"1508\" data-end=\"1522\">\nCryin' Again\n</li>\n<li data-section-id=\"mv6us6\" data-start=\"1523\" data-end=\"1533\">\nDream On\n</li>\n<li data-section-id=\"x05z6j\" data-start=\"1534\" data-end=\"1575\">\nLeaving Louisiana in the Broad Daylight\n</li>\n<li data-section-id=\"cj0dc4\" data-start=\"1576\" data-end=\"1591\">\nHeart of Mine\n</li>\n<li data-section-id=\"1qsv1m9\" data-start=\"1592\" data-end=\"1603\">\nSail Away\n</li>\n<li data-section-id=\"x39zfs\" data-start=\"1604\" data-end=\"1628\">\nY'all Come Back Saloon</li></ul>",
       "paymentMethods": [
         {
@@ -1701,5 +1701,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:47Z"
 }

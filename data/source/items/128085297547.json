@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1616,7 +1616,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128085297547?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FrFeADpGGhcU5WcxpnE7RW88V6i5ahCYW8XfsTjXewZb6XFGSJErLDhIpVOc5SxsTE%2FzcPDSF6cnBx1VmLxXPAU9Af1BK30Q6mWWD49HMg%2BoQilHNW2RmNtfNOR6PV4%2FjQL0htHUIrky6S7rxsKr2JICpL3jvftUPQ5nhW81LZIKxumOl9MhUD7eHi%2FqvyiG4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128085297547?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FrFeADpGGhcU5WcxpnE7RW88V6i5ahCYW8XfsTjXewZdvKIy6p5%2BRT62LC%2B9z22Wt0NnyqEZBg3kfDIw7SUtMn3EHcYuzsNTQBTJ8qNMZ3t6VJ8z5U2L%2BL1pYU8BnDmMXHDZJMDu2noi08OSWI1P2Zf6L8wl4FzFx3HdD6hVTvxwRjdsILL4rPrWYSvAg%2FZJo%3D",
       "description": "<p dir=\"auto\" data-start=\"1277\" data-end=\"1387\" class=\"PDq2pG_selectionAnchorContainer\">Nina Simone – <em data-start=\"1310\" data-end=\"1330\">Here Comes the Sun</em><br data-start=\"1330\" data-end=\"1333\">\nRCA International – NL 89421<br data-start=\"1361\" data-end=\"1364\">\nGerman Vinyl LP Reissue<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p dir=\"auto\" data-start=\"1389\" data-end=\"1579\">Classic Nina Simone album featuring her interpretations of major pop and rock compositions, including “Here Comes the Sun,” “Just Like a Woman,” “O-o-h Child,” “Mr. Bojangles,” and “My Way.”</p>\n<p dir=\"auto\" data-start=\"1581\" data-end=\"1710\">This is the RCA International German pressing with catalog number NL 89421. Original outer shrink wrap remains around the jacket.</p>\n<p dir=\"auto\" data-start=\"1712\" data-end=\"2037\" class=\"\"><strong data-start=\"1712\" data-end=\"1726\">Condition:</strong><br data-start=\"1726\" data-end=\"1729\">\nVinyl appears approximately VG to VG+ visually with light surface marks and signs of previous play. Jacket appears approximately VG+ with light shelf/storage wear underneath the remaining shrink wrap. Please review photos carefully for exact cosmetic condition. Play-test grading recommended before purchase.</p>\n<p dir=\"auto\" data-start=\"2039\" data-end=\"2353\"><strong data-start=\"2039\" data-end=\"2058\">Item specifics:</strong><br data-start=\"2058\" data-end=\"2061\">\nArtist: Nina Simone<br data-start=\"2080\" data-end=\"2083\">\nAlbum: Here Comes the Sun<br data-start=\"2108\" data-end=\"2111\">\nLabel: RCA International<br data-start=\"2135\" data-end=\"2138\">\nCatalog Number: NL 89421<br data-start=\"2162\" data-end=\"2165\">\nFormat: 12\" Vinyl LP<br data-start=\"2185\" data-end=\"2188\">\nSpeed: 33 RPM<br data-start=\"2201\" data-end=\"2204\">\nEdition: Reissue<br data-start=\"2220\" data-end=\"2223\">\nCountry of Manufacture: Germany<br data-start=\"2254\" data-end=\"2257\">\nGenre: Jazz / Soul / Vocal<br data-start=\"2283\" data-end=\"2286\">\nStyle: Soul Jazz / Vocal Jazz / Pop Covers<br data-start=\"2328\" data-end=\"2331\">\nBarcode: 0035628942111</p>",
       "paymentMethods": [
         {
@@ -1673,5 +1673,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:04Z"
 }

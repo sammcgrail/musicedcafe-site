@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "73330",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1592,7 +1592,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127969863149?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9Ctd4zOib%2FEXn8eW6A5yFBtxjjgExUodj%2FXduNjGCQjBxATLlNc8geoWuqxbyRcsIxw98P5W89BVlPzJJ4MMApiyej2u7bsfgbV4h4QBwZVxvEFAxPPZxW2Oa2nGcJTa84NKfogCGmxH3zABHH3WkIVGFib8lI8LTApzRBZo%2BCOEVbXrg62MGayrxuRfx9A2M%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127969863149?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9Ctd4zOib%2FEXn8eW6A5yFBtxjjgExUodj%2FXduNjGCQjMPv3lJju71txQkFOUOcoY%2BksnlRMz%2F9ew1Xg3UbbXG2jNhUVb3GKO2MKkjEy342aMKDAE86K0PVIHPIZW8D4DyMWknBmxB%2FjIFZg6rZA%2B2MzqAde5wjpzPSU%2BnK0kwyYW6CJDUeygCWGJRvcATOUq4%3D",
       "description": "<p data-start=\"660\" data-end=\"706\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"660\" data-end=\"706\">Rod Stewart – You Wear It Well / True Blue</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"708\" data-end=\"978\">Original 1972 Mercury Records 45 RPM single featuring the classic hit <strong data-start=\"778\" data-end=\"801\">\"You Wear It Well,\"</strong> backed with <strong data-start=\"814\" data-end=\"830\">\"True Blue.\"</strong> Produced by Rod Stewart during the <em data-start=\"866\" data-end=\"887\">Never a Dull Moment</em> era, this is an essential addition for collectors of classic rock and vintage 1970s vinyl.</p>\n<hr data-start=\"980\" data-end=\"983\">\n<h3 data-section-id=\"1j02m21\" data-start=\"985\" data-end=\"1003\">Record Details</h3>\n<ul data-start=\"1005\" data-end=\"1248\">\n<li data-section-id=\"sxdzio\" data-start=\"1005\" data-end=\"1030\">\n<strong data-start=\"1007\" data-end=\"1018\">Artist:</strong> Rod Stewart\n</li>\n<li data-section-id=\"k3ctfj\" data-start=\"1031\" data-end=\"1060\">\n<strong data-start=\"1033\" data-end=\"1043\">Title:</strong> You Wear It Well\n</li>\n<li data-section-id=\"y7an8u\" data-start=\"1061\" data-end=\"1084\">\n<strong data-start=\"1063\" data-end=\"1074\">B-Side:</strong> True Blue\n</li>\n<li data-section-id=\"1metle5\" data-start=\"1085\" data-end=\"1113\">\n<strong data-start=\"1087\" data-end=\"1097\">Label:</strong> Mercury Records\n</li>\n<li data-section-id=\"gs2dau\" data-start=\"1114\" data-end=\"1141\">\n<strong data-start=\"1116\" data-end=\"1135\">Catalog Number:</strong> 73330\n</li>\n<li data-section-id=\"135ls2i\" data-start=\"1142\" data-end=\"1171\">\n<strong data-start=\"1144\" data-end=\"1155\">Format:</strong> 7\" Vinyl Single\n</li>\n<li data-section-id=\"18ivji3\" data-start=\"1172\" data-end=\"1191\">\n<strong data-start=\"1174\" data-end=\"1184\">Speed:</strong> 45 RPM\n</li>\n<li data-section-id=\"j4odfh\" data-start=\"1192\" data-end=\"1210\">\n<strong data-start=\"1194\" data-end=\"1206\">Country:</strong> USA\n</li>\n<li data-section-id=\"mo62fg\" data-start=\"1211\" data-end=\"1248\">\n<strong data-start=\"1213\" data-end=\"1223\">Genre:</strong> Classic Rock / Folk Rock\n</li>\n</ul>\n<hr data-start=\"1250\" data-end=\"1253\">\n<h3 data-section-id=\"17si63v\" data-start=\"1255\" data-end=\"1272\">Track Listing</h3>\n<p data-start=\"1274\" data-end=\"1284\"><strong data-start=\"1274\" data-end=\"1284\">Side A</strong></p>\n<ul data-start=\"1285\" data-end=\"1303\">\n<li data-section-id=\"bmpf9h\" data-start=\"1285\" data-end=\"1303\">\nYou Wear It Well\n</li>\n</ul>\n<p data-start=\"1305\" data-end=\"1315\"><strong data-start=\"1305\" data-end=\"1315\">Side B</strong></p>\n<ul data-start=\"1316\" data-end=\"1327\">\n<li data-section-id=\"ect6f4\" data-start=\"1316\" data-end=\"1327\">\nTrue Blue\n</li>\n</ul>\n<hr data-start=\"1329\" data-end=\"1332\">\n<h2 data-section-id=\"s1o1x1\" data-start=\"1334\" data-end=\"1352\">Condition Notes</h2>\n<ul data-start=\"1354\" data-end=\"1767\">\n<li data-section-id=\"10qcwux\" data-start=\"1354\" data-end=\"1390\">\nOriginal vintage Mercury pressing.\n</li>\n<li data-section-id=\"10n6qtg\" data-start=\"1391\" data-end=\"1472\">\nVinyl shows light to moderate cosmetic wear consistent with age and normal use.\n</li>\n<li data-section-id=\"18c6qqx\" data-start=\"1473\" data-end=\"1529\">\nLabels are clean with minor storage and handling wear.\n</li>\n<li data-section-id=\"10ret16\" data-start=\"1530\" data-end=\"1570\">\nNo cracks, chips, or warping observed.\n</li>\n<li data-section-id=\"1x1t1c5\" data-start=\"1571\" data-end=\"1649\">\nRecord has been visually graded and has not been professionally play-tested.\n</li>\n<li data-section-id=\"77rg3f\" data-start=\"1650\" data-end=\"1767\">\nPlease review all photos carefully, as they are part of the description and show the exact record you will receive.</li></ul>",
       "paymentMethods": [
         {
@@ -1649,5 +1649,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:02Z"
 }

@@ -11,7 +11,10 @@ What it does:
      buyingOptions defaults to FIXED_PRICE only, so we ask for
      FIXED_PRICE|AUCTION|BEST_OFFER explicitly. limit 200, offset < 10,000.
   3. getItem for each hit: item specifics (localizedAspects), description,
-     images, condition, availability.
+     images, condition, availability. A stored getItem payload is reused while
+     it is younger than browse.item_refresh_hours (default 24) and the search
+     summary still shows the same price, title and bids, so an hourly sync costs
+     a handful of calls and the full getItem pass happens about once a day.
 A snapshot counts as COMPLETE only if every page and every getItem succeeded
 and the number of items fetched equals the reported total. Only a complete
 snapshot can end listings (see store.apply_active_snapshot).
@@ -96,6 +99,28 @@ def _to_item(full: dict, summ: dict) -> dict:
             "currency": price.get("currency"), "quantity": qty, "raw": full, "listing": listing}
 
 
+def _now_iso() -> str:
+    from .util import now_iso
+    return now_iso()
+
+
+def _reusable(c: dict, summ: dict, max_age_s: float, now: float) -> bool:
+    """Is a stored getItem payload still good for this search summary?"""
+    from datetime import datetime
+    try:
+        age = now - datetime.fromisoformat(c["fetched_at"].replace("Z", "+00:00")).timestamp()
+    except (KeyError, TypeError, ValueError):
+        return False
+    if age < 0 or age > max_age_s:
+        return False
+    full = c["full"]
+    def v(d, k):
+        return ((d.get(k) or {}).get("value"))
+    return (v(summ, "price") == v(full, "price") and v(summ, "currentBidPrice") == v(full, "currentBidPrice")
+            and (summ.get("title") or None) == (full.get("title") or None)
+            and int(summ.get("bidCount") or 0) == int(full.get("bidCount") or 0))
+
+
 def fetch_snapshot(seller: str, categories: list[str], marketplace: str = "EBAY_US",
                    token: str | None = None, log=print) -> tuple[list[dict], bool, list[str]]:
     """Returns (items, complete, errors)."""
@@ -107,7 +132,7 @@ def fetch_snapshot(seller: str, categories: list[str], marketplace: str = "EBAY_
     h = {"Authorization": f"Bearer {token}", "X-EBAY-C-MARKETPLACE-ID": marketplace,
          "Accept": "application/json"}
     summaries, errors, complete = {}, [], True
-    totals = {}
+    totals, search_calls = {}, 0
     # Browse paging over an unsorted result set is not stable (a 339-item run
     # returned 333 unique ids). Page through several sort orders and union them
     # until the union reaches the reported total.
@@ -119,6 +144,7 @@ def fetch_snapshot(seller: str, categories: list[str], marketplace: str = "EBAY_
                 q = {"category_ids": cat, "limit": PAGE, "offset": offset, "sort": sort,
                      "filter": f"sellers:{{{seller}}},buyingOptions:{{FIXED_PRICE|AUCTION|BEST_OFFER}}"}
                 url = f"{API}/buy/browse/v1/item_summary/search?" + urllib.parse.urlencode(q)
+                search_calls += 1
                 try:
                     res = _req("GET", url, h)
                 except BrowseError as e:
@@ -142,15 +168,30 @@ def fetch_snapshot(seller: str, categories: list[str], marketplace: str = "EBAY_
             if total is not None and got >= total:
                 break
     items = []
+    # getItem is the expensive part (one call per listing). Reuse the stored
+    # payload when it is younger than max_age_hours and the search summary still
+    # agrees on price, title and bids; a sold listing drops out of search and is
+    # looked up directly below, so reuse never hides a sale.
+    # set by sync() for one call only, so a stale cache never leaks into the next caller
+    cached = fetch_snapshot.__dict__.pop("cached", None) or {}
+    max_age = float(fetch_snapshot.__dict__.pop("max_age_hours", 0) or 0) * 3600
+    stats = {"search_calls": search_calls, "getitem_calls": 0, "getitem_reused": 0, "direct_calls": 0}
+    now = time.time()
     for item_id, s in summaries.items():
+        c = cached.get(item_id)
+        if c and max_age and _reusable(c, s, max_age, now):
+            items.append(dict(_to_item(c["full"], s), fetched_at=c["fetched_at"]))
+            stats["getitem_reused"] += 1
+            continue
         url = f"{API}/buy/browse/v1/item/{urllib.parse.quote(item_id, safe='')}"
+        stats["getitem_calls"] += 1
         try:
             full = _req("GET", url, h)
         except BrowseError as e:
             errors.append(str(e))
             complete = False
             continue
-        items.append(_to_item(full, s))
+        items.append(dict(_to_item(full, s), fetched_at=_now_iso()))
         time.sleep(0.2)
     # Any id we believe is active but search did not return: ask for it directly.
     known_active = getattr(fetch_snapshot, "known_active", set())
@@ -158,6 +199,7 @@ def fetch_snapshot(seller: str, categories: list[str], marketplace: str = "EBAY_
     direct = {}
     for legacy in sorted(known_active - got_ids):
         url = f"{API}/buy/browse/v1/item/get_item_by_legacy_id?legacy_item_id={legacy}"
+        stats["direct_calls"] += 1
         try:
             full = _req("GET", url, h)
         except BrowseError as e:
@@ -170,10 +212,11 @@ def fetch_snapshot(seller: str, categories: list[str], marketplace: str = "EBAY_
         if full.get("itemId") in summaries:
             continue
         summaries[full["itemId"]] = {"itemId": full["itemId"], "_direct": True}
-        items.append(_to_item(full, full))
+        items.append(dict(_to_item(full, full), fetched_at=_now_iso()))
         direct[legacy] = "active (found by direct lookup, missing from search)"
         time.sleep(0.2)
     fetch_snapshot.direct = direct
+    fetch_snapshot.stats = stats
     # reconcile: every reported result fetched, every getItem succeeded
     expected = sum(totals.values())
     if len(summaries) < expected or len(items) != len(summaries):
@@ -216,7 +259,15 @@ def sync(force: bool = False, log=print, dry_run: bool = False) -> dict:
         store.record_attempt("browse_api", False, {}, ["ebay_seller_username is not set"])
         return {"result": "failed", "errors": ["ebay_seller_username is not set"]}
     cats = cfg.get("browse", {}).get("category_ids") or ["176985"]
-    fetch_snapshot.known_active = {k for k, r in store.load_items().items() if r.get("status") == "active"}
+    known = store.load_items()
+    fetch_snapshot.known_active = {k for k, r in known.items() if r.get("status") == "active"}
+    # stored getItem payloads of active records, keyed by Browse itemId (see fetch_snapshot)
+    fetch_snapshot.max_age_hours = cfg.get("browse", {}).get("item_refresh_hours", 24)
+    fetch_snapshot.cached = {
+        r["raw"]["browse_api"]["itemId"]: {"full": r["raw"]["browse_api"], "fetched_at": r["api_item_fetched_at"]}
+        for r in known.values()
+        if r.get("status") == "active" and r.get("api_item_fetched_at")
+        and ((r.get("raw") or {}).get("browse_api") or {}).get("itemId")}
     try:
         items, complete, errors = fetch_snapshot(seller, cats, cfg.get("marketplace", "EBAY_US"), log=log)
     except BrowseError as e:
@@ -224,6 +275,7 @@ def sync(force: bool = False, log=print, dry_run: bool = False) -> dict:
         return {"result": "failed", "errors": [str(e)]}
     cov = coverage(items)
     cov_summary = {k: (len(v) if isinstance(v, list) else v) for k, v in cov.items() if k != "titles"}
+    cov_summary["api_calls"] = dict(getattr(fetch_snapshot, "stats", {}) or {})
     if dry_run:
         return {"result": "dry_run", "complete": complete, "errors": errors, "coverage": cov_summary}
     if errors or not complete:

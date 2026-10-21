@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1641,7 +1641,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128084339352?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde89W6yVsTXIi%2BIbE851cEeLoNyXPkSxCGLHkR6zUxL9FN7XyEAGzreqVX6%2Bg9CTxdzsA4Bhq27iWaKGW3VVpAudQDi3Ws98VnMAarPSIe%2F7girnYR9IJ0O%2FlcQN9qNCFXctsrkyKaNW0c3RDHTt0RAAz7YpmsuCqNjPTpRmTfO5JFaGSyKa%2FV3SS07LSgyN6%2Bs%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128084339352?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde89W6yVsTXIi%2BIbE851cEeLoNyXPkSxCGLHkR6zUxL9FHEku0b7cmOuM91WPo9Xp3JR5%2BVC9SSbLPG7JkcHAbS4Vu%2Fx4SjBb%2Frf2G8s94VoMDY7u0jGVNW5jgrYbUrM%2Fhx7BMXYOBAjBa6nf%2BY0XRtvjdEmljdUyqzz8Wn3%2Fth6RWC%2BiZcstAOAM0iLzIyDmoE%3D",
       "description": "<p dir=\"auto\" data-start=\"1150\" data-end=\"1297\" class=\"PDq2pG_selectionAnchorContainer\"><em data-start=\"1150\" data-end=\"1208\">Flashdance – Original Soundtrack from the Motion Picture</em><br data-start=\"1208\" data-end=\"1211\">\nCasablanca / PolyGram Records<br data-start=\"1240\" data-end=\"1243\">\nCatalog: 422-811 492-1 M-1<br data-start=\"1269\" data-end=\"1272\">\n1983 U.S. Stereo Vinyl LP<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p dir=\"auto\" data-start=\"1299\" data-end=\"1734\">Classic 1980s soundtrack featuring several of the era’s biggest dance-pop and synth-pop recordings, including Irene Cara’s <strong data-start=\"1422\" data-end=\"1454\">“Flashdance… What a Feeling”</strong> and Michael Sembello’s <strong data-start=\"1478\" data-end=\"1491\">“Maniac.”</strong> The soundtrack also includes performances by Donna Summer, Laura Branigan, Joe Esposito, Kim Carnes, Helen St. John, Karen Kamon, Shandi and Cycle V. The 10-track lineup matches the 1983 soundtrack issue. <span class=\"contents\" data-content-reference-start=\"1743\" data-content-reference-end=\"1785\"><span class=\"\" data-state=\"closed\"></span></span></p>\n<p dir=\"auto\" data-start=\"1736\" data-end=\"1899\" class=\"\">Vinyl appears <strong data-start=\"1750\" data-end=\"1766\">VG+ visually</strong>, with strong gloss and light surface/handling marks visible under direct light. No obvious deep scratches are visible in the photos.</p>\n<p dir=\"auto\" data-start=\"1901\" data-end=\"2097\">Jacket is approximately <strong data-start=\"1925\" data-end=\"1938\">VG to VG+</strong>, with normal shelf wear, corner and edge wear, light creasing/scuffing, and age-related handling wear. Please review all photos carefully for exact condition.</p>\n<p dir=\"auto\" data-start=\"2099\" data-end=\"2231\"><strong data-start=\"2099\" data-end=\"2111\">Details:</strong> 12\" LP • 33⅓ RPM • Stereo • 1983 • Casablanca Records • U.S. pressing • Soundtrack / Synth-pop / Pop Rock / Electronic.</p>",
       "paymentMethods": [
         {
@@ -1698,5 +1698,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:11Z"
 }

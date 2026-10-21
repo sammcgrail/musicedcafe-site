@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "LSP4852",
       "estimatedAvailabilities": [
@@ -106,8 +106,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1649,7 +1649,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127896534883?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8YsA15dxF5gvQZu1zVlNOCScJh60Wl9wTgB0oqIZwv8bMN3JcwmhWoLF9CVGGInuJxfjv%2BN2j8U5yDL3EV5EVWZRrP7hl95krHdfAXcB%2Fk10WtqXfCQvMGxtVg0pyh2eTwuvd3V1b9Qk1VbZ2P5zFUFCZU4BAkAMGCHuGzpWsEDamsDqZgMdltKQ1%2BeCh2m3Q%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127896534883?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8YsA15dxF5gvQZu1zVlNOCScJh60Wl9wTgB0oqIZwv8ZB4jrkzi%2F4yEPE%2BX05UQ6PqdgNssCz6n%2BJWUMf%2Fxm39n4eWMhO04tXpjBdWBNSbPQ5d%2BgoX%2BwyVITGI4tsmlNx2%2BrzhbHUXj0QwIgMb43U7R4T04Md0gKXDMbqlt%2FGH%2BHPV3J9N3CR%2B6KBcQgvDSbc%3D",
       "description": "<p data-start=\"1281\" data-end=\"1307\">David Bowie – Aladdin Sane</p>\n<p data-start=\"1309\" data-end=\"1340\">RCA Records LSP-4852 (Dynaflex)</p>\n<p data-start=\"1342\" data-end=\"1385\">Classic 1973 David Bowie release featuring:</p>\n<ul data-start=\"1387\" data-end=\"1502\">\n<li data-section-id=\"14ljcsx\" data-start=\"1387\" data-end=\"1403\">\nThe Jean Genie\n</li>\n<li data-section-id=\"fmn30z\" data-start=\"1404\" data-end=\"1423\">\nDrive-In Saturday\n</li>\n<li data-section-id=\"12d66mq\" data-start=\"1424\" data-end=\"1455\">\nAladdin Sane (1913–1938–197?)\n</li>\n<li data-section-id=\"h0mljj\" data-start=\"1456\" data-end=\"1474\">\nPanic In Detroit\n</li>\n<li data-section-id=\"1j4crzx\" data-start=\"1475\" data-end=\"1481\">\nTime\n</li>\n<li data-section-id=\"s1boe9\" data-start=\"1482\" data-end=\"1502\">\nLady Grinning Soul\n</li>\n</ul>\n<p data-start=\"1504\" data-end=\"1517\"><strong data-start=\"1504\" data-end=\"1517\">Condition</strong></p>\n<p data-start=\"1519\" data-end=\"1528\">Vinyl: Fair</p>\n<ul data-start=\"1529\" data-end=\"1633\">\n<li data-section-id=\"8y1ij9\" data-start=\"1529\" data-end=\"1588\">\nLight surface marks and sleeve scuffs consistent with age\n</li>\n<li data-section-id=\"xkkpl2\" data-start=\"1589\" data-end=\"1618\">\nNo major scratches observed\n</li>\n<li data-section-id=\"12ym8c8\" data-start=\"1619\" data-end=\"1633\">\nLabels clean\n</li>\n</ul>\n<p data-start=\"1635\" data-end=\"1649\">Cover: Fair</p>\n<ul data-start=\"1650\" data-end=\"1749\">\n<li data-section-id=\"1eht39q\" data-start=\"1650\" data-end=\"1679\">\nRing wear and discoloration\n</li>\n<li data-section-id=\"1vjyi06\" data-start=\"1680\" data-end=\"1702\">\nCorner and edge wear\n</li>\n<li data-section-id=\"1d7sqt9\" data-start=\"1703\" data-end=\"1727\">\nWriting on front cover\n</li>\n<li data-section-id=\"xq8o85\" data-start=\"1728\" data-end=\"1749\">\nStructurally intact\n</li>\n</ul>\n<p data-start=\"1751\" data-end=\"1818\">A solid player copy of one of Bowie's most iconic glam-rock albums.</p>",
       "paymentMethods": [
         {
@@ -1706,5 +1706,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:18Z"
 }

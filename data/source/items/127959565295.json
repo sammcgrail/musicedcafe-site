@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "CAS2409",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1587,7 +1587,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127959565295?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BjqeQmWQ2Le1gnwItomCvyX4rIyH5LxoInWnPD3kkRgiNC6Ht8eI%2BVBRZtViuNq8WtgFhes0Zc2KVd68Lcfxf5Lj2YEJT7OFtyPFE0FW384pORAPWBE0%2Fka7T%2B%2FClQk1uxkEp31989JGYacj7jlNnMhxwBSsVcPmM%2Bm2ZGeEVNfj4b0crZUeO2IHfaVszctEw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127959565295?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BjqeQmWQ2Le1gnwItomCvyX4rIyH5LxoInWnPD3kkRgm9KHWXljN0v6jf0t%2FX8tr5n5CJ11ATitep8od3gy1Y2zKapf0rKqAIPUuqAnZou2U5PrC3vq0RzyDqTJcCjJYsx0k1Ju2sFtag19WeTzQ%2Ft1beY7GpOlgSjuPi4iIk07luErIQQmIQQW%2B1BXSjDX28%3D",
       "description": "<p data-start=\"1103\" data-end=\"1145\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"1103\" data-end=\"1145\">Porter Wagoner – Howdy Neighbor, Howdy</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1147\" data-end=\"1166\">RCA Camden CAS-2409</p>\n<p data-start=\"1168\" data-end=\"1193\">Country / Nashville Sound</p>\n<h3 data-section-id=\"1uef3h1\" data-start=\"1195\" data-end=\"1208\">Condition</h3>\n<p data-start=\"1210\" data-end=\"1223\" class=\"\"><strong data-start=\"1210\" data-end=\"1220\">Vinyl:</strong> VG</p>\n<ul data-start=\"1225\" data-end=\"1316\">\n<li data-section-id=\"1ck4kj3\" data-start=\"1225\" data-end=\"1237\">\nGood gloss\n</li>\n<li data-section-id=\"xe4a7r\" data-start=\"1238\" data-end=\"1286\">\nLight surface marks consistent with normal use\n</li>\n<li data-section-id=\"xkkpl2\" data-start=\"1287\" data-end=\"1316\">\nNo major scratches observed\n</li>\n</ul>\n<p data-start=\"1318\" data-end=\"1336\"><strong data-start=\"1318\" data-end=\"1329\">Jacket:</strong> G+/VG-</p>\n<ul data-start=\"1338\" data-end=\"1429\">\n<li data-section-id=\"1ahcyxp\" data-start=\"1338\" data-end=\"1350\">\nShelf wear\n</li>\n<li data-section-id=\"v24q9n\" data-start=\"1351\" data-end=\"1362\">\nRing wear\n</li>\n<li data-section-id=\"1pmdyuj\" data-start=\"1363\" data-end=\"1407\">\nBack cover staining/discoloration from age\n</li>\n<li data-section-id=\"xq8o85\" data-start=\"1408\" data-end=\"1429\">\nStructurally intact</li></ul>",
       "paymentMethods": [
         {
@@ -1644,5 +1644,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:45Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "VS442762",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1607,7 +1607,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036512470?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FgamqTHs8h2Oodi1icStlKboZ5GqJx3rzOw0wwe9VrGSzrmVcnaRXlpETGc%2FFf4QId%2FNnjTFaRXt9LBO8uSKgQ0OE%2BwGwLRa%2FLr1eUAMQaPYhDNJFVKsLc6R%2B0hDKTVyn9F%2FqRMN8btGWPRulQScpB5OUvTv%2B6V1fhZF9uxwDb3ioF6QSdDj%2F0MgdEHDSJUmQ%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036512470?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FgamqTHs8h2Oodi1icStlKboZ5GqJx3rzOw0wwe9VrGTyu7YlhwrZeXkfP%2FnUq6WtKQKMzs7At3plTnothpvc7BOyAqR%2Fy8dWDbDkqNhf3vckuMaBBJvFSblB8938H5I7ul18%2BCYfu3quCDI%2BYPSNVR2buyR4ztroAzP5GS1cJP4V3SqnC0DhFkqYAROxf9xY%3D",
       "description": "<p>Billy Idol – “Rebel Yell” / “Crank Call”</p><br /><p>Original 1983 Chrysalis Records 7-inch 45 RPM single, catalog number VS4 42762.</p><br /><p>Features Billy Idol’s classic rock and new wave anthem “Rebel Yell,” backed with “Crank Call.”</p><br /><p>Track Listing:</p><br /><p>Side A – Rebel Yell – 3:48</p><p>Side B – Crank Call – 3:56</p><br /><p>Condition:</p><p>Vinyl is in pre-owned condition with visible surface marks, light scratches, and scuffing consistent with normal age and use. Labels remain clean and attractive overall. Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great addition for collectors of Billy Idol, 1980s rock, new wave, punk-influenced rock, and vintage 45 RPM singles.</p><br /><p>Record will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1664,5 +1664,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:49Z"
 }

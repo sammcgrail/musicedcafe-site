@@ -20,16 +20,13 @@
     "missing: artist": 28,
     "only a year in the title: release_year": 27,
     "only from words in the title: genre": 25,
-    "none: images": 24,
     "missing: label": 22,
     "parsed from the eBay title, please confirm: album": 20,
     "parsed from the eBay title, please confirm: artist": 18,
     "conflict: catalog_number": 15,
     "parsed from the eBay title, please confirm: media_grade": 8,
-    "none from eBay: images": 7,
     "missing: format_type": 7,
-    "parsed from the eBay title, please confirm: sleeve_grade": 5,
-    "rejected candidate Eagles – Their Greatest Hits 1971–1975: cover art": 1
+    "parsed from the eBay title, please confirm: sleeve_grade": 5
   },
   "items": {
     "127870971172": {
@@ -108,7 +105,6 @@
         "artist: parsed from the eBay title, please confirm",
         "album: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
-        "images: none from eBay (stock cover shown, caa confidence 0.85)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -165,7 +161,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -356,8 +351,6 @@
         "album: parsed from the eBay title, please confirm",
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
-        "images: none (placeholder sleeve shown)",
-        "cover art: rejected candidate Eagles – Their Greatest Hits 1971–1975 (Album, e69f059c-f91e-4dbb-aa23-ae1d277f0390) (title 'Their Greatest Hits 1971–1975' != 'Their Greatest Hits')",
         "description: not retrieved"
       ],
       "provenance": {
@@ -527,7 +520,6 @@
         "sleeve_grade: missing",
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -627,7 +619,6 @@
         "sleeve_grade: missing",
         "artist: parsed from the eBay title, please confirm",
         "album: parsed from the eBay title, please confirm",
-        "images: none from eBay (stock cover shown, caa confidence 0.85)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -683,7 +674,6 @@
         "sleeve_grade: missing",
         "artist: parsed from the eBay title, please confirm",
         "album: parsed from the eBay title, please confirm",
-        "images: none from eBay (stock cover shown, caa confidence 0.85)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -707,7 +697,6 @@
         "sleeve_grade: missing",
         "artist: parsed from the eBay title, please confirm",
         "album: parsed from the eBay title, please confirm",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -784,7 +773,6 @@
         "artist: parsed from the eBay title, please confirm",
         "album: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
-        "images: none from eBay (stock cover shown, caa confidence 0.85)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -899,7 +887,6 @@
         "sleeve_grade: missing",
         "artist: parsed from the eBay title, please confirm",
         "album: parsed from the eBay title, please confirm",
-        "images: none from eBay (stock cover shown, caa confidence 0.85)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -997,7 +984,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none from eBay (stock cover shown, caa confidence 1.0)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -1133,7 +1119,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -1198,7 +1183,7 @@
     },
     "127889422585": {
       "title": "Johnny Mathis – Christmas Eve LP Columbia Holiday Record VG+ Vinyl",
-      "status": "active",
+      "status": "sold",
       "flags": [
         "catalog_number: missing",
         "release_year: missing",
@@ -1430,7 +1415,6 @@
         "sleeve_grade: missing",
         "catalog_number: parsed from the eBay title, please confirm",
         "media_grade: parsed from the eBay title, please confirm",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -1456,7 +1440,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -1593,7 +1576,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -1619,7 +1601,6 @@
         "sleeve_grade: missing",
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -1646,7 +1627,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -1706,7 +1686,6 @@
         "sleeve_grade: missing",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -1831,7 +1810,6 @@
         "sleeve_grade: missing",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -1858,7 +1836,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -1969,7 +1946,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -2026,7 +2002,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -2052,7 +2027,6 @@
         "sleeve_grade: missing",
         "media_grade: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -2138,7 +2112,6 @@
         "media_grade: parsed from the eBay title, please confirm",
         "sleeve_grade: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -2286,7 +2259,6 @@
         "sleeve_grade: missing",
         "media_grade: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -2368,7 +2340,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -2418,7 +2389,6 @@
         "sleeve_grade: missing",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -2584,7 +2554,6 @@
         "sleeve_grade: missing",
         "artist: parsed from the eBay title, please confirm",
         "album: parsed from the eBay title, please confirm",
-        "images: none from eBay (stock cover shown, caa confidence 0.85)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -2634,7 +2603,6 @@
         "media_grade: parsed from the eBay title, please confirm",
         "sleeve_grade: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -4054,7 +4022,6 @@
         "media_grade: missing",
         "sleeve_grade: missing",
         "label: parsed from the eBay title, please confirm",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -4171,7 +4138,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -4301,7 +4267,6 @@
         "catalog_number: parsed from the eBay title, please confirm",
         "label: parsed from the eBay title, please confirm",
         "grade 'VG+' in title does not say vinyl or sleeve",
-        "images: none (placeholder sleeve shown)",
         "description: not retrieved"
       ],
       "provenance": {
@@ -11541,7 +11506,7 @@
     },
     "128123687010": {
       "title": "Chuck Mangione Feels So Good LP 1977 A&M SP-4658 Jazz Fusion Vinyl VG+",
-      "status": "active",
+      "status": "sold",
       "flags": [
         "conflict: media_grade: VG+ (description:Vinyl) vs VG (eBay item specifics:Record Grading)"
       ],

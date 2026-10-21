@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "B5204",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1586,7 +1586,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036505309?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8zbD6eCv24ziV1mQkzKS2b30Qzg5ntsiAdTNLXE86i6RbTObEEVVl%2FJE6aocZ6mfvT7N%2FBdGGKaih2TQGGO49CK4cRViMSoOCstd2RDhgGqXjuWOGsyawwyK85HHOiyYj5f4XK70Uxvb%2B%2FP%2FQP31q7BT9mK2d%2B6xedShHkeHeaUJs7GZgSD0guSomOEer%2F8Cw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036505309?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8zbD6eCv24ziV1mQkzKS2b30Qzg5ntsiAdTNLXE86i6RCIg3jHg9jm9n1viyIu8Rv88ngSbvfjU42W2H9GCfIgODl5cNk5Yw7PzwlfS13t9zV2yY5MD%2FG0pf17jSxuUCOrpUU%2Fu3ES5yvlcmpRadX7BF4IjyjtLd%2Fxo%2F0Rc3GjP75f2mOeo0NUu8lyWtXphyk%3D",
       "description": "<p>Thomas Dolby – “She Blinded Me With Science” / “Flying North”</p><br /><p>Original Harvest Records 7-inch 45 RPM single, catalog number B-5204.</p><br /><p>Features Thomas Dolby’s iconic 1980s new wave and synth-pop hit “She Blinded Me With Science,” backed with “Flying North.”</p><br /><p>Track Listing:</p><br /><p>Side A – She Blinded Me With Science – 5:09</p><p>Side B – Flying North – 3:50</p><br /><p>Condition:</p><p>Vinyl is in pre-owned condition with visible surface marks and light scratches/scuffing consistent with age and use. Labels remain clean and attractive overall. Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great addition for collectors of Thomas Dolby, 1980s new wave, synth-pop, electronic music, and vintage 45 RPM singles.</p><br /><p>Record will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1643,5 +1643,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:52Z"
 }

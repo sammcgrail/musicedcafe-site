@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "RB10014",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1586,7 +1586,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970968795?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8kjtNCL6Ba%2ByolUqfkNkv9uU1tb0tt2g%2BBNHwCXnx67Y7Eh4uHAB6G67eJCtdOxqWXSWekDMd6ABZz%2FI7WaZIwDwRHywk75ZsZwfJehi59XAyCKTtAIL27ecHrNkH3ZHI%2Bw%2FCVWv%2FAexeMZQySzJ4WEaUV8JHfIvTcC04uCq6JoK7IO%2Bm%2BLtxhl%2FF6KfgP4HE%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970968795?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8kjtNCL6Ba%2ByolUqfkNkv9uU1tb0tt2g%2BBNHwCXnx67XBe7OXa%2F1c4%2FUJCunsGqlyAAhuPS8VdmFF%2B8uSuSVxNP7gk663oMiV2SJAGdUSzJ7B%2BsE2Ixi85bRciKjfwbgae%2B72ZnBr13ROZSihrcScEWoDOmzSI55BBUFRqXx5m3aPnDQ8ty8mi9xErK7F8QQQ%3D",
       "description": "<p data-start=\"1318\" data-end=\"1447\" class=\"PDq2pG_selectionAnchorContainer\">Original Red Bird Records 45 RPM single from <strong data-start=\"1363\" data-end=\"1382\">The Shangri-Las</strong> featuring one of the defining songs of the 1960s girl-group era.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1449\" data-end=\"1459\"><strong data-start=\"1449\" data-end=\"1459\">Side A</strong></p>\n<ul data-start=\"1460\" data-end=\"1480\">\n<li data-section-id=\"1ixkvga\" data-start=\"1460\" data-end=\"1480\">\nLeader Of The Pack\n</li>\n</ul>\n<p data-start=\"1482\" data-end=\"1492\"><strong data-start=\"1482\" data-end=\"1492\">Side B</strong></p>\n<ul data-start=\"1493\" data-end=\"1507\">\n<li data-section-id=\"1yk5kx4\" data-start=\"1493\" data-end=\"1507\">\nWhat Is Love\n</li>\n</ul>\n<p data-start=\"1509\" data-end=\"1584\">A must-have for collectors of 1960s pop, girl groups, and Red Bird Records.</p>\n<p data-start=\"1586\" data-end=\"1710\">Record will be shipped in a new paper sleeve, inside a protective poly sleeve, and packed securely in a rigid 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1643,5 +1643,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:30Z"
 }

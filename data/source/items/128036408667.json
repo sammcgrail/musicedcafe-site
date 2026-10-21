@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "3805788",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1577,7 +1577,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036408667?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8NP0gs4oFEZXFao0QZz2oGgPiTLg%2BouBxa58qJ2rSGPLmvr%2BILh3SnI1fwPRntnoQ21npOltPx2EX7OfmZFFEYhSzV3X%2FjKWG01kEssSI0Hy26vIy32eipTDmLNoISBmavH9Hl6YY5Dn%2FyBaxZgv0%2BMjx5PKomiY5lI1YrxWOuwBq9LooAO3N6TTiG0qc%2Bna4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036408667?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8NP0gs4oFEZXFao0QZz2oGgPiTLg%2BouBxa58qJ2rSGPFI9mxnDHcX6NJwKotOLkpIh7sqNlARgrnihj27YCeHF2C81jKBkVYlCV0RPmzJI53H4XyY5rvIMaevRQ34itO0bbztKsmrrCtcBSnbj%2BF02ZWhMrPzuZ2hGIhRbBXw8TmsN8lR2Er5XzkZP%2FIo6Zak%3D",
       "description": "<p>Vintage 1986 7-inch 45 RPM single by Synch, featuring “Where Are You Now?” backed with “Only For The Night.”</p><br /><p>Released on Columbia Records, catalog number 38-05788.</p><br /><p>This copy has a Demonstration / Not For Sale marking, making it an interesting promotional copy for collectors of 1980s R&amp;B, soul and funk singles.</p><br /><p>Vinyl appears to be in approximately VG visual condition, with visible light surface wear, scuffs and scratches consistent with normal use. Labels show noticeable handling wear, rubbing and discoloration as pictured.</p>",
       "paymentMethods": [
         {
@@ -1634,5 +1634,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:59Z"
 }

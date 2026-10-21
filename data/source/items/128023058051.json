@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "788890",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1607,7 +1607,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023058051?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FTzLLxbYLRwPTryeoPt%2Bgf7RJLnc8Xd01vUy8ADK2iuCmZavsO%2F%2BFSbbD6VBGrcIxqpOV2YQ8gxfCIITxhEebXmZuCMG6WkRNAabCyRkiVLnsKwbadiczuDLukD5KgTNUCUczUh%2Fph7vRDL4xTAS7th57fG31bbHIs0aPo46EHiITzlKPA8%2Bjohoj%2FaGPmrYw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023058051?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FTzLLxbYLRwPTryeoPt%2Bgf7RJLnc8Xd01vUy8ADK2iuA7%2FEVXdCZQ0zNZ3jsXu5PmSLDsEvh%2BfoxXrxzjUv1mjcCiUuMBzE4%2FfVlzu1RDfTKXVegBIMDu%2BPbZHP4rCNeN1ajDoZlvaWwbaZDqo%2BenXuEXnx3zDLpWBF%2FSp67xy7MKgbyPPndDyDRq%2BLAqbiKA%3D",
       "description": "<p>Julian Lennon – You’re the One / Sunday Morning – Atlantic 7-88890 – 1989 U.S. 7” 45 RPM</p><br /><p>Original U.S. Atlantic Records single from 1989.</p><br /><p>A-Side: You’re the One</p><p>B-Side: Sunday Morning</p><br /><p>Vinyl appears VG+ visually, retaining nice gloss with light surface and handling marks consistent with normal use. No major deep scratches are visible in the photos.</p><br /><p>Labels remain clean and readable.</p><br /><p>Includes the generic yellow paper sleeve shown. Sleeve has age-related discoloration, staining and storage wear.</p><br /><p>Visually graded unless otherwise stated. Please review all photos carefully for exact condition.</p>",
       "paymentMethods": [
         {
@@ -1664,5 +1664,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:17Z"
 }

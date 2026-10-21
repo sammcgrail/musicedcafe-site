@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1581,7 +1581,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970887132?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F9pLZoQA7KXoyFmNRwTaVSzcrlc2gB2eIaEfMxYXQLJT2VmSaS8NNwYpqghu2u8PbFijx8nHWX6yIm0zylhaF7yWXnkDn9PxdKd%2BXkMCDJqvNEHHQ4qjHFGfJZRjkaynT8Tee%2FMmjWUIyaXtBzdd%2FoysEFFfTS7n7JaQvMu34L466M0v9PTam0G1q06hMZO%2FU%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970887132?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F9pLZoQA7KXoyFmNRwTaVSzcrlc2gB2eIaEfMxYXQLJbLoz4eoUVXMQ%2FCgI8HAj9gDll1b4KDhqHQJk6wmdqJsR9XLNTGSGMdHdX7oP1fKlXAXHoSrYYePfMTSI3FSPo7SpvzrfUdQSsCt3QlLfTMSz3cNzO0nkKw6gR5QHSmQ%2FFrPr%2FCFXP8T1CV5hHgzoPU%3D",
       "description": "<p data-start=\"1076\" data-end=\"1300\" class=\"PDq2pG_selectionAnchorContainer\">Original 1970 Columbia Records 45 RPM single featuring Simon &amp; Garfunkel's iconic <strong data-start=\"1158\" data-end=\"1190\">\"Bridge Over Troubled Water\"</strong>, one of the most celebrated songs of the 20th century. The B-side features <strong data-start=\"1266\" data-end=\"1300\">\"Keep the Customer Satisfied.\"</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1302\" data-end=\"1410\">A must-have addition for collectors of Simon &amp; Garfunkel, classic rock, folk rock, and vintage Columbia 45s.</p>\n<p data-start=\"1412\" data-end=\"1536\">Record will be shipped in a new paper sleeve inside a protective poly sleeve and packaged securely in a rigid 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1638,5 +1638,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:39Z"
 }

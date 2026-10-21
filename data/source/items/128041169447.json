@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "RS6281",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1637,7 +1637,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128041169447?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9AThdH6xAGI12PxAFcfwOWbHizRGiM%2B1HXmiitNxExCQhjK5gMyiWNL7b8zUqW%2BXJBTReL3EOHvlxmUmdZxJ0SaKdRICoAqJ9deZdKkZ5RyfMv%2FEEMF%2B0pnKN3ppoW5DLA4y8CgKJ1AxOD3Z55hIF0lsc18Pt1uP%2F7hHLHQuC2%2Bf6i1trGvr1UJ5UQ%2FvwuhbM%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128041169447?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9AThdH6xAGI12PxAFcfwOWbHizRGiM%2B1HXmiitNxExCV6gcaKu7Dh5FTDIrEy2Quj1zWCIhUMhc9xqrl9kl5R%2FVIpAiZArYnBcomlQY5WlKQG3QvZNFx4FAuR8og7%2BVdBfzZNELUX3eSqEXVelqOUgM15r0igjvenfMny7acTkZ%2Fjy%2FP6PWJhbIh0YRA4%2BMLY%3D",
       "description": "<p>The Jimi Hendrix Experience – Axis: Bold as Love</p><br /><p>Vintage U.S. Reprise Records stereo LP, catalog number RS 6281.</p><br /><p>Early U.S. pressing featuring the classic two-tone orange/yellow Reprise W7 “steamboat” labels.</p><br /><p>Originally released in the United States in 1968, Axis: Bold as Love is the second studio album by The Jimi Hendrix Experience and remains one of the essential psychedelic rock albums of the 1960s.</p><br /><p>Track Highlights Include:</p><br /><p>EXP</p><p>Up from the Skies</p><p>Spanish Castle Magic</p><p>Wait Until Tomorrow</p><p>Little Wing</p><p>If 6 Was 9</p><p>You Got Me Floatin’</p><p>Castles Made of Sand</p><p>She’s So Fine</p><p>One Rainy Wish</p><p>Little Miss Lover</p><p>Bold as Love</p><br /><p>Format: 12-inch LP / 33⅓ RPM / Stereo</p><p>Label: Reprise Records</p><p>Catalog Number: RS 6281</p><p>Pressing: Early U.S. W7 / two-tone Reprise label</p><br /><p>Condition:</p><p>Vinyl retains good overall gloss with visible light scratches, hairlines, and surface marks consistent with age and use.</p><br /><p>Original gatefold jacket shows substantial vintage wear including rubbing, scuffing, edge wear, corner wear, and general handling/storage wear. Psychedelic artwork remains complete and colorful.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p>",
       "paymentMethods": [
         {
@@ -1694,5 +1694,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:42Z"
 }

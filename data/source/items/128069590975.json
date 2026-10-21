@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "MG20838",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1607,7 +1607,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128069590975?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9clvUlBl26geKg6zYGFbzePVZdQBu3a740AtnhJNRfSifhxhfo5O13Zd%2Bh5ObwQQCBS0cJmIkKm2XR2s5ALrt3PmGmoDcJ%2FKbwNCfUSGpajnng%2FGsjSj8v8AJgWQwL4apiPEt%2FsN76G5oLNcLBXaWrB6Imr2bHzRuFz0SVBGk6MoCJvJ7khqKCjtwEWpe3edA%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128069590975?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9clvUlBl26geKg6zYGFbzePVZdQBu3a740AtnhJNRfSr75PR5SWwCYEU2vVv1UALu3ynXPzdxE3SDHE%2FWqCd%2BypVIMs5gd%2B%2FgKr8CG8KT8eOJi9YHRqpEyv0m7RFniMjEvemnMFcMV%2FOCyoWS2Cqz3lwT%2B9fK2M8HByKQfYe993mdaf2Tid4AtyalfekWscAU%3D",
       "description": "<p data-start=\"1802\" data-end=\"1848\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"1802\" data-end=\"1848\">The Chad Mitchell Trio – Singin’ Our Minds</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1850\" data-end=\"1923\">Vintage 1963 U.S. mono pressing on Mercury Records, catalog <strong data-start=\"1910\" data-end=\"1922\">MG-20838</strong>.</p>\n<p data-start=\"1925\" data-end=\"2114\">A classic release from the American folk revival era featuring the Chad Mitchell Trio's trademark vocal harmonies, topical songwriting and mix of traditional and contemporary folk material.</p>\n<p data-start=\"2116\" data-end=\"2131\">Tracks include:</p>\n<ul data-start=\"2133\" data-end=\"2352\">\n<li data-section-id=\"16fhh28\" data-start=\"2133\" data-end=\"2158\">\nDubarry Done Gone Again\n</li>\n<li data-section-id=\"1qp9k2u\" data-start=\"2159\" data-end=\"2171\">\nAlma Mater\n</li>\n<li data-section-id=\"133px4q\" data-start=\"2172\" data-end=\"2194\">\nBlues Around My Head\n</li>\n<li data-section-id=\"etn8rf\" data-start=\"2195\" data-end=\"2214\">\nThe Marvelous Toy\n</li>\n<li data-section-id=\"hggh2z\" data-start=\"2215\" data-end=\"2231\">\nMaladyozhenaya\n</li>\n<li data-section-id=\"11lejys\" data-start=\"2232\" data-end=\"2250\">\nNobody Knows You\n</li>\n<li data-section-id=\"esuiux\" data-start=\"2251\" data-end=\"2281\">\nThe Bonny Streets of Fyvie-O\n</li>\n<li data-section-id=\"oldxa1\" data-start=\"2282\" data-end=\"2296\">\nWillie Seton\n</li>\n<li data-section-id=\"gyh4u\" data-start=\"2297\" data-end=\"2310\">\nTwelve Days\n</li>\n<li data-section-id=\"1cj22fv\" data-start=\"2311\" data-end=\"2326\">\nAn Irish Song\n</li>\n<li data-section-id=\"1wagres\" data-start=\"2327\" data-end=\"2352\">\nI Feel So Good About It\n</li>\n</ul>\n<p data-start=\"2354\" data-end=\"2601\"><strong data-start=\"2354\" data-end=\"2377\">Vinyl Condition: Fair (F)&nbsp;</strong>— retains good gloss with numerous light surface marks and hairlines visible under direct lighting. No major deep gouges are apparent from the photographs. Record has not been assumed to be skip-free unless otherwise noted.</p>\n<p data-start=\"2603\" data-end=\"2722\"><strong data-start=\"2603\" data-end=\"2613\">Label:</strong> Mercury Records<br data-start=\"2629\" data-end=\"2632\">\n<strong data-start=\"2632\" data-end=\"2644\">Catalog:</strong> MG-20838<br data-start=\"2653\" data-end=\"2656\">\n<strong data-start=\"2656\" data-end=\"2665\">Year:</strong> 1963<br data-start=\"2670\" data-end=\"2673\">\n<strong data-start=\"2673\" data-end=\"2684\">Format:</strong> 12\" LP<br data-start=\"2691\" data-end=\"2694\">\n<strong data-start=\"2694\" data-end=\"2704\">Speed:</strong> 33 RPM<br data-start=\"2711\" data-end=\"2714\">\n<strong data-start=\"2714\" data-end=\"2722\">Mono</strong></p>\n<p data-start=\"2724\" data-end=\"2862\" data-is-last-node=\"\" data-is-only-node=\"\"></p>",
       "paymentMethods": [
         {
@@ -1664,5 +1664,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:21Z"
 }

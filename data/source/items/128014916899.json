@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "477883",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014916899?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde82HAwH44gjBfp8iGXVBlSSmwXrcRchC%2BLIPxDazAC%2B19x2UXAia1Nogho6RuCX3exUdSdbGPq5%2BiGP%2FAlZqwzFq1xInLIxB%2Bsm8NKLx8urcRjcK20P5qrZLz9P5U29C3jsUZcZYeBAhdJfzh85W7zmtmEZ2Bv7Vly5WA2lPP1CFwFFSwEauxPegbPsd67Itqg%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014916899?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde82HAwH44gjBfp8iGXVBlSSmwXrcRchC%2BLIPxDazAC%2B11aewMlXzaEv84FDzLdkByLFA4UQfvmfyVdqNAeCG9UtjqwBsDPq7Tz5NW7HKziYofPzgRUYCMnqtjTSGXlmLKMZCCm486wHyFMTOkID%2F4Qr9%2FmVHg%2Bq0Ba3S0z%2FRyyOCAiboZN0%2BMrqPvHITuM1MRQ%3D",
       "description": "<p>Original vintage Sam Cooke 7-inch 45 RPM single on RCA Victor Records, catalog 47-7883.</p><br /><p>Features one of Cooke’s most beloved recordings:</p><br /><p>Cupid</p><p>b/w</p><p>Farewell, My Darling</p><br /><p>“Cupid” was written by Sam Cooke and features orchestra conducted by René Hall. Produced by Hugo &amp; Luigi.</p><br /><p>A fantastic addition for collectors of Sam Cooke, classic soul, rhythm &amp; blues, early pop and vintage RCA Victor singles.</p><br /><p>Record retains good gloss but shows visible surface scratches, scuffs and signs of previous play. Labels show age/use wear while remaining complete and easily readable.</p>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:42Z"
 }

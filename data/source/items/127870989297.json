@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "EKS75017",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1622,7 +1622,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127870989297?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BCFjDvcC%2BBbCWvWXm4EheSsMFbbnyvwW8shvxpANe3Y64d0wUVk8FPqRK6uDepjn%2FLAz2iHl9OdkT8IWRjkBeG7JmcvVYffRplsago4WPm%2F8HTXKRVjo%2FUCQb7iqofZXo%2FU%2B3JJgWTz7sH3B9ht%2BEd7w5%2F4uXrN6fOrROwJyFamashumVltL4H8GlTf330mEU%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127870989297?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BCFjDvcC%2BBbCWvWXm4EheSsMFbbnyvwW8shvxpANe3YwPKo4%2BK5pXy9rtFuUk0ixZvYUj30Pe1ARpwyFR2r1xXFgMGCwIDEql33AYX7aewUTSO2T%2BiSH%2Bo5veSGFxWhkTxD8o%2Fx4y4FIkxKOM6SgWjQtI7NK5iFoDbgPXkioE3ES%2Fvb%2Bu8MhHfztkNdwn1e%2F4%3D",
       "description": "<h1><strong>Artist:</strong> The Doors</h1><p class=\"isSelectedEnd\"><strong>Album:</strong> Other Voices<br><strong>Label:</strong> Elektra Records<br><strong>Catalog Number:</strong> EKS-75017<br><strong>Format:</strong> Vinyl LP, 12”, 33 RPM<br><strong>Genre:</strong> Rock / Psychedelic Rock / Blues Rock</p><p class=\"isSelectedEnd\">Vintage copy of <em>Other Voices</em>, the first Doors album released after Jim Morrison’s passing, featuring Ray Manzarek and Robby Krieger sharing vocal duties while continuing the band’s experimental psychedelic and blues-rock sound.</p><p class=\"isSelectedEnd\">Includes tracks such as:</p><ul data-spread=\"false\"><li>“In the Eye of the Sun”</li><li>“Ships w/ Sails”</li><li>“Tightrope Ride”</li></ul><p class=\"isSelectedEnd\">A fascinating piece of Doors history and a great addition for collectors looking to explore the band’s post-Morrison era.</p><h2>Notes</h2><ul data-spread=\"false\"><li>Original vintage pressing</li><li>Classic Elektra butterfly label</li><li>Great listening and collector copy</li><li>Stored upright in a smoke-free environment</li><li>Carefully handled and visually inspected</li></ul><p class=\"isSelectedEnd\">Please review photos carefully for condition details.</p><p class=\"isSelectedEnd\">Ships securely in LP mailer with protective inner and outer sleeve.</p><p class=\"isSelectedEnd\">Perfect for collectors of:</p><ul data-spread=\"false\"><li>The Doors</li><li>Psychedelic Rock</li><li>Classic Rock</li><li>Vintage Elektra Records</li></ul>",
       "paymentMethods": [
         {
@@ -1679,5 +1679,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:41Z"
 }

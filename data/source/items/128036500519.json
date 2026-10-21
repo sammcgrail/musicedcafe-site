@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "GWB0469",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1571,7 +1571,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036500519?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9zPBla8J0zkOuIDDIBDOwIVou69w49ZWTXSGk%2FFVMWD5aNlbN%2BAdLXUzqUzyqgGj1Csj1empv4xScmVNxUpwv0U53t66f4tQ%2BuTiesfVVnH626opxkZwxB8YGWLXj0rLgdJMZj9iLtIrIBkwTKMKzQkY9kOWKFArS9TmCodVd1GIfCUJxOaMafRwPftPvYb7U%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036500519?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9zPBla8J0zkOuIDDIBDOwIVou69w49ZWTXSGk%2FFVMWD06s69gcO%2FUtLe47SBOmnRvSlmgZ0kIiWoY%2FIizwTrw3RAk1kJCulTOAROKQ9Z64sonurrgXjxAKdkdzYKQSxIGsCMm70WTmUjA6aiavBKgSwF%2BIjy2GgIOKqw9waTOXcQ60hZUpWlYA%2F48Jz%2FqDYDc%3D",
       "description": "<p>Rod Stewart – “Baby Jane” / “What Am I Gonna Do (I’m So in Love With You)”</p><br /><p>Warner Bros. Records “Back to Back Hits” 7-inch 45 RPM single, catalog number GWB 0469.</p><br /><p>This release pairs two Rod Stewart favorites from his 1983 Body Wishes era on one record.</p><br /><p>Track Listing:</p><br /><p>Side A – Baby Jane – 4:43</p><p>Side B – What Am I Gonna Do (I’m So in Love With You) – 3:36</p><br /><p>Condition:</p><p>Vinyl is in pre-owned condition with visible light surface marks and scuffing consistent with age and use. Labels show age-related wear and discoloration, particularly on the “Baby Jane” side. Please review all photos carefully for exact cosmetic condition.</p><br /><p>A nice addition for collectors of Rod Stewart, classic rock, 1980s pop rock, and vintage 45 RPM singles.</p><br /><p>Record will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1628,5 +1628,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T13:25:18Z"
 }

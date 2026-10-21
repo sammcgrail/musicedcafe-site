@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PC34450",
       "estimatedAvailabilities": [
@@ -106,8 +106,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -338,24 +338,24 @@
             "regionId": "CO"
           },
           {
-            "regionName": "Spain",
-            "regionType": "COUNTRY",
-            "regionId": "ES"
-          },
-          {
             "regionName": "Iceland",
             "regionType": "COUNTRY",
             "regionId": "IS"
           },
           {
-            "regionName": "Estonia",
+            "regionName": "Spain",
             "regionType": "COUNTRY",
-            "regionId": "EE"
+            "regionId": "ES"
           },
           {
             "regionName": "Macedonia",
             "regionType": "COUNTRY",
             "regionId": "MK"
+          },
+          {
+            "regionName": "Estonia",
+            "regionType": "COUNTRY",
+            "regionId": "EE"
           },
           {
             "regionName": "Belgium",
@@ -413,11 +413,6 @@
             "regionId": "EC"
           },
           {
-            "regionName": "Italy",
-            "regionType": "COUNTRY",
-            "regionId": "IT"
-          },
-          {
             "regionName": "Albania",
             "regionType": "COUNTRY",
             "regionId": "AL"
@@ -426,6 +421,11 @@
             "regionName": "Swaziland",
             "regionType": "COUNTRY",
             "regionId": "SZ"
+          },
+          {
+            "regionName": "Italy",
+            "regionType": "COUNTRY",
+            "regionId": "IT"
           },
           {
             "regionName": "Ethiopia",
@@ -503,14 +503,14 @@
             "regionId": "ML"
           },
           {
-            "regionName": "Republic of Croatia",
-            "regionType": "COUNTRY",
-            "regionId": "HR"
-          },
-          {
             "regionName": "Botswana",
             "regionType": "COUNTRY",
             "regionId": "BW"
+          },
+          {
+            "regionName": "Republic of Croatia",
+            "regionType": "COUNTRY",
+            "regionId": "HR"
           },
           {
             "regionName": "Madagascar",
@@ -673,14 +673,14 @@
             "regionId": "GD"
           },
           {
-            "regionName": "Romania",
-            "regionType": "COUNTRY",
-            "regionId": "RO"
-          },
-          {
             "regionName": "Greece",
             "regionType": "COUNTRY",
             "regionId": "GR"
+          },
+          {
+            "regionName": "Romania",
+            "regionType": "COUNTRY",
+            "regionId": "RO"
           },
           {
             "regionName": "Costa Rica",
@@ -723,14 +723,14 @@
             "regionId": "NP"
           },
           {
-            "regionName": "Lithuania",
-            "regionType": "COUNTRY",
-            "regionId": "LT"
-          },
-          {
             "regionName": "Bahamas",
             "regionType": "COUNTRY",
             "regionId": "BS"
+          },
+          {
+            "regionName": "Lithuania",
+            "regionType": "COUNTRY",
+            "regionId": "LT"
           },
           {
             "regionName": "Trinidad and Tobago",
@@ -748,14 +748,14 @@
             "regionId": "MW"
           },
           {
-            "regionName": "Hungary",
-            "regionType": "COUNTRY",
-            "regionId": "HU"
-          },
-          {
             "regionName": "Bosnia and Herzegovina",
             "regionType": "COUNTRY",
             "regionId": "BA"
+          },
+          {
+            "regionName": "Hungary",
+            "regionType": "COUNTRY",
+            "regionId": "HU"
           },
           {
             "regionName": "Angola",
@@ -773,14 +773,14 @@
             "regionId": "TN"
           },
           {
-            "regionName": "Luxembourg",
-            "regionType": "COUNTRY",
-            "regionId": "LU"
-          },
-          {
             "regionName": "Uganda",
             "regionType": "COUNTRY",
             "regionId": "UG"
+          },
+          {
+            "regionName": "Luxembourg",
+            "regionType": "COUNTRY",
+            "regionId": "LU"
           },
           {
             "regionName": "Brazil",
@@ -1629,7 +1629,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127959609533?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FDR0vtikw2hXGDagtdoazO2VJI%2FvNJqqAk9Hfo5RFBGqPAFXgPtPINZ8pfT2ISBuI34uK1cUkB%2BLQbnUfhzhnKnaBjLWU0jZuksAJR%2FO2mTrZ%2B1Y%2B5QQTEOefEQXAbzfa%2FP67nWGfdbt5feraJoTep%2B8tLLbs%2B2eEjJUNNhd3G71QGat62zGNIzgjQ5DA2CUM%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127959609533?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FDR0vtikw2hXGDagtdoazO2VJI%2FvNJqqAk9Hfo5RFBGpDnbiQIauyJNtuiVtmQvfwBzcI2PC%2FsLxtNHEr7SzAI3tst22wUWzvSZaXFKZTDTRdCaP9We39GnWAbCeH9Y3Ml5aNEKAYoFhWeCoOYtKwSuf5c8YGu9lJa%2FwRr5Lh3FFzYZbdc7fRms0dedkP1LN8%3D",
       "description": "<h2 data-section-id=\"uthoj\" data-start=\"787\" data-end=\"825\" class=\"PDq2pG_selectionAnchorContainer\"><span role=\"text\">The Manhattans – <em data-start=\"807\" data-end=\"825\">It Feels So Good</em></span><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></h2>\n<p data-start=\"827\" data-end=\"853\"><strong data-start=\"827\" data-end=\"838\">Artist:</strong> The Manhattans</p>\n<p data-start=\"855\" data-end=\"882\"><strong data-start=\"855\" data-end=\"865\">Title:</strong> It Feels So Good</p>\n<p data-start=\"884\" data-end=\"911\"><strong data-start=\"884\" data-end=\"894\">Label:</strong> Columbia Records</p>\n<p data-start=\"913\" data-end=\"941\"><strong data-start=\"913\" data-end=\"932\">Catalog Number:</strong> PC 34450</p>\n<p data-start=\"943\" data-end=\"957\"><strong data-start=\"943\" data-end=\"952\">Year:</strong> 1977</p>\n<p data-start=\"959\" data-end=\"988\"><strong data-start=\"959\" data-end=\"970\">Format:</strong> Vinyl LP, 33⅓ RPM</p>\n<p data-start=\"990\" data-end=\"1018\"><strong data-start=\"990\" data-end=\"1000\">Genre:</strong> Soul / R&amp;B / Funk</p>\n<hr data-start=\"1020\" data-end=\"1023\">\n<h3 data-section-id=\"1uef3h1\" data-start=\"1025\" data-end=\"1038\">Condition</h3>\n<p data-start=\"1040\" data-end=\"1055\" class=\"\"><strong data-start=\"1040\" data-end=\"1055\">Record: VG</strong></p>\n<ul data-start=\"1057\" data-end=\"1207\">\n<li data-section-id=\"x9exok\" data-start=\"1057\" data-end=\"1085\">\nOriginal Columbia pressing\n</li>\n<li data-section-id=\"1xr1mmo\" data-start=\"1086\" data-end=\"1105\">\nNice glossy vinyl\n</li>\n<li data-section-id=\"15ruze7\" data-start=\"1106\" data-end=\"1148\">\nLight surface marks from normal handling\n</li>\n<li data-section-id=\"uk5sp5\" data-start=\"1149\" data-end=\"1177\">\nNo deep scratches observed\n</li>\n<li data-section-id=\"105kszr\" data-start=\"1178\" data-end=\"1207\">\nLabels are clean and bright\n</li>\n</ul>\n<p data-start=\"1209\" data-end=\"1229\"><strong data-start=\"1209\" data-end=\"1229\">Jacket: Worn (W)</strong></p><p data-start=\"1209\" data-end=\"1229\">Noticeable shelf wear and ring wear</p><ul data-start=\"1231\" data-end=\"1411\">\n<li data-section-id=\"ompova\" data-start=\"1269\" data-end=\"1291\">\nEdge and corner wear\n</li>\n<li data-section-id=\"117o9om\" data-start=\"1292\" data-end=\"1328\">\nSmall price sticker on front cover\n</li>\n<li data-section-id=\"ghjeye\" data-start=\"1329\" data-end=\"1388\">\nGeneral aging consistent with a nearly 50-year-old record\n</li>\n<li data-section-id=\"1572fxl\" data-start=\"1389\" data-end=\"1411\">\nNo major seam splits\n</li>\n</ul>\n<p data-start=\"1413\" data-end=\"1484\">Please review all photos carefully as they are part of the description.</p>\n<hr data-start=\"1486\" data-end=\"1489\">\n<h3 data-section-id=\"17si63v\" data-start=\"1491\" data-end=\"1508\">Track Listing</h3>\n<p data-start=\"1510\" data-end=\"1522\"><strong data-start=\"1510\" data-end=\"1522\">Side One</strong></p>\n<ul data-start=\"1523\" data-end=\"1642\">\n<li data-section-id=\"1yjpjlb\" data-start=\"1523\" data-end=\"1541\">\nI Kinda Miss You\n</li>\n<li data-section-id=\"1e1l1nr\" data-start=\"1542\" data-end=\"1575\">\nUp On The Street (Where I Live)\n</li>\n<li data-section-id=\"1mvmo1f\" data-start=\"1576\" data-end=\"1607\">\nLet's Start It All Over Again\n</li>\n<li data-section-id=\"24pqiq\" data-start=\"1608\" data-end=\"1618\">\nIt's You\n</li>\n<li data-section-id=\"1i9fkfr\" data-start=\"1619\" data-end=\"1642\">\nI'll See You Tomorrow\n</li>\n</ul>\n<p data-start=\"1644\" data-end=\"1656\"><strong data-start=\"1644\" data-end=\"1656\">Side Two</strong></p>\n<ul data-start=\"1657\" data-end=\"1804\">\n<li data-section-id=\"1pj322o\" data-start=\"1657\" data-end=\"1694\">\nIt Feels So Good To Be Loved So Bad\n</li>\n<li data-section-id=\"19koryc\" data-start=\"1695\" data-end=\"1724\">\nIt Just Can't Stay This Way\n</li>\n<li data-section-id=\"ul0sw6\" data-start=\"1725\" data-end=\"1757\">\nWe Never Danced To A Love Song\n</li>\n<li data-section-id=\"1xzajtd\" data-start=\"1758\" data-end=\"1778\">\nMind Your Business\n</li>\n<li data-section-id=\"18h9wc3\" data-start=\"1779\" data-end=\"1804\">\nToo Much For Me To Bear\n</li>\n</ul>",
       "paymentMethods": [
         {
@@ -1686,5 +1686,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:40Z"
 }

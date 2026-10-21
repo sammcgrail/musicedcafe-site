@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "2465",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1587,7 +1587,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970802407?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8KAFAwuA4PeUwcJdvO52HxMqzpOeeNmzikssSlvUpBrPpCVTOR8Lm3A%2Fj%2FezvtYqO2Fk9s34wgFJ6yVLr%2FraxsyGC5gFZenq2D7zLbUgVsphIRZNOi0WB8FRRu0tWzu22HA4M%2Bx6aIY3L6gJoxHnJ8EjwjXnIGZZ7bm2aSGdKsLrJR0Wow9GUSQSRd8XoZpNM%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970802407?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8KAFAwuA4PeUwcJdvO52HxMqzpOeeNmzikssSlvUpBrBVjusUo6gfQ7F3jW0%2BDU21%2FTCunjGqJ1pvM%2B4pbMBVT6NDLoeO3syvJ1ufHPczEK6uRyi7nxGfVFm%2FurQC5qrPxzdmkLnBF5E70wj3bB3RbSd3LewCsXb2CR13p0KIVaGgCkTBThBwg7rZRwxi89uQ%3D",
       "description": "<p data-start=\"1190\" data-end=\"1300\" class=\"PDq2pG_selectionAnchorContainer\">Classic Blondie 7-inch single featuring the #1 hit <strong data-start=\"1241\" data-end=\"1264\">\"The Tide Is High,\"</strong> backed with <strong data-start=\"1277\" data-end=\"1300\">\"Suzy and Jeffrey.\"</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1302\" data-end=\"1469\">A must-have for fans of Blondie, Debbie Harry, New Wave, and 1980s pop and rock. Perfect for collectors, DJs, jukeboxes, or anyone building a vintage vinyl collection.</p>\n<p data-start=\"1471\" data-end=\"1587\">Ships securely in a new paper sleeve inside a protective poly sleeve and rigid record mailer to ensure safe arrival.</p><p data-start=\"732\" data-end=\"758\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"732\" data-end=\"743\">Record:</strong> Very Good (VG)<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p><p data-start=\"760\" data-end=\"1023\">The vinyl has several light surface scuffs and hairlines consistent with normal use. Labels remain clean overall, though the B-side (\"Suzy and Jeffrey\") has blue pen writing on the label (see photos). Record has not been professionally graded under magnification.</p><p data-start=\"1471\" data-end=\"1587\">\n\n\n<p data-start=\"1096\" data-end=\"1167\"></p></p><p data-start=\"1025\" data-end=\"1094\"><strong data-start=\"1025\" data-end=\"1036\">Sleeve:</strong> Generic white paper sleeve (not original picture sleeve).</p>",
       "paymentMethods": [
         {
@@ -1644,5 +1644,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:50Z"
 }

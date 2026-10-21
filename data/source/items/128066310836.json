@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -84,7 +84,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "UALA693G",
       "estimatedAvailabilities": [
@@ -109,8 +109,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1637,7 +1637,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128066310836?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B5Mgg%2FMZxzFi%2BgLHBowJRc1Tw%2F1aE8ueBW%2BbwFVnjteBFbhs2TvAIGMwMKC%2FJHGFM6EbnxijY%2BsB9Vbr%2BijwYM1bXdFuKtddcHQNrZ9v8ijcBsEPvuXuPy3h7WZJPVxRZxkwcAoZkMbpZEVpG1W6AuDWBisiFPWfFugx54hhN6fLb2BAb3EZkhdwr5qSyz9hc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128066310836?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B5Mgg%2FMZxzFi%2BgLHBowJRc1Tw%2F1aE8ueBW%2BbwFVnjteA5TWsmWoXhx9gaRs0yJ0in%2FqC7lRIpLnP%2FbUAQFWcmIiRWufgHuOcJUaqHSOeoBwHxtSvnkteBUtYkeyK%2BAReX623BbmoPXq--6bHa6a1kWjL5Cr5wxgCvTFnYbOA6lMIL4hhdX088vrgGTgZPYI%2FY%3D",
       "description": "<p data-start=\"2704\" data-end=\"2823\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2704\" data-end=\"2757\">Bill Conti – Rocky: Original Motion Picture Score</strong><br data-start=\"2757\" data-end=\"2760\">\nUnited Artists Records – UA-LA693-G<br data-start=\"2795\" data-end=\"2798\">\n1976 U.S. Stereo Vinyl LP<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2825\" data-end=\"2960\">Classic original soundtrack to <strong data-start=\"2856\" data-end=\"2865\">Rocky</strong>, featuring Bill Conti's iconic score and the legendary <strong data-start=\"2921\" data-end=\"2959\">“Gonna Fly Now (Theme From Rocky)”</strong>.</p>\n<p data-start=\"2962\" data-end=\"3096\">This copy also includes the black insert featuring Sylvester Stallone's commentary on Bill Conti and the creation of the film's music.</p>\n<p data-start=\"3098\" data-end=\"3355\"><strong data-start=\"3098\" data-end=\"3127\">Track highlights include:</strong><br>\nGonna Fly Now<br data-start=\"3141\" data-end=\"3144\">\nPhiladelphia Morning<br data-start=\"3164\" data-end=\"3167\">\nGoing the Distance<br data-start=\"3185\" data-end=\"3188\">\nReflections<br data-start=\"3199\" data-end=\"3202\">\nMarines' Hymn / Yankee Doodle<br data-start=\"3231\" data-end=\"3234\">\nTake You Back<br data-start=\"3247\" data-end=\"3250\">\nYou Take My Heart Away<br data-start=\"3272\" data-end=\"3275\">\nFanfare for Rocky<br data-start=\"3292\" data-end=\"3295\">\nButkus<br data-start=\"3301\" data-end=\"3304\">\nAlone in the Ring<br data-start=\"3321\" data-end=\"3324\">\nThe Final Bell<br data-start=\"3338\" data-end=\"3341\">\nRocky's Reward</p>\n<p data-start=\"3357\" data-end=\"3597\"><strong data-start=\"3357\" data-end=\"3371\">Condition:</strong><br data-start=\"3371\" data-end=\"3374\">\nVinyl visually graded VG with visible light surface marks and handling wear. Jacket shows substantial age-related shelf wear, rubbing, edge wear, corner wear and creasing. Insert is included and also shows age-related wear.</p>\n<p data-start=\"3599\" data-end=\"3699\">Please examine all photos closely, as they show the exact record, cover and insert you will receive.</p>",
       "paymentMethods": [
         {
@@ -1694,5 +1694,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:41Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "BS1712",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1627,7 +1627,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128069607883?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BZT2owMHTIosnWeYUPZjhd59iLQCdgYWmbX1g2LoGXDXTEHIBr0K%2FZCe%2BAGti6Acr2dLiUXGTrFuQ%2FLNSTexKoZ8qXZo4jHyDXEU1HRnq7nLZz7e1CL42JxcZDMP01kAQfVl2rSpOvE6NuUCcXuTkzNS3DSVHG4xu8qZXYVMJ35Y8CZ1kBY21YS3j6qiQPu%2Fg%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128069607883?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BZT2owMHTIosnWeYUPZjhd59iLQCdgYWmbX1g2LoGXDZH3%2FK4czMLaWbc1W%2BgCm1oyRrYKbwGBZoKa9o0rAtmx5Dz%2BEdFU6%2BxPXT6y8Ib7obeacqE6CVBuoo0a9HqbjTbORU6My7Ny07jkeLvw525lyii2dptL59v5LxRCoQUXHli72KT8eshxUG78iihrzSc%3D",
       "description": "<p data-start=\"2248\" data-end=\"2339\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2248\" data-end=\"2339\">Camelot – Original Motion Picture Soundtrack – Warner Bros. Records BS 1712 – Stereo LP</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2341\" data-end=\"2489\">Original soundtrack album from the classic 1967 motion picture <em data-start=\"2404\" data-end=\"2413\">Camelot</em>, starring Richard Harris, Vanessa Redgrave, Franco Nero and David Hemmings.</p>\n<p data-start=\"2491\" data-end=\"2574\">Features music by <strong data-start=\"2509\" data-end=\"2528\">Frederick Loewe</strong> and lyrics by <strong data-start=\"2543\" data-end=\"2562\">Alan Jay Lerner</strong>, including:</p>\n<ul data-start=\"2576\" data-end=\"2824\">\n<li data-section-id=\"y9e16y\" data-start=\"2576\" data-end=\"2617\">\nI Wonder What the King Is Doing Tonight\n</li>\n<li data-section-id=\"1uqid8f\" data-start=\"2618\" data-end=\"2649\">\nThe Simple Joys of Maidenhood\n</li>\n<li data-section-id=\"734rpx\" data-start=\"2650\" data-end=\"2659\">\nCamelot\n</li>\n<li data-section-id=\"1w60s4l\" data-start=\"2660\" data-end=\"2671\">\nC'est Moi\n</li>\n<li data-section-id=\"c2jh8a\" data-start=\"2672\" data-end=\"2696\">\nThe Lusty Month of May\n</li>\n<li data-section-id=\"1coe6cy\" data-start=\"2697\" data-end=\"2720\">\nHow to Handle a Woman\n</li>\n<li data-section-id=\"5e34vr\" data-start=\"2721\" data-end=\"2748\">\nIf Ever I Would Leave You\n</li>\n<li data-section-id=\"1csp2x0\" data-start=\"2749\" data-end=\"2778\">\nWhat Do the Simple Folk Do?\n</li>\n<li data-section-id=\"1gkw7cd\" data-start=\"2779\" data-end=\"2808\">\nI Loved You Once in Silence\n</li>\n<li data-section-id=\"1jbtk13\" data-start=\"2809\" data-end=\"2824\">\nFinale Ultimo\n</li>\n</ul>\n<p data-start=\"2826\" data-end=\"2975\"><strong data-start=\"2826\" data-end=\"2836\">Label:</strong> Warner Bros. Records<br data-start=\"2857\" data-end=\"2860\">\n<strong data-start=\"2860\" data-end=\"2872\">Catalog:</strong> BS 1712<br data-start=\"2880\" data-end=\"2883\">\n<strong data-start=\"2883\" data-end=\"2894\">Format:</strong> 12\" Vinyl LP<br data-start=\"2907\" data-end=\"2910\">\n<strong data-start=\"2910\" data-end=\"2920\">Speed:</strong> 33⅓ RPM<br data-start=\"2928\" data-end=\"2931\">\n<strong data-start=\"2931\" data-end=\"2941\">Stereo</strong><br data-start=\"2941\" data-end=\"2944\">\n<strong data-start=\"2944\" data-end=\"2954\">Genre:</strong> Soundtrack / Musical</p>",
       "paymentMethods": [
         {
@@ -1684,5 +1684,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:19Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -105,8 +105,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1674,7 +1674,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127896538536?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BfVY1qmfG0Us6j9fYbWx6j%2BFRovKTLxdn6w3K9bnwShDStL5axOEunA7BXQFJRbz57ppDiOr8tGtFVMeEnA%2FNyZSMd5j8wv8Hz3SuSwcmDtQs%2BuGsyOUzWwAdm6S5xRhwQn6MXAvLXdcC3EmgQ9XiHnpCdCTDmfcZucq7nbcgs%2BdvTVcxV3zMWOd5ynVhttuc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127896538536?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BfVY1qmfG0Us6j9fYbWx6j%2BFRovKTLxdn6w3K9bnwShO7fuyFQaEviyelHKApaOQFLPMoypqKNSj5gSe7Ngn2%2BpLGbLGFSm8gbx%2FLBvIUN%2BmYcX78wnZvQT6%2BEBNLeTg869tSQPS7wb5QbyP4D%2B%2BiX8tBWzXeIsC%2FsZEtv88yOhNobLDzAD4QiBwYVbBOy4GE%3D",
       "description": "<p data-start=\"1176\" data-end=\"1219\">Donna Summer – She Works Hard For The Money</p>\n<p data-start=\"1221\" data-end=\"1243\">Mercury Records (1983)</p>\n<p data-start=\"1245\" data-end=\"1254\">Features:</p>\n<ul data-start=\"1255\" data-end=\"1358\">\n<li data-section-id=\"1uelc21\" data-start=\"1255\" data-end=\"1285\">\nShe Works Hard For The Money\n</li>\n<li data-section-id=\"1aizw3h\" data-start=\"1286\" data-end=\"1306\">\nUnconditional Love\n</li>\n<li data-section-id=\"1742p8\" data-start=\"1307\" data-end=\"1321\">\nHe's A Rebel\n</li>\n<li data-section-id=\"mef21o\" data-start=\"1322\" data-end=\"1350\">\nLove Has A Mind Of Its Own\n</li>\n<li data-section-id=\"17b7v8y\" data-start=\"1351\" data-end=\"1358\">\nWoman\n</li>\n</ul>\n<p data-start=\"1360\" data-end=\"1370\">Condition:</p>\n<p data-start=\"1372\" data-end=\"1382\">Vinyl: VG+</p>\n<ul data-start=\"1383\" data-end=\"1462\">\n<li data-section-id=\"1tfr9bq\" data-start=\"1383\" data-end=\"1406\">\nClean glossy surfaces\n</li>\n<li data-section-id=\"qj8vxs\" data-start=\"1407\" data-end=\"1432\">\nLight signs of handling\n</li>\n<li data-section-id=\"xkkpl2\" data-start=\"1433\" data-end=\"1462\">\nNo major scratches observed\n</li>\n</ul>\n<p data-start=\"1464\" data-end=\"1474\">Cover: VG+</p>\n<ul data-start=\"1475\" data-end=\"1565\">\n<li data-section-id=\"xs3rvv\" data-start=\"1475\" data-end=\"1505\">\nOriginal shrink wrap present\n</li>\n<li data-section-id=\"3y4s2p\" data-start=\"1506\" data-end=\"1536\">\nOriginal hype sticker intact\n</li>\n<li data-section-id=\"n1oj4o\" data-start=\"1537\" data-end=\"1565\">\nLight corner and edge wear\n</li>\n</ul>\n<p data-start=\"1567\" data-end=\"1689\">A very nice copy of Donna Summer's classic 1983 comeback album featuring her signature hit \"She Works Hard For The Money.\"</p>",
       "paymentMethods": [
         {
@@ -1731,5 +1731,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:17Z"
 }

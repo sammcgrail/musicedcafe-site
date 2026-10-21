@@ -1,0 +1,23 @@
+{
+  "_doc": "Config for the Sell Your Records page (/sell/). postage: the shipping sentence on the page (null shows 'We'll sort out shipping together when we make an offer'). Edwin covers shipping (2026-10-21): a prepaid label. local_pickup: null or false hides the pickup line and the drop-off choice in the form; true shows 'Local pickup or drop-off around Lynn and the North Shore can be arranged by appointment'. Edit and run scripts/mec build. Never imply a storefront or opening hours. Never put offer amounts or how offers are calculated here: those are private (data/sell/offer_rules.json, admin only).",
+  "postage": "We cover shipping. If you're shipping, we'll send you a prepaid label.",
+  "local_pickup": true,
+  "count_options": [
+    "1-24",
+    "25-99",
+    "100-499",
+    "500+"
+  ],
+  "format_options": [
+    "LP",
+    "45",
+    "78",
+    "12\""
+  ],
+  "condition_options": [
+    "Mostly very good or better",
+    "Mixed, some wear",
+    "Rough or well played",
+    "Not sure"
+  ]
+}

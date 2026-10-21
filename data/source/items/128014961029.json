@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "M101",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1577,7 +1577,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014961029?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9sJpn8RkDCiPN6vJDnvgYNxMTsZoIci1LXnUD04Lg9rNj4M9yF6EmIJbl%2FhCZZlQV7HyH2x0kdnZGa94tqYJUL3seqoJOOxrzSNmV7yHo%2FJMFhzJWg%2B6hHD%2FbP2vbEhdq3XgZk%2FEUqocKvPpCrcR970HBFznMkUcCCAHl1Zi%2ByWZ%2FcsW9hPSusOzl4puSUMLg%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014961029?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9sJpn8RkDCiPN6vJDnvgYNxMTsZoIci1LXnUD04Lg9rDxtWTF8UrgCAvDpPnUq%2BNKERJYQ5Tlr1vEQjPANteaCN00u4ClE9Bk5%2BDNKOxTnSRfhq6cm86kScWs6spNDdUHaUwr0oD43RGvvI95Ee%2BlKC5DyLNQ0npQgmBQagvKWQGjbT7E8FTaMqGaJGPn0Sw0%3D",
       "description": "<p>Vintage 1967 U.S. pressing of The Romeos – “Precious Memories” / “Juicy Lucy” on Mark II Records.</p><br /><p>A cool late-1960s instrumental soul/R&amp;B 45 on the collectible Mark II label.</p><br /><p>Artist: The Romeos</p><p>A-Side: Precious Memories</p><p>B-Side: Juicy Lucy</p><p>Label: Mark II Records</p><p>Catalog #: M-101</p><p>Year: 1967</p><p>Format: 7” / 45 RPM</p><p>Country: USA</p><p>Genre: Soul / R&amp;B / Instrumental</p><p>Sleeve: Generic vintage paper sleeve</p>",
       "paymentMethods": [
         {
@@ -1634,5 +1634,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:34Z"
 }

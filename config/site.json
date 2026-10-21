@@ -26,11 +26,14 @@
       "176985"
     ],
     "trusted_complete": true,
-    "_doc": "trusted_complete: a successful, reconciled API snapshot may end listings it no longer returns. Set true on 2026-10-20 after the first sync returned exactly the same 339 active ids as Edwin's Seller Hub export."
+    "item_refresh_hours": 24,
+    "_doc": "trusted_complete: a successful, reconciled API snapshot may end listings it no longer returns. Set true on 2026-10-20 after the first sync returned exactly the same 339 active ids as Edwin's Seller Hub export. item_refresh_hours: reuse a listing's stored getItem payload for up to this many hours while search still shows the same price/title/bids (keeps an hourly sync to a few calls; 0 = fetch every item every sync)."
   },
   "sync": {
     "max_end_fraction": 0.5,
-    "daily_at_utc": "10:15"
+    "interval_minutes": 60,
+    "daily_at_utc": "10:15",
+    "_doc": "interval_minutes: run the eBay sync every N minutes (admin sidecar). Set it to null to fall back to one sync a day at daily_at_utc. The Instagram import inside the sync runs once per UTC day either way."
   },
   "archive": {
     "noindex_sold_pages": false

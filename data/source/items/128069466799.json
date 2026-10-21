@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -89,7 +89,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -113,8 +113,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1616,7 +1616,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128069466799?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9bki1Ijdmq%2FnYvGlrkVjxrZz36FhCzPXPgGKCfuTd2wJIclTrpSTUOkG6tcwXXthbempSApG9ZHFZum78CzRZi4DimHx6DytJmUAROI1D%2FUMZgXMoUXLpJdFqbGYr6EUSqd8iVgTTvHj5FIqpuDMa15l%2BTeGF937yiPp5B4Q1HzgRQ65HEVbwT5v2ZX9hTnvw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128069466799?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9bki1Ijdmq%2FnYvGlrkVjxrZz36FhCzPXPgGKCfuTd2wKEmwOudnqTgfrixRPJH6iAdxmDDPWdW4oWWa%2BuoVDROP9YeEJb4%2BgEC6cIzZgJoyRrYhDu%2BHrbFYcKVC%2BzD%2B0xm6Kw6%2FdjtAic3hsWCVqZDm1VWHCAOyMUCKOMpyxnlen16V8VWAw9DEsVXZGQ8%2FN8%3D",
       "description": "<p data-start=\"2475\" data-end=\"2495\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2475\" data-end=\"2495\">Lou Rawls – Live</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2497\" data-end=\"2599\">Original 1978 U.S. double-LP release on <strong data-start=\"2537\" data-end=\"2575\">Philadelphia International Records</strong>, catalog <strong data-start=\"2585\" data-end=\"2598\">PZ2 35517</strong>.</p>\n<p data-start=\"2601\" data-end=\"2939\">Recorded live at New York City’s <strong data-start=\"2634\" data-end=\"2660\">Mark Hellinger Theatre</strong>, this two-record set captures Lou Rawls performing his signature mix of soul, jazz, blues and sophisticated pop backed by the MFSB Orchestra. Contemporary advertising described the release as a front-row seat to Rawls’ Broadway performance. <span class=\"contents\" data-content-reference-start=\"2931\" data-content-reference-end=\"2956\"><span class=\"\" data-state=\"closed\"></span></span></p>\n<p data-start=\"2941\" data-end=\"2960\">Highlights include:</p>\n<ul data-start=\"2962\" data-end=\"3164\">\n<li data-section-id=\"1qldo0y\" data-start=\"2962\" data-end=\"3004\">\nYou’ll Never Find Another Love Like Mine\n</li>\n<li data-section-id=\"149kk4x\" data-start=\"3005\" data-end=\"3020\">\nGroovy People\n</li>\n<li data-section-id=\"1eccceg\" data-start=\"3021\" data-end=\"3032\">\nLady Love\n</li>\n<li data-section-id=\"m6g69u\" data-start=\"3033\" data-end=\"3051\">\nPure Imagination\n</li>\n<li data-section-id=\"1906wxz\" data-start=\"3052\" data-end=\"3066\">\nTobacco Road\n</li>\n<li data-section-id=\"11xvu5e\" data-start=\"3067\" data-end=\"3084\">\nDead End Street\n</li>\n<li data-section-id=\"1947k6y\" data-start=\"3085\" data-end=\"3100\">\nA Natural Man\n</li>\n<li data-section-id=\"407z4\" data-start=\"3101\" data-end=\"3121\">\nSend in the Clowns\n</li>\n<li data-section-id=\"1ef9ua9\" data-start=\"3122\" data-end=\"3148\">\nSee You When I Git There\n</li>\n<li data-section-id=\"16rrw5c\" data-start=\"3149\" data-end=\"3164\">\nUnforgettable\n</li>\n</ul>\n<p data-start=\"3166\" data-end=\"3343\"><strong data-start=\"3166\" data-end=\"3177\">Format:</strong> 2 × Vinyl LP<br data-start=\"3190\" data-end=\"3193\">\n<strong data-start=\"3193\" data-end=\"3203\">Label:</strong> Philadelphia International Records<br data-start=\"3238\" data-end=\"3241\">\n<strong data-start=\"3241\" data-end=\"3253\">Catalog:</strong> PZ2 35517<br data-start=\"3263\" data-end=\"3266\">\n<strong data-start=\"3266\" data-end=\"3275\">Year:</strong> 1978<br data-start=\"3280\" data-end=\"3283\">\n<strong data-start=\"3283\" data-end=\"3295\">Country:</strong> USA<br data-start=\"3299\" data-end=\"3302\">\n<strong data-start=\"3302\" data-end=\"3312\">Vinyl:</strong> VG+<br data-start=\"3316\" data-end=\"3319\">\n<strong data-start=\"3319\" data-end=\"3339\">Gatefold Sleeve:</strong> VG+</p>",
       "paymentMethods": [
         {
@@ -1673,5 +1673,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:35Z"
 }

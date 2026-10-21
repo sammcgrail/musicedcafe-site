@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -87,7 +87,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -111,8 +111,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1609,7 +1609,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128123709468?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8bjPw8c81l2kj5ljaHsBrSP2WKLvNlAhXD%2FvA8j76rs6gQUBRa4zPzOMFzf4VV73e7u737a3V23U55%2B9YfephMp7KWuC1WumnqD4bijVTOR4aDIlHKF9vckVe%2FrTi7e7FDeE58jbKnxdRVfjaP2CkDjnn6NTI6OGTF2Npbechf%2FwJq2vPqrnmPnG0hrFvDIjs%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128123709468?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8bjPw8c81l2kj5ljaHsBrSP2WKLvNlAhXD%2FvA8j76rs0ixuIFi24HSiZetf8zReVdqN0ySk4xIH7DcbbHtVbVAXfBDO8IO2RnlJewW4PFNvC7w%2B6VXRG1M9apEXkJttGrXXq8HKm4rOnXy1LXlZojbSI%2Fm0tdQ1%2FFtAu3MKoYxedHWtZlIoAGLd4r4Pqfl3h0%3D",
       "description": "<p>Luther Vandross &amp; Janet Jackson with special guests Bell Biv DeVoe and Ralph Tresvant<br><strong>The Best Things in Life Are Free</strong></p><p>Perspective Records – <strong>31458 8003 1</strong><br>1992 U.S. Promotional 2×12\" Vinyl Set<br>33⅓ RPM<br>R&amp;B / New Jack Swing / House / Garage House</p><p>Promo remix edition featuring extended mixes and club versions of the hit single from the <em>Mo’ Money</em> soundtrack. The original song was released in 1992 and became a major international hit. <a >Wikipedia</a></p><p><strong>Track listing:</strong><br>A1 – Classic 12\" w/Rap<br>A2 – Classic 12\" w/o Rap<br>B1 – Def Version<br>B2 – Dub Mix<br>C1 – C.J.’s U.K. 12\" w/Rap<br>C2 – C.J.’s U.K. 12\" w/o Rap<br>D1 – C.J.’s FXTC Dub<br>D2 – C.J.’s Vinyl Zone Dub <a >Borderline MUSIC</a></p><p><strong>Condition:</strong><br><strong>Vinyl: VG+ visually</strong> – both records retain strong gloss with light surface marks visible under direct light. No obvious major gouges or deep scratches visible in the supplied photos.</p><p><strong>Sleeve: G/G+</strong> – original plain white promotional sleeve shows significant ring wear, staining, surface rubbing, sticker residue/peeling and edge/corner wear. Original promotional information sticker remains attached.</p><p><strong>Special attributes:</strong><br>Promo Only<br>Double 12\"<br>Original 1992 pressing<br>Remixes by David Morales / Frankie Knuckles / C.J. Mackintosh<br>Features Bell Biv DeVoe and Ralph Tresvant</p>",
       "paymentMethods": [
         {
@@ -1666,5 +1666,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:24:57Z"
 }

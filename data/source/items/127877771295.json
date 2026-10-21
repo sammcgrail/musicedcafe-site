@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1641,7 +1641,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127877771295?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8vcX5iKWfZxOmp2IQVc1PG4eCSk3LdyrNe3NYJcSP0L9wQmnocBo3Kjy2LgPZJtZqbBvNHLqKqxX2w3WzGlw%2BaVgcKg921fGovLZJ5n7U%2FS6%2BQhm0hSfq9cTgs%2FhaclR6AbgbGnR30KilHSSDgLRSwLaBGexsJ5JAAoe%2BEv51Zpx1KmPcDaSAru29dTwtoEMQ%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127877771295?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8vcX5iKWfZxOmp2IQVc1PG4eCSk3LdyrNe3NYJcSP0L2lt%2B8i1Z3dXAZrhtqyOB1fPWwTBWa4upFnkQXrsYS9RtMnAeVbm%2BIQI7UanWnPvrb9nYUrN6ump08oV9yuAmTJLGqLime2Q56mPeSSYHAMObcEm8CKuvd6xrN9I%2BXqQ2Dgnh%2FEHXrv%2FWfxZRSnnLWc%3D",
       "description": "<p data-start=\"413\" data-end=\"440\">Motown Records – Motown 649</p>\n<p data-start=\"442\" data-end=\"529\">Classic 1966 Motown release from The Supremes featuring Diana Ross with hits including:</p>\n<ul data-start=\"530\" data-end=\"705\">\n<li data-section-id=\"wvu66h\" data-start=\"530\" data-end=\"567\">\nLove Is Like an Itching in My Heart\n</li>\n<li data-section-id=\"1pn34gu\" data-start=\"568\" data-end=\"590\">\nYou Can’t Hurry Love\n</li>\n<li data-section-id=\"1153ft1\" data-start=\"591\" data-end=\"615\">\nThis Old Heart of Mine\n</li>\n<li data-section-id=\"1kz6byv\" data-start=\"616\" data-end=\"641\">\nBaby I Need Your Loving\n</li>\n<li data-section-id=\"6zaz4p\" data-start=\"642\" data-end=\"663\">\nI Can’t Help Myself\n</li>\n<li data-section-id=\"1txle1h\" data-start=\"664\" data-end=\"675\">\nGet Ready\n</li>\n<li data-section-id=\"19o2wp\" data-start=\"676\" data-end=\"705\">\nCome and Get These Memories</li></ul>",
       "paymentMethods": [
         {
@@ -1698,5 +1698,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:36Z"
 }

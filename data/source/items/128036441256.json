@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "1846TF",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1591,7 +1591,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036441256?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BtqnlRaO%2BptBmS4GUkvtpBeA%2F7Z8mwif74mN0%2Fk6maY1UQeISKhQ2rymtFM9aebdCRg9yiuxr1RxLCc9lzxmw2gdCd0kouPAroBW9upHyYpt%2FnrMuuHNYchhdPsVoCzDVkRXgRupA3nFtqYiXG3iR4t8z1x1ceAIqjXKX41vX1d4T9xJSSOqyN4hX2fCs8gQs%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036441256?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BtqnlRaO%2BptBmS4GUkvtpBeA%2F7Z8mwif74mN0%2Fk6maYyskvzznRyUwuF6%2B9OhqW7m46ejtgLe64PsFMiVKQDRUTiMG8rUIxg27V5gBPps7D7Qfdny1g56NFo0vCpLLqe6DEJcBGAM5ykT062HMKuKHEr71XedIzBYs2Ypz%2F56SZRZMuycq8tPq7y0EP%2F7GW4s%3D",
       "description": "<p>Original Stevie Wonder – “Land of La La” 7-inch 45 RPM single on Tamla Records, catalog 1846TF.</p><br /><p>Side A: Land of La La</p><p>Side B: Land of La La (Instrumental)</p><br /><p>Produced and arranged by Stevie Wonder and connected to his classic In Square Circle era.</p><br /><p>Vinyl appears to be approximately VG/VG+ visually, retaining good gloss with light surface wear and minor scuffing consistent with normal handling and play. Labels are clean, colorful and fully readable.</p><br /><p>No original picture sleeve is included; record will be shipped in a protective sleeve.</p>",
       "paymentMethods": [
         {
@@ -1648,5 +1648,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:57Z"
 }

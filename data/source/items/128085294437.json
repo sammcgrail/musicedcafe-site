@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "AL4106",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1637,7 +1637,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128085294437?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FFlidvJhJ97n7LHNbh%2FYPHW0c%2FweBsaMye0x36rlYjRBmyDJivbg1eyp%2FOtBXd48Qp5QD4K6ZcrMx03HvBIzI3Enihr77tqNdxovM6i4R8qVY%2FPJRtNLg032QzuNU%2FjMV9WsR2efeywChuRSQhCiLPSUWiQ2Lz%2BLEmVyyvNMyZyH17EomkmFL8n4fvVNW301w%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128085294437?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FFlidvJhJ97n7LHNbh%2FYPHW0c%2FweBsaMye0x36rlYjRKZfcbQMXc1zU1R7X46Ws8s1fny7aXOa2CWuCiyHmgR4u9rQkazkRxh%2BvyC3IfNNdjexeryaUbazMqCllSVBdwpOM2HwWeO7Rr8kUpMsFiZX4mgaTpoOv%2FW5CJC8%2FFJfJqqdLltlQb35WVAUgDZ44dg%3D",
       "description": "<p dir=\"auto\" data-start=\"948\" data-end=\"1049\" class=\"PDq2pG_selectionAnchorContainer\">The Kinks – <em data-start=\"979\" data-end=\"992\">Sleepwalker</em><br data-start=\"992\" data-end=\"995\">\nArista Records – AL 4106<br data-start=\"1019\" data-end=\"1022\">\nOriginal 1977 U.S. Vinyl LP<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p dir=\"auto\" data-start=\"1051\" data-end=\"1190\">Classic Kinks album from their late-1970s Arista period, featuring “Sleepwalker,” “Juke Box Music,” “Life on the Road,” and “Life Goes On.”</p>\n<p dir=\"auto\" data-start=\"1192\" data-end=\"1436\" class=\"\"><strong data-start=\"1192\" data-end=\"1206\">Condition:</strong><br data-start=\"1206\" data-end=\"1209\">\nVinyl appears approximately VG to VG+ visually with light signs of handling/use. Jacket is approximately VG with visible shelf wear, rubbing, edge wear, and light creasing. Please review all photos for exact cosmetic condition.</p>\n<p dir=\"auto\" data-start=\"1438\" data-end=\"1664\"><strong data-start=\"1438\" data-end=\"1457\">Item specifics:</strong><br data-start=\"1457\" data-end=\"1460\">\nArtist: The Kinks<br data-start=\"1477\" data-end=\"1480\">\nAlbum: Sleepwalker<br data-start=\"1498\" data-end=\"1501\">\nLabel: Arista<br data-start=\"1514\" data-end=\"1517\">\nCatalog Number: AL 4106<br data-start=\"1540\" data-end=\"1543\">\nYear: 1977<br data-start=\"1553\" data-end=\"1556\" data-is-only-node=\"\">\nFormat: 12\" Vinyl LP<br data-start=\"1576\" data-end=\"1579\">\nSpeed: 33 RPM<br data-start=\"1592\" data-end=\"1595\">\nGenre: Rock<br data-start=\"1606\" data-end=\"1609\">\nStyle: Classic Rock / Pop Rock<br data-start=\"1639\" data-end=\"1642\">\nCountry: United States</p>",
       "paymentMethods": [
         {
@@ -1694,5 +1694,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:04Z"
 }

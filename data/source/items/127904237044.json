@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "MB217",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1617,7 +1617,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127904237044?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BzCLxd6cfgixmX7JzzHz6YDULVVzhI%2Fg6WWIOdtmnbu4XIsrwbMjDnF0W9s8eJNIAm0slfHg3vdS%2BJFp%2BiJWxXfqSaYtL4YQpwY8vCYcCTPDP3dBH5dd7d2prkcPov6g2tvk9VJpZcC3YzVAnGD%2BxoLRaN%2FAGEQWLXTWaf4u9QXRhBlbq3xubBMCFwlTyKUTA%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127904237044?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BzCLxd6cfgixmX7JzzHz6YDULVVzhI%2Fg6WWIOdtmnbu9sOROlnDkNcZ6hzxZV0yuSjTv2Flxik3pMzF8B%2FzLhWMFKt5FBRHunLK2jQZkV8x83AwPY7fHtdXr%2BkyDj7gVaKl01zZOqt1ZKwddSYwyRZllG5ci%2BT2xOrOCsa2bF6JhLm3gtVbyUSTIDBIxl2caY%3D",
       "description": "<p data-start=\"198\" data-end=\"256\">Duke Ellington with The Ron Collier Orchestra – <em data-start=\"246\" data-end=\"256\">Collages</em></p>\n<p data-start=\"258\" data-end=\"536\">A unique and lesser-seen 1973 jazz recording featuring Duke Ellington collaborating with Canadian composer and arranger Ron Collier. Released on the MPS/BASF label, this album blends Ellington's legendary piano and orchestral style with contemporary large ensemble arrangements.</p>\n<p data-start=\"538\" data-end=\"555\"><strong data-start=\"538\" data-end=\"555\">Album Details</strong></p>\n<ul data-start=\"556\" data-end=\"724\">\n<li data-section-id=\"1hqk2x5\" data-start=\"556\" data-end=\"611\">\nArtist: Duke Ellington with The Ron Collier Orchestra\n</li>\n<li data-section-id=\"h62tfy\" data-start=\"612\" data-end=\"629\">\nTitle: Collages\n</li>\n<li data-section-id=\"8pc79f\" data-start=\"630\" data-end=\"649\">\nLabel: MPS / BASF\n</li>\n<li data-section-id=\"10dzdow\" data-start=\"650\" data-end=\"676\">\nCatalog Number: MB-21704\n</li>\n<li data-section-id=\"lzryq9\" data-start=\"677\" data-end=\"689\">\nYear: 1973\n</li>\n<li data-section-id=\"1qmadbv\" data-start=\"690\" data-end=\"710\">\nFormat: LP, Stereo\n</li>\n<li data-section-id=\"5ro50i\" data-start=\"711\" data-end=\"724\">\nGenre: Jazz\n</li>\n</ul>\n<p data-start=\"726\" data-end=\"739\"><strong data-start=\"726\" data-end=\"739\">Condition</strong></p>\n<ul data-start=\"740\" data-end=\"923\">\n<li data-section-id=\"1xtdl5q\" data-start=\"740\" data-end=\"803\">\nVinyl: VG+ (clean gloss with light signs of handling and use)\n</li>\n<li data-section-id=\"18a6shi\" data-start=\"804\" data-end=\"889\">\nJacket: VG (general shelf wear, edge wear, and light ring wear consistent with age)\n</li>\n<li data-section-id=\"18axryh\" data-start=\"890\" data-end=\"923\">\nSee photos for exact condition.\n</li>\n</ul>\n<p data-start=\"925\" data-end=\"945\"><strong data-start=\"925\" data-end=\"945\">Track Highlights</strong></p>\n<ul data-start=\"946\" data-end=\"1037\">\n<li data-section-id=\"q50b0f\" data-start=\"946\" data-end=\"963\">\nAurora Borealis\n</li>\n<li data-section-id=\"od73om\" data-start=\"964\" data-end=\"979\">\nNameless Hour\n</li>\n<li data-section-id=\"11u8ke8\" data-start=\"980\" data-end=\"991\">\nFair Wind\n</li>\n<li data-section-id=\"1ygmh8w\" data-start=\"992\" data-end=\"1020\">\nSilent Night, Lonely Night\n</li>\n<li data-section-id=\"jr6q57\" data-start=\"1021\" data-end=\"1037\">\nSong and Dance</li></ul>",
       "paymentMethods": [
         {
@@ -1674,5 +1674,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:11Z"
 }

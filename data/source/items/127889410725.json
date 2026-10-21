@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -91,7 +91,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -115,8 +115,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1628,7 +1628,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127889410725?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BWC9kKTkWMlvSBKKoaat%2Fge%2BoDmwU6V2keJ6EKU4HqFIXD6S0%2Fj42r6yA7UkzBEMj7%2BwVBnljvlyzLWsfwk4S%2BsBvW67YD%2FIlbntP6GC%2FRqeE94gSVM9nbz9wjUBB5GgPa%2FLC71AYpdVtyWTQ80wpWs9LtNhLSMZO9ThgMxcOgdBF4i6AFwQUu3DelkkhWaqQ%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127889410725?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BWC9kKTkWMlvSBKKoaat%2Fge%2BoDmwU6V2keJ6EKU4HqFIpLJzqJNb60Hlqh94wEz97gw7%2FO6KFwS8CF%2FDWi%2BepRK1CvLvgEj7EXOaT56YNonLJQ2FIm0T9CcN1Odimby%2FmgiTk74rj0opfnvtPbNIrgMm2%2Bnk3PEw653VAFl511X53vjg9I03tdOk3CN4jdaCY%3D",
       "description": "<p data-start=\"1274\" data-end=\"1409\">Original Broadway cast recording of <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Sophisticated Ladies</span> featuring the music of <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Duke Ellington</span>.</p>\n<p data-start=\"1411\" data-end=\"1463\">2LP RCA Red Seal pressing featuring performances by:</p>\n<ul data-start=\"1464\" data-end=\"1569\">\n<li data-section-id=\"u21111\" data-start=\"1464\" data-end=\"1503\">\n<span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Gregory Hines</span>\n</li>\n<li data-section-id=\"1j40yc5\" data-start=\"1504\" data-end=\"1543\">\n<span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Phyllis Hyman</span>\n</li>\n<li data-section-id=\"1xkgsqd\" data-start=\"1544\" data-end=\"1569\">\nJudith Jamison and cast\n</li>\n</ul>\n<p data-start=\"1571\" data-end=\"1634\"><strong data-start=\"1571\" data-end=\"1581\">Vinyl:</strong> VG+<br data-start=\"1585\" data-end=\"1588\">\nClean glossy records with light cosmetic wear.</p>\n<p data-start=\"1636\" data-end=\"1689\"><strong data-start=\"1636\" data-end=\"1646\">Cover:</strong> VG<br data-start=\"1649\" data-end=\"1652\">\nGeneral shelf and edge wear from age.</p>\n<p data-start=\"1691\" data-end=\"1756\" data-is-last-node=\"\" data-is-only-node=\"\">Great addition for jazz, Broadway, and Duke Ellington collectors.</p>",
       "paymentMethods": [
         {
@@ -1685,5 +1685,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:25Z"
 }

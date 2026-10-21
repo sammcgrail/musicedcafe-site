@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "RS925",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1602,7 +1602,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970985886?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BR%2BfJmDRrSaynpgLUREAWoLQL8CsUsGXaZnvORwI1oDBU7Se95jfx%2BOBQSnRRpoV57y3J1tiR1uEkOWIvaJKI422%2BJuZfZq2QtKhY38I8SYtXkNbI9LBfo7LW87QozQTWEVHKHXQuA6f6tc%2FJvLXLyiFrFObCUW8IHAWOFep5xfObVkGmtXnlQltZM777ZeIs%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970985886?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BR%2BfJmDRrSaynpgLUREAWoLQL8CsUsGXaZnvORwI1oDPxY0cSLkYVaAn%2FVHoL4duItYUBDEvG3wCliN3uXhhZrGIqMBcO00j013DHTVW4QPp79qfd7fNXa4TTPeAqQy%2BLFdy1UZjU02mtwLgVG0C%2FOWTwMWYeoUGUB5jPWg4JA0X0vnq0z%2BbvXoa3JS3g997U%3D",
       "description": "<p data-start=\"1263\" data-end=\"1327\" class=\"PDq2pG_selectionAnchorContainer\">Original <strong data-start=\"1272\" data-end=\"1292\">1979 RSO Records</strong> 45 RPM single by the <strong data-start=\"1314\" data-end=\"1326\">Bee Gees</strong>.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1329\" data-end=\"1339\"><strong data-start=\"1329\" data-end=\"1339\">Side A</strong></p>\n<ul data-start=\"1340\" data-end=\"1377\">\n<li data-section-id=\"lzsr3d\" data-start=\"1340\" data-end=\"1377\">\nLove You Inside Out <em data-start=\"1362\" data-end=\"1377\">(U.S. #1 Hit)</em>\n</li>\n</ul>\n<p data-start=\"1379\" data-end=\"1389\"><strong data-start=\"1379\" data-end=\"1389\">Side B</strong></p>\n<ul data-start=\"1390\" data-end=\"1405\">\n<li data-section-id=\"1kjs4ux\" data-start=\"1390\" data-end=\"1405\">\nI'm Satisfied\n</li>\n</ul>\n<p data-start=\"1407\" data-end=\"1512\">A classic late-disco Bee Gees release and a great addition for collectors of disco, pop, and 1970s music.</p>\n<p data-start=\"1514\" data-end=\"1613\">The record will be shipped in a new paper sleeve, protective poly sleeve, and sturdy 45 RPM mailer.</p><p data-start=\"771\" data-end=\"789\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"771\" data-end=\"781\">Vinyl:</strong> <strong data-start=\"782\" data-end=\"789\">VG+</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p><p data-start=\"791\" data-end=\"1013\">The vinyl has a nice overall gloss with light surface scuffs and hairlines from normal handling. No deep scratches or cracks are visible. A solid collector copy that should play very well with minor surface noise possible.</p><p data-start=\"1015\" data-end=\"1034\"><strong data-start=\"1015\" data-end=\"1026\">Labels:</strong> <strong data-start=\"1027\" data-end=\"1034\">VG+</strong></p><p data-start=\"1036\" data-end=\"1126\">Both labels are clean with only light spindle wear and no stickers or significant writing.</p><p data-start=\"1514\" data-end=\"1613\">\n\n\n\n</p><p data-start=\"1128\" data-end=\"1167\"><strong data-start=\"1128\" data-end=\"1139\">Sleeve:</strong> Generic white paper sleeve.</p>",
       "paymentMethods": [
         {
@@ -1659,5 +1659,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:26Z"
 }

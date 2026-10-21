@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "S35078",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970976221?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8NyVb8czQfzOPEFDaZLTHMsdwP26UJZ3nhuEeRrnvB717cV6m6mVIvg%2Bq5uIaON5OeJhLbYef9fQ%2Boy8k4cp%2FNQqJaxImCwBzPrbaJVprf3MnCY9GeWNmZZSidciL5xp93GOpYA1%2F1b5mwuiuhG6wgbLueVz%2BxtVlWYdQIkqP3qXGbhP3P%2FqjasPGu%2BbjAJV4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970976221?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8NyVb8czQfzOPEFDaZLTHMsdwP26UJZ3nhuEeRrnvB7xB%2FtoQ7kxLoN0F3f%2BGKu2Oa7awpC5lX%2F1cnXrCekjMBMkYvmw4KxEI37uA0v0MmhcG%2FPrhRqsAq0yKKlO%2B5CEG9aZbdiVpC8j1%2BBJBX8IaenuosLSzgwI5JJX2pzrBVSaL1baB389XKN%2BCT7%2BogrBc%3D",
       "description": "<p data-start=\"1180\" data-end=\"1266\" class=\"PDq2pG_selectionAnchorContainer\">Original <strong data-start=\"1189\" data-end=\"1217\">1970 Soul Records/Motown</strong> 45 RPM single from <strong data-start=\"1237\" data-end=\"1265\">Gladys Knight &amp; The Pips</strong>.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1268\" data-end=\"1278\"><strong data-start=\"1268\" data-end=\"1278\">Side A</strong></p>\n<ul data-start=\"1279\" data-end=\"1301\">\n<li data-section-id=\"wlgicg\" data-start=\"1279\" data-end=\"1301\">\nIf I Were Your Woman\n</li>\n</ul>\n<p data-start=\"1303\" data-end=\"1313\"><strong data-start=\"1303\" data-end=\"1313\">Side B</strong></p>\n<ul data-start=\"1314\" data-end=\"1338\">\n<li data-section-id=\"ivw5j5\" data-start=\"1314\" data-end=\"1338\">\nThe Tracks of My Tears\n</li>\n</ul>\n<p data-start=\"1340\" data-end=\"1497\">A classic Motown soul release featuring one of Gladys Knight's signature performances. Great addition for Motown, Northern Soul, and classic R&amp;B collections.</p>\n<p data-start=\"1499\" data-end=\"1588\">Record will ship in a new paper sleeve, protective poly sleeve, and sturdy 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:28Z"
 }

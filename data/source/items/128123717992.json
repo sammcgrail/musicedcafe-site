@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -77,7 +77,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "LPM2388",
       "estimatedAvailabilities": [
@@ -102,8 +102,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1610,7 +1610,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128123717992?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8GhpK4vCPSW7iqFwkNouwNgwG74hNPU5uBC3bwA74XB7SQGkpprpQd1KKyW%2BynIdjL%2FeTfnrCyrzbpK5IexR5YKiqBvl8UA4PC7iqMdyHWh1kfdu%2FWlxqnas4ZvFWY3TohXxYyDausPsi4tPpqnDQn%2FyJD500R9Rgfi0NexeQ8IclWKb5rKAuZCbrV%2Fip8d1Q%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128123717992?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8GhpK4vCPSW7iqFwkNouwNgwG74hNPU5uBC3bwA74XB31vT%2FNzPllve408oy%2F%2B9Q3mxJnmsLFKCprjjhjHoMeAhqmVvuDtLL1TjEeNsTygB65748HsnUGnuI%2FLKTYIUcsCMHH6GYBraMpK9qhg8z7pzedAiNcZGU4DvBLZA2%2FWsWR%2Bd16yz8jnT4wXhN6TSjs%3D",
       "description": "<p>Harry Belafonte – <em>Jump Up Calypso</em><br>RCA Victor LPM-2388<br>Original-era 1961 Mono Vinyl LP</p><p>Classic Harry Belafonte calypso recording featuring <strong>“Jump in the Line,” “Kingston Market,” “The Baby Boy,” “Sweetheart from Venezuela,” “Angelina,”</strong> and more.</p><p><strong>Condition:</strong><br>Vinyl: <strong>VG+ visually</strong> – retains strong gloss with light signs of handling and minor superficial marks. No obvious major scratches visible in photos.<br>Cover: <strong>VG</strong> – age-related shelf wear, rubbing, corner/edge wear and some staining/discoloration on the rear. Small vintage price sticker on front. Please inspect all photos for exact cosmetic condition.</p><p>Original RCA Victor black-label mono pressing, catalog LPM-2388.</p><p><strong>Genre:</strong> Calypso / Caribbean / Folk / World<br><strong>Format:</strong> 12\" LP, 33⅓ RPM, Mono<br><strong>Label:</strong> RCA Victor</p>",
       "paymentMethods": [
         {
@@ -1667,5 +1667,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:24:55Z"
 }

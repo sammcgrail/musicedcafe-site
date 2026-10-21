@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PB13354",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1602,7 +1602,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970834725?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FD4RZyDyZ3BwFbzCUXa%2F59ANAHfbmdPKsIQLY0VaU99ml3KegTID%2FuvOD9HaHLQUMXQoH9GBiI2ZDjFhWkq%2F4XWyGOI8EP6%2BzWcgYD4ZmxIbE0Ybp47mZlvFmEa%2Fwwjn2qaPeOJpKPn5TM9j9ruX2TJRktfVHCEseQzKF%2BE7rnYXzW8fbQteqERF%2FW0dg%2FUzM%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970834725?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FD4RZyDyZ3BwFbzCUXa%2F59ANAHfbmdPKsIQLY0VaU99r2lIQ1IsNiLIqAWF4CPpWZVDtd1yaJ1kjJgmu621npwEaJY4flKc%2F9SKe5H5WLJP%2BV3KerdXdUBW1nQ70k7kvTKpC7PYG5wKR8rYLC0gtC8uhahwvc8o5o0E4RXDBh%2B2bEaXZ0tK0Uok7leHWkK3bc%3D",
       "description": "<p data-start=\"1095\" data-end=\"1253\" class=\"PDq2pG_selectionAnchorContainer\">Original Hall &amp; Oates 45 RPM single featuring the #1 smash hit <strong data-start=\"1158\" data-end=\"1172\">\"Maneater\"</strong> from the multi-platinum <em data-start=\"1197\" data-end=\"1202\">H2O</em> album. The B-side includes <strong data-start=\"1230\" data-end=\"1253\">\"Delayed Reaction.\"</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1255\" data-end=\"1359\">One of the duo's signature hits and an essential addition to any 1980s pop, rock, or jukebox collection.</p>\n<p data-start=\"1361\" data-end=\"1489\">The record will be shipped in a new paper sleeve inside a protective poly sleeve and securely packaged in a rigid 45 RPM mailer.</p><p data-start=\"726\" data-end=\"752\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"726\" data-end=\"737\">Record:</strong> Very Good (VG)<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p><p data-start=\"754\" data-end=\"953\">Original 1982 RCA Records pressing. Vinyl retains a nice shine with light surface scuffs and hairlines from normal handling. Labels are clean and easy to read. No original picture sleeve is included.</p><p data-start=\"1361\" data-end=\"1489\">\n\n</p><p data-start=\"955\" data-end=\"994\"><strong data-start=\"955\" data-end=\"966\">Sleeve:</strong> Generic white paper sleeve.</p>",
       "paymentMethods": [
         {
@@ -1659,5 +1659,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:45Z"
 }

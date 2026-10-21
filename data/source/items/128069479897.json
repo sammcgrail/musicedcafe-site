@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "AB4164",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1647,7 +1647,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128069479897?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BweGAZZeYMYcPugP8d5O2Pq9%2BAdxLqirnQ0isPVdWW3gBc58zYa19EqFAu86rZejp3HyETXvjyhILRCBHsYaOn3n6LRGlsbHPDGpfjG094vYp1H7LkuYKUTJTT5uCWqg3iW%2Fv8qBaZ2H5SO%2BQAFhY7chbo11tmtAhINP%2FvY%2B944aibGcOnqmi8JCscHSxDDEI%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128069479897?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BweGAZZeYMYcPugP8d5O2Pq9%2BAdxLqirnQ0isPVdWW3nNt60BwE%2BbDGXNTMIWPyQqA%2F8FM4%2FsWPoDKAS5aN0dMGjSuEOS9GyGwepVO4VePjnyEnBQqrwAdt0eMFI9fkjFq3BUdTtzjMq%2Fv2uPz1%2FoPXJBuPwbE3p94TR%2FoteNZBtKCg8dGeDN1fDniLeciSS4%3D",
       "description": "<p data-start=\"2625\" data-end=\"2653\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2625\" data-end=\"2653\">Barry Manilow – Even Now</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2655\" data-end=\"2762\">Original 1978 Arista Records vinyl LP featuring one of Barry Manilow's best-known albums of the late 1970s.</p>\n<p data-start=\"2764\" data-end=\"2963\"><strong data-start=\"2764\" data-end=\"2775\">Artist:</strong> Barry Manilow<br data-start=\"2789\" data-end=\"2792\">\n<strong data-start=\"2792\" data-end=\"2802\">Album:</strong> Even Now<br data-start=\"2811\" data-end=\"2814\">\n<strong data-start=\"2814\" data-end=\"2824\">Label:</strong> Arista Records<br data-start=\"2839\" data-end=\"2842\">\n**Catalog #: AB 4164<br data-start=\"2862\" data-end=\"2865\">\n<strong data-start=\"2865\" data-end=\"2874\">Year:</strong> 1978<br data-start=\"2879\" data-end=\"2882\">\n<strong data-start=\"2882\" data-end=\"2893\">Format:</strong> 12\" Vinyl LP<br data-start=\"2906\" data-end=\"2909\">\n<strong data-start=\"2909\" data-end=\"2919\">Speed:</strong> 33 RPM<br data-start=\"2926\" data-end=\"2929\">\n<strong data-start=\"2929\" data-end=\"2940\">Stereo:</strong> Yes<br data-start=\"2944\" data-end=\"2947\">\n<strong data-start=\"2947\" data-end=\"2959\">Country:</strong> USA</p>\n<p data-start=\"2965\" data-end=\"2984\">Highlights include:</p>\n<ul data-start=\"2986\" data-end=\"3186\">\n<li data-section-id=\"13aku5n\" data-start=\"2986\" data-end=\"3016\">\n<strong data-start=\"2988\" data-end=\"3016\">Copacabana (At the Copa)</strong>\n</li>\n<li data-section-id=\"1f5s13a\" data-start=\"3017\" data-end=\"3031\">\n<strong data-start=\"3019\" data-end=\"3031\">Even Now</strong>\n</li>\n<li data-section-id=\"5jfa6e\" data-start=\"3032\" data-end=\"3061\">\n<strong data-start=\"3034\" data-end=\"3061\">Can't Smile Without You</strong>\n</li>\n<li data-section-id=\"16f1cgj\" data-start=\"3062\" data-end=\"3090\">\n<strong data-start=\"3064\" data-end=\"3090\">Somewhere in the Night</strong>\n</li>\n<li data-section-id=\"qxvwoz\" data-start=\"3091\" data-end=\"3125\">\n<strong data-start=\"3093\" data-end=\"3125\">I Was a Fool (To Let You Go)</strong>\n</li>\n<li data-section-id=\"fv1zzj\" data-start=\"3126\" data-end=\"3151\">\n<strong data-start=\"3128\" data-end=\"3151\">Some Kind of Friend</strong>\n</li>\n<li data-section-id=\"1gy12p4\" data-start=\"3152\" data-end=\"3172\">\n<strong data-start=\"3154\" data-end=\"3172\">Starting Again</strong>\n</li>\n<li data-section-id=\"1gkh44t\" data-start=\"3173\" data-end=\"3186\">\n<strong data-start=\"3175\" data-end=\"3186\">Sunrise</strong>\n</li>\n</ul>\n<p data-start=\"3188\" data-end=\"3232\">Produced by <strong data-start=\"3200\" data-end=\"3231\">Ron Dante and Barry Manilow</strong>.</p>",
       "paymentMethods": [
         {
@@ -1704,5 +1704,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:33Z"
 }

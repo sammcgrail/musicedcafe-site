@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "MCA53612",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1592,7 +1592,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023035090?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8E1LHr0cfM0IFBX4gyyCIMD0paHFWJpwwI2EmAhfSR23NGEGrSTZf6%2FWp8DuScO9hslvBIRX06X4ojS9Law7U%2FmYCbGhC8Ft34Tk6qIZbJeVLHV2XMMV3F4Wlzg5qkZUJqPy9jmswmJhc76TBFL7qd2%2FQi7h25cUKZ4KxdUR8pcgrnHJepPr1M1S3xJnntQrE%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023035090?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8E1LHr0cfM0IFBX4gyyCIMD0paHFWJpwwI2EmAhfSR2%2FaBpwb0tkMx9KIvT3Dut2czpQul%2FlH%2Blyo9aC4pNBRijEDNutrYZ9EeSGqkr8BDXaJdCw0bAMCSK0mBZhbZUdZYARgvGbfBq4N2IkXMZfVQEbwSfyV8lCpK4TttJrtB9fw2o1hzPIN8vjaKU9Vq0Os%3D",
       "description": "<p>Tiffany – Hold an Old Friend’s Hand / Ruthless</p><br /><p>Vintage MCA Records 7-inch 45 RPM single featuring Tiffany’s “Hold an Old Friend’s Hand” backed with “Ruthless.”</p><br /><p>Catalog number MCA-53612.</p><br /><p>Vinyl appears approximately VG+ visually, with light surface/handling marks consistent with normal use. No obvious major scratches are visible in the supplied photos.</p><br /><p>Labels remain attractive and fully readable.</p><br /><p>Includes the generic yellow paper sleeve pictured, which shows discoloration and normal age-related wear.</p><br /><p>Record has been visually graded unless otherwise stated. Please review all photos carefully for exact cosmetic condition.</p>",
       "paymentMethods": [
         {
@@ -1649,5 +1649,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:20Z"
 }

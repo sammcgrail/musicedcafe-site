@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "3519",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1612,7 +1612,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127971018886?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BCBAZonQgmd3w7AW2o8LoBnhrQdAVIH3DXFSOOuVdNayqX62fgVUuKodM8%2BHWBquebNe%2B0ycd5lqAOsf3oIsf3tIQ9OIXu84cqAAv4zqf4qE9EGSf%2F9l65xFJuji7JlWQNCb2m8jyyc5xeok6w%2FgAB5NrOxwN42V%2BECUJJ%2Bo2LyA5uAimwUNwdbevDHCllO3Q%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127971018886?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BCBAZonQgmd3w7AW2o8LoBnhrQdAVIH3DXFSOOuVdNa7Y75gTQpXTpwFFoOji%2BB6leR9VnwOoqIiNEP9lF9i9KpYTOWPVn1WI9j58YCFLCNUyUFQCyzBQE%2B%2FxcO1O%2FhauZL7j06wJvXfuVYeQJ8gkaN5Nrv%2Bz0RLo1h62ICKdqM2L0441A93zRyquEsOKMvIc%3D",
       "description": "<p data-start=\"1506\" data-end=\"1620\" class=\"PDq2pG_selectionAnchorContainer\">Original <strong data-start=\"1515\" data-end=\"1540\">1978 Atlantic Records</strong> 45 RPM single by <strong data-start=\"1558\" data-end=\"1566\">Chic</strong>, featuring the worldwide disco anthem <strong data-start=\"1605\" data-end=\"1620\">\"Le Freak.\"</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1622\" data-end=\"1632\"><strong data-start=\"1622\" data-end=\"1632\">Side A</strong></p>\n<ul data-start=\"1633\" data-end=\"1643\">\n<li data-section-id=\"19rppcq\" data-start=\"1633\" data-end=\"1643\">\nLe Freak\n</li>\n</ul>\n<p data-start=\"1645\" data-end=\"1655\"><strong data-start=\"1645\" data-end=\"1655\">Side B</strong></p>\n<ul data-start=\"1656\" data-end=\"1670\">\n<li data-section-id=\"qat281\" data-start=\"1656\" data-end=\"1670\">\nSavoir Faire\n</li>\n</ul>\n<p data-start=\"1672\" data-end=\"1847\">Written and produced by <strong data-start=\"1696\" data-end=\"1712\">Nile Rodgers</strong> and <strong data-start=\"1717\" data-end=\"1736\">Bernard Edwards</strong>, \"Le Freak\" became one of the defining dance records of the disco era and remains a DJ and collector favorite.</p>\n<p data-start=\"1849\" data-end=\"1942\">The record will ship in a new paper sleeve, protective poly sleeve, and sturdy 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1669,5 +1669,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:23Z"
 }

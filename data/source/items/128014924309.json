@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "478164",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1592,7 +1592,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014924309?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9OOZxguaIP1qnh3QBbLRqo3HYxZXIFP5NekuwNP1Vcf%2FPZJBL3aBG5lSmA%2B4q6AaL5h%2FIJ%2B6CpbZURZcW8Itx1AJKjDpWXWFH8Uq0d1zMkooEFxJJEbxj%2F4GvLjHx7Rsy5eWxgEwWB9aae0%2Fy4sveKlsdHT8HGC8rFGiQnjhqg%2F7yhszfp%2Ftyq2y3g2CBi45c%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014924309?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9OOZxguaIP1qnh3QBbLRqo3HYxZXIFP5NekuwNP1Vcf%2FvNsPcNeFY2uuc9B8GGF6q19zheGfv4aCRc%2FtekcCqNIHD0z2XA2Gmz0zkX8zdtnm8Rmv9QzOZ69DxrTItQNsXUtS3sc3lz%2Bv54fMOJhFALzMTC7M8ZgCxkYKMyBzPY9%2B3YhKIVE1mexKBMdp3LcNc%3D",
       "description": "<p>Classic 1963 Sam Cooke 45 RPM single on RCA Victor Records.</p><br /><p>Side A: Another Saturday Night – 2:18</p><p>Side B: Love Will Find a Way – 2:15</p><br /><p>Catalog # RCA Victor 47-8164</p><br /><p>Vintage original-era Sam Cooke single featuring one of his best-known recordings, “Another Saturday Night.”</p><br /><p>Vinyl retains good gloss but shows visible surface marks, light scratches and scuffs consistent with age and previous play. Labels remain generally clean with light signs of age/use.</p>",
       "paymentMethods": [
         {
@@ -1649,5 +1649,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:41Z"
 }

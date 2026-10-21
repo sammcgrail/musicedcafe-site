@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -80,7 +80,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "TZ 37491",
       "estimatedAvailabilities": [
@@ -105,8 +105,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1628,7 +1628,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128123705624?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8C61BYaAjYNMXkX3ZSa0HHQ%2B4QIGPan07otYE96KHJra2HZ29hkgp8HfCbY8sw5DQ2LYvotiZnqXuuFrhid%2FyKrnb%2BuSrLUomJLeYMvgcOgRiOp%2B%2F9TI8XPYrf4nLoteq%2Fhpw5I4y9LPJ4I%2FT%2BP6vi%2BXbedC3WnMVEihYDsqnhfUGDaYy5reD8H8yFYsEMpII%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128123705624?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8C61BYaAjYNMXkX3ZSa0HHQ%2B4QIGPan07otYE96KHJrUMP56IRNaFIo%2FiSBOlwVukv%2Bz%2BvetDUPTiF6pdG4m47TDW99G61SLG2EiESc57S%2B0h%2BGPZ9ZLYv0zRuaduDSz4V%2BpS90EOzr2i9mkRfESp4Ya9LTHwjCCY2ZgE4jQtfXUgZiBs1Eb2hU4RpHMq0ttw%3D",
       "description": "<p><strong>Teddy Pendergrass – It’s Time for Love</strong></p><p>Philadelphia International Records – TZ 37491<br>1981 U.S. Stereo LP<br>Soul / R&amp;B / Quiet Storm</p><p>Classic Teddy Pendergrass album produced by Kenneth Gamble, Leon Huff, Dexter Wansel and Teddy Pendergrass. Features the standout hit <strong>“You’re My Latest, My Greatest Inspiration.”</strong></p><p><strong>Tracklist</strong><br>Side 1:<br>I Can’t Live Without Your Love<br>You’re My Latest, My Greatest Inspiration<br>Nine Times Out of Ten<br>Keep on Lovin’ Me  </p><p>Side 2:<br>It’s Time for Love<br>She’s Over Me<br>I Can’t Leave Your Love Alone<br>You Must Live On <a >Record Albums</a></p><p><strong>Condition:</strong><br><strong>Vinyl: VG+</strong> – glossy playing surfaces with light cosmetic marks visible under direct light. No obvious deep scratches visible in photos.</p><p><strong>Cover: VG</strong> – moderate shelf wear, corner wear and some edge wear, particularly along the right side. Overall artwork remains attractive and displayable.</p><p><strong>Artist:</strong> Teddy Pendergrass<br><strong>Album:</strong> It’s Time for Love<br><strong>Label:</strong> Philadelphia International Records<br>**Catalog #: TZ 37491<br><strong>Year:</strong> 1981<br><strong>Format:</strong> 12\" Vinyl LP, 33⅓ RPM<br><strong>Country:</strong> USA<br><strong>Genre:</strong> R&amp;B / Soul<br><strong>Style:</strong> Philadelphia Soul / Quiet Storm</p>",
       "paymentMethods": [
         {
@@ -1685,5 +1685,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:24:58Z"
 }

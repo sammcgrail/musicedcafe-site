@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -92,8 +92,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1575,7 +1575,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970736562?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B3y04tqBRgS9LdOfWdnOE3DtkUDBHav98qn6q3D1re0bGvRC8Pewrun90jHjrFnsaPsx9cbe%2F9h6ho7LIx5H0O9EuPSUogs7fiBnvMes8znROVtmnUVTd4IOVis1vFIHORP02UNwYNznRtemd1JySnjsu0IIsetGJTMKgZBe%2FRL0SRgNWoYFbwe6k8srbQKog%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970736562?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B3y04tqBRgS9LdOfWdnOE3DtkUDBHav98qn6q3D1re0QW%2BGw19Ce7cARRGthsZwGxm5R8%2FgE3HvfkqnPFucHQFIGbAyUF6qJUuLjQlh00z%2FwcRB%2BOEA%2BgYR6AfRuGio%2BE%2FNaTCzY0ZguzNUTE3U5AHuZrJNgEVu2zwF2uA9gvY%2Fw0ZZxJPn6hhx0YVfGuw9uo%3D",
       "description": "<p data-start=\"557\" data-end=\"611\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"557\" data-end=\"611\">Perry Como – Silent Night / O Come All Ye Faithful</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"613\" data-end=\"814\">Original RCA Victor 45 RPM Christmas single featuring Perry Como's timeless holiday recordings accompanied by organ and choir. A wonderful addition to any vintage Christmas music collection or jukebox.</p>\n<p data-start=\"816\" data-end=\"838\"><strong data-start=\"816\" data-end=\"827\">Artist:</strong> Perry Como</p>\n<p data-start=\"840\" data-end=\"861\"><strong data-start=\"840\" data-end=\"850\">Label:</strong> RCA Victor</p>\n<p data-start=\"863\" data-end=\"891\"><strong data-start=\"863\" data-end=\"882\">Catalog Number:</strong> 447-0810</p>\n<p data-start=\"893\" data-end=\"920\"><strong data-start=\"893\" data-end=\"904\">Format:</strong> 7\" Vinyl Single</p>\n<p data-start=\"922\" data-end=\"939\"><strong data-start=\"922\" data-end=\"932\">Speed:</strong> 45 RPM</p>\n<h3 data-section-id=\"qfm5q2\" data-start=\"941\" data-end=\"951\">Tracks</h3>\n<p data-start=\"953\" data-end=\"963\"><strong data-start=\"953\" data-end=\"963\">Side A</strong></p>\n<ul data-start=\"964\" data-end=\"989\">\n<li data-section-id=\"dlgpcv\" data-start=\"964\" data-end=\"989\">\nO Come, All Ye Faithful\n</li>\n</ul>\n<p data-start=\"991\" data-end=\"1001\"><strong data-start=\"991\" data-end=\"1001\">Side B</strong></p>\n<ul data-start=\"1002\" data-end=\"1016\">\n<li data-section-id=\"1e6w9ml\" data-start=\"1002\" data-end=\"1016\">\nSilent Night\n</li>\n</ul>\n<h3 data-section-id=\"1uef3h1\" data-start=\"1018\" data-end=\"1031\">Condition</h3>\n<p data-start=\"1033\" data-end=\"1055\"><strong data-start=\"1033\" data-end=\"1043\">Vinyl:</strong> Good (G/G+)</p>\n<ul data-start=\"1056\" data-end=\"1322\">\n<li data-section-id=\"1gwft5d\" data-start=\"1056\" data-end=\"1142\">\nOriginal vintage record showing visible surface scratches and wear from age and use.\n</li>\n<li data-section-id=\"1ivv7pi\" data-start=\"1143\" data-end=\"1196\">\nLabels exhibit noticeable wear but remain readable.\n</li>\n<li data-section-id=\"14jl1ea\" data-start=\"1197\" data-end=\"1257\">\nPlease review all photos carefully for cosmetic condition.\n</li>\n<li data-section-id=\"1ota9ci\" data-start=\"1258\" data-end=\"1322\">\nRecord has not been professionally graded under magnification.\n</li>\n</ul>\n<p data-start=\"1324\" data-end=\"1334\"><strong data-start=\"1324\" data-end=\"1334\">Sleeve</strong></p>\n<ul data-start=\"1335\" data-end=\"1364\">\n<li data-section-id=\"18q9mh6\" data-start=\"1335\" data-end=\"1364\">\nGeneric white paper sleeve.</li></ul>",
       "paymentMethods": [
         {
@@ -1632,5 +1632,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:55Z"
 }

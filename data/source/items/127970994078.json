@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "AM1322",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1582,7 +1582,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970994078?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B26uQU00M1Tdb%2B5oN%2F3SKiEvjUcRh6j8rpalN3A5BlXNii6NvVrAUVlkKLhpmrc%2BQ5tbQRCznJyJbgenlMl2wNCt0%2B4yZhCyUZJCQsGVUafd1HjHkPNeGcY69vanSguWreKA24k5Pt5CHmL4EuKWIryGgcoKnH%2B22NBD56y8n0huVB6JHGdss1q4VUVCOqk4k%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970994078?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B26uQU00M1Tdb%2B5oN%2F3SKiEvjUcRh6j8rpalN3A5BlXA0cY8o0vd1ICZwF76YWFv1biM8WBQkJR4NnFuA2w0M5Woh13h1p61JLMsnhrJGHkj2Zn8sN7Tcnm2r7kAedr%2BVR8hZDuStI4hwcGmfntVyyBWqqif4yvwIZqF%2FxJnhOxwSbbqRtO2l1V8k2oyLqyUo%3D",
       "description": "<p data-start=\"1314\" data-end=\"1380\" class=\"PDq2pG_selectionAnchorContainer\">Original <strong data-start=\"1323\" data-end=\"1343\">1972 A&amp;M Records</strong> 45 RPM single by the <strong data-start=\"1365\" data-end=\"1379\">Carpenters</strong>.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1382\" data-end=\"1392\"><strong data-start=\"1382\" data-end=\"1392\">Side A</strong></p>\n<ul data-start=\"1393\" data-end=\"1413\">\n<li data-section-id=\"1b7tptk\" data-start=\"1393\" data-end=\"1413\">\nHurting Each Other\n</li>\n</ul>\n<p data-start=\"1415\" data-end=\"1425\"><strong data-start=\"1415\" data-end=\"1425\">Side B</strong></p>\n<ul data-start=\"1426\" data-end=\"1442\">\n<li data-section-id=\"sp1ekw\" data-start=\"1426\" data-end=\"1442\">\nMaybe It's You\n</li>\n</ul>\n<p data-start=\"1444\" data-end=\"1594\">Featuring the unmistakable vocals of <strong data-start=\"1481\" data-end=\"1500\">Karen Carpenter</strong>, this original pressing is a great addition for collectors of classic '70s pop and soft rock.</p>\n<p data-start=\"1596\" data-end=\"1695\">The record will be shipped in a new paper sleeve, protective poly sleeve, and sturdy 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1639,5 +1639,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:25Z"
 }

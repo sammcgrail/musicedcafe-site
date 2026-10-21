@@ -1,0 +1,53 @@
+{
+  "id": 4751275,
+  "title": "Here Comes The Sun",
+  "artists": [
+    "Nina Simone"
+  ],
+  "year": 0,
+  "released": null,
+  "country": "Germany",
+  "labels": [
+    {
+      "name": "RCA International",
+      "catno": "NL 89421"
+    }
+  ],
+  "formats": [
+    {
+      "name": "Vinyl",
+      "qty": "1",
+      "descriptions": [
+        "LP",
+        "Album",
+        "Reissue"
+      ],
+      "text": ""
+    }
+  ],
+  "identifiers": [
+    {
+      "type": "Rights Society",
+      "description": "",
+      "value": "BIEM GEMA"
+    },
+    {
+      "type": "Label Code",
+      "description": "",
+      "value": "LC 0316"
+    },
+    {
+      "type": "Barcode",
+      "description": "",
+      "value": "0035628942111"
+    }
+  ],
+  "notes": "A C.F.N.S. Production\r\n",
+  "community": {
+    "have": 76,
+    "want": 168
+  },
+  "thumb": "https://i.discogs.com/Wj6Q_z4zEaTUwLEtczviam2JIPQmidKek0vhxteWZVk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NTEy/NzUtMTM3NDM0OTc0/NS02MDQyLmpwZWc.jpeg",
+  "uri": "https://www.discogs.com/release/4751275-Nina-Simone-Here-Comes-The-Sun",
+  "fetched_at": "2026-10-20T14:49:48Z"
+}

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -89,7 +89,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "2HS3350",
       "estimatedAvailabilities": [
@@ -114,8 +114,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1652,7 +1652,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127886358213?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Fg7be4wapYh9WKcenZDF38TSYlFXNolc2XrgzAP%2BYCUSkuEdZ%2FBoAWH44CS5JZ3IhN1udNKM2N4VHrpVP8UTotsCcnv4%2BgH7f5%2BWu%2BbD%2B%2F4jfP9dH4RE4r58au1iEyhGGkbK6NcvC5tqh8z2rwsxYpvsx8Dq%2FRa%2F6iW8UyIvJKPvD%2FdXgisYuNcoeCRSI5l2Y%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127886358213?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Fg7be4wapYh9WKcenZDF38TSYlFXNolc2XrgzAP%2BYCUU3dF3MKshosqswKbHKSeC%2BIXoIXAPf%2FGd78mS%2BonkqM2LMYvZVgBIqvuZFP4tsU2udQymm1RKB7Q9e%2FyySN%2BUWINPTyWCpIFs02ihLGhoAoJk0rerXnTYZT8nObASt0%2B267v8m9qf3ngi5xMpl5%2BUQ%3D",
       "description": "<h2 data-section-id=\"pmfsh7\" data-start=\"1345\" data-end=\"1387\">Fleetwood Mac – Tusk (2LP) Vinyl Record</h2>\n<p data-start=\"1389\" data-end=\"1426\"><span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Tusk</span></p>\n<p data-start=\"1428\" data-end=\"1501\">Original 2LP copy of Fleetwood Mac’s classic 1979 album <em data-start=\"1484\" data-end=\"1490\">Tusk</em> featuring:</p>\n<ul data-start=\"1502\" data-end=\"1585\">\n<li data-section-id=\"1j4dje1\" data-start=\"1502\" data-end=\"1508\">\nSara\n</li>\n<li data-section-id=\"1j4cicx\" data-start=\"1509\" data-end=\"1515\">\nTusk\n</li>\n<li data-section-id=\"l3u8jm\" data-start=\"1516\" data-end=\"1537\">\nSisters of the Moon\n</li>\n<li data-section-id=\"65no8c\" data-start=\"1538\" data-end=\"1546\">\nStorms\n</li>\n<li data-section-id=\"1b3aozh\" data-start=\"1547\" data-end=\"1563\">\nThink About Me\n</li>\n<li data-section-id=\"16ynedl\" data-start=\"1564\" data-end=\"1571\">\nAngel\n</li>\n<li data-section-id=\"1fkon7y\" data-start=\"1572\" data-end=\"1585\">\nOver &amp; Over</li></ul>",
       "paymentMethods": [
         {
@@ -1709,5 +1709,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:33Z"
 }

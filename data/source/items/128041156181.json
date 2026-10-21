@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "MS2025",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1612,7 +1612,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128041156181?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B7TrUE83DnwoqqmMWAkmj5%2FjYiRq3IquP4V9iS8S3hz3kHmMuyXvIxfIkvkqWNa5bjqHLR%2B63rJti1mLpAA%2B24CC9%2FYMZmDfOyOwi1uRu0SBPnBJNOsNmZv4PTNfpA2z7SimzyURmevwIHIs6yMTM6UCceDzAQFmSE4C%2FZBGansiJuFC%2FY%2Bfp%2FmhMLzoVS%2FRo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128041156181?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B7TrUE83DnwoqqmMWAkmj5%2FjYiRq3IquP4V9iS8S3hz7Ik0KBNFsL6xn%2FKvh6PB1nlURzgDM%2BE6U1bbwh1ES8SuZjnxVx%2F9rNQqxs8ylYQGHl1KIdMPfXmyhZYBGf1AHn4fMrell%2BV8QlkHNry7WwCbvI25%2F%2Bp3g1W1xAGP3IwHzsPgYPv1gjZRZ28hjzkebs%3D",
       "description": "<p>The Jimi Hendrix Experience – Smash Hits</p><br /><p>Vintage U.S. Reprise Records stereo LP, catalog number MS 2025.</p><br /><p>This classic Jimi Hendrix compilation brings together many of the Experience’s best-known recordings, including “Purple Haze,” “Fire,” “The Wind Cries Mary,” “Hey Joe,” “Foxy Lady,” “Crosstown Traffic,” and “All Along the Watchtower.”</p><br /><p>Track Highlights Include:</p><br /><p>Purple Haze</p><p>Fire</p><p>The Wind Cries Mary</p><p>Hey Joe</p><p>Stone Free</p><p>Manic Depression</p><p>Foxy Lady</p><p>Crosstown Traffic</p><p>All Along the Watchtower</p><p>Red House</p><br /><p>Format: 12-inch LP / 33⅓ RPM / Stereo</p><p>Label: Reprise Records</p><p>Catalog Number: MS 2025</p><br /><p>Condition:</p><p>Vinyl is in pre-owned condition with visible surface marks, hairlines, and scratches consistent with age and use while retaining decent overall gloss.</p><br /><p>Outer jacket shows substantial vintage shelf wear, including surface rubbing/scuffing, edge wear, corner wear, and general handling wear. Artwork and text remain intact and display well for its age.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p><br /><p>A classic collection of essential Jimi Hendrix recordings and a great addition for collectors of psychedelic rock, blues rock, classic rock, and vintage vinyl.</p><br /><p>Record will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1669,5 +1669,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:43Z"
 }

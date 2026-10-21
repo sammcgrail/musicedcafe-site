@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -92,8 +92,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1530,7 +1530,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014714452?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9rXc57zxJMJFJBANFCK7%2FUhww9V2eDPxyjSE%2BZrfDnvDQtlDMFhJN3JDKqrhAr%2BfI0RH9VcrOJk6txmTjaF288U9EHZq9C08%2BNz1XLrYQwwcFt6%2BRycEO28SfzpMhDkpmtbGeBl3iBkB7c501KcXOtQ2o83XV9V8Iy4GTEZXZZXkWQesswQ9NzIGsdq5wNvIw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014714452?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9rXc57zxJMJFJBANFCK7%2FUhww9V2eDPxyjSE%2BZrfDnvAVxGpwtKGhBF4KwCUL4DCJlvevBIKIm7BS4CdWZIIYdQ%2BNkHky3ZcZO7eCZT2kpwOcIrIVwVUZawqEGR87eo5GpHh9VagyLhjgnXVbFh%2F%2BTuu37%2FjR6RqePyVH81vkBUOcMXGccoDMCjSIudtnVe2c%3D",
       "description": "<p>Vintage Kitty Wells – “Password” / “I’ve Thought of Leaving You” 7-inch 45 RPM single on Decca Records, catalog 31622.</p><br /><p>A nice original Decca pressing from one of country music’s pioneering female stars. Kitty Wells is an essential figure in classic honky-tonk and traditional country music and remains collectible among vintage country fans.</p><br /><p>Condition: Visually graded approximately VG. Vinyl shows light surface marks, scuffs and signs of normal previous play. Labels show some age-related wear around the edges but remain colorful and clearly readable. Please review photos carefully for exact condition.</p><br /><p>Track Listing:</p><p>A – Password – 2:30</p><p>B – I’ve Thought of Leaving You – 2:41</p>",
       "paymentMethods": [
         {
@@ -1587,5 +1587,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:55Z"
 }

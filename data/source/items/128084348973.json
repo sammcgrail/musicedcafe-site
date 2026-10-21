@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1646,7 +1646,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128084348973?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8PDcAHcA29oAMzuuPOSKIK%2BHi2uAEo2zIw3xhxHRuHxOIK897tKW6wn6Cm4MWNNDo8xDGhxc%2FGTcIB0uehRHozt9xCsyKJoBPDlYD5HZ0NOCbnDAWghi9tLQGxJ%2FhQRuDGBUWyA4EkOaODu2sf11Kq0t5HRvzavke0gnWoxtQd2Fg%2F3IfMWUnV9Vgc49NAzWo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128084348973?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8PDcAHcA29oAMzuuPOSKIK%2BHi2uAEo2zIw3xhxHRuHxNmPcZC%2Fl8308IBLv358xQUjpPJJAnMFUkFidd6%2FS6gCpYYDXvF875GYhpd%2Fft2NnZlUqQA2kiqW57sUtRmixIZX9BcHZ2Hs5UVxYfaLEyQneE0vFMkPE4WQnF8LQvb0E523yRv4TF3DxjvsbXtg%2F2c%3D",
       "description": "<p dir=\"auto\" data-start=\"1096\" data-end=\"1181\" class=\"PDq2pG_selectionAnchorContainer\">Morris Day – <em data-start=\"1109\" data-end=\"1127\">Color of Success</em><br data-start=\"1127\" data-end=\"1130\">\nWarner Bros. Records – 1-25320<br data-start=\"1160\" data-end=\"1163\">\n1985 U.S. Vinyl LP<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p dir=\"auto\" data-start=\"1183\" data-end=\"1308\">Solo album from <strong data-start=\"1199\" data-end=\"1213\">Morris Day</strong>, frontman of The Time and a major figure in the Minneapolis funk sound associated with Prince.</p>\n<p dir=\"auto\" data-start=\"1310\" data-end=\"1319\">Features:</p>\n<p dir=\"auto\" data-start=\"1321\" data-end=\"1429\">“Color of Success”<br data-start=\"1339\" data-end=\"1342\">\n“The Character”<br data-start=\"1357\" data-end=\"1360\">\n“The Oak Tree”<br data-start=\"1374\" data-end=\"1377\">\n“Love Sign”<br data-start=\"1388\" data-end=\"1391\">\n“Don’t Wait for Me”<br data-start=\"1410\" data-end=\"1413\">\n“Love/Addiction”</p>\n<p dir=\"auto\" data-start=\"1431\" data-end=\"1609\" class=\"\">Vinyl retains strong gloss with light visible surface marks consistent with normal handling and play. No major deep scratches are apparent in the photos. <strong data-start=\"1585\" data-end=\"1609\">Visually graded VG+.</strong></p>\n<p dir=\"auto\" data-start=\"1611\" data-end=\"1807\">Original jacket shows noticeable shelf wear, edge and corner wear, surface rubbing, and creasing, including wear near the upper-right portion of the back cover. <strong data-start=\"1772\" data-end=\"1807\">Cover graded approximately VG-.</strong></p>\n<p dir=\"auto\" data-start=\"1809\" data-end=\"1891\">Please review all photos carefully, as they are part of the condition description.</p>\n<p dir=\"auto\" data-start=\"1893\" data-end=\"2055\"><strong data-start=\"1893\" data-end=\"1902\">Year:</strong> 1985<br data-start=\"1907\" data-end=\"1910\">\n<strong data-start=\"1910\" data-end=\"1920\">Label:</strong> Warner Bros. Records<br data-start=\"1941\" data-end=\"1944\">\n<strong data-start=\"1944\" data-end=\"1958\">Catalog #:</strong> 1-25320<br data-start=\"1966\" data-end=\"1969\">\n<strong data-start=\"1969\" data-end=\"1980\">Format:</strong> 12\" LP, 33⅓ RPM, Stereo<br data-start=\"2004\" data-end=\"2007\">\n<strong data-start=\"2007\" data-end=\"2017\">Genre:</strong> Funk / R&amp;B / Soul / Minneapolis Sound</p>\n<p dir=\"auto\" data-start=\"2057\" data-end=\"2422\" data-is-last-node=\"\" data-is-only-node=\"\"></p>",
       "paymentMethods": [
         {
@@ -1703,5 +1703,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:09Z"
 }

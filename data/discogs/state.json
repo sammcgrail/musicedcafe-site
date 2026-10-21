@@ -1,0 +1,30 @@
+{
+  "username": "music_ed_cafe",
+  "last_poll": {
+    "at": "2026-10-21T13:51:42Z",
+    "result": "ok",
+    "orders_seen": 0,
+    "sold_inventory_seen": 0,
+    "new_sales": 0,
+    "new_sale_ids": []
+  },
+  "last_match": {
+    "at": "2026-10-20T13:35:25Z",
+    "result": "ok",
+    "matched": 339,
+    "errors": []
+  },
+  "last_listing_sync": {
+    "at": "2026-10-21T10:47:02Z",
+    "result": "ok",
+    "done": {
+      "delete": 1
+    },
+    "planned": {
+      "delete": 1
+    },
+    "errors": [],
+    "gate": "ok"
+  },
+  "orders_cursor": "2026-10-21T13:51:42Z"
+}

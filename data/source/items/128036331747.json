@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -92,8 +92,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1560,7 +1560,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036331747?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8j4qFd2EpTCCm%2FmPXSkRThFqwFwxv2%2Fzo2mWn7tSXIKs2fXReMe3gEBP2CzinyQ%2FbAOgXW%2FS9KTnlNGvgLdyZatdAhE9x4DvVc5L6ebFXJGqDd37%2BbjdPxGNY8YjoWeKxVnSDRw0SRLELv97FrZw%2FOiZnDSESgRYFU9olX9oC5D%2FjJADyO4ewRwCe0vR9Sj8s%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036331747?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8j4qFd2EpTCCm%2FmPXSkRThFqwFwxv2%2Fzo2mWn7tSXIKoOZXgUKIEcUMf2yRVS%2Fq3ttHUn3xoidlfETegQyzhyNGym0XWxUSG%2BAx%2B5x6MXxNNvBSsfBXRgeXNZFcOXFjctlQfcH8JBJ%2B4t7ye1xIB2V78XpKIdMHA2BhmSV3w5Wz7S3jS3FTztYqByke5T0rFo%3D",
       "description": "<p>Eddy Grant – I Don’t Wanna Dance / Acapella 7” 45 Portrait 37-04039 1983</p><br /><p>Artist: Eddy Grant</p><p>Title: I Don’t Wanna Dance</p><p>B-Side: I Don’t Wanna Dance (Acapella)</p><p>Label: Portrait / Ice Records</p><p>Catalog Number: 37-04039</p><p>Format: 7” Vinyl Single / 45 RPM / Stereo</p><p>Country: USA</p><p>Year: 1983</p><br /><p>Classic 1980s Eddy Grant single featuring “I Don’t Wanna Dance” backed with the less commonly heard acapella version, making this a fun copy for Eddy Grant fans, DJs, samplers, and collectors of ‘80s pop, reggae and Caribbean-influenced music.</p><br /><p>The recording was produced and written by Eddy Grant and was taken from his hit album Killer on the Rampage.</p><br /><p>Condition:</p><p>Vinyl shows normal light surface wear consistent with age and previous use. Labels remain attractive with light storage/handling wear. Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great affordable original 1980s 45 to add to your collection.</p><br /><p>Ships securely in protective packaging specifically suited for 7-inch records.</p>",
       "paymentMethods": [
         {
@@ -1617,5 +1617,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:06Z"
 }

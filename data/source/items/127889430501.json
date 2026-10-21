@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1606,7 +1606,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127889430501?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde95%2BL9rXgyWPCqgFIX87poWoeiAri1PLFdz5fqjrbbNvFPUZ8xS3%2FfAo6Q%2BJtXyvPT3vhq2K8pKaeeAmyqZugZ5Q8YeA8V8soqVJWIfwra7dwNRZwwTkdW52rT%2Fvr9Nry21jH5Uwqa0XTOj7zuRxZizubD6ZtA%2FBER%2Bwa%2FOwHgv8izQ2Y%2FKSMVv3Wn0jmrk2ko%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127889430501?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde95%2BL9rXgyWPCqgFIX87poWoeiAri1PLFdz5fqjrbbNvAm6WMsNE6DZSl%2Bvk2Xwhb9LZmNpIhbhSiUKbKPP11D6LYVlBNRfQSo8SMsb%2BuSVLpIxzZtiiulBJdnuYcNHQEFzTwO2lcl90hakVEEgexqt5YDXjkTP0kom6T8ApbwbIs%2Bn8kZCWAUvKzTa%2Bb9zOzE%3D",
       "description": "<p data-start=\"1352\" data-end=\"1469\"><span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">The Kingsmen In Person</span> featuring the classic garage rock anthem <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Louie Louie</span>.</p>\n<p data-start=\"1471\" data-end=\"1551\">Classic early 1960s garage rock and proto-punk influence record on Wand Records.</p>\n<p data-start=\"1553\" data-end=\"1627\"><strong data-start=\"1553\" data-end=\"1563\">Vinyl:</strong>&nbsp;G<br data-start=\"1566\" data-end=\"1569\">\nShows light surface wear/hairlines but retains good gloss.</p>\n<p data-start=\"1629\" data-end=\"1711\"><strong data-start=\"1629\" data-end=\"1640\">Jacket:</strong> VG+<br data-start=\"1647\" data-end=\"1650\">\nGeneral age wear, corner wear, and light shelf wear as shown.</p>\n<p data-start=\"1713\" data-end=\"1729\">Great piece for:</p>\n<ul data-start=\"1730\" data-end=\"1865\" data-is-only-node=\"\">\n<li data-section-id=\"13mnjzu\" data-start=\"1730\" data-end=\"1754\">\ngarage rock collectors\n</li>\n<li data-section-id=\"1uoedru\" data-start=\"1755\" data-end=\"1781\">\nvintage rock &amp; roll fans\n</li>\n<li data-section-id=\"sc83ym\" data-start=\"1782\" data-end=\"1818\">\npunk/proto-punk history collectors\n</li>\n<li data-section-id=\"1a0tad1\" data-start=\"1819\" data-end=\"1865\">\nfans of “Louie Louie” and 1960s rock culture</li></ul>",
       "paymentMethods": [
         {
@@ -1663,5 +1663,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:21Z"
 }

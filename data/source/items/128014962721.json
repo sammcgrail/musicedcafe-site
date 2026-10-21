@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -78,7 +78,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PD14126",
       "estimatedAvailabilities": [
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1601,7 +1601,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014962721?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FKo0OnthQHIyxg%2BCoxefW8iZcMg68Y12WQv557eCH4WU892Wkd8Z9F6vskVxxnLpIOJ7U4DKrhpsrUb9JihD6UtxIJCFTaS49W03g3ANyCXTrr0GE1gXw5lDEfd4i6jMDg%2F4mPwTF90a3KssSQaPF8k8KbWA5JGC3bWxws3ozDG3hOrLa%2F2l76cqkdtjdAcJA%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014962721?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FKo0OnthQHIyxg%2BCoxefW8iZcMg68Y12WQv557eCH4WdAU9H3mNZtcJXIaxLYkxZgxP7fafsGXyuyDXy2pr6C4HICCNmAkrgFdxrqJGbW8YnZoiBXTGuhI1Wa8KKh6y94BwLkV5IWcFYRRddnfya%2FrTeQbrhPGhFI1sKjlkMg5dz9uE1AdVjUJ7sLnQZtQvV0%3D",
       "description": "<p>Original 1972 U.S. promotional 7” single by Cat Mother featuring “Letter to the President,” written by Bob Smith.</p><br /><p>This is the DJ promotional pressing with the mono version on one side and stereo version on the other. Both labels state “FOR DJ USE ONLY – NOT FOR SALE.”</p><br /><p>Artist: Cat Mother</p><p>Title: Letter to the President</p><p>Label: Polydor</p><p>Catalog #: PD-14126</p><p>Year: 1972</p><p>Format: 7” / 45 RPM</p><p>Country: USA</p><p>Side 1: Letter to the President – Mono – 3:20</p><p>Side 2: Letter to the President – Stereo – 3:20</p><p>Type: Promotional / DJ Copy</p><p>Genre: Rock / Folk Rock</p><br /><p>Includes the vintage Polydor company sleeve shown in the photographs.</p>",
       "paymentMethods": [
         {
@@ -1658,5 +1658,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:33Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "DE807",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1602,7 +1602,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970724331?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BSUBqyQmjd4oIwGJp6StnaX9RGjRfFdpnuxe5orQj4BPEBo7udvs8Emcdk2Kj8sMi0bitWhczuncfXsgngiHHcjEAosecChCKshPVPj2qD7pSmbScT%2Feo0NfR1I4ScwuRUP55%2B%2FcsNlHOeDwCMsObV2jgBMyGRRCPCVpw3W5yaM32SyNkqQ718reQvzkz5daM%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970724331?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BSUBqyQmjd4oIwGJp6StnaX9RGjRfFdpnuxe5orQj4BM1ceokWKIGRikDvk4iCDcIj5g3O2JaZhPnkws1ScFGIzGysAnTH71wiP5CG1heY3Uf7fa%2FVquSKd7sT%2Bh17jScUlLcHuQCXxbAKjPPeDN0uuczsFTBAL2Sw%2FCjZnX2tho7LnBgxNVU7nCOuO5NiB9w%3D",
       "description": "<p data-start=\"455\" data-end=\"503\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"455\" data-end=\"503\">Kool &amp; The Gang – Celebration / Morning Star</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"505\" data-end=\"656\">Original 1980 De-Lite Records 45 RPM single featuring the timeless party anthem <strong data-start=\"585\" data-end=\"603\">\"Celebration,\"</strong> one of Kool &amp; The Gang's biggest international hits.</p>\n<p data-start=\"658\" data-end=\"685\"><strong data-start=\"658\" data-end=\"669\">Artist:</strong> Kool &amp; The Gang</p>\n<p data-start=\"687\" data-end=\"713\"><strong data-start=\"687\" data-end=\"697\">Label:</strong> De-Lite Records</p>\n<p data-start=\"715\" data-end=\"741\"><strong data-start=\"715\" data-end=\"734\">Catalog Number:</strong> DE 807</p>\n<p data-start=\"743\" data-end=\"770\"><strong data-start=\"743\" data-end=\"754\">Format:</strong> 7\" Vinyl Single</p>\n<p data-start=\"772\" data-end=\"789\"><strong data-start=\"772\" data-end=\"782\">Speed:</strong> 45 RPM</p>\n<p data-start=\"791\" data-end=\"801\"><strong data-start=\"791\" data-end=\"801\">Stereo</strong></p>\n<h3 data-section-id=\"qfm5q2\" data-start=\"803\" data-end=\"813\">Tracks</h3>\n<p data-start=\"815\" data-end=\"825\"><strong data-start=\"815\" data-end=\"825\">Side A</strong></p>\n<ul data-start=\"826\" data-end=\"839\">\n<li data-section-id=\"gi6cqy\" data-start=\"826\" data-end=\"839\">\nCelebration\n</li>\n</ul>\n<p data-start=\"841\" data-end=\"851\"><strong data-start=\"841\" data-end=\"851\">Side B</strong></p>\n<ul data-start=\"852\" data-end=\"866\">\n<li data-section-id=\"1is5lc2\" data-start=\"852\" data-end=\"866\">\nMorning Star\n</li>\n</ul>\n<h3 data-section-id=\"1uef3h1\" data-start=\"868\" data-end=\"881\">Condition</h3>\n<p data-start=\"883\" data-end=\"914\"><strong data-start=\"883\" data-end=\"893\">Vinyl:</strong> Very Good Plus (VG+)</p>\n<ul data-start=\"915\" data-end=\"1087\">\n<li data-section-id=\"1fy7680\" data-start=\"915\" data-end=\"988\">\nNice original gloss with light surface wear consistent with normal use.\n</li>\n<li data-section-id=\"7aeyv8\" data-start=\"989\" data-end=\"1036\">\nLabels are clean with no writing or stickers.\n</li>\n<li data-section-id=\"1lrtmi5\" data-start=\"1037\" data-end=\"1087\">\nPlease review all photos for cosmetic condition.\n</li>\n</ul>\n<p data-start=\"1089\" data-end=\"1099\"><strong data-start=\"1089\" data-end=\"1099\">Sleeve</strong></p>\n<ul data-start=\"1100\" data-end=\"1129\">\n<li data-section-id=\"18q9mh6\" data-start=\"1100\" data-end=\"1129\">\nGeneric white paper sleeve.</li></ul>",
       "paymentMethods": [
         {
@@ -1659,5 +1659,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:57Z"
 }

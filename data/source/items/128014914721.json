@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1586,7 +1586,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014914721?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B1At6KN%2FxwKzoqmEfyFMPmmAePqs4K4mEH5TL%2FYpUrLAaXncGRPmw%2B33%2BL2NpV2wTqLeHct48TkRKGhjejDcmHi%2F68UHaEFHg6TiSs5P%2FyN5akeJZXeWkArVKi45bL3WlQV43qzxh25CRd%2BqCY6FAgatBYs8tdqF2NqYVRT5xeUMW%2Bkv725l2cs9mjkdi3whU%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014914721?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B1At6KN%2FxwKzoqmEfyFMPmmAePqs4K4mEH5TL%2FYpUrLF4EpFgU9Lnf85N1oHRte7md8Wq7QuLflBQDo9RYxyeOV9LXUoXFJD9OuLBmu%2FWMl9RrqLjlmQjJGYNtvf6MSSMZ4ljlpTsAdfNQ8GCXpkbLPvPezzQz2VNA0LZvNKmTbssXaLmOWaburgJ50V8TinU%3D",
       "description": "<p>Vintage Hank Snow Christmas 7-inch 45 RPM single on RCA Victor Records, catalog number 47-9030.</p><br /><p>Features two classic country Christmas recordings:</p><br /><p>God Is My Santa Claus</p><p>b/w</p><p>The Christmas Cannonball</p><br /><p>Produced by legendary Nashville producer Chet Atkins.</p><br /><p>A great vintage holiday record for collectors of Hank Snow, classic country, RCA Victor 45s, Christmas records and mid-century holiday music.</p><br /><p>Vinyl shows visible light scratches, scuffs and normal signs of previous play while retaining decent overall gloss. Labels remain attractive, clean and clearly readable.</p>",
       "paymentMethods": [
         {
@@ -1643,5 +1643,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:43Z"
 }

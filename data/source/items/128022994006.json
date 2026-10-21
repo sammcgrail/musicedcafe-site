@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "AS19793",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1577,7 +1577,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128022994006?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8PA%2FgBFi6Kv7SuCUIsaXwxsOBC%2FK03QPOiY7jKAEgTPnIIUdKUPGQ%2FaiG0U%2BR3L7DOTkkO7Dq7aS2FYe002hxbmT25bmW9L9Cl18mquZuq1E1QgA5r2OGq7VnAwzS3ZX7JMYJJ3HXSA207RWc7QGjTw5TmCBa4WfpP0DNO%2BfGwDUm%2FOK4I4Kq4rbkOMyrzARU%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128022994006?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8PA%2FgBFi6Kv7SuCUIsaXwxsOBC%2FK03QPOiY7jKAEgTPi0GAD%2FjL1WD522V2KMTAK5Dirdkwsm018SS4X8nh%2B5lw%2BnTTsNPPv%2B2%2F4ay17GmmfSEIbs9rMky6DjILPd2e4EpYnTrM6lWekvAlxviIEghMxGJEYe6RtOOXkv2y08hsNPV8DQCadOYZ1ACTRJzPB8%3D",
       "description": "<p>Carly Simon – Let the River Run / The Turn of the Tide</p><br /><p>Original U.S. 7-inch 45 RPM single on Arista Records.</p><br /><p>Artist: Carly Simon</p><p>A-Side: Let the River Run</p><p>B-Side: The Turn of the Tide</p><p>Label: Arista</p><p>Catalog Number: AS1-9793</p><p>Year: 1989</p><p>Format: 7” Vinyl Single</p><p>Speed: 45 RPM</p><p>Country: USA</p><p>Genre: Pop / Soundtrack / Adult Contemporary</p><br /><p>“Let the River Run” was featured as the theme from the film Working Girl. </p><br /><p>Record appears approximately VG/VG+ visually, with light surface wear consistent with normal use. Labels remain clean and readable.</p><br /><p>Includes the generic yellow paper sleeve pictured, showing age-related staining and handling wear.</p><br /><p>Please review all photos closely for exact cosmetic condition. Sold as pictured.</p>",
       "paymentMethods": [
         {
@@ -1634,5 +1634,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:22Z"
 }

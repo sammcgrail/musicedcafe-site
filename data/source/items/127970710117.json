@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "6824",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970710117?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BH3ksm1EjAq6LyVXUi9VuHIELtyvYNzsZ%2FI5Xp4aNrM4gAkyvdm%2FZ0hoVPCQIMIuR0VM8sery5I2fsfMasWXSTGGLRTduza%2F4y3tjZsot24mQTqwdEUU1aqjPYjMZJzdOizp%2BM8XK2DxBTC13Lhm5L2HTC0%2FM%2BYw95Aa8cY5YsNjWACUnm9LxPrVfahea2FT0%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970710117?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BH3ksm1EjAq6LyVXUi9VuHIELtyvYNzsZ%2FI5Xp4aNrM6fSJmU%2B589qM7m%2Fu68UirongHGfnd%2Bm4EW%2Fjkvayef3PPnhyNVZqNLnnYKGGzjm2VG%2FgK9N1omzdBm86zwlkI2Gs7%2BnSaUXeVwGGW2wr9Xu9VIU3SKiB9jgn1k4tUue7ZguSzTVbifPYlcKfelOz7c%3D",
       "description": "<p data-start=\"463\" data-end=\"529\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"463\" data-end=\"529\">The Bee Gees – How Can You Mend A Broken Heart / Country Woman</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"531\" data-end=\"622\">Original ATCO Records 45 RPM single featuring one of the Bee Gees' biggest early-'70s hits.</p>\n<p data-start=\"624\" data-end=\"644\"><strong data-start=\"624\" data-end=\"635\">Artist:</strong> Bee Gees</p>\n<p data-start=\"646\" data-end=\"669\"><strong data-start=\"646\" data-end=\"656\">Label:</strong> ATCO Records</p>\n<p data-start=\"671\" data-end=\"695\"><strong data-start=\"671\" data-end=\"690\">Catalog Number:</strong> 6824</p>\n<p data-start=\"697\" data-end=\"724\"><strong data-start=\"697\" data-end=\"708\">Format:</strong> 7\" Vinyl Single</p>\n<p data-start=\"726\" data-end=\"743\"><strong data-start=\"726\" data-end=\"736\">Speed:</strong> 45 RPM</p>\n<p data-start=\"745\" data-end=\"761\"><strong data-start=\"745\" data-end=\"757\">Country:</strong> USA</p>\n<h3 data-section-id=\"qfm5q2\" data-start=\"763\" data-end=\"773\">Tracks</h3>\n<p data-start=\"775\" data-end=\"785\"><strong data-start=\"775\" data-end=\"785\">Side A</strong></p>\n<ul data-start=\"786\" data-end=\"819\">\n<li data-section-id=\"12oiue9\" data-start=\"786\" data-end=\"819\">\nHow Can You Mend A Broken Heart\n</li>\n</ul>\n<p data-start=\"821\" data-end=\"831\"><strong data-start=\"821\" data-end=\"831\">Side B</strong></p>\n<ul data-start=\"832\" data-end=\"847\">\n<li data-section-id=\"1ruhd16\" data-start=\"832\" data-end=\"847\">\nCountry Woman\n</li>\n</ul>\n<h3 data-section-id=\"1uef3h1\" data-start=\"849\" data-end=\"862\">Condition</h3>\n<p data-start=\"864\" data-end=\"895\"><strong data-start=\"864\" data-end=\"874\">Vinyl:</strong> Very Good Plus (VG+)</p>\n<ul data-start=\"896\" data-end=\"1085\">\n<li data-section-id=\"eoto3a\" data-start=\"896\" data-end=\"920\">\nNice gloss throughout.\n</li>\n<li data-section-id=\"1xk1kqc\" data-start=\"921\" data-end=\"1002\">\nLight surface marks from normal handling that do not affect overall appearance.\n</li>\n<li data-section-id=\"lds5i3\" data-start=\"1003\" data-end=\"1038\">\nLabels are clean with no writing.\n</li>\n<li data-section-id=\"1b5qu30\" data-start=\"1039\" data-end=\"1085\">\nPlease review photos for cosmetic condition.\n</li>\n</ul>\n<p data-start=\"1087\" data-end=\"1097\"><strong data-start=\"1087\" data-end=\"1097\">Sleeve</strong></p>\n<ul data-start=\"1098\" data-end=\"1127\">\n<li data-section-id=\"18q9mh6\" data-start=\"1098\" data-end=\"1127\">\nGeneric white paper sleeve.</li></ul>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:59Z"
 }

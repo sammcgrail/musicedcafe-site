@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -89,7 +89,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "VMCTR4040D",
       "estimatedAvailabilities": [
@@ -114,8 +114,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1647,7 +1647,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128041069095?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8hsa0WmhUQ%2FgkF4GGUBSd7jYufzyqBAit%2Bj21qEBiXzJo6siphrO4i45WNqb2%2FV74UFJkyjDrW0WMPrjlNoJegsN4rH7faIpm8FkvJZlfyMBGXg%2BS%2BZ30b1y5MkXjRohdLqvmU3hDAWSZkOeH8xgz5XPcaFXrbCQIt1OT8BIHf842hAnMkLpGc4sHxymMk0E4%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128041069095?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8hsa0WmhUQ%2FgkF4GGUBSd7jYufzyqBAit%2Bj21qEBiXzJA8EBb64wINO80XYVnyYwHS5wU6gEJ2cSMgQm16jCtMlI%2FEyfKdN0t%2BWaa8%2FbSaQVjW8yhDYpN6ZYLhTu2btB0PwmlxSbDcojZgzhvfrK2rDszxcC9loPo8B2MWEoWeYtkUsvItpCuutvxLJxSPpHM%3D",
       "description": "<p>Thomas Rhett – Center Point Road</p><br /><p>2019 double-LP vinyl edition on The Valory Music Co. / Big Machine Label Group, catalog number VMCTR4040D.</p><br /><p>Thomas Rhett’s fourth studio album features 16 tracks across two records, including collaborations with Little Big Town, Kelsea Ballerini, and Jon Pardi.</p><br /><p>Track Highlights Include:</p><br /><p>Look What God Gave Her</p><p>Center Point Road featuring Kelsea Ballerini</p><p>Beer Can’t Fix featuring Jon Pardi</p><p>Don’t Threaten Me With a Good Time featuring Little Big Town</p><p>Remember You Young</p><p>Blessed</p><p>That Old Truck</p><p>Notice</p><p>VHS</p><p>Don’t Stop Drivin’</p><br /><p>Format: 2 LP / 12-inch Vinyl</p><p>Year: 2019</p><p>Label: The Valory Music Co. / Big Machine Label Group</p><p>Catalog Number: VMCTR4040D</p><br /><p>Condition:</p><p>Both vinyl records retain strong gloss with light surface and handling marks visible under direct lighting. No obvious deep scratches are visible in the photos.</p><br /><p>Outer jacket presents very well with strong artwork and only minor edge, corner, and storage wear.</p><br /><p>Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great addition for collectors of Thomas Rhett, modern country, country-pop, and contemporary vinyl.</p><br /><p>Records will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1704,5 +1704,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:43Z"
 }

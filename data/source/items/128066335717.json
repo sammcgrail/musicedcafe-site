@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -84,7 +84,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "CRL12064",
       "estimatedAvailabilities": [
@@ -109,8 +109,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1627,7 +1627,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128066335717?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8AwPhsuXUXYt502xgTb03%2FvLwILWr719eANtGORVMUKC2eBz%2FPDxJb0SnuQxcLA6mUgzt7Q5qcTC15yGsTpIh0PPXkuPwg6Rb6urHYLvvjavS3eXUw6u3T3%2FZDlJlsYcA%2BckFUHT7pJ2krhdEb%2FxG28QP7YPGN1gtG64vkLpfgOYc3lVDTcSykfq5zqfPGcVs%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128066335717?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8AwPhsuXUXYt502xgTb03%2FvLwILWr719eANtGORVMUKBb8lO1xFe71gbbo2N6ix4BvWVwv4r4JeqGHAnBb8XDvRvtjQWfSSKIJk07edgOP3sNHVcWfvvt2N1jQ5yPhtCWBBC68EJxsSG2i%2BlFzZtwULLy2tfIKA6nWGq0YaiRDrOkTJJIt2DIptgJtzoOQIGE%3D",
       "description": "<p data-start=\"2903\" data-end=\"3053\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2903\" data-end=\"2945\">Arthur Fiedler – A Legendary Performer</strong><br data-start=\"2945\" data-end=\"2948\">\nRCA Red Seal CRL1-2064<br data-start=\"2970\" data-end=\"2973\">\n1977 U.S. Stereo Vinyl LP<br data-start=\"2998\" data-end=\"3001\">\nFeaturing Arthur Fiedler &amp; the Boston Pops Orchestra<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"3055\" data-end=\"3232\">A retrospective collection celebrating legendary Boston Pops conductor Arthur Fiedler, combining classical favorites, Broadway selections, popular music, and American standards.</p>\n<p data-start=\"3234\" data-end=\"3253\">Selections include:</p>\n<ul data-start=\"3255\" data-end=\"3535\">\n<li data-section-id=\"q4nmlr\" data-start=\"3255\" data-end=\"3275\">\nStrike Up the Band\n</li>\n<li data-section-id=\"bxq32i\" data-start=\"3276\" data-end=\"3286\">\nJalousie\n</li>\n<li data-section-id=\"mqaoii\" data-start=\"3287\" data-end=\"3309\">\nWaltz of the Flowers\n</li>\n<li data-section-id=\"tnpzl6\" data-start=\"3310\" data-end=\"3329\">\nRitual Fire Dance\n</li>\n<li data-section-id=\"bu6h3g\" data-start=\"3330\" data-end=\"3356\">\nProcession of the Sardar\n</li>\n<li data-section-id=\"1ola6bj\" data-start=\"3357\" data-end=\"3391\">\nCavalleria Rusticana: Intermezzo\n</li>\n<li data-section-id=\"c4iuhu\" data-start=\"3392\" data-end=\"3405\">\nSabre Dance\n</li>\n<li data-section-id=\"17k5uet\" data-start=\"3406\" data-end=\"3428\">\nWine, Woman and Song\n</li>\n<li data-section-id=\"1svlpfw\" data-start=\"3429\" data-end=\"3450\">\nMy Fair Lady Medley\n</li>\n<li data-section-id=\"1xerb63\" data-start=\"3451\" data-end=\"3477\">\nI Want to Hold Your Hand\n</li>\n<li data-section-id=\"1on4cgg\" data-start=\"3478\" data-end=\"3503\">\nBoogie Woogie Bugle Boy\n</li>\n<li data-section-id=\"1t8vdx4\" data-start=\"3504\" data-end=\"3535\">\nThe Stars and Stripes Forever\n</li>\n</ul>\n<p data-start=\"3537\" data-end=\"3803\"><strong data-start=\"3537\" data-end=\"3551\">Condition:</strong> Vinyl visually graded VG+ with strong gloss and light signs of handling. Jacket remains in its original shrink wrap with light edge/corner wear. Includes the original illustrated booklet/picture insert. Shrink is open and record is not factory sealed.</p>",
       "paymentMethods": [
         {
@@ -1684,5 +1684,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:39Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -91,7 +91,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "MCA212001",
       "estimatedAvailabilities": [
@@ -116,8 +116,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1634,7 +1634,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127877323157?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9cWY4qrk3NCzCJ7n3Vf4dEbR0QFH4fck5rSzcXdcvm2PL7BQKaG6iQ8--MqEOyEziQYhgNm7PoxxlJY6qni57QIfMmWjNVEdZenf80HqQ1py2aZxZbBlTjifaDOVlkU9rAcR3jVWTr6mLGZMnG5%2BMvjagK%2BGA1O9U3Hz0s6SE0oeGJHt6YD2uV1%2BuzQV3UP2U%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127877323157?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9cWY4qrk3NCzCJ7n3Vf4dEbR0QFH4fck5rSzcXdcvm2L5ToZuivZR9z89AwWyJ4wQ4Mcgu70DlbBBRjSPhFj8DO40xLLwxNx7PEFdGD%2BcuBTgse%2BpxDDQoA4rBVCqjlc1MPGHcmPaHyJ3KFsFn%2FWirxnuZ6WYEE3LwFVwGzJH5g%2FLk0YssgkS1lkTcCa2FPcM%3D",
       "description": "<p data-start=\"426\" data-end=\"520\">Up for sale is a vintage copy of <strong data-start=\"459\" data-end=\"482\">The Who – Hooligans</strong> double LP compilation on MCA Records.</p>\n<p data-start=\"522\" data-end=\"582\">Features classic tracks spanning The Who’s career including:</p>\n<ul data-start=\"583\" data-end=\"719\">\n<li data-section-id=\"6wh4dj\" data-start=\"583\" data-end=\"600\">\nI Can’t Explain\n</li>\n<li data-section-id=\"1xpdjqn\" data-start=\"601\" data-end=\"617\">\nPinball Wizard\n</li>\n<li data-section-id=\"wjzqdx\" data-start=\"618\" data-end=\"632\">\nBaba O’Riley\n</li>\n<li data-section-id=\"vamnvc\" data-start=\"633\" data-end=\"642\">\nBargain\n</li>\n<li data-section-id=\"1a85h2w\" data-start=\"643\" data-end=\"658\">\nJoin Together\n</li>\n<li data-section-id=\"fyar05\" data-start=\"659\" data-end=\"672\">\nSqueeze Box\n</li>\n<li data-section-id=\"24enrc\" data-start=\"673\" data-end=\"683\">\nSlip Kid\n</li>\n<li data-section-id=\"1j2cplv\" data-start=\"684\" data-end=\"690\">\n5:15\n</li>\n<li data-section-id=\"5nd3m5\" data-start=\"691\" data-end=\"704\">\nWho Are You\n</li>\n<li data-section-id=\"1jqz3ps\" data-start=\"705\" data-end=\"719\">\nSister Disco\n</li>\n</ul>\n<p data-start=\"721\" data-end=\"778\">Includes both original vinyl records and original sleeve.</p>\n<p data-start=\"780\" data-end=\"1043\">Vinyls show light surface wear and hairlines consistent with age and normal play. Sleeve has moderate shelf wear, edge wear, ring wear, corner wear, and some creasing/discoloration visible in photos. Overall a solid vintage copy with lots of great listening left.</p>",
       "paymentMethods": [
         {
@@ -1691,5 +1691,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:37Z"
 }

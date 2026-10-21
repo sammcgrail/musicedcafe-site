@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "5240",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1592,7 +1592,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014734922?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9Um6Eho84PKfg6K0EYG1ziDHHA1UL38tfpyEO6e2lWmfhmo0%2FOkjAHn319N6Jymj5YHrBcTnqIGCpXqXSX%2FUd9gksvAxATVkH9xS4TyGO8Xuq2nM1vSJSUg5h00RkROiEwTVFTRUD12nOZoAe7SbjcHvPXfFa4tVcOhKyFWavGiOq%2Fz6SdS7wGF7MKzD26yXw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014734922?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9Um6Eho84PKfg6K0EYG1ziDHHA1UL38tfpyEO6e2lWmZjy0X4n4hn8fgfSSVUQYTGtJXEbwupBrO3ZzAZLXYd2CGLzm6Xi--qUh3tVjFtjISalLgNlxUp5kMZn1ql3UooDYAUEOkS9MRWYEaBfAySKiE0zaM4qlHDsgJ9hO%2FAiS0%2F1G9qukvzaR5w%2B%2F6xjVJk%3D",
       "description": "<p>Vintage Buck Owens 45 RPM single on the classic yellow/orange Capitol Records label.</p><br /><p>Features:</p><br /><p>A-Side: “I Don’t Care (Just as Long as You Love Me)” – 2:09</p><p>B-Side: “Don’t Let Her Know” – 2:33</p><br /><p>Catalog Capitol 5240, produced by Ken Nelson.</p><br /><p>“I Don’t Care (Just as Long as You Love Me)” is one of Buck Owens’ signature mid-1960s recordings and an excellent example of the Bakersfield Sound that made Owens one of the most important country artists of his era.</p><br /><p>Condition: Visually graded approximately VG. Vinyl shows surface marks/light scratches consistent with age and previous play. Labels display well with some normal wear. Please review the supplied photos carefully for exact cosmetic condition.</p>",
       "paymentMethods": [
         {
@@ -1649,5 +1649,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:51Z"
 }

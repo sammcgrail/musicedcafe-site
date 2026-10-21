@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -78,7 +78,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "T737",
       "estimatedAvailabilities": [
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1621,7 +1621,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128123699155?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8GOZcDFpuqfQdwBdSaqKFm%2F0zEfHXIY3G7KUDx%2FhCQtnuaA4Zcsv0ERZP%2B6tt6B2pYvDhw%2BumqAIkeenNI0DshD4vF95dWp82dku%2BeVMct4E9cDhsqIhc%2FwpPCSOTvkUG%2Fttc0nvYAGXZylPw9%2FT5Q5E7h9MyPqT%2BH%2FEVPrFu9WIcuxHnYGph5QuPAUP6NbaM%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128123699155?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8GOZcDFpuqfQdwBdSaqKFm%2F0zEfHXIY3G7KUDx%2FhCQtj%2FmybKr%2B9dXnwIeb30ENRoqhc6xFGCP9c6YmldqjR3YWfapCFMVtDqNEefZGHPoeQAlOU6l1N6%2FQJ0hmbdr7hAzfH7x4ELI%2Bi1r5V5jXm1AMqFE%2BkI1hA99JDklAVFK6LIQ0%2FwAY68hBAI25LRnS2Q%3D",
       "description": "<p><strong>The George Shearing Quintet – Latin Escapade</strong></p><p>Capitol Records – T-737<br>1957 US Mono LP<br>Jazz / Latin Jazz / Mambo</p><p>Classic George Shearing Quintet album blending cool jazz piano with Latin percussion, mambo and Afro-Cuban influences.</p><p><strong>Tracks include:</strong> Perfidia, Mambo With Me, Without You, Old Devil Moon, Mi Musica Es Para Ti, Anitra’s Nanigo, Yours, Cuban Love Song, Watch Your Step, Poodle Mambo, Canto Karabali and Strange Enchantment.</p><p><strong>Condition:</strong><br><strong>Vinyl: VG+</strong> – retains strong gloss with light surface marks visible under direct lighting. No major deep scratches apparent in the photos.</p><p><strong>Cover: VG</strong> – attractive front artwork with moderate age-related wear. Back cover shows discoloration/foxing, corner wear and writing. Please review photos carefully for exact condition.</p><p><strong>Artist:</strong> The George Shearing Quintet<br><strong>Album:</strong> Latin Escapade<br><strong>Label:</strong> Capitol Records<br><strong>Catalog:</strong> T-737<br><strong>Year:</strong> 1957<br><strong>Format:</strong> 12\" LP, 33⅓ RPM, Mono<br><strong>Country:</strong> USA<br><strong>Genre:</strong> Jazz / Latin<br><strong>Style:</strong> Latin Jazz / Mambo / Cool Jazz</p>",
       "paymentMethods": [
         {
@@ -1678,5 +1678,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:00Z"
 }

@@ -5,6 +5,9 @@
   enrich [--refresh] [--ids ...]    fetch public description/item pages for known items
   scrape-store                      best-effort read of the public store page (never ends items)
   ended-photos [--retry]            Browse lookup of sold/ended listings for Edwin's photos (cached)
+  confirm-sold [--ids ...] [--dry-run] [--no-build]
+                                    Browse getItem for unavailable/ended records: sold qty >= 1 and
+                                    0 available marks them sold (mec/confirm_sold.py); `sync` runs it too
   build                             regenerate public/live/
   status                            print sync state + review summary
   discogs match [--ids ...] [--rematch] [--limit N]   match records to Discogs releases (dry run, lists nothing)
@@ -72,6 +75,10 @@ def main(argv=None):
     p = sub.add_parser("ended-photos")
     p.add_argument("--retry", action="store_true", help="re-check not_found / error entries")
     p.add_argument("--spacing", type=float, default=1.0)
+    p = sub.add_parser("confirm-sold")
+    p.add_argument("--ids", nargs="*", help="check these ids (default: every unavailable/ended record with tries left)")
+    p.add_argument("--dry-run", action="store_true", help="look up and report, write nothing")
+    p.add_argument("--no-build", action="store_true")
     sub.add_parser("scrape-store")
     sub.add_parser("build")
     sub.add_parser("instagram")
@@ -124,6 +131,10 @@ def main(argv=None):
         from .browse import sync
         res = sync(force=a.force, dry_run=a.dry_run)
         print(json.dumps({k: v for k, v in res.items() if k != "state"}, indent=2))
+        if res.get("result") == "ok" and not a.dry_run:
+            from . import confirm_sold
+            from .util import config
+            print(json.dumps(confirm_sold.run(config()["ebay_seller_username"])))
         if res.get("result") == "ok" and not a.no_build:
             from . import merge, photos
             from .site import build
@@ -166,6 +177,17 @@ def main(argv=None):
         ids = sorted(k for k, r in store.load_items().items() if r.get("status") in ("sold", "ended"))
         print(json.dumps(ended.run(ids, config()["ebay_seller_username"], retry=a.retry, spacing=a.spacing)))
         return 0
+    if a.cmd == "confirm-sold":
+        from . import confirm_sold
+        from .util import config
+        cfg = config()
+        res = confirm_sold.run(cfg["ebay_seller_username"], ids=a.ids or None,
+                               marketplace=cfg.get("marketplace", "EBAY_US"), dry_run=a.dry_run)
+        print(json.dumps(res, indent=2))
+        if res.get("result") == "ok" and res.get("sold") and not a.no_build:
+            from .site import build
+            print(json.dumps(build()))
+        return 0 if res.get("result") in ("ok", "dry_run", "skipped") else 1
     if a.cmd == "scrape-store":
         from .scrape_store import scrape_store
         print(json.dumps(scrape_store(), indent=2))

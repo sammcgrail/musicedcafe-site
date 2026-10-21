@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -78,7 +78,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "DES18017",
       "estimatedAvailabilities": [
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1621,7 +1621,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127904272122?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Bo6IjMmNQ%2BcuKZq3PvzZhfIHpDyrp5dU2IsOyZIhOPTDVROyLotina2pOMma5va%2B5pVtONuHrPkkIzrGWM9LPtZSFw1WEcBWjhi359wxwxmcobe5vdNgPOi4OQ05pZdjfh02Zrn4fUFv1EbWQWQWBwprPPmZo1WmCzdHROBaeqUXyge514Y6JKPqdtPjvqq%2BU%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127904272122?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Bo6IjMmNQ%2BcuKZq3PvzZhfIHpDyrp5dU2IsOyZIhOPTJku6vAfyrgS65eLbAorfvYnUd%2B3lqoMFOMS7ZmzJ%2Ft39t9eECpQRRWituaFZGzyPcwmwd7ledmuBqF0YkAG4DLu9XIMhI0tBrhI2OBguPZEtXBBk5C8EtKe0vH91qRLaPDS8pEOv6FtsvtelrEiaoU%3D",
       "description": "<p data-start=\"1435\" data-end=\"1594\">Classic 1968 psychedelic/progressive rock album from The Moody Blues featuring \"Ride My See-Saw,\" \"Voices in the Sky,\" and \"Legend of a Mind.\"</p>\n<p data-start=\"1596\" data-end=\"1609\"><strong data-start=\"1596\" data-end=\"1609\">Condition</strong></p>\n<ul data-start=\"1610\" data-end=\"1664\">\n<li data-section-id=\"ck2z1o\" data-start=\"1610\" data-end=\"1622\">\nVinyl: VG+\n</li>\n<li data-section-id=\"jjw53w\" data-start=\"1623\" data-end=\"1636\">\nJacket: VG-\n</li>\n<li data-section-id=\"1x081n9\" data-start=\"1637\" data-end=\"1664\">\nEarly U.S. Deram pressing</li></ul>",
       "paymentMethods": [
         {
@@ -1678,5 +1678,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:07Z"
 }

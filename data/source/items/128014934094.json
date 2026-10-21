@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "6168",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1587,7 +1587,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014934094?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Fz%2BqVSv02BoYo4kYeD7HTWZpbqOanIxKHsnklSmC%2BsjCFMKPpCmV9XScoDYqKekWSheYoEMJUKmim4%2B1xc0wzUcw07E9PpGVgPCDxmpRJtvYxQh%2BUouMGyHlepRSH7049LR%2FmFDAHCz6haSluOprDjNxP5QbZaPJ0M4ROhArbo%2FvpHGsMVwLGR3GEI3FDL%2FNw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014934094?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Fz%2BqVSv02BoYo4kYeD7HTWZpbqOanIxKHsnklSmC%2BsjKQq3SNqPzJbUdDT87bmyHHVVZzRCVjBOmCu718Qx2aOpHlhHasCn9DFhJYHwZY9I15zi%2Bh6Db4u3DUDNM3m5DS7H8qfesFZyfCzRKZD6S0JkI2zoLJ9Mj1o1yMwEtFkwGOM7TAU0%2B0FNbfkf0yqHls%3D",
       "description": "<p>Vintage The Coasters – “Wake Me, Shake Me” / “Stewball” 45 RPM single on the classic yellow ATCO label.</p><br /><p>ATCO 45-6168</p><br /><p>“Wake Me, Shake Me” was produced by legendary songwriting/production team Jerry Leiber &amp; Mike Stoller, making this a nice collectible piece of early American R&amp;B/rock &amp; roll history.</p><br /><p>Record shows normal vintage wear including surface scratches and scuffing. Labels show discoloration and wear as pictured. Please review all photographs carefully for exact cosmetic condition.</p>",
       "paymentMethods": [
         {
@@ -1644,5 +1644,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:39Z"
 }

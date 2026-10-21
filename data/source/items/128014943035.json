@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "9726",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1592,7 +1592,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014943035?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FauMwmiqeNCV9kEa7s%2BGTiS3LxCAEBwL%2BBStrHBWXI%2BW4TxoYkTn9CSEtxKePP8Vhwgyn9wNvAXw5Wf1BkzDe3UTss%2Fbz%2FzLdz%2BY91r8%2FKUO4mw70X8OdCARny9xzZD1Lf2psTA3tD3YnJn46250DqSg1z3JH2M584QFnneDHMzwvM7VYszCWOqwx7fpiZ8fk%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014943035?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FauMwmiqeNCV9kEa7s%2BGTiS3LxCAEBwL%2BBStrHBWXI%2BUe51rG5IFWVOfe6px2HphoRDzJQK4kajdutjzI5JPSQGB31kMsCFmu5OQKKk4L8YyIh00iBQj7NfV%2FnrtP1m%2FC1SdBN4fhbpjbGKUMLt9723VvpqrLI3UhiQ3z6Me6OttYhNQJqs2p8uyn31qKaUrI%3D",
       "description": "<p>Vintage original-era U.S. pressing of The Moody Blues – “Go Now!” / “Lose Your Money”, released on London Records as 45 LON 9726.</p><br /><p>“Go Now!” comes from the band’s early Denny Laine-era period, before the later psychedelic/progressive sound for which The Moody Blues became especially famous. This U.S. configuration with “Lose Your Money” dates to early 1965. </p><br /><p>Track listing:</p><p>A: Go Now! – 3:00</p><p>B: Lose Your Money – 2:00</p><br /><p>Record shows vintage surface wear including light scratches and scuffs. Labels show minor age-related wear. Please review photographs carefully for exact condition.</p>",
       "paymentMethods": [
         {
@@ -1649,5 +1649,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:36Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1621,7 +1621,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128085282413?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8IKIQwJkce0GjTY0sTthPgXdclNsP9UhS7Av1ynzB18G1GqLXZISKz5qWBMb6oBpONW8icMzWXp9qC637g77l3u%2FaXaaal%2F5rSQI7YOq8g8h%2FdwajYTGqY%2FOOrZFKojXHy%2FbA1vj%2B%2Faookc2OKAeElQzcYbFBhlu1t3vbSyLPG5rEgyLDv6an11tlaa7WU%2FnQ%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128085282413?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8IKIQwJkce0GjTY0sTthPgXdclNsP9UhS7Av1ynzB18LnNFwFLcgp18xz7K%2FxbrOTBkzKetR0oPKakfzLKAlchLBasrYE%2FfsQVpFdzZRmqAvxYJJ5Ejoura0LtZp--WyeDhJJcmMojExzhUKrCDBHvp%2FHhaNrB6NUKuWxHSEl8OUV33FpSN5uVz2XAMIlUN60%3D",
       "description": "<p dir=\"auto\" data-start=\"3003\" data-end=\"3087\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"3003\" data-end=\"3024\">Defunkt – Defunkt</strong><br data-start=\"3024\" data-end=\"3027\">\nHannibal Records HNBL 1301<br data-start=\"3053\" data-end=\"3056\">\n1980 U.S. LP – Promotional Copy<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p dir=\"auto\" data-start=\"3089\" data-end=\"3214\">Original 1980 debut album from New York jazz-funk / punk-funk group <strong data-start=\"3157\" data-end=\"3168\">Defunkt</strong>, led by trombonist and vocalist Joseph Bowie.</p>\n<p dir=\"auto\" data-start=\"3216\" data-end=\"3321\">This copy features a <strong data-start=\"3237\" data-end=\"3283\">“Loaned for Promotion Only – Not For Sale”</strong> promotional stamp on the rear jacket.</p>\n<p dir=\"auto\" data-start=\"3323\" data-end=\"3332\">Includes:</p>\n<p dir=\"auto\" data-start=\"3334\" data-end=\"3496\">“Make Them Dance”<br data-start=\"3351\" data-end=\"3354\">\n“Strangling Me With Your Love”<br data-start=\"3384\" data-end=\"3387\">\n“In the Good Times”<br data-start=\"3406\" data-end=\"3409\">\n“Blues”<br data-start=\"3416\" data-end=\"3419\">\n“Defunkt”<br data-start=\"3428\" data-end=\"3431\">\n“Thermonuclear Sweat”<br data-start=\"3452\" data-end=\"3455\">\n“Melvin’s Tune”<br data-start=\"3470\" data-end=\"3473\">\n“We All Dance Together”</p>\n<p dir=\"auto\" data-start=\"3498\" data-end=\"3729\" class=\"\"><strong data-start=\"3498\" data-end=\"3512\">Condition:</strong> Vinyl is visually graded VG, showing light surface marks consistent with normal use. Jacket is VG with edge wear, corner wear, creasing and general shelf wear. Promotional stamp remains clearly visible on rear cover.</p>\n<p dir=\"auto\" data-start=\"3731\" data-end=\"3814\">Please review all photographs carefully, as the actual record for sale is pictured.</p>",
       "paymentMethods": [
         {
@@ -1678,5 +1678,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:06Z"
 }

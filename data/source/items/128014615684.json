@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1586,7 +1586,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014615684?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8ihjKvGgldhTkbjwh44991U5IgBdr4BRyglOvDVbDl%2BNsvLAfbpxlMZnOnwMzJsuCAYoyzoFgtBVE6j70b%2BZsMFW83IOnD46HXWewHHAF7Xjagye7ZvZtw00itLSVFtTh%2F%2BQnb5%2BWj4h%2BCYZThSmFy49bgocRo0zbVVvA2Dl5f%2BX%2FOixsji6WtpKnV213nmzY%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014615684?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8ihjKvGgldhTkbjwh44991U5IgBdr4BRyglOvDVbDl%2BNIvZbPwjGNMG1PgcDVp%2F8GIbvJpr4llLOdzknMBrXZl4k%2F6g6x9ecSVnL3cBPht%2BUraIUnaUi3Nh9NeMRrKKfTKpy%2Box01xD81s0%2Fi23bNmuTO8ccXpqkeORnXKHaCiP1M1PoH3njs8jBJPNn7WHEM%3D",
       "description": "<p>Hank Snow – “I’ve Been Everywhere” / “Ancient History” – RCA Victor 47-8072 – 45 RPM</p><br /><p>Original vintage RCA Victor 45 featuring Hank Snow’s classic recording of “I’ve Been Everywhere,” backed with “Ancient History.” Produced by legendary Nashville guitarist and producer Chet Atkins.</p><br /><p>Condition:</p><p>Vinyl is visually graded VG. Record retains good gloss with visible light scratches, scuffs and signs of handling consistent with its age. Labels show noticeable surface/ring wear but remain readable. Please review photos carefully for exact cosmetic condition.</p><br /><p>Record has not been graded as VG+ due to the visible surface marks.</p><br /><p>Includes a generic protective 45 RPM sleeve.</p>",
       "paymentMethods": [
         {
@@ -1643,5 +1643,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:59Z"
 }

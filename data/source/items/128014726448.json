@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1566,7 +1566,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014726448?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FuBO50gjbnPqLKkHdTDLtmUkrSYpUo0KLUbIDH%2BFERxda5hVzsWvIVITUWG2V9cx75nV%2BNVX54joD%2B8nKqF9i%2F0mPjWSay%2Bv0Hpf35h5y0awkNoLUEjfIx9oXJN5SoxN1MeDbnMv3AK%2FiKTY9E1JQZxljZB%2Bo6Ju%2FMPaiS3SUlUU2uuOadcx5L1AEwlfg9cEk%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014726448?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FuBO50gjbnPqLKkHdTDLtmUkrSYpUo0KLUbIDH%2BFERxQQJBwSBxB444%2Bv8Q%2BPZXdkmSHASOKH1yYC%2F8BGm2eJdWdNP3R8ZhZlbG5bcWeEaSXOGye%2B2wzkLqAPBwjCrcGULZkaaAsDHdtbuzdPpZ1hH4vHrF5jKCc6pHzj1vhc8av1GQ1phsHdB7styfX%2BvINo%3D",
       "description": "<p>Vintage Porter Wagoner RCA Victor 45 RPM single, catalog number 47-8105.</p><br /><p>Track Listing:</p><p>A – One Way Ticket to the Blues – 2:36 — Produced by Chet Atkins</p><p>B – I’ve Enjoyed As Much of This As I Can Stand – 2:37 — Produced by Anita Kerr</p><br /><p>Great vintage country collectible from Grand Ole Opry star Porter Wagoner, one of the major figures of the classic Nashville country era.</p><br /><p>Condition: Visually graded approximately VG. Vinyl shows surface marks, scuffs and signs of previous play but appears reasonably clean for its age. Labels have light-to-moderate wear but remain clear and readable. Please review the photos closely for exact cosmetic condition.</p>",
       "paymentMethods": [
         {
@@ -1623,5 +1623,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:53Z"
 }

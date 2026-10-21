@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "769317",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1592,7 +1592,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023139873?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde86oLy2MaMkg1%2BifFwiByOifh3xZmtGRsdqhdiH198NgYSwLADSxRSNjCYuiOlIV0dNb0zgC2vE9BOc9XV24INm8qOUjSi%2F%2BsSxmzcKXL7rqKISlgGU%2BmZnZiS4nla9VmeJwevfmRF9xt7Nn7UW%2Ft6HkEEWtSwusLXYtfLp%2BztX5fXz5Ly3S%2Fa0oaQpUg42024%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023139873?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde86oLy2MaMkg1%2BifFwiByOifh3xZmtGRsdqhdiH198NgehKrJBeHdVpFl32GEqp8TsAK01%2FLyjRFkCkFjD7LOBBowexhTCxmxX8DszrOYr2ojCRuVr%2F4tpjHtEK%2F%2B7VJwzWQG80hu%2FH76CW8g7wsetzmc8%2FC43g72z%2F3BLhrkUduiHhkhqEZkr0QBhwjuEgc0Q%3D",
       "description": "<p>Original Elektra 7-inch single from Simply Red featuring “It’s Only Love”, backed with “Turn It Up.” Produced by Stewart Levine for Olivera Productions Ltd.</p><br /><p>A nice late-’80s Simply Red collectible for fans of soul, blue-eyed soul, pop, and 1980s vinyl singles.</p><br /><p>Please review all photos for exact condition and label variation.</p>",
       "paymentMethods": [
         {
@@ -1649,5 +1649,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:10Z"
 }

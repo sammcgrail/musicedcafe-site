@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -77,7 +77,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -101,8 +101,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1599,7 +1599,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128123727334?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FlRFmFimtxsfTWANUF4yxgAWZo0SpbWxyr9D81wrc0bQpRXQdS8dovSMj5r37LoAjHAnfq6Sh%2FacgmdE26lhJy2LuyjxEmCbLABjGdIlIkDtExfLB0zO80MgZq9aYc4iq9ipI%2FRiSgB5bE3hcEPuzEdKKobgJr8ENExIZ8uHhXInNa%2Fn0Juncr70XL4euM9Gk%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128123727334?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FlRFmFimtxsfTWANUF4yxgAWZo0SpbWxyr9D81wrc0bZg5%2FGR8Kc0%2BCfncWWMwArTHXa5e%2Bu8hfEfQiliRMVMNk5kcVrIsYl7QpqRs%2FfIcVn3svTejic3%2F69yC12anASutNmDh2HcHuBp6gRn7zBJ9D9Gt2sJG7FIbxz%2BFvjA%2ByoexDJ0PDaB7TePBBBytW6g%3D",
       "description": "<p><strong>Scott Joplin – The Red Back Book</strong><br>The New England Conservatory Ragtime Ensemble<br>Conducted by Gunther Schuller<br>Angel Records – S-36060<br>1973 U.S. Stereo LP</p><p>Classic orchestral ragtime recording featuring works by Scott Joplin and other early ragtime composers, performed by the New England Conservatory Ragtime Ensemble under Gunther Schuller.</p><p>Highlights include <strong>“The Entertainer,” “The Easy Winners,” “The Rag Time Dance,” “Maple Leaf Rag,” “The Chrysanthemum,” “The Cascades,” “Sugar Cane,”</strong> and more.</p><p><strong>Condition:</strong><br>Vinyl: <strong>VG+ visually</strong> – very clean-looking surface with strong gloss and only light signs of handling visible in photos.<br>Cover: <strong>VG+</strong> – original shrink wrap remains largely intact with original front hype sticker. Minor shelf/corner wear may be present beneath or around the shrink. Please review all photos for exact condition.</p><p><strong>Label:</strong> Angel Records<br><strong>Catalog #:</strong> S-36060<br><strong>Year:</strong> 1973<br><strong>Format:</strong> 12\" LP, 33 RPM, Stereo<br><strong>Genre:</strong> Ragtime / Jazz / Classical<br><strong>Composer:</strong> Scott Joplin<br><strong>Conductor:</strong> Gunther Schuller<br><strong>Performer:</strong> New England Conservatory Ragtime Ensemble</p>",
       "paymentMethods": [
         {
@@ -1656,5 +1656,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:24:54Z"
 }

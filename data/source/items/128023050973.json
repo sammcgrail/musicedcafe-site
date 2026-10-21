@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "3808062",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1602,7 +1602,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023050973?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FYaQZ77iojIIyILCHwiCvioSc7MqMGKDTzb6LmyzaUdzY%2BsmXslwfT4zHSwevIrw40bsgMiUI77LeGNsUJMC8hBQRUDIHISGmkwVMcVoQbCbQQ1HAsxECio7BKlCwqk9afDt0ufHDfT1OY4Iu877rwMiHNRlMEBwv8k1oKS1KBRGpCchrv7WCG8qV2ReD9gM8%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023050973?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FYaQZ77iojIIyILCHwiCvioSc7MqMGKDTzb6LmyzaUd%2FLzD2eVPXAGuUz7E1CSn1Un%2FRCy4j%2B94e3MH5rZdp2ZU8NGT8GVuI12akV8p8c4kz1w45l7Fbfa2SPVF7ckmwujWBinhwWktUQtX%2FDYrpuEQ87cw2DlNKtdHrbsUuehzwGb9181ayClQw9WorKm4O8%3D",
       "description": "<p>Barbra Streisand &amp; Don Johnson – Till I Loved You / Two People – Columbia 38-08062 – 1988 7” 45 RPM</p><br /><p>Original 1988 U.S. Columbia Records single featuring Barbra Streisand and Don Johnson performing “Till I Loved You (The Love Theme From Goya)”, backed with Streisand’s “Two People,” the theme from the motion picture Nuts.</p><br /><p>Vinyl appears VG+ visually, retaining good gloss with light surface/handling marks consistent with normal use. No major deep scratches are visible.</p><br /><p>Labels remain bright, clean and fully readable.</p><br /><p>Includes the generic yellow paper sleeve shown in the photos. Sleeve has age-related discoloration and storage wear.</p><br /><p>Visually graded unless otherwise stated. Please review all photos carefully for exact condition.</p>",
       "paymentMethods": [
         {
@@ -1659,5 +1659,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:18Z"
 }

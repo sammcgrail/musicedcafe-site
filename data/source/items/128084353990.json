@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "CL888",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1627,7 +1627,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128084353990?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8y7nrq9ORjKcP8I7VFpDaoZpEJepY9zzMSYMYJlcaQyYyei3ZMk5XzC2x5eL%2F83NYpB9GVc8tmYn5OtNDOYFG%2Bk9%2BYSg%2BSAepFUrrtsKpnJLR7uUpQmHRSMLykzZEZQ1iQfarrg09xe0lUqrYt6QB2q%2F69MfBmaGc4YQ9MgFznuQ%2FjzZjfm%2Fs3Ixome8LWbeo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128084353990?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8y7nrq9ORjKcP8I7VFpDaoZpEJepY9zzMSYMYJlcaQyS%2B0qJYERco1181YlVOJdCBGALZ7ZdHYbpRzA4WJ9anKsQuCHp3ZNVW7XCNVn2v%2Fl1ISFWrBv9EC5R8MkkM4aGNR4iMciz4P%2B4KQMzEsiuCpVKSdTsAb7A0j%2FplEFDCI%2FrmkvpkJZe9gyeFBTJ4FSrA%3D",
       "description": "<p dir=\"auto\" data-start=\"884\" data-end=\"980\" class=\"PDq2pG_selectionAnchorContainer\">Michel Legrand and His Orchestra – <em data-start=\"919\" data-end=\"937\">Castles in Spain</em><br data-start=\"937\" data-end=\"940\">\nColumbia Records – CL 888<br data-start=\"965\" data-end=\"968\">\nU.S. Mono LP<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p dir=\"auto\" data-start=\"982\" data-end=\"1247\">An early orchestral album from celebrated French composer, arranger, and conductor <strong data-start=\"1065\" data-end=\"1083\">Michel Legrand</strong>, built around musical impressions of Spain. The record combines orchestral pop, jazz-influenced arranging, and Spanish themes including flamenco-inspired material.</p>\n<p dir=\"auto\" data-start=\"1249\" data-end=\"1264\">Tracks include:</p>\n<p dir=\"auto\" data-start=\"1266\" data-end=\"1475\">España<br data-start=\"1272\" data-end=\"1275\">\nSentir de la Alhambra<br data-start=\"1296\" data-end=\"1299\">\nLa Danse du Feu<br data-start=\"1314\" data-end=\"1317\">\nAndalucía<br data-start=\"1326\" data-end=\"1329\">\nEl Gato Montés<br data-start=\"1343\" data-end=\"1346\">\nTango<br data-start=\"1351\" data-end=\"1354\">\nEspaña Cañí<br data-start=\"1365\" data-end=\"1368\">\nJungle Drums<br data-start=\"1380\" data-end=\"1383\">\nOriental<br data-start=\"1391\" data-end=\"1394\">\nMalagueña<br data-start=\"1403\" data-end=\"1406\" data-is-only-node=\"\">\nLa Violetera<br data-start=\"1418\" data-end=\"1421\">\nEl Choclo<br data-start=\"1430\" data-end=\"1433\">\nRondella Aragonesa<br data-start=\"1451\" data-end=\"1454\">\nSant Martí del Canigó</p>\n<p dir=\"auto\" data-start=\"1477\" data-end=\"1662\" class=\"\">Vinyl retains strong gloss and shows light visible surface marks consistent with normal handling and play. No obvious major scratches are visible in the photos. <strong data-start=\"1638\" data-end=\"1662\">Visually graded VG+.</strong></p>\n<p dir=\"auto\" data-start=\"1664\" data-end=\"1833\">Original Columbia jacket remains attractive with light age-related wear, minor edge/corner wear, and some discoloration/toning. <strong data-start=\"1792\" data-end=\"1833\">Cover graded approximately VG to VG+.</strong></p>\n<p dir=\"auto\" data-start=\"1835\" data-end=\"1917\">Please review all photos carefully, as they are part of the condition description.</p>\n<p dir=\"auto\" data-start=\"1919\" data-end=\"2084\"><strong data-start=\"1919\" data-end=\"1929\">Label:</strong> Columbia<br data-start=\"1938\" data-end=\"1941\">\n<strong data-start=\"1941\" data-end=\"1955\">Catalog #:</strong> CL 888<br data-start=\"1962\" data-end=\"1965\">\n<strong data-start=\"1965\" data-end=\"1976\">Format:</strong> 12\" LP, 33⅓ RPM, Mono<br data-start=\"1998\" data-end=\"2001\">\n<strong data-start=\"2001\" data-end=\"2013\">Country:</strong> USA<br data-start=\"2017\" data-end=\"2020\">\n<strong data-start=\"2020\" data-end=\"2030\">Genre:</strong> Jazz / Orchestral / Easy Listening / Latin-influenced</p>",
       "paymentMethods": [
         {
@@ -1684,5 +1684,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:08Z"
 }

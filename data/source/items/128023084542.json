@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "51057R",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1587,7 +1587,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023084542?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8pdfCuGB979z2jvnwttUIh7kiURon8jEx30VDKaHHJ3S%2Bsw03%2FQsvMlxryo6wE7UKRxNTXihVzlFzqi%2B0t9xqMlgQ4r9Zuqn4QI9XiWY5GvmxuvxNfMXV5ByBGlu15gmh5fJqtB1B7O2uePz18Mc2AFD5wHxiH4c3utWN%2FNQWMhEkD0UF1Wp5kgOSkBldjscg%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023084542?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8pdfCuGB979z2jvnwttUIh7kiURon8jEx30VDKaHHJ3Z7HJ9YCoJgkwOJiHYDwLKE0y4U6ET4GrpN%2FmydGYRMEsKGfMl1PJEaBi2qM%2Bwx%2BYEeP9HPT6a7axsH7QG9M%2BQpOnTzJDKwviUQ3oJ89v68KyWgIgCbsZsV5P6aoA5HDmEzdL0vVlkj%2B6ZSO1AbssZs%3D",
       "description": "<p>Daryl Hall – Someone Like You – RCA 5105-7-R – Vintage 7” 45 RPM Single</p><br /><p>Original U.S. RCA pressing featuring alternate versions of Daryl Hall’s “Someone Like You.”</p><br /><p>Side A: Someone Like You (With Guitar Solo) – 4:07</p><p>Side B: Someone Like You (With Sax Solo)</p><br /><p>Released during Daryl Hall’s Three Hearts in the Happy Ending Machine period. </p><br /><p>Vinyl appears VG+ visually, with good gloss and light surface/handling marks consistent with normal use. Labels remain in nice condition.</p><br /><p>Includes generic green paper sleeve shown in photos.</p><br /><p>Visually graded unless otherwise stated. Please review all photos carefully for exact condition.</p>",
       "paymentMethods": [
         {
@@ -1644,5 +1644,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:15Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "CS9720",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1637,7 +1637,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128069488594?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8jgy%2FbcCI47By02pzuBzvnZCXgmXZXIULmG0NEzVY8sZTqsKP9Ds65n6Pfj6HwxUIit8dCFJ%2BYE1wF4SInPEtMgqtS25joZExC%2FqE8F1hWy%2F5z4I%2BsYjSvEkZAK2HQQMYtkeNplJRYFNsfnDh9XjIQi3XJS0HaxQkHO%2B5MP35%2BcbbONT%2FaciF0HC5zhgkb2Fs%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128069488594?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8jgy%2FbcCI47By02pzuBzvnZCXgmXZXIULmG0NEzVY8saBZW%2FIKWIhI6g1CIjD9oQauU6b%2FKnnCsxk%2BaEhwVmVbnDzez%2Fl3wuT4upy1ei3L%2B9pCCIAMkO6U4rcu2B%2FzFLhfNrq0PFjktyL1aLNEU7T5eA2wLIaWKXNMeI4Opq0PCsi0dhTXs7oJZFT%2FbQY4wXY%3D",
       "description": "<p data-start=\"2369\" data-end=\"2416\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2369\" data-end=\"2416\">Blood, Sweat &amp; Tears – Blood, Sweat &amp; Tears</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2418\" data-end=\"2499\">Original-era Columbia stereo LP featuring the classic red <strong data-start=\"2476\" data-end=\"2491\">“360 Sound”</strong> labels.</p>\n<p data-start=\"2501\" data-end=\"2652\"><strong data-start=\"2501\" data-end=\"2511\">Label:</strong> Columbia<br data-start=\"2520\" data-end=\"2523\">\n<strong data-start=\"2523\" data-end=\"2542\">Catalog Number:</strong> CS 9720<br data-start=\"2550\" data-end=\"2553\">\n<strong data-start=\"2553\" data-end=\"2564\">Format:</strong> 12\" Vinyl LP<br data-start=\"2577\" data-end=\"2580\">\n<strong data-start=\"2580\" data-end=\"2590\">Speed:</strong> 33⅓ RPM<br data-start=\"2598\" data-end=\"2601\">\n<strong data-start=\"2601\" data-end=\"2612\">Stereo:</strong> Yes<br data-start=\"2616\" data-end=\"2619\">\n<strong data-start=\"2619\" data-end=\"2631\">Country:</strong> USA<br data-start=\"2635\" data-end=\"2638\">\n<strong data-start=\"2638\" data-end=\"2647\">Year:</strong> 1968</p>\n<p data-start=\"2654\" data-end=\"2806\">One of the defining albums of late-1960s jazz-rock and horn-driven rock, featuring David Clayton-Thomas and several of the band's best-known recordings.</p>\n<p data-start=\"2808\" data-end=\"2831\"><strong data-start=\"2808\" data-end=\"2831\">Highlights include:</strong></p>\n<ul data-start=\"2832\" data-end=\"2974\">\n<li data-section-id=\"g4lmhd\" data-start=\"2832\" data-end=\"2848\">\nSpinning Wheel\n</li>\n<li data-section-id=\"1g4snow\" data-start=\"2849\" data-end=\"2879\">\nYou’ve Made Me So Very Happy\n</li>\n<li data-section-id=\"8urshi\" data-start=\"2880\" data-end=\"2896\">\nAnd When I Die\n</li>\n<li data-section-id=\"1ix42fi\" data-start=\"2897\" data-end=\"2918\">\nSometimes in Winter\n</li>\n<li data-section-id=\"q58qo3\" data-start=\"2919\" data-end=\"2934\">\nMore and More\n</li>\n<li data-section-id=\"129etz0\" data-start=\"2935\" data-end=\"2956\">\nGod Bless the Child\n</li>\n<li data-section-id=\"1qhzbsx\" data-start=\"2957\" data-end=\"2974\">\nBlues – Part II</li></ul>",
       "paymentMethods": [
         {
@@ -1694,5 +1694,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:30Z"
 }

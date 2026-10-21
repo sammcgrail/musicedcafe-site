@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "M7907R1",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1647,7 +1647,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127870971172?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8xLadSRCIm90NfkcV7omOwj56SL1IxsQol%2BGiJW48HOzalPAACLx3uhgoXggWYZiVTenWqGpqabp9MgHqKstE9Hki2RGhqjPVhnMtHwSwttm%2F3BkD6gZu8bxQIbbZDH5dtlZ4%2Bb4kLoiUcTpjr1ls6TPmgFHHQZ%2F5IK5Jjt92%2BbLgU8xhrwdsdiUGmDSzZNMo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127870971172?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8xLadSRCIm90NfkcV7omOwj56SL1IxsQol%2BGiJW48HO1wuT59duBA620jMaei35YXlXv8IR3CwduhA8vcgSQ6Q84MCQLEV5Vds%2Fph28AQWudKXY37ZnBX9OCCK6CDxZb9FqHmGy6xrs48Ei%2F9P9u3jIzqhbrmnHMXey8MfEZr704dB7u4gexLXLKEIAT7Isio%3D",
       "description": "<h1><strong>Artist:</strong> Diana Ross</h1><p class=\"isSelectedEnd\"><strong>Album:</strong> Diana<br><strong>Label:</strong> Motown<br><strong>Catalog Number:</strong> M7-907R1<br><strong>Format:</strong> Vinyl LP, 12”, 33 RPM<br><strong>Country:</strong> US<br><strong>Genre:</strong> Funk / Soul / Disco</p><p class=\"isSelectedEnd\">A beautiful vintage copy of Diana Ross’ classic <em>Diana</em> album featuring iconic tracks including:</p><ul data-spread=\"false\"><li>“Upside Down”</li><li>“I’m Coming Out”</li><li>“Love Hangover”</li></ul><p class=\"isSelectedEnd\">Produced by Nile Rodgers and Bernard Edwards of Chic, this is one of Diana Ross’ most celebrated and collectible albums.</p><h2>Notes</h2><ul data-spread=\"false\"><li>Original Motown pressing</li><li>Great collector and listening copy</li><li>Stored upright in a smoke-free environment</li><li>Record will be packed carefully for safe shipping</li></ul><p class=\"isSelectedEnd\">Please review photos closely for condition details.</p><p>Perfect addition for collectors of soul, disco, Motown, and classic vinyl records.</p>",
       "paymentMethods": [
         {
@@ -1704,5 +1704,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:44Z"
 }

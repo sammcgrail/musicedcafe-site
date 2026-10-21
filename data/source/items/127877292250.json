@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -86,7 +86,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SS8512",
       "estimatedAvailabilities": [
@@ -111,8 +111,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1629,7 +1629,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127877292250?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8UtNpS5QPE737f5g%2FOVxcoKaRIrPwfEhi3GCowC%2BILjRb%2Bs2RFr3IHFUz%2BjOEUEQ5Fn7WdcrGTP13gJUUYQSkRrgRA1Obp7%2BQj9Ysod9tJiMeXVJ%2BSwlsCVgrUKIQTDuYMFX3pack%2BMAwHDMPtG5ryaNGACKatJRE0Uzk4e%2B9kPSmLjjd9MpdZYtA3BLXMqAk%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127877292250?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8UtNpS5QPE737f5g%2FOVxcoKaRIrPwfEhi3GCowC%2BILjSc%2BhMDMsiCqKSYbbVyPOqK1XEe%2B2GCb7Aso5sYSfPP5uTWRvpU6GCW5Q7msrpPZgga%2B1Xkvfktj8p%2Bt2z97F0BzO4n8GbbqbHUTUrBhQSB3eqotII7A3YqJ4p2GK5rGaB5GjU6ymlR%2FzsGhOaeH6FQ%3D",
       "description": "<p data-start=\"155\" data-end=\"427\">Original 1982 pressing of <em data-start=\"200\" data-end=\"220\">Pictures At Eleven</em>, the debut solo album from Robert Plant following his work with Led Zeppelin. Released on Swan Song Records (SS 8512), this album features a strong mix of rock, blues, and atmospheric early ‘80s production.</p>\n<p data-start=\"429\" data-end=\"522\">Includes fan favorites like “Burning Down One Side,” “Moonlight in Samosa,” and “Pledge Pin.”</p>\n<p data-start=\"524\" data-end=\"754\">Vinyl appears very clean and glossy with light surface wear visible under bright light. Jacket is in solid vintage condition with some shelf wear, edge wear, light discoloration/aging, and a small sticker on the back upper corner.</p>\n<p data-start=\"756\" data-end=\"852\">A great copy for Led Zeppelin fans, Robert Plant collectors, and classic rock vinyl enthusiasts.</p>\n<p data-start=\"854\" data-end=\"1075\"><strong data-start=\"854\" data-end=\"865\">Artist:</strong> Robert Plant<br data-start=\"878\" data-end=\"881\">\n<strong data-start=\"881\" data-end=\"891\">Title:</strong> Pictures At Eleven<br data-start=\"910\" data-end=\"913\">\n<strong data-start=\"913\" data-end=\"923\">Label:</strong> Swan Song Records<br data-start=\"941\" data-end=\"944\">\n<strong data-start=\"944\" data-end=\"963\">Catalog Number:</strong> SS 8512<br data-start=\"971\" data-end=\"974\">\n<strong data-start=\"974\" data-end=\"985\">Format:</strong> Vinyl, LP, Album<br data-start=\"1002\" data-end=\"1005\">\n<strong data-start=\"1005\" data-end=\"1014\">Year:</strong> 1982<br data-start=\"1019\" data-end=\"1022\">\n<strong data-start=\"1022\" data-end=\"1032\">Genre:</strong> Rock<br data-start=\"1037\" data-end=\"1040\">\n<strong data-start=\"1040\" data-end=\"1050\" data-is-only-node=\"\">Style:</strong> Classic Rock / Hard Rock</p>\n<p data-start=\"1077\" data-end=\"1100\"><strong data-start=\"1077\" data-end=\"1098\">Track Highlights:</strong></p>\n<ul data-start=\"1101\" data-end=\"1228\">\n<li data-section-id=\"i6tyi6\" data-start=\"1101\" data-end=\"1126\">\nBurning Down One Side\n</li>\n<li data-section-id=\"14yumq8\" data-start=\"1127\" data-end=\"1150\">\nMoonlight In Samosa\n</li>\n<li data-section-id=\"52q474\" data-start=\"1151\" data-end=\"1165\">\nPledge Pin\n</li>\n<li data-section-id=\"ddoib6\" data-start=\"1166\" data-end=\"1188\">\nWorse Than Detroit\n</li>\n<li data-section-id=\"12po9u6\" data-start=\"1189\" data-end=\"1200\">\nFat Lip\n</li>\n<li data-section-id=\"1e2al9h\" data-start=\"1201\" data-end=\"1228\">\nLike I’ve Never Been Gone</li></ul><div>Record Condition: VG+. Clean glossy vinyl with light cosmetic wear from normal use. Sleeve Condition: VG. Light shelf wear, edge wear, aging/discoloration, and small sticker on back cover.</div>",
       "paymentMethods": [
         {
@@ -1686,5 +1686,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:38Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "T54180",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1587,7 +1587,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970843877?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BvlhK7f0aTaKyO7QPFtk%2BTHbM8WehQDPVRBty%2BNi%2FaIP8lJ8%2FBOl2UZpc3wN9QzZkz2dEPsH%2FEHIrqIpQUcg0YX94Q34gRZMXTakIw1%2B0nrbgd1eCZM8zeTkaULxMhULjFAOzCloDCXVwtb37cr3u8lKabw%2Bn90erAF2JVq6nbpjw4pYQF%2F4afJh%2Fj2lj26LY%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970843877?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BvlhK7f0aTaKyO7QPFtk%2BTHbM8WehQDPVRBty%2BNi%2FaIHP7Vj2vLEQX%2FKrVb96E4j%2BVLriaep4ke%2BvJuxFj5AKczxZgymsBO7KUcQ70aJttm%2BKtEHD%2BfvnDgu5A4OI1CPrlGO2sYTAcsPlEIZCaxDPh%2B2w%2B%2Bhpq7LyAciKeCE%2FZTB3Cmb4fDoMIok%2F0qO%2FowbI%3D",
       "description": "<p data-start=\"1132\" data-end=\"1288\" class=\"PDq2pG_selectionAnchorContainer\">Original 1969 Tamla Records 45 RPM single featuring Stevie Wonder's timeless hit <strong data-start=\"1213\" data-end=\"1235\">\"My Cherie Amour.\"</strong> The B-side includes <strong data-start=\"1256\" data-end=\"1288\">\"Don't Know Why I Love You.\"</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1290\" data-end=\"1496\">\"My Cherie Amour\" became one of Stevie Wonder's signature early hits and remains one of Motown's most beloved recordings. A must-have for Motown collectors, soul enthusiasts, jukebox owners, and vinyl fans.</p>\n<p data-start=\"1498\" data-end=\"1622\">Record will be shipped in a new paper sleeve inside a protective poly sleeve and packaged securely in a rigid 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1644,5 +1644,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:43Z"
 }

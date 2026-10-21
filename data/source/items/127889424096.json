@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1647,7 +1647,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127889424096?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8l70gX9eBqn54jAEssQvOjivDbc6nNWbtgTv6rF4rHrCCrgxbFrbNUIFuP3I3glq4sY5Q%2BRCEhvdG%2BEHyWGBHyJeAyWAjM%2Bd7joXvCBSIe2iy4HVtRGbky6%2FoV%2BmcTA7D532G8LSr9uqSD%2BdCyqaCocp6TZtXxeoYJxCZAloHIHw1iw4EfMhgjSA%2BkO1CkA7k%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127889424096?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8l70gX9eBqn54jAEssQvOjivDbc6nNWbtgTv6rF4rHrM2AvKZuGBkVvaV4AbtEXzZiMbXTyepcu7dtcoWzfwIjLGwVSu3d3wRfpm2pKbEDP6PlQ4T9oP1JoM7VXvZ076dGkf0WFen68sWAoA7pIurPQzN%2BYrOOjZ5sLNUdNXNyQp%2FpjzvCtAuLxuRFASwbP9I%3D",
       "description": "<p data-start=\"1336\" data-end=\"1420\"><span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Kindergarten Playtime Songs</span> vintage children’s LP from Wonderland Records.</p><p data-start=\"1422\" data-end=\"1479\">Features classic children’s songs and singalong material.</p><p data-start=\"1481\" data-end=\"1524\"><font face=\"Arial\" size=\"4\"><strong data-start=\"1481\" data-end=\"1491\">Vinyl:</strong>&nbsp;G<br data-start=\"1498\" data-end=\"1501\">\nGlossy with light wear.</font></p><p data-start=\"1526\" data-end=\"1596\"><font face=\"Arial\" size=\"4\"><strong data-start=\"1526\" data-end=\"1536\">Cover:</strong> VG<br data-start=\"1539\" data-end=\"1542\">\nClean bright artwork with mild edge wear and creasing.</font></p><p data-start=\"1243\" data-end=\"1309\">\n\n\n\n</p><p data-start=\"1598\" data-end=\"1675\" data-is-last-node=\"\" data-is-only-node=\"\">Fun vintage children’s record for collectors, décor, classrooms, or sampling.</p>\n<h2 data-section-id=\"1lfw7fq\" data-start=\"1311\" data-end=\"1335\"></h2>",
       "paymentMethods": [
         {
@@ -1704,5 +1704,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:23Z"
 }

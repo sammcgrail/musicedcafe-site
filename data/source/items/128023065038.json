@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -92,8 +92,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1570,7 +1570,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023065038?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F696vuM9P9YD9uwRiaXEkpYJOU7CGTsiy27HJv6o7Epks4mQFZA9ggWwgFg0NMmjvfueNzioNOmkgx2ssHudyU%2FaDC8yzxbftPsCcmyOfjspG3SHKFk9mFUicuyqdxUEPzyyYmmZCj0VIZ6K7QO92JS%2BXzkFyQw2qbvwx%2BWRDSwd2%2Fg3pahLrk0nxtuH74gqY%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023065038?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F696vuM9P9YD9uwRiaXEkpYJOU7CGTsiy27HJv6o7EpjhSw%2BZpl3WCVYS2Xd0haUtctHY4Nh%2B2QV4fNyTCnWIomMLns0ey8W2cBGxSHNcoMDkKwKbcvC9fm0wDAoYRKlsVbpHU1VNfNRTZGbYm09xKguGIcfj5VVrHNqASsTxK6MJ3gLTmadgtJPmfKCjHsJo%3D",
       "description": "<p>Lynn Anderson – Isn’t It Always Love / A Child With You Tonight – Columbia 3-10909 – 1979 Promo 45 RPM</p><br /><p>Vintage 1979 U.S. Columbia Records promotional 7-inch single by country singer Lynn Anderson.</p><br /><p>Side A: Isn’t It Always Love</p><p>Side B: A Child With You Tonight</p><br /><p>This is a promotional/demo pressing with “Demonstration – Not For Sale” marking on the label. </p><br /><p>Vinyl appears VG to VG+ visually, with good gloss and light surface/handling marks consistent with age and use.</p><br /><p>Labels show handwritten archival/radio-station-style notation, including “7-20/37,” as pictured.</p><br /><p>Includes the vintage generic brown paper sleeve shown in the photos.</p><br /><p>Visually graded unless otherwise stated. Please review all photos carefully for exact condition.</p>",
       "paymentMethods": [
         {
@@ -1627,5 +1627,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:16Z"
 }

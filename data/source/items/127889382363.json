@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -80,7 +80,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127889382363?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Bq1slnct5VEeVfpPs%2BhtVikO%2B88yeE2tMMxgV17rUSHchfw8SCrbredSXt1SAJpkPca2N1zT0jaerG%2FvwAIIj%2FnCQXfaMoMUQbkV6WA4tuIyKwNodblEj9ZsJwYD7UHjWIQe8uQViNc6wVlgp8WAoodIqks9AtM1LqeFboitaH%2B0I9o%2FV3jrIQTJZb2RA55OA%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127889382363?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2Bq1slnct5VEeVfpPs%2BhtVikO%2B88yeE2tMMxgV17rUSHWgAaJd5aR5pEgES%2B7qtM1X3zosPgzOrG4jsAArpXW%2B%2BdIqnNMPSxsq5OEttyELi21x0rEMwQZ5k5csXq%2Bco6S5kZOqQ9gUyHgM3Cej%2BNe3tgF224QIFno51tWdo1o2vLqqwrgpPJP6voVjHl9IR%2Be8%3D",
       "description": "<p data-start=\"1366\" data-end=\"1459\">Rare vintage copy of <em data-start=\"1387\" data-end=\"1408\">South Shore Bermuda</em> by Bermuda Strollers on Edmar Records (ELPS 1156).</p>\n<p data-start=\"1461\" data-end=\"1569\">Obscure Bermuda reggae/calypso LP featuring island grooves and a cover of Bob Marley’s “Three Little Birds.”</p>\n<p data-start=\"1571\" data-end=\"1724\">Vinyl is a strong VG+ visually with good gloss and light signs of handling only. Jacket is VG with moderate shelf/ring wear and small blemishes from age.</p>\n<p data-start=\"1726\" data-end=\"1771\">Hard-to-find Caribbean private press release.</p>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:27Z"
 }

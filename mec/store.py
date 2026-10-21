@@ -11,7 +11,8 @@ Safety rules (also covered by tests/test_import.py):
     snapshot no longer contains it, and never more than max_end_fraction of the
     active catalog in one go (a mass disappearance is treated as a broken feed)
   * an item becomes "sold" only when eBay says so explicitly (a sales /
-    transaction report, or the listing page says "This listing sold")
+    transaction report, the listing page says "This listing sold", or Browse
+    getItem reports a sold quantity >= 1 with 0 available: mec/confirm_sold.py)
 """
 from __future__ import annotations
 
@@ -132,7 +133,8 @@ def record_attempt(source: str, ok: bool, summary: dict, errors: list[str] | Non
 
 # --------------------------------------------------------------------- applying data
 
-def apply_sales(cs: ChangeSet, sales: list[dict], source: str) -> dict:
+def apply_sales(cs: ChangeSet, sales: list[dict], source: str,
+                price_note: str = "item subtotal (sale price)") -> dict:
     """sales: [{item_id, title, price, currency, quantity, date, raw}] - each is an
     eBay-confirmed sale. Marks the item sold unless a LATER complete active
     snapshot still listed it (multi-quantity listings keep selling)."""
@@ -167,7 +169,7 @@ def apply_sales(cs: ChangeSet, sales: list[dict], source: str) -> dict:
         else:
             if rec.get("price") is None or rec.get("status") != "active":
                 rec["price"] = {"value": last_sale.get("price"), "currency": last_sale.get("currency"),
-                                "source": f"{source}: item subtotal (sale price)"}
+                                "source": f"{source}: {price_note}"}
             cs.set_status(rec, "sold", source, f"sale on {rec['sold_at']} confirmed by {source}")
             rec["quantity_available"] = 0
         cs.touch(iid)
@@ -208,6 +210,8 @@ def apply_active_snapshot(cs: ChangeSet, items: list[dict], source: str, complet
         rec["quantity_available"] = qty
         if it.get("listing"):
             rec["listing"] = it["listing"]
+        if it.get("fetched_at"):   # when this getItem payload was fetched (browse.py reuses it)
+            rec["api_item_fetched_at"] = it["fetched_at"]
         rec["last_seen_active_at"] = cs.ts
         if qty is not None and int(qty) <= 0:
             cs.set_status(rec, "unavailable", source, "listed with 0 available")

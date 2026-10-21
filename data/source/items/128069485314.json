@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SMAS11607",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1607,7 +1607,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128069485314?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8STPXXgPr7pFGjj9017EZdOUYQKLHP1m2cLO0WSGDzD1Ble4ReAKLe72%2FIT6aplxdFuV1s2AnfWEpRwdaXNbVe4EAYrTBYp4TERF%2FQnsLcO47n%2Bepch1cTUIDfrHsVQTFT4kVMJ5%2FGEMU4dZTdejsxoCp0hqlwApL8Fi8S8fg6D2OY57Q4G5qY3MA02evkWik%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128069485314?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8STPXXgPr7pFGjj9017EZdOUYQKLHP1m2cLO0WSGDzD1XNOS4nS0WcVI9cm3VrrFGe6GnOTCf0Zk5V7KWg76t0ZfISP0%2BZSBdcCEUn%2Bu4IsPT63YvWX96XgMC%2FfG%2FFLQSSdoStDfch%2FnV1iWhvRkAKC7VtXEdL73tObfzldrUf0iD0h38H7VViWt9nvxjlgzg%3D",
       "description": "<p data-start=\"2775\" data-end=\"2806\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2775\" data-end=\"2806\">Carole King – Simple Things</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2808\" data-end=\"2864\">Original 1977 U.S. vinyl LP released on Capitol Records.</p>\n<p data-start=\"2866\" data-end=\"3054\"><strong data-start=\"2866\" data-end=\"2877\">Artist:</strong> Carole King<br data-start=\"2889\" data-end=\"2892\">\n<strong data-start=\"2892\" data-end=\"2902\">Album:</strong> Simple Things<br data-start=\"2916\" data-end=\"2919\">\n<strong data-start=\"2919\" data-end=\"2929\">Label:</strong> Capitol Records<br data-start=\"2945\" data-end=\"2948\">\n<strong data-start=\"2948\" data-end=\"2960\">Catalog:</strong> SMAS-11607<br data-start=\"2971\" data-end=\"2974\">\n<strong data-start=\"2974\" data-end=\"2983\">Year:</strong> 1977<br data-start=\"2988\" data-end=\"2991\">\n<strong data-start=\"2991\" data-end=\"3002\">Format:</strong> 12\" Vinyl LP<br data-start=\"3015\" data-end=\"3018\">\n<strong data-start=\"3018\" data-end=\"3028\">Speed:</strong> 33 RPM<br data-start=\"3035\" data-end=\"3038\">\n<strong data-start=\"3038\" data-end=\"3050\">Country:</strong> USA</p>\n<p data-start=\"3056\" data-end=\"3259\">Carole King’s first album released through Capitol Records, featuring the popular single <strong data-start=\"3145\" data-end=\"3166\">“Hard Rock Cafe.”</strong> The album was produced by Carole King and Norm Kinney. <span class=\"contents\" data-content-reference-start=\"3214\" data-content-reference-end=\"3238\"><span class=\"\" data-state=\"closed\"></span></span></p>\n<p data-start=\"3261\" data-end=\"3275\"><strong data-start=\"3261\" data-end=\"3275\">Track List</strong></p>\n<p data-start=\"3277\" data-end=\"3286\">Side One:</p>\n<ol data-start=\"3287\" data-end=\"3388\">\n<li data-section-id=\"ljjbjv\" data-start=\"3287\" data-end=\"3305\">\nSimple Things\n</li>\n<li data-section-id=\"zl1fvb\" data-start=\"3306\" data-end=\"3318\">\nHold On\n</li>\n<li data-section-id=\"1qrfm3c\" data-start=\"3319\" data-end=\"3343\">\nIn the Name of Love\n</li>\n<li data-section-id=\"1eqmbcw\" data-start=\"3344\" data-end=\"3358\">\nLabyrinth\n</li>\n<li data-section-id=\"5gvbrk\" data-start=\"3359\" data-end=\"3388\">\nYou’re the One Who Knows\n</li>\n</ol>\n<p data-start=\"3390\" data-end=\"3399\">Side Two:</p>\n<ol data-start=\"3400\" data-end=\"3493\">\n<li data-section-id=\"91ta35\" data-start=\"3400\" data-end=\"3419\">\nHard Rock Cafe\n</li>\n<li data-section-id=\"3qwuud\" data-start=\"3420\" data-end=\"3435\">\nTime Alone\n</li>\n<li data-section-id=\"16gpji\" data-start=\"3436\" data-end=\"3455\">\nGod Only Knows\n</li>\n<li data-section-id=\"9zyxpm\" data-start=\"3456\" data-end=\"3484\">\nTo Know That I Love You\n</li>\n<li data-section-id=\"1amj4ey\" data-start=\"3485\" data-end=\"3493\">\nOne\n</li>\n</ol>\n<p data-start=\"3495\" data-end=\"3614\">Vinyl retains strong gloss with light signs of use. Original textured jacket is included and displays well for its age.</p>",
       "paymentMethods": [
         {
@@ -1664,5 +1664,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:31Z"
 }

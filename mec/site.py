@@ -69,6 +69,17 @@ def jsonld(obj) -> str:
     return '<script type="application/ld+json">' + s.replace("</", "<\\/") + "</script>"
 
 
+ARCHIVE_STATUSES = ("sold", "ended", "unavailable")
+
+
+def archive_key(r: dict) -> str:
+    """Recently Sold order (newest first): the sale date, or for a record with no
+    confirmed sale ("Ended" stamp) the date its status changed, then the
+    status-change timestamp. Also the cards' data-date, which site.js sorts by."""
+    changed = r.get("status_changed_at") or ""
+    return f"{(r.get('sold_at') or changed or r.get('start_date') or '')[:10]} {changed}"
+
+
 class Site:
     def __init__(self, out: Path):
         self.out = out
@@ -77,7 +88,8 @@ class Site:
         self.records, self.report = merge.build_records()
         self.visible = [r for r in self.records if not r["hidden"]]
         self.active = [r for r in self.visible if r["status"] == "active"]
-        self.archive = [r for r in self.visible if r["status"] in ("sold", "ended", "unavailable")]
+        self.archive = sorted((r for r in self.visible if r["status"] in ARCHIVE_STATUSES),
+                              key=archive_key, reverse=True)
         self.sold = [r for r in self.archive if r["status"] == "sold"]
         self.state = read_state()
         self.urls: list[tuple[str, str | None]] = []
@@ -180,6 +192,7 @@ class Site:
 
     def header(self, nav: str) -> str:
         items = [("shop", "/shop/", "Shop"), ("merch", "/merch/", "Merch"), ("sold", "/sold/", "Recently Sold"),
+                 ("sell", "/sell/", "Sell Your Records"),
                  ("genres", "/genre/", "Genres"), ("guides", "/guides/", "Guides"), ("blog", "/blog/", "Blog"),
                  ("about", "/about/", "About"), ("contact", "/contact/", "Contact"),
                  ("ebay", self.cfg["ebay_store_url"], "eBay store")]
@@ -229,6 +242,7 @@ class Site:
         <li><a href="/shop/">Shop all records</a></li>
         <li><a href="/sold/">Recently sold</a></li>
         <li><a href="/merch/">Merch preorders</a></li>
+        <li><a href="/sell/">Sell your records</a></li>
         <li><a href="/guides/">Collecting &amp; care guides</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/contact/">Contact</a></li>
@@ -313,7 +327,7 @@ class Site:
             "id": r["id"], "status": status,
             "genres": " ".join(r["genre_slugs"]), "formats": " ".join(r["format_slugs"]),
             "price": r["price"] or "", "grade": r.get("media_grade") or "",
-            "date": (r.get("sold_at") or r.get("start_date") or "")[:10],
+            "date": archive_key(r) if status in ARCHIVE_STATUSES else (r.get("start_date") or "")[:10],
             "artist": (r.get("artist") or r["display_title"]).lower(),
         }
         attrs = " ".join(f'data-{k}="{esc(v)}"' for k, v in data.items())
@@ -525,6 +539,15 @@ class Site:
 <section class="section wrap" aria-labelledby="h-genres">
   <div class="section-head"><h2 id="h-genres">Dig by genre</h2><a href="/genre/">All genres</a></div>
   <ul class="genre-grid">{genre_tiles}</ul>
+</section>
+<section class="section wrap" aria-labelledby="h-sell">
+  <div class="sell-teaser">
+    <div>
+      <h2 id="h-sell">Sell us your records</h2>
+      <p>Got a collection or a box of records to move? Music Ed Cafe buys records in lots, and every record is looked at individually.</p>
+    </div>
+    <a class="btn btn-buy btn-big" href="/sell/">Sell Your Records</a>
+  </div>
 </section>
 <section class="section band" aria-labelledby="h-why">
   <div class="wrap why-grid">
@@ -953,13 +976,24 @@ class Site:
             note = "\n\n".join(l.strip() for l in cap.split("\n\n") if l.strip())
             date = (ig.get("timestamp") or "")[:10]
             out.append({"slug": f"ig-{date}-{m.group(2).lower()[:11]}", "date": date, "title": title,
-                        "instagram_url": url, "note": note, "records": [], "auto": True})
+                        "instagram_url": url, "note": note, "records": [], "auto": True,
+                        "image": ig.get("image") if ig.get("image") and (ROOT / "data" / "assets" / "instagram" / f"{ig['image']}-480.webp").exists() else None,
+                        "media_type": ig.get("media_type")})
         return sorted(out, key=lambda p: p.get("date") or "", reverse=True)
 
     def post_records(self, p: dict) -> list[dict]:
         want = [str(i) for i in p.get("records") or []]
         by_id = {str(r["id"]): r for r in self.active}
         return [by_id[i] for i in want if i in by_id]
+
+    def ig_photo(self, p: dict) -> str:
+        if not p.get("image"):
+            return ""
+        alt = esc((p.get("title") or "Instagram post")[:120])
+        badge = '<span class="ig-badge">Video on Instagram</span>' if p.get("media_type") == "VIDEO" else ""
+        return (f'<figure class="ig-photo"><a href="{esc(p["instagram_url"])}" rel="noopener">'
+                f'<img src="/img/ig/{esc(p["image"])}-1080.webp" srcset="/img/ig/{esc(p["image"])}-480.webp 480w, /img/ig/{esc(p["image"])}-1080.webp 1080w" '
+                f'sizes="(max-width: 600px) 100vw, 540px" alt="{alt}" decoding="async">{badge}</a></figure>')
 
     def ig_embed(self, p: dict) -> str:
         u = esc(p["instagram_url"])
@@ -972,7 +1006,9 @@ class Site:
                   if ig else "")
         if self.posts:
             cards = "".join(
-                f'<li><a class="guide-card" href="/blog/{esc(p["slug"])}/"><span class="guide-kicker">{esc(p.get("date") or "")}</span>'
+                f'<li><a class="guide-card blog-card" href="/blog/{esc(p["slug"])}/">'
+                + (f'<img class="blog-thumb" src="/img/ig/{esc(p["image"])}-480.webp" alt="" width="480" height="480" loading="lazy" decoding="async">' if p.get("image") else "")
+                + f'<span class="guide-kicker">{esc(p.get("date") or "")}</span>'
                 f'<span class="guide-title">{esc(p["title"])}</span>'
                 f'<span class="guide-desc">{esc((p.get("note") or "From the Music Ed Cafe Instagram")[:140])}</span></a></li>'
                 for p in self.posts)
@@ -1002,6 +1038,7 @@ class Site:
   <article class="prose selectable">
     <p class="eyebrow">{esc(p.get("date") or "")}</p>
     <h1>{esc(p["title"])}</h1>
+    {self.ig_photo(p)}
     {note}
     {self.ig_embed(p)}
   </article>
@@ -1220,6 +1257,157 @@ class Site:
                                                  body=body, desc="Your Music Ed Cafe merch reservation.",
                                                  noindex=True, page_class="merch"), sitemap=False)
 
+    # ------------------------------------------------------------------ sell your records
+    def _load_sell(self) -> dict:
+        f = CONTENT / "sell" / "sell.json"
+        return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+
+    def sell_row(self, i: int) -> str:
+        """One record row of the sell form (rows 1..FORM_ROWS are rendered here; JS clones more)."""
+        return f"""<fieldset class="sf-rec" data-row="{i}">
+      <legend class="rf-label">Record <span class="sf-n">{i}</span></legend>
+      <div class="sf-grid">
+        <div class="rf-field"><label class="rf-label" for="sf-r{i}-artist">Artist</label>
+          <input id="sf-r{i}-artist" name="r{i}_artist" type="text" maxlength="120" autocomplete="off"></div>
+        <div class="rf-field"><label class="rf-label" for="sf-r{i}-title">Album or song title</label>
+          <input id="sf-r{i}-title" name="r{i}_title" type="text" maxlength="160" autocomplete="off"></div>
+        <div class="rf-field"><label class="rf-label" for="sf-r{i}-catno">Catalog number <span class="rf-opt">(optional, on the spine or label)</span></label>
+          <input id="sf-r{i}-catno" name="r{i}_catno" type="text" maxlength="40" autocomplete="off"></div>
+      </div>
+      <div class="sf-photos">
+        <div class="rf-field sf-file"><label class="rf-label" for="sf-r{i}-front">Photo: jacket front</label>
+          <input id="sf-r{i}-front" name="r{i}_front" type="file" accept="image/*"></div>
+        <div class="rf-field sf-file"><label class="rf-label" for="sf-r{i}-label">Photo: vinyl label and surface</label>
+          <input id="sf-r{i}-label" name="r{i}_label" type="file" accept="image/*"></div>
+        <div class="rf-field sf-file"><label class="rf-label" for="sf-r{i}-back">Photo: jacket back <span class="rf-opt">(optional)</span></label>
+          <input id="sf-r{i}-back" name="r{i}_back" type="file" accept="image/*"></div>
+      </div>
+      <p class="rf-err" id="err-r{i}" hidden></p>
+    </fieldset>"""
+
+    def sell_form(self, cfg: dict) -> str:
+        from . import sell as sellmod
+        counts = "".join(f'<option value="{esc(c)}">{esc(c)}</option>' for c in cfg["count_options"])
+        conds = "".join(f'<option value="{esc(c)}">{esc(c)}</option>' for c in cfg["condition_options"])
+        fmts = "".join(f'<label class="chip-opt"><input type="checkbox" name="formats" value="{esc(f)}">'
+                       f'<span>{esc(f)}</span></label>' for f in cfg["format_options"])
+        hand = "".join(f'<label class="rf-check sf-radio"><input type="radio" name="handoff" value="{esc(k)}" required>'
+                       f'<span>{esc(v)}</span></label>' for k, v in sellmod.handoff_options(cfg).items())
+        rows = "\n    ".join(self.sell_row(i) for i in range(1, sellmod.FORM_ROWS + 1))
+        return f"""<form class="reserve-form sell-form" id="sell-form" method="post" action="/sell/submit" enctype="multipart/form-data" data-sell-form data-max-rows="{sellmod.MAX_RECORDS}" data-max-overview="{sellmod.MAX_OVERVIEW}">
+  <h2>Tell us about your records</h2>
+  <p class="rf-fine">Your details, then a photo of each record's jacket and its vinyl so we can grade it. Nothing is final until we've seen the records.</p>
+  <div class="rf-summary" role="alert" tabindex="-1" hidden></div>
+  <div class="rf-field" data-field="name"><label class="rf-label" for="sf-name">Your name</label>
+    <input id="sf-name" name="name" type="text" autocomplete="name" maxlength="80" required><p class="rf-err" id="err-name" hidden></p></div>
+  <div class="rf-field" data-field="email"><label class="rf-label" for="sf-email">Email</label>
+    <input id="sf-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required>
+    <p class="rf-hint">Only used to reply about your records.</p><p class="rf-err" id="err-email" hidden></p></div>
+  <div class="rf-field" data-field="phone"><label class="rf-label" for="sf-phone">Phone <span class="rf-opt">(optional)</span></label>
+    <input id="sf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30"><p class="rf-err" id="err-phone" hidden></p></div>
+  <div class="rf-field" data-field="location"><label class="rf-label" for="sf-location">City or ZIP code</label>
+    <input id="sf-location" name="location" type="text" autocomplete="postal-code" maxlength="80" required>
+    <p class="rf-hint">Helps us plan the shipping label or a meetup. No street address needed.</p><p class="rf-err" id="err-location" hidden></p></div>
+  <div class="rf-field" data-field="count"><label class="rf-label" for="sf-count">About how many records?</label>
+    <select id="sf-count" name="count" required><option value="">Choose one</option>{counts}</select><p class="rf-err" id="err-count" hidden></p></div>
+  <fieldset class="rf-field rf-opts" data-field="formats"><legend class="rf-label">Formats (tick all that apply)</legend>
+    <div class="chip-opts">{fmts}</div><p class="rf-err" id="err-formats" hidden></p></fieldset>
+  <div class="rf-field" data-field="genres"><label class="rf-label" for="sf-genres">Genres or artists <span class="rf-opt">(optional)</span></label>
+    <input id="sf-genres" name="genres" type="text" maxlength="300" placeholder="Soul, jazz, some Motown..."><p class="rf-err" id="err-genres" hidden></p></div>
+  <div class="rf-field" data-field="condition"><label class="rf-label" for="sf-condition">Overall condition</label>
+    <select id="sf-condition" name="condition" required><option value="">Choose one</option>{conds}</select><p class="rf-err" id="err-condition" hidden></p></div>
+  <fieldset class="rf-field" data-field="handoff"><legend class="rf-label">How would the records get to us?</legend>
+    <div class="sf-radios">{hand}</div><p class="rf-err" id="err-handoff" hidden></p></fieldset>
+  <section class="sf-records" aria-labelledby="h-sf-records" data-field="records">
+    <h3 id="h-sf-records">Your records</h3>
+    <p class="rf-hint">One row per record: the artist, the title, a photo of the <strong>jacket front</strong> and a photo of the <strong>vinyl label and playing surface</strong> (out of the sleeve, in good light). A photo of the jacket back helps too. Fill in as many as you like, up to {sellmod.MAX_RECORDS}; empty rows are ignored.</p>
+    <p class="rf-err" id="err-records" hidden></p>
+    <div class="sf-rows" data-rows>
+    {rows}
+    </div>
+    <p class="sf-add-wrap" hidden><button class="btn btn-ghost sf-add" type="button" data-add-row>Add another record</button> <span class="rf-hint sf-count" aria-live="polite"></span></p>
+  </section>
+  <div class="rf-field" data-field="overview"><label class="rf-label" for="sf-overview">Overview photos <span class="rf-opt">(optional, up to {sellmod.MAX_OVERVIEW})</span></label>
+    <input id="sf-overview" name="overview" type="file" accept="image/*" multiple>
+    <p class="rf-hint">For 40+ records, send a few crate/spine photos and we'll ask for details on the ones we're interested in. With 25 or more records, overview photos can stand in for the rows above.</p><p class="rf-err" id="err-overview" hidden></p></div>
+  <div class="rf-field" data-field="photos"><label class="rf-label" for="sf-photos">Photo album link <span class="rf-opt">(optional)</span></label>
+    <textarea id="sf-photos" name="photos" rows="2" maxlength="1000" placeholder="Google Photos, iCloud or Dropbox link"></textarea>
+    <p class="rf-err" id="err-photos" hidden></p></div>
+  <div class="rf-field" data-field="note"><label class="rf-label" for="sf-note">Anything else? <span class="rf-opt">(optional)</span></label>
+    <textarea id="sf-note" name="note" rows="3" maxlength="1000"></textarea><p class="rf-err" id="err-note" hidden></p></div>
+  <div class="rf-hp" aria-hidden="true"><label for="sf-website">Leave this field empty</label>
+    <input id="sf-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+  <div class="rf-field" data-field="consent"><label class="rf-check"><input type="checkbox" name="consent" value="yes" required>
+    <span>Music Ed Cafe may contact me about these records</span></label><p class="rf-err" id="err-consent" hidden></p></div>
+  <div class="sf-progress" data-progress hidden><div class="sf-bar"><span data-bar></span></div><p class="rf-hint" data-progress-text aria-live="polite"></p></div>
+  <button class="btn btn-buy btn-big rf-submit" type="submit">Send my records</button>
+  <p class="rf-fine">This form is private: your details and photos go to Music Ed Cafe only and are never shown on the site. Photos up to 8 MB each.</p>
+</form>
+<div class="reserve-done" id="sell-done" tabindex="-1" hidden></div>"""
+
+    def page_sell(self):
+        cfg = self._load_sell()
+        postage = cfg.get("postage")
+        postage_txt = esc(postage) if postage else "We'll sort out shipping together when we make an offer."
+        pickup = ('<p>Local pickup or drop-off around Lynn and the North Shore can be arranged by appointment.</p>'
+                  if cfg.get("local_pickup") is True else "")
+        crumbs = [("Home", "/"), ("Sell Your Records", "/sell/")]
+        body = f"""<div class="wrap narrow page-head">
+  {self.crumbs_html(crumbs)}
+  <h1>Sell Us Your Records</h1>
+  <p class="lede">Music Ed Cafe buys record collections and lots, and every record is looked at individually. If you have records you'd like to see go to a good home, we'd love to hear about them.</p>
+  <p><a class="btn btn-buy btn-big" href="#sell-form">Tell us about your records</a></p>
+</div>
+<div class="wrap narrow sell-page">
+  <section class="sell-sec" aria-labelledby="h-offers">
+    <h2 id="h-offers">A fair offer for every record</h2>
+    <p>We review every record and make a fair offer. Clear photos of each jacket and its vinyl let us grade them properly and get back to you faster.</p>
+    <p>The offer is final once we've seen the records and they match the photos.</p>
+  </section>
+  <section class="sell-sec" aria-labelledby="h-want">
+    <h2 id="h-want">What we're looking for</h2>
+    <p><strong>Yes, please:</strong> soul, R&amp;B, jazz, rock, funk, hip-hop and classic pop LPs and 45s in good condition.</p>
+    <p><strong>Usually not:</strong> water-damaged or moldy records, heavily scratched records, and common easy-listening or orchestral records in bulk. If you're not sure, ask anyway, we're friendly about it.</p>
+  </section>
+  <section class="sell-sec" aria-labelledby="h-how">
+    <h2 id="h-how">How it works</h2>
+    <ol class="steps-list sell-steps">
+      <li><span class="step-n" aria-hidden="true">1</span><span><strong>Send us the details and photos.</strong> Use the form below: a photo of each jacket and its vinyl.</span></li>
+      <li><span class="step-n" aria-hidden="true">2</span><span><strong>Get an offer.</strong> We'll email you after we've looked things over.</span></li>
+      <li><span class="step-n" aria-hidden="true">3</span><span><strong>Ship it or meet up.</strong> Whichever works for the lot.</span></li>
+    </ol>
+    <p>{postage_txt}</p>
+    {pickup}
+  </section>
+  <section class="sell-sec" aria-labelledby="h-ship">
+    <h2 id="h-ship">Packing tips</h2>
+    <p>If you're shipping, we'll email you a prepaid USPS Media Mail label, so there's nothing for you to pay. Delivery usually takes about 2&ndash;8 business days.</p>
+    <ul>
+      <li>Weigh the packed box and tell us the weight, so the label is right.</li>
+      <li>Use a strong double-wall box with cushioning on every side.</li>
+      <li>Ship records standing vertically, never flat in a stack.</li>
+      <li>If the fit is tight, take the records out of their outer sleeves.</li>
+    </ul>
+  </section>
+  {self.sell_form(cfg)}
+</div>"""
+        ld = [self.breadcrumb_ld(crumbs)]
+        self.write("/sell/", self.layout(
+            title="Sell Your Records", path="/sell/", nav="sell", body=body, ld=ld, page_class="sell",
+            desc="Music Ed Cafe buys record collections and lots and makes a fair offer for every record. "
+                 "We cover shipping. Send photos of your records."), priority="0.6")
+        thanks = f"""<div class="wrap narrow page-head">
+  {self.crumbs_html([("Home", "/"), ("Sell Your Records", "/sell/"), ("Thank you", "/sell/thanks/")])}
+  <!--MEC:RESULT--><div class="reserve-done">
+    <h1>Sell Your Records</h1>
+    <p class="lede">Use the form on the sell page to tell us about your records.</p>
+  </div><!--/MEC:RESULT-->
+  <p class="empty-actions"><a class="btn btn-buy" href="/sell/">Back to the sell page</a> <a class="btn btn-ghost" href="/shop/">Shop records</a></p>
+</div>"""
+        self.write("/sell/thanks/", self.layout(title="Sell Your Records: thank you", path="/sell/thanks/", nav="sell",
+                                                body=thanks, desc="Your Sell Your Records submission to Music Ed Cafe.",
+                                                noindex=True, page_class="sell"), sitemap=False)
+
     def page_static(self, slug: str, nav: str, title: str, desc: str, heading: str):
         raw = (CONTENT / f"{slug}.html").read_text(encoding="utf-8")
         raw = raw.replace("{{EBAY_STORE_URL}}", esc(self.cfg["ebay_store_url"]))
@@ -1297,6 +1485,12 @@ class Site:
             dest.mkdir(parents=True, exist_ok=True)
             for p in ph.glob("*.webp"):
                 shutil.copy2(p, dest / p.name)
+        igd = ROOT / "data" / "assets" / "instagram"
+        if igd.exists():
+            dest = self.out / "img" / "ig"
+            dest.mkdir(parents=True, exist_ok=True)
+            for p in igd.glob("*.webp"):
+                shutil.copy2(p, dest / p.name)
         cov = ROOT / "data" / "assets" / "coverart"
         if cov.exists():
             dest = self.out / "img" / "cover"
@@ -1326,6 +1520,7 @@ class Site:
         self.page_guides()
         self.page_blog()
         self.page_merch()
+        self.page_sell()
         self.page_static("about", "about", "About Music Ed Cafe",
                          "Music Ed Cafe is an independent vinyl record seller in Lynn, Massachusetts. Good coffee, good music, good people.",
                          "About Music Ed Cafe")

@@ -57,6 +57,19 @@ button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
 .alert { border-left: 4px solid #c9932f; padding: 6px 10px; margin-top: 8px; background: #fff; font-size: 14px; }
 .alert.critical { border-color: #9b3d17; } .alert.action { border-color: #1f5f9e; } .alert.acked { opacity: .6; }
 .sig { font-size: 12.5px; color: #54473b; }
+.sv-thumbs { display: flex; flex-wrap: wrap; gap: 6px; }
+.sv-thumbs button { padding: 0; border: 2px solid #d6c6a3; background: #e9dfc8; width: 96px; height: 96px; min-height: 0; border-radius: 6px; overflow: hidden; color: #221d18; font-size: 11px; font-weight: 600; }
+.sv-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sv-rec { border: 1px solid #d6c6a3; border-radius: 8px; padding: 10px; margin-top: 10px; background: #fff; display: grid; gap: 8px; }
+.sv-rec.buying { border-left: 5px solid #2b6461; } .sv-rec.pass { border-left: 5px solid #9b3d17; }
+.sv-tot { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 6px; }
+.sv-tot div { background: #fff; border: 1px solid #d6c6a3; border-radius: 6px; padding: 6px 8px; }
+.sv-tot b { display: block; font-size: 1.15rem; }
+.sv-ps { font-size: 12.5px; border-collapse: collapse; width: auto; } .sv-ps td { padding: 1px 6px 1px 0; border: 0; }
+.sv-ps tr.on td { font-weight: 800; }
+#lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.85); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 12px; }
+#lightbox img { max-width: 100%; max-height: 100%; border-radius: 6px; }
+#lightbox button { position: absolute; top: 12px; right: 12px; }
 </style>
 </head>
 <body>
@@ -176,6 +189,35 @@ button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
     <h3 class="sub">All reservations (newest first)</h3>
     <div id="merch-rows" class="sel tbl"></div>
   </section>
+  <section id="sell">
+    <h2>Sell Your Records submissions</h2>
+    <p class="muted">People offering records, from the /sell/ page. Names, emails, phone numbers and photos stay on this server in <code>data/sell/</code> and are never committed to git or shown on the site. Offer amounts and rules are private to this page.</p>
+    <div class="row"><button id="sell-load" class="alt">Refresh</button><button id="sell-csv">Export CSV</button><button id="sell-rules-open" class="alt">Offer rules</button></div>
+    <p id="sell-sum" class="muted" style="margin-top:10px"></p>
+    <div id="sell-rows" class="sel tbl"></div>
+  </section>
+  <section id="sell-rules" class="hidden">
+    <h2>Offer rules (private)</h2>
+    <p class="muted">Stored in <code>data/sell/offer_rules.json</code> on the server. Resale is the Discogs suggested price at the chosen vinyl grade × the sleeve factor (or the lowest listed price × the fallback factor, or your manual value).</p>
+    <h3 class="sub">Offer per record by estimated resale</h3>
+    <div id="sr-tiers" class="grid2"></div>
+    <div class="grid2" style="margin-top:10px">
+      <label class="f">Top tier: percent of resale<input type="number" id="sr-pct" step="0.5" min="0"></label>
+      <label class="f">Top tier: at least ($)<input type="number" id="sr-floor" step="0.5" min="0"></label>
+      <label class="f">Top tier: at most ($)<input type="number" id="sr-cap" step="0.5" min="0"></label>
+      <label class="f">Shipping per record bought, when shipped ($)<input type="number" id="sr-ship" step="0.01" min="0"></label>
+      <label class="f">Fallback: lowest listed price ×<input type="number" id="sr-lowf" step="0.05" min="0"></label>
+      <label class="f">Re-fetch Discogs values after (days)<input type="number" id="sr-ttl" step="1" min="0"></label>
+    </div>
+    <h3 class="sub">Sleeve factor (resale × this)</h3>
+    <div id="sr-sleeve" class="grid2"></div>
+    <div class="row"><button id="sr-save">Save rules</button><button id="sr-defaults" class="alt">Fill in the defaults</button><button id="sr-close" class="alt">Close</button></div>
+    <p id="sr-msg" class="muted" role="status"></p>
+  </section>
+  <section id="sell-detail" class="hidden">
+    <div class="row" style="margin-top:0"><button id="sv-close" class="alt sm">Back to the list</button><button id="sv-csv" class="sm">Export valuation CSV</button></div>
+    <div id="sv-body"></div>
+  </section>
   </div>
 </main>
 <script>
@@ -204,7 +246,7 @@ button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
         ['Errors', (s.errors && s.errors.length) ? '<span class="bad">' + s.errors.map(esc).join('<br>') + '</span>' : 'none'],
         ['Items', Object.keys(j.counts || {}).map(function (k) { return esc(k) + ': ' + j.counts[k]; }).join(', ') || '0'],
         ['Site last built', j.last_build || 'never'],
-        ['Daily sync (UTC)', j.schedule_utc || '-'],
+        ['Sync schedule (UTC)', j.schedule_utc || '-'],
         ['Running now', j.job && j.job.running ? esc(j.job.running) : 'nothing']
       ];
       $('state').innerHTML = rows.map(function (r) { return '<dt>' + r[0] + '</dt><dd>' + (r[0] === 'Last result' || r[0] === 'Errors' ? r[1] : esc(r[1])) + '</dd>'; }).join('');
@@ -277,6 +319,182 @@ button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
       a.download = 'merch-reservations-' + new Date().toISOString().slice(0, 10) + '.csv';
       d.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
     }).catch(function (e) { $('merch-sum').textContent = 'CSV export failed: ' + e.message; });
+  });
+  var SV = { id: null, d: null, blobs: {} };
+  var STATUS_LABEL = { 'new': 'New', reviewing: 'Reviewing', offered: 'Offered', accepted: 'Accepted', declined: 'Declined', purchased: 'Purchased' };
+  function usd(v) { return v == null ? '-' : '$' + Number(v).toFixed(2); }
+  function sell() {
+    return api('/admin/api/sell').then(function (j) {
+      if (j._status !== 200) { $('sell-sum').textContent = j.error || 'Could not load submissions.'; return; }
+      $('sell-sum').textContent = j.count + ' submission' + (j.count === 1 ? '' : 's') + '.';
+      var rows = j.submissions.slice().reverse();
+      $('sell-rows').innerHTML = rows.length ? '<table><tr><th>When (UTC)</th><th>Who</th><th>Records</th><th>Review</th><th></th></tr>' + rows.map(function (r) {
+        var rv = r.review || {};
+        return '<tr><td>' + esc((r.ts || '').replace('T', ' ').replace('Z', '')) + '</td><td>' + esc(r.name) + '<br><a href="mailto:' + esc(r.email) + '">' + esc(r.email) + '</a>' +
+          (r.phone ? '<br>' + esc(r.phone) : '') + '<br><span class="muted">' + esc(r.location) + '</span></td><td>' + esc(r.count) + ' · ' + esc((r.formats || []).join(', ')) +
+          '<br>' + (r.records ? esc(r.records.length) + ' listed, ' + esc((r.overview || []).length) + ' overview photos' : '<span class="muted">no photos (old form)</span>') +
+          '<br><span class="muted">' + esc(r.condition) + (r.handoff ? ' · ' + esc(r.handoff) : '') + '</span></td><td><span class="pill">' + esc(STATUS_LABEL[rv.status] || rv.status || 'New') + '</span>' +
+          (rv.final_offer != null ? '<br>offer ' + usd(rv.final_offer) + ' (' + esc(rv.buying) + ' of ' + esc(rv.records) + ')' : '') +
+          '</td><td><button class="sm" data-open="' + esc(r.id) + '">Open</button><br><button class="del" data-id="' + esc(r.id) + '" style="margin-top:4px">Delete</button></td></tr>';
+      }).join('') + '</table>' : '';
+    });
+  }
+  $('sell-load').addEventListener('click', sell);
+  $('sell-rows').addEventListener('click', function (e) {
+    var o = e.target.closest && e.target.closest('button[data-open]');
+    if (o) return svOpen(o.getAttribute('data-open'));
+    var b = e.target.closest && e.target.closest('button.del');
+    if (!b || !confirm('Delete this submission and its photos? This cannot be undone.')) return;
+    api('/admin/api/sell/delete?id=' + encodeURIComponent(b.getAttribute('data-id')), { method: 'POST' }).then(sell);
+  });
+  function download(path, name, msgEl) {
+    fetch(path, { headers: { 'Authorization': 'Bearer ' + token } }).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.blob();
+    }).then(function (b) {
+      var a = d.createElement('a'); a.href = URL.createObjectURL(b); a.download = name;
+      d.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    }).catch(function (e) { msgEl.textContent = 'CSV export failed: ' + e.message; });
+  }
+  $('sell-csv').addEventListener('click', function () { download('/admin/api/sell.csv', 'sell-submissions-' + new Date().toISOString().slice(0, 10) + '.csv', $('sell-sum')); });
+  // ---- photos: fetched with the token, shown as blob URLs (never a public URL)
+  function photoUrl(p, size) {
+    var k = SV.id + '/' + p + '/' + size;
+    if (SV.blobs[k]) return Promise.resolve(SV.blobs[k]);
+    return fetch('/admin/api/sell/photo?id=' + encodeURIComponent(SV.id) + '&p=' + encodeURIComponent(p) + '&size=' + size, { headers: { 'Authorization': 'Bearer ' + token } })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.blob(); })
+      .then(function (b) { return (SV.blobs[k] = URL.createObjectURL(b)); });
+  }
+  function thumb(p, label) {
+    var m = (SV.d.photo_meta || {})[p] || {};
+    if (!m.thumb && !m.original) return '<button type="button" disabled>' + esc(label) + '<br>missing</button>';
+    return '<button type="button" data-photo="' + esc(p) + '" data-has-full="' + (m.full ? 1 : 0) + '" title="' + esc(label) + '">' + (m.thumb ? '<img alt="' + esc(label) + '" data-thumb="' + esc(p) + '">' : esc(label) + '<br>HEIC, no preview (tap to download)') + '</button>';
+  }
+  function loadThumbs() {
+    var imgs = Array.prototype.slice.call($('sv-body').querySelectorAll('img[data-thumb]'));
+    (function next() { var im = imgs.shift(); if (!im) return; photoUrl(im.getAttribute('data-thumb'), 'thumb').then(function (u) { im.src = u; }).catch(function () { im.alt = 'failed'; }).then(next); })();
+  }
+  function lightbox(u) {
+    var o = d.createElement('div'); o.id = 'lightbox';
+    o.innerHTML = '<img alt="Photo"><button type="button">Close</button>';
+    o.querySelector('img').src = u;
+    o.addEventListener('click', function () { o.remove(); });
+    d.body.appendChild(o);
+  }
+  function sel(name, opts, val, extra) {
+    return '<select ' + extra + ' data-f="' + name + '" style="min-height:40px">' + opts.map(function (o) { return '<option' + (o === val ? ' selected' : '') + '>' + esc(o) + '</option>'; }).join('') + '</select>';
+  }
+  function svRender() {
+    var j = SV.d, s = j.submission, rv = j.review || {}, c = j.calc, t = c.totals;
+    var info = [['Name', esc(s.name)], ['Email', '<a href="mailto:' + esc(s.email) + '">' + esc(s.email) + '</a>'], ['Phone', esc(s.phone || '-')], ['City / ZIP', esc(s.location)],
+      ['Received', esc((s.ts || '').replace('T', ' ').replace('Z', ' UTC'))], ['How many', esc(s.count)], ['Formats', esc((s.formats || []).join(', '))], ['Condition', esc(s.condition)],
+      ['Genres', esc(s.genres || '-')], ['Getting them to us', esc(s.handoff || '-')], ['Album link', esc(s.photos || '-')], ['Note', esc(s.note || '-')]];
+    var h = '<h2>' + esc(s.name) + ' <span class="pill">' + esc(STATUS_LABEL[rv.status] || rv.status) + '</span></h2><dl class="kv sel">' + info.map(function (r) { return '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>'; }).join('') + '</dl>';
+    h += '<div class="grid2" style="margin-top:10px"><label class="f">Status' + sel('status', j.statuses, rv.status || 'new', 'id="sv-status"') + '</label>' +
+      '<label class="f">Shipping method (for the cost estimate)' + sel('ship_method', j.ship_methods, t.ship_method, 'id="sv-ship"') + '</label></div>';
+    if ((s.overview || []).length) h += '<h3 class="sub">Overview photos</h3><div class="sv-thumbs">' + s.overview.map(function (p, i) { return thumb(p, 'Overview ' + (i + 1)); }).join('') + '</div>';
+    h += '<h3 class="sub">Totals</h3><div class="sv-tot">' + [['Records', t.records + ' (' + t.valued + ' valued)'], ['Buying', t.buying], ['Offers', usd(t.offer_total)], ['Shipping est.', usd(t.shipping) + (t.ship_method === 'ship' ? '' : ' (pickup)')],
+      ['Total cost', usd(t.total_cost)], ['Resale est.', usd(t.resale_total)], ['Margin', usd(t.margin) + (t.margin_pct != null ? ' (' + t.margin_pct + '%)' : '')]].map(function (x) { return '<div><span class="muted">' + x[0] + '</span><b>' + esc(x[1]) + '</b></div>'; }).join('') + '</div>' +
+      '<p class="sel" style="margin-top:8px"><b>' + esc(c.suggested_note) + '</b></p>' +
+      '<div class="grid2" style="margin-top:8px"><label class="f">Final offer to send ($)<input type="number" step="0.5" min="0" id="sv-final" value="' + esc(c.final_offer) + '"></label>' +
+      '<label class="f">Private note<textarea id="sv-note" style="min-height:46px">' + esc(rv.note || '') + '</textarea></label></div>' +
+      (j.token_present ? '' : '<p class="bad" style="margin-top:8px">No DISCOGS_TOKEN: Discogs search and values are skipped. Type a resale value per record instead.</p>');
+    h += '<h3 class="sub">Records</h3>' + c.rows.map(function (r) {
+      var ph = r.photos || {}, ps = r.price_suggestions || {};
+      var thumbs = ['front', 'label', 'back'].filter(function (k) { return ph[k]; }).map(function (k) { return thumb(ph[k], { front: 'Jacket front', label: 'Vinyl label', back: 'Jacket back' }[k]); }).join('');
+      var cands = (r.candidates || []).map(function (x) {
+        return '<div class="dc-cand' + (x.release_id === r.release_id ? ' chosen' : '') + '">' + (x.thumb ? '<img src="' + esc(x.thumb) + '" alt="" loading="lazy" referrerpolicy="no-referrer">' : '<span></span>') +
+          '<div><a href="' + esc(x.url) + '" rel="noopener" target="_blank">' + esc(x.title) + '</a><br><span class="sig">' + esc((x.label || []).join(', ')) + ' · ' + esc(x.catno) + ' · ' + esc((x.format || []).join(', ')) + ' · ' + esc(x.year || '?') + ' · ' + esc(x.country || '?') + (x.have != null ? ' · have ' + esc(x.have) : '') + '</span></div>' +
+          '<button class="sm alt" data-pick="' + esc(r.key) + '" data-rid="' + esc(x.release_id) + '">Use this</button></div>';
+      }).join('');
+      var psRows = Object.keys(ps).length ? '<table class="sv-ps">' + j.vinyl_grades.filter(function (g) { return ps[g]; }).map(function (g) { return '<tr' + (g === r.vinyl_grade ? ' class="on"' : '') + '><td>' + esc(g) + '</td><td>' + usd(ps[g].value) + '</td></tr>'; }).join('') + '</table>' : '';
+      var val = r.release_id ? '<p class="sig">Release <a href="https://www.discogs.com/release/' + esc(r.release_id) + '" rel="noopener" target="_blank">' + esc(r.release_id) + '</a>' +
+        (r.valuation_fetched_at ? ' · values from ' + esc(r.valuation_fetched_at.replace('T', ' ').replace('Z', '')) : ' · no values fetched yet') +
+        ' · lowest listed ' + usd(r.lowest_price) + ' · ' + esc(r.num_for_sale == null ? '?' : r.num_for_sale) + ' for sale' + (r.blocked_from_sale ? ' · <span class="bad">blocked from sale</span>' : '') +
+        (Object.keys(r.valuation_errors || {}).length ? '<br><span class="bad">' + esc(Object.keys(r.valuation_errors).map(function (k) { return k + ': ' + r.valuation_errors[k]; }).join('; ')) + '</span>' : '') +
+        ' <button class="sm alt" data-refresh="' + esc(r.key) + '" data-rid="' + esc(r.release_id) + '">Refresh values</button></p>' + psRows : '';
+      return '<div class="sv-rec ' + (r.buying ? 'buying' : (r.offer != null ? 'pass' : '')) + '" data-key="' + esc(r.key) + '">' +
+        '<div><b>' + esc(r.key) + '. ' + esc(r.artist) + ' – ' + esc(r.title) + '</b>' + (r.catno ? ' <span class="muted">(' + esc(r.catno) + ')</span>' : '') + (r.added ? ' <span class="pill">added by you</span> <button class="sm alt" data-remove="' + esc(r.key) + '">Remove</button>' : '') + '</div>' +
+        (thumbs ? '<div class="sv-thumbs">' + thumbs + '</div>' : '') +
+        '<div class="row" style="margin-top:0"><input type="text" placeholder="Catalog #" data-q="catno" value="' + esc(r.catno) + '" style="max-width:150px;min-height:40px"><input type="text" placeholder="Artist" data-q="artist" value="' + esc(r.artist) + '" style="max-width:200px;min-height:40px"><input type="text" placeholder="Title" data-q="title" value="' + esc(r.title) + '" style="max-width:220px;min-height:40px"><button class="sm" data-search="' + esc(r.key) + '">Search Discogs</button></div>' +
+        (cands ? '<div class="dc-cands">' + cands + '</div>' : (r.searched_at ? '<p class="muted">No Discogs results.</p>' : '')) +
+        '<div class="row" style="margin-top:0"><input type="text" inputmode="numeric" placeholder="Release ID or URL" data-manual-in style="max-width:200px;min-height:40px"><button class="sm alt" data-manual="' + esc(r.key) + '">Use release ID</button></div>' + val +
+        '<div class="grid2"><label class="f">Vinyl grade' + sel('vinyl_grade', j.vinyl_grades, r.vinyl_grade, 'data-rec="' + esc(r.key) + '"') + '</label>' +
+        '<label class="f">Sleeve grade (× ' + esc(r.sleeve_factor) + ')' + sel('sleeve_grade', j.sleeve_grades, r.sleeve_grade, 'data-rec="' + esc(r.key) + '"') + '</label>' +
+        '<label class="f">Manual resale value ($, wins when set)<input type="number" step="0.5" min="0" data-rec="' + esc(r.key) + '" data-f="manual_resale" value="' + esc(r.manual_resale == null ? '' : r.manual_resale) + '"></label>' +
+        '<label class="f">Your offer override ($)<input type="number" step="0.5" min="0" data-rec="' + esc(r.key) + '" data-f="override_offer" value="' + esc(r.override_offer == null ? '' : r.override_offer) + '"></label></div>' +
+        '<p>Resale est. <b>' + usd(r.resale) + '</b>' + (r.resale_source ? ' <span class="sig">(' + esc(r.resale_source) + ')</span>' : ' <span class="bad">needs a value</span>') +
+        ' · rule offer <b>' + usd(r.rule_offer) + '</b> · offer <b>' + usd(r.offer) + '</b>' + (r.override_offer != null ? ' <span class="sig">(your override)</span>' : '') + '</p></div>';
+    }).join('') +
+      '<h3 class="sub">Add a record (from the overview photos)</h3><div class="row" style="margin-top:0"><input type="text" id="sv-x-artist" placeholder="Artist" style="max-width:200px;min-height:40px"><input type="text" id="sv-x-title" placeholder="Title" style="max-width:220px;min-height:40px"><input type="text" id="sv-x-catno" placeholder="Catalog #" style="max-width:150px;min-height:40px"><button class="sm alt" id="sv-x-add">Add</button></div>';
+    $('sv-body').innerHTML = h;
+    loadThumbs();
+  }
+  function svSet(j) { if (j._status >= 400) { alert(j.error || ('HTTP ' + j._status)); return; } SV.d = j.detail || j; svRender(); }
+  function svOpen(id) {
+    SV.id = id; Object.keys(SV.blobs).forEach(function (k) { URL.revokeObjectURL(SV.blobs[k]); }); SV.blobs = {};
+    $('sell-detail').classList.remove('hidden'); $('sv-body').innerHTML = '<p class="muted">Loading...</p>';
+    api('/admin/api/sell/detail?id=' + encodeURIComponent(id)).then(function (j) { svSet(j); $('sell-detail').scrollIntoView({ block: 'start' }); });
+  }
+  function svPost(path, body) { return jpost(path, Object.assign({ id: SV.id }, body)).then(svSet); }
+  $('sv-close').addEventListener('click', function () { $('sell-detail').classList.add('hidden'); sell(); });
+  $('sv-csv').addEventListener('click', function () { download('/admin/api/sell/valuation.csv?id=' + encodeURIComponent(SV.id), 'sell-valuation-' + SV.id + '.csv', $('sell-sum')); });
+  $('sv-body').addEventListener('change', function (e) {
+    var t = e.target, f = t.getAttribute('data-f'), key = t.getAttribute('data-rec');
+    if (t.id === 'sv-status') return svPost('/admin/api/sell/review', { status: t.value });
+    if (t.id === 'sv-ship') return svPost('/admin/api/sell/review', { ship_method: t.value });
+    if (t.id === 'sv-final') return svPost('/admin/api/sell/review', { final_offer: t.value === '' ? null : t.value });
+    if (t.id === 'sv-note') return svPost('/admin/api/sell/review', { note: t.value });
+    if (key && f) { var ch = {}; ch[f] = t.value === '' ? null : t.value; var recs = {}; recs[key] = ch; return svPost('/admin/api/sell/review', { records: recs }); }
+  });
+  $('sv-body').addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('button'); if (!b) return;
+    var box = b.closest('[data-key]'), ds = b.dataset;
+    if (ds.photo) {
+      var p = ds.photo;
+      if (ds.hasFull === '1') photoUrl(p, 'full').then(lightbox).catch(function (x) { alert('Could not load the photo: ' + x.message); });
+      else photoUrl(p, 'original').then(function (u) { var a = d.createElement('a'); a.href = u; a.download = p + '.heic'; d.body.appendChild(a); a.click(); a.remove(); });
+      return;
+    }
+    if (ds.search) {
+      var q = {}; box.querySelectorAll('[data-q]').forEach(function (i) { q[i.getAttribute('data-q')] = i.value.trim(); });
+      b.disabled = true; b.textContent = 'Searching...';
+      return jpost('/admin/api/sell/search', Object.assign({ id: SV.id, key: ds.search }, q)).then(function (j) { if (j.result === 'skipped') alert('Discogs skipped: ' + j.reason); svSet(j); });
+    }
+    if (ds.pick) { b.disabled = true; return svPost('/admin/api/sell/pick', { key: ds.pick, release_id: ds.rid }); }
+    if (ds.refresh) { b.disabled = true; return svPost('/admin/api/sell/pick', { key: ds.refresh, release_id: ds.rid, refresh: true }); }
+    if (ds.manual) {
+      var v = (box.querySelector('[data-manual-in]') || {}).value || '';
+      if (!/\d/.test(v)) return alert('Paste a Discogs release ID or URL.');
+      return svPost('/admin/api/sell/pick', { key: ds.manual, release_id: v });
+    }
+    if (ds.remove && confirm('Remove this added record?')) return svPost('/admin/api/sell/review', { remove_extra: ds.remove });
+    if (b.id === 'sv-x-add') return svPost('/admin/api/sell/review', { add_extra: { artist: $('sv-x-artist').value, title: $('sv-x-title').value, catno: $('sv-x-catno').value } });
+  });
+  // ---- offer rules
+  var SR = null;
+  function srFill(r, grades) {
+    $('sr-tiers').innerHTML = r.tiers.map(function (t, i) {
+      var lo = i ? r.tiers[i - 1][0] : 0;
+      return '<label class="f">Resale from $' + esc(lo) + ' up to (not incl.) $<input type="number" step="0.5" min="0" data-tier-b="' + i + '" value="' + esc(t[0]) + '"></label><label class="f">offer ($)<input type="number" step="0.5" min="0" data-tier-o="' + i + '" value="' + esc(t[1]) + '"></label>';
+    }).join('');
+    $('sr-pct').value = r.top.percent; $('sr-floor').value = r.top.floor; $('sr-cap').value = r.top.cap;
+    $('sr-ship').value = r.ship_per_record; $('sr-lowf').value = r.lowest_price_factor; $('sr-ttl').value = r.valuation_ttl_days;
+    $('sr-sleeve').innerHTML = grades.map(function (g) { return '<label class="f">' + esc(g) + '<input type="number" step="0.05" min="0" max="2" data-sleeve-f="' + esc(g) + '" value="' + esc(r.sleeve_factors[g]) + '"></label>'; }).join('');
+  }
+  function srLoad() { return api('/admin/api/sell/rules').then(function (j) { if (j._status !== 200) return; SR = j; srFill(j.rules, j.sleeve_grades); }); }
+  $('sell-rules-open').addEventListener('click', function () { $('sell-rules').classList.remove('hidden'); $('sr-msg').textContent = ''; srLoad().then(function () { $('sell-rules').scrollIntoView({ block: 'start' }); }); });
+  $('sr-close').addEventListener('click', function () { $('sell-rules').classList.add('hidden'); });
+  $('sr-defaults').addEventListener('click', function () { if (SR) { srFill(SR.defaults, SR.sleeve_grades); $('sr-msg').textContent = 'Defaults filled in. Press Save rules to keep them.'; } });
+  $('sr-save').addEventListener('click', function () {
+    var tiers = [], sf = {};
+    $('sr-tiers').querySelectorAll('[data-tier-b]').forEach(function (i) { var n = i.getAttribute('data-tier-b'); tiers.push([i.value, $('sr-tiers').querySelector('[data-tier-o="' + n + '"]').value]); });
+    $('sr-sleeve').querySelectorAll('[data-sleeve-f]').forEach(function (i) { sf[i.getAttribute('data-sleeve-f')] = i.value; });
+    jpost('/admin/api/sell/rules', { rules: { tiers: tiers, top: { percent: $('sr-pct').value, floor: $('sr-floor').value, cap: $('sr-cap').value },
+      ship_per_record: $('sr-ship').value, lowest_price_factor: $('sr-lowf').value, valuation_ttl_days: $('sr-ttl').value, sleeve_factors: sf } }).then(function (j) {
+      $('sr-msg').textContent = (j.errors && j.errors.length) ? 'Not saved: ' + j.errors.join('; ') : 'Saved.';
+      if (!(j.errors && j.errors.length)) { srFill(j.rules, SR.sleeve_grades); if (SV.id && !$('sell-detail').classList.contains('hidden')) svOpen(SV.id); }
+    });
   });
   // ------------------------------------------------------------------ Discogs
   var dc = { ov: null, rows: [], shown: 0 };
@@ -455,7 +673,7 @@ button.sm { min-height: 40px; padding: 0 12px; font-size: 14px; }
     if (t.dataset.sleeve) dcAct('/admin/api/discogs/decide', { id: t.dataset.sleeve, action: 'set_sleeve', sleeve_condition: t.value || null });
   });
   var _status = status;
-  status = function () { return _status().then(function () { if (!$('app').classList.contains('hidden')) { merch(); dcOverview().then(dcAlerts).then(dcEnablePreview); } }); };
+  status = function () { return _status().then(function () { if (!$('app').classList.contains('hidden')) { merch(); sell(); dcOverview().then(dcAlerts).then(dcEnablePreview); } }); };
   if (token) status();
 })();
 </script>

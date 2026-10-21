@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -62,7 +62,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "MCA411",
       "estimatedAvailabilities": [
@@ -87,8 +87,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1590,7 +1590,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128016681146?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9jvNK9kqHdmaYdrvDYdTXcH25L%2FW6m%2B%2FXGks7TM01EkHOQNbLI%2FtruKsAVUbH%2BgWtXeUKPa6fVTYhV0aMooPVFcrrp1Vo69jo3ARw%2Bf7Fexi64JnDATNhe5sK2feNhmRLjwm4jiYzxr8gBjh01lSN%2BW3SrFltM7bFdbxFPgo4jzOQa7BUnmTtyFVz5ofWUhMc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128016681146?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9jvNK9kqHdmaYdrvDYdTXcH25L%2FW6m%2B%2FXGks7TM01EkFuTOGdyvKPzNgtASQctG%2Bfg9%2Fw9WX01YmY6i%2FVJ74%2FxC0d2WXJWBgtJwK4z1pJ51fV%2Fw7l2e16QMClZkcOBxB%2FsCtbDI3Kp7hlwiThfTcBe0iWrCyEGG6JTNkEF%2BqgiQS2V2LfkOKNiDKydWDZfYe0%3D",
       "description": "<p>Olivia Newton-John – If You Love Me, Let Me Know – Vintage Vinyl LP</p><br /><p>Classic Olivia Newton-John LP featuring some of her best-known 1970s recordings, including “If You Love Me (Let Me Know),” “I Honestly Love You,” “Let Me Be There,” and “Have You Never Been Mellow.”</p>",
       "paymentMethods": [
         {
@@ -1647,5 +1647,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:31Z"
 }

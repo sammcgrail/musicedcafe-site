@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SE4644",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1612,7 +1612,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127958912360?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9fHONBWYd7UFb9UFXWwjk5x%2BBbH9kzYRF0lHbg%2BHZTHJbUOBZEnc7QZdjP0ummxbcupu9WWS%2Ff3PDfsSd88t8UDwcEhc50IA%2FPJlSzyLD3ak6Ezg8TuYnladYiNjtU7KgiELilEDPukjZj%2FKWpH4O%2FOSVsk0cWeZCp0xmBwypv4OclqWGmvih5%2F7qwB7C1utI%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127958912360?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9fHONBWYd7UFb9UFXWwjk5x%2BBbH9kzYRF0lHbg%2BHZTHKgaFCjOl%2FWp8dasE5lITsMG5lA8uIdy04yBWdBh2uI3LEKHV1JkhLa2OL1fLnwEUCYKlX7rWMKrlwgb1B9b%2BT6uedks1a0n7xNzf%2FcWQs77v2MFV1ceckKxUMi3fcdaEF8YflzapBh5Ff7u8T5D%2BT0%3D",
       "description": "<h2 data-section-id=\"1wpwaqe\" data-start=\"1164\" data-end=\"1213\" class=\"PDq2pG_selectionAnchorContainer\">Hank Williams, Jr. – Live At Cobo Hall Detroit<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></h2>\n<p data-start=\"1215\" data-end=\"1262\">Original MGM Records stereo pressing (SE-4644).</p>\n<p data-start=\"1264\" data-end=\"1307\">Classic live country performance featuring:</p>\n<ul data-start=\"1309\" data-end=\"1555\">\n<li data-section-id=\"1tmog3c\" data-start=\"1309\" data-end=\"1320\">\nJambalaya\n</li>\n<li data-section-id=\"1aeussa\" data-start=\"1321\" data-end=\"1335\">\nDetroit City\n</li>\n<li data-section-id=\"l7r9hu\" data-start=\"1336\" data-end=\"1355\">\nGames People Play\n</li>\n<li data-section-id=\"1v99a1b\" data-start=\"1356\" data-end=\"1381\">\nStanding in the Shadows\n</li>\n<li data-section-id=\"bc72da\" data-start=\"1382\" data-end=\"1408\">\nFoggy Mountain Breakdown\n</li>\n<li data-section-id=\"16n0jqz\" data-start=\"1409\" data-end=\"1424\">\nYou Win Again\n</li>\n<li data-section-id=\"1frbkhz\" data-start=\"1425\" data-end=\"1450\">\nShe Thinks I Still Care\n</li>\n<li data-section-id=\"31oihc\" data-start=\"1451\" data-end=\"1485\">\nDarling, You Know I Wouldn't Lie\n</li>\n<li data-section-id=\"1979v5n\" data-start=\"1486\" data-end=\"1515\">\nI'm So Lonesome I Could Cry\n</li>\n<li data-section-id=\"1495x60\" data-start=\"1516\" data-end=\"1537\">\nYour Cheatin' Heart\n</li>\n<li data-section-id=\"m2dxsz\" data-start=\"1538\" data-end=\"1555\">\nI Saw the Light\n</li>\n</ul>\n<hr data-start=\"1557\" data-end=\"1560\">\n<h3 data-section-id=\"1uef3h1\" data-start=\"1562\" data-end=\"1575\">Condition</h3>\n<p data-start=\"1577\" data-end=\"1591\" class=\"\"><strong data-start=\"1577\" data-end=\"1591\">Vinyl: VG+</strong></p>\n<p data-start=\"1593\" data-end=\"1723\">Record retains excellent gloss with only light sleeve scuffs and minor hairlines from normal handling. No deep scratches observed.</p>\n<p data-start=\"1725\" data-end=\"1738\"><strong data-start=\"1725\" data-end=\"1738\">Cover: G+</strong></p>\n<p data-start=\"1740\" data-end=\"1891\">Original jacket shows noticeable shelf wear, ring wear, rubbing, creasing, edge wear, and corner wear. Please review all photos for cosmetic condition.</p>",
       "paymentMethods": [
         {
@@ -1669,5 +1669,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:53Z"
 }

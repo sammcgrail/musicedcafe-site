@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -77,7 +77,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -101,8 +101,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1604,7 +1604,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128123694365?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8eettNPp3XO%2BLV33PlGiOWyYdxsd9%2BHrek%2FDdB55gs%2B0m5QnEW1yFNsTlb6MjnoMuI6ShUoLGo5rc46fi4%2BBoD3VixsIMtbpIB57x9673yw1w%2BHAc6RuTBuFH9qbytPQATsFaQmqw8V1r152dUk3hinLswCL7%2BSOvnnqFDGBoERo1BQ05g8sMTHaix%2FQHFcfQ%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128123694365?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8eettNPp3XO%2BLV33PlGiOWyYdxsd9%2BHrek%2FDdB55gs%2B59PMJRrFAH%2BCs1YrR5qjb2WpwkgfEk4wNDhgcaJbzRrNUD483D38Dk%2By7nsboZzaujF6GOzRA3d9J8qmnNMCKLPMMfmmDsrpAUhrsscM%2BasmxRMtJpUboaeS0xouG5i%2BytoBrdgGpfGI6amMOy3nXc%3D",
       "description": "<p><strong>Nancy Wilson – Welcome to My Love</strong></p><p>Capitol Records – ST-2844<br>Stereo 12\" Vinyl LP<br>Jazz / Vocal Jazz / Soul Jazz / Pop</p><p>Classic Nancy Wilson album arranged and conducted by <strong>Oliver Nelson</strong>, featuring a mix of jazz standards, soul-influenced material and sophisticated vocal arrangements.</p><p><strong>Track highlights include:</strong></p><ul><li>In the Heat of the Night</li><li>Angel Eyes</li><li>I’m Always Drunk in San Francisco</li><li>Theme From “Hotel”</li><li>For Once in My Life</li><li>You Don’t Know Me</li><li>Why Try to Change Me Now</li><li>Welcome to My Love</li><li>Ode to Billie Joe</li></ul><p><strong>Condition:</strong><br><strong>Vinyl: VG+</strong> – glossy vinyl with light surface marks visible under direct light. No major scratches apparent in the photos.</p><p><strong>Cover: VG+</strong> – light shelf wear, corner/edge wear and age-related discoloration. No major seam splits visible in the supplied photos. Please review all photos for exact cosmetic condition.</p><p><strong>Artist:</strong> Nancy Wilson<br><strong>Title:</strong> Welcome to My Love<br><strong>Label:</strong> Capitol Records<br><strong>Catalog #:</strong> ST-2844<br><strong>Format:</strong> LP, 33⅓ RPM, Stereo<br><strong>Country:</strong> USA<br><strong>Genre:</strong> Jazz / Soul<br><strong>Style:</strong> Vocal Jazz / Soul Jazz / Traditional Pop</p>",
       "paymentMethods": [
         {
@@ -1661,5 +1661,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:01Z"
 }

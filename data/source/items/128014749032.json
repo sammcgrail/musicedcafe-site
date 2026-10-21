@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "71721",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1587,7 +1587,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014749032?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9HlTlkq4m%2BjiFOtArAKWoWyEsOiE%2FujW3WrnhwPrEAkajt%2BbTXo9XOi8l1Pu2RF0oCKzgEMeBUQabWXn10Z0wvfEtdRRBPjrdRi2lKH3Z16ST1Hx%2FUe9xeLtWMQFZuXl2Lvz8VeppGocUW88TRMLABK1DWqL6j0O2rbXrBOTJWnihz%2F5HS127d%2BIuIFpPhKZI%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014749032?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9HlTlkq4m%2BjiFOtArAKWoWyEsOiE%2FujW3WrnhwPrEAkRHfLJFg63%2F0wSoMK8bdndmTor6sK6SOl2BO4Xx9ULk6dgkZwbsjYyd4vqcc98gPMV5RNnU968cocKAqD%2BAoxbn4c%2BOsEslDKkiQWq4zL%2B4R0GCGtZqT1uy8XZS%2B86CpZpTKHkATfBAEnXYHRvRTDno%3D",
       "description": "<p>Vintage George Jones 45 RPM single on Mercury Records, catalog number 71721.</p><br /><p>Features:</p><br /><p>A-Side: “Family Bible” – 3:00</p><p>B-Side: “Taggin’ Along” – 2:50</p><br /><p>“Taggin’ Along” is noted on the label as being from the Mercury album Country Church Time.</p><br /><p>Classic early George Jones material with strong appeal to collectors of traditional country, honky-tonk and vintage country gospel.</p>",
       "paymentMethods": [
         {
@@ -1644,5 +1644,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:49Z"
 }

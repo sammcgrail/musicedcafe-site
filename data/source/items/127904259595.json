@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PC33576",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1642,7 +1642,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127904259595?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde81smguurLkDk1fDTPhQdQSNPmnvErLOvHViBzyGcLDTLE%2Fi1HGOxwv1xFzGfQwLB45%2FNDq9qOM8kEPdTNsFJGiOm5kgEKXye5rMg%2FNaIcLfEj%2F0VWQJQPPeaTF9m1He04OVV8nCerlmxlnnbPvYKe%2Bt9JJOmshzAD0fn8kzkgdZUJOTUM2xp2ccbiZnGCVxus%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127904259595?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde81smguurLkDk1fDTPhQdQSNPmnvErLOvHViBzyGcLDTPuitsyEnt9dzfCbgQLMukWJoTyMF1J5%2FtGJeG9KqQGceUU8nSrc3g04prGj8zScfW9qRRuRR6wdyDxnRgYfnZUulO5j8WN900yCANwHLh7Rbluc5BzxQe%2BRKD9%2FOtKeisTNXb8pV7tHkfkyztoaEpY%3D",
       "description": "<p data-start=\"964\" data-end=\"984\"><strong data-start=\"964\" data-end=\"984\">Santana – Amigos</strong></p>\n<p data-start=\"986\" data-end=\"1172\">Classic 1976 Santana album featuring the fan-favorite instrumental <strong data-start=\"1053\" data-end=\"1094\">\"Europa (Earth's Cry Heaven's Smile)\"</strong> along with \"Dance Sister Dance (Baila Mi Hermana),\" \"Let It Shine,\" and more.</p>\n<p data-start=\"1174\" data-end=\"1308\"><strong data-start=\"1174\" data-end=\"1185\">Artist:</strong> Santana<br data-start=\"1193\" data-end=\"1196\">\n<strong data-start=\"1196\" data-end=\"1206\">Title:</strong> Amigos<br data-start=\"1213\" data-end=\"1216\">\n<strong data-start=\"1216\" data-end=\"1226\">Label:</strong> Columbia<br data-start=\"1235\" data-end=\"1238\">\n<strong data-start=\"1238\" data-end=\"1257\">Catalog Number:</strong> PC 33576<br data-start=\"1266\" data-end=\"1269\">\n<strong data-start=\"1269\" data-end=\"1278\">Year:</strong> 1976<br data-start=\"1283\" data-end=\"1286\">\n<strong data-start=\"1286\" data-end=\"1297\">Format:</strong> LP, 33 RPM</p>\n<h3 data-section-id=\"1uef3h1\" data-start=\"1310\" data-end=\"1323\">Condition</h3>\n<p data-start=\"1325\" data-end=\"1352\"><strong data-start=\"1325\" data-end=\"1335\">Vinyl:</strong> VG</p>\n<ul data-start=\"1353\" data-end=\"1418\">\n<li data-section-id=\"1j49r33\" data-start=\"1353\" data-end=\"1367\">\nStrong gloss\n</li>\n<li data-section-id=\"1143dek\" data-start=\"1368\" data-end=\"1388\">\nLight signs of use\n</li>\n<li data-section-id=\"xkkpl2\" data-start=\"1389\" data-end=\"1418\">\nNo major scratches observed\n</li>\n</ul>\n<p data-start=\"1420\" data-end=\"1434\"><strong data-start=\"1420\" data-end=\"1431\">Jacket:</strong> VG</p>\n<ul data-start=\"1435\" data-end=\"1513\">\n<li data-section-id=\"f9b01f\" data-start=\"1435\" data-end=\"1469\">\nRing wear and general shelf wear\n</li>\n<li data-section-id=\"1vjyi06\" data-start=\"1470\" data-end=\"1492\">\nCorner and edge wear\n</li>\n<li data-section-id=\"1y6hdst\" data-start=\"1493\" data-end=\"1513\">\nStructurally solid</li></ul>",
       "paymentMethods": [
         {
@@ -1699,5 +1699,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:08Z"
 }

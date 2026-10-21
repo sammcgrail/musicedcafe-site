@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "GEF49644",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1607,7 +1607,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970919318?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8NuSbrHJ2aUk5JbnA5xW7dBbMUHEbRfZ0UJSNjR0C38lQA58Lh7cFM6ouOTvF8ohdVcY8j%2FSE2auPV7p3SBq9svb6Oq3J6seQMmWXqOpVQ%2B62vNY9oR0%2BpSux5l8ypr9SzWTyfRKR7eCQuUpb5m4Y%2BlxEn4tACICCqcU4FNaOQVGfVoFn%2F9lRbiICG90Pp2Nk%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970919318?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8NuSbrHJ2aUk5JbnA5xW7dBbMUHEbRfZ0UJSNjR0C38t57UdpUIvbsSlpAh6MabWghrMdu5jUXuR1EmCUZS5TdI7iPiFkXfmnwckuIFaSTm8PVfX%2FWL3Hp3PM8P7nVAuGHWeIcszl8gWRetljOA93k0Q%2BUBmU%2BTNzOXq6I%2FphMCW9GZ26EaLJFqxqnGU57lDc%3D",
       "description": "<p data-start=\"998\" data-end=\"1197\" class=\"PDq2pG_selectionAnchorContainer\">Original Geffen Records 45 RPM single featuring <strong data-start=\"1046\" data-end=\"1072\">John Lennon's \"Woman,\"</strong> one of the standout singles from the landmark <strong data-start=\"1119\" data-end=\"1137\">Double Fantasy</strong> album. The B-side features <strong data-start=\"1165\" data-end=\"1197\">Yoko Ono's \"Beautiful Boys.\"</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1199\" data-end=\"1325\">Released shortly after the <em data-start=\"1226\" data-end=\"1242\">Double Fantasy</em> sessions, this single remains a favorite among Beatles and John Lennon collectors.</p>\n<p data-start=\"1327\" data-end=\"1451\">Record will be shipped in a new paper sleeve inside a protective poly sleeve and securely packaged in a rigid 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1664,5 +1664,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:37Z"
 }

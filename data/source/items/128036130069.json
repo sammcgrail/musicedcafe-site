@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "3807971",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1607,7 +1607,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036130069?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9hw0vsdHsXypH0vGWcUqQoqiHZ9FtkIUOs0QZu%2FmaKIff0eowEGKdpDxdt2nZirvr4pDd%2FzkI9MeWdpTRTn10PpK%2B44Ij6ZVlrkf8%2BEllAbapqVUpJp6mXrLPDYwCavlVOL162HOkUoKEKhxNwn9ke%2FqNPGzzOCf3fhXhlMJtwOL59kWpxGAowc%2FcAB%2FhrSQQ%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036130069?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9hw0vsdHsXypH0vGWcUqQoqiHZ9FtkIUOs0QZu%2FmaKISJXKmrYdgDPkFDtOTWBM2fVRdPvY569JxhbhDcDOuswLMmeGOtQIc5gIlOxiFxXy7GU%2BMfMFVKELr4c5cvEi%2Fo11Fk%2BWd7IGsmOX10hVqq2QoS8vCwVo7nfDpM%2Fm5firrr4gxPdeAPvNd5zuODbT9U%3D",
       "description": "<p>Kenny Loggins – “Nobody’s Fool (Theme From Caddyshack II)” / “I’m Gonna Do It Right”</p><br /><p>Original 1988 Columbia 7-inch 45 RPM single, catalog number 38-07971.</p><br /><p>“Nobody’s Fool” was featured as the theme from Caddyshack II and became one of Kenny Loggins’ notable movie soundtrack hits.</p><br /><p>Track Listing:</p><br /><p>Side A – Nobody’s Fool (Theme From Caddyshack II) – 4:17</p><p>Side B – I’m Gonna Do It Right – 4:40</p><br /><p>Condition:</p><p>Vinyl shows visible surface wear and light marks consistent with normal use. Labels remain bright and clean. Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great addition for Kenny Loggins fans, 1980s collectors, movie soundtrack collectors, or vintage 45 RPM collections.</p><br /><p>Record will be carefully packaged for shipping.</p><p>:::writing</p>",
       "paymentMethods": [
         {
@@ -1664,5 +1664,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:10Z"
 }

@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -89,7 +89,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SD2700",
       "estimatedAvailabilities": [
@@ -114,8 +114,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1652,7 +1652,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127889394729?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FcBpyADgyfwnWKstwu95TW%2FWD5liarj5sPchUd3vVEsnQx%2BP54ul1vl%2BqZYNa1s%2FREzaDvZsHvRadjWck3EutmnK%2FGg7pRAnlrL6%2Fifvc2BmBiUEjmI55Q%2BdqoPkqo2yeUuQpx4CrLDJig5WyjigOw3TFmohaevA%2Fp87bOvhSWBrKNFaMI2lScrNqB0hVxVZc%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127889394729?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FcBpyADgyfwnWKstwu95TW%2FWD5liarj5sPchUd3vVEshZDCTLx5KR1qZbdMNk8i2S7tKuAWhuE6L9HYRAB%2BoUjA5BRtFrhujc0w6AbDjDTvdphWH8TKlymEXxlWOWBE8h1Xbi%2FsbEBzppz9wlep0wcV%2BccJyu4ziX8LxnZomTSTqxStklik79mbzPwKk6bUJw%3D",
       "description": "<p data-start=\"1428\" data-end=\"1570\">Vintage original stereo pressing of <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Wheels of Fire</span> by <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Cream</span> on Atco Records (SD 2-700).</p>\n<p data-start=\"1572\" data-end=\"1624\">Complete 2LP set featuring classic tracks including:</p>\n<ul data-start=\"1625\" data-end=\"1698\">\n<li data-section-id=\"gv1vu8\" data-start=\"1625\" data-end=\"1637\">\nWhite Room\n</li>\n<li data-section-id=\"11esgt9\" data-start=\"1638\" data-end=\"1650\">\nCrossroads\n</li>\n<li data-section-id=\"iqu7ay\" data-start=\"1651\" data-end=\"1661\">\nSpoonful\n</li>\n<li data-section-id=\"ndzsro\" data-start=\"1662\" data-end=\"1685\">\nBorn Under a Bad Sign\n</li>\n<li data-section-id=\"1d96sju\" data-start=\"1686\" data-end=\"1698\">\nPolitician\n</li>\n</ul>\n<h2 data-section-id=\"hrykuu\" data-start=\"1700\" data-end=\"1712\">Condition</h2>\n<p data-start=\"1713\" data-end=\"1818\"><strong data-start=\"1713\" data-end=\"1723\">Vinyl:</strong>&nbsp;G<br data-start=\"1733\" data-end=\"1736\">\nBoth records retain good gloss with light surface marks/hairlines from normal use.</p>\n<p data-start=\"1820\" data-end=\"1954\"><strong data-start=\"1820\" data-end=\"1830\">Cover:</strong> G<br data-start=\"1839\" data-end=\"1842\">\nOriginal silver psychedelic gatefold cover with noticeable ring wear, fading, and edge wear consistent with age.</p>\n<p data-start=\"1956\" data-end=\"2040\">A solid playable vintage copy of this classic psychedelic/blues rock landmark album.</p>",
       "paymentMethods": [
         {
@@ -1709,5 +1709,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:26Z"
 }

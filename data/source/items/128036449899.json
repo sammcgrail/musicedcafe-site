@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1601,7 +1601,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036449899?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B8njKGbNf%2BW0lFalFcK84I9hYnjxX269IaQG33tpls9AumuI1aLeCiIT%2BosHhMlvM6VH3gfxNOkawx9jmUZMNo6OeUC4Dvay%2FvKtUpenKJFgg1irxTY74AGERRosNA2IhBu0NsujWEXsFg4bx9Fa4pgrCmzed0qtm90YSXTxfNlC93QZKHxgRwgvo%2BuJ5fvns%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036449899?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B8njKGbNf%2BW0lFalFcK84I9hYnjxX269IaQG33tpls9Btnq10OEo%2BLn%2FORkLqXyzRTmjGwQaKLsRo%2FRAnyFfuGxh00Sb5SP5KhoN6CJZSVGNfw%2Fsq2f6Gm9x3aZWv%2BWBo2J7sUxH9JKujKZXcnCahhSt3%2FLlhm84m5urwTj9x6Zx8gDTXg8MwMR0WmgGYLk3U%3D",
       "description": "<p>Debbie Gibson “Anything Is Possible” / “So Close to Forever” 7-inch 45 RPM vinyl single released on Atlantic Records in 1990.</p><br /><p>Catalog Number: 7-87793</p><p>Side A: Anything Is Possible</p><p>Side B: So Close to Forever</p><br /><p>Original U.S. Atlantic pressing. “So Close to Forever” is a non-album B-side.</p><br /><p>Vinyl appears approximately VG/VG+ visually, with good overall gloss and light surface marks consistent with normal handling and play.</p><br /><p>Labels show some wear. A-side label has a small handwritten sticker over the barcode area as shown in the photos.</p>",
       "paymentMethods": [
         {
@@ -1658,5 +1658,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:55Z"
 }

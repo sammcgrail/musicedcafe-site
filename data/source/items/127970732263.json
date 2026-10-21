@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PD14514",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970732263?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8sIlgsp6fER3nj9L0oRalvX1m%2FJoorMfwk2BnMQTjvTDaSutUZMEzr8d0ntk4dSEx%2Fge6h0Ls7aUsmkovi4im2tsKZpa5cR2KUfx3lqPAiQKmgKizyXVzUJWJJUyNEW9xWEIw8AGrXWqezb2ykEMahGm30B54FQ%2BlaaDgjzZSp5%2FivB6cs5p%2BJymFwihgiZmA%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970732263?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8sIlgsp6fER3nj9L0oRalvX1m%2FJoorMfwk2BnMQTjvTCjgOuWPKr8v9jJ5FtN27zJRoJWmmmVWtumxmjMgrqj2%2BgJ1i251Ng3Ie%2BymjOUuWbhyFuF82uWbriRoDkM5PEr8s5bMIoqJeWl858BSCt36hDt7i5wyAy8yFgtg7JEEKR015WDbZY6Koh1oA9U1bwE%3D",
       "description": "<p data-start=\"470\" data-end=\"545\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"470\" data-end=\"545\">Peaches &amp; Herb – Shake Your Groove Thing / All Your Love (Give It Here)</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"547\" data-end=\"786\">Original 1978 Polydor Records 45 RPM single featuring the disco classic <strong data-start=\"619\" data-end=\"649\">\"Shake Your Groove Thing,\"</strong> one of the defining dance hits of the late 1970s. A favorite among disco collectors, DJs, jukebox enthusiasts, and fans of classic soul.</p>\n<p data-start=\"788\" data-end=\"814\"><strong data-start=\"788\" data-end=\"799\">Artist:</strong> Peaches &amp; Herb</p>\n<p data-start=\"816\" data-end=\"842\"><strong data-start=\"816\" data-end=\"826\">Label:</strong> Polydor Records</p>\n<p data-start=\"844\" data-end=\"872\"><strong data-start=\"844\" data-end=\"863\">Catalog Number:</strong> PD 14514</p>\n<p data-start=\"874\" data-end=\"901\"><strong data-start=\"874\" data-end=\"885\">Format:</strong> 7\" Vinyl Single</p>\n<p data-start=\"903\" data-end=\"920\"><strong data-start=\"903\" data-end=\"913\">Speed:</strong> 45 RPM</p>\n<p data-start=\"922\" data-end=\"932\"><strong data-start=\"922\" data-end=\"932\">Stereo</strong></p>\n<h3 data-section-id=\"qfm5q2\" data-start=\"934\" data-end=\"944\">Tracks</h3>\n<p data-start=\"946\" data-end=\"956\"><strong data-start=\"946\" data-end=\"956\">Side A</strong></p>\n<ul data-start=\"957\" data-end=\"982\">\n<li data-section-id=\"1d4xlcn\" data-start=\"957\" data-end=\"982\">\nShake Your Groove Thing\n</li>\n</ul>\n<p data-start=\"984\" data-end=\"994\"><strong data-start=\"984\" data-end=\"994\">Side B</strong></p>\n<ul data-start=\"995\" data-end=\"1025\">\n<li data-section-id=\"138a1kj\" data-start=\"995\" data-end=\"1025\">\nAll Your Love (Give It Here)\n</li>\n</ul>\n<h3 data-section-id=\"1uef3h1\" data-start=\"1027\" data-end=\"1040\">Condition</h3>\n<p data-start=\"1042\" data-end=\"1073\"><strong data-start=\"1042\" data-end=\"1052\">Vinyl:</strong> Very Good Plus (VG+)</p>\n<ul data-start=\"1074\" data-end=\"1258\">\n<li data-section-id=\"1ut9fia\" data-start=\"1074\" data-end=\"1151\">\nOriginal glossy vinyl with light surface marks consistent with careful use.\n</li>\n<li data-section-id=\"7aeyv8\" data-start=\"1152\" data-end=\"1199\">\nLabels are clean with no writing or stickers.\n</li>\n<li data-section-id=\"40qt7m\" data-start=\"1200\" data-end=\"1258\">\nPlease review all photos for overall cosmetic condition.\n</li>\n</ul>\n<p data-start=\"1260\" data-end=\"1270\"><strong data-start=\"1260\" data-end=\"1270\">Sleeve</strong></p>\n<ul data-start=\"1271\" data-end=\"1300\">\n<li data-section-id=\"18q9mh6\" data-start=\"1271\" data-end=\"1300\">\nGeneric white paper sleeve.</li></ul>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:56Z"
 }

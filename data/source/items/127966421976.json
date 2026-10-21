@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -81,7 +81,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -105,8 +105,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1603,7 +1603,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127966421976?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FCk1wFKWpVKLlIHxCdXEG6ng6tJT3hPWyrWjJBi9Q5oQrQvPbxjLpXM%2Bb7TU%2FvirAeF8LAbJ4cmfgfcmtRiUZsThUSu9Kpw45h9I2oaTIrG0GyyAYxaMiu4ibI0HmV51XUHm0mWvg71x9Q1yiYtwAfx2jAimOM%2FX81m7qnIJuk3%2FYEuiVAh0mT%2FGRxuFHNpbo%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127966421976?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FCk1wFKWpVKLlIHxCdXEG6ng6tJT3hPWyrWjJBi9Q5oSRo4%2Bhrs7D8n6RQORnOvcQotmIaKFZFJOMAOi0M3ArqPaTC1ek658qB3qcLXp8cHNW45HYsFgWwg3X%2BnStWGF6MB%2BZ8ga00ZuZnU8deIEv5WDHPLiw%2BSqOi5PrAqvnV81PoLtUuAkBvkZGZYV6zEpg%3D",
       "description": "<p data-start=\"1047\" data-end=\"1110\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"1047\" data-end=\"1110\">Whitney Houston – Greatest Love of All / Thinking About You</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1112\" data-end=\"1303\">Original 1985 Arista Records 7-inch 45 RPM single featuring Whitney Houston's iconic hit <strong data-start=\"1201\" data-end=\"1227\">\"Greatest Love of All\"</strong> backed with <strong data-start=\"1240\" data-end=\"1265\">\"Thinking About You.\"</strong> Includes the original picture sleeve.</p>\n<p data-start=\"1305\" data-end=\"1383\">A classic addition to any Whitney Houston, 1980s pop, or R&amp;B vinyl collection.</p>\n<h3 data-section-id=\"17si63v\" data-start=\"1385\" data-end=\"1402\">Track Listing</h3>\n<p data-start=\"1404\" data-end=\"1414\"><strong data-start=\"1404\" data-end=\"1414\">Side A</strong></p>\n<ul data-start=\"1415\" data-end=\"1437\">\n<li data-section-id=\"ib3x3\" data-start=\"1415\" data-end=\"1437\">\nGreatest Love of All\n</li>\n</ul>\n<p data-start=\"1439\" data-end=\"1449\"><strong data-start=\"1439\" data-end=\"1449\">Side B</strong></p>\n<ul data-start=\"1450\" data-end=\"1470\">\n<li data-section-id=\"nero6\" data-start=\"1450\" data-end=\"1470\">\nThinking About You\n</li>\n</ul>\n<hr data-start=\"1472\" data-end=\"1475\">\n<h2 data-section-id=\"hrykuu\" data-start=\"1477\" data-end=\"1489\">Condition</h2>\n<h3 data-section-id=\"66qldu\" data-start=\"1491\" data-end=\"1524\"><span role=\"text\">Vinyl: <strong data-start=\"1502\" data-end=\"1524\">VG+ (Visual Grade)</strong></span></h3>\n<ul data-start=\"1526\" data-end=\"1654\">\n<li data-section-id=\"13ywv10\" data-start=\"1526\" data-end=\"1547\">\nNice original gloss\n</li>\n<li data-section-id=\"113l2pv\" data-start=\"1548\" data-end=\"1593\">\nLight sleeve scuffs and minor surface marks\n</li>\n<li data-section-id=\"dsjpk0\" data-start=\"1594\" data-end=\"1623\">\nNo cracks or chips observed\n</li>\n<li data-section-id=\"vi73u1\" data-start=\"1624\" data-end=\"1654\">\nLabels are clean and legible\n</li>\n</ul>\n<h3 data-section-id=\"1ed8c77\" data-start=\"1656\" data-end=\"1688\"><span role=\"text\">Picture Sleeve: <strong data-start=\"1676\" data-end=\"1688\">G+ / VG-</strong></span></h3>\n<ul data-start=\"1690\" data-end=\"1836\">\n<li data-section-id=\"ejqoq1\" data-start=\"1690\" data-end=\"1724\">\nOriginal picture sleeve included\n</li>\n<li data-section-id=\"tbebpi\" data-start=\"1725\" data-end=\"1758\">\nModerate edge wear and creasing\n</li>\n<li data-section-id=\"raqol6\" data-start=\"1759\" data-end=\"1795\">\nNoticeable wear along the top seam\n</li>\n<li data-section-id=\"czzyne\" data-start=\"1796\" data-end=\"1836\">\nGeneral shelf wear consistent with age\n</li>\n</ul>\n<p data-start=\"1838\" data-end=\"1915\">Please review all photos carefully, as they are part of the item description.</p>",
       "paymentMethods": [
         {
@@ -1660,5 +1660,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:21Z"
 }

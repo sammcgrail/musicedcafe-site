@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "B44302",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1586,7 +1586,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128022986739?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9arW42fNBq5%2B4FZB0lwYS2wb1AU3AXm1sw1KT3DWMH8on5Z0DAn8JWe4bQxKvrX%2FPbW9JkU33XczNUSouOXDd%2FTol%2BRXGNAu6fZnU%2BmNS05n%2BRu4njLwIelcn0lk5v6KN%2FmVb4c8xW28WHtdezub60FeQ5bmbIBNpxBlGpNepO8PESuOuOxnU4DQDH3QZH5ic%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128022986739?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9arW42fNBq5%2B4FZB0lwYS2wb1AU3AXm1sw1KT3DWMH8gpyqn4onhw7vZnrbn2dpHGpJvBG4yC4xAV18Y8QbaMc03RqQ9HcIkDpJAZSIi32rl6qTuDlajIgIatr3MQMz0uUqzBG2Urujpa%2B1KWfajFg%2BGOixlE2QNhGJbai2XztZFOn8QO9pNn81DdVAJ%2BayHM%3D",
       "description": "<p>Sheriff – When I’m With You / Give Me Rock ’N’ Roll</p><br /><p>Vintage 7-inch 45 RPM single on Capitol Records.</p><br /><p>Artist: Sheriff</p><p>Label: Capitol Records</p><p>Catalog Number: B-44302</p><p>Format: 7” Vinyl Single</p><p>Speed: 45 RPM</p><p>Year: 1982</p><p>Genre: Rock / AOR / Classic Rock</p><p>Country: USA</p><br /><p>Tracks:</p><p>A – When I’m With You – 3:54</p><p>B – Give Me Rock ’N’ Roll – 3:41</p><br /><p>Record is in approximately VG visual condition, showing light surface scratches/scuffs consistent with normal vintage use. Labels remain clean and readable.</p><br /><p>Includes the vintage plain yellow paper sleeve shown in the photos. Sleeve has age-related wear and discoloration.</p><br /><p>Please review all photos carefully for exact cosmetic condition. Sold as pictured.</p>",
       "paymentMethods": [
         {
@@ -1643,5 +1643,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:22Z"
 }

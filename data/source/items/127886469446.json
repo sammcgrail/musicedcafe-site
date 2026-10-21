@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SP3730",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1637,7 +1637,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127886469446?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9fKAaEtL96i%2BAemWRRVIjR0RaBHym2FnRSveunEAwlgvD0PuSTDwBXd%2BA50Sn%2Ft3euJtdOcdkocWM3lgboX38VGS5E5KhUq0zgFVIqGkgxTya%2Fb1UpTT3SsPT%2Fm7W9sijpUAv03Bj4IRDoTr7SuN%2FnOqgBSSNY92JbkobSuj505waplSNZFp0KbG5t6F%2FpUhg%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127886469446?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9fKAaEtL96i%2BAemWRRVIjR0RaBHym2FnRSveunEAwlgqU4A5l4KtktB%2BkXMjnk3Ibfn2L5nnXrZP%2FdB2bjPEPi4oxwlslTORlypgtVbBpDB8WX9vT1PZXXsUHUnWzSBIfiQ6Z4V2qg6wIbSazVH7DtX%2FU5fluoFOTK6g1egevKwXLNpLuRQn3OYKnhnAAAbCw%3D",
       "description": "<h2 data-section-id=\"19m9o0f\" data-start=\"935\" data-end=\"971\">The Police – Ghost in the Machine</h2>\n<p data-start=\"973\" data-end=\"1010\"><span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Ghost in the Machine</span></p>\n<p data-start=\"1012\" data-end=\"1048\">Classic 1981 Police album featuring:</p>\n<ul data-start=\"1049\" data-end=\"1135\">\n<li data-section-id=\"mbdx5p\" data-start=\"1049\" data-end=\"1087\">\nEvery Little Thing She Does Is Magic\n</li>\n<li data-section-id=\"4ahz8p\" data-start=\"1088\" data-end=\"1119\">\nSpirits in the Material World\n</li>\n<li data-section-id=\"8sett5\" data-start=\"1120\" data-end=\"1135\">\nInvisible Sun</li></ul><div><b>Condition:</b></div><div>Vinyl: VG. Clean glossy copy with light surface wear. Jacket: VG. Nice original cover with minor edge/corner wear.</div>",
       "paymentMethods": [
         {
@@ -1694,5 +1694,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:29Z"
 }

@@ -72,6 +72,69 @@ and the OG image, and credited in the footer and on How buying works.
   Fire, 128015289745) was vetoed by hand: CAA holds the wrong image for that
   release.
 
+## 2026-10-21: sales arrive as "Sold", hourly
+The 10:15 sync saw two sold LPs (Johnny Mathis – Christmas Eve 127889422585,
+Chuck Mangione – Feels So Good 128123687010) as "listed with 0 available", so
+the site showed them as "Ended" at the bottom of Recently Sold. Fixed by the
+sold confirmation step, the `/sold/` ordering (sale date, then status-change
+date) and an hourly sync. The "Feels So Good" twice in `/shop/` HTML was not a
+leak: both hits are The Manhattans – *It Feels So Good* (127959609533, active),
+once in the image alt text and once in the card title. Unavailable and sold
+records never get a Shop or Featured card, and `search-index.json` only adds
+search text to cards already on the page. A test now covers this.
+
+## 2026-10-21: Sell Your Records (/sell/)
+Page, homepage teaser, nav + footer links and a private form (POST `/sell/submit` to the admin sidecar, like merch).
+Copy flags live in `content/sell/sell.json`: `postage` (now "We cover shipping. If you're shipping, we'll send you a
+prepaid label.") and `local_pickup` (true shows the by-appointment line and the drop-off choice in the form); edit and
+`scripts/mec build`. Submissions go to `data/sell/submissions.jsonl` (gitignored, mode 600) and show in `/admin/`
+with CSV export and delete. Code: `mec/sell.py`, `tests/test_sell.py`. Caddy route `handle /sell/submit` is in box
+`app/Caddyfile`. Desktop nav breakpoint moved 1040px -> 1180px to fit the extra link.
+
+### v2 (Edwin, 2026-10-21): no public offer amounts, photos per record, internal offer calculator
+Edwin: "take out the part about how we come up with offers and how much we pay ... we would also cover shipping ...
+an internal system so when people submit we have an idea of how much to offer them ... a picture of each record
+(both jacket and vinyl)".
+- **Public page**: no offer amounts or how offers are worked out ("We review every record and make a fair offer").
+  "We cover shipping" + prepaid label; packing tips kept, the postage table dropped. `tests/test_sell.py`
+  (`BuiltPage.test_no_offer_amounts_public`) fails the build check on any `$<digit>` on /sell/, its thank-you page
+  or the homepage teaser, and on any offer-rule key anywhere in the built site.
+- **Form v2** (`multipart/form-data`, `mec/site.py sell_form`, JS at the end of `assets/static/js/site.js`): contact
+  fields, "How would the records get to us?" (ship / drop-off by appointment / not sure), up to 40 record rows
+  (artist, title, optional catno, **jacket front** + **vinyl label** photos required per row, jacket back optional),
+  up to 10 overview photos ("For 40+ records, send a few crate/spine photos..."). Rows are required unless the count
+  is 25+ AND an overview photo is sent. 5 rows are rendered server-side, so it works without JS; with JS: "Add another
+  record", photos shrunk to <= 2000 px JPEG in the browser, and an upload progress bar (XHR).
+- **Uploads** (`mec/sell_upload.py`): the body is streamed to disk in 64 KB chunks (never held in memory; a 95 MB
+  test upload peaked at 85 MB RSS for the whole process including decoding). Limits: 8 MB per photo, 120 MiB per
+  request (Caddy `max_size 121MiB` on `/sell/submit`), 300 parts. Both the declared MIME type and the magic bytes
+  must be JPEG / PNG / WebP / HEIC. Each photo is decoded one at a time, rotated upright, re-encoded from a fresh
+  image (EXIF, GPS, XMP and ICC dropped, colours converted to sRGB) and saved as `data/sell/uploads/<id>/<r1-front|
+  r1-label|r1-back|ov1>.webp` (<= 1600 px) + `.thumb.webp` (400 px), dirs 700 / files 600. Pixel caps per format
+  keep one photo under ~105 MB of RAM (`MAX_PIXELS`). HEIC needs `pillow-heif` (added to `admin/Dockerfile`);
+  without it the HEIC original is stored as-is with no preview (iOS Safari normally converts to JPEG on upload).
+  Raw uploads are deleted when the request ends. Nothing is logged except counts.
+- **Privacy**: `data/` is not mounted in the nginx container, so no upload, rule or review file can be served by
+  the site. Photos are only readable through `GET /admin/api/sell/photo` with the admin token (the admin page fetches
+  them as blobs).
+- **Offer calculator** (`mec/sell_offer.py`, `/admin/` -> Sell Your Records -> Open): contact info, overview photos,
+  each record with its photos; "Search Discogs" (catno, then artist + title, vinyl; read-only paced client), pick a
+  candidate or paste a release ID/URL; then `GET /marketplace/price_suggestions/{id}` + `GET /marketplace/stats/{id}`
+  (shapes checked against the Wayback copy of the API docs, see `docs/DISCOGS-INTEGRATION.md`), cached 7 days in
+  `data/sell/valuations/<release id>.json`. Grade pickers (Discogs vocabulary, default VG/VG). Resale estimate =
+  suggestion at the vinyl grade x sleeve factor, else lowest listed x factor, else Edwin's manual value (a manual value
+  always wins). Offer per record from the rules, per-record override, lot total, shipping estimate (only when the
+  method is "ship"; drop-off defaults to pickup), total cost, resale total, margin, a "Suggested offer" line, final
+  offer, private note, status (new / reviewing / offered / accepted / declined / purchased), "Add a record" for big
+  lots, and a per-submission valuation CSV. Review state: `data/sell/review/<id>.json` (600).
+- **Offer rules** (private, `data/sell/offer_rules.json`, edited on `/admin/` -> Offer rules; defaults until saved):
+  resale < $5 -> $0 (pass), $5-15 -> $1, $15-30 -> $2, $30-50 -> $3, $50+ -> min(7, max(3, round(resale x 8%))),
+  shipping $0.55 per record bought when shipped, lowest-price fallback x 1.0, sleeve factors (G+ 0.85, G 0.7, F 0.5,
+  P 0.4, Generic 0.9, No Cover 0.6, VG and up 1.0). They never appear on a public page or in public JSON (tested).
+- **Ops**: admin `mem_limit` 128m -> 320m in `docker-compose.yml` (idle RSS was ~110 MB of 128). Needs
+  `docker compose up -d --build admin` once (new code, pillow-heif, memory limit). Until then the live sidecar runs the
+  old code; see the 2026-10-21 report for the exact order (rebuild the site right after the restart).
+
 ## 1. Fully working now
 - Pre-rendered static site (about 460 pages): home, Shop All Records,
   Recently Sold archive, 427 record pages, genre and format collections,
@@ -108,14 +171,29 @@ and the OG image, and credited in the footer and on How buying works.
   missing-columns report. Tests: `python3 tests/test_import.py` (14 passing).
 - **Sync safety**: a failed or partial sync changes nothing. Listings are ended
   only after a complete snapshot, with a 50% mass-ending guard. "Sold" is set
-  only on an eBay-confirmed sale. `data/sync-state.json` records the last
+  only on an eBay-confirmed sale: a CSV sale, or the **sold confirmation** step
+  (`mec/confirm_sold.py`). After each successful sync, that step asks Browse
+  `get_item_by_legacy_id` about every "unavailable" or "ended" record with no
+  confirmed sale. A sold quantity ≥ 1 with 0 available marks it sold
+  (`status_source: "ebay_api"`, sale date from `itemEndDate`, price from the
+  listing) and saves its photos to `ended_listings.json`. Sold quantity 0 keeps
+  it ended. A failed lookup changes nothing and is retried, up to 5 tries.
+  By hand: `scripts/mec confirm-sold [--dry-run] [--ids …]`.
+- **Recently Sold order**: newest `sold_at` first, then `status_changed_at`.
+  Records with no confirmed sale show "Ended" and sort by the date they changed. `data/sync-state.json` records the last
   success, last attempt and errors, and the footer shows "Inventory last synced …".
 - **Admin page** (`/admin/`, token login): Refresh from eBay, Rebuild, CSV upload
   with preview then apply, "fetch missing photos & descriptions", sync status
   and errors, and the per-item review list.
-- **Daily scheduled sync** (in the admin sidecar, 10:15 UTC). It is live now
-  that API keys are in `.env`. It runs Browse sync, then photos, then rebuild,
-  and records the result in `data/sync-state.json`, the footer and `/admin/`.
+- **Hourly scheduled sync** (in the admin sidecar, `sync.interval_minutes: 60`;
+  set it to `null` to fall back to once a day at `sync.daily_at_utc`, 10:15).
+  It runs Browse sync, then sold confirmation, photos (new images only), rebuild
+  and the optional Discogs push, and records the result in
+  `data/sync-state.json`, the footer and `/admin/`. The Instagram import inside
+  it runs once per UTC day. A restart syncs only if the last sync was more than
+  an interval ago. Browse budget: about 420–500 calls/day of the 5,000 allowed,
+  because unchanged listings reuse their stored getItem payload for 24 h (see
+  `docs/EBAY-INTEGRATION.md`, "Sync schedule and the Browse call budget").
 - **eBay account-deletion endpoint** at `/ebay/account-deletion`, which a
   production keyset requires.
 - Six original guides: cleaning, storage, the Goldmine grading scale, first
@@ -163,9 +241,10 @@ and the OG image, and credited in the footer and on How buying works.
    listings first.
 
 ## 4. Adding or updating records
-- **Normal path (after API keys):** list on eBay as usual. The daily sync, or
+- **Normal path (after API keys):** list on eBay as usual. The hourly sync, or
   the admin page's "Refresh from eBay", adds the listing, updates price and
-  quantity, and moves sold or ended listings to the archive.
+  quantity, and moves sold or ended listings to the archive. Sales are confirmed
+  with eBay in the same run and show as "Sold" with the sale date.
 - **Without keys:** download a CSV from Seller Hub and upload it on `/admin/`
   (raw exports go in `data/imports/`, which git ignores).
   Preview it, then Apply. The CLI equivalent is
@@ -186,8 +265,8 @@ are in `docs/DISCOGS-INTEGRATION.md`.
    ships from US, and terms. Discogs won't put a listing on sale without them.
 2. Settings → Developers → **Generate new token**. Put it in `.env` as
    `DISCOGS_TOKEN=…`, then restart the admin container
-   (`docker restart musicedcafe-admin`; the code is bind-mounted). After 10:15
-   UTC a restart also runs that day's eBay sync.
+   (`docker restart musicedcafe-admin`; the code is bind-mounted). A restart
+   also runs an eBay sync if the last one was more than an hour ago.
 3. Run `scripts/mec discogs match`, or press "Match records to Discogs" on
    `/admin/`. This is a dry run that only writes `data/discogs/matches.json`,
    and takes about 6–15 min for 339 records at 1 request a second.
@@ -226,7 +305,7 @@ likely release now, and verify each pressing from the runout over time.
 - A Discogs sale marks the record sold here (`status_source: "discogs"`, which
   the eBay sync never undoes), adds an Alert and an **End on eBay** entry, and
   rebuilds the site so it moves to Sold.
-- If "After each eBay sync, push changes" is on (off by default), each daily
+- If "After each eBay sync, push changes" is on (off by default), each hourly
   eBay sync pushes price and grade changes to Discogs and removes listings for
   records that ended or sold on eBay. It only removes them after a complete eBay
   snapshot, and it never touches records that weren't approved and toggled on.
@@ -246,7 +325,7 @@ likely release now, and verify each pressing from the runout over time.
 
 ## Ops notes (sebland)
 - Containers: `musicedcafe-web` (nginx, 20085) and `musicedcafe-admin`
-  (20086), both with `restart: unless-stopped`, from `docker compose up -d --build`.
+  (20086, `mem_limit` 320m), both with `restart: unless-stopped`, from `docker compose up -d --build`.
 - Caddy block `musicedcafe.sebland.com` in `/root/box/app/Caddyfile`. It was
   applied live via `docker cp` + `caddy reload`, so the box image wasn't rebuilt
   with other people's uncommitted work. The next normal box rebuild bakes it in.

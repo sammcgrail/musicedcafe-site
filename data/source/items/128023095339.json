@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1586,7 +1586,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023095339?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9VMAYKsPO2wkEQuEMWlmI3azEN4ShoQHN6jVgCqK5XynK%2FKYysoZjNXZ%2FykEhPIb9IJAlLoB6AZSCxirtOU7Pe0CYtpSgyyWa7wCa336eV7PcIbJJQbYxsJbN%2B9OSHCYIH30p10T2HPJ1NgVbA94rp3t7nTTcXtDUdDLacb%2BclZJ%2F1b%2FpV3kY%2FsgdnDuA7%2Bio%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023095339?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9VMAYKsPO2wkEQuEMWlmI3azEN4ShoQHN6jVgCqK5Xyt6w2unhMfRyNiVy%2BTcRAEfULV%2Bctooew4aXXKJfu%2Fo7X4p9Rw3pPevsHeEDjxyXsXwoAR%2F7HbwgMDI1GSnq3WMnHjjDVSviO%2Fx2a8Smn1865dkeV6bR8%2BuREfgTfzHhz0BQGgd4D5GEzvYyJ8VvPl0%3D",
       "description": "<p>Huey Lewis and the News – Doing It All For My Baby / Naturally – Chrysalis VS4 43143 – 1987 7” Vinyl 45</p><br /><p>Vintage U.S. 45 RPM single from Huey Lewis and the News, released on Chrysalis Records in 1987.</p><br /><p>Side A: Doing It All For My Baby – 3:41</p><p>Side B: Naturally – 2:53</p><br /><p>Vinyl appears VG+ visually, retaining nice gloss with some light surface and handling marks consistent with age and previous play.</p><br /><p>Labels are clean and readable.</p><br /><p>Includes the generic yellow paper sleeve pictured.</p><br /><p>Visually graded unless otherwise stated. Please review all photos carefully for exact condition.</p>",
       "paymentMethods": [
         {
@@ -1643,5 +1643,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:14Z"
 }

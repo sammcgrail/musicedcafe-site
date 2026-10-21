@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -77,7 +77,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -101,8 +101,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1594,7 +1594,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128123684559?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8tiTiaWUno3s9SQz29MzHSfWzuA%2Bt4IZbX8LnUq%2FFG85TX0xF1NPB%2BF%2FmkuRUkGSC0QGJMnMYAoJukttV8qeluqGDayFQcZrmzjFWxBLmKDzasX8wVcod6%2BSJ5t9p1ssvKNB87gnBu9jOznb4nZR31MI76FqaMZzaf%2Fe6IBIJDkcC4aIgUWNOdUbzRBEYBfIs%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128123684559?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8tiTiaWUno3s9SQz29MzHSfWzuA%2Bt4IZbX8LnUq%2FFG84oIy9FPSL5kz64jGuTARrBTNHHQ0K671wGIoN8XtoFLMwmrG2RtAB%2FRYG2qdVAQKetQ2t4IEJswbrzYbz49Jos6%2FDbI0j0lbhGXqxwiv7r4a8C1VVaUF%2BgfVaeTJ7tBLCKTA7agK6C%2BTDAigwyJ8D0%3D",
       "description": "<p><strong>Sam “The Man” Taylor – More Blue Mist: In the Mood for Sax</strong></p><p>MGM Records – SE3783<br>12\" Vinyl LP<br>33⅓ RPM<br>Stereo<br>1959 U.S. issue<br>Jazz / Easy Listening / Tenor Saxophone</p><p>Vintage MGM stereo LP featuring Sam “The Man” Taylor performing a collection of standards in his signature tenor sax style.</p><p>Includes:</p><ul><li>Tenderly</li><li>Prelude to a Kiss</li><li>I’m in the Mood for Love</li><li>If I Ever Love Again</li><li>Reflections</li><li>Stella by Starlight</li><li>Love Me</li><li>Willow Weep for Me</li><li>This Love of Mine</li><li>She’s Funny That Way</li><li>I Should Care</li><li>Close Your Eyes</li></ul><p><strong>Condition:</strong><br><strong>Vinyl: VG+ visually</strong> – retains good gloss with light surface/sleeve marks visible under direct light. No obvious major gouges seen in the photos.</p><p><strong>Cover: G+ / VG-</strong> – substantial age and shelf wear including surface loss, rubbing, edge wear, corner wear, writing/price marks and discoloration. Still structurally presentable and displays well for its age.</p><p>Please review all photos carefully for exact cosmetic condition.</p><p><strong>Artist:</strong> Sam “The Man” Taylor<br><strong>Album:</strong> More Blue Mist: In the Mood for Sax<br><strong>Label:</strong> MGM Records<br><strong>Catalog Number:</strong> SE3783<br><strong>Release Year:</strong> 1959<br><strong>Format:</strong> LP<br><strong>Genre:</strong> Jazz<br><strong>Style:</strong> Easy Listening / Cool Jazz / Saxophone<br><strong>Country:</strong> USA</p>",
       "paymentMethods": [
         {
@@ -1651,5 +1651,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:01Z"
 }

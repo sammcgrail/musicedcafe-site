@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "5582",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1577,7 +1577,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014901467?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B8g%2FwEeczgnpbNzhIJzCLZL2Hd2JVLgU40J2BxedCoDt7ZUt4Eelz0n8IdXdrDYNkuUBHt%2Blms%2FMTLxkPgtG2Ly0BsI4qfA%2Be8VlItWhVvbqej0jB2P%2Fms65FYrSTH%2FK8m9VvjW%2B9Xmn7Uxh3fMFnXb5g5d%2FqV9iofz7hYQ1QD0ow1I7Q0TqdvldxSfN1G1UI%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014901467?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2B8g%2FwEeczgnpbNzhIJzCLZL2Hd2JVLgU40J2BxedCoDv6w6YHnhJOotiawhqA4sjvMcNSb%2FZvtdEm3Sw7R2aMJQVmNA7wz1zdEJflSRQ0yUUyfzabwaxh%2BcawQMjzM7kH064t9p2EUtNpc3iXVI78ExTCV10nMAtSXzeAkKy6rmirk6IRl1F%2FRqy6J6nCDcfM%3D",
       "description": "<p>Vintage original King Records 45 RPM single by bluegrass legends The Stanley Brothers, featuring:</p><br /><p>“Jacob’s Vision”</p><p>backed with</p><p>“Thy Burdens Are Greater Than Mine”</p><br /><p>King Records 45-5582.</p><br /><p>Classic Stanley Brothers bluegrass/country gospel recording featuring Carter and Ralph Stanley during their influential King Records period.</p><br /><p>Vinyl retains good gloss with visible light surface marks/scuffs consistent with age and previous play. Blue King Records labels remain bright, clean and highly presentable. Please review photographs carefully for exact cosmetic condition.</p><br /><p>Record only; no original picture sleeve included.</p>",
       "paymentMethods": [
         {
@@ -1634,5 +1634,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:47Z"
 }

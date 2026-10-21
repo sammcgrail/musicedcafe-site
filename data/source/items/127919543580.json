@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -89,7 +89,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "JS6101",
       "estimatedAvailabilities": [
@@ -114,8 +114,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1612,7 +1612,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127919543580?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8QdoBq7u1y0FYP1F9eVor33jEwIG7DjcpakmzFz1pWcGJrExgIiofTYHGa5j1rzPor%2FZfBTfu%2BL%2BQDFxicrPiiCwMdUsBSNZq8kbKS8Ia2jj9EIaPGkaYfgP7%2B%2BS%2F3%2FV0a7JkYQjXMxsOirY3o1dgpwCof%2BgFaG%2FaY5HCwC5YOmz8EWDgFMFBNv1nRFjbHAtY%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127919543580?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8QdoBq7u1y0FYP1F9eVor33jEwIG7DjcpakmzFz1pWcFz1pKcr85mjbVU%2BTn55R%2BdxQTuDKKnTcfOH3XdL5eBLgqaFv8F3u5F8o5ublweKzKj6My8MNgckXiM5XPVTkPgMLNye%2BqubLvT1Rerubm3ZU6tOL%2F3BND6qel%2Bb1yvsjeo8%2Bapos9VUP3SFKhBG5xM%3D",
       "description": "<p data-start=\"1284\" data-end=\"1318\"><strong data-start=\"1284\" data-end=\"1318\">Johnny Cash – Rock Island Line</strong></p>\n<p data-start=\"1320\" data-end=\"1406\">Label: Hilltop / Pickwick Records<br data-start=\"1353\" data-end=\"1356\">\nCatalog Number: JS-6101<br data-start=\"1379\" data-end=\"1382\">\nFormat: Vinyl LP, Stereo</p>\n<p data-start=\"1408\" data-end=\"1471\">Compilation featuring classic Johnny Cash recordings including:</p>\n<ul data-start=\"1473\" data-end=\"1647\">\n<li data-section-id=\"tef9ym\" data-start=\"1473\" data-end=\"1491\">\nRock Island Line\n</li>\n<li data-section-id=\"18tox2k\" data-start=\"1492\" data-end=\"1504\">\nGet Rhythm\n</li>\n<li data-section-id=\"19hwoxd\" data-start=\"1505\" data-end=\"1520\">\nTrain of Love\n</li>\n<li data-section-id=\"172uraq\" data-start=\"1521\" data-end=\"1533\">\nHey Porter\n</li>\n<li data-section-id=\"ilkvk1\" data-start=\"1534\" data-end=\"1552\">\nCome In Stranger\n</li>\n<li data-section-id=\"1rgmw2o\" data-start=\"1553\" data-end=\"1578\">\nThe Wreck of the Old 97\n</li>\n<li data-section-id=\"19672ly\" data-start=\"1579\" data-end=\"1610\">\nI Heard That Lonesome Whistle\n</li>\n<li data-section-id=\"13n9b16\" data-start=\"1611\" data-end=\"1630\">\nHome of the Blues\n</li>\n<li data-section-id=\"1utvb2z\" data-start=\"1631\" data-end=\"1647\">\nWide Open Road\n</li>\n</ul>\n<p data-start=\"1649\" data-end=\"1662\"><strong data-start=\"1649\" data-end=\"1662\">Condition</strong></p>\n<p data-start=\"1664\" data-end=\"1680\"><strong data-start=\"1664\" data-end=\"1674\">Vinyl:</strong> VG+</p>\n<ul data-start=\"1681\" data-end=\"1775\">\n<li data-section-id=\"dkkwje\" data-start=\"1681\" data-end=\"1704\">\nGood gloss throughout\n</li>\n<li data-section-id=\"yk0y6b\" data-start=\"1705\" data-end=\"1745\">\nLight surface wear consistent with age\n</li>\n<li data-section-id=\"xkkpl2\" data-start=\"1746\" data-end=\"1775\">\nNo major scratches observed\n</li>\n</ul>\n<p data-start=\"1777\" data-end=\"1797\"><strong data-start=\"1777\" data-end=\"1787\">Cover:</strong> G+ / VG</p>\n<ul data-start=\"1798\" data-end=\"1885\">\n<li data-section-id=\"w5l728\" data-start=\"1798\" data-end=\"1834\">\nNoticeable creasing and shelf wear\n</li>\n<li data-section-id=\"ompova\" data-start=\"1835\" data-end=\"1857\">\nEdge and corner wear\n</li>\n<li data-section-id=\"964rib\" data-start=\"1858\" data-end=\"1885\">\nGeneral age discoloration\n</li>\n</ul>\n<p data-start=\"1887\" data-end=\"1940\">Please review photos carefully for condition details.</p>",
       "paymentMethods": [
         {
@@ -1669,5 +1669,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:58Z"
 }

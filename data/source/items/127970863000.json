@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1586,7 +1586,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970863000?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FVsg%2FKp4SEHBLi2jJckMNb%2BwJZgbvj9soQyFNpwXpYrZcByiu1%2BI7e8TynONQRMjX0esTUpiDvMWhCJU0o6oz9JiO4vZ5XbHkHRfFCF1SLOOhTpmyJ60BhDmJf3UzHLiKXkS5%2FJqgW9Up8RrZ8aZZjwgPGcpaz3Ote2ZkGy1BPLtKgcwYxpVvSv4P4JyP0fbQ%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970863000?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FVsg%2FKp4SEHBLi2jJckMNb%2BwJZgbvj9soQyFNpwXpYrSL4JeJDPUH1GwIz4Z5WDGrgrDZlqRUW86i6Bn%2Bc67CKloID0ervcsiKqafJ8rYGh5g8s4qGHrZYbugURhivJnJ8sZcku7WvcfssquJqkUexL6QKLhCuAcv13fuhh5%2FaClaVQp6Gk6gSmVQcQcYbkG8%3D",
       "description": "<p data-start=\"1091\" data-end=\"1285\" class=\"PDq2pG_selectionAnchorContainer\">Original 1977 45 RPM single featuring <strong data-start=\"1129\" data-end=\"1162\">\"Two Out Of Three Ain't Bad,\"</strong> one of Meat Loaf's biggest and most enduring hits from the legendary album <strong data-start=\"1238\" data-end=\"1257\">Bat Out of Hell</strong>, produced by Todd Rundgren.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1287\" data-end=\"1437\">The B-side features <strong data-start=\"1307\" data-end=\"1333\">\"For Crying Out Loud.\"</strong> A great addition for fans of classic rock, Meat Loaf collectors, jukebox owners, and vinyl enthusiasts.</p>\n<p data-start=\"1439\" data-end=\"1563\">Record will be shipped in a new paper sleeve inside a protective poly sleeve and securely packaged in a rigid 45 RPM mailer.</p>",
       "paymentMethods": [
         {
@@ -1643,5 +1643,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:42Z"
 }

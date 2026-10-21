@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -62,7 +62,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -86,8 +86,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1599,7 +1599,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128016701612?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde945%2BY939IdVJCMPtbDBNABFcgljfIqero8YxH597ayRyovKkjuVuCPnAz2m%2Foc8h8PgU%2BR3GSO4zK0F6URwL7wXwoXNZ7saABn1PcuD%2F%2BxJgdaksZnO6b6eiT61u7vtcpE68ExXP7L6OZm2T1pk2MJeMslEIe9jCXCOXeISz7acOLklyX6Kd3yuJ5xa2zST4E%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128016701612?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde945%2BY939IdVJCMPtbDBNABFcgljfIqero8YxH597ayRy31S8PJvS%2FB8MaZ%2BCTQCFVo27h8kyFiZxeCXYg7CtccK8ys0B2z0t3Hf9zNRHN2Rfqxl9pqVSGZxldHu2Ho4OxFUezRA5lwM3YjgDINSl0%2FqCRVABu4DBXQOCmvAa1AVlCm7yVPWGfTUKjuTV9%2Bdvc%3D",
       "description": "<p>Toyah – Desire – Record Store Day Exclusive Translucent Red Vinyl LP – SEALED</p><br><p>Collectible Record Store Day edition of Toyah’s Desire, released by Demon Records on translucent red vinyl.</p><br><p>This copy is brand new and still factory sealed in its original shrink wrap, with the original Demon Records Record Store Day Exclusive hype sticker intact.</p><br><p>Condition:</p><br><p>* Vinyl: Mint / Sealed</p><p>* Jacket: Near Mint</p><p>* Original shrink wrap intact</p><p>* Original RSD/Demon hype sticker</p><p>* Translucent red vinyl</p><p>* Never opened or played</p>",
       "paymentMethods": [
         {
@@ -1656,5 +1656,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:30Z"
 }

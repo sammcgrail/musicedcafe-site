@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -103,8 +103,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1641,7 +1641,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127904275753?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9lWe9ZEr8pOWGCrHliX1dHVIahdfXS2iHjJN6x8xiLtDkKGZG0bbwvWDKVxM4qQG45RqMw64%2B6Hun5wdcd34u1nwRHP0eKT%2FPG%2BuLdkMXUPJjY8kMGdQb3AYbpeojC5fID4XLt69t0Yuhy262akQ44RwuOCOpK5tsqq5xyWbui8mrMCxiQ%2BND%2FkIwfmsWjJKw%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127904275753?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde9lWe9ZEr8pOWGCrHliX1dHVIahdfXS2iHjJN6x8xiLtB4PRjL41%2BQKIZqTVBfFzxCR%2FRbGuEg4apyUrJmKK1GO5A117nf97cgnz11NLOFdfAzalfFf59%2FHoyi5q3MPez1f7A1LpjKizYiZv37lr7NXMeL2yUwNwo2J1JkDGpeJoa2YdNxv33%2F0pfPKdvxGDj0%3D",
       "description": "<p data-start=\"1232\" data-end=\"1404\">Original 1983 release of Pointer Sisters' breakthrough album <em data-start=\"1310\" data-end=\"1321\">Break Out</em> featuring the hit singles \"Automatic,\" \"Jump (For My Love),\" and \"I'm So Excited.\"</p>\n<p data-start=\"1406\" data-end=\"1419\"><strong data-start=\"1406\" data-end=\"1419\">Condition</strong></p>\n<ul data-start=\"1420\" data-end=\"1498\">\n<li data-section-id=\"ck2z1o\" data-start=\"1420\" data-end=\"1432\">\nVinyl: VG+\n</li>\n<li data-section-id=\"4hhmqw\" data-start=\"1433\" data-end=\"1451\">\nJacket: VG+</li>\n<li data-section-id=\"1qr5874\" data-start=\"1452\" data-end=\"1474\">\nOriginal shrink wrap\n</li>\n<li data-section-id=\"1a4ju2s\" data-start=\"1475\" data-end=\"1498\">\nOriginal hype sticker</li></ul>",
       "paymentMethods": [
         {
@@ -1698,5 +1698,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:06Z"
 }

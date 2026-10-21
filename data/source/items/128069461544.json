@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "JC34830",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1632,7 +1632,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128069461544?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F4y%2BNbmzYRg7KxO6MY1hgFDe38ufbqbNzua9LeZqM46jky05Zi9EJBfd0ToVtpvKnrEzmB%2FYCUDrmx21R17x%2FRDOZGP2CdtuCwovS2lPb6xaMrN68yarkinzmJkJOqOx%2BHs18iyxpke8bURVA545rcI850NkAlfAKnLzR%2BK2VwKp1NpozCiMPFZ4TqyEw9n1k%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128069461544?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2F4y%2BNbmzYRg7KxO6MY1hgFDe38ufbqbNzua9LeZqM46lzGTWyti1RiDsFmbobTUJDsPuZGoYw%2Fl1hT8Z%2Fx%2FKX%2FDP9iMnDbj5GnVi1ugomjs8UrLLXUf0Vs12%2BlyL0Kz2XY7OwoReOLD6XV6L8Jx59zm0xj5SptIXTNcf3ptV6wskF%2F1HcHkq0GiMXDqiCeRZw%3D",
       "description": "<p data-start=\"2212\" data-end=\"2253\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"2212\" data-end=\"2253\">Barbra Streisand – Streisand Superman</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2255\" data-end=\"2317\">Original 1977 Columbia Records vinyl LP, catalog <strong data-start=\"2304\" data-end=\"2316\">JC 34830</strong>.</p>\n<p data-start=\"2319\" data-end=\"2447\">A classic late-1970s Streisand release featuring a polished mix of pop, ballads and orchestral arrangements. The album includes:</p>\n<ul data-start=\"2449\" data-end=\"2656\">\n<li data-section-id=\"19myb0r\" data-start=\"2449\" data-end=\"2459\">\nSuperman\n</li>\n<li data-section-id=\"f750z3\" data-start=\"2460\" data-end=\"2489\">\nDon’t Believe What You Read\n</li>\n<li data-section-id=\"134tmn4\" data-start=\"2490\" data-end=\"2504\">\nBaby Me Baby\n</li>\n<li data-section-id=\"3o8xic\" data-start=\"2505\" data-end=\"2523\">\nI Found You Love\n</li>\n<li data-section-id=\"5l15cs\" data-start=\"2524\" data-end=\"2535\">\nAnswer Me\n</li>\n<li data-section-id=\"1gxzexn\" data-start=\"2536\" data-end=\"2560\">\nMy Heart Belongs to Me\n</li>\n<li data-section-id=\"1muf1ql\" data-start=\"2561\" data-end=\"2574\">\nCabin Fever\n</li>\n<li data-section-id=\"r58kb8\" data-start=\"2575\" data-end=\"2610\">\nLove Comes From Unexpected Places\n</li>\n<li data-section-id=\"1dubxjf\" data-start=\"2611\" data-end=\"2635\">\nNew York State of Mind\n</li>\n<li data-section-id=\"1mky7ug\" data-start=\"2636\" data-end=\"2656\">\nLullaby for Myself\n</li>\n</ul>\n<p data-start=\"2658\" data-end=\"2813\">Released in June 1977, <em data-start=\"2681\" data-end=\"2701\">Streisand Superman</em> became a major commercial success and reached #3 on the U.S. album chart. <span class=\"contents\" data-content-reference-start=\"2804\" data-content-reference-end=\"2846\"><span class=\"\" data-state=\"closed\"></span></span></p>\n<p data-start=\"2815\" data-end=\"2956\"><strong data-start=\"2815\" data-end=\"2825\">Vinyl:</strong> VG+<br data-start=\"2829\" data-end=\"2832\">\n<strong data-start=\"2832\" data-end=\"2843\">Sleeve:</strong> VG<br data-start=\"2846\" data-end=\"2849\">\n<strong data-start=\"2849\" data-end=\"2859\">Label:</strong> Columbia<br data-start=\"2868\" data-end=\"2871\">\n<strong data-start=\"2871\" data-end=\"2883\">Catalog:</strong> JC 34830<br data-start=\"2892\" data-end=\"2895\">\n<strong data-start=\"2895\" data-end=\"2904\">Year:</strong> 1977<br data-start=\"2909\" data-end=\"2912\">\n<strong data-start=\"2912\" data-end=\"2924\">Country:</strong> USA<br data-start=\"2928\" data-end=\"2931\">\n<strong data-start=\"2931\" data-end=\"2942\">Format:</strong> 12\" Stereo LP</p>",
       "paymentMethods": [
         {
@@ -1689,5 +1689,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:36Z"
 }

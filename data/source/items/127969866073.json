@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -71,7 +71,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "FL4570",
       "estimatedAvailabilities": [
@@ -96,8 +96,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1594,7 +1594,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127969866073?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BLV2IXqmzwSLex7eK0mTmIoxraeWT8CjQsJYw9VbzJHBjfhCGLfkYxP89KDxZasn1GDzmqUI9ZTFnSBFKkZA5WRy1GgWa2nhHTNmimwlFO0MyRu9an0lGljCuKB6BVKaO%2FmoeVQQ0%2B%2FipkG%2BlK9FXOBaJi4HjpDOFHz4ZgZIPLYdYU%2BH--8eXPcP%2F2XCGB504%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127969866073?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BLV2IXqmzwSLex7eK0mTmIoxraeWT8CjQsJYw9VbzJHGoEjuhQuRwc%2FeeYUcJh6dKZnkwltFXKgte%2FcibqNUpQaqeJDGSKwYXXXRPftpDrdGawzeDGavogW6OCM%2F4ZQIVbe8%2FY0o9XgROhM0DtQbEJntI%2BvzCGI6wdjdtnGrVC8Cu%2FmGBFXm63JVSsDBahK%2Bg%3D",
       "description": "<p data-start=\"445\" data-end=\"505\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"445\" data-end=\"505\">Paul C &amp; The Spectators – \"Knock On Wood\" b/w \"Sad Girl\"</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"507\" data-end=\"571\">Original 7\" 45 RPM single on <strong data-start=\"536\" data-end=\"570\">Fleetwood Tru Fidelity Records</strong>.</p>\n<p data-start=\"573\" data-end=\"627\">A great regional Massachusetts soul release featuring:</p>\n<ul data-start=\"628\" data-end=\"678\">\n<li data-section-id=\"1lohl2w\" data-start=\"628\" data-end=\"655\">\n<strong data-start=\"630\" data-end=\"641\">Side A:</strong> Knock On Wood\n</li>\n<li data-section-id=\"rbtl3h\" data-start=\"656\" data-end=\"678\">\n<strong data-start=\"658\" data-end=\"669\">Side B:</strong> Sad Girl\n</li>\n</ul>\n<p data-start=\"680\" data-end=\"707\">Catalog Number: <strong data-start=\"696\" data-end=\"707\">FL 4570</strong></p>\n<h3 data-section-id=\"1uef3h1\" data-start=\"709\" data-end=\"722\">Condition</h3>\n<ul data-start=\"723\" data-end=\"950\">\n<li data-section-id=\"8rh4hr\" data-start=\"723\" data-end=\"785\">\nVinyl shows light to moderate surface wear from age and use.\n</li>\n<li data-section-id=\"1n40ujm\" data-start=\"786\" data-end=\"839\">\nLabels remain clean and attractive with good color.\n</li>\n<li data-section-id=\"15xl0wl\" data-start=\"840\" data-end=\"876\">\nNo cracks or major chips observed.\n</li>\n<li data-section-id=\"9vjfbq\" data-start=\"877\" data-end=\"950\">\nPlease review all photos carefully as they are part of the description.</li></ul>",
       "paymentMethods": [
         {
@@ -1651,5 +1651,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:28:01Z"
 }

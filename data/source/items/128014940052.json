@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "2134",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1572,7 +1572,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014940052?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FV7cxa%2BQ32C%2BqtEIRWhS8%2BNUY05pwZkU2ppRprnmyxbv22tfHbZSdoCV6G%2F6F2dGo%2FVgo3qBUUjuq3Z4v9jVmRpcpX7VzPZqGA8Cret4ZxBsqTwxp5tiUArEKthou1kJ5nZN8tfpmaXMdWoTuLbHTevJ%2FCcJWv6cKPt4gORBH2Sh%2BA7N%2FNoPKLIWxBeNYvZ3c%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014940052?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FV7cxa%2BQ32C%2BqtEIRWhS8%2BNUY05pwZkU2ppRprnmyxbpUNVgjwkONjQEYyzaeD%2B67129eHO1WnfENR37VmNwMq3i4O9slmLvX198eV0wgJzcXfnYYX0cR2cKR7%2BP17LlxThSjI%2F9J1cMcgLOpp6RjMWW3aLEgzkjFUt162uZ5SaE8HJsVcaHhpaGuVj9X5Wrk%3D",
       "description": "<p>Original vintage The Drifters – “When My Little Girl Is Smiling” / “Mexican Divorce” 45 RPM single on Atlantic Records, catalog 45-2134.</p><br /><p>A particularly nice Drifters pairing. “When My Little Girl Is Smiling” was written by Gerry Goffin and Carole King, while “Mexican Divorce” was written by Bob Hilliard and Burt Bacharach. Both sides were part of the group’s classic Atlantic-era output.</p><br /><p>Track listing:</p><br /><p>A: When My Little Girl Is Smiling – 2:31</p><p>B: Mexican Divorce – 2:32</p><br /><p>Vintage pre-owned vinyl with visible surface wear from age and previous play. Labels remain clean and highly legible overall. Please examine photographs carefully for exact cosmetic condition.</p>",
       "paymentMethods": [
         {
@@ -1629,5 +1629,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:37Z"
 }

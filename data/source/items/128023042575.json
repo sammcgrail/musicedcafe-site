@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "788899",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1607,7 +1607,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128023042575?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8XVWUJA9xMKUH04f2Uas0vtu%2BqB1%2F05eGbjTqSodXse74MDkZVQcjJb9tWv%2FYlL2At7OD8BOEUqxJa0jCh29hmbfU9klq8acXS7MpDN%2BrFcbSOm%2BRV4VIyWtbr8OoT8QxJNKxIMASB%2FYEllBuUPxuHDSaSgdsQd3T4h1HjTtvMRP5t566rIanHt5FSyCh0Il0%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128023042575?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8XVWUJA9xMKUH04f2Uas0vtu%2BqB1%2F05eGbjTqSodXse6ky6lJmBvWi5KVH5zF8g6oIzliMmrnMHVDbswJsw%2Bb00h3t2uKA%2Bx0xCn4TFDWaKru2RbaW92YbzH5GbuqoscB6bug3veJieEDCT%2BoqroVGUX6iInfak2QWm7Wb%2FEONOUbrE5wXhTYkrzqIC3lUWps%3D",
       "description": "<p>Donna Summer – This Time I Know It’s For Real / If It Makes You Feel Good</p><br /><p>Original 1989 U.S. Atlantic Records 7-inch 45 RPM single.</p><br /><p>Tracks:</p><p>A – This Time I Know It’s For Real</p><p>B – If It Makes You Feel Good</p><br /><p>Catalog Number: Atlantic 7-88899</p><br /><p>Vinyl appears approximately VG+ visually, retaining good gloss with light surface and handling marks consistent with normal use. No major deep scratches are visible in the photos.</p><br /><p>Atlantic labels remain clean, bright and fully readable.</p><br /><p>Includes the generic yellow paper sleeve shown in the photographs. Sleeve shows normal age-related wear and discoloration.</p><br /><p>Record has been visually graded unless otherwise stated. Please review all photos carefully for exact condition.</p>",
       "paymentMethods": [
         {
@@ -1664,5 +1664,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:19Z"
 }

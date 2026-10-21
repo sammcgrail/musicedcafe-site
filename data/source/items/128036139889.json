@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -92,8 +92,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1540,7 +1540,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036139889?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8OlHZLiQFv0ggp%2BiYbYZQqTmKP596dgl8jC3RHJ4Q3KasK4ffz8U5WnyaVJcfwY525UDVZcCMmfDVW9PrqviFdSvhIOgb1bVHfCtHM6cgBNTAleeabc221K4h%2BI%2B5B0gll58q2xddBHAhm1nxrLzHYaT4J74sa7hUz0xc5Gu8oYQoD8%2BmJcdevKBNrsiS9pr0%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036139889?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8OlHZLiQFv0ggp%2BiYbYZQqTmKP596dgl8jC3RHJ4Q3KQRxyeUMIoqDiVIKDwXrWR%2BXPo69IjeV5TJMg%2BctHbGFyO%2FI%2FwqjxDhIYtiEz%2ByleSKTyYdeIPAIiui3ze1pzJfnzwp9%2FOcCVBWV0hMtxgQYzvkAGPOkI8KJF4O%2Bjzn74GyeGmrydeiOJ1f4HRLLyIQ%3D",
       "description": "<p>Bon Jovi – “Bad Medicine” / “99 in the Shade”</p><br /><p>Original 1988 Mercury Records U.S. 7-inch 45 RPM single, catalog number 870 657-7.</p><br /><p>Features “Bad Medicine,” one of Bon Jovi’s signature late-1980s hits from the multi-platinum New Jersey album, backed with “99 in the Shade.”</p><br /><p>Track Listing:</p><br /><p>Side A – Bad Medicine – 3:52</p><p>Side B – 99 in the Shade – 4:25</p><br /><p>Condition:</p><p>Vinyl shows visible surface wear, light scratches and scuffing consistent with normal age and use while retaining good overall gloss. Labels remain intact with barcode stickers present on both sides. Please review all photos carefully for exact cosmetic condition.</p><br /><p>A great addition for collectors of Bon Jovi, 1980s rock, glam metal, arena rock, and vintage 45 RPM singles.</p><br /><p>Record will be carefully packaged for shipping.</p>",
       "paymentMethods": [
         {
@@ -1597,5 +1597,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:07Z"
 }

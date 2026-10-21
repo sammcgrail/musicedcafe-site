@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "estimatedAvailabilities": [
         {
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1546,7 +1546,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128036417198?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8YecYHPrCSh%2B%2BqhjkphqYYGe2Fx%2Bn2ZcOfsedoAMuZ%2FrD9nfzf4zJFT4Ttg%2B5AthjuD0ogplBcaTKIdDQNe5gyHn%2F7Q%2Fwqnq8PfgcbNpn7UebeYjoonPw3fd4NW4dLDaOOULdkdBChLLxO3FWbZQgBh%2FERM2aa1JlkCXkaiErsuVYk7yrx%2BYSzkKZoKhvmUsE%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128036417198?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8YecYHPrCSh%2B%2BqhjkphqYYGe2Fx%2Bn2ZcOfsedoAMuZ%2FkVe05DEwZfUIHNypOm4WLt%2FqP3OreIm7xr%2F4eGNq02x1MHyvy0dyC72O28i%2BgRLWNsLHAC3ypryaNxyZca3PXoVXOg6sDgSIj9MuOiH%2BJpPvFeeUAgkQhnD1jnk1gjCWZ6BjBi0HCm%2FOrXNN58RD20%3D",
       "description": "<p>1988 7-inch 45 RPM single by Natalie Cole, featuring her version of “Pink Cadillac” backed with “I Wanna Be That Woman.”</p><br /><p>Released on EMI-Manhattan Records, catalog number B-50117.</p><br /><p>The vinyl appears to be in approximately VG visual condition, showing light surface wear and scuffing consistent with normal use. Labels show light age and handling wear, with an inventory/price sticker on the “Pink Cadillac” side as pictured.</p>",
       "paymentMethods": [
         {
@@ -1603,5 +1603,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:25:58Z"
 }

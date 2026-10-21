@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "32908",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128014675346?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FDJ4XOoc5NLaBZ9US%2B7O7SulMUYCUqAZhGw9creMtoTLQEIMtl1UmQlu5D9LfNxF3vSJ9Mx2bnZGzZTlF6rZAfaVst7s2ep8BBaXGk%2FVQe8TpCHA4YMbpAr4qHxv%2B5N2IVUGm1wpITYBgvkQZuv7qMg5%2BRA2DL%2FfwEf3oJ%2FlGh82hce9394fSa%2FZHhATDkvNs%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128014675346?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FDJ4XOoc5NLaBZ9US%2B7O7SulMUYCUqAZhGw9creMtoTO9SzaS12nYmchAuHoSKDGW%2FLUeq0LR%2FpijJbOQ6BjSxL4SX9NfsMDX3IHAf4DE0FU2GF9dCDvTkzv548oYYm6XZ1bp29EFqeRP2%2FNPa0SCzJ1QqCsI9ryNrZXeQYKt4rklQAObv0q2iq7LsDQ1IDQ4%3D",
       "description": "<p>Osborne Brothers – “Take Me Home, Country Roads” / “Tears Are No Stranger” – Decca 32908 – Promotional 45 RPM</p><br /><p>Vintage yellow-label Decca promotional copy of the Osborne Brothers’ bluegrass/country recording of “Take Me Home, Country Roads,” the John Denver, Bill Danoff and Taffy Nivert classic.</p><br /><p>The reverse features “Tears Are No Stranger,” written by Bobby Osborne and Pete Goble.</p><br /><p>Both labels are clearly marked “PROMOTION COPY – NOT FOR SALE.”</p><br /><p>Condition: Visually graded approximately VG. Vinyl retains good gloss with visible light surface marks/scuffs consistent with age and use. Labels are in attractive condition with some age-related wear. Please examine the photos carefully for the exact cosmetic condition.</p><br /><p>No original picture sleeve is shown; ships in a protective generic 45 sleeve.</p>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:59Z"
 }

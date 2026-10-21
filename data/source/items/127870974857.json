@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -109,7 +109,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "PTP2059",
       "estimatedAvailabilities": [
@@ -134,8 +134,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1667,7 +1667,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127870974857?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8Y0Oh9dXKI9xUuHfWVrMh%2BS2htDdmmiDQPIKT7sQh5%2BeUZhTd1Nmx5S%2FTASEQGC7WcFt129VJzoyKawVIWQ6iBVx5QFER9W2aX5q8QvE3Wni2gnMjUTAM912SCX8EbHeCQ3Hj%2BHT8nA5%2FZmvtKiYBE35NOBuO73g1oiJNgCxP7HiE%2FokjyCdXSN6H1OgNZHWA%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127870974857?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8Y0Oh9dXKI9xUuHfWVrMh%2BS2htDdmmiDQPIKT7sQh5%2BS53dCaGmyx4CwgyJ0oZWyQI2ujiXbFnvo4ysTSAy5PcxgJskfraH5YlPDqMIGiZszvKyJR1x8iOaJQnptraTO0DXhM08F9%2FfTF%2FvbZCm9%2FEhJoo8iTWmWCmxqm%2BE1h327ls5a8sclCVoL30JXk9D94%3D",
       "description": "<h1><strong>Artist:</strong> The Beach Boys</h1><p class=\"isSelectedEnd\"><strong>Album:</strong> The Beach Boys – high water: a 2 record set<br><strong>Format:</strong> Vinyl LP, 2xLP, 33 RPM<br><strong>Genre:</strong> Rock / Surf Rock / Pop</p><p class=\"isSelectedEnd\">Classic Beach Boys compilation featuring many of the band’s most iconic hits from the 1960s surf rock era. A must-have for collectors and fans of vintage California pop and harmonies.</p><p class=\"isSelectedEnd\">Includes favorites such as:</p><ul data-spread=\"false\"><li>“Surfin’ U.S.A.”</li><li>“California Girls”</li><li>“Wouldn’t It Be Nice”</li><li>“Good Vibrations”</li><li>“Fun, Fun, Fun”</li><li>“Help Me, Rhonda”</li></ul><h2>Notes</h2><ul data-spread=\"false\"><li>Vintage original pressing</li><li>Double LP compilation</li><li>Great listening copy</li><li>Stored upright in a smoke-free environment</li><li>Ships securely with protective inner and outer sleeves</li></ul><p class=\"isSelectedEnd\">Please review all photos carefully for condition details.</p><p>Perfect addition for collectors of classic rock, surf rock, 1960s pop, and vintage vinyl collections.</p>",
       "paymentMethods": [
         {
@@ -1724,5 +1724,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:43Z"
 }

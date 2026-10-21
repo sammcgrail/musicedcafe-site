@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -68,7 +68,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "40315",
       "estimatedAvailabilities": [
@@ -93,8 +93,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1576,7 +1576,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970991820?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FnnGFhtDfiwPy2DfUtW5hiv7doaGM3wxeZueqoZbTt7O%2BYIrCdavkD5ZvoxPUPRu53hqsSp6%2BX0j46Mf9ckjOFZP9Q2sbk4n9sBuflHeZMZDKnSDjOuxMi4epigSRsQj2ejDnBbvQF1E3MJzpS6HKKeKi66uAqVcItHjGh%2FDuaoYrI%2FNh0JOHugo4YqK4kj84%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970991820?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FnnGFhtDfiwPy2DfUtW5hiv7doaGM3wxeZueqoZbTt7NdiczWqTp5XrZ5VtCghutYhqdSNstNkhBXQmEtO4WjNRJKtB1BIFOKahmpBJ2Fa4kbAPs3PbzJQfSbeZP2riwn9Dx9EsOatz8kuArOXksm8OoNdlEIX9LeXQtpbM6aXAvYJ2O20dU4zgCn6U10FOyE%3D",
       "description": "<p data-start=\"1361\" data-end=\"1488\" class=\"PDq2pG_selectionAnchorContainer\">Original <strong data-start=\"1370\" data-end=\"1394\">1965 Philips Records</strong> 45 RPM single from <strong data-start=\"1414\" data-end=\"1431\">The 4 Seasons</strong>, featuring the unmistakable vocals of <strong data-start=\"1470\" data-end=\"1487\">Frankie Valli</strong>.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1490\" data-end=\"1500\"><strong data-start=\"1490\" data-end=\"1500\">Side A</strong></p>\n<ul data-start=\"1501\" data-end=\"1520\">\n<li data-section-id=\"1llxtdn\" data-start=\"1501\" data-end=\"1520\">\nGirl Come Running\n</li>\n</ul>\n<p data-start=\"1522\" data-end=\"1532\"><strong data-start=\"1522\" data-end=\"1532\">Side B</strong></p>\n<ul data-start=\"1533\" data-end=\"1554\">\n<li data-section-id=\"yga7mk\" data-start=\"1533\" data-end=\"1554\">\nCry Myself to Sleep\n</li>\n</ul>\n<p data-start=\"1556\" data-end=\"1645\">A nice addition for collectors of Frankie Valli, The Four Seasons, and classic 1960s pop.</p>\n<p data-start=\"1647\" data-end=\"1746\">The record will be shipped in a new paper sleeve, protective poly sleeve, and sturdy 45 RPM mailer.</p><p data-start=\"825\" data-end=\"842\" class=\"PDq2pG_selectionAnchorContainer\"><strong data-start=\"825\" data-end=\"835\">Vinyl:</strong> <strong data-start=\"836\" data-end=\"842\">VG</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p><p data-start=\"844\" data-end=\"1049\">The vinyl retains a decent shine but has several light surface scratches and scuffs consistent with normal play. No cracks or major gouges are visible. Expect some surface noise typical of a VG vintage 45.</p><p data-start=\"1051\" data-end=\"1069\"><strong data-start=\"1051\" data-end=\"1062\">Labels:</strong> <strong data-start=\"1063\" data-end=\"1069\">G+</strong></p><p data-start=\"1071\" data-end=\"1224\">Both labels show noticeable wear, discoloration, sticker residue, and writing/marks. The text remains readable, but the label condition is below average.</p><p data-start=\"1647\" data-end=\"1746\">\n\n\n\n</p><p data-start=\"1226\" data-end=\"1265\"><strong data-start=\"1226\" data-end=\"1237\">Sleeve:</strong> Generic white paper sleeve.</p>",
       "paymentMethods": [
         {
@@ -1633,5 +1633,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:26Z"
 }

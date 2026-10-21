@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -79,7 +79,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "DSX50088",
       "estimatedAvailabilities": [
@@ -104,8 +104,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1637,7 +1637,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127904282257?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BdLmskOliiVVJ7jlYfMMjDlRCW%2FtFvmsJ7y4NTqtGdQLgSJAIZCMJPn7uymgqbOz8KyHixRC0kbmlKK%2F0zArEv5OYnhBhttUnApP18bg6d1sOFw4TCNI6w%2FKtu2AjVgKUaYaBNKt3WD34zq3Bj3taQmSpp34APa6Xh9tR22t2yjk4BtMhBpUq9p4WqCFSp3Q0%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127904282257?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BdLmskOliiVVJ7jlYfMMjDlRCW%2FtFvmsJ7y4NTqtGdQPGybQwSnPwJGk%2BLv66GI6R1D6N4t3Yi3UJ%2BxIGeVziU8QOKK8xxVZ811vf%2FOIzwecxeJWMfV%2B2hLBLOA3S%2B0oC2jKR3P7hgD9enp%2FPX3X3t81E7yX7hN8qmSddHetzxLIZlQ5CNH%2BKcGlcjAvS4w1o%3D",
       "description": "<p data-start=\"195\" data-end=\"562\">Three Dog Night's classic 1970 album <em data-start=\"232\" data-end=\"243\">Naturally</em>, featuring the chart-topping hit <strong data-start=\"277\" data-end=\"299\">\"Joy to the World\"</strong> along with fan favorites <strong data-start=\"325\" data-end=\"352\">\"Liar,\" \"One Man Band,\"</strong> and <strong data-start=\"357\" data-end=\"386\">\"I Can Hear You Calling.\"</strong> A staple of early '70s rock, this album showcases the group's signature three-part vocal harmonies and radio-friendly sound that made them one of the biggest bands of the era.</p>\n<p data-start=\"564\" data-end=\"704\">Perfect for fans of classic rock, AM radio hits, and vinyl collectors looking to add an essential Three Dog Night album to their collection.</p>\n<p data-start=\"706\" data-end=\"727\"><strong data-start=\"706\" data-end=\"727\">Track Highlights:</strong></p>\n<ul data-start=\"728\" data-end=\"793\">\n<li data-section-id=\"1rj7awk\" data-start=\"728\" data-end=\"746\">\nJoy to the World\n</li>\n<li data-section-id=\"1j3unum\" data-start=\"747\" data-end=\"753\">\nLiar\n</li>\n<li data-section-id=\"s3p4x3\" data-start=\"754\" data-end=\"768\">\nOne Man Band\n</li>\n<li data-section-id=\"kqzl9u\" data-start=\"769\" data-end=\"793\">\nI Can Hear You Calling\n</li>\n</ul>\n<p data-start=\"795\" data-end=\"809\"><strong data-start=\"795\" data-end=\"809\">Condition:</strong></p>\n<ul data-start=\"810\" data-end=\"892\">\n<li data-section-id=\"hdn7de\" data-start=\"810\" data-end=\"833\">\nVinyl: VG</li>\n<li data-section-id=\"175a3fo\" data-start=\"834\" data-end=\"858\">\nJacket: G</li>\n<li data-section-id=\"18axryh\" data-start=\"859\" data-end=\"892\">\nSee photos for exact condition.\n</li>\n</ul>\n<p data-start=\"894\" data-end=\"1056\"><strong data-start=\"894\" data-end=\"905\">Artist:</strong> Three Dog Night<br data-start=\"921\" data-end=\"924\">\n<strong data-start=\"924\" data-end=\"934\">Album:</strong> Naturally<br data-start=\"944\" data-end=\"947\">\n<strong data-start=\"947\" data-end=\"957\">Label:</strong> ABC/Dunhill Records<br data-start=\"977\" data-end=\"980\">\n<strong data-start=\"980\" data-end=\"991\">Format:</strong> LP, 33 RPM<br data-start=\"1002\" data-end=\"1005\">\n<strong data-start=\"1005\" data-end=\"1015\">Genre:</strong> Classic Rock / Pop Rock<br data-start=\"1039\" data-end=\"1042\">\n<strong data-start=\"1042\" data-end=\"1051\">Year:</strong> 1970</p>",
       "paymentMethods": [
         {
@@ -1694,5 +1694,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:06Z"
 }

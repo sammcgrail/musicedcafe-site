@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -62,7 +62,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "SD7238",
       "estimatedAvailabilities": [
@@ -87,8 +87,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1590,7 +1590,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/128016717275?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FaEdZ7%2F2ggUTSeo8qHvJYdZmW5lBzWXJp5xQ6zdPdM8S8XZ6syv0fvIBpAUF%2BNzrYjpj%2FXBvrnCdyyWtBJ%2Bvco3rXXr%2FH6Q6b%2B5lbtoHDLP16vO1YacCwHr6rPIF4tpzfae2llUIZYcp84zG7ZbPg1KxtSJjoW9kHpJBP7YKus96Ul1j7O%2FIGrc19b5Q1SA8s%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/128016717275?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2FaEdZ7%2F2ggUTSeo8qHvJYdZmW5lBzWXJp5xQ6zdPdM8Z7FkBbdkj6u5mA48N%2F59cMLfgXXC70ITT0jpsqZDzFn%2FFMd2Z7oO9SeQNirnmIZNEk%2BQzkHGRuMCJbHKYDpKAwPjl1t0QWarfr1%2Fg81Lzk%2FRksHbs%2FAtUvowK8qPSMAu7m3URUwioe630I3w%2FVgAaM%3D",
       "description": "<p>Bette Midler – The Divine Miss M – Atlantic Records SD 7238 Vintage Vinyl LP</p><br /><p>Classic debut album from Bette Midler, originally released in 1972 on Atlantic Records.</p><br /><p>The Divine Miss M helped establish Midler as one of the defining entertainers of the 1970s and features favorites including “Do You Want to Dance?,” “Boogie Woogie Bugle Boy,” “Chapel of Love” and “Friends.”</p><br /><p>Atlantic Records SD 7238 stereo LP featuring the iconic illustrated cover artwork by Richard Amsel.</p>",
       "paymentMethods": [
         {
@@ -1647,5 +1647,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:26:26Z"
 }

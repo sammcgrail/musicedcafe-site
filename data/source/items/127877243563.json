@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -89,7 +89,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "3019",
       "estimatedAvailabilities": [
@@ -114,8 +114,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1592,7 +1592,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127877243563?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8qOHZhVHSHynspH9mPiiCTJdIoFpi18xyH9SuBLy0Wz8Y6zgKivseFHn8Qi4aBEQAAim4tnauR7QNlLde61cjD1GRz3LdDZNrNlUMt74XERbXReoeLKcqhN31PFJq7qnGVh1bE81IPUNAheyKuKoTJWTgUWLqkiQ4iLKUD7%2By0YCpXfKm4e%2F4UDiOG%2F7I2YjI%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127877243563?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde8qOHZhVHSHynspH9mPiiCTJdIoFpi18xyH9SuBLy0Wz3c2Z%2FPXAkNKobKW6%2B%2FFMoLJHK7YH%2FhyLgN6j%2BdHkkKMk9agPr7YqsF88BLHxXJpZpbXK07qMmnyhgrDzlaAg9tTdkOYVATr6GS7ZZE9bx6Yrkd7oiiGPQo0vbAdQbRpiaRZq7G%2B5C9In6ObUIUQkZA%3D",
       "description": "<p data-start=\"161\" data-end=\"417\">Classic jazz piano tribute album from legendary pianist Jay McShann honoring the music of Fats Waller. Released on Sackville Records (3019), this LP features warm stride piano performances and a beautifully intimate recording atmosphere.</p>\n<p data-start=\"419\" data-end=\"664\">Vinyl has a strong glossy appearance with light surface wear visible under bright light. Sleeve shows noticeable shelf wear, edge wear, corner wear, and some scuffing consistent with age. Please review all photos carefully for condition details.</p>\n<p data-start=\"666\" data-end=\"766\">A wonderful addition for collectors of jazz piano, stride piano, blues, and classic jazz recordings.</p>\n<p data-start=\"768\" data-end=\"968\"><strong data-start=\"768\" data-end=\"779\">Artist:</strong> Jay McShann<br data-start=\"791\" data-end=\"794\">\n<strong data-start=\"794\" data-end=\"804\">Title:</strong> A Tribute To Fats Waller<br data-start=\"829\" data-end=\"832\">\n<strong data-start=\"832\" data-end=\"842\">Label:</strong> Sackville<br data-start=\"852\" data-end=\"855\">\n<strong data-start=\"855\" data-end=\"874\">Catalog Number:</strong> 3019<br data-start=\"879\" data-end=\"882\">\n<strong data-start=\"882\" data-end=\"893\">Format:</strong> Vinyl, LP<br data-start=\"903\" data-end=\"906\">\n<strong data-start=\"906\" data-end=\"916\">Genre:</strong> Jazz<br data-start=\"921\" data-end=\"924\">\n<strong data-start=\"924\" data-end=\"934\">Style:</strong> Stride Piano / Swing / Jazz Piano</p>\n<p data-start=\"970\" data-end=\"1001\"><strong data-start=\"970\" data-end=\"999\">Track Highlights Include:</strong></p>\n<ul data-start=\"1002\" data-end=\"1136\">\n<li data-section-id=\"1awzmtt\" data-start=\"1002\" data-end=\"1022\">\nHoneysuckle Rose\n</li>\n<li data-section-id=\"9w3diq\" data-start=\"1023\" data-end=\"1044\">\nAin’t Misbehavin’\n</li>\n<li data-section-id=\"1m67iw1\" data-start=\"1045\" data-end=\"1099\">\nI’m Gonna Sit Right Down and Write Myself a Letter\n</li>\n<li data-section-id=\"t8c020\" data-start=\"1100\" data-end=\"1114\">\nSqueeze Me\n</li>\n<li data-section-id=\"1vb09ws\" data-start=\"1115\" data-end=\"1136\">\nLulu’s Back in Town</li></ul>",
       "paymentMethods": [
         {
@@ -1649,5 +1649,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:29:39Z"
 }

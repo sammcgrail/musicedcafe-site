@@ -5,7 +5,7 @@
   "status_source": "browse_api",
   "status_changed_at": "2026-10-19T00:26:11Z",
   "first_seen_at": "2026-10-19T00:26:11Z",
-  "last_seen_active_at": "2026-10-20T03:03:14Z",
+  "last_seen_active_at": "2026-10-21T13:25:20Z",
   "sold_at": null,
   "sales": [],
   "price": {
@@ -69,7 +69,7 @@
       "seller": {
         "username": "music_ed_cafe",
         "feedbackPercentage": "100.0",
-        "feedbackScore": 130
+        "feedbackScore": 131
       },
       "mpn": "NB973",
       "estimatedAvailabilities": [
@@ -94,8 +94,8 @@
             "currency": "USD"
           },
           "quantityUsedForEstimate": 1,
-          "minEstimatedDeliveryDate": "2026-10-22T10:00:00.000Z",
-          "maxEstimatedDeliveryDate": "2026-10-28T10:00:00.000Z",
+          "minEstimatedDeliveryDate": "2026-10-24T10:00:00.000Z",
+          "maxEstimatedDeliveryDate": "2026-10-30T10:00:00.000Z",
           "shippingCostType": "CALCULATED"
         }
       ],
@@ -1597,7 +1597,7 @@
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "itemWebUrl": "https://www.ebay.com/itm/127970839848?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BTi65osjCPCapML7VQqK5n6qSf%2FVzOwYyoVKRPmgKLWljrmM9CNQKVlFlUDFehvCS2KPfDYNsgETk6qYnMxAANrxokNGmUNTOALjq3UjWY7ZZOcdaemasDSKZ4h7vXd0HYKw16MjmhJZqg10mX9Fd6UyDZYR%2Bchju8r%2BzsPoQuC2FDaePPJA7QN4XNy0JMCnA%3D",
+      "itemWebUrl": "https://www.ebay.com/itm/127970839848?amdata=enc%3AAQALAAAAoCHNgUiiE%2FjQhlDTaMiAde%2BTi65osjCPCapML7VQqK5n6qSf%2FVzOwYyoVKRPmgKLWpWaQLxmwNyhbaZuDdrTrsR9W3Q5eGhuZTgKS2XfvL3KgNYSf0dad0cmHPS8b6NfO%2BKx77ZIOoK5MpH8wU%2BBnI7TSgPiduJsVsqVJelMuH570M8NAlCbMSdoAVk%2BL%2BYnqspjDdD5DWQqc8InbAM%2F05A%3D",
       "description": "<p data-start=\"1087\" data-end=\"1281\" class=\"PDq2pG_selectionAnchorContainer\">Original Village People 45 RPM single featuring the disco anthem <strong data-start=\"1152\" data-end=\"1170\">\"In The Navy,\"</strong> one of the group's most recognizable hits from the <em data-start=\"1222\" data-end=\"1231\">Go West</em> album. The B-side features <strong data-start=\"1259\" data-end=\"1281\">\"Manhattan Woman.\"</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1283\" data-end=\"1427\">An excellent addition for Village People fans, disco collectors, jukebox owners, DJs, and anyone building a classic late-1970s vinyl collection.</p>\n<p data-start=\"1429\" data-end=\"1560\">Record will be shipped in a new paper sleeve inside a protective poly sleeve and securely packaged in a rigid 45 RPM record mailer.</p>",
       "paymentMethods": [
         {
@@ -1654,5 +1654,6 @@
     "bids": 0,
     "buy_it_now": null
   },
-  "status_reason": "listed as active by browse_api"
+  "status_reason": "listed as active by browse_api",
+  "api_item_fetched_at": "2026-10-21T11:27:44Z"
 }
